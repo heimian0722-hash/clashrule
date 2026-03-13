@@ -2,10 +2,11 @@
 # 三大运营商及3gppnetwork.org
 
 DOMAIN-KEYWORD,att
-DOMAIN-KEYWORD,epdg.epc.att.net
-DOMAIN-KEYWORD,sentitlement2.mobile.att.net
-DOMAIN-KEYWORD,vvm.mobile.att.net
+DOMAIN-SUFFIX,att.net
+DOMAIN,epdg.epc.att.net
+DOMAIN,sentitlement2.mobile.att.net
+DOMAIN,vvm.mobile.att.net
 DOMAIN-KEYWORD,verizon
 DOMAIN-KEYWORD,t-mobile
 DOMAIN-KEYWORD,3gppnetwork
-DOMAIN-KEYWORD,pub.3gppnetwork.org
+DOMAIN-SUFFIX,3gppnetwork.org
