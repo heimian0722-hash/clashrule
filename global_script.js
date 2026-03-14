@@ -1,6 +1,6 @@
 /***
- * Clash Verge Rev / Mihomo Party 优化脚本
- * 原作者: dahaha-365 (YaNet)
+ * Clash Verge Rev / Mihomo Party 优化脚本https://github.com/dahaha-365/YaNet/tree/main/Mihomo
+ * 原作者: dahaha-365 (YaNet) 
  * Github：https://github.com/dahaha-365/YaNet
  */
 
@@ -8,9 +8,9 @@ function stringToArray(val) {
   if (Array.isArray(val)) return val
   if (typeof val !== 'string') return []
   return val
-    .split(';')
-    .map((item) => item.trim())
-    .filter((item) => item.length > 0)
+    。split(';')
+    。map((item) => item.trim())
+    。filter((item) => item.length > 0)
 }
 
 // --- 1. 静态配置区域 ---
