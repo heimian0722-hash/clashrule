@@ -80,12 +80,13 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动选择
+      - DIRECT
+      - US 美国
       - HK 香港
-      - TW 台湾
       - SG 新加坡
       - JP 日本
-      - US 美国
-      - DIRECT
+      - TW 台湾
+    include-all: true
       
   - name: 漏网之鱼
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Final.png
@@ -102,12 +103,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动选择
+      - DIRECT
+      - US 美国
       - HK 香港
-      - TW 台湾
       - SG 新加坡
       - JP 日本
-      - US 美国
-      - DIRECT      
+      - TW 台湾     
 
   - name: Netflix
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix.png
@@ -115,12 +116,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动选择
+      - DIRECT
+      - US 美国
       - HK 香港
-      - TW 台湾
       - SG 新加坡
       - JP 日本
-      - US 美国
-      - DIRECT
+      - TW 台湾
 
   - name: Disney+
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Disney%2B.png
@@ -128,12 +129,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动选择
+      - DIRECT
+      - US 美国
       - HK 香港
-      - TW 台湾
       - SG 新加坡
       - JP 日本
-      - US 美国
-      - DIRECT
+      - TW 台湾
 
   - name: Spotify
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Spotify.png
@@ -141,12 +142,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动选择
+      - DIRECT
+      - US 美国
       - HK 香港
-      - TW 台湾
       - SG 新加坡
       - JP 日本
-      - US 美国
-      - DIRECT
+      - TW 台湾
 
   - name: Speedtest
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Speedtest.png
@@ -154,12 +155,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动选择
+      - DIRECT
+      - US 美国
       - HK 香港
-      - TW 台湾
       - SG 新加坡
       - JP 日本
-      - US 美国
-      - DIRECT
+      - TW 台湾
 
   # 基于地区分组
   - name: HK 香港
