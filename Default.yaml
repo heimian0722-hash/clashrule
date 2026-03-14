@@ -1,11 +1,9 @@
 proxy-providers:
-  服务提供商-1:
-    url: https://dash.pqjc.site/api/v1/pq/2
+  PeiQian-Airport:
+    url: https://dash.pqjc.site/api/v1/pq/52  #机场订阅地址
     interval: 86400
-  # 服务提供商-2:
-  #   url: http://your-another-service-provider
-  #   interval: 600
 
+      
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -60,6 +58,19 @@ dns:
 
 proxy-groups:
   # 功能分组
+    - name: 自动选择
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Auto.png
+    interval: 120
+    lazy: true
+    tolerance: 50
+    输入: url-test
+    include-all: true
+
+  - name: 手动选择
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Static.png
+    输入: select
+    include-all: true
+    
   - name: 选择代理
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
     输入: select
@@ -72,7 +83,14 @@ proxy-groups:
       - JP 日本
       - US 美国
       - DIRECT
-
+      
+  - name: 默认
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Final.png
+    输入: select
+    proxies:
+      - 选择代理
+      - DIRECT
+      
   - name: Netflix
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix.png
     输入: select
@@ -138,13 +156,6 @@ proxy-groups:
       - US 美国
       - DIRECT
 
-  - name: 默认
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Final.png
-    输入: select
-    proxies:
-      - 选择代理
-      - DIRECT
-
   # 基于地区分组
   - name: HK 香港
     filter: "澳门|🇲🇴|港|🇭🇰|HK|(?i)Hong"
@@ -152,7 +163,7 @@ proxy-groups:
     interval: 120
     lazy: true
     tolerance: 50
-    输入: url-test
+    输入: select
     include-all: true
 
   - name: TW 台湾
@@ -161,7 +172,7 @@ proxy-groups:
     interval: 120
     lazy: true
     tolerance: 50
-    输入: url-test
+    输入: select
     include-all: true
 
   - name: SG 新加坡
@@ -170,7 +181,7 @@ proxy-groups:
     interval: 120
     lazy: true
     tolerance: 50
-    输入: url-test
+    输入: select
     include-all: true
 
   - name: JP 日本
@@ -179,7 +190,7 @@ proxy-groups:
     interval: 120
     lazy: true
     tolerance: 50
-    输入: url-test
+    输入: select
     include-all: true
 
   - name: US 美国
@@ -188,23 +199,10 @@ proxy-groups:
     interval: 120
     lazy: true
     tolerance: 50
-    输入: url-test
-    include-all: true
-
-  - name: 自动选择
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Auto.png
-    interval: 120
-    lazy: true
-    tolerance: 50
-    输入: url-test
-    include-all: true
-
-  - name: 手动选择
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Static.png
-    interval: 120
-    lazy: true
     输入: select
     include-all: true
+
+
 
 rules:
   - SCRIPT,quic,REJECT
@@ -278,7 +276,6 @@ rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,默认
-
 
 
 
