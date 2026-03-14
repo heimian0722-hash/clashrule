@@ -1,4 +1,4 @@
-clash防dns泄漏 DNS配置、分类规则
+clash防dns泄漏 DNS配置、分流规则
 
 1、clash-防DNS泄漏.yaml                               ##clash多端共用配置文件模板（理论上适用于所有mihomo(clash.meta) 开发的软件 ）
 
@@ -8,4 +8,4 @@ clash防dns泄漏 DNS配置、分类规则
 
 4、Stash防DNS泄露配置文件.ini                          ##iOS/MAC-stash自行复制代码添加机场信息再改成yaml导入即可
 
-5、karing\clashmi（支持IOS\MAC\Android\Windows\Linux）        ##设置好DNS及分类即可达成，开发项目地址https://github.com/KaringX
+5、karing\clashmi（支持IOS\MAC\Android\Windows\Linux）        ##设置好DNS及分流即可达成效果，开发项目地址https://github.com/KaringX
