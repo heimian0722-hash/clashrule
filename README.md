@@ -1,6 +1,6 @@
 clash 分流规则、防dns泄漏配置文件
 
-1、clash-防DNS泄漏.yaml                               ##clash多端共用配置文件模板（适用于 PC-clash-verge-rev 、OpenWrt-openclash 、iOS-stash ）
+1、clash-防DNS泄漏.yaml                               ##clash多端共用配置文件模板（理论上适用于所有clash内核软件 ）
 
 2、new-meta.ini                                       ##openclash 在线订阅转换模板文件
 
