@@ -1,4 +1,4 @@
-clash 分流规则、防dns泄漏配置文件
+clash防dns泄漏 DNS配置、分类规则
 
 1、clash-防DNS泄漏.yaml                               ##clash多端共用配置文件模板（理论上适用于所有mihomo(clash.meta) 软件 ）
 
