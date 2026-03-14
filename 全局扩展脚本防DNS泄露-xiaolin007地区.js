@@ -1,3 +1,4 @@
+//clash-verg全局扩展脚本防DNS泄露，原项目https://github.com/xiaolin-007/clash-verge-script/tree/main
 // 国内DNS服务器
 const domesticNameservers = [
   "https://223.5.5.5/dns-query", // 阿里DoH
