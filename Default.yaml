@@ -309,46 +309,46 @@ rules:
   - MATCH,漏网之鱼
 
 log-level: warning
+
 rule-providers:
   Custom_Direct_Domain:
-    输入: http
     behavior: domain
+    format: yaml
     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.yaml
-    path: ./providers/2305457515016618925_domain.yaml
     interval: 28800
+    
   Custom_Direct_Classical_IP:
-    输入: http
     behavior: classical
+    format: yaml
     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_IP.yaml
-    path: ./providers/15204165614954008964.yaml
     interval: 28800
+    
   Custom_Proxy_Domain:
-    输入: http
     behavior: domain
+    format: yaml
     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Domain.yaml
-    path: ./providers/10543794580940256312_domain.yaml
     interval: 28800
+    
   Custom_Proxy_Classical_IP:
-    输入: http
     behavior: classical
+    format: yaml
     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Classical_IP.yaml
-    path: ./providers/3673053372641237649.yaml
     interval: 28800
+    
   BankUS_Domain:
-    输入: http
     behavior: domain
+    format: yaml
     url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/main/Bank/BankUS_Domain.yaml
-    path: ./providers/17365006578817901778_domain.yaml
     interval: 86400
+    
   wificalling:
-    输入: http
-    behavior: classical
-    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hlaW1pYW4wNzIyLWhhc2gvY2xhc2hydWxlL21haW4vd2lmaWNhbGxpbmcubGlzdA
-    path: ./providers/2386519792947666418.yaml
+    behavior: domain
+    format: yaml
+    url: https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/wificalling.yaml
     interval: 86400
+    
   Custom_Port_Direct:
-    输入: http
     behavior: classical
+    format: yaml
     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml
-    path: ./providers/2451647452112462632.yaml
     interval: 28800
