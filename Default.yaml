@@ -1,16 +1,16 @@
 #机场订阅
 proxy-providers:
-  PeiQian-Airport:
+    订阅机场1:
     url: https://dash.pqjc.site/api/v1/pq/52  #机场订阅地址
     interval: 86400
-
-      
+   
 port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
-log-level: info
+log-level: warning
 external-controller: :9090
+
 script:
   shortcuts:
     quic: network == 'udp' and dst_port == 443
@@ -207,6 +207,49 @@ proxy-groups:
     tolerance: 50
     输入: select
     include-all: true
+    
+rule-providers:
+  Custom_Direct_Domain:
+    behavior: domain
+    format: yaml
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.yaml
+    interval: 28800
+    
+  Custom_Direct_Classical_IP:
+    behavior: classical
+    format: yaml
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_IP.yaml
+    interval: 28800
+    
+  Custom_Proxy_Domain:
+    behavior: domain
+    format: yaml
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Domain.yaml
+    interval: 28800
+    
+  Custom_Proxy_Classical_IP:
+    behavior: classical
+    format: yaml
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Classical_IP.yaml
+    interval: 28800
+    
+  BankUS_Domain:
+    behavior: domain
+    format: yaml
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/main/Bank/BankUS_Domain.yaml
+    interval: 86400
+    
+  wificalling:
+    behavior: domain
+    format: yaml
+    url: https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/wificalling.yaml
+    interval: 86400
+    
+  Custom_Port_Direct:
+    behavior: classical
+    format: yaml
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml
+    interval: 28800
 
 rules:
   - SCRIPT,quic,REJECT
@@ -307,48 +350,3 @@ rules:
   - GEOSITE,gfw,选择代理
   - RULE-SET,Custom_Port_Direct,选择代理
   - MATCH,漏网之鱼
-
-log-level: warning
-
-rule-providers:
-  Custom_Direct_Domain:
-    behavior: domain
-    format: yaml
-    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.yaml
-    interval: 28800
-    
-  Custom_Direct_Classical_IP:
-    behavior: classical
-    format: yaml
-    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_IP.yaml
-    interval: 28800
-    
-  Custom_Proxy_Domain:
-    behavior: domain
-    format: yaml
-    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Domain.yaml
-    interval: 28800
-    
-  Custom_Proxy_Classical_IP:
-    behavior: classical
-    format: yaml
-    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Classical_IP.yaml
-    interval: 28800
-    
-  BankUS_Domain:
-    behavior: domain
-    format: yaml
-    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/main/Bank/BankUS_Domain.yaml
-    interval: 86400
-    
-  wificalling:
-    behavior: domain
-    format: yaml
-    url: https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/wificalling.yaml
-    interval: 86400
-    
-  Custom_Port_Direct:
-    behavior: classical
-    format: yaml
-    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml
-    interval: 28800
