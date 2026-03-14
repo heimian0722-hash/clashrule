@@ -74,7 +74,7 @@ proxy-groups:
     输入: select
     include-all: true
     
-  - name: 手动选择
+  - name: 选择代理
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
     输入: select
     proxies:
@@ -91,10 +91,24 @@ proxy-groups:
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Final.png
     输入: select
     proxies:
-      - 自动选择
+      - 选择代理
       - 手动选择
+      - 自动选择
       - DIRECT
       
+  - name: YouTube
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/YouTube.png
+    输入: select
+    proxies:
+      - 自动选择
+      - 手动选择
+      - HK 香港
+      - TW 台湾
+      - SG 新加坡
+      - JP 日本
+      - US 美国
+      - DIRECT      
+
   - name: Netflix
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix.png
     输入: select
@@ -123,19 +137,6 @@ proxy-groups:
 
   - name: Spotify
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Spotify.png
-    输入: select
-    proxies:
-      - 自动选择
-      - 手动选择
-      - HK 香港
-      - TW 台湾
-      - SG 新加坡
-      - JP 日本
-      - US 美国
-      - DIRECT
-
-  - name: YouTube
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/YouTube.png
     输入: select
     proxies:
       - 自动选择
@@ -208,7 +209,29 @@ proxy-groups:
 
 rules:
   - SCRIPT,quic,REJECT
-
+  - GEOSITE,private,DIRECT
+  - GEOIP,private,DIRECT,no-resolve
+  - RULE-SET,Custom_Direct_Domain,DIRECT
+  - RULE-SET,Custom_Direct_Classical_IP,DIRECT
+  - RULE-SET,Custom_Proxy_Domain,选择代理
+  - RULE-SET,Custom_Proxy_Classical_IP,选择代理
+  - GEOSITE,cn,DIRECT
+  - GEOIP,cn,DIRECT,no-resolve
+  
+  - GEOSITE,google-cn,DIRECT
+  - GEOSITE,category-games@cn,DIRECT
+  - GEOSITE,category-game-platforms-download,DIRECT
+  - GEOSITE,category-public-tracker,DIRECT
+  
+  - GEOSITE,openai,手动选择
+  - GEOSITE,category-ai-!cn,手动选择
+  - RULE-SET,BankUS_Domain,手动选择
+  - RULE-SET,wificalling,手动选择
+  - GEOSITE,cloudflare,选择代理
+  - GEOIP,cloudflare,选择代理,no-resolve
+  - GEOSITE,category-communication,选择代理
+  - GEOSITE,category-social-media-!cn,选择代理
+  
   # Netflix
   - GEOSITE,netflix,Netflix
   # Disney+
@@ -218,49 +241,45 @@ rules:
   # Speedtest
   - GEOSITE,speedtest,Speedtest
   # GitHub
-  - GEOSITE,github,手动选择
-  - GEOSITE,gfw,手动选择
+  - GEOSITE,github,选择代理
   
   # Telegram
-  - IP-ASN,62014,手动选择,no-resolve
-  - IP-ASN,59930,手动选择,no-resolve
-  - IP-ASN,44907,手动选择,no-resolve
-  - IP-ASN,211157,手动选择,no-resolve
-  - PROCESS-NAME,Telegram.exe,手动选择
-  - PROCESS-NAME,Telegram,手动选择
-  - GEOSITE,telegram,手动选择
-  - GEOIP,microsoft,no-resolve
+  - IP-ASN,62014,选择代理,no-resolve
+  - IP-ASN,59930,选择代理,no-resolve
+  - IP-ASN,44907,选择代理,no-resolve
+  - IP-ASN,211157,选择代理,no-resolve
+  - PROCESS-NAME,Telegram.exe,选择代理
+  - PROCESS-NAME,Telegram,选择代理
+  - GEOSITE,telegram,选择代理
+  
   # YouTube
   - GEOSITE,youtube,YouTube
   # Google
-  - GEOSITE,google,手动选择
-  - GEOIP,google,no-resolve
+  - GEOSITE,google,选择代理
+  - GEOIP,google,选择代理,no-resolve
   # Twitter
-  - GEOSITE,twitter,手动选择
-  - DOMAIN-SUFFIX,tapbots.com,手动选择
+  - GEOSITE,twitter,选择代理
+  - DOMAIN-SUFFIX,tapbots.com,选择代理
   # Instagram
-  - GEOSITE,instagram,手动选择
+  - GEOSITE,instagram,选择代理
   # Facebook
-  - GEOSITE,facebook,手动选择
+  - GEOSITE,facebook,选择代理
   # Steam
   - GEOSITE,steam@cn,DIRECT
-  - GEOSITE,steam,手动选择
-  - GEOSITE,category-communication,手动选择
-  - GEOSITE,category-social-media-!cn,手动选择
+  - GEOSITE,steam,选择代理
   # Apple LBS
   - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
   - DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
   - DOMAIN-SUFFIX,lcdn-registration.apple.com,DIRECT
   - DOMAIN-SUFFIX,push.apple.com,DIRECT
   # Apple OCSP
-  - PROCESS-NAME,trustd,手动选择
+  - PROCESS-NAME,trustd,选择代理
   # Microsoft
   - GEOSITE,microsoft@cn,DIRECT
-  - GEOSITE,microsoft,手动选择
-  - GEOSITE,xbox,手动选择
-  - GEOSITE,cloudflare,手动选择
-  - GEOIP,cloudflare,no-resolve
-  
+  - GEOSITE,microsoft,选择代理
+  - GEOSITE,xbox,选择代理
+  - GEOIP,microsoft,DIRECT,no-resolve
+
   # common proxy utils
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,Surge,DIRECT
@@ -283,9 +302,52 @@ rules:
   - PROCESS-NAME,NetTransport,DIRECT
   - PROCESS-NAME,uTorrent,DIRECT
   - PROCESS-NAME,WebTorrent,DIRECT
-
   - GEOIP,LAN,DIRECT
-  - GEOIP,CN,DIRECT
+  - GEOSITE,gfw,选择代理
+  - RULE-SET,Custom_Port_Direct,选择代理
   - MATCH,漏网之鱼
 
 log-level: warning
+rule-providers:
+  Custom_Direct_Domain:
+    输入: http
+    behavior: domain
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.yaml
+    path: ./providers/2305457515016618925_domain.yaml
+    interval: 28800
+  Custom_Direct_Classical_IP:
+    输入: http
+    behavior: classical
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_IP.yaml
+    path: ./providers/15204165614954008964.yaml
+    interval: 28800
+  Custom_Proxy_Domain:
+    输入: http
+    behavior: domain
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Domain.yaml
+    path: ./providers/10543794580940256312_domain.yaml
+    interval: 28800
+  Custom_Proxy_Classical_IP:
+    输入: http
+    behavior: classical
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Classical_IP.yaml
+    path: ./providers/3673053372641237649.yaml
+    interval: 28800
+  BankUS_Domain:
+    输入: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/main/Bank/BankUS_Domain.yaml
+    path: ./providers/17365006578817901778_domain.yaml
+    interval: 86400
+  wificalling:
+    输入: http
+    behavior: classical
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hlaW1pYW4wNzIyLWhhc2gvY2xhc2hydWxlL21haW4vd2lmaWNhbGxpbmcubGlzdA
+    path: ./providers/2386519792947666418.yaml
+    interval: 86400
+  Custom_Port_Direct:
+    输入: http
+    behavior: classical
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml
+    path: ./providers/2451647452112462632.yaml
+    interval: 28800
