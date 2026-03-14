@@ -1,3 +1,4 @@
+#机场订阅
 proxy-providers:
   PeiQian-Airport:
     url: https://dash.pqjc.site/api/v1/pq/52  #机场订阅地址
@@ -68,10 +69,12 @@ proxy-groups:
 
   - name: 手动选择
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Static.png
-    输入: select
+    interval: 120
+    lazy: true
+    type: select
     include-all: true
     
-  - name: 选择代理
+  - name: 手动选择
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
     输入: select
     proxies:
@@ -84,11 +87,11 @@ proxy-groups:
       - US 美国
       - DIRECT
       
-  - name: 默认
+  - name: 漏网之鱼
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Final.png
     输入: select
     proxies:
-      - 选择代理
+      - 手动选择
       - DIRECT
       
   - name: Netflix
@@ -132,7 +135,7 @@ proxy-groups:
 
   - name: YouTube
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/YouTube.png
-    输入: select
+    type: select
     proxies:
       - 自动选择
       - 手动选择
@@ -145,7 +148,7 @@ proxy-groups:
 
   - name: Speedtest
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Speedtest.png
-    输入: select
+    type: select
     proxies:
       - 自动选择
       - 手动选择
@@ -163,7 +166,25 @@ proxy-groups:
     interval: 120
     lazy: true
     tolerance: 50
-    输入: select
+    type: select
+    include-all: true
+    
+  - name: US 美国
+    filter: "美|united states|los angeles|san jose|seattle|new york|🇺🇲|US|(?i)States|America"
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/United_States.png
+    interval: 120
+    lazy: true
+    tolerance: 50
+    type: select
+    include-all: true
+    
+  - name: JP 日本
+    filter: "日|🇯🇵|东京|JP|(?i)Japan"
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Japan.png
+    interval: 120
+    lazy: true
+    tolerance: 50
+    type: select
     include-all: true
 
   - name: TW 台湾
@@ -172,7 +193,7 @@ proxy-groups:
     interval: 120
     lazy: true
     tolerance: 50
-    输入: select
+    type: select
     include-all: true
 
   - name: SG 新加坡
@@ -181,28 +202,8 @@ proxy-groups:
     interval: 120
     lazy: true
     tolerance: 50
-    输入: select
+    type: select
     include-all: true
-
-  - name: JP 日本
-    filter: "日|🇯🇵|东京|JP|(?i)Japan"
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Japan.png
-    interval: 120
-    lazy: true
-    tolerance: 50
-    输入: select
-    include-all: true
-
-  - name: US 美国
-    filter: "美|🇺🇲|US|(?i)States|America"
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/United_States.png
-    interval: 120
-    lazy: true
-    tolerance: 50
-    输入: select
-    include-all: true
-
-
 
 rules:
   - SCRIPT,quic,REJECT
@@ -216,40 +217,43 @@ rules:
   # Speedtest
   - GEOSITE,speedtest,Speedtest
   # GitHub
-  - GEOSITE,github,选择代理
+  - GEOSITE,github,手动选择
+  
+  - GEOSITE,gfw,手动选择
   # Telegram
-  - IP-ASN,62014,选择代理,no-resolve
-  - IP-ASN,59930,选择代理,no-resolve
-  - IP-ASN,44907,选择代理,no-resolve
-  - IP-ASN,211157,选择代理,no-resolve
-  - PROCESS-NAME,Telegram.exe,选择代理
-  - PROCESS-NAME,Telegram,选择代理
-  - GEOSITE,telegram,选择代理
+  - IP-ASN,62014,手动选择,no-resolve
+  - IP-ASN,59930,手动选择,no-resolve
+  - IP-ASN,44907,手动选择,no-resolve
+  - IP-ASN,211157,手动选择,no-resolve
+  - PROCESS-NAME,Telegram.exe,手动选择
+  - PROCESS-NAME,Telegram,手动选择
+  - GEOSITE,telegram,手动选择
   # YouTube
   - GEOSITE,youtube,YouTube
   # Google
-  - GEOSITE,google,选择代理
+  - GEOSITE,google,手动选择
   # Twitter
-  - GEOSITE,twitter,选择代理
-  - DOMAIN-SUFFIX,tapbots.com,选择代理
+  - GEOSITE,twitter,手动选择
+  - DOMAIN-SUFFIX,tapbots.com,手动选择
   # Instagram
-  - GEOSITE,instagram,选择代理
+  - GEOSITE,instagram,手动选择
   # Facebook
-  - GEOSITE,facebook,选择代理
+  - GEOSITE,facebook,手动选择
   # Steam
   - GEOSITE,steam@cn,DIRECT
-  - GEOSITE,steam,选择代理
+  - GEOSITE,steam,手动选择
   # Apple LBS
   - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
   - DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
   - DOMAIN-SUFFIX,lcdn-registration.apple.com,DIRECT
   - DOMAIN-SUFFIX,push.apple.com,DIRECT
   # Apple OCSP
-  - PROCESS-NAME,trustd,选择代理
+  - PROCESS-NAME,trustd,手动选择
   # Microsoft
   - GEOSITE,microsoft@cn,DIRECT
-  - GEOSITE,microsoft,选择代理
-  - GEOSITE,xbox,选择代理
+  - GEOSITE,microsoft,手动选择
+  - GEOSITE,xbox,手动选择
+  
   # common proxy utils
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,Surge,DIRECT
@@ -275,49 +279,49 @@ rules:
 
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,默认
+  - MATCH,漏网之鱼
 
 
 
 rule-providers:
   Custom_Direct_Domain:
-    输入: http
+    type: http
     behavior: domain
     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.yaml
     path: ./providers/2305457515016618925_domain.yaml
     interval: 28800
   Custom_Direct_Classical_IP:
-    输入: http
+    type: http
     behavior: classical
     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_IP.yaml
     path: ./providers/15204165614954008964.yaml
     interval: 28800
   Custom_Proxy_Domain:
-    输入: http
+    type: http
     behavior: domain
     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Domain.yaml
     path: ./providers/10543794580940256312_domain.yaml
     interval: 28800
   Custom_Proxy_Classical_IP:
-    输入: http
+    type: http
     behavior: classical
     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Classical_IP.yaml
     path: ./providers/3673053372641237649.yaml
     interval: 28800
   BankUS_Domain:
-    输入: http
+    type: http
     behavior: domain
     url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/main/Bank/BankUS_Domain.yaml
     path: ./providers/17365006578817901778_domain.yaml
     interval: 86400
   wificalling:
-    输入: http
+    type: http
     behavior: classical
     url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hlaW1pYW4wNzIyLWhhc2gvY2xhc2hydWxlL21haW4vd2lmaWNhbGxpbmcubGlzdA
     path: ./providers/2386519792947666418.yaml
     interval: 86400
   Custom_Port_Direct:
-    输入: http
+    type: http
     behavior: classical
     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml
     path: ./providers/2451647452112462632.yaml
