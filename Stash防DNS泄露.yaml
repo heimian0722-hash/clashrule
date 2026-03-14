@@ -1,3 +1,5 @@
+# 不知道怎么回事，“type”变成“输入”，复制后直接全部替换下
+
 proxy-providers:
   服务提供商-1:
     url: https://~~~
