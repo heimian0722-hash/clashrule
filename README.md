@@ -4,8 +4,8 @@ Clash防dns泄漏 DNS配置、分流规则
 ----clash多端共用配置文件模板（理论上适用于所有mihomo(clash.meta) 开发的软件 ）
 
 
-2、new-meta.ini
-##openwrt-openclash 在线订阅转换模板文件，软路由openwrt/istoreos用
+2、meta-rule.ini
+##openwrt-openclash 在线订阅转换模板文件，软路由openwrt/istoreos openclash 配置在线转换，直接食用
 
 
 3、全局扩展脚本防DNS泄露-xiaolin007.js
