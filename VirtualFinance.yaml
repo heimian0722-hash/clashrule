@@ -3,8 +3,10 @@
 #https://github.com/Accademia/Additional_Rule_For_Clash/tree/main/VirtualFinance
 payload:
 
-    - '+.paypal.com
-    - '+.paypalobjects.com
+# paypal 单独处理
+#    - '+.paypal.com
+#    - '+.paypalobjects.com
+
     - '+.revolut.com 
     - '+.aqueduct.revolutlabs.com  
     - '+.monzo.com 
