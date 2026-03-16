@@ -3,15 +3,11 @@
 #https://github.com/Accademia/Additional_Rule_For_Clash/tree/main/VirtualFinance
 payload:
 
-  - DOMAIN-SUFFIX  , paypal.com
-  - DOMAIN-SUFFIX  , paypalobjects.com
-  - DOMAIN-KEYWORD , paypal
-  - DOMAIN-SUFFIX  , revolut.com 
-  - DOMAIN-SUFFIX  , aqueduct.revolutlabs.com  
-  - DOMAIN-KEYWORD , revolut
-  - DOMAIN-SUFFIX  , monzo.com 
-  - DOMAIN-SUFFIX  , monzo.statuspage.io
-  - DOMAIN-SUFFIX  , ws-eu.pusher.com
-  - DOMAIN-KEYWORD , monzo
-  - DOMAIN-SUFFIX  , wise.com
-  - DOMAIN-KEYWORD , transferwise 
+    - '+.paypal.com
+    - '+.paypalobjects.com
+    - '+.revolut.com 
+    - '+.aqueduct.revolutlabs.com  
+    - '+.monzo.com 
+    - '+.monzo.statuspage.io
+    - '+.ws-eu.pusher.com
+    - '+.wise.com
