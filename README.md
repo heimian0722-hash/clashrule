@@ -5,7 +5,7 @@ Clash防dns泄漏 DNS配置、分流规则
 
 
 2、meta-rule.ini
-##openwrt-openclash 在线订阅转换模板文件，软路由openwrt/istoreos openclash 配置在线转换，直接食用
+##openwrt-openwrt/istoreos openclash 配置在线转换，直接食用https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/meta-rule.ini
 
 
 3、全局扩展脚本防DNS泄露-xiaolin007.js
