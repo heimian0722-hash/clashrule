@@ -12,7 +12,7 @@ Clash防dns泄漏 DNS配置、分流规则
 ----Windows/MAC-clash verge 全局扩展脚本  .js脚本文件
 ----优先用xiaolin007分地区版本，acrtion版本需要开启严格路由，xiaolin007版本可直接使用
 
-4、Stash防DNS泄露配置文件.ini
+4、Stash-防DNS泄露.ini
 ----iOS/MAC-stash自行复制代码添加机场信息再改成yaml导入即可
 
 5、karing（支持IOS\MAC\Android\Windows\Linux
