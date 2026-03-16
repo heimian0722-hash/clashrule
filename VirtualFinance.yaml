@@ -1,0 +1,17 @@
+#用于 全球主流的“虚拟银行”+“移动支付” 进行分流
+#包含：Paypal, Wise, Monzo, Revolut
+#https://github.com/Accademia/Additional_Rule_For_Clash/tree/main/VirtualFinance
+payload:
+
+  - DOMAIN-SUFFIX  , paypal.com
+  - DOMAIN-SUFFIX  , paypalobjects.com
+  - DOMAIN-KEYWORD , paypal
+  - DOMAIN-SUFFIX  , revolut.com 
+  - DOMAIN-SUFFIX  , aqueduct.revolutlabs.com  
+  - DOMAIN-KEYWORD , revolut
+  - DOMAIN-SUFFIX  , monzo.com 
+  - DOMAIN-SUFFIX  , monzo.statuspage.io
+  - DOMAIN-SUFFIX  , ws-eu.pusher.com
+  - DOMAIN-KEYWORD , monzo
+  - DOMAIN-SUFFIX  , wise.com
+  - DOMAIN-KEYWORD , transferwise 
