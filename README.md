@@ -8,6 +8,8 @@
 ----**openclash软件免费，首选**
 ----
 ----openwrt/istoreos openclash 配置在线订阅转换模板，直接食用https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/meta-rule.ini
+
+以下我openclash设置（旁路由，自己看自己机器网络接口名称我改成eth0，原来是brn-lan也能用）
 <img width="951" height="320" alt="image" src="https://github.com/user-attachments/assets/011d9e6e-559a-4408-a260-c811f0b79944" />
 <img width="956" height="719" alt="image" src="https://github.com/user-attachments/assets/c67a6bfb-dd7f-45dd-87c4-538201328d0f" />
 <img width="750" height="257" alt="image" src="https://github.com/user-attachments/assets/f7220e03-2ced-4c1d-9590-f17c19e03cdc" />
