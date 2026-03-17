@@ -18,4 +18,4 @@ Clash防dns泄漏 DNS配置、分流规则
 
 5、karing（支持IOS\MAC\Android\Windows\Linux
 ----设置好DNS及分流即可达成效果，开发项目地址https://github.com/KaringX
-----karing ios测试通过没问题，但mac端存在dns泄露（mac系统版本太老的问题？13），自行测试使用；
+----karing Android/ios/Windows测试通过没问题，但mac端存在dns泄露（可能我mac系统版本太老的问题，目前设备较老，就只能到13），mac/linux自行测试使用；
