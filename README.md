@@ -21,8 +21,10 @@ GEO数据库、大陆白名单 全部开启订阅
 三个DNS服务器组全部取消
 <img width="1611" height="676" alt="image" src="https://github.com/user-attachments/assets/cc5651c5-cd86-4119-8ffb-bb5eb002a39f" />
 订阅添加设置
+
 <img width="629" height="777" alt="image" src="https://github.com/user-attachments/assets/fcd6c579-c95c-4bb8-b1b8-3375c8357e45" />
-然后没有了，就以上
+
+就以上设置，再不懂很多讲解的
 
 **3、全局扩展脚本防DNS泄露-xiaolin007.js**
 ----**clash verge软件免费，首选**
