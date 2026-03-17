@@ -1,4 +1,4 @@
-**Clash防dns泄漏 DNS配置、分流规则 完整方案IOS\MAC\Android\Windows\Linux\Openwrt**
+**Clash防DNS泄漏 DNS配置、分流规则 全平台完整方案IOS\MAC\Android\Windows\Linux\Openwrt**
 
 **1、clash-防DNS泄漏.yaml**
 ----clash多端共用配置文件模板（理论上适用于所有mihomo(clash.meta) 开发的软件 ）
