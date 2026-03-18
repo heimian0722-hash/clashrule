@@ -1,0 +1,24 @@
+payload:
+  - DOMAIN-SUFFIX,aliyun.com
+  - DOMAIN-SUFFIX,alicdn.com
+  - DOMAIN-SUFFIX,alipay.com
+  - DOMAIN-SUFFIX,taobao.com
+  - DOMAIN-SUFFIX,tmall.com
+  - DOMAIN-SUFFIX,1688.com
+  - DOMAIN-SUFFIX,dingtalk.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,uc.cn
+  - DOMAIN-SUFFIX,amap.com
+  - DOMAIN-SUFFIX,gaode.com
+  - DOMAIN-SUFFIX,cainiao.com
+  - DOMAIN-SUFFIX,ele.me
+  - DOMAIN-SUFFIX,fliggy.com
+  - DOMAIN-SUFFIX,xiami.com
+  - DOMAIN-SUFFIX,ykimg.com
+  - DOMAIN-SUFFIX,alibabausercontent.com
+  - DOMAIN-SUFFIX,alibaba-inc.com
+  - DOMAIN-SUFFIX,aliyuncs.com
+  - DOMAIN-SUFFIX,tongyi.aliyun.com  # 通义千问
+  - DOMAIN-SUFFIX,qianwen.aliyun.com # 通义千问备用
+  - DOMAIN-KEYWORD,aliyun
+  - DOMAIN-KEYWORD,alibaba
