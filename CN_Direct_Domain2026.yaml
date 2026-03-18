@@ -1,86 +1,72 @@
 payload:
-    # ================= 阿里系 (AI 与 新业务) =================
-    # 通义千问 (GEOSITE,cn 常遗漏的具体入口)
-    - '+.tongyi.aliyun.com'
-    - '+.qianwen.aliyun.com'
-    - '+.dashscope.aliyun.com'      # 灵积模型服务
-    - '+.aliyun.com'                # 阿里云主站 (兜底)
-    - '+.aliyuncs.com'              # 阿里云 OSS/API
-    # 通义万相 (AI 绘画)
-    - '+.wanxiang.aliyun.com'
-    # 夸克 (阿里旗下)
-    - '+.quark.cn'
-    - '+.quark-apps.com'
-
-    # ================= 字节系 (AI 与 新业务) =================
-    # 豆包 (字节 AI 助手，GEOSITE 常遗漏)
-    - '+.doubao.com'
-    - '+.doubaochat.com'
-    - '+.feishu.cn'                 # 飞书 (有时被误判)
-    - '+.feishucdn.com'
-    - '+.jianying.com'              # 剪映
-    - '+.capcut.cn'                 # 剪映国内版
-    - '+.volces.com'                # 火山引擎
-
-    # ================= 百度系 (AI 与 新业务) =================
-    # 文心一言
-    - '+.yiyan.baidu.com'
-    - '+.qianfan.baidubce.com'      # 千帆大模型平台
-    # 百度 AI 绘图
-    - '+.yige.baidu.com'
-    # 百度网盘 (部分节点需直连)
-    - '+.pan.baidu.com'
-    - '+.baidupcs.com'
-
-    # ================= 腾讯系 (AI 与 新业务) =================
-    # 混元大模型 & 腾讯元宝
-    - '+.hunyuan.tencent.com'
-    - '+.yuanbao.tencent.com'
-    # 腾讯云
-    - '+.tencentcloud.com'
-    - '+.qcloud.com'
-    # 微信相关 (部分 CDN 节点)
-    - '+.wechat.com'
-    - '+.weixinbridge.com'
-
-    # ================= 其他热门 AI 与 科技 =================
-    # 月之暗面 (Kimi)
+    # ================= ⚠️ 重点补充：新兴 AI 大模型 (GEOSITE,cn 更新滞后区) =================
+    # 月之暗面 (Kimi) - 极易被漏
     - '+.moonshot.cn'
     - '+.kimi.moonshot.cn'
+    - '+.api.moonshot.cn'
+    
     # 深度求索 (DeepSeek)
     - '+.deepseek.com'
     - '+.chat.deepseek.com'
-    # 智谱 AI (ChatGLM)
-    - '+.zhipu.ai'
-    - '+.chatglm.cn'
-    # 阶跃星辰 (StepChat)
-    - '+.stepfun.com'
-    - '+.stepchat.cn'
-    # MiniMax (海螺 AI)
-    - '+.minimax.io'
-    - '+.hailuoai.com'
-    # 零一万物
-    - '+.01.ai'
-    - '+.lingyiwanwu.com'
+    - '+.api.deepseek.com'
     
-    # ================= 常用工具与 CDN =================
-    # 网易系 (邮箱/云音乐)
-    - '+.163.com'
-    - '+.126.net'
-    - '+.music.163.com'
-    # 京东
-    - '+.jd.com'
-    - '+.jcloud.com'               # 京东云
-    # 小米
-    - '+.mi.com'
-    - '+.xiaomi.com'
-    - '+.mi-img.com'
-    # B 站 (部分 CDN)
-    - '+.biliapi.net'
-    - '+.bilivideo.com'
-    # Gitee (国产代码托管)
-    - '+.gitee.com'
-    - '+.gitee.io'
-    # CSDN / 掘金
-    - '+.csdn.net'
-    - '+.juejin.cn'
+    # 字节豆包 (Doubao) - 独立域名易漏
+    - '+.doubao.com'
+    - '+.doubaochat.com'
+    - '+.coze.cn'
+    - '+.volces.com'              # 火山引擎底层
+    
+    # 阿里通义 (特定 API 入口)
+    - '+.dashscope.aliyun.com'     # 灵积 API (根域名 aliyun.com 已在 GEOSITE,cn 中，但特定子域建议显式直连)
+    - '+.tongyi.aliyun.com'
+    - '+.wanxiang.aliyun.com'
+    
+    # 腾讯混元/元宝
+    - '+.hunyuan.tencent.com'
+    - '+.yuanbao.tencent.com'
+    
+    # 智谱 AI
+    - '+.open.bigmodel.cn'
+    - '+.chatglm.cn'
+    
+    # 其他独角兽 (阶跃/MiniMax/零一万物/讯飞)
+    - '+.stepfun.com'
+    - '+.hailuoai.com'
+    - '+.minimax.io'
+    - '+.01.ai'
+    - '+.xinghuo.xfyun.cn'
+    - '+.metaso.cn'                # 秘塔 AI
+
+    # ================= ⚠️ 重点补充：云厂商特定 API/CDN (防止误判) =================
+    # 七牛云 (很多中小厂图片/视频存储，易漏)
+    - '+.qiniucdn.com'
+    - '+.qiniudn.com'
+    
+    # 又拍云
+    - '+.upyun.com'
+    
+    # 华为云 API
+    - '+.huaweicloudapis.com'
+    
+    # 京东云
+    - '+.jcloudcs.com'
+
+    # ================= ⚠️ 重点补充：米哈游 (精确修正) =================
+    # 您的规则中有 category-games@cn，但米哈游的部分登录/更新域有时需显式指定
+    # 确保不移除 hoyoverse (如果您玩国际服)，这里仅强制国内核心域直连
+    - '+.miyoushe.com'             # 米游社
+    - '+.bh3.com'
+    # 注意：mihoyo.com 通常在 GEOSITE,cn 中，若发现异常可取消下面注释
+    # - '+.mihoyo.com' 
+
+    # ================= ⚠️ 重点补充：开发者与特定社区 =================
+    # Gitee 的子域有时解析问题
+    - '+.giteeusercontent.com'
+    
+    # 掘金/B 站特定 CDN (若视频加载慢可开启)
+    - '+.juejin.im'
+    - '+.hdslb.com'                # B 站老 CDN
+
+    # ================= ⚠️ 重点补充：小红书/知乎 (特定静态资源) =================
+    - '+.xhscdn.com'               # 小红书图片/视频 CDN
+    - '+.zhimg.com'                # 知乎图片 CDN
