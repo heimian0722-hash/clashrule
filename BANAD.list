@@ -1,7 +1,7 @@
 #附带个人不想联网新增区域
 DOMAIN-SUFFIX,mousegesturesapi.com
 
-# 本广告过滤来源以下ACL4SSR，已经停止更新，寻找最新更新源
+# 本广告过滤来源以下ACL4SSR，已经停止更新，保留使用，主要过滤看https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockclashlite.list
 # https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 # https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
 
