@@ -4,7 +4,7 @@ port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
-log-level: info
+log-level: error
 external-controller: :9090
 dns:
   enable: true
@@ -72,7 +72,7 @@ proxy-groups:
       - 自动选择
 
   - name: 一堵高墙
-    type: select
+    输入: select
     proxies:
       - 节点选择
       - 自动选择
@@ -121,21 +121,21 @@ proxy-groups:
       - 自动选择
 
   - name: 境内
-    type: select
+    输入: select
     proxies:
       - 全球直连
       - 节点选择
       - 自动选择
 
   - name: 常用软件
-    type: select
+    输入: select
     proxies:
       - 全球直连
       - 节点选择
       - 自动选择
 
   - name: 漏网之鱼
-    type: select
+    输入: select
     proxies:
       - 节点选择
       - 自动选择
@@ -143,42 +143,42 @@ proxy-groups:
       
 rule-providers:
   icloud:
-    type: http
+    输入: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
     path: ./ruleset/icloud.yaml
     interval: 86400
 
   apple:
-    type: http
+    输入: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
     path: ./ruleset/apple.yaml
     interval: 86400
 
   google:
-    type: http
+    输入: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
     path: ./ruleset/google.yaml
     interval: 86400
 
   proxy:
-    type: http
+    输入: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
     path: ./ruleset/proxy.yaml
     interval: 86400
 
   direct:
-    type: http
+    输入: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
     path: ./ruleset/direct.yaml
     interval: 86400
 
   private:
-    type: http
+    输入: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
     path: ./ruleset/private.yaml
