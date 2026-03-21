@@ -27,4 +27,10 @@ payload:
   - '+.imageban.ru'
   - '+.radikal.ru'
   - '+.fastpic.ru'
+  
+#个人博客域名
   - '+.eggtargaryen.com'
+  
+#检测防dns泄露
+  - '+.browserleaks.com'
+  - '+.ipleak.net'
