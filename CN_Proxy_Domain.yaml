@@ -1,4 +1,16 @@
 payload:
+#个人博客域名
+  - '+.eggtargaryen.com'
+  
+#检测防dns泄露
+  - '+.browserleaks.com'
+  - '+.ipleak.net'
+
+#不允许国内访问
+  - '+.iyf.tv'
+  - '+.910501.xyz'
+  - '+.acg.lol'
+
 #图床
   - '+.11img.com'
   - '+.23img.com'
@@ -27,10 +39,7 @@ payload:
   - '+.imageban.ru'
   - '+.radikal.ru'
   - '+.fastpic.ru'
-  
-#个人博客域名
-  - '+.eggtargaryen.com'
-  
-#检测防dns泄露
-  - '+.browserleaks.com'
-  - '+.ipleak.net'
+
+
+
+
