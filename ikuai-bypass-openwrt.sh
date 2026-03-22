@@ -1,5 +1,5 @@
 #!/bin/sh
-# openwrt/immortalwrt 24.12 内核6.12 amd64 x86 测试通过
+# openwrt/immortalwrt 24.12 内核6.12 amd64 x86 测试通过，项目源于https://github.com/joyanhui/ikuai-bypass
 # 下面的脚本只支持ash sh bash zsh 不兼容fishshell 
 # 更新或者下载最新版到 /opt/注意修改版本号CPU架构以及路径  =================================== start
 # 最好逐行运行
