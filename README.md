@@ -9,8 +9,8 @@
 ----
 ----openwrt/istoreos openclash 配置在线订阅转换模板，直接食用https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/meta-rule.ini
 
-以下我openclash设置（旁路由，自己看自己机器网络接口名称我改成eth0，原来是brn-lan也能用）
-<img width="951" height="320" alt="image" src="https://github.com/user-attachments/assets/011d9e6e-559a-4408-a260-c811f0b79944" />
+以下我openclash设置（旁路由，建议设置成fakeip加强，本人已改，性能上，不影响dns泄露）
+<img width="1088" height="840" alt="捕获" src="https://github.com/user-attachments/assets/fe657b09-a9ac-4f87-94dc-8e39a00a7ba7" />
 <img width="956" height="719" alt="image" src="https://github.com/user-attachments/assets/c67a6bfb-dd7f-45dd-87c4-538201328d0f" />
 <img width="750" height="257" alt="image" src="https://github.com/user-attachments/assets/f7220e03-2ced-4c1d-9590-f17c19e03cdc" />
 <img width="992" height="238" alt="image" src="https://github.com/user-attachments/assets/33b139c2-8dab-42b5-8243-24058e58ca5d" />
