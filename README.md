@@ -9,7 +9,7 @@
 ----
 ----openwrt/istoreos openclash 配置在线订阅转换模板，直接食用https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/meta-rule.ini
 
-以下我openclash设置（旁路由，建议设置成fakeip加强，本人已改，性能上，不影响dns泄露）
+以下我openclash设置（旁路由，建议设置fakeip加强，性能上强，不影响dns泄露）
 <img width="1088" height="840" alt="捕获" src="https://github.com/user-attachments/assets/fe657b09-a9ac-4f87-94dc-8e39a00a7ba7" />
 <img width="956" height="719" alt="image" src="https://github.com/user-attachments/assets/c67a6bfb-dd7f-45dd-87c4-538201328d0f" />
 <img width="750" height="257" alt="image" src="https://github.com/user-attachments/assets/f7220e03-2ced-4c1d-9590-f17c19e03cdc" />
@@ -18,7 +18,7 @@
 **GEO数据库、大陆白名单 全部开启订阅，不贴图了别漏了设置**
 
 <img width="935" height="805" alt="image" src="https://github.com/user-attachments/assets/b7bc6534-a9f7-4ca1-bc79-45da5ab6ddff" />
-<img width="918" height="822" alt="image" src="https://github.com/user-attachments/assets/a289b37f-5968-431b-95b5-09d64209fd23" />
+<img width="899" height="858" alt="捕获" src="https://github.com/user-attachments/assets/13c2a85d-2c06-4fc9-abc0-61ed747bb82c" />
 <img width="952" height="758" alt="image" src="https://github.com/user-attachments/assets/5dcb0c99-dd67-491d-a68c-58d415b6df22" />
 
 **三个DNS服务器组全部取消，不贴图了别漏了设置**
