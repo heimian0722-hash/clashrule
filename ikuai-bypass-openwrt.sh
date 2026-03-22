@@ -1,5 +1,5 @@
 #!/bin/sh
-# openwrt/immortalwrt 24.10.5 内核6.6.122 x64 测试通过
+# openwrt/immortalwrt 24.12 内核6.12 amd64 x86 测试通过
 # 下面的脚本只支持ash sh bash zsh 不兼容fishshell 
 # 更新或者下载最新版到 /opt/注意修改版本号CPU架构以及路径  =================================== start
 # 最好逐行运行
@@ -11,7 +11,7 @@ export GhProxy=https://ghp.ci/
 
 # 切换到opt目录
 mkdir -p /opt/ && cd  /opt/
-#下载ikuai-bypass文件，v4.2是支持爱快3.7系统上限，爱快4.0请使用最新版本的，去github找最新版本
+#下载ikuai-bypass文件，v4.2是支持爱快3.7系统上限，爱快4.0及以上请使用V4.3以上版本.
 wget -O ikuai-bypass-linux-amd64.zip "${GhProxy}https://github.com/joyanhui/ikuai-bypass/releases/download/v4.2.0/ikuai-bypass-linux-amd64.zip"
 
 # 解压文件，删除无关文件
@@ -22,10 +22,11 @@ mv config.yml  ikuai-bypass.yml
 # 或者用最新的演示配置
 rm -rf ikuai-bypass.yml && rm -rf config.yml
 wget ${GhProxy}https://raw.githubusercontent.com/joyanhui/ikuai-bypass/main/config.yml -O ikuai-bypass.yml
+
 # 更新或者下载最新版到 /opt/注意修改版本号CPU架构以及路径  =================================== end
 
 # 手动执行一次 检查执行结果
-#   /opt/ikuai-bypass -r 1 -c /opt/ikuai-bypass.yml
+/opt/ikuai-bypass -r 1 -c /opt/ikuai-bypass.yml
 
 # 创建服务脚本，这段代码请整体复制后粘贴，或者使用vim nano编辑  ================================= start
 cat > /etc/init.d/ikuai-bypass << \EOF
@@ -42,6 +43,7 @@ stop(){
 }
 EOF
 # 创建服务脚本，这段代码请整体复制后粘贴，或者使用vim nano编辑  ================================= end
+
 
 # 添加执行权限
 chmod +x /etc/init.d/ikuai-bypass
