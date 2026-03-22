@@ -1,11 +1,12 @@
 #!/bin/sh
-# Test passed under openwrt5.15.137 x64 在openwrt 5.15.137 x64 测试通过
+# openwrt/immortalwrt 24.10.5 内核6.6.122 x64 测试通过
 # 下面的脚本只支持ash sh bash zsh 不兼容fishshell 
 # 更新或者下载最新版到 /opt/注意修改版本号CPU架构以及路径  =================================== start
 # 最好逐行运行
 #软件包更新 opkg update
 #安装下载解压模块 opkg install wget unzip 
 export GhProxy=https://ghp.ci/  # 配置github代理 如果不可用请自行更换如果已经有直连github环境也可以去掉这行
+
 # 切换到opt目录
 mkdir -p /opt/ && cd  /opt/
 #下载ikuai-bypass文件，v4.2是支持爱快3.7系统上限，爱快4.0请使用最新版本的，去github找最新版本
