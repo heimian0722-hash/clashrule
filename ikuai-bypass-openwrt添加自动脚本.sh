@@ -5,14 +5,16 @@
 # 最好逐行运行
 #软件包更新 opkg update
 #安装下载解压模块 opkg install wget unzip 
-export GhProxy=https://ghp.ci/  # 配置github代理 如果不可用请自行更换如果已经有直连github环境也可以去掉这行
+
+# 配置github代理 如果不可用请自行更换如果已经有直连github环境也可以去掉这行
+export GhProxy=https://ghp.ci/
 
 # 切换到opt目录
 mkdir -p /opt/ && cd  /opt/
 #下载ikuai-bypass文件，v4.2是支持爱快3.7系统上限，爱快4.0请使用最新版本的，去github找最新版本
-wget ${GhProxy}https://github.com/joyanhui/ikuai-bypass/releases/download/v4.2.0/ikuai-bypass-linux-amd64.zip
+wget -O ikuai-bypass-linux-amd64.zip "${GhProxy}https://github.com/joyanhui/ikuai-bypass/releases/download/v4.2.0/ikuai-bypass-linux-amd64.zip"
 
-# 解压可能会报错未找到文件，因为下载的文件名字没有改成对应名字，通过文件管理工具找到/opt目录刚下载的文件，改名字为ikuai-bypass-linux-amd64.zip
+# 解压文件，删除无关文件
 unzip ikuai-bypass-linux-amd64.zip && rm -rf ikuai-bypass-linux-amd64.zip && rm -rf README.md
 
 # 使用版本内的配置文件config.yml 改名为ikuai-bypass.yml ，或者自己写好配置文件直接上传/opt
@@ -57,4 +59,3 @@ service ikuai-bypass start && ps |grep ikuai-bypass
 # rm -rf /etc/init.d/ikuai-bypass 
 # rm -rf /opt/ikuai-bypass
 # rm -rf /opt/ikuai-bypass.yml
-
