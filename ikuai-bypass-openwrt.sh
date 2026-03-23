@@ -23,18 +23,20 @@ unzip ikuai-bypass-linux-amd64.zip && rm -rf ikuai-bypass-linux-amd64.zip && rm 
 # 在线获取最新的演示配置，可能不兼容
 wget ${GhProxy}https://raw.githubusercontent.com/joyanhui/ikuai-bypass/main/config.yml -O config.yml
 
-# 手动执行一次 检查执行结果(需要注意自己配置的模式，下面这条是混合模式，默认运营商模式)
-/opt/ikuai-bypass -c /opt/config.yml -r 1 -m ii
-
 # 更新或者下载最新版到 /opt/注意修改版本号CPU架构以及路径  =================================== end
 
+# 手动执行一次 检查执行结果(需要注意自己配置的模式，下面这条是混合模式，默认运营商模式)
+/opt/ikuai-bypass -c /opt/config.yml -r once -m ii
 
-# 创建服务脚本，这段代码请整体复制后粘贴，或者使用vim nano编辑  ================================= start
+# 计划任务运行，计划任务添加命令
+0 7 * * * /opt/ikuai-bypass -c /opt/config.yml -r cron -m ii
+
+# 创建服务脚本运行，这段代码请整体复制后粘贴，或者使用vim nano编辑  ================================= start
 cat > /etc/init.d/ikuai-bypass << \EOF
 #!/bin/sh /etc/rc.common
 START=99
 start(){
-        /opt/ikuai-bypass -r cronAft -m ii -c /opt/config.yml > /dev/null 2>&1 &
+        /opt/ikuai-bypass -r cron -m ii -c /opt/config.yml > /dev/null 2>&1 &
         echo "ikuai-bypass  is start"
 }
  
@@ -44,7 +46,6 @@ stop(){
 }
 EOF
 # 创建服务脚本，这段代码请整体复制后粘贴，或者使用vim nano编辑  ================================= end
-
 
 # 添加执行权限
 chmod +x /etc/init.d/ikuai-bypass
