@@ -34,7 +34,7 @@ cat > /etc/init.d/ikuai-bypass << \EOF
 #!/bin/sh /etc/rc.common
 START=99
 start(){
-        /opt/ikuai-bypass -r -m ii cronAft -c /opt/config.yml > /dev/null 2>&1 &
+        /opt/ikuai-bypass -r cronAft -m ii -c /opt/config.yml > /dev/null 2>&1 &
         echo "ikuai-bypass  is start"
 }
  
