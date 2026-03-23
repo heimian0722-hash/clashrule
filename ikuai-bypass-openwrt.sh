@@ -3,7 +3,7 @@
 # 下面的脚本只支持ash sh bash zsh 不兼容fishshell 
 # 更新或者下载最新版到 /opt/注意修改版本号CPU架构以及路径  =================================== start
 # 最好逐行运行
-#软件包更新 opkg update
+#软件包获取更新 opkg update
 #安装下载解压模块 opkg install wget unzip 
 
 # 配置github代理 如果不可用请自行更换如果已经有直连github环境也可以去掉这行
@@ -17,23 +17,22 @@ wget -O ikuai-bypass-linux-amd64.zip "${GhProxy}https://github.com/joyanhui/ikua
 # 解压文件，删除无关文件
 unzip ikuai-bypass-linux-amd64.zip && rm -rf ikuai-bypass-linux-amd64.zip && rm -rf README.md
 
-# 使用版本内的配置文件config.yml 改名为ikuai-bypass.yml ，或者自己写好配置文件直接上传/opt
-mv config.yml  ikuai-bypass.yml 
+# 使用版本内的配置文件config.yml或者自己写好配置文件直接上传/opt, 上传记得加权限chmod +x /opt/ikuai-bypass
+
 # 或者用最新的演示配置
-rm -rf ikuai-bypass.yml && rm -rf config.yml
-wget ${GhProxy}https://raw.githubusercontent.com/joyanhui/ikuai-bypass/main/config.yml -O ikuai-bypass.yml
+wget ${GhProxy}https://raw.githubusercontent.com/joyanhui/ikuai-bypass/main/config.yml -O config.yml
 
 # 更新或者下载最新版到 /opt/注意修改版本号CPU架构以及路径  =================================== end
 
-# 手动执行一次 检查执行结果
-/opt/ikuai-bypass -r 1 -c /opt/ikuai-bypass.yml
+# 手动执行一次 检查执行结果(需要注意自己配置的模式，下面这条是混合模式，默认运营商模式)
+/opt/ikuai-bypass -c /opt/config.yml -r 1 -m ii 
 
 # 创建服务脚本，这段代码请整体复制后粘贴，或者使用vim nano编辑  ================================= start
 cat > /etc/init.d/ikuai-bypass << \EOF
 #!/bin/sh /etc/rc.common
 START=99
 start(){
-        /opt/ikuai-bypass -r cronAft  -c /opt/ikuai-bypass.yml > /dev/null 2>&1 &
+        /opt/ikuai-bypass -r -m ii cronAft -c /opt/config.yml > /dev/null 2>&1 &
         echo "ikuai-bypass  is start"
 }
  
@@ -60,4 +59,4 @@ service ikuai-bypass start && ps |grep ikuai-bypass
 # service ikuai-bypass disable
 # rm -rf /etc/init.d/ikuai-bypass 
 # rm -rf /opt/ikuai-bypass
-# rm -rf /opt/ikuai-bypass.yml
+# rm -rf /opt/config.yml
