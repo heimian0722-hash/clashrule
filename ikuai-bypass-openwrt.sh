@@ -29,15 +29,15 @@ wget ${GhProxy}https://raw.githubusercontent.com/joyanhui/ikuai-bypass/main/conf
 # 手动执行一次 检查执行结果(需要注意自己配置的模式，下面这条是混合模式，默认运营商模式)
 /opt/ikuai-bypass -c /opt/config.yml -r once -m ii
 
-# 计划任务添加并运行，每天1点运行
-0 1 * * * /opt/ikuai-bypass -c /opt/config.yml -r cron -m ii
+# 计划任务添加并运行，每天0点30分运行，此操作也可以
+# 30 0 * * * /opt/ikuai-bypass -c /opt/config.yml -r once -m ii
 
-# 创建服务脚本运行，这段代码请整体复制后粘贴，或者使用vim nano编辑  ================================= start
+#  创建服务脚本运行，运行生成日志到文件夹内，请整体复制代码后粘贴运行，或者使用vim nano编辑 ========== start
 cat > /etc/init.d/ikuai-bypass << \EOF
 #!/bin/sh /etc/rc.common
 START=99
 start(){
-        /opt/ikuai-bypass -r cron -m ii -c /opt/config.yml > /dev/null 2>&1 &
+        /opt/ikuai-bypass -r cron -m ii -c > /opt/ikuai-bypass.log 2>&1 &
         echo "ikuai-bypass  is start"
 }
  
@@ -46,7 +46,7 @@ stop(){
        echo "ikuai-bypass  is stop"
 }
 EOF
-# 创建服务脚本，这段代码请整体复制后粘贴，或者使用vim nano编辑  ================================= end
+#  创建服务脚本运行，运行生成日志到文件夹内，请整体复制代码后粘贴运行，或者使用vim nano编辑  ============ end
 
 # 添加执行权限
 chmod +x /etc/init.d/ikuai-bypass
