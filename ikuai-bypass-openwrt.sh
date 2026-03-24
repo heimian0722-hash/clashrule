@@ -40,7 +40,6 @@ start(){
         /opt/ikuai-bypass -r cron -m ii -c /opt/config.yml > /opt/ikuai-bypass.log 2>&1 &
         echo "ikuai-bypass  is start"
 }
- 
 stop(){
        killall -q -9  ikuai-bypass
        echo "ikuai-bypass  is stop"
