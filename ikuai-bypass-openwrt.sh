@@ -18,8 +18,8 @@ wget -O ikuai-bypass-linux-amd64.zip "${GhProxy}https://github.com/joyanhui/ikua
 # 解压文件，删除无关文件
 unzip ikuai-bypass-linux-amd64.zip && rm -rf ikuai-bypass-linux-amd64.zip && rm -rf README.md
 
-# 自己上传config.yml到/opt, 给ikuai-bypass
-加权限chmod +x /opt/ikuai-bypass
+# 自己上传config.yml到/opt, 给ikuai-bypass加权限
+chmod +x /opt/ikuai-bypass
 
 # 在线获取最新的演示配置，可能不兼容
 wget ${GhProxy}https://raw.githubusercontent.com/joyanhui/ikuai-bypass/main/config.yml -O config.yml
@@ -29,8 +29,8 @@ wget ${GhProxy}https://raw.githubusercontent.com/joyanhui/ikuai-bypass/main/conf
 # 手动执行一次 检查执行结果(需要注意自己配置的模式，下面这条是混合模式，默认运营商模式)
 /opt/ikuai-bypass -c /opt/config.yml -r once -m ii
 
-# 计划任务运行，计划任务添加命令
-0 7 * * * /opt/ikuai-bypass -c /opt/config.yml -r cron -m ii
+# 计划任务添加并运行，每天1点运行
+0 1 * * * /opt/ikuai-bypass -c /opt/config.yml -r cron -m ii
 
 # 创建服务脚本运行，这段代码请整体复制后粘贴，或者使用vim nano编辑  ================================= start
 cat > /etc/init.d/ikuai-bypass << \EOF
