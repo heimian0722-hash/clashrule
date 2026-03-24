@@ -63,3 +63,6 @@ service ikuai-bypass start && ps |grep ikuai-bypass
 # rm -rf /etc/init.d/ikuai-bypass 
 # rm -rf /opt/ikuai-bypass
 # rm -rf /opt/config.yml
+
+
+# cron定时异常按utc时间执行，重新安装zoneinfo-asia，调整cron运行时间
