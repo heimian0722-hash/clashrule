@@ -3,11 +3,12 @@ payload:
 #需要走代理
   - '+.immersivetranslate.com'
   - '+.xn--mes358aby2apfg.com'
-  - 'cloud.xn--4gq62f52gdss.asia'
+  - cloud.xn--4gq62f52gdss.asia
   - '+.xn--9kqz23b19z.com'
   - '+.xn--4gqx1hgtfdmt.com'
   - '+.smallstrawberry.com'
   - '+.liangxin.xyz'
+  - tapcloud.me
   - 'mojie.app'
   
 #个人博客域名
