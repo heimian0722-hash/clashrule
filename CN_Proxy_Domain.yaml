@@ -1,5 +1,8 @@
 #代理站点，遇到就补，个人使用
 payload:
+#需要走代理
+  - '+.immersivetranslate.com'
+
 #个人博客域名
   - '+.eggtargaryen.com'
   - '+.leiyanhui.com'
