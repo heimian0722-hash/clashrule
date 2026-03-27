@@ -1,3 +1,4 @@
+#代理站点，遇到就补，个人使用
 payload:
 #个人博客域名
   - '+.eggtargaryen.com'
