@@ -2,7 +2,14 @@
 payload:
 #需要走代理
   - '+.immersivetranslate.com'
-
+  - '+.xn--mes358aby2apfg.com'
+  - '+.xn--4gq62f52gdss.asia'
+  - '+.xn--9kqz23b19z.com'
+  - '+.xn--4gqx1hgtfdmt.com'
+  - '+.smallstrawberry.com'
+  - '+.liangxin.xyz'
+  - 'mojie.app'
+  
 #个人博客域名
   - '+.eggtargaryen.com'
   - '+.leiyanhui.com'
