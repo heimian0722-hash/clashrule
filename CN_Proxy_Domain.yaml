@@ -19,8 +19,8 @@ payload:
   - '+.leiyanhui.com'
   
 #检测防dns泄露
-  - '+.browserleaks.com'
-  - '+.ipleak.net'
+#  - '+.browserleaks.com'
+#  - '+.ipleak.net'
 
 #不允许国内访问
   - '+.iyf.tv'
