@@ -1,0 +1,36 @@
+#代理站点，遇到再补
+payload:
+
+#图床
+  - '+.11img.com'
+  - '+.23img.com'
+  - '+.66img.cc'
+  - '+.imgur.com'
+  - '+.sm.ms'
+  - '+.smms.app'
+  - '+.postimages.org'
+  - '+.freeimage.host'
+  - '+.imgbb.com'
+  - '+.catbox.moe'
+  - '+.loli.net'
+  - '+.loli.tc'
+  - '+.imageshack.us'
+  - '+.pixhost.to'
+  - '+.uplea.com'
+  - '+.z4a.net'
+  - '+.imagebam.com'
+  - '+.imagevenue.com'
+  - '+.photobucket.com'
+  - '+.tinypic.com'
+  - '+.imgbox.com'
+  - '+.imgspice.com'
+  - '+.imagetwist.com'
+  - '+.imagefruit.com'
+  - '+.imageban.ru'
+  - '+.radikal.ru'
+  - '+.fastpic.ru'
+  - '+.thumbsnap.com'
+  - '+.sda1.dev'
+
+
+
