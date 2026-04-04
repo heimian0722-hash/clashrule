@@ -14,9 +14,10 @@ payload:
   - '+.pqjc.site'
   - '+.chaoyue.quest'
   
-#个人博客域名
+#个人博客域名站
   - '+.eggtargaryen.com'
   - '+.leiyanhui.com'
+  - 270666.xyz
   
 #检测防dns泄露
 #  - '+.browserleaks.com'
