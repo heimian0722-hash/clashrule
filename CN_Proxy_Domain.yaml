@@ -18,7 +18,7 @@ payload:
 #个人站点
   - '+.eggtargaryen.com'
   - '+.leiyanhui.com'
-  - 270666.xyz
+  - '+.270666.xyz'
   
 #检测防dns泄露
 #  - '+.browserleaks.com'
