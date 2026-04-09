@@ -21,7 +21,7 @@
 <img width="899" height="858" alt="捕获" src="https://github.com/user-attachments/assets/13c2a85d-2c06-4fc9-abc0-61ed747bb82c" />
 <img width="952" height="758" alt="image" src="https://github.com/user-attachments/assets/5dcb0c99-dd67-491d-a68c-58d415b6df22" />
 
-**三个DNS服务器组全部取消，不贴图了别漏了设置**
+**三个DNS服务器组全部取消，不贴图了别漏了设置，用上游主路由分配的默认dns**
 
 <img width="1611" height="676" alt="image" src="https://github.com/user-attachments/assets/cc5651c5-cd86-4119-8ffb-bb5eb002a39f" />
 订阅添加设置
