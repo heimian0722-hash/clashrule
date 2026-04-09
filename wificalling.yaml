@@ -2,12 +2,9 @@
 # 三大运营商及3gppnetwork.org
 
 payload:
-
-- '+.att.net
-- '+.epdg.epc.att.net
-- '+.sentitlement2.mobile.att.net
-- '+.vvm.mobile.att.net
-- '+.verizon.com
-- '+.t-mobile.com
-- '+.3gppnetwork
-- '+.3gppnetwork.org
+  - '+.att.net'
+  - '+.verizon.com'
+  - '+.t-mobile.com'
+  - '+.3gppnetwork.org'
+  - '+.tktn.be'
+  - '+.talkatone.com'
