@@ -10,6 +10,8 @@ DOMAIN-KEYWORD,verizon
 DOMAIN-KEYWORD,t-mobile
 DOMAIN-KEYWORD,3gppnetwork
 DOMAIN-SUFFIX,3gppnetwork.org
+
+#talkatone
 DOMAIN,tktn.be
 DOMAIN,talkatone.com
 DOMAIN-KEYWORD,tktn
