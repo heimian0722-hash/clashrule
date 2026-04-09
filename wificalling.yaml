@@ -2,6 +2,7 @@
 # 三大运营商及3gppnetwork.org
 
 payload:
+  - '+.redpocket.com'
   - '+.att.net'
   - '+.verizon.com'
   - '+.t-mobile.com'
