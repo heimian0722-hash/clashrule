@@ -1,5 +1,15 @@
 # 直连站点，遇到就补，个人使用
 payload:
+  # 个人小站 (GeoSite 未录入) ---
+  - '+.kyzsapp.com'
+  - '+.redircdn.com'
+  - '+.backloop.dev'
+  - '+.270666.xyz'
+  - '+.91bun.com'
+
+
+
+
   # --- 1. 绝对核心：穿透与 DDNS (走代理必挂) ---
   - '+.zerotier.com'
   - '+.tailscale.com'
@@ -24,13 +34,5 @@ payload:
   - '+.gzdata.com.cn'      # 云上贵州 (Apple 核心)
   - '+.12306.cn'           # 抢票必直连
   - '+.alipay.com'         # 支付环境
-
-  # --- 4. 个人小站 (GeoSite 未录入) ---
-  - '+.kyzsapp.com'
-  - '+.redircdn.com'
-  - '+.backloop.dev'
-  - '+.270666.xyz'
-  - '+.91bun.com'
-
 
   
