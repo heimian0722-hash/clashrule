@@ -19,8 +19,12 @@ payload:
   - '+.eggtargaryen.com'
   - '+.leiyanhui.com'
   - '+.wuqianso.org'
+
+#ip质量检测
   - '+.iptrait.com'
   - '+.ip2location.com'
+  - '+.ipinfo.io'
+  - '+.ping0.cc'
 
 
 #不允许国内访问
