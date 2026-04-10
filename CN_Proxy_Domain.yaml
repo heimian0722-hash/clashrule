@@ -19,7 +19,7 @@ payload:
   - '+.eggtargaryen.com'
   - '+.leiyanhui.com'
   - '+.wuqianso.org'
-
+  - '+.iptrait.com'
 
 #不允许国内访问
   - '+.iyf.tv'
