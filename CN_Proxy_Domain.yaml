@@ -13,16 +13,20 @@ payload:
   - 'mojie.app'
   - '+.pqjc.site'
   - '+.chaoyue.quest'
-  - '+.wuqianso.org'
+
   
 #个人站点
   - '+.eggtargaryen.com'
   - '+.leiyanhui.com'
+  - '+.wuqianso.org'
+
 
 #不允许国内访问
   - '+.iyf.tv'
   - '+.910501.xyz'
   - '+.acg.lol'
+
+
 
 #图床
   - '+.11img.com'
