@@ -1,6 +1,6 @@
 #代理站点，遇到再补，图床部分重复，按规则优先走社交媒体无影响
 payload:
-#需要走代理
+#代理VPN站点
   - '+.immersivetranslate.com'
   - xn--mes358aby2apfg.com
   - cloud.xn--4gq62f52gdss.asia
@@ -18,11 +18,6 @@ payload:
 #个人站点
   - '+.eggtargaryen.com'
   - '+.leiyanhui.com'
-
-  
-#检测防dns泄露
-#  - '+.browserleaks.com'
-#  - '+.ipleak.net'
 
 #不允许国内访问
   - '+.iyf.tv'
