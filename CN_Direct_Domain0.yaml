@@ -34,5 +34,6 @@ payload:
   - '+.gzdata.com.cn'      # 云上贵州 (Apple 核心)
   - '+.12306.cn'           # 抢票必直连
   - '+.alipay.com'         # 支付环境
-
+  - '+.apple.com.cn'
+  - '+.icloud.com.cn'
   
