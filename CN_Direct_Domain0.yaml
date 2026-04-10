@@ -1,12 +1,13 @@
 # 直连站点，遇到就补，个人使用
 payload:
   # 个人小站 (GeoSite 未录入) ---
+  - '+.api.wcc.best'
+  - '+.api.asailor.org'
   - '+.kyzsapp.com'
   - '+.redircdn.com'
   - '+.backloop.dev'
   - '+.270666.xyz'
   - '+.91bun.com'
-  - '+.api.wcc.best'
 
 
 
