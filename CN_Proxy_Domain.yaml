@@ -25,7 +25,7 @@ payload:
   - '+.ip2location.com'
   - '+.ipinfo.io'
   - '+.ping0.cc'
-
+  - '+.scamalytics.com'
 
 #不允许国内访问
   - '+.iyf.tv'
