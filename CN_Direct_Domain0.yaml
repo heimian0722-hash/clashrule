@@ -1,7 +1,31 @@
 # 直连站点，遇到就补，个人使用
 payload:
+  # --- 1. 绝对核心：穿透与 DDNS (走代理必挂) ---
+  - '+.zerotier.com'
+  - '+.tailscale.com'
+  - '+.duckdns.org'
+  - '+.3322.org'
 
-# 个人小站
+  # --- 2. 重点国产 AI (防止 GeoSite 滞后导致风控) ---
+  - '+.deepseek.com'
+  - '+.chat.deepseek.com'
+  - '+.api.deepseek.com'
+  - '+.moonshot.cn'
+  - '+.kimi.ai'
+  - '+.doubao.com'
+  - '+.coze.cn'
+  - '+.zhipu.ai'
+  - '+.minimax.io'
+  - '+.01.ai'
+
+  # --- 3. 生产力与避坑补漏 ---
+  - '+.feishu.cn'          # 飞书国内版
+  - '+.linux.do'           # 热门社区，直连极速
+  - '+.gzdata.com.cn'      # 云上贵州 (Apple 核心)
+  - '+.12306.cn'           # 抢票必直连
+  - '+.alipay.com'         # 支付环境
+
+  # --- 4. 个人小站 (GeoSite 未录入) ---
   - '+.kyzsapp.com'
   - '+.redircdn.com'
   - '+.backloop.dev'
@@ -9,177 +33,4 @@ payload:
   - '+.91bun.com'
 
 
-  # =================================================================
-  # 1. ⚠️ 核心重点：国产 AI 大模型 (GeoSite 滞后重灾区)
-  # =================================================================
-  # --- 小米mimo ---
-  - '+.xiaomimimo.com'
   
-  # --- 月之暗面 (Kimi) ---
-  - '+.moonshot.cn'
-  - '+.kimi.moonshot.cn'
-  - '+.api.moonshot.cn'
-  
-  # --- 深度求索 (DeepSeek) ---
-  - '+.deepseek.com'
-  - '+.chat.deepseek.com'
-  - '+.api.deepseek.com'
-  - '+.deepseek.cn'
-  
-  # --- 字节系 (豆包/Coze/火山) ---
-  - '+.doubao.com'
-  - '+.doubaochat.com'
-  - '+.coze.cn'
-  - '+.volces.com'             # 火山引擎底层
-  - '+.volcengine.com'         # 火山引擎主域
-  - '+.byteimg.com'            # 字节图片 CDN
-  - '+.snssdk.com'              # 字节 SDK
-  
-  # --- 阿里通义 (灵积/万相) ---
-  - '+.dashscope.aliyun.com'   # 灵积 API (关键)
-  - '+.tongyi.aliyun.com'
-  - '+.wanxiang.aliyun.com'
-  - '+.qianwen.com'
-  
-  # --- 腾讯混元/元宝 ---
-  - '+.hunyuan.tencent.com'
-  - '+.yuanbao.tencent.com'
-  
-  # --- 智谱 AI (ChatGLM) ---
-  - '+.open.bigmodel.cn'
-  - '+.chatglm.cn'
-  - '+.zhipu.ai'
-  
-  # --- 其他独角兽 (阶跃/MiniMax/零一/讯飞/秘塔) ---
-  - '+.stepfun.com'             # 阶跃星辰
-  - '+.hailuoai.com'            # 海螺 AI (MiniMax)
-  - '+.minimax.io'              # MiniMax (.io 后缀易误判)
-  - '+.01.ai'                   # 零一万物 (.ai 后缀易误判)
-  - '+.xinghuo.xfyun.cn'        # 讯飞星火
-  - '+.metaso.cn'               # 秘塔 AI
-  - '+.baichuan-ai.com'         # 百川智能
-  - '+.modelscope.cn'           # 魔搭社区
-
-  # =================================================================
-  # 2. ⚠️ 金融、支付与国企 (严格限制国内 IP，走代理必挂)
-  # =================================================================
-  - '+.alipay.com'
-  - '+.alipayobjects.com'
-  - '+.taobao.com'
-  - '+.tmall.com'
-  - '+.jd.com'
-  - '+.360buyimg.com'
-  - '+.12306.cn'                # 铁路购票 (绝对核心)
-  - '+.railway.gov.cn'
-  - '+.icbc.com.cn'
-  - '+.ccb.com'
-  - '+.boc.cn'
-  - '+.abchina.com'
-  - '+.bankcomm.com'
-  - '+.cmbchina.com'
-  - '+.spdb.com.cn'
-  - '+.citicbank.com'
-  - '+.e-chinalife.com'
-
-  # =================================================================
-  # 3. ⚠️ 政府、教育与科研 (含外包服务与特定后缀)
-  # =================================================================
-  - '+.gov.cn'
-  - '+.edu.cn'
-  - '+.ac.cn'
-  - '+.cstnet.cn'               # 中科院网络中心
-  - '+.cnki.net'                # 知网
-  - '+.wanfangdata.com.cn'      # 万方
-  - '+.chsi.com.cn'             # 学信网
-  - '+.xuexin.cn'
-  - '+.zwfw.gov.cn'             # 国家政务服务平台
-  - '+.gjzwfw.gov.cn'
-  - '+.tax.gov.cn'
-  - '+.chinatax.gov.cn'
-  - '+.customs.gov.cn'
-  - '+.miit.gov.cn'
-  - '+.moe.gov.cn'
-  - '+.most.gov.cn'
-  - '+.pbc.gov.cn'
-  - '+.nhc.gov.cn'
-
-  # =================================================================
-  # 4. ⚠️ 云厂商 CDN 与 静态资源 (防止视频/图片加载慢)
-  # =================================================================
-  # --- 阿里云/七牛/又拍 ---
-  - '+.alicdn.com'
-  - '+.alikunlun.com'
-  - '+.qiniucdn.com'
-  - '+.qiniudn.com'
-  - '+.upyun.com'
-  - '+.wswebcdn.com'            # 网宿
-  - '+.chinacache.net'          # 蓝汛
-  
-  # --- 腾讯云/华为云/京东云 ---
-  - '+.myqcloud.com'
-  - '+.tencent-cloud.net'
-  - '+.huaweicloud.com'
-  - '+.huaweicloudapis.com'     # 华为云 API
-  - '+.hwccpc.com'
-  - '+.jdcloud.com'
-  - '+.jcloudcs.com'            # 京东云存储
-  
-  # --- 视频专用 CDN ---
-  - '+.bilivideo.com'           # B 站视频
-  - '+.hdslb.com'               # B 站静态
-  - '+.acgvideo.com'
-  - '+.douyincdn.com'           # 抖音
-  - '+.ixigua.com'
-  - '+.youku.com'
-  - '+.ykimg.com'
-  - '+.iqiyi.com'
-  - '+.iqiyipic.com'
-  - '+.mgtv.com'                # 芒果 TV
-
-  # =================================================================
-  # 5. ⚠️ 游戏、社区与开发者 (精确修正)
-  # =================================================================
-  # --- 米哈游 (国内服核心) ---
-  - '+.miyoushe.com'            # 米游社
-  - '+.bh3.com'
-  - '+.mihoyo.com'              # 显式直连以防万一
-  
-  # --- 开发者社区 ---
-  - '+.gitee.com'
-  - '+.gitee.io'
-  - '+.giteeusercontent.com'    # Gitee 用户内容
-  - '+.coding.net'
-  - '+.juejin.cn'
-  - '+.juejin.im'
-  - '+.oschina.net'
-  - '+.v2ex.com'                # 视情况而定，若服务器在海外可移除，此处暂留供国内加速节点使用
-  
-  # --- 社交与生活 ---
-  - '+.xhscdn.com'              # 小红书 CDN
-  - '+.zhimg.com'               # 知乎图片
-  - '+.zhihu.com'
-  - '+.douban.com'
-  - '+.doubanio.com'
-  - '+.weixinbridge.com'        # 微信桥接
-  - '+.qlogo.cn'                # QQ 头像
-  - '+.qpic.cn'
-
-  # =================================================================
-  # 6. ⚠️ 苹果中国特供 (云上贵州)
-  # =================================================================
-  - '+.gzdata.com.cn'           # 云上贵州 (Apple 数据运营)
-  - '+.apple.com.cn'
-  - '+.itunes.com.cn'
-  - '+.mzstatic.com'             # App Store 资源 (国内有缓存)
-  - '+.media-lb.apple.com.akadns.net'
-  - '+.ls-apple.com.akadns.net'
-  # =================================================================
-  # 7. ⚠️ 用户自定义数字域名与小众站 (兜底)
-  # =================================================================
-  - '+.00333118.com'
-  - '+.0044696.com'
-  - '+.03241119.xyz'
-  - '+.0734cn.top'
-  - '+.10010.com'               # 联通
-  - '+.10086.cn'                # 移动
-  - '+.189.cn'                  # 电信
