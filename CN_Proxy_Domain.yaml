@@ -72,5 +72,11 @@ payload:
   - '+.prntscr.com'
   - '+.telegra.ph'               # Telegram 官方图床 (必走代理)
   - '+.graph.org'
-
+  - '+.snipboard.io'             # 常用剪贴板分享
+  - '+.gyazo.com'                # Gyazo 截图
+  - '+.screenshot.help'
+  - '+.pasteboard.co'
+  - '+.imagebam.com'             # 很多老牌论坛爱用
+  - '+.imgbox.com'               # 极其稳定的国外老牌图床
+  - '+.lostpic.net'
 
