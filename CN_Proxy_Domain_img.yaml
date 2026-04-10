@@ -1,4 +1,4 @@
-#代理站点，遇到再补
+#强制代理，遇到再补
 payload:
 
 #图床
@@ -32,5 +32,22 @@ payload:
   - '+.thumbsnap.com'
   - '+.sda1.dev'
 
-
-
+  # =================================================================
+  # gemini补充 代理图床补漏 (国内无法访问或加载极慢，强制 PROXY)
+  # =================================================================
+  - '+.imgur.com'                # 全球最大图床 (必须代理)
+  - '+.i.stack.imgur.com'        # StackOverflow 专用
+  - '+.sm.ms'                    # 免费图床 (国内解析极不稳定)
+  - '+.smms.app'
+  - '+.imgbb.com'                # 常用外链图床
+  - '+.ibb.co'                   # imgbb 短域名
+  - '+.pixiv.net'                # Pixiv (绝对需要)
+  - '+.pximg.net'                # Pixiv 图片原始域 (不加这个刷不出图)
+  - '+.sankakucomplex.com'
+  - '+.yande.re'
+  - '+.konachan.com'
+  - '+.danbooru.donmai.us'
+  - '+.prnt.sc'                  # Lightshot 截图
+  - '+.prntscr.com'
+  - '+.telegra.ph'               # Telegram 官方图床 (必走代理)
+  - '+.graph.org'
