@@ -26,6 +26,27 @@ payload:
   - '+.910501.xyz'
   - '+.acg.lol'
 
+# Generated from rule/Custom_Proxy.list
+# SOURCE: https://github.com/Aethersailor/Custom_OpenClash_Rules/blob/main/rule/Custom_Proxy_Domain.yaml
+  - '+.7pzzv.us'
+  - '+.arduino.cc'
+  - '+.clientservices.googleapis.com'
+  - '+.cloudsync-prod.s3.us-east-1.amazonaws.com'
+  - '+.dmhy.org'
+  - '+.hoyolab.com'
+  - '+.hoyoverse.com'
+  - '+.ip.sb'
+  - '+.ipify.org'
+  - '+.onedrive.live.com'
+  - '+.platformio.org'
+  - '+.stun.playstation.net'
+  - '+.xn--ngstr-lra8j.com'
+
+# google部分划到谷歌，防范账号风险
+#  - '+.mtalk.google.com'
+#  - '+.googleapis.cn'
+#  - '+.services.googleapis.cn'
+#  - '+.clientservices.googleapis.com'
 
 
 #图床
