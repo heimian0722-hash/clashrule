@@ -20,6 +20,8 @@ payload:
   - '+.leiyanhui.com'
   - '+.wuqianso.org'
   - '+.iptrait.com'
+  - '+.ip2location.com'
+
 
 #不允许国内访问
   - '+.iyf.tv'
