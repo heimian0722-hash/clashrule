@@ -31,6 +31,7 @@ payload:
   - '+.fastpic.ru'
   - '+.thumbsnap.com'
   - '+.sda1.dev'
+  - '+.pngdirs.com'
 
   # gemini补充 代理图床补漏
   - '+.imgur.com'                # 全球最大图床 (必须代理)
