@@ -35,6 +35,6 @@ payload:
   - '+.static.ips.apple.com'
   - '+.vowifi.apple.com'
   - '+.ess.apple.com'
-  - '+.captive.apple.com'        # 连通性测试，防止系统判定网络不可用
+#  - '+.captive.apple.com'        # 连通性测试，不建议代理，直接走国内dns
 
   
