@@ -32,6 +32,12 @@ payload:
   - '+.iyf.tv'
   - '+.910501.xyz'
   - '+.acg.lol'
+  
+# google部分划到谷歌，防范账号风险
+#  - '+.mtalk.google.com'
+#  - '+.googleapis.cn'
+#  - '+.services.googleapis.cn'
+#  - '+.clientservices.googleapis.com'
 
 # Generated from rule/Custom_Proxy.list
 # SOURCE: https://github.com/Aethersailor/Custom_OpenClash_Rules/blob/main/rule/Custom_Proxy_Domain.yaml
@@ -48,67 +54,6 @@ payload:
   - '+.platformio.org'
   - '+.stun.playstation.net'
   - '+.xn--ngstr-lra8j.com'
-
-# google部分划到谷歌，防范账号风险
-#  - '+.mtalk.google.com'
-#  - '+.googleapis.cn'
-#  - '+.services.googleapis.cn'
-#  - '+.clientservices.googleapis.com'
-
-
-#图床
-  - '+.11img.com'
-  - '+.23img.com'
-  - '+.66img.cc'
-  - '+.imgur.com'
-  - '+.sm.ms'
-  - '+.smms.app'
-  - '+.postimages.org'
-  - '+.freeimage.host'
-  - '+.imgbb.com'
-  - '+.catbox.moe'
-  - '+.loli.net'
-  - '+.loli.tc'
-  - '+.imageshack.us'
-  - '+.pixhost.to'
-  - '+.uplea.com'
-  - '+.z4a.net'
-  - '+.imagebam.com'
-  - '+.imagevenue.com'
-  - '+.photobucket.com'
-  - '+.tinypic.com'
-  - '+.imgbox.com'
-  - '+.imgspice.com'
-  - '+.imagetwist.com'
-  - '+.imagefruit.com'
-  - '+.imageban.ru'
-  - '+.radikal.ru'
-  - '+.fastpic.ru'
-  - '+.thumbsnap.com'
-  - '+.sda1.dev'
-
-  # gemini补充 代理图床补漏
-  - '+.imgur.com'                # 全球最大图床 (必须代理)
-  - '+.i.stack.imgur.com'        # StackOverflow 专用
-  - '+.sm.ms'                    # 免费图床 (国内解析极不稳定)
-  - '+.smms.app'
-  - '+.imgbb.com'                # 常用外链图床
-  - '+.ibb.co'                   # imgbb 短域名
-  - '+.pixiv.net'                # Pixiv (绝对需要)
-  - '+.pximg.net'                # Pixiv 图片原始域 (不加这个刷不出图)
-  - '+.sankakucomplex.com'
-  - '+.yande.re'
-  - '+.konachan.com'
-  - '+.danbooru.donmai.us'
-  - '+.prnt.sc'                  # Lightshot 截图
-  - '+.prntscr.com'
-  - '+.telegra.ph'               # Telegram 官方图床 (必走代理)
-  - '+.graph.org'
-  - '+.snipboard.io'             # 常用剪贴板分享
-  - '+.gyazo.com'                # Gyazo 截图
-  - '+.screenshot.help'
-  - '+.pasteboard.co'
-  - '+.imagebam.com'             # 很多老牌论坛爱用
-  - '+.imgbox.com'               # 极其稳定的国外老牌图床
-  - '+.lostpic.net'
-
+  - 'api.ttt.sh'
+  - 'd.skk.moe'
+  - 'zza.de5.net'
