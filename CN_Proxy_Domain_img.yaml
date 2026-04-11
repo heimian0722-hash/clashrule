@@ -31,6 +31,12 @@ payload:
   - '+.fastpic.ru'
   - '+.thumbsnap.com'
   - '+.sda1.dev'
+  - '+.im.ge'
+  - '+.uploadhouse.com'
+  - '+.moebox.io'
+  - '+.qpic.ws'
+  - '+.gifyu.com'
+  - '+.picb.cc'
   - '+.pngdirs.com'
 
   # gemini补充 代理图床补漏
