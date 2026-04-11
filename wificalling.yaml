@@ -1,25 +1,27 @@
-# 内容：美国wificalling
-# 三大运营商及3gppnetwork.org
+# 内容：美国 WiFi Calling 增强版
+# 适用范围：三大运营商（重点强化 AT&T/GSMA）、3GPP 标准及 VoIP 服务
 
 payload:
-  # --- 基础架构域名 (必须包含) ---
-  - '+.3gppnetwork.org'          # 所有移动运营商 WiFi Calling 的核心标准域名
+  # --- 基础架构域名 (核心标准) ---
+  - '+.3gppnetwork.org'          # 所有运营商 WiFi Calling 隧道 (epdg.epc.mncXXX.mcc310...)
   - '+.apple-cloudkit.com'       # 苹果推送与云端服务
   - '+.push.apple.com'           # 确保通话准时推送
 
-  # --- T-Mobile / Google Fi ---
+  # --- AT&T / Red Pocket (GSMA 专项强化) ---
+  - '+.att.com'                  # AT&T 官网及认证
+  - '+.att.net'                  # AT&T 骨干网域名
+  - '+.mobile.att.net'           # 授权与 Entitlement 核心 (解决开关开启失败)
+  - '+.att-idns.net'             # AT&T 内部 DNS 验证
+  - 'epdg.epc.att.net'           # GSMA 专用 WiFi Calling 隧道
+
+  # --- T-Mobile / Google Fi / Red Pocket (GSMT) ---
   - '+.t-mobile.com'
   - '+.omadm.t-mobile.com'
   - '+.msg.t-mobile.com'
   - '+.g-tun.com'                # Google Fi 专用隧道
   - '+.googlefi.com'
 
-  # --- AT&T / Red Pocket (AT&T 线路) ---
-  - '+.att.net'
-  - '+.att.com'
-  - '+.mobile.att.net'
-
-  # --- Verizon / Visible / Red Pocket (Verizon 线路) ---
+  # --- Verizon / Visible / Red Pocket (CDMA) ---
   - '+.verizon.com'
   - '+.vzw.com'
   - '+.vzw.net'
@@ -31,10 +33,12 @@ payload:
   - '+.textnow.com'              # TextNow
   - '+.pinger.com'               # Sideline/Pinger
 
-  # --- 苹果激活与心跳监测 ---
+  # --- 苹果激活、授权与心跳监测 ---
   - '+.static.ips.apple.com'
-  - '+.vowifi.apple.com'
-  - '+.ess.apple.com'
-#  - '+.captive.apple.com'        # 连通性测试，不建议代理，直接走国内dns
+  - 'vowifi.apple.com'           # Apple WiFi Calling 检测节点
+  - '+.ess.apple.com'            # 设备配置同步
+  - '+.entitlement.apple.com'    # 运营商服务授权校验
 
-  
+# --- 连通性说明 ---
+# 1. +.captive.apple.com 不建议代理，直接走国内 DNS 以防弹出登录页干扰
+# 2. 确保你的美国节点支持并放行 UDP 500 和 UDP 4500 端口
