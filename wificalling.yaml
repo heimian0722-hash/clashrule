@@ -2,10 +2,39 @@
 # 三大运营商及3gppnetwork.org
 
 payload:
-  - '+.redpocket.com'
-  - '+.att.net'
-  - '+.verizon.com'
+  # --- 基础架构域名 (必须包含) ---
+  - '+.3gppnetwork.org'          # 所有移动运营商 WiFi Calling 的核心标准域名
+  - '+.apple-cloudkit.com'       # 苹果推送与云端服务
+  - '+.push.apple.com'           # 确保通话准时推送
+
+  # --- T-Mobile / Google Fi ---
   - '+.t-mobile.com'
-  - '+.3gppnetwork.org'
-  - '+.tktn.be'
+  - '+.omadm.t-mobile.com'
+  - '+.msg.t-mobile.com'
+  - '+.g-tun.com'                # Google Fi 专用隧道
+  - '+.googlefi.com'
+
+  # --- AT&T / Red Pocket (AT&T 线路) ---
+  - '+.att.net'
+  - '+.att.com'
+  - '+.mobile.att.net'
+
+  # --- Verizon / Visible / Red Pocket (Verizon 线路) ---
+  - '+.verizon.com'
+  - '+.vzw.com'
+  - '+.vzw.net'
+  - '+.vzw.biz'
+
+  # --- 网络通话 (VoIP) 服务商 ---
+  - '+.tktn.be'                  # Talkatone 核心
   - '+.talkatone.com'
+  - '+.textnow.com'              # TextNow
+  - '+.pinger.com'               # Sideline/Pinger
+
+  # --- 苹果激活与心跳监测 ---
+  - '+.static.ips.apple.com'
+  - '+.vowifi.apple.com'
+  - '+.ess.apple.com'
+  - '+.captive.apple.com'        # 连通性测试，防止系统判定网络不可用
+
+  
