@@ -8,7 +8,10 @@ payload:
   - '+.backloop.dev'
   - '+.270666.xyz'
   - '+.91bun.com'
-
+  - '+.xhacgn.com'
+  - '+.lencr.org'
+  - 'qqwry.api.skk.moe'
+  - 'ohttp-relay1.fastly-edge.com'
 
 
   # --- 1. 绝对核心：穿透与 DDNS (走代理必挂) ---
