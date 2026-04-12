@@ -34,6 +34,7 @@ payload:
   - '+.iyf.tv'
   - '+.910501.xyz'
   - '+.acg.lol'
+  - '+.archive.org'
   
 # google部分划到谷歌，防范账号风险
 #  - '+.mtalk.google.com'
