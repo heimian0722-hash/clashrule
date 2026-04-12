@@ -1,14 +1,14 @@
 # 广告拦截规则集 - 去重改格式优化版
 # 适用：Mihomo (Meta) / OpenClash / Clash
 # 更新时间: 2026-04-11去重与清洗：合并了不同分类下的重复域名，剔除了无效的占位符。
-# 安全修正（减少误伤）：
-# 移除了 collector.githubapp.com（避免 GitHub 登录/贡献面板异常）。
-# 移除了 a.market.xiaomi.com（确保应用商店能正常更新）。
-# 移除了 go.10086.cn（确保移动用户免密登录正常）。
-# 移除了 activate.adobe.com 等许可校验域名（防止正版软件无法运行）。
-# 移除了 apple.com 相关关键服务域名。
 
 payload:
+# --- 用户自定义/实测拦截域名 ---
+  - '+.iadsdk.apple.com'          # Apple 广告 SDK (App Store 搜索广告及系统内广告投放)
+  - '+.collector.githubapp.com'   # GitHub 行为追踪与遥测数据收集
+  - '+.a.market.xiaomi.com'       # 小米应用商店统计、广告位及用户行为追踪
+  - '+.go.10086.cn'               # 中国移动业务跳转、免密登录校验及推广弹窗
+  
   # --- 广告联盟 (国内/国外) ---
   - '+.09mk.cn'
   - '+.100peng.com'
