@@ -1,6 +1,10 @@
 # 广告拦截规则集 - 去重改格式优化版
 # 适用：Mihomo (Meta) / OpenClash / Clash
 # 更新时间: 2026-04-11去重与清洗：合并了不同分类下的重复域名，剔除了无效的占位符。
+# 本广告过滤来源以下ACL4SSR，已经停止更新，保留使用，主要过滤看https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockclashlite.list
+# https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+# https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+
 
 payload:
 # --- 用户自定义/实测拦截域名 ---
