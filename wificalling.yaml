@@ -23,11 +23,17 @@ payload:
   - DOMAIN-SUFFIX,edgekey.net
   - DOMAIN-SUFFIX,akamaized.net
 
-  # --- 4. 核心 IP 段 (att ip) ---
+  # --- 4. att ip网段 ---
   - IP-CIDR,129.192.0.0/16,no-resolve
   - IP-CIDR,107.64.0.0/10,no-resolve
   - IP-CIDR,166.128.0.0/9,no-resolve
   - IP-CIDR,107.122.31.0/24,no-resolve
+  
+# ---  T-Mobile ip网段 ---
+  - IP-CIDR,66.94.0.0/19,no-resolve
+  - IP-CIDR,206.29.177.36/32,no-resolve
+  - IP-CIDR,208.54.0.0/16,no-resolve  # 关键：T-Mobile EPDG 地址池
+
 
   # --- 5. T-Mobile / Google Fi / VoIP 补充 ---
   - DOMAIN-SUFFIX,t-mobile.com
