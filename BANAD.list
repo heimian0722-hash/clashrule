@@ -2,69 +2,6 @@
 DOMAIN-SUFFIX,mousegesturesapi.com
 
 
-# --- 国家级联网监控与反诈 (核心) ---
-# 包含反诈中心接口、证书审计及态势感知域名
-DOMAIN-SUFFIX,gjfzpt.cn
-DOMAIN-SUFFIX,gjfzpt.com
-DOMAIN-SUFFIX,chanct.cn
-DOMAIN-SUFFIX,chanct.com
-DOMAIN-SUFFIX,ifcert.cn
-DOMAIN-SUFFIX,ifcert.com
-DOMAIN-SUFFIX,ifcert.org.cn
-DOMAIN-SUFFIX,fzlm.org.cn
-DOMAIN-SUFFIX,fqzpt.org.cn
-DOMAIN-SUFFIX,fanzha.org.cn
-DOMAIN-SUFFIX,shfanzha.com
-DOMAIN-SUFFIX,hicore-auth.com
-DOMAIN-SUFFIX,hei-tong.com
-DOMAIN-SUFFIX,loongteam.com
-DOMAIN-SUFFIX,cert.org.cn
-DOMAIN-SUFFIX,cnvd.org.cn
-DOMAIN-SUFFIX,anva.org.cn
-DOMAIN-SUFFIX,ics-cert.org.cn
-DOMAIN-SUFFIX,certlab.org
-DOMAIN-SUFFIX,china-bestmind.com
-DOMAIN-SUFFIX,i-bestmind.com
-DOMAIN-SUFFIX,t-bestmind.com
-DOMAIN-SUFFIX,himindtech.com
-DOMAIN-SUFFIX,fhss.com.cn
-DOMAIN-SUFFIX,hailiangyun.cn
-DOMAIN-SUFFIX,12381.gov.cn
-DOMAIN-SUFFIX,cyberpolice.cn
-DOMAIN-SUFFIX,nrtis.com.cn
-
-# --- 小米/MIUI 系统监控 ---
-# 拦截应用安装审计、广告追踪、系统统计
-DOMAIN-SUFFIX,api.installer.xiaomi.com
-DOMAIN-SUFFIX,tracking.miui.com
-DOMAIN-SUFFIX,tracking.intl.miui.com
-DOMAIN-SUFFIX,tracking.rus.miui.com
-DOMAIN-SUFFIX,tracking.india.miui.com
-DOMAIN-SUFFIX,ad.xiaomi.com
-DOMAIN-SUFFIX,data.mistat.xiaomi.com
-
-# --- 华为/鸿蒙 系统监控 ---
-# 精确拦截指标上报与日志收集（不影响云同步和找回手机）
-DOMAIN-SUFFIX,metrics.data.hicloud.com
-DOMAIN-SUFFIX,metrics1.data.hicloud.com
-DOMAIN-SUFFIX,logservice.hicloud.com
-DOMAIN-SUFFIX,log.hicloud.com
-
-# --- 蓝绿大厂 (OPPO/VIVO) 监控 ---
-DOMAIN-SUFFIX,stsdk.vivo.com.cn
-DOMAIN-SUFFIX,vtrack.vivo.com.cn
-DOMAIN-SUFFIX,tracking.coloros.com
-DOMAIN-SUFFIX,log.stat.oppo.com
-
-# --- 通用第三方追踪/采集 SDK ---
-# 拦截国内 App 普遍使用的埋点、统计和行为分析插件
-DOMAIN-SUFFIX,umeng.com
-DOMAIN-SUFFIX,umengcloud.com
-DOMAIN-SUFFIX,jpush.cn
-DOMAIN-SUFFIX,jiguang.cn
-DOMAIN-SUFFIX,getui.com
-DOMAIN-SUFFIX,talkingdata.com
-
 # 本广告过滤来源以下ACL4SSR，已经停止更新，保留使用，主要过滤看https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockclashlite.list
 # https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 # https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
