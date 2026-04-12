@@ -32,6 +32,9 @@ payload:
   - '+.jpg.dog'
   - '+.pomf2.lain.la'
   - '+.thumbsnap.com'
+  - '+.postimage.org'
+  - '+.postimg.cc'
+  - '+.2k5u.ru' 
 
   # --- 截图分享与小众工具 ---
   - '+.prnt.sc'
