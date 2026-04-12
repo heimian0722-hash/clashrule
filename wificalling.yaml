@@ -1,52 +1,37 @@
-# 内容：美国 WiFi Calling 增强版 (含 E911 地址验证修复)
-# 适用范围：三大运营商（重点强化 AT&T/GSMA）、3GPP 标准及 Web 授权
-
 payload:
-  # --- 基础架构域名 (核心标准) ---
-  - '+.3gppnetwork.org'          # 所有运营商 WiFi Calling 隧道核心
-  - '+.apple-cloudkit.com'       # 苹果推送服务
-  - '+.push.apple.com'           # 通话推送必备
+  # --- 1. 核心标准与苹果推送 ---
+  - DOMAIN-SUFFIX,3gppnetwork.org
+  - DOMAIN-SUFFIX,apple-cloudkit.com
+  - DOMAIN-SUFFIX,push.apple.com
+  - DOMAIN,vowifi.apple.com
+  - DOMAIN-SUFFIX,entitlement.apple.com
+  - DOMAIN-SUFFIX,ess.apple.com
 
-  # --- AT&T / Red Pocket (GSMA 专项强化) ---
-  - '+.att.com'                  # AT&T 官网及认证
-  - '+.att.net'                  # AT&T 骨干网
-  - '+.mobile.att.net'           # 授权与 Entitlement 核心
-  - '+.att-idns.net'             # AT&T 内部 DNS
-  - 'epdg.epc.att.net'           # GSMA 专用隧道
-  - 'attdashboard.wireless.att.com' # E911 地址登记页面 (解决 Access Denied)
-  - '+.it.att.com'               # AT&T 内部验证系统
+  # --- 2. AT&T / Red Pocket (GSMA 专项强化) ---
+  - DOMAIN-SUFFIX,att.com
+  - DOMAIN-SUFFIX,att.net
+  - DOMAIN-SUFFIX,mobile.att.net
+  - DOMAIN-SUFFIX,att-idns.net
+  - DOMAIN,epdg.epc.att.net
+  - DOMAIN,attdashboard.wireless.att.com
+  - DOMAIN-SUFFIX,it.att.com
+  - DOMAIN,okta.attexperience.edu
 
-  # --- CDN 与 防火墙 (解决 Edgesuite/Akamai 拒绝访问) ---
-  - '+.edgesuite.net'            # Akamai 边缘节点 (AT&T 验证页面载体)
-  - '+.akamaihd.net'             # Akamai 缓存节点
-  - '+.edgekey.net'              # Akamai 密钥验证
+  # --- 3. CDN 与 防火墙 (解决 Access Denied 报错) ---
+  - DOMAIN-SUFFIX,edgesuite.net
+  - DOMAIN-SUFFIX,akamaihd.net
+  - DOMAIN-SUFFIX,edgekey.net
+  - DOMAIN-SUFFIX,akamaized.net
 
-  # --- T-Mobile / Google Fi / Red Pocket (GSMT) ---
-  - '+.t-mobile.com'
-  - '+.omadm.t-mobile.com'
-  - '+.msg.t-mobile.com'
-  - '+.g-tun.com'                # Google Fi 专用隧道
-  - '+.googlefi.com'
+  # --- 4. 核心 IP 段 (att ip) ---
+  - IP-CIDR,129.192.0.0/16,no-resolve
+  - IP-CIDR,107.64.0.0/10,no-resolve
+  - IP-CIDR,166.128.0.0/9,no-resolve
+  - IP-CIDR,107.122.31.0/24,no-resolve
 
-  # --- Verizon / Visible / Red Pocket (CDMA) ---
-  - '+.verizon.com'
-  - '+.vzw.com'
-  - '+.vzw.net'
-  - '+.vzw.biz'
-
-  # --- 网络通话 (VoIP) 服务商 ---
-  - '+.tktn.be'                  # Talkatone
-  - '+.talkatone.com'
-  - '+.textnow.com'              # TextNow
-  - '+.pinger.com'               # Sideline
-
-  # --- 苹果激活、授权与心跳监测 ---
-  - '+.static.ips.apple.com'
-  - 'vowifi.apple.com'           # Apple 检测节点
-  - '+.ess.apple.com'            # 设备配置同步
-  - '+.entitlement.apple.com'    # 运营商授权校验
-
-# --- 操作建议 ---
-# 1. 保存规则后，请在 OpenClash 状态页点击【清除 Fake-IP 数据库】。
-# 2. 手机端：【设置】-【Safari浏览器】-【清除历史记录与网站数据】，防止之前的 Access Denied 页面残留。
-# 3. 保持飞行模式，连接 WiFi 再次尝试。
+  # --- 5. T-Mobile / Google Fi / VoIP 补充 ---
+  - DOMAIN-SUFFIX,t-mobile.com
+  - DOMAIN-SUFFIX,g-tun.com
+  - DOMAIN-SUFFIX,tktn.be
+  - DOMAIN-SUFFIX,talkatone.com
+  - DOMAIN-SUFFIX,textnow.com
