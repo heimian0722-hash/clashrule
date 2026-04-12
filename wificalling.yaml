@@ -1,18 +1,25 @@
-# 内容：美国 WiFi Calling 增强版
-# 适用范围：三大运营商（重点强化 AT&T/GSMA）、3GPP 标准及 VoIP 服务
+# 内容：美国 WiFi Calling 增强版 (含 E911 地址验证修复)
+# 适用范围：三大运营商（重点强化 AT&T/GSMA）、3GPP 标准及 Web 授权
 
 payload:
   # --- 基础架构域名 (核心标准) ---
-  - '+.3gppnetwork.org'          # 所有运营商 WiFi Calling 隧道 (epdg.epc.mncXXX.mcc310...)
-  - '+.apple-cloudkit.com'       # 苹果推送与云端服务
-  - '+.push.apple.com'           # 确保通话准时推送
+  - '+.3gppnetwork.org'          # 所有运营商 WiFi Calling 隧道核心
+  - '+.apple-cloudkit.com'       # 苹果推送服务
+  - '+.push.apple.com'           # 通话推送必备
 
   # --- AT&T / Red Pocket (GSMA 专项强化) ---
   - '+.att.com'                  # AT&T 官网及认证
-  - '+.att.net'                  # AT&T 骨干网域名
-  - '+.mobile.att.net'           # 授权与 Entitlement 核心 (解决开关开启失败)
-  - '+.att-idns.net'             # AT&T 内部 DNS 验证
-  - 'epdg.epc.att.net'           # GSMA 专用 WiFi Calling 隧道
+  - '+.att.net'                  # AT&T 骨干网
+  - '+.mobile.att.net'           # 授权与 Entitlement 核心
+  - '+.att-idns.net'             # AT&T 内部 DNS
+  - 'epdg.epc.att.net'           # GSMA 专用隧道
+  - 'attdashboard.wireless.att.com' # E911 地址登记页面 (解决 Access Denied)
+  - '+.it.att.com'               # AT&T 内部验证系统
+
+  # --- CDN 与 防火墙 (解决 Edgesuite/Akamai 拒绝访问) ---
+  - '+.edgesuite.net'            # Akamai 边缘节点 (AT&T 验证页面载体)
+  - '+.akamaihd.net'             # Akamai 缓存节点
+  - '+.edgekey.net'              # Akamai 密钥验证
 
   # --- T-Mobile / Google Fi / Red Pocket (GSMT) ---
   - '+.t-mobile.com'
@@ -28,17 +35,18 @@ payload:
   - '+.vzw.biz'
 
   # --- 网络通话 (VoIP) 服务商 ---
-  - '+.tktn.be'                  # Talkatone 核心
+  - '+.tktn.be'                  # Talkatone
   - '+.talkatone.com'
   - '+.textnow.com'              # TextNow
-  - '+.pinger.com'               # Sideline/Pinger
+  - '+.pinger.com'               # Sideline
 
   # --- 苹果激活、授权与心跳监测 ---
   - '+.static.ips.apple.com'
-  - 'vowifi.apple.com'           # Apple WiFi Calling 检测节点
+  - 'vowifi.apple.com'           # Apple 检测节点
   - '+.ess.apple.com'            # 设备配置同步
-  - '+.entitlement.apple.com'    # 运营商服务授权校验
+  - '+.entitlement.apple.com'    # 运营商授权校验
 
-# --- 连通性说明 ---
-# 1. +.captive.apple.com 不建议代理，直接走国内 DNS 以防弹出登录页干扰
-# 2. 确保你的美国节点支持并放行 UDP 500 和 UDP 4500 端口
+# --- 操作建议 ---
+# 1. 保存规则后，请在 OpenClash 状态页点击【清除 Fake-IP 数据库】。
+# 2. 手机端：【设置】-【Safari浏览器】-【清除历史记录与网站数据】，防止之前的 Access Denied 页面残留。
+# 3. 保持飞行模式，连接 WiFi 再次尝试。
