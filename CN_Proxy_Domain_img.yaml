@@ -1,65 +1,103 @@
-#强制代理，遇到再补
+# 图床与图片托管服务 (Payload 格式)
 payload:
-
-#图床
-  - '+.11img.com'
-  - '+.23img.com'
-  - '+.66img.cc'
+  # --- 核心图床/社交/二次元 (必须代理) ---
   - '+.imgur.com'
+  - '+.i.imgur.com'
+  - '+.i.stack.imgur.com'
+  - '+.pixiv.net'
+  - '+.pximg.net'
+  - '+.telegra.ph'
+  - '+.graph.org'
+  - '+.yande.re'
+  - '+.konachan.com'
+  - '+.sankakucomplex.com'
+  - '+.danbooru.donmai.us'
+
+  # --- 常用国际图床 ---
   - '+.sm.ms'
   - '+.smms.app'
+  - '+.imgbb.com'
+  - '+.ibb.co'
   - '+.postimages.org'
   - '+.freeimage.host'
-  - '+.imgbb.com'
   - '+.catbox.moe'
-  - '+.loli.net'
-  - '+.loli.tc'
-  - '+.imageshack.us'
-  - '+.pixhost.to'
-  - '+.uplea.com'
-  - '+.z4a.net'
+  - '+.files.catbox.moe'
+  - '+.imgbox.com'
   - '+.imagebam.com'
   - '+.imagevenue.com'
   - '+.photobucket.com'
+  - '+.imageshack.us'
+  - '+.pixhost.to'
   - '+.tinypic.com'
-  - '+.imgbox.com'
+  - '+.jpg.dog'
+  - '+.pomf2.lain.la'
+  - '+.thumbsnap.com'
+
+  # --- 截图分享与小众工具 ---
+  - '+.prnt.sc'
+  - '+.prntscr.com'
+  - '+.snipboard.io'
+  - '+.gyazo.com'
+  - '+.screenshot.help'
+  - '+.pasteboard.co'
+  - '+.gifyu.com'
+  - '+.im.ge'
+
+  # --- 论坛与特定区域常用 ---
+  - '+.11img.com'
+  - '+.23img.com'
+  - '+.66img.cc'
+  - '+.loli.net'
+  - '+.loli.tc'
+  - '+.z4a.net'
+  - '+.sda1.dev'
+  - '+.picb.cc'
+  - '+.moebox.io'
+  - '+.qpic.ws'
+  - '+.uplea.com'
   - '+.imgspice.com'
   - '+.imagetwist.com'
   - '+.imagefruit.com'
   - '+.imageban.ru'
   - '+.radikal.ru'
   - '+.fastpic.ru'
-  - '+.thumbsnap.com'
-  - '+.sda1.dev'
-  - '+.im.ge'
   - '+.uploadhouse.com'
-  - '+.moebox.io'
-  - '+.qpic.ws'
-  - '+.gifyu.com'
-  - '+.picb.cc'
   - '+.pngdirs.com'
-
-  # gemini补充 代理图床补漏
-  - '+.imgur.com'                # 全球最大图床 (必须代理)
-  - '+.i.stack.imgur.com'        # StackOverflow 专用
-  - '+.sm.ms'                    # 免费图床 (国内解析极不稳定)
-  - '+.smms.app'
-  - '+.imgbb.com'                # 常用外链图床
-  - '+.ibb.co'                   # imgbb 短域名
-  - '+.pixiv.net'                # Pixiv (绝对需要)
-  - '+.pximg.net'                # Pixiv 图片原始域 (不加这个刷不出图)
-  - '+.sankakucomplex.com'
-  - '+.yande.re'
-  - '+.konachan.com'
-  - '+.danbooru.donmai.us'
-  - '+.prnt.sc'                  # Lightshot 截图
-  - '+.prntscr.com'
-  - '+.telegra.ph'               # Telegram 官方图床 (必走代理)
-  - '+.graph.org'
-  - '+.snipboard.io'             # 常用剪贴板分享
-  - '+.gyazo.com'                # Gyazo 截图
-  - '+.screenshot.help'
-  - '+.pasteboard.co'
-  - '+.imagebam.com'             # 很多老牌论坛爱用
-  - '+.imgbox.com'               # 极其稳定的国外老牌图床
   - '+.lostpic.net'
+  - '+.qpic.ws'
+  - '+.imagegoto.com'
+
+  # --- 老牌/特定域名补漏 ---
+  - '+.directupload.net'
+  - '+.pic-upload.de'
+  - '+.fotki.com'
+  - '+.desiupload.com'
+  - '+.imagedash.com'
+  - '+.fapomatic.com'
+  - '+.glowfoto.com'
+  - '+.picfront.org'
+  - '+.xs.to'
+  - '+.imagecargo.com'
+  - '+.imagecloset.com'
+  - '+.imgspot.com'
+  - '+.luvzone.net'
+  - '+.paintedover.com'
+  - '+.hzinfo.com'
+  - '+.flypicture.com'
+  - '+.yourimg.com'
+  - '+.imagehop.com'
+  - '+.imagehosting.us'
+  - '+.mynetimages.com'
+  - '+.lookpic.com'
+  - '+.i.ua'
+  - '+.pict.com'
+  - '+.turboimagehost.com'
+  - '+.freepicninja.com'
+  - '+.imgfreehost.com'
+  - '+.myimghost.com'
+  - '+.ipics.biz'
+  - '+.imagehost.org'
+  - '+.widgx.org'
+  - '+.winimg.com'
+  - '+.slide.com'
+  - '+.tu.6.cn'
