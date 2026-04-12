@@ -1,4 +1,4 @@
-#代理站点，遇到再补，图床部分重复，按规则优先走社交媒体无影响
+#代理站点，遇到再补
 payload:
 #代理VPN站点
   - '+.immersivetranslate.com'
