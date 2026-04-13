@@ -16,7 +16,9 @@
 <img width="992" height="238" alt="image" src="https://github.com/user-attachments/assets/33b139c2-8dab-42b5-8243-24058e58ca5d" />
 
 **GEO数据库、大陆白名单 全部开启订阅，不贴图了别漏了设置**
-**github地址，代理cdn服务器都比较慢，更新24小时左右；如果需要快速更新规则集、且有直达github网络环境就禁用**
+
+**github地址修改，设置代理cdn服务器，缺点：更新慢，缓存24小时左右；如果需要快速更新规则集、且已有科学网络环境就禁用**
+
 <img width="935" height="805" alt="image" src="https://github.com/user-attachments/assets/b7bc6534-a9f7-4ca1-bc79-45da5ab6ddff" />
 <img width="899" height="858" alt="捕获" src="https://github.com/user-attachments/assets/13c2a85d-2c06-4fc9-abc0-61ed747bb82c" />
 <img width="952" height="758" alt="image" src="https://github.com/user-attachments/assets/5dcb0c99-dd67-491d-a68c-58d415b6df22" />
