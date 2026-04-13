@@ -1,5 +1,5 @@
 payload:
-  # --- 1. 核心标准与苹果推送 ---
+  # --- 1. Apple 核心标准与推送 (系统级分流) ---
   - DOMAIN-SUFFIX,3gppnetwork.org
   - DOMAIN-SUFFIX,apple-cloudkit.com
   - DOMAIN-SUFFIX,push.apple.com
@@ -7,7 +7,7 @@ payload:
   - DOMAIN-SUFFIX,entitlement.apple.com
   - DOMAIN-SUFFIX,ess.apple.com
 
-  # --- 2. AT&T / Red Pocket (GSMA 专项强化) ---
+  # --- 2. AT&T / Red Pocket 专项强化 ---
   - DOMAIN-SUFFIX,att.com
   - DOMAIN-SUFFIX,att.net
   - DOMAIN-SUFFIX,mobile.att.net
@@ -17,27 +17,28 @@ payload:
   - DOMAIN-SUFFIX,it.att.com
   - DOMAIN,okta.attexperience.edu
 
-  # --- 3. CDN 与 防火墙 (解决 Access Denied 报错) ---
+  # --- 3. T-Mobile / Google Fi 专项 ---
+  - DOMAIN-SUFFIX,t-mobile.com
+  - DOMAIN-SUFFIX,g-tun.com
+
+  # --- 4. VoIP 与 第三方通讯工具 ---
+  - DOMAIN-SUFFIX,tktn.be
+  - DOMAIN-SUFFIX,talkatone.com
+  - DOMAIN-SUFFIX,textnow.com
+
+  # --- 5. CDN 与 访问权限修复 (解决 Access Denied / 403 报错) ---
   - DOMAIN-SUFFIX,edgesuite.net
   - DOMAIN-SUFFIX,akamaihd.net
   - DOMAIN-SUFFIX,edgekey.net
   - DOMAIN-SUFFIX,akamaized.net
 
-  # --- 4. att ip网段 ---
+  # --- 6. AT&T IP 网段 (no-resolve 防止 DNS 泄露) ---
   - IP-CIDR,129.192.0.0/16,no-resolve
   - IP-CIDR,107.64.0.0/10,no-resolve
   - IP-CIDR,166.128.0.0/9,no-resolve
   - IP-CIDR,107.122.31.0/24,no-resolve
-  
-# ---  T-Mobile ip网段 ---
+
+  # --- 7. T-Mobile IP 网段 ---
   - IP-CIDR,66.94.0.0/19,no-resolve
   - IP-CIDR,206.29.177.36/32,no-resolve
   - IP-CIDR,208.54.0.0/16,no-resolve  # 关键：T-Mobile EPDG 地址池
-
-
-  # --- 5. T-Mobile / Google Fi / VoIP 补充 ---
-  - DOMAIN-SUFFIX,t-mobile.com
-  - DOMAIN-SUFFIX,g-tun.com
-  - DOMAIN-SUFFIX,tktn.be
-  - DOMAIN-SUFFIX,talkatone.com
-  - DOMAIN-SUFFIX,textnow.com
