@@ -11,7 +11,10 @@ payload:
   - '+.lencr.org'
   - 'qqwry.api.skk.moe'
   - 'ohttp-relay1.fastly-edge.com'
-
+  - '+.yifile.com'
+  - '+.ylimg.com'
+  - '+.jvdd2r.top'
+  - '+.bbrcloud.com'
 
   # --- 1. 绝对核心：穿透与 DDNS (走代理必挂) ---
   - '+.zerotier.com'
