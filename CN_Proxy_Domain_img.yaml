@@ -1,9 +1,6 @@
-# 图床与图片托管服务 (Payload 格式)
 payload:
-  # --- 核心图床/社交/二次元 (必须代理) ---
+  # --- 核心图床/社交/二次元 ---
   - '+.imgur.com'
-  - '+.i.imgur.com'
-  - '+.i.stack.imgur.com'
   - '+.pixiv.net'
   - '+.pximg.net'
   - '+.telegra.ph'
@@ -19,9 +16,9 @@ payload:
   - '+.imgbb.com'
   - '+.ibb.co'
   - '+.postimages.org'
+  - '+.postimg.cc'
   - '+.freeimage.host'
   - '+.catbox.moe'
-  - '+.files.catbox.moe'
   - '+.imgbox.com'
   - '+.imagebam.com'
   - '+.imagevenue.com'
@@ -32,7 +29,6 @@ payload:
   - '+.jpg.dog'
   - '+.pomf2.lain.la'
   - '+.thumbsnap.com'
-  - '+.postimg.cc'
   - '+.2k5u.ru' 
 
   # --- 截图分享与小众工具 ---
@@ -66,7 +62,6 @@ payload:
   - '+.uploadhouse.com'
   - '+.pngdirs.com'
   - '+.lostpic.net'
-  - '+.qpic.ws'
   - '+.imagegoto.com'
 
   # --- 老牌/特定域名补漏 ---
