@@ -3,7 +3,7 @@ payload:
   - DOMAIN-SUFFIX,3gppnetwork.org
   - DOMAIN-SUFFIX,apple-cloudkit.com
   - DOMAIN-SUFFIX,push.apple.com
-  - DOMAIN,vowifi.apple.com
+  - DOMAIN-SUFFIX,vowifi.apple.com
   - DOMAIN-SUFFIX,entitlement.apple.com
   - DOMAIN-SUFFIX,ess.apple.com
 
