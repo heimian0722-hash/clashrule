@@ -1,5 +1,4 @@
 payload:
-# --- 核心图床/社交/二次元 ---
   - '+.imgur.com'
   - '+.pixiv.net'
   - '+.pximg.net'
@@ -9,8 +8,6 @@ payload:
   - '+.konachan.com'
   - '+.sankakucomplex.com'
   - '+.danbooru.donmai.us'
-
-# --- 常用国际图床 ---
   - '+.sm.ms'
   - '+.smms.app'
   - '+.imgbb.com'
@@ -29,9 +26,7 @@ payload:
   - '+.jpg.dog'
   - '+.pomf2.lain.la'
   - '+.thumbsnap.com'
-  - '+.2k5u.ru' 
-
-# --- 截图分享与小众工具 ---
+  - '+.2k5u.ru'
   - '+.prnt.sc'
   - '+.prntscr.com'
   - '+.snipboard.io'
@@ -40,8 +35,6 @@ payload:
   - '+.pasteboard.co'
   - '+.gifyu.com'
   - '+.im.ge'
-
-# --- 论坛与特定区域常用 ---
   - '+.11img.com'
   - '+.23img.com'
   - '+.66img.cc'
@@ -63,8 +56,6 @@ payload:
   - '+.pngdirs.com'
   - '+.lostpic.net'
   - '+.imagegoto.com'
-
-# --- 老牌/特定域名补漏 ---
   - '+.directupload.net'
   - '+.pic-upload.de'
   - '+.fotki.com'
