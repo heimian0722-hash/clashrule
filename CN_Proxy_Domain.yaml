@@ -1,5 +1,18 @@
-#代理站点，遇到再补
 payload:
+  - '+.sms-activate.org'
+  - '+.internetdownloadmanager.com'
+  - '+.nextacdn.com'
+  - '+.nextacdn.net'
+  - '+.thatcdn.com'
+  - '+.brffff.com'
+  
+#个人站点
+  - '+.eggtargaryen.com'
+  - '+.leiyanhui.com'
+  - '+.wuqianso.org'
+  - '+.270666.xyz'
+  - '+.25mao.com'
+  
 #代理VPN站点
   - '+.immersivetranslate.com'
   - xn--mes358aby2apfg.com
@@ -17,13 +30,6 @@ payload:
   - '+.iproyal.cn'
   - '+.isssre.cn'
   
-#个人站点
-  - '+.eggtargaryen.com'
-  - '+.leiyanhui.com'
-  - '+.wuqianso.org'
-  - '+.270666.xyz'
-  - '+.25mao.com'
-
 #ip质量检测
   - '+.iptrait.com'
   - '+.ip2location.com'
