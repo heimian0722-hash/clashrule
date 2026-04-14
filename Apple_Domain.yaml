@@ -1,139 +1,74 @@
 payload:
-# Google DeepMind
-    - '+.deepmind.com'
-    - '+.deepmind.google'
-
-# Google Generative Language API
-    - '+.geller-pa.googleapis.com'
-    - '+.generativelanguage.googleapis.com'
-    - '+.proactivebackend-pa.googleapis.com'
-    - '+.www.googleapis.com'
-    - '+.maps.googleapis.com'
-    - '+.fonts.googleapis.com'
-    - '+.jnn-pa.googleapis.com'
-    - '+.optimizationguide-pa.googleapis.com'
-    - '+.streetviewpixels-pa.googleapis.com'
-    - '+.content-autofill.googleapis.com'
-    - '+.robinfrontend-pa.googleapis.com'
-
-# Google CDN
-    - '+.www.gstatic.com'
-    - '+.fonts.gstatic.com'
-    - '+.ssl.gstatic.com'
-    - '+.maps.gstatic.com'
-    - '+.encrypted-tbn0.gstatic.com'
-    - '+.encrypted-tbn1.gstatic.com'
-    - '+.encrypted-tbn2.gstatic.com'
-    - '+.encrypted-tbn3.gstatic.com'
-
-# Google AI Studio
-    - '+.ai.google.dev'
-    - '+.alkalicore-pa.clients6.google.com'
-    - '+.alkalimakersuite-pa.clients6.google.com'
-    - '+.webchannel-alkalimakersuite-pa.clients6.google.com'
-    - '+.ogads-pa.clients6.google.com'
-    - '+.waa-pa.clients6.google.com'
-    - '+.makersuite.google.com'
-    - '+.apis.google.com'
-    - '+.aistudio.google.com'
-    - '+.bard.google.com'
-    - '+.lh3.google.com'
-    - '+.ogs.google.com'
-    - '+.play.google.com'       # 会干扰 Google Play Store ，但是必须加上， 谷歌会通过这个网址判断是否多IP访问，从而屏蔽或降智
-    - '+.www.google.com'        # 会干扰 Google Search ，但是必须加上， 谷歌会通过这个网址判断是否多IP访问，从而屏蔽或降智
-
-    - '+.generativeai.google'
+    - '+.cdn-apple.com'                                          # 
+    - '+.apple.com'                                              # 
+    - '+.icloud.com'                                             # 
+    - '+.itunes.com'                                             # 
+    - '+.apple'                                                  # 
+    - '+.icloud-content.com'                                     # 
+    - '+.apple-dns.net'                                          # 
+    - '+.mzstatic.com'                                           # 
+    - '+.apple-cloudkit.com'                                     # 
+    - '+.aaplimg.com'                                            # 
+    - '+.apple-mapkit.com'                                       # 
+    - '+.digicert.com'                                           # 
+    - '+.entrust.net'                                            # 
+    - '+.sectigo.com'                                            # 
+    - '+.me.com'                                                 # 
+    - '+.mac.com'                                                # 
+    - '+.apple-livephotoskit.com'                                # 
+    - '+.edgesuite.net'                                          # 
+    - '+.apple.co'                                               # 
 
 
-# Google Gemini
-    - '+.gemini.google'
-    - '+.gemini.google.com'
-# Gemini app firewall hosts
-    - '+.www.google-analytics.com'
-    - '+.static.doubleclick.net'
-    - '+.td.doubleclick.net'
-    - '+.lh5.googleusercontent.com'
-    - '+.lh3.googleusercontent.com'
-    - '+.csp.withgoogle.com'
-    - '+.www.googletagmanager.com'
-    - '+.googleads.g.doubleclick.net'
-    - '+.i.ytimg.com'
-    - '+.yt3.ggpht.com'
+    # --------------------------------------------------------------
+    # 用于 HTTPDNS定位，匹配选用哪个CDN 
+    # --------------------------------------------------------------
 
-    # 预防性
-    - '+.generativelanguage.*'
-    - '+.generativelanguage.*.*'
-    - '+.generativelanguage.*.*.*'
-    - '+.generativelanguage.*.*.*.*'
-    - '+.developerprofiles.*'
-    - '+.developerprofiles.*.*'
-    - '+.developerprofiles.*.*.*'
-    - '+.developerprofiles.*.*.*.*'
-    - '+.colab.*'
-    - '+.colab.*.*'
-    - '+.colab.*.*.*'
-    - '+.colab.*.*.*.*'
-
-    # 其他补充 （已手工检查）
-    - '+.signaler-pa.clients6.google.com'
-    - '+.mtalk.google.com'
-    - '+.accounts.google.com'
-    - '+.signaler-pa.googleapis.com'
-
-    - 'google.com'
-    
-    - '+.oauthaccountmanager.googleapis.com'
-    - '+.notifications-pa.googleapis.com'
-    - '+.oauth2.googleapis.com'
-    - '+.play.googleapis.com'
-
-# GrokAI
-    - '+.x.ai'
-    - '+.grok.com'
-    - '+.featureassets.org'                    
-    - '+.xai.chronosphere.io' 
-
-# AppleAI
-# 来源 ： https://support.apple.com/en-us/101555   
-# 搜索 ： Apple Intelligence, Siri, and Search
-
-    - '+.smoot.apple.com'                           # 搜索服务：Siri/Spotlight/Lookup/Safari/News/信息/音乐（TCP 443）
-    - 'guzzoni.apple.com'                           # Siri 与听写（TCP 443）
-    - 'gspe1-ssl.ls.apple.com'
-    - 'apple-relay.mask.apple-dns.net'
-    - 'apple-relay.fastly-edge.com'                 # Apple Intelligence Extensions（TCP/UDP 443）
-    - 'apple-relay.apple.com'                       # Private Cloud Compute（PCC）（TCP/UDP 443）
-    - 'apple-relay.cloudflare.com'                  # Private Cloud Compute（PCC）（TCP/UDP 443）
-    - 'cp4.cloudflare.com'                          # Private Cloud Compute（PCC）（TCP/UDP 443）
-   #- 'gateway.icloud.com'
-   #- 'gateway.fe2.apple-dns.net'
-   #- 'seed.siri.apple.com'
-   #- '+.v.aaplimg.com'
-   #- 'seed-siri-apple-com.v.aaplimg.com'
-   #- 'smoot-searchv2-aapse1c.v.aaplimg.com'
+    - '+.cdn-apple.com.*.*'                                      # 
+    - '+.apple.com.*.*'                                          # 
+    - '+.icloud.com.*.*'                                         # 
+    - '+.itunes.com.*.*'                                         # 
+    - '+.apple.*.*'                                              # 
+    - '+.icloud-content.com.*.*'                                 # 
+    - '+.apple-dns.net.*.*'                                      # 
+    - '+.mzstatic.com.*.*'                                       # 
+    - '+.apple-cloudkit.com.*.*'                                 # 
+    - '+.aaplimg.com.*.*'                                        # 
+    - '+.apple-mapkit.com.*.*'                                   # 
+    - '+.digicert.com.*.*'                                       # 
+    - '+.entrust.net.*.*'                                        # 
+    - '+.sectigo.com.*.*'                                        # 
+    - '+.me.com.*.*'                                             # 
+    - '+.mac.com.*.*'                                            # 
+    - '+.apple-livephotoskit.com.*.*'                            # 
+    - '+.edgesuite.net.*.*'                                      # 
+    - '+.apple.co.*.*'                                           # 
+                
+    - '+.cdn-apple.com.*.*.*'                                    # 
+    - '+.apple.com.*.*.*'                                        # 
+    - '+.icloud.com.*.*.*'                                       # 
+    - '+.itunes.com.*.*.*'                                       # 
+    - '+.apple.*.*.*'                                            # 
+    - '+.icloud-content.com.*.*.*'                               # 
+    - '+.apple-dns.net.*.*.*'                                    # 
+    - '+.mzstatic.com.*.*.*'                                     # 
+    - '+.apple-cloudkit.com.*.*.*'                               # 
+    - '+.aaplimg.com.*.*.*'                                      # 
+    - '+.apple-mapkit.com.*.*.*'                                 # 
+    - '+.digicert.com.*.*.*'                                     # 
+    - '+.entrust.net.*.*.*'                                      # 
+    - '+.sectigo.com.*.*.*'                                      # 
+    - '+.me.com.*.*.*'                                           # 
+    - '+.mac.com.*.*.*'                                          # 
+    - '+.apple-livephotoskit.com.*.*.*'                          # 
+    - '+.edgesuite.net.*.*.*'                                    # 
+    - '+.apple.co.*.*.*'                                         # 
 
 
-# —— 消费版 Copilot（Web）——
-    - 'copilot.microsoft.com'
-    - 'edge.microsoft.com'
-    - '+.ecs.office.com'                       # MicroSoft Designer 基础功能（非必要？）
-    - '+.designer.microsoft.com'               # MicroSoft Designer 基础功能
-    - '+.designerapp.osi.office.net'           # MicroSoft Designer 基础功能
-    - '+.designerapp.officeapps.live.com'      # MicroSoft Designer 基础功能
-    - 'www.bing.com'                           # MicroSoft Bing 基础功能         
-    - 'sydney.bing.com'                        # MicroSoft Bing 基础功能 
-    - 'edgeservices.bing.com'                  # MicroSoft Bing 基础功能 
-   #- 'r.bing.com'                             # MicroSoft Bing 基础功能
-    - 'www.bingapis.com'                       # MicroSoft Bing 基础功能
-    - '+.events.data.microsoft.com'
-    - '+.prod.do.dsp.mp.microsoft.com'
-    - 'access-point.cloudmessaging.edge.microsoft.com'
-    - 'browser.pipe.aria.microsoft.com'
-    - 'functional.events.data.microsoft.com'
-    - 'studiostaticassetsprod.azureedge.net'
+    # --------------------------------------------------------------
+    # 第三方
+    # --------------------------------------------------------------
 
-# —— M365 Copilot（企业/工作版）核心要求 ——（官方建议的统一域 + WSS）
-   #- '+.cloud.microsoft.com'            # SaaS 前端（允许 WSS / TCP/UDP 443）
-   #- '+.office.com'                     # 多处 Copilot 集成需要
-   #- '+.static.microsoft.com'           # 静态资源
-   #- '+.usercontent.microsoft.com '     # 隔离内容域
+    - 'apple-relay.fastly-edge.com'                              # Apple Intelligence Extensions（TCP/UDP 443）
+    - 'apple-relay.cloudflare.com'                               # Private Cloud Compute（PCC）（TCP/UDP 443）
+    - 'cp4.cloudflare.com'                                       # Private Cloud Compute（PCC）（TCP/UDP 443）
