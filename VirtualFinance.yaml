@@ -9,20 +9,6 @@ payload:
   - '+.ws-eu.pusher.com'
   - '+.wise.com'
 
-# 币安 
-  - '+.appsflyer.com'
-  - '+.binance.cloud'
-  - '+.binance.com'
-  - '+.binance.me'
-  - '+.binancecnt.com'
-  - '+.binancefuture.com'
-  - '+.bnappzh.co'
-  - '+.bnbstatic.com'
-  - '+.bnbzh.ac'
-  - '+.bntrace.com'
-  - '+.saasexch.cc'
-  - '+.saasexch.com'
-    
 # paypal 单独处理
 #    - '+.paypal.com
 #    - '+.paypalobjects.com
