@@ -2,12 +2,12 @@
 #包含： Wise, Monzo, Revolut，Paypal
 #https://github.com/Accademia/Additional_Rule_For_Clash/tree/main/VirtualFinance
 payload:
-    - '+.revolut.com'
-    - '+.aqueduct.revolutlabs.com'
-    - '+.monzo.com'
-    - '+.monzo.statuspage.io'
-    - '+.ws-eu.pusher.com'
-    - '+.wise.com'
+  - '+.revolut.com'
+  - '+.aqueduct.revolutlabs.com'
+  - '+.monzo.com'
+  - '+.monzo.statuspage.io'
+  - '+.ws-eu.pusher.com'
+  - '+.wise.com'
     
 # paypal 单独处理
 #    - '+.paypal.com
