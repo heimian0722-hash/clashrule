@@ -15,6 +15,7 @@ payload:
   - '+.ylimg.com'
   - '+.jvdd2r.top'
   - '+.bbrcloud.com'
+  - '+.yumehinata.com'
 
   # --- 1. 绝对核心：穿透与 DDNS (走代理必挂) ---
   - '+.zerotier.com'
