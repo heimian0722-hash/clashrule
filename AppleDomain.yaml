@@ -13,7 +13,6 @@ payload:
   # === Apple 核心基础设施 (域名去重) ===
   - '+.apple.com'
   - '+.apple.co'
-  - '+.apple'
   - '+.icloud.com'
   - '+.icloud-content.com'
   - '+.me.com'
@@ -34,12 +33,3 @@ payload:
   - '+.digicert.com'
   - '+.entrust.net'
   - '+.sectigo.com'
-
-  # === 针对 HTTPDNS 的预防性通配符 (简化版) ===
-  # 提示：大多数代理客户端中 +.example.com 已经包含多级子域名
-  # 这里保留你原有的多级逻辑，但进行了精简以减少配置冗余
-  - '+.apple.com.*'
-  - '+.icloud.com.*'
-  - '+.apple.*'
-  - '+.itunes.com.*'
-  - '+.mzstatic.com.*'
