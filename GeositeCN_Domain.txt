@@ -820,6 +820,7 @@ build9s.io
 bvfcdn.com
 bx0byte.com
 bx1k.com
+by.Missing_Love.start
 byd.com
 byodonline.com
 bystack.com
@@ -955,6 +956,7 @@ bytexservice.com
 bzclk.baidu.com
 c.mi.com
 c.uaa.iqiyi.com
+c20.radioboss.fm
 cache4ever.com
 cache666.com
 c-adash.m.taobao.com
@@ -1068,6 +1070,7 @@ cecport.com
 centanet.com
 centuryenglish.com
 cerambath.org
+cf-cdn-ns.work
 cf-china.info
 cf-ns.com
 cf-ns.net
@@ -1270,6 +1273,7 @@ cmf.ltd
 cmfchina.com
 cmpassport.com
 cn
+cn.bing.com
 cnb.cool
 cnbksy.com
 cnblogs.com
@@ -1362,6 +1366,8 @@ ctsec.com
 cubead.com
 cuniq.com
 cupid.iqiyi.com
+cursor.com
+cursor.sh
 cxbiji.com
 cyagen.com
 cyol.com
@@ -1477,6 +1483,7 @@ djdjapp.com
 dji.com
 dji.ink
 djicdn.com
+dl.google.com
 dlnel.com
 dlnel.org
 dlswbr.baidu.com
@@ -1564,6 +1571,9 @@ douyu.tv
 douyuscdn.com
 douyutv.com
 downcc.com
+download.fedoraproject.org
+download.jetbrains.com
+downloads.marketplace.jetbrains.com
 downxia.com
 downyi.com
 dpfile.com
@@ -1930,6 +1940,7 @@ gfund.com
 ggkuai.com
 ggoplay.com
 ggowan.com
+ghproxy.net
 ghxi.com
 gia.jd.com
 gifshow.com
@@ -2056,6 +2067,7 @@ hbooker.com
 hc-cdn.com
 hc-sre.com
 hczq.com
+hdatmos.club
 hdslb.com
 hdslb.org
 hdyxgame.com
@@ -2625,6 +2637,8 @@ kaifubiao.com
 kaipuyun.com
 kaipuyun.net
 kaixin001.com
+kame.gay
+kamept.com
 kanbox.com
 kanimg.com
 kankanews.com
@@ -2658,6 +2672,7 @@ kingsoft-office-service.com
 kiyuu.club
 kjwugx.com
 kk1.vip
+kkgithub.com
 kkmh.com
 kksmg.com
 kkzj.com
@@ -2672,6 +2687,8 @@ koubei.com
 kouclo.com
 koudai.com
 koudai8.com
+kp.m-team.cc
+kp.m-team.io
 kq7.com
 ksapisrv.com
 ks-cdn.com
@@ -2796,6 +2813,7 @@ leikeji.com
 leiniao.com
 leiphone.com
 leiting.com
+leiyanhui.com
 leju.com
 lemall.com
 lenauth.com
@@ -2841,6 +2859,7 @@ linliyz.com
 linsn.com
 linuxidc.com
 liqucn.com
+listen.729ly.net
 liulanqi.net
 liulishuo.com
 liuxing.com
@@ -2906,6 +2925,7 @@ lxjiasu.com
 lxway.com
 lxzjjt.com
 ly.com
+ly729.out.airtime.pro
 lydaas.com
 lydaas.net
 lydass.net
@@ -3023,6 +3043,7 @@ minitiao.com
 mipay.com
 mipcache.bdstatic.com
 mipcdn.com
+mirror.ghproxy.com
 mirrors.yun-idc.com
 misc.in.duokanbox.com
 missjia.net
@@ -3064,6 +3085,7 @@ moseeker.com
 moulem.com
 mountain.zhidao.baidu.com
 moyubuluo.com
+mozilla.org
 mpush.qq.com
 msanjia.com
 mscbsc.com
@@ -3158,6 +3180,7 @@ nic.xin
 nicaifu.com
 nihaoafrica.org
 ningtingche.com
+nixos.wiki
 nlark.com
 nmrdata.com
 nnthink.com
@@ -3352,6 +3375,7 @@ pkoplink.com
 pkulaw.com
 pl.youku.com
 p-log.ykimg.com
+plugins.jetbrains.com
 pmphmooc.com
 pn1waq.com
 podcast.xyz
@@ -3377,7 +3401,11 @@ prestodb-china.com
 privateapi.xyz
 psbc.com
 pstatp.com
+pt.btschool.club
+pt.hdupt.com
+pt.upxin.net
 puata.info
+pub.dev
 pubghelper.com
 pubyun.com
 puddingcat.top
@@ -3564,6 +3592,7 @@ ruiwen.com
 rumt-zh.com
 runoob.com
 rwkv.com
+s.cn.bing.net
 saasops.tech
 saayaa.com
 s-adashx.ut.youku.com
@@ -3587,6 +3616,7 @@ scm121.com
 scoregg.com
 sdgdwljt.com
 sdo.com
+search.nixos.org
 searchstatic.com
 searchtoutiaolive.com
 secec.com
@@ -3758,6 +3788,10 @@ sto-express.com
 stointl.com
 stosolution.com
 study.163.com
+stun.fitauto.ru
+stun.hot-chilli.net
+stun.miwifi.com
+stun.syncthing.net
 suanya.com
 sui.com
 sumkoo.com
@@ -3790,6 +3824,8 @@ szhk.com
 sz-jlc.com
 szlcsc.com
 szzfgjj.com
+t.hdhome.org
+t.pthome.net
 t00ls.net
 t1tms.com
 t8tms.com
@@ -3824,6 +3860,7 @@ tapimg.net
 taptap.com
 taptap.io
 taptapdada.com
+tarballs.nixos.org-del
 tbcache.com
 tcbox.baidu.com
 tcdlive.com
@@ -3937,6 +3974,7 @@ tendis.net
 tenpay.com
 tenxcloud.com
 test-cignacmb.com
+test-ipv6.com
 testwaf.com
 tetrisone.com
 texasholdemcup.com
@@ -4053,6 +4091,12 @@ tpyzq.com
 trace.qq.com
 track.sohu.com
 tracker.ai.xiaomi.com
+tracker.hdarea.club
+tracker.hdsky.me
+tracker.m-team.cc
+tracker.m-team.io
+tracker.pterclub.com
+tracker.wintersakura.net
 tracking.miui.com
 tracup.com
 trae.guru
@@ -4175,6 +4219,8 @@ v6-adashx.ut.cainiao.com
 v6-adashx.ut.ele.me
 v6-adashx.ut.taobao.com
 v6-adashx.ut.youku.com
+v6tracker.m-team.cc
+v6tracker.m-team.io
 value500.com
 vamaker.com
 vancl.com
@@ -4231,6 +4277,7 @@ vipstatic.com
 vivo.com
 vmall.com
 vmallres.com
+vmware.com
 vobao.com
 vodtcbk.com
 volcadocean.com
@@ -4449,6 +4496,7 @@ wuming.com
 wuuxiang.com
 wuyou.net
 www.libvideo.com
+www.pttime.org
 wxcloudrun.com
 wxgateway.com
 wxlivecdn.com
