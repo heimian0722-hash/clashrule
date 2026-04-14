@@ -24,7 +24,7 @@ payload:
   - '+.signaler-pa.clients6.google.com'
   
   # Google Infrastructure (防止降智与身份校验)
-  - 'google.com'
+  - '+.google.com'
   - '+.www.google.com'
   - '+.play.google.com'
   - '+.apis.google.com'
@@ -42,26 +42,21 @@ payload:
 
   # === Apple Intelligence (Siri/PCC) ===
   - '+.smoot.apple.com'
-  - 'guzzoni.apple.com'
-  - 'gspe1-ssl.ls.apple.com'
-  - 'apple-relay.apple.com'
-  - 'apple-relay.mask.apple-dns.net'
-  - 'apple-relay.cloudflare.com'
-  - 'apple-relay.fastly-edge.com'
-  - 'cp4.cloudflare.com'
+  - '+.guzzoni.apple.com'
+  - '+.gspe1-ssl.ls.apple.com'
+  - '+.apple-relay.apple.com'
+  - '+.apple-relay.mask.apple-dns.net'
+  - '+.apple-relay.cloudflare.com'
+  - '+.apple-relay.fastly-edge.com'
+  - '+.cp4.cloudflare.com'
 
   # === Microsoft Copilot & Bing AI ===
-  - 'copilot.microsoft.com'
-  - 'sydney.bing.com'
-  - 'www.bing.com'
-  - 'www.bingapis.com'
-  - 'edgeservices.bing.com'
-  - 'edge.microsoft.com'
+  - '+.copilot.microsoft.com'
+  - '+.sydney.bing.com'
+  - '+.www.bing.com'
+  - '+.www.bingapis.com'
+  - '+.edgeservices.bing.com'
+  - '+.edge.microsoft.com'
   - '+.designer.microsoft.com'
   - '+.designerapp.officeapps.live.com'
-  - 'studiostaticassetsprod.azureedge.net'
-  
-  # === 预防性通配符 (高级用户备用) ===
-  - '+.generativelanguage.*'
-  - '+.developerprofiles.*'
-  - '+.colab.*'
+  - '+.studiostaticassetsprod.azureedge.net'
