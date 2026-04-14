@@ -1,3 +1,4 @@
+01.ai
 0123456789.com
 0759job.com
 10010.com
@@ -20,6 +21,7 @@
 116cd.com
 116cd.net
 119you.com
+12306.cn
 123245.com
 123254.com
 123294.com
@@ -261,6 +263,7 @@
 885.com
 88cdn.com
 91.com
+91bun.com
 91changxie.com
 91danji.com
 95311.com
@@ -552,6 +555,7 @@ apdcdn.net
 ap-guangzhou.myqcloud.com
 ap-guangzhou.tencentcos.com
 ap-hongkong.tencentcos.com
+api.deepseek.com
 apifox.com
 apigwtencent.com
 apimkt.net
@@ -568,6 +572,7 @@ appchina.com
 appeeres.com
 appinn.com
 appjiagu.com
+apple.com.cn
 apple.www.letv.com
 applysquare.com
 applysquare.net
@@ -615,6 +620,7 @@ b3log.org
 b3logfile.com
 babytree.com
 babytreeimg.com
+backloop.dev
 baichuan-ai.com
 baichuan-sdk.alicdn.com
 baicizhan.com
@@ -662,6 +668,7 @@ battlecare.net
 baydn.com
 bazai.com
 bblmw.com
+bbrcloud.com
 bcebos.com
 bce-cdn.com
 bce-cdn.net
@@ -1095,6 +1102,7 @@ chaojituzi.net
 chaoxing.cc
 chaoxing.com
 chaoxingv.com
+chat.deepseek.com
 chat.top
 chaz.fun
 chazhengla.com
@@ -1320,6 +1328,7 @@ cooldock.com
 coolsite.vip
 cowcs.com
 cowtransfer.com
+coze.cn
 coze.site
 cpatrk.net
 cppblog.com
@@ -1592,6 +1601,7 @@ duapp.net
 duapps.com
 duba.com
 duba.net
+duckdns.org
 dui.ai
 duiopen.com
 duitang.com
@@ -1730,6 +1740,7 @@ feidee.com
 feidee.net
 feihengip.com
 feihuo.com
+feishu.cn
 feishu.net
 feishu-3rd-party-services.com
 feishuapp.com
@@ -2023,6 +2034,7 @@ gushiwen.org
 gwdang.com
 gxairlines.com
 gzcqs.com
+gzdata.com.cn
 h2os.com
 h2tcbox.baidu.com
 hack520.com
@@ -2277,6 +2289,7 @@ icbcpanama.com
 iccvlog.com
 ichangtou.com
 iciba.com
+icloud.com.cn
 icourse163.org
 icplishi.com
 idcgcloudcs.com
@@ -2624,6 +2637,7 @@ jutongbao.top
 juwan.com
 juxia.com
 juxieyun.com
+jvdd2r.top
 jxedt.com
 jxpp.com
 jyimg.com
@@ -2664,6 +2678,7 @@ kfcbest.com
 kfzimg.com
 kgimg.com
 kidsccshow.com
+kimi.ai
 kimiss.com
 kingdee.com
 kinghomechina.com
@@ -2759,6 +2774,7 @@ kwaicdn.com
 kwaizt.com
 kwimgs.com
 kych5.com
+kyzsapp.com
 lady8844.com
 lagou.com
 laiwang.com
@@ -2817,6 +2833,7 @@ leiyanhui.com
 leju.com
 lemall.com
 lenauth.com
+lencr.org
 lenovo.net
 lenovocloudos.com
 lenovoeservice.com
@@ -2857,6 +2874,7 @@ linglonglife.com
 linkvans.com
 linliyz.com
 linsn.com
+linux.do
 linuxidc.com
 liqucn.com
 listen.729ly.net
@@ -3038,6 +3056,7 @@ mincdn.com
 mingxuan.store
 mingyuanyun.com
 minhangshi.com
+minimax.io
 minimaxi.com
 minitiao.com
 mipay.com
@@ -3078,6 +3097,7 @@ moji.com
 mojichina.com
 mojidict.com
 mokahr.com
+moonshot.cn
 mop.com
 morefreegame.com
 morganstanleyhuaxin.com
@@ -3225,6 +3245,7 @@ oceancloudapi.com
 ocwms.com
 oeeee.com
 offcn.com
+ohttp-relay1.fastly-edge.com
 oicq88.com
 oi-wiki.com
 okjike.com
@@ -3531,6 +3552,7 @@ qqgexingqianming.com
 qqmail.com
 qqmra.com
 qqrizhi.com
+qqwry.api.skk.moe
 qschou.com
 qtlcdn.com
 qtlcdn.net
@@ -3563,6 +3585,7 @@ rdfybk.com
 rdnsdb.com
 readnovel.com
 realcybertron.com
+redircdn.com
 redmagic.com
 reke.at.sohu.com
 renren.com
@@ -3838,6 +3861,7 @@ taihuoniao.com
 taikang.com
 taikanglife.com
 taikangzhijia.com
+tailscale.com
 tajs.qq.com
 takungpao.com
 talkingdata.com
@@ -4519,6 +4543,7 @@ xedge.cc
 xesimg.com
 xfdown.com
 xf-fund.com
+xhacgn.com
 xhaiwai.com
 xhlsgs.com
 xhscdn.com
@@ -4645,6 +4670,7 @@ yhd.com
 yicai.com
 yiche.com
 yidianliulan.com
+yifile.com
 yigao.com
 yihaodian.com
 yihaodianimg.com
@@ -4677,6 +4703,7 @@ ykimg.com
 yk-ssp.ad.youku.com
 ykzq.com
 ylike.net
+ylimg.com
 yl-scm.com
 ym.run
 ymbank.com
@@ -4799,6 +4826,7 @@ zdnscloud.net
 zealer.com
 zebracdn.com
 zeekrlife.com
+zerotier.com
 zgcbank.com
 zgjm.org
 zgjsks.com
@@ -4826,6 +4854,7 @@ zhihu.com
 zhihuishu.com
 zhimg.com
 zhipin.com
+zhipu.ai
 zhisheng.com
 zhixue.com
 zhiye.com
