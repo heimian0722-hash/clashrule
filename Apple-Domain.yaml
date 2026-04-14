@@ -1,35 +1,36 @@
 payload:
-  # === Apple Intelligence & Private Cloud Compute (PCC) ===
-  # 核心 AI 转发与隐私计算，建议务必置于代理
-  - '+.smoot.apple.com'
-  - '+.guzzoni.apple.com'
-  - '+.gspe1-ssl.ls.apple.com'
-  - '+.apple-relay.apple.com'
-  - '+.apple-relay.mask.apple-dns.net'
-  - '+.apple-relay.fastly-edge.com'
-  - '+.apple-relay.cloudflare.com'
-  - '+.cp4.cloudflare.com'
-
-  # === Apple 核心基础设施 (域名去重) ===
+  # === Apple 基础服务 (iCloud, App Store, Maps) ===
   - '+.apple.com'
-  - '+.apple.co'
   - '+.icloud.com'
+  - '+.itunes.com'
+  - '+.apple'
+  - '+.cdn-apple.com'
   - '+.icloud-content.com'
+  - '+.apple-dns.net'
+  - '+.mzstatic.com'
+  - '+.apple-cloudkit.com'
+  - '+.aaplimg.com'
+  - '+.apple-mapkit.com'
   - '+.me.com'
   - '+.mac.com'
-  - '+.itunes.com'
-  - '+.mzstatic.com'
-  - '+.aaplimg.com'
-  - '+.apple-dns.net'
-
-  # === 开发者与特定服务 (CloudKit, MapKit 等) ===
-  - '+.apple-cloudkit.com'
-  - '+.apple-mapkit.com'
+  - '+.apple.co'
   - '+.apple-livephotoskit.com'
-  - '+.cdn-apple.com'
   - '+.edgesuite.net'
 
-  # === 安全校验与证书 (预防性) ===
+  # === 证书与安全 (必加，否则连接可能中断) ===
   - '+.digicert.com'
   - '+.entrust.net'
   - '+.sectigo.com'
+
+  # === Apple Intelligence & PCC (关键第三方组) ===
+  # 注意：这些必须精准，不要加 +. 以免范围过大
+  - 'apple-relay.fastly-edge.com'
+  - 'apple-relay.cloudflare.com'
+  - 'apple-relay.apple.com'
+  - 'apple-relay.mask.apple-dns.net'
+  - 'cp4.cloudflare.com'
+
+  # === 针对 Siri 与 语音服务 ===
+  - '+.guzzoni.apple.com'
+  - '+.smoot.apple.com'
+  - '+.gspe1-ssl.ls.apple.com'
