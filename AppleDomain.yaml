@@ -2,16 +2,15 @@ payload:
   # === Apple Intelligence & Private Cloud Compute (PCC) ===
   # 核心 AI 转发与隐私计算，建议务必置于代理
   - '+.smoot.apple.com'
-  - 'guzzoni.apple.com'
-  - 'gspe1-ssl.ls.apple.com'
-  - 'apple-relay.apple.com'
-  - 'apple-relay.mask.apple-dns.net'
-  - 'apple-relay.fastly-edge.com'
-  - 'apple-relay.cloudflare.com'
-  - 'cp4.cloudflare.com'
+  - '+.guzzoni.apple.com'
+  - '+.gspe1-ssl.ls.apple.com'
+  - '+.apple-relay.apple.com'
+  - '+.apple-relay.mask.apple-dns.net'
+  - '+.apple-relay.fastly-edge.com'
+  - '+.apple-relay.cloudflare.com'
+  - '+.cp4.cloudflare.com'
 
   # === Apple 核心基础设施 (域名去重) ===
-  - 'apple.com'
   - '+.apple.com'
   - '+.apple.co'
   - '+.apple'
