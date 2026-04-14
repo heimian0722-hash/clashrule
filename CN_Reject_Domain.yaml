@@ -1,7 +1,6 @@
 payload:
 #个人屏蔽站点
   - '+.mousegesturesapi.com'
-  - '+.2k5u.ru'
 
 
 # --- 国家级联网监控与反诈 ---
