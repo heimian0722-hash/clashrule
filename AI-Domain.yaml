@@ -9,6 +9,8 @@ payload:
   - '+.generativeai.google'
   - '+.deepmind.com'
   - '+.deepmind.google'
+  - '+.notebooklm.google'
+  - '+.notebooklm.google.com'
   
   # Google API & Backend (AI 核心支持)
   - '+.generativelanguage.googleapis.com'
@@ -22,8 +24,11 @@ payload:
   - '+.alkalimakersuite-pa.clients6.google.com'
   - '+.webchannel-alkalimakersuite-pa.clients6.google.com'
   - '+.signaler-pa.clients6.google.com'
+  - '+.clients6.google.com'
+  - '+.static.gadgets.ext.google.com'
   
-  # Google Infrastructure (防止降智与身份校验)
+  # Google Infrastructure (身份校验与防降智核心)
+  # 注意：保留此部分意味着几乎所有 Google 流量将进入 AI 策略组
   - '+.google.com'
   - '+.www.google.com'
   - '+.play.google.com'
@@ -33,7 +38,21 @@ payload:
   - '+.gstatic.com'
   - '+.googleusercontent.com'
   - '+.google-analytics.com'
+  - '+.googlevideo.com'
+  - '+.googleapis.com'
   
+  # === OpenAI (ChatGPT) ===
+  - '+.openai.com'
+  - '+.chatgpt.com'
+  - '+.oaistatic.com'
+  - '+.oaiusercontent.com'
+  - '+.chatgpt.live.com'
+  - '+.stripe.com'
+
+  # === Anthropic (Claude) ===
+  - '+.anthropic.com'
+  - '+.claude.ai'
+
   # === xAI (Grok) ===
   - '+.x.ai'
   - '+.grok.com'
@@ -49,14 +68,24 @@ payload:
   - '+.apple-relay.cloudflare.com'
   - '+.apple-relay.fastly-edge.com'
   - '+.cp4.cloudflare.com'
+  - '+.apple-id.apple.com'
+  - '+.icloud.com'
 
   # === Microsoft Copilot & Bing AI ===
   - '+.copilot.microsoft.com'
   - '+.sydney.bing.com'
   - '+.www.bing.com'
+  - '+.bing.com'
   - '+.www.bingapis.com'
   - '+.edgeservices.bing.com'
   - '+.edge.microsoft.com'
   - '+.designer.microsoft.com'
   - '+.designerapp.officeapps.live.com'
   - '+.studiostaticassetsprod.azureedge.net'
+  - '+.msecnd.net'
+
+  # === 其他主流 AI 平台 ===
+  - '+.perplexity.ai'
+  - '+.deepseek.com'
+  - '+.mistral.ai'
+  - '+.cohere.com'
