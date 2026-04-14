@@ -1,15 +1,8 @@
 payload:
-# Binance (币安)
-  - '+.appsflyer.com'
-  - '+.binance.cloud'
+  # Binance (币安)
   - '+.binance.com'
   - '+.binance.me'
-  - '+.binancecnt.com'
-  - '+.binancefuture.com'
-  - '+.bnappzh.co'
-  - '+.bnbstatic.com'
-  - '+.bnbzh.ac'
-  - '+.bntrace.com'
+  - '+.binance.cloud'
   - '+.binance.charity'
   - '+.binance.co'
   - '+.binance.info'
@@ -17,6 +10,8 @@ payload:
   - '+.binance.org'
   - '+.binance.us'
   - '+.binanceapi.com'
+  - '+.binancecnt.com'
+  - '+.binancefuture.com'
   - '+.binancezh.be'
   - '+.binancezh.biz'
   - '+.binancezh.cc'
@@ -32,12 +27,16 @@ payload:
   - '+.binancezh.pro'
   - '+.binancezh.sh'
   - '+.binancezh.top'
+  - '+.bnappzh.co'
+  - '+.bnbstatic.com'
+  - '+.bnbzh.ac'
+  - '+.bntrace.com'
 
-# Bybit
+  # Bybit
+  - '+.bybit.com'
   - '+.bybit.biz'
   - '+.bybit.cc'
   - '+.bybit.cloud'
-  - '+.bybit.com'
   - '+.bybit.info'
   - '+.bybit.io'
   - '+.bybit.net'
@@ -55,28 +54,38 @@ payload:
   - '+.bybituk.com'
   - '+.bytick.com'
 
-# Bitget
-  - '+.bgstatic.com'
-  - '+.bgstatic.vip'
-  - '+.bgwallet.com'
+  # Bitget
   - '+.bitget.com'
   - '+.bitget.tv'
   - '+.bitgetapi.com'
   - '+.bitgetapps.com'
   - '+.bitgetcc.com'
   - '+.bitgetimg.com'
+  - '+.bgstatic.com'
+  - '+.bgstatic.vip'
+  - '+.bgwallet.com'
 
-# OKX (欧易)
+  # OKX (欧易)
+  - '+.okx.com'
   - '+.okex.com'
   - '+.oklink.com'
-  - '+.okx.com'
   - '+.okx-dns.com'
   - '+.okx-dns1.com'
   - '+.okx-dns2.com'
 
-# 其他相关及公用服务
+  # Gate.io (芝麻开门)
+  - '+.gate.io'
+  - '+.gateio.live'
+  - '+.gateio.pro'
+  - '+.gateio.services'
+
+  # 行情、数据及公用服务
+  - '+.appsflyer.com'
   - '+.saasexch.cc'
   - '+.saasexch.com'
   - '+.tradingview.com'
   - '+.coinmarketcap.com'
   - '+.coingecko.com'
+  - '+.etherscan.io'
+  - '+.bscscan.com'
+  - '+.tronscan.org'
