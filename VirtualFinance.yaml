@@ -1,15 +1,15 @@
 #用于 全球主流的“虚拟银行”+“移动支付” 进行分流
-#包含：Paypal, Wise, Monzo, Revolut
+#包含： Wise, Monzo, Revolut，Paypal
 #https://github.com/Accademia/Additional_Rule_For_Clash/tree/main/VirtualFinance
 payload:
-
+    - '+.revolut.com'
+    - '+.aqueduct.revolutlabs.com'
+    - '+.monzo.com'
+    - '+.monzo.statuspage.io'
+    - '+.ws-eu.pusher.com'
+    - '+.wise.com'
+    
 # paypal 单独处理
 #    - '+.paypal.com
 #    - '+.paypalobjects.com
 
-    - '+.revolut.com 
-    - '+.aqueduct.revolutlabs.com  
-    - '+.monzo.com 
-    - '+.monzo.statuspage.io
-    - '+.ws-eu.pusher.com
-    - '+.wise.com
