@@ -1,91 +1,50 @@
 payload:
-  # === Google Gemini & AI Ecosystem ===
+  # === Google AI (Gemini & Ecosystem) ===
   - '+.gemini.google'
-  - '+.gemini.google.com'
   - '+.bard.google.com'
   - '+.aistudio.google.com'
-  - '+.makersuite.google.com'
   - '+.ai.google.dev'
-  - '+.generativeai.google'
   - '+.deepmind.com'
   - '+.deepmind.google'
   - '+.notebooklm.google'
   - '+.notebooklm.google.com'
-  
-  # Google API & Backend (AI 核心支持)
   - '+.generativelanguage.googleapis.com'
-  - '+.geller-pa.googleapis.com'
   - '+.proactivebackend-pa.googleapis.com'
-  - '+.jnn-pa.googleapis.com'
-  - '+.optimizationguide-pa.googleapis.com'
-  - '+.robinfrontend-pa.googleapis.com'
-  - '+.signaler-pa.googleapis.com'
-  - '+.alkalicore-pa.clients6.google.com'
-  - '+.alkalimakersuite-pa.clients6.google.com'
-  - '+.webchannel-alkalimakersuite-pa.clients6.google.com'
-  - '+.signaler-pa.clients6.google.com'
-  - '+.clients6.google.com'
-  - '+.static.gadgets.ext.google.com'
-  
-  # Google Infrastructure (身份校验与防降智核心)
-  # 注意：保留此部分意味着几乎所有 Google 流量将进入 AI 策略组
-  - '+.google.com'
-  - '+.www.google.com'
-  - '+.play.google.com'
-  - '+.apis.google.com'
-  - '+.ogs.google.com'
-  - '+.accounts.google.com'
-  - '+.gstatic.com'
-  - '+.googleusercontent.com'
-  - '+.google-analytics.com'
-  - '+.googlevideo.com'
-  - '+.googleapis.com'
-  
+  - '+.googleapis.cn' # 补强：针对国内环境的 API 修正
+
   # === OpenAI (ChatGPT) ===
   - '+.openai.com'
   - '+.chatgpt.com'
   - '+.oaistatic.com'
   - '+.oaiusercontent.com'
-  - '+.chatgpt.live.com'
-  - '+.stripe.com'
-
-  # === Anthropic (Claude) ===
-  - '+.anthropic.com'
-  - '+.claude.ai'
-
-  # === xAI (Grok) ===
-  - '+.x.ai'
-  - '+.grok.com'
-  - '+.featureassets.org'
-  - '+.xai.chronosphere.io'
+  - '+.identit.as'     # 补强：防降智校验
+  - '+.stripe.com'     # 支付订阅所需
 
   # === Apple Intelligence (Siri/PCC) ===
   - '+.smoot.apple.com'
   - '+.guzzoni.apple.com'
-  - '+.gspe1-ssl.ls.apple.com'
   - '+.apple-relay.apple.com'
   - '+.apple-relay.mask.apple-dns.net'
   - '+.apple-relay.cloudflare.com'
   - '+.apple-relay.fastly-edge.com'
   - '+.cp4.cloudflare.com'
-  - '+.apple-id.apple.com'
-  - '+.icloud.com'
+  - '+.cognito.apple.com'   # 补强：AI 身份令牌
+  - '+.apple-cloudkit.com'  # 补强：AI 协作数据同步
+
+  # === Anthropic (Claude) & xAI (Grok) ===
+  - '+.anthropic.com'
+  - '+.claude.ai'
+  - '+.x.ai'
+  - '+.grok.com'
 
   # === Microsoft Copilot & Bing AI ===
   - '+.copilot.microsoft.com'
   - '+.sydney.bing.com'
   - '+.www.bing.com'
   - '+.bing.com'
-  - '+.www.bingapis.com'
-  - '+.edgeservices.bing.com'
-  - '+.edge.microsoft.com'
   - '+.designer.microsoft.com'
-  - '+.designerapp.officeapps.live.com'
-  - '+.studiostaticassetsprod.azureedge.net'
-  - '+.msecnd.net'
 
   # === 其他主流 AI 平台 ===
   - '+.perplexity.ai'
   - '+.deepseek.com'
   - '+.mistral.ai'
-  - '+.cohere.com'
