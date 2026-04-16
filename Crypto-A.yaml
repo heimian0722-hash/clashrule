@@ -1,37 +1,34 @@
 #  B 组：美国IP固定
 payload:
-  # --- [1] Coinbase 开发者与 CDP 平台 ---
-  # 2026年 Coinbase 将大量 API 迁移到了 CDP (Coinbase Developer Platform)
+  # --- Coinbase 核心与支付网关 ---
   - '+.coinbase.com'
   - '+.coinbasecloud.net'
   - '+.coinbasecloud.dev'
-  - '+.coinbase.com.cdn.cloudflare.net'
-  - '+.commerce.coinbase.com'   # Coinbase 支付网关
-  - '+.help.coinbase.com'       # 帮助中心（有时会被防火墙拦截）
+  - '+.coinbasewallet.com'
+  - '+.commerce.coinbase.com'
+  - '+.help.coinbase.com'
+  - '+.static-assets.coinbase.com'
+  - '+.onramp.wallet.coinbase.com'
+  - '+.chain-proxy.wallet.coinbase.com'
 
-  # --- [2] Base 生态 (Coinbase 的 L2 重点) ---
-  # 既然走 Coinbase 体系，Base 链的 RPC 和官网必须走美国节点
+  # --- Base 生态 (Coinbase L2) ---
   - '+.base.org'
-  - '+.basescan.org'            # Base 链浏览器
-  - '+.mainnet.base.org'        # 官方 RPC 节点
-  - '+.bridge.base.org'         # 官方跨链桥
+  - '+.basescan.org'
+  - '+.mainnet.base.org'
+  - '+.bridge.base.org'
 
-  # --- [3] Kraken (海妖) 深度补全 ---
-  # 补充其期货与行情专业版域名
+  # --- Kraken (海妖) & Gemini ---
   - '+.kraken.com'
   - '+.api.kraken.com'
-  - '+.futures.kraken.com'      # 期货平台
+  - '+.futures.kraken.com'
   - '+.kraken-assets.com'
-  - '+.cryptowat.ch'            # Kraken 旗下核心行情
-
-  # --- [4] Gemini (交易所版) ---
+  - '+.cryptowat.ch'
   - '+.gemini.com'
   - '+.api.gemini.com'
-  - '+.gemini.static'
 
-  # --- [5] 基础设施与合规支付 ---
-  # 很多美系交易所调用的身份验证或支付网关
-  - '+.circle.com'              # USDC 发行方官网
+  # --- 美系合规与银行绑定服务 (关键补充) ---
+  - '+.circle.com'      # USDC 相关
   - '+.usdc.com'
-  - '+.plaid.com'               # 关键：美系交易所绑定银行卡最常用的身份验证服务
-  - '+.trustly.com'             # 另一种常用的银行转账网关
+  - '+.plaid.com'       # 银行卡 ACH 绑定必备
+  - '+.trustly.com'     # 支付网关
+  - '+.cb.id'           # Coinbase 域名服务
