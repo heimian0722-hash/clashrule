@@ -7,32 +7,42 @@ payload:
   - DOMAIN-SUFFIX,entitlement.apple.com
   - DOMAIN-SUFFIX,ess.apple.com
 
-  # --- 2. AT&T / Red Pocket 专项强化 ---
+  # --- 2. AT&T / Red Pocket 专项强化 (含 0.ecom.attccc.com 修复) ---
   - DOMAIN-SUFFIX,att.com
   - DOMAIN-SUFFIX,att.net
   - DOMAIN-SUFFIX,mobile.att.net
   - DOMAIN-SUFFIX,att-idns.net
+  - DOMAIN-SUFFIX,attccc.com
+  - DOMAIN,0.ecom.attccc.com
   - DOMAIN,epdg.epc.att.net
   - DOMAIN,attdashboard.wireless.att.com
+  - DOMAIN,idp.wireless.att.com
+  - DOMAIN,odc.wireless.att.com
   - DOMAIN-SUFFIX,it.att.com
   - DOMAIN,okta.attexperience.edu
 
-  # --- 3. T-Mobile / Google Fi 专项 ---
+  # --- 3. T-Mobile / Tello / Google Fi 专项 ---
   - DOMAIN-SUFFIX,t-mobile.com
+  - DOMAIN-SUFFIX,t-mo.co
+  - DOMAIN-SUFFIX,tmomail.net
   - DOMAIN-SUFFIX,g-tun.com
+  - DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+  - DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 
   # --- 4. VoIP 与 第三方通讯工具 ---
   - DOMAIN-SUFFIX,tktn.be
   - DOMAIN-SUFFIX,talkatone.com
   - DOMAIN-SUFFIX,textnow.com
 
-  # --- 5. CDN 与 访问权限修复 (解决 Access Denied / 403 报错) ---
+  # --- 5. CDN 与 权限修复 (解决 Access Denied / 403 报错) ---
   - DOMAIN-SUFFIX,edgesuite.net
   - DOMAIN-SUFFIX,akamaihd.net
   - DOMAIN-SUFFIX,edgekey.net
   - DOMAIN-SUFFIX,akamaized.net
+  - DOMAIN-KEYWORD,akamai
 
   # --- 6. AT&T IP 网段 (no-resolve 防止 DNS 泄露) ---
+  - IP-CIDR,12.0.0.0/8,no-resolve
   - IP-CIDR,129.192.0.0/16,no-resolve
   - IP-CIDR,107.64.0.0/10,no-resolve
   - IP-CIDR,166.128.0.0/9,no-resolve
@@ -41,4 +51,4 @@ payload:
   # --- 7. T-Mobile IP 网段 ---
   - IP-CIDR,66.94.0.0/19,no-resolve
   - IP-CIDR,206.29.177.36/32,no-resolve
-  - IP-CIDR,208.54.0.0/16,no-resolve  # 关键：T-Mobile EPDG 地址池
+  - IP-CIDR,208.54.0.0/16,no-resolve
