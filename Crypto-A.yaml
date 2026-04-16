@@ -1,4 +1,4 @@
-# A组美国IP固定
+#  B 组：美国IP固定
 payload:
   # --- [1] Coinbase 开发者与 CDP 平台 ---
   # 2026年 Coinbase 将大量 API 迁移到了 CDP (Coinbase Developer Platform)
