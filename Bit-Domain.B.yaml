@@ -38,8 +38,3 @@ payload:
   - '+.kucoin.com'
   - '+.woo.org'
   - '+.htx.com'
-
-  # 关键词兜底
-  - 'DOMAIN-KEYWORD,binance'
-  - 'DOMAIN-KEYWORD,okx'
-  - 'DOMAIN-KEYWORD,bybit'
