@@ -1,4 +1,4 @@
-payload:
+  payload:
   # > 核心基础设施 (转账/关联必备)
   - '+.plaid.com'              # 银行连接中间件 (解决连接券商/Wise失败)
   - '+.zelle.com'                # Zelle 转账
@@ -61,3 +61,24 @@ payload:
   - '+.fico.com'               # FICO 分数
   - '+.creditkarma.com'        # Credit Karma
   - '+.savvymoney.com'         # 银行集成的信用分服务
+
+# 补充平台类
+  - '+.revolut.com'
+  - '+.aqueduct.revolutlabs.com'
+  - '+.monzo.com'
+  - '+.monzo.statuspage.io'
+  - '+.ws-eu.pusher.com'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
