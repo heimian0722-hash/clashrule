@@ -13,6 +13,7 @@ payload:
   - '+.kyzsapp.com'
   - '+.91bun.com'
   - '+.xhacgn.com'
+  - '+.fanchmwrt.com'
 
 # --- 穿透与 DDNS (最高优先级，严禁走代理) ---
   - '+.zerotier.com'
