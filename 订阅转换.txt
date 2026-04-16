@@ -1,0 +1,28 @@
+api.wcc.best
+sub.xeton.dev
+sub.id9.cc(品云提供)
+api.nexconvert.com(奶昔提供)
+api.dler.io(lhie1提供)
+sub.maoxiongnet.com(猫熊提供)
+api.sublink.dev(歪兔提供)
+sub.xjz.im(920.im提供)
+apiurl.v1.mk
+
+
+在线转换网站
+https://sub.789.st
+https://tool.liac.cn/subconverter
+bianyuan.xyz
+
+自己搭建本地版
+http://localhost:25500
+
+拉取并运行 metacubex版后端
+docker run -d \
+  --name subconverter \
+  --restart always \
+  --net=host \
+  metacubex/subconverter:latest
+
+本地验证版本
+http://192.168.3.5:25500/version
