@@ -30,3 +30,4 @@ payload:
   - '+.3322.org'
   - '+.backloop.dev'
   - '+.lencr.org'          # Let's Encrypt 证书颁发机构（CA）
+  - '+.ocsp.digicert.com'  # DigiCert在线证书状态协议
