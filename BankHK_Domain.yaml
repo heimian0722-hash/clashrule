@@ -52,3 +52,5 @@ payload:
   - '+.tapngo.com.hk'         # Tap & Go
   - '+.payme.hsbc'            # PayMe
   - '+.fps.com.hk'            # 转数快 (FPS)
+
+  - '+.wise.com'
