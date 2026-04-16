@@ -15,7 +15,7 @@ payload:
   - '+.xhacgn.com'
   - '+.fanchmwrt.com'
 
-# --- 穿透与 DDNS (最高优先级，严禁走代理) ---
+# --- 穿透与 DDNS ---
   - '+.zerotier.com'
   - '+.tailscale.com'
   - '+.duckdns.org'
