@@ -1,0 +1,24 @@
+# A 组：合规美系 (建议走美国 US 节点)
+payload:
+  # Coinbase 体系
+  - '+.coinbase.com'
+  - '+.coinbasecloud.net'
+  - '+.coinbasewallet.com'
+  - '+.cb.id'
+  - '+.base.org'
+  - '+.static-assets.coinbase.com'
+  - '+.onramp.wallet.coinbase.com'
+  - '+.chain-proxy.wallet.coinbase.com'
+  
+  # Kraken (海妖) 体系
+  - '+.kraken.com'
+  - '+.api.kraken.com'
+  - '+.futures.kraken.com'
+  - '+.kraken-assets.com'
+  - '+.cryptowat.ch'
+
+  # Gemini & 其他美系
+  - '+.gemini.com'
+  - '+.robinhood.com'
+  - '+.circle.com'
+  - '+.usdc.com'
