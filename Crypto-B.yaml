@@ -1,0 +1,76 @@
+# B 组：国际离岸 (建议走台湾/香港/新加坡节点)
+# 包含：币安、OKX、Bybit、Bitget、Gate及所有核心API与静态资源
+payload:
+  # --- Binance (币安) 深度补全 ---
+  - '+.binance.com'
+  - '+.binance.me'
+  - '+.binance.info'
+  - '+.binance.net'
+  - '+.binance.org'
+  - '+.binance.cloud'     # 关键：App 企业云服务
+  - '+.binanceapi.com'    # 关键：行情与交易接口
+  - '+.binancecnt.com'
+  - '+.binancefuture.com'
+  - '+.binancezh.com'
+  - '+.binancezh.pro'
+  - '+.bnbstatic.com'     # 关键：App 静态资源与头像
+  - '+.bntrace.com'
+  - '+.binance.charity'
+  - '+.binance.co'
+  - '+.binancezh.be'
+  - '+.binancezh.biz'
+  - '+.binancezh.cc'
+  - '+.binancezh.co'
+  - '+.binancezh.info'
+  - '+.binancezh.ink'
+  - '+.binancezh.kim'
+  - '+.binancezh.link'
+  - '+.binancezh.live'
+  - '+.binancezh.mobi'
+  - '+.binancezh.net'
+  - '+.binancezh.sh'
+  - '+.binancezh.top'
+  - '+.bnappzh.co'
+  - '+.bnbzh.ac'
+
+  # --- OKX (欧易) 深度补全 ---
+  - '+.okx.com'
+  - '+.okg.com'           # 极其重要：OKX 2025-2026 全球统一主域
+  - '+.okex.com'
+  - '+.oklink.com'
+  - '+.okx-dns.com'       # 解析优化
+  - '+.okx-dns1.com'
+  - '+.okx-dns2.com'
+  
+  # --- Bybit 深度补全 ---
+  - '+.bybit.com'
+  - '+.bytick.com'        # 极其重要：Bybit App 核心 API 域名
+  - '+.bybit.io'
+  - '+.bybit.biz'
+  - '+.bybit.cc'
+  - '+.bybit-asia.com'
+  - '+.bybitcn.com'
+  - '+.bybitglobal.com'
+  - '+.bybit-exchange.com'
+  - '+.bybitproxy.com'
+
+  # --- Bitget & Gate.io ---
+  - '+.bitget.com'
+  - '+.bitget.tv'
+  - '+.bitgetapi.com'
+  - '+.bgstatic.com'      # Bitget 静态资源
+  - '+.bgwallet.com'
+  - '+.gate.io'
+  - '+.gateio.live'
+  - '+.gateio.pro'
+  - '+.gateio.services'
+
+  # --- 其他常用离岸与二线 ---
+  - '+.mexc.com'          # 抹茶
+  - '+.kucoin.com'        # 库币
+  - '+.woo.org'           # WOO
+  - '+.htx.com'           # 火币
+  - '+.huobi.com'
+  - '+.phemex.com'
+  - '+.bitmex.com'
+  - '+.bitfinex.com'
