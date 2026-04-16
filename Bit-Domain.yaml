@@ -1,5 +1,5 @@
 payload:
-  # Binance (币安)
+  # --- Binance (币安) - 国际版核心 ---
   - '+.binance.com'
   - '+.binance.me'
   - '+.binance.cloud'
@@ -8,7 +8,6 @@ payload:
   - '+.binance.info'
   - '+.binance.net'
   - '+.binance.org'
-  - '+.binance.us'
   - '+.binanceapi.com'
   - '+.binancecnt.com'
   - '+.binancefuture.com'
@@ -31,72 +30,77 @@ payload:
   - '+.bnbstatic.com'
   - '+.bnbzh.ac'
   - '+.bntrace.com'
+  - '+.binance.us' # 美国站专用
 
-  # Bybit
-  - '+.bybit.com'
-  - '+.bybit.biz'
-  - '+.bybit.cc'
-  - '+.bybit.cloud'
-  - '+.bybit.info'
-  - '+.bybit.io'
-  - '+.bybit.net'
-  - '+.bybit.org'
-  - '+.bybit-asia.com'
-  - '+.bybitcn.com'
-  - '+.bybitderivatives.com'
-  - '+.bybit-exchange.com'
-  - '+.bybitglobal.com'
-  - '+.bybitglobal.net'
-  - '+.bybitmarkets.com'
-  - '+.bybitproxy.com'
-  - '+.bybit-sso.com'
-  - '+.bybittrading.com'
-  - '+.bybituk.com'
-  - '+.bytick.com'
-
-  # Bitget
-  - '+.bitget.com'
-  - '+.bitget.tv'
-  - '+.bitgetapi.com'
-  - '+.bitgetapps.com'
-  - '+.bitgetcc.com'
-  - '+.bitgetimg.com'
-  - '+.bgstatic.com'
-  - '+.bgstatic.vip'
-  - '+.bgwallet.com'
-
-  # OKX (欧易)
+  # --- OKX (欧易) & OKLink ---
   - '+.okx.com'
   - '+.okex.com'
   - '+.oklink.com'
+  - '+.okg.com'
   - '+.okx-dns.com'
   - '+.okx-dns1.com'
   - '+.okx-dns2.com'
 
-  # Gate.io (芝麻开门)
+  # --- Bybit (衍生品巨头) ---
+  - '+.bybit.com'
+  - '+.bybit.biz'
+  - '+.bybit.cc'
+  - '+.bybit.io'
+  - '+.bybit-asia.com'
+  - '+.bybitcn.com'
+  - '+.bytick.com'
+  - '+.bybitglobal.com'
+
+  # --- Bitget (跟单与新币) ---
+  - '+.bitget.com'
+  - '+.bitget.tv'
+  - '+.bitgetapi.com'
+  - '+.bitgetimg.com'
+  - '+.bgstatic.com'
+  - '+.bgwallet.com'
+
+  # --- Gate.io (芝麻开门) ---
   - '+.gate.io'
   - '+.gateio.live'
   - '+.gateio.pro'
   - '+.gateio.services'
 
-  # Coinbase
+  # --- Coinbase & Base (合规龙头) ---
   - '+.coinbase.com'
-  - '+.coinbase.com.cdn.cloudflare.net'
-  - '+.coinbasecloud.dev'
-  - '+.coinbase.static'
-  - '+.cb-isiv.com'
+  - '+.coinbasecloud.net'
+  - '+.coinbasewallet.com'
   - '+.cb.id'
   - '+.base.org'
+  - '+.static-assets.coinbase.com'
   - '+.onramp.wallet.coinbase.com'
-  - '+.chain-proxy.wallet.coinbase.com'
 
-  # 行情、数据及公用服务
-  - '+.appsflyer.com'
-  - '+.saasexch.cc'
-  - '+.saasexch.com'
+  # --- Kraken (海妖) & Gemini ---
+  - '+.kraken.com'
+  - '+.api.kraken.com'
+  - '+.cryptowat.ch'
+  - '+.gemini.com'
+
+  # --- 行情、数据与分析 (TradingView核心) ---
   - '+.tradingview.com'
+  - '+.tvstatic.com'
   - '+.coinmarketcap.com'
   - '+.coingecko.com'
+  - '+.dexscreener.com'
+  - '+.dextools.io'
+  - '+.bubbles.poker'
+
+  # --- 链上浏览器与基础设施 (Web3必备) ---
   - '+.etherscan.io'
   - '+.bscscan.com'
   - '+.tronscan.org'
+  - '+.solscan.io'
+  - '+.infura.io'
+  - '+.alchemy.com'
+  - '+.walletconnect.org'
+  - '+.walletconnect.com'
+  - '+.metamask.io'
+
+  # --- 通用统计与推送 (防止App内无法加载) ---
+  - '+.appsflyer.com'
+  - '+.saasexch.cc'
+  - '+.saasexch.com'
