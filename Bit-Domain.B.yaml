@@ -1,0 +1,45 @@
+# B 组：国际离岸 (建议走台湾/香港/新加坡节点)
+payload:
+  # Binance (币安国际版)
+  - '+.binance.com'
+  - '+.binance.me'
+  - '+.binance.info'
+  - '+.binance.net'
+  - '+.binanceapi.com'
+  - '+.binancecnt.com'
+  - '+.binancefuture.com'
+  - '+.binancezh.com'
+  - '+.bnbstatic.com'
+  - '+.bntrace.com'
+
+  # OKX (欧易国际版)
+  - '+.okx.com'
+  - '+.okg.com'
+  - '+.oklink.com'
+  - '+.okx-dns.com'
+
+  # Bybit 体系
+  - '+.bybit.com'
+  - '+.bybit.io'
+  - '+.bybit-asia.com'
+  - '+.bytick.com'
+  - '+.bybitglobal.com'
+
+  # Bitget & Gate.io
+  - '+.bitget.com'
+  - '+.bgstatic.com'
+  - '+.bgwallet.com'
+  - '+.gate.io'
+  - '+.gateio.pro'
+  - '+.gateio.services'
+
+  # 其他常用离岸
+  - '+.mexc.com'
+  - '+.kucoin.com'
+  - '+.woo.org'
+  - '+.htx.com'
+
+  # 关键词兜底
+  - 'DOMAIN-KEYWORD,binance'
+  - 'DOMAIN-KEYWORD,okx'
+  - 'DOMAIN-KEYWORD,bybit'
