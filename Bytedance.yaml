@@ -1,0 +1,43 @@
+payload:
+  # --- TikTok (核心风控组) ---
+  - '+.tiktok.com'
+  - '+.tiktokv.com'
+  - '+.tiktokcdn.com'
+  - '+.tiktokcdn-us.com'
+  - '+.tiktokcdn-eu.com'
+  - '+.tik-tokapi.com'
+  - '+.musical.ly'           # 历史收购遗留，仍在某些接口使用
+  - '+.muscdn.com'
+  - '+.ttoversea.net'
+  - '+.ibytedtos.com'        # 核心数据域名
+  - '+.ibyteimg.com'
+  - '+.byteoversea.com'      # 海外版核心 API
+  - '+.byteoversea.net'
+
+  # --- CapCut (剪映海外版) ---
+  - '+.capcut.com'
+  - '+.capcut.net'
+  - '+.capcut.io'
+  - '+.capcutstatic.com'
+  - '+.lvv-be.com'
+
+  # --- Lark / Feishu (飞书海外版) ---
+  - '+.larksuite.com'
+  - '+.larkoffice.com'
+  - '+.larksuitecdn.com'
+  - '+.larksuiteapi.com'
+
+  # --- BytePlus (云服务 & 开发者) ---
+  - '+.byteplus.com'
+  - '+.byteplusapi.com'
+  - '+.byteplusefi.com'
+  - '+.bplslb.com'
+
+  # --- 基础设施与统计 (通用海外) ---
+  - '+.bytedance.com'        # 虽是总部域名，但海外业务常挂载子域名
+  - '+.byteimg.com'          # 图片 CDN
+  - '+.isnssdk.com'          # 核心 SDK 统计
+  - '+.sgsnssdk.com'         # 新加坡节点统计
+  - '+.i18n-pglstatp.com'    # 广告与统计
+  - '+.pglstatp-toutiao.com'
+  - '+.zijieapi.com'         # 字节通用 API
