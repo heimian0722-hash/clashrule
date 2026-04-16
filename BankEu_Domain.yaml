@@ -20,9 +20,3 @@ payload:
   - '+.dukascopy.ch'
   # PostFinance (瑞士邮政储蓄 - Yuh的母公司之一)
   - '+.postfinance.ch'
-
-  # > iFAST Global Bank (英国)
-  - '+.ifastgb.com'
-  - '+.ifastfinancial.com'
-
- 
