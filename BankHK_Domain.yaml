@@ -1,48 +1,54 @@
 payload:
-  # --- 虚拟银行 (Virtual Banks) ---
-  - '+.za.group'
-  - '+.mox.com'
-  - '+.livibank.com'
-  - '+.welab.bank'
-  - '+.fusionbank.com'
-  - '+.airstarbank.com'
-  - '+.paob.com.hk'
-  - '+.antbank.hk'
+  # > iFAST & 华侨银行 (OCBC)
+  - '+.ifastgb.com'           # iFAST Global Bank (英国数字银行，常配合HK卡使用)
+  - '+.ifastfinancial.com.hk' # iFAST 香港金融
+  - '+.ifastgp.com.hk'        # iFAST 集团
+  - '+.ocbc.com.hk'           # 华侨银行香港 (原永亨)
+  - '+.ocbc.com'              # OCBC 集团主域名
 
-  # --- 传统持牌银行 (Traditional Banks) ---
-  - '+.hsbc.com.hk'
-  - '+.hsbc.com'
-  - '+.hangseng.com'
-  - '+.bochk.com'
-  - '+.standardchartered.com.hk'
-  - '+.sc.com/hk'
-  - '+.bea.com.hk'
-  - '+.chiyu.com.hk'
-  - '+.ncb.com.hk'
-  - '+.icbcasia.com'
-  - '+.ccbasia.com'
-  - '+.cmbwinglungbank.com'
-  - '+.citibank.com.hk'
-  - '+.dbs.com.hk'
-  - '+.ocbc.com.hk'
-  - '+.dahsing.com'
-  - '+.shacombank.com.hk'
+  # > 虚拟银行 (Virtual Banks - 对 IP 极其敏感)
+  - '+.za.group'              # 众安银行 (ZA Bank)
+  - '+.mox.com'               # Mox Bank (渣打旗下)
+  - '+.livibank.com'          # Livi Bank (中银/怡和旗下)
+  - '+.welab.bank'            # WeLab Bank (汇立银行)
+  - '+.fusionbank.com'        # 富融银行 (腾讯旗下)
+  - '+.airstarbank.com'       # 天星银行 (小米旗下)
+  - '+.paob.com.hk'           # 平安壹账通
+  - '+.antbank.hk'            # 蚂蚁银行
 
-  # --- 券商与交易所 (Brokers & Crypto Exchanges) ---
-  - '+.futunn.com'
-  - '+.futuhk.com'
-  - '+.tigerbrokers.com.hk'
-  - '+.itiger.com'
-  - '+.longbridgeapp.com'
-  - '+.hashkey.com'
-  - '+.osl.com'
-  - '+.hkex.com.hk'
-  - '+.victorysec.com.hk' # 胜利证券
+  # > 传统持牌银行 (Traditional Banks)
+  - '+.bochk.com'             # 中银香港
+  - '+.hsbc.com.hk'           # 汇丰银行
+  - '+.hsbc.com'              # 汇丰集团
+  - '+.hangseng.com'          # 恒生银行
+  - '+.standardchartered.com.hk' # 渣打香港
+  - '+.sc.com'                # 渣打通用
+  - '+.cmbwinglungbank.com'   # 招商永隆
+  - '+.citibank.com.hk'       # 花旗香港
+  - '+.dbs.com.hk'            # 星展香港
+  - '+.bea.com.hk'            # 东亚银行
+  - '+.icbcasia.com'          # 工银亚洲
+  - '+.ccbasia.com'           # 建行亚洲
+  - '+.ncb.com.hk'            # 南洋商业银行
+  - '+.chiyu.com.hk'          # 集友银行
+  - '+.dahsing.com'           # 大新银行
+  - '+.shacombank.com.hk'     # 上海商业银行
 
-  # --- 支付与金融服务 (Payments) ---
-  - '+.octopus.com.hk'
-  - '+.octopuscards.com'
-  - '+.alipay.hk'
-  - '+.tapngo.com.hk'
-  - '+.payme.hsbc'
-  - '+.fps.com.hk' # 转数快
+  # > 券商与持牌交易所 (Brokers & Exchanges)
+  - '+.futunn.com'            # 富途证券 (Futu)
+  - '+.futuhk.com'            # 富途香港
+  - '+.tigerbrokers.com.hk'   # 老虎证券
+  - '+.itiger.com'            # 老虎证券
+  - '+.longbridgeapp.com'     # 长桥证券
+  - '+.hashkey.com'           # HashKey Exchange (香港合规交易所)
+  - '+.osl.com'               # OSL (香港合规交易所)
+  - '+.hkex.com.hk'           # 香港交易所 (HKEX)
+  - '+.victorysec.com.hk'     # 胜利证券
+
+  # > 支付工具 (Payments)
+  - '+.alipay.hk'             # AlipayHK
+  - '+.octopus.com.hk'        # 八达通
+  - '+.octopuscards.com'      # 八达通卡
+  - '+.tapngo.com.hk'         # Tap & Go
+  - '+.payme.hsbc'            # PayMe
+  - '+.fps.com.hk'            # 转数快 (FPS)
