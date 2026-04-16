@@ -79,6 +79,17 @@ payload:
   - '+.gateio.pro'
   - '+.gateio.services'
 
+  # Coinbase
+  - '+.coinbase.com'
+  - '+.coinbase.com.cdn.cloudflare.net'
+  - '+.coinbasecloud.dev'
+  - '+.coinbase.static'
+  - '+.cb-isiv.com'
+  - '+.cb.id'
+  - '+.base.org'
+  - '+.onramp.wallet.coinbase.com'
+  - '+.chain-proxy.wallet.coinbase.com'
+
   # 行情、数据及公用服务
   - '+.appsflyer.com'
   - '+.saasexch.cc'
