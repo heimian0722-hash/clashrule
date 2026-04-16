@@ -15,6 +15,14 @@ payload:
   - '+.xhacgn.com'
   - '+.fanchmwrt.com'
 
+# --- Apple数据传输/云上贵州 ---
+  - '+.appldnld.apple.com'
+  - '+.mzstatic.com'
+  - '+.swcdn.apple.com'
+  - '+.updates.cdn-apple.com'
+  - '+.apple-mapkit.com'
+  - '+.icloud.com.cn'
+
 # --- 穿透与 DDNS ---
   - '+.zerotier.com'
   - '+.tailscale.com'
