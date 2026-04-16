@@ -1,4 +1,4 @@
-#  B 组：美国IP固定
+#  A 组：美国 Coinbase、Base、Kraken、Gemini等
 payload:
   # --- Coinbase 核心与支付网关 ---
   - '+.coinbase.com'
