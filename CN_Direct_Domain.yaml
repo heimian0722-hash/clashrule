@@ -1,46 +1,22 @@
-# 直连站点，遇到就补，个人使用
+# 直连库，遇到就补，个人使用
 payload:
-  # 个人小站 (GeoSite 未录入) ---
+# --- 个人高频/特定站点 (GEOSITE 漏网之鱼) ---
   - '+.api.wcc.best'
   - '+.api.asailor.org'
-  - '+.kyzsapp.com'
-  - '+.redircdn.com'
-  - '+.backloop.dev'
-  - '+.91bun.com'
-  - '+.xhacgn.com'
-  - '+.lencr.org'
+  - '+.linux.do'           # 虽在海外，但直连体验更佳
   - 'qqwry.api.skk.moe'
   - 'ohttp-relay1.fastly-edge.com'
   - '+.yifile.com'
   - '+.ylimg.com'
-  - '+.jvdd2r.top'
+  - '+.redircdn.com'
   - '+.bbrcloud.com'
-  - '+.yumehinata.com'
+  - '+.kyzsapp.com'
+  - '+.91bun.com'
+  - '+.xhacgn.com'
 
-  # --- 1. 绝对核心：穿透与 DDNS (走代理必挂) ---
+# --- 1. 穿透与 DDNS (最高优先级，严禁走代理) ---
   - '+.zerotier.com'
   - '+.tailscale.com'
   - '+.duckdns.org'
   - '+.3322.org'
-
-  # --- 2. 重点国产 AI (防止 GeoSite 滞后导致风控) ---
-  - '+.deepseek.com'
-  - '+.chat.deepseek.com'
-  - '+.api.deepseek.com'
-  - '+.moonshot.cn'
-  - '+.kimi.ai'
-  - '+.doubao.com'
-  - '+.coze.cn'
-  - '+.zhipu.ai'
-  - '+.minimax.io'
-  - '+.01.ai'
-
-  # --- 3. 生产力与避坑补漏 ---
-  - '+.feishu.cn'          # 飞书国内版
-  - '+.linux.do'           # 热门社区，直连极速
-  - '+.gzdata.com.cn'      # 云上贵州 (Apple 核心)
-  - '+.12306.cn'           # 抢票必直连
-  - '+.alipay.com'         # 支付环境
-  - '+.apple.com.cn'
-  - '+.icloud.com.cn'
-  
+  - '+.backloop.dev'
