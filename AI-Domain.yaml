@@ -30,6 +30,8 @@ payload:
   - '+.cp4.cloudflare.com'
   - '+.cognito.apple.com'   # 补强：AI 身份令牌
   - '+.apple-cloudkit.com'  # 补强：AI 协作数据同步
+  - '+.gateway.icloud.com' # iCloud 核心网关
+  - '+.itunes.apple.com' # 解决部分区域限制
 
   # === Anthropic (Claude) & xAI (Grok) ===
   - '+.anthropic.com'
