@@ -1,3 +1,4 @@
+后端网址：
 api.wcc.best
 sub.xeton.dev
 sub.id9.cc(品云提供)
@@ -9,10 +10,10 @@ sub.xjz.im(920.im提供)
 apiurl.v1.mk
 
 
-在线转换网站
+在线网站：
 https://sub.789.st
 https://tool.liac.cn/subconverter
-bianyuan.xyz
+https://bianyuan.xyz
 
 自己搭建本地版
 http://localhost:25500
