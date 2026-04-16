@@ -1,0 +1,48 @@
+payload:
+  # --- 虚拟银行 (Virtual Banks) ---
+  - '+.za.group'
+  - '+.mox.com'
+  - '+.livibank.com'
+  - '+.welab.bank'
+  - '+.fusionbank.com'
+  - '+.airstarbank.com'
+  - '+.paob.com.hk'
+  - '+.antbank.hk'
+
+  # --- 传统持牌银行 (Traditional Banks) ---
+  - '+.hsbc.com.hk'
+  - '+.hsbc.com'
+  - '+.hangseng.com'
+  - '+.bochk.com'
+  - '+.standardchartered.com.hk'
+  - '+.sc.com/hk'
+  - '+.bea.com.hk'
+  - '+.chiyu.com.hk'
+  - '+.ncb.com.hk'
+  - '+.icbcasia.com'
+  - '+.ccbasia.com'
+  - '+.cmbwinglungbank.com'
+  - '+.citibank.com.hk'
+  - '+.dbs.com.hk'
+  - '+.ocbc.com.hk'
+  - '+.dahsing.com'
+  - '+.shacombank.com.hk'
+
+  # --- 券商与交易所 (Brokers & Crypto Exchanges) ---
+  - '+.futunn.com'
+  - '+.futuhk.com'
+  - '+.tigerbrokers.com.hk'
+  - '+.itiger.com'
+  - '+.longbridgeapp.com'
+  - '+.hashkey.com'
+  - '+.osl.com'
+  - '+.hkex.com.hk'
+  - '+.victorysec.com.hk' # 胜利证券
+
+  # --- 支付与金融服务 (Payments) ---
+  - '+.octopus.com.hk'
+  - '+.octopuscards.com'
+  - '+.alipay.hk'
+  - '+.tapngo.com.hk'
+  - '+.payme.hsbc'
+  - '+.fps.com.hk' # 转数快
