@@ -22,9 +22,9 @@ payload:
   - '+.fubonbank.com.hk'        # 富邦银行
   - '+.publicbank.com.hk'       # 大众银行
 
-#  信银国际走非标端口通讯8001、8002、8003、443 同时检测
-  - '+.cncbinternational.com'   # 信银国际
-  - '+.citicbank.com.hk'        # 信银国际
+# 信银国际 风控检测 走特殊端口8001、8002、8003、80、443
+#  - '+.cncbinternational.com'   # 信银国际
+#  - '+.citicbank.com.hk'        # 信银国际
 
 
   # > 虚拟银行 (Virtual Banks - 对 IP 极其敏感)
