@@ -6,7 +6,6 @@ payload:
   - DOMAIN,vowifi.apple.com
   - DOMAIN-SUFFIX,entitlement.apple.com
   - DOMAIN-SUFFIX,ess.apple.com
-  - DOMAIN-SUFFIX,apple.com
 
   # --- 2. AT&T / Red Pocket 专项强化 (含 0.ecom.attccc.com 修复) ---
   - DOMAIN-SUFFIX,att.com
