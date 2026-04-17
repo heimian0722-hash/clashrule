@@ -62,10 +62,52 @@
   - '+.creditkarma.com'        # Credit Karma
   - '+.savvymoney.com'         # 银行集成的信用分服务
 
-# 补充平台类
+  # 补充平台类
   - '+.revolut.com'
   - '+.aqueduct.revolutlabs.com'
   - '+.monzo.com'
   - '+.monzo.statuspage.io'
   - '+.ws-eu.pusher.com'
-  
+
+# US购物站点
+# --- 电子产品与数码 (极易砍单/黑名单转运地址) ---
+  - DOMAIN-SUFFIX,apple.com
+  - DOMAIN-SUFFIX,bestbuy.com
+  - DOMAIN-SUFFIX,hp.com
+  - DOMAIN-SUFFIX,dell.com
+  - DOMAIN-SUFFIX,samsung.com
+  - DOMAIN-SUFFIX,lenovo.com
+  - DOMAIN-SUFFIX,microsoft.com
+
+  # --- 百货与超市 (风控等级：极高) ---
+  - DOMAIN-SUFFIX,target.com
+  - DOMAIN-SUFFIX,walmart.com
+  - DOMAIN-SUFFIX,macys.com
+  - DOMAIN-SUFFIX,nordstrom.com
+  - DOMAIN-SUFFIX,kohls.com
+  - DOMAIN-SUFFIX,costco.com
+  - DOMAIN-SUFFIX,samsclub.com
+
+  # --- 潮流、服饰与运动 (IP 不纯直接屏蔽/砍单) ---
+  - DOMAIN-SUFFIX,nike.com
+  - DOMAIN-SUFFIX,adidas.com
+  - DOMAIN-SUFFIX,coach.com
+  - DOMAIN-SUFFIX,coachoutlet.com
+  - DOMAIN-SUFFIX,lululemon.com
+  - DOMAIN-SUFFIX,stockx.com
+  - DOMAIN-SUFFIX,goat.com
+  - DOMAIN-SUFFIX,supremenewyork.com
+
+  # --- 化妆品与美妆 ---
+  - DOMAIN-SUFFIX,sephora.com
+  - DOMAIN-SUFFIX,ulta.com
+  - DOMAIN-SUFFIX,estee Lauder.com
+
+  # --- 购物辅助与支付风控 (必加，否则无法跳转支付) ---
+  - DOMAIN-SUFFIX,paypal.com
+  - DOMAIN-SUFFIX,paypalobjects.com
+  - DOMAIN-SUFFIX,stripe.com
+  - DOMAIN-SUFFIX,adyen.com
+  - DOMAIN-SUFFIX,riskified.com
+  - DOMAIN-SUFFIX,forter.com
+  - DOMAIN,api.radar.io
