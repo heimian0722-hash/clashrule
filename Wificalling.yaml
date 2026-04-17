@@ -59,3 +59,38 @@ payload:
   - IP-CIDR,66.94.0.0/19,no-resolve
   - IP-CIDR,206.29.177.36/32,no-resolve
   - IP-CIDR,208.54.0.0/16,no-resolve
+
+  # --- 9. Red Pocket 官方管理与支付 ---
+  - DOMAIN-SUFFIX,redpocket.com
+  - DOMAIN,help.redpocket.com
+  - DOMAIN,my.redpocket.com
+  - DOMAIN,goredpocket.com
+
+  # --- 10. Tello 官方管理与支付 ---
+  - DOMAIN-SUFFIX,tello.com
+  - DOMAIN,blog.tello.com
+
+  # --- 11. 运营商通用鉴权与安全组件 (解决 Access Denied) ---
+  - DOMAIN-SUFFIX,kaptcha.com
+  - DOMAIN-SUFFIX,msecnd.net
+  - DOMAIN-SUFFIX,visualstudio.com
+  - DOMAIN,fp-afd.azureedge.us
+  - DOMAIN,fraud-api.tello.com
+
+  # --- 12. Verizon 体系 (若涉及 Red Pocket CDMA 线路) ---
+  - DOMAIN-SUFFIX,verizon.com
+  - DOMAIN-SUFFIX,verizonwireless.com
+  - DOMAIN-SUFFIX,vzw.com
+  - DOMAIN,epdg.epc.mnc480.mcc311.pub.3gppnetwork.org
+
+  # --- 13. eSIM 辅助下发 (G+D / Thales 体系) ---
+  - DOMAIN-SUFFIX,prod.onsite.me
+  - DOMAIN-SUFFIX,gi-de.com
+  - DOMAIN-SUFFIX,thalesgroup.com
+
+  # --- 14. 补充美国 IP 强校验域名 (常见工具类) ---
+  - DOMAIN-SUFFIX,ip-api.com
+  - DOMAIN-SUFFIX,whoer.net
+  - DOMAIN-SUFFIX,browserleaks.com
+  - DOMAIN-SUFFIX,pixelscan.net
+  - DOMAIN-SUFFIX,scamalytics.com
