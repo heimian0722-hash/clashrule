@@ -58,6 +58,7 @@ payload:
 
   # > 支付工具与公共服务 (Payments & Public Services)
   - '+.alipay.hk'               # AlipayHK
+  - '+.alipay.com.hk'           # AlipayHK备用域名
   - '+.octopus.com.hk'          # 八达通
   - '+.octopuscards.com'        # 八达通卡
   - '+.tapngo.com.hk'           # Tap & Go
