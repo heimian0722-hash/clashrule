@@ -1,22 +1,5 @@
 payload:
-  # > iFAST Global Bank (英国/香港联动)
-  - '+.ifastgb.com'
-  - '+.ifastfinancial.com.hk'
-  - '+.ifastgp.com.hk'
-  - '+.ifastfinancial.com'
-  - '+.ifastwm.com.hk'
-
-  # > 虚拟银行 (Virtual Banks - 对 IP 极其敏感)
-  - '+.za.group'              # 众安银行 (ZA Bank)
-  - '+.mox.com'               # Mox Bank (渣打旗下)
-  - '+.livibank.com'          # Livi Bank (中银/怡和旗下)
-  - '+.welab.bank'            # WeLab Bank (汇立银行)
-  - '+.fusionbank.com'        # 富融银行 (腾讯旗下)
-  - '+.airstarbank.com'       # 天星银行 (小米旗下)
-  - '+.paob.com.hk'           # 平安壹账通
-  - '+.antbank.hk'            # 蚂蚁银行
-
-  # > 传统持牌银行 (Traditional Banks)
+# > 传统持牌银行 (Traditional Banks)
   - '+.bochk.com'             # 中银香港
   - '+.hsbc.com.hk'           # 汇丰银行
   - '+.hsbc.com'              # 汇丰集团
@@ -35,6 +18,24 @@ payload:
   - '+.shacombank.com.hk'     # 上海商业银行
   - '+.ocbc.com.hk'           # 华侨银行香港 (原永亨)
   - '+.ocbc.com'              # OCBC 集团主域名
+  - '+.cncbinternational.com'  # 中信银行国际 (信银国际)
+
+# > 虚拟银行 (Virtual Banks - 对 IP 极其敏感)
+  - '+.za.group'              # 众安银行 (ZA Bank)
+  - '+.mox.com'               # Mox Bank (渣打旗下)
+  - '+.livibank.com'          # Livi Bank (中银/怡和旗下)
+  - '+.welab.bank'            # WeLab Bank (汇立银行)
+  - '+.fusionbank.com'        # 富融银行 (腾讯旗下)
+  - '+.airstarbank.com'       # 天星银行 (小米旗下)
+  - '+.paob.com.hk'           # 平安壹账通
+  - '+.antbank.hk'            # 蚂蚁银行
+
+# > iFAST Global Bank (英国/香港联动)
+  - '+.ifastgb.com'
+  - '+.ifastfinancial.com.hk'
+  - '+.ifastgp.com.hk'
+  - '+.ifastfinancial.com'
+  - '+.ifastwm.com.hk'
 
   # > 券商与持牌交易所 (Brokers & Exchanges)
   - '+.futunn.com'            # 富途证券 (Futu)
@@ -54,5 +55,3 @@ payload:
   - '+.tapngo.com.hk'         # Tap & Go
   - '+.payme.hsbc'            # PayMe
   - '+.fps.com.hk'            # 转数快 (FPS)
-
-  - '+.wise.com'
