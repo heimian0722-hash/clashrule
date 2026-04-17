@@ -1,13 +1,16 @@
 payload:
-  # --- 1. Apple 核心标准与推送 (系统级分流) ---
+  # --- 1. Apple 核心标准与推送 (全量强制美区环境) ---
   - DOMAIN-SUFFIX,3gppnetwork.org
+  - DOMAIN-SUFFIX,apple.com
   - DOMAIN-SUFFIX,apple-cloudkit.com
   - DOMAIN-SUFFIX,push.apple.com
   - DOMAIN,vowifi.apple.com
-  - DOMAIN-SUFFIX,entitlement.apple.com
-  - DOMAIN-SUFFIX,ess.apple.com
+  - DOMAIN,entitlement.apple.com
+  - DOMAIN,ess.apple.com
+  - DOMAIN,gs-loc.apple.com
+  - DOMAIN-KEYWORD,apple-support
 
-  # --- 2. AT&T / Red Pocket 专项强化 (含 0.ecom.attccc.com 修复) ---
+  # --- 2. AT&T / Red Pocket 专项强化 (含激活接口) ---
   - DOMAIN-SUFFIX,att.com
   - DOMAIN-SUFFIX,att.net
   - DOMAIN-SUFFIX,mobile.att.net
@@ -38,14 +41,14 @@ payload:
   - DOMAIN-SUFFIX,talkatone.com
   - DOMAIN-SUFFIX,textnow.com
 
-  # --- 6. CDN 与 访问权限修复 (解决 Access Denied / 403 报错) ---
+  # --- 6. CDN 与 访问权限修复 (解决 Access Denied) ---
   - DOMAIN-SUFFIX,edgesuite.net
   - DOMAIN-SUFFIX,akamaihd.net
   - DOMAIN-SUFFIX,edgekey.net
   - DOMAIN-SUFFIX,akamaized.net
   - DOMAIN-KEYWORD,akamai
 
-  # --- 7. AT&T IP 网段 (no-resolve 防止 DNS 泄露) ---
+  # --- 7. AT&T IP 网段 ---
   - IP-CIDR,12.0.0.0/8,no-resolve
   - IP-CIDR,129.192.0.0/16,no-resolve
   - IP-CIDR,107.64.0.0/10,no-resolve
