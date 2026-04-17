@@ -22,6 +22,7 @@ payload:
 
 # > 虚拟银行 (Virtual Banks - 对 IP 极其敏感)
   - '+.za.group'              # 众安银行 (ZA Bank)
+  - '+.zatech.com'            # 众安技术支持
   - '+.mox.com'               # Mox Bank (渣打旗下)
   - '+.livibank.com'          # Livi Bank (中银/怡和旗下)
   - '+.welab.bank'            # WeLab Bank (汇立银行)
@@ -47,6 +48,9 @@ payload:
   - '+.osl.com'               # OSL (香港合规交易所)
   - '+.hkex.com.hk'           # 香港交易所 (HKEX)
   - '+.victorysec.com.hk'     # 胜利证券
+  - '+.vbroker.com.hk'         # 华盛证券
+  - '+.usmartsecurities.com'   # 盈立证券
+  - '+.webull.hk'              # 微牛香港
 
   # > 支付工具 (Payments)
   - '+.alipay.hk'             # AlipayHK
@@ -55,3 +59,12 @@ payload:
   - '+.tapngo.com.hk'         # Tap & Go
   - '+.payme.hsbc'            # PayMe
   - '+.fps.com.hk'            # 转数快 (FPS)
+  - '+.hkicl.com.hk'           # 转数快结算底层
+
+ # > 区域银行与公共服务补充
+  - '+.cncbinternational.com'
+  - '+.citicbank.com.hk'
+  - '+.dahsingbank.com'
+  - '+.fubonbank.com.hk'
+  - '+.publicbank.com.hk'
+  - '+.pps.com.hk'             # 缴费灵
