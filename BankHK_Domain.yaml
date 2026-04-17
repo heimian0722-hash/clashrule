@@ -1,37 +1,41 @@
 payload:
-# > 传统持牌银行 (Traditional Banks)
-  - '+.bochk.com'             # 中银香港
-  - '+.hsbc.com.hk'           # 汇丰银行
-  - '+.hsbc.com'              # 汇丰集团
-  - '+.hangseng.com'          # 恒生银行
+  # > 传统持牌银行 (Traditional Banks)
+  - '+.bochk.com'               # 中银香港
+  - '+.hsbc.com.hk'             # 汇丰银行
+  - '+.hsbc.com'                # 汇丰集团
+  - '+.hangseng.com'            # 恒生银行
   - '+.standardchartered.com.hk' # 渣打香港
-  - '+.sc.com'                # 渣打通用
-  - '+.cmbwinglungbank.com'   # 招商永隆
-  - '+.citibank.com.hk'       # 花旗香港
-  - '+.dbs.com.hk'            # 星展香港
-  - '+.bea.com.hk'            # 东亚银行
-  - '+.icbcasia.com'          # 工银亚洲
-  - '+.ccbasia.com'           # 建行亚洲
-  - '+.ncb.com.hk'            # 南洋商业银行
-  - '+.chiyu.com.hk'          # 集友银行
-  - '+.dahsing.com'           # 大新银行
-  - '+.shacombank.com.hk'     # 上海商业银行
-  - '+.ocbc.com.hk'           # 华侨银行香港 (原永亨)
-  - '+.ocbc.com'              # OCBC 集团主域名
-  - '+.cncbinternational.com'  # 中信银行国际 (信银国际)
+  - '+.sc.com'                  # 渣打通用
+  - '+.cmbwinglungbank.com'     # 招商永隆
+  - '+.citibank.com.hk'         # 花旗香港
+  - '+.dbs.com.hk'              # 星展香港
+  - '+.bea.com.hk'              # 东亚银行
+  - '+.icbcasia.com'            # 工银亚洲
+  - '+.ccbasia.com'             # 建行亚洲
+  - '+.ncb.com.hk'              # 南洋商业银行
+  - '+.chiyu.com.hk'            # 集友银行
+  - '+.dahsing.com'             # 大新银行
+  - '+.dahsingbank.com'         # 大新银行
+  - '+.shacombank.com.hk'       # 上海商业银行
+  - '+.ocbc.com.hk'             # 华侨银行香港
+  - '+.ocbc.com'                # OCBC 集团
+  - '+.cncbinternational.com'   # 信银国际
+  - '+.citicbank.com.hk'        # 信银国际
+  - '+.fubonbank.com.hk'        # 富邦银行
+  - '+.publicbank.com.hk'       # 大众银行
 
-# > 虚拟银行 (Virtual Banks - 对 IP 极其敏感)
-  - '+.za.group'              # 众安银行 (ZA Bank)
-  - '+.zatech.com'            # 众安技术支持
-  - '+.mox.com'               # Mox Bank (渣打旗下)
-  - '+.livibank.com'          # Livi Bank (中银/怡和旗下)
-  - '+.welab.bank'            # WeLab Bank (汇立银行)
-  - '+.fusionbank.com'        # 富融银行 (腾讯旗下)
-  - '+.airstarbank.com'       # 天星银行 (小米旗下)
-  - '+.paob.com.hk'           # 平安壹账通
-  - '+.antbank.hk'            # 蚂蚁银行
+  # > 虚拟银行 (Virtual Banks - 对 IP 极其敏感)
+  - '+.za.group'                # 众安银行 (ZA Bank)
+  - '+.zatech.com'              # 众安技术支持
+  - '+.mox.com'                 # Mox Bank
+  - '+.livibank.com'            # Livi Bank
+  - '+.welab.bank'              # WeLab Bank
+  - '+.fusionbank.com'          # 富融银行
+  - '+.airstarbank.com'         # 天星银行
+  - '+.paob.com.hk'             # 平安壹账通
+  - '+.antbank.hk'              # 蚂蚁银行
 
-# > iFAST Global Bank (英国/香港联动)
+  # > iFAST Global Bank (英国/香港联动)
   - '+.ifastgb.com'
   - '+.ifastfinancial.com.hk'
   - '+.ifastgp.com.hk'
@@ -39,32 +43,31 @@ payload:
   - '+.ifastwm.com.hk'
 
   # > 券商与持牌交易所 (Brokers & Exchanges)
-  - '+.futunn.com'            # 富途证券 (Futu)
-  - '+.futuhk.com'            # 富途香港
-  - '+.tigerbrokers.com.hk'   # 老虎证券
-  - '+.itiger.com'            # 老虎证券
-  - '+.longbridgeapp.com'     # 长桥证券
-  - '+.hashkey.com'           # HashKey Exchange (香港合规交易所)
-  - '+.osl.com'               # OSL (香港合规交易所)
-  - '+.hkex.com.hk'           # 香港交易所 (HKEX)
-  - '+.victorysec.com.hk'     # 胜利证券
-  - '+.vbroker.com.hk'         # 华盛证券
-  - '+.usmartsecurities.com'   # 盈立证券
-  - '+.webull.hk'              # 微牛香港
+  - '+.futunn.com'              # 富途证券
+  - '+.futuhk.com'              # 富途香港
+  - '+.tigerbrokers.com.hk'     # 老虎证券
+  - '+.itiger.com'              # 老虎证券
+  - '+.longbridgeapp.com'       # 长桥证券
+  - '+.hashkey.com'             # HashKey Exchange
+  - '+.osl.com'                 # OSL
+  - '+.hkex.com.hk'             # 香港交易所 (HKEX)
+  - '+.victorysec.com.hk'       # 胜利证券
+  - '+.vbroker.com.hk'          # 华盛证券
+  - '+.usmartsecurities.com'    # 盈立证券
+  - '+.webull.hk'               # 微牛香港
 
-  # > 支付工具 (Payments)
-  - '+.alipay.hk'             # AlipayHK
-  - '+.octopus.com.hk'        # 八达通
-  - '+.octopuscards.com'      # 八达通卡
-  - '+.tapngo.com.hk'         # Tap & Go
-  - '+.payme.hsbc'            # PayMe
-  - '+.fps.com.hk'            # 转数快 (FPS)
-  - '+.hkicl.com.hk'           # 转数快结算底层
+  # > 支付工具与公共服务 (Payments & Public Services)
+  - '+.alipay.hk'               # AlipayHK
+  - '+.octopus.com.hk'          # 八达通
+  - '+.octopuscards.com'        # 八达通卡
+  - '+.tapngo.com.hk'           # Tap & Go
+  - '+.payme.hsbc'              # PayMe
+  - '+.fps.com.hk'              # 转数快 (FPS)
+  - '+.hkicl.com.hk'            # 转数快结算底层
+  - '+.pps.com.hk'              # 缴费灵
+  - '+.hketoll.gov.hk'          # (补充) 易通行，开车缴费常用
 
- # > 区域银行与公共服务补充
-  - '+.cncbinternational.com'
-  - '+.citicbank.com.hk'
-  - '+.dahsingbank.com'
-  - '+.fubonbank.com.hk'
-  - '+.publicbank.com.hk'
-  - '+.pps.com.hk'             # 缴费灵
+  # > 身份验证 (Security - 必加，否则部分银行App无法登录)
+  - '+.lexisnexis.com'          # 许多香港银行使用的反欺诈/风险评估系统
+  - '+.jumio.com'               # 常见的开户人脸识别/证件扫描服务
+
