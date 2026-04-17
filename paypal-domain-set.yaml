@@ -1,36 +1,18 @@
 payload:
-# --- PayPal 核心业务 (强制代理以匹配购物环境) ---
-  - '+.paypal.com'
-  - '+.paypal.me'
-  - '+.paypal.us'
-  - '+.paypalobjects.com'     # 必须代理：承载支付插件和图片，直连极慢
-  - '+.pypl.com'              # 必须代理：PayPal 的缩写域名，用于关键 API 调用
-  - '+.paypal-mktg.com'       # 营销与跳转
-  - '+.paypal-status.com'     # 服务状态监控
-
-# --- PayPal 旗下的支付网关与子品牌 (海淘常用) ---
-  - '+.braintreegateway.com'  # 核心：很多海淘站点的底层支付接口
-  - '+.braintreepayments.com'
-  - '+.venmo.com'              # 如果你用 Venmo，必须全量美区
-  - '+.xoom.com'               # 国际汇款业务
-
-# --- 风控指纹识别 (防止砍单神器) ---
-  - '+.simility.com'           # PayPal 核心风控域名，直连失败会导致支付被拒
-  - '+.card.io'                # 信用卡扫描识别
-
-# --- US 购物与支付核心 (强制美区环境) ---
-# --- 1. 亚马逊体系 (Amazon Stack) ---
-# 建议：必须包含静态资源 CDN，否则商品详情页无法加载图片。
+  # --- 1. 亚马逊与 eBay 体系 (解决详情页图片裂开) ---
   - '+.amazon.com'
   - '+.amazon.ca'
-  - '+.media-amazon.com'
-  - '+.ssl-images-amazon.com'
+  - '+.media-amazon.com'      # 必须：详情页图片加速
+  - '+.ssl-images-amazon.com' # 必须：静态 CSS/JS 资源
   - '+.completion.amazon.com'
   - '+.amazon-adsystem.com'
   - '+.ext-amazon.com'
+  - '+.ebay.com'
+  - '+.ebaystatic.com'
+  - '+.ebayimg.com'           # 必须：解决搜索页商品图红叉
+  - '+.ebayrtm.com'
 
-# --- 2. 综合百货与超市 (Big Box Retailers) ---
-# 特点：对非美国 IP 极其不友好，频繁出现 403 Forbidden。
+  # --- 2. 综合百货、超市与家居 (防 403 Forbidden) ---
   - '+.walmart.com'
   - '+.target.com'
   - '+.costco.com'
@@ -39,11 +21,12 @@ payload:
   - '+.nordstrom.com'
   - '+.kohls.com'
   - '+.jcpenney.com'
+  - '+.homedepot.com'
+  - '+.lowes.com'
 
-# --- 3. 电子产品与数码 (Electronics - 高砍单风险) ---
-# 建议：支付时 IP 必须与收货地址、外卡账单地址区域一致。
+  # --- 3. 电子数码与办公 (高砍单风险监控) ---
   - '+.apple.com'
-  - '+.bestbuy.com'
+  - '+.bestbuy.com'           # 重点：BestBuy 极看 IP 纯净度
   - '+.newegg.com'
   - '+.bhphotovideo.com'
   - '+.dell.com'
@@ -51,52 +34,35 @@ payload:
   - '+.lenovo.com'
   - '+.samsung.com'
 
-# --- 4. 拍卖与二手交易 (Marketplaces) ---
-# 注意：Ebay 必须包含图片域名以解决红叉问题；Mercari 必须美区住宅 IP。
-  - '+.ebay.com'
-  - '+.ebaystatic.com'
-  - '+.ebayimg.com'
-  - '+.etsy.com'
-  - '+.mercari.com'
-  - '+.poshmark.com'
-  - '+.stockx.com'
-  - '+.goat.com'
-
-# --- 5. 潮流、服饰与运动 (Fashion & Sports) ---
+  # --- 4. 潮流、运动与美妆 (IP 归属地敏感) ---
   - '+.nike.com'
   - '+.adidas.com'
   - '+.lululemon.com'
   - '+.coach.com'
-  - '+.coachoutlet.com'
+  - '+.coachoutlet.com'       # 重点：奥莱风控等级极高
   - '+.ralphlauren.com'
   - '+.supremenewyork.com'
-
-# --- 6. 美妆与化妆品 (Beauty) ---
+  - '+.stockx.com'
+  - '+.goat.com'
   - '+.sephora.com'
   - '+.ulta.com'
   - '+.esteelauder.com'
   - '+.clinique.com'
 
-# --- 7. 支付、风控与网关 (Payment & Fraud Detection) ---
-# 核心：这些是下单成功的关键。如果风控域名（如 Riskified）直连，后台会标记为“高风险交易”。
-  - '+.paypal.com'
-  - '+.paypal.me'
-  - '+.paypalobjects.com'
-  - '+.braintreegateway.com'
-  - '+.braintreepayments.com'
+  # --- 5. 购物专属支付网关与位置风控 ---
+  # 说明：此处保留非银行类的第三方支付验证
   - '+.stripe.com'
   - '+.adyen.com'
-  - '+.riskified.com'
-  - '+.forter.com'
-  - '+.simility.com'
-  - '+.radar.io'
+  - '+.checkout.com'
+  - '+.radar.io'              # 关键：识别设备物理位置的反欺诈工具
+  - '+.card.io'               # 信用卡扫描识别
 
-# --- 8. 返利、监测与导购 (Shopping Utilities) ---
-# 核心：IP 必须与购物站保持一致，否则返利单会丢单。
+  # --- 6. 返利、导购与折扣工具 (防止丢单) ---
   - '+.rakuten.com'
   - '+.topcashback.com'
   - '+.slickdeals.net'
   - '+.camelcamelcamel.com'
   - '+.honey.io'
   - '+.joinhoney.com'
- 
+
+  
