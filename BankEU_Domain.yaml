@@ -1,13 +1,13 @@
 payload:
-  # > Myfin (保加利亚数字银行)
+#  - '+.wise.com'   # 英国公司 国区身份注册，直连访问
+
+# > Myfin (保加利亚数字银行)
   - '+.myfin.bg'
   - '+.myfin.com'
-
-  # > N26 (德国数字银行)
+# > N26 (德国数字银行)
   - '+.n26.com'
   - '+.tech26.de'
-
-  # > Swiss Banks (瑞士银行合集: Swissquote, Yuh, Dukascopy)
+# > Swiss Banks (瑞士银行合集: Swissquote, Yuh, Dukascopy)
   # Yuh (由 Swissquote 和 PostFinance 合作推出)
   - '+.yuh.com'
   # Swissquote (瑞讯银行)
