@@ -77,8 +77,7 @@
   - '+.xoom.com'                # 国际汇款
 
   # 补充平台类
-  - '+.revolut.com'
-  - '+.aqueduct.revolutlabs.com'
+
   - '+.monzo.com'
   - '+.monzo.statuspage.io'
   - '+.ws-eu.pusher.com'
