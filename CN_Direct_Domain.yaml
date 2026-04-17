@@ -31,5 +31,5 @@ payload:
   - '+.backloop.dev'
   - '+.lencr.org'          # Let's Encrypt 证书颁发机构（CA）
   - '+.ocsp.digicert.com'  # DigiCert在线证书状态协议
-#  - '+.cncbinternational.com'   # 信银国际 走特殊端口8001、8002、8003
-#  - '+.citicbank.com.hk'        # 信银国际 走特殊端口8001、8002、8003
+  - '+.cncbinternational.com'   # 信银国际 风控检测 走特殊端口8001、8002、8003、80、443
+  - '+.citicbank.com.hk'        # 信银国际 风控检测 走特殊端口8001、8002、8003、80、443
