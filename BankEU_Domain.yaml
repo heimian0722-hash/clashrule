@@ -22,3 +22,5 @@ payload:
   - '+.postfinance.ch'
   
 #  - '+.wise.com'   # 英国公司 国区身份注册，直连访问
+  - '+.revolut.com'
+  - '+.aqueduct.revolutlabs.com'
