@@ -1,5 +1,5 @@
 payload:
-  # === Google AI (Gemini & Ecosystem) ===
+# === Google AI (Gemini & Ecosystem) ===
   - '+.gemini.google'
   - '+.bard.google.com'
   - '+.aistudio.google.com'
@@ -8,9 +8,13 @@ payload:
   - '+.deepmind.google'
   - '+.notebooklm.google'
   - '+.notebooklm.google.com'
+  # 核心 API 与 后端
   - '+.generativelanguage.googleapis.com'
   - '+.proactivebackend-pa.googleapis.com'
-  - '+.googleapis.cn' # 补强：针对国内环境的 API 修正
+  - '+.alkalimakersuite-pa.clients6.google.com'
+  - '+.googleapis.cn' # 修正国内环境解析
+  # 关键：多媒体与文件处理（不加这个 Gemini 会半瘫痪）
+  - '+.googleusercontent.com'
 
   # === OpenAI (ChatGPT) ===
   - '+.openai.com'
@@ -39,12 +43,21 @@ payload:
   - '+.x.ai'
   - '+.grok.com'
 
-  # === Microsoft Copilot & Bing AI ===
+# === Microsoft Copilot & Bing AI ===
+  - '+.copilot.cloud.microsoft'
   - '+.copilot.microsoft.com'
   - '+.sydney.bing.com'
   - '+.www.bing.com'
+  - '+.edgeservices.bing.com'
+  - '+.bingapis.com'
   - '+.bing.com'
+  - '+.bing.net'
   - '+.designer.microsoft.com'
+  - '+.msn.com'
+  - '+.msedge.net'
+  - '+.nelreports.net'
+  - '+.footprintdns.com'
+  - '+.uhf.microsoft.com'
 
   # === 其他主流 AI 平台 ===
   - '+.perplexity.ai'
