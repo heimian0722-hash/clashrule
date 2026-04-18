@@ -16,7 +16,7 @@ payload:
   # 关键：多媒体与文件处理（不加这个 Gemini 会半瘫痪）
   - '+.googleusercontent.com'
 
-  # === OpenAI (ChatGPT) ===
+# === OpenAI (ChatGPT) ===
   - '+.openai.com'
   - '+.chatgpt.com'
   - '+.oaistatic.com'
@@ -24,7 +24,7 @@ payload:
   - '+.identit.as'     # 补强：防降智校验
   - '+.stripe.com'     # 支付订阅所需
 
-  # === Apple Intelligence (Siri/PCC) ===
+# === Apple Intelligence (Siri/PCC) ===
   - '+.smoot.apple.com'
   - '+.guzzoni.apple.com'
   - '+.apple-relay.apple.com'
@@ -37,7 +37,7 @@ payload:
   - '+.gateway.icloud.com' # iCloud 核心网关
   - '+.itunes.apple.com' # 解决部分区域限制
 
-  # === Anthropic (Claude) & xAI (Grok) ===
+# === Anthropic (Claude) & xAI (Grok) ===
   - '+.anthropic.com'
   - '+.claude.ai'
   - '+.x.ai'
