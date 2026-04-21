@@ -1,77 +1,91 @@
 payload:
-  # > 传统持牌银行 (Traditional Banks)
-  - '+.bochk.com'               # 中银香港
-  - '+.hsbc.com.hk'             # 汇丰银行
-  - '+.hsbc.com'                # 汇丰集团
-  - '+.hangseng.com'            # 恒生银行
+  # > 香港传统持牌银行 (HK Traditional Banks)
+  - '+.bochk.com'                # 中银香港
+  - '+.hsbc.com.hk'              # 汇丰银行
+  - '+.hsbc.com'                 # 汇丰集团通用
+  - '+.hangseng.com'             # 恒生银行
   - '+.standardchartered.com.hk' # 渣打香港
-  - '+.sc.com'                  # 渣打通用
-  - '+.cmbwinglungbank.com'     # 招商永隆
-  - '+.citibank.com.hk'         # 花旗香港
-  - '+.dbs.com.hk'              # 星展香港
-  - '+.bea.com.hk'              # 东亚银行
-  - '+.icbcasia.com'            # 工银亚洲
-  - '+.ccbasia.com'             # 建行亚洲
-  - '+.ncb.com.hk'              # 南洋商业银行
-  - '+.chiyu.com.hk'            # 集友银行
-  - '+.dahsing.com'             # 大新银行
-  - '+.dahsingbank.com'         # 大新银行
-  - '+.shacombank.com.hk'       # 上海商业银行
-  - '+.ocbc.com.hk'             # 华侨银行香港
-  - '+.ocbc.com'                # OCBC 集团
-  - '+.fubonbank.com.hk'        # 富邦银行
-  - '+.publicbank.com.hk'       # 大众银行
+  - '+.sc.com'                   # 渣打通用
+  - '+.cmbwinglungbank.com'      # 招商永隆
+  - '+.citibank.com.hk'          # 花旗香港
+  - '+.dbs.com.hk'               # 星展香港
+  - '+.bea.com.hk'               # 东亚银行
+  - '+.icbcasia.com'             # 工银亚洲
+  - '+.ccbasia.com'              # 建行亚洲
+  - '+.ncb.com.hk'               # 南洋商业银行
+  - '+.chiyu.com.hk'             # 集友银行
+  - '+.dahsing.com'              # 大新银行
+  - '+.dahsingbank.com'          # 大新银行
+  - '+.shacombank.com.hk'        # 上海商业银行
+  - '+.ocbc.com.hk'              # 华侨银行香港
+  - '+.fubonbank.com.hk'         # 富邦银行
+  - '+.publicbank.com.hk'        # 大众银行
+  - '+.cncbinternational.com'    # 信银国际
+  - '+.citicbank.com.hk'         # 信银国际备用
 
-# 信银国际 风控检测 走特殊端口8001、8002、8003、80、443
-#  - '+.cncbinternational.com'   # 信银国际
-#  - '+.citicbank.com.hk'        # 信银国际
+  # > 新加坡核心银行 (SG Core Banks)
+  - '+.dbs.com'                  # 星展集团
+  - '+.posb.com.sg'              # 新加坡 POSB
+  - '+.uob.com.sg'               # 大华银行
+  - '+.uobgroup.com'             # UOB 集团
+  - '+.ocbc.com'                 # 华侨银行集团核心
 
+  # > 虚拟银行 (Virtual Banks)
+  - '+.za.group'                 # 众安银行 (ZA Bank)
+  - '+.zatech.com'               # 众安技术支持
+  - '+.mox.com'                  # Mox Bank
+  - '+.livibank.com'             # Livi Bank
+  - '+.welab.bank'               # WeLab Bank
+  - '+.fusionbank.com'           # 富融银行
+  - '+.airstarbank.com'          # 天星银行
+  - '+.paob.com.hk'              # 平安壹账通
+  - '+.antbank.hk'               # 蚂蚁银行
 
-  # > 虚拟银行 (Virtual Banks - 对 IP 极其敏感)
-  - '+.za.group'                # 众安银行 (ZA Bank)
-  - '+.zatech.com'              # 众安技术支持
-  - '+.mox.com'                 # Mox Bank
-  - '+.livibank.com'            # Livi Bank
-  - '+.welab.bank'              # WeLab Bank
-  - '+.fusionbank.com'          # 富融银行
-  - '+.airstarbank.com'         # 天星银行
-  - '+.paob.com.hk'             # 平安壹账通
-  - '+.antbank.hk'              # 蚂蚁银行
+  # > 富途 & Moomoo 全系 (Futu & Moomoo Global)
+  - '+.futunn.com'               # 富途牛牛/核心
+  - '+.futu5.com'                # 底层行情数据 (关键)
+  - '+.futuhk.com'               # 富途香港
+  - '+.futusg.com'               # 富途新加坡
+  - '+.futuau.com'               # 富途澳洲
+  - '+.futuie.com'               # 富途国际
+  - '+.futuclub.com'             # 富途社区
+  - '+.futu-static.com'          # 富途静态资源
+  - '+.futunniot.com'            # 富途长连接
+  - '+.moomoo.com'               # Moomoo 官网及 API
+  - '+.moomoo.app'               # Moomoo 业务接口
+  - '+.moomoo.io'                # Moomoo 短链
+  - '+.mm.io'                    # Moomoo 跳转
+  - '+.moomoo-static.com'        # Moomoo 资源
+  - '+.moomoo-img.com'           # Moomoo 图片/图表
 
-  # > iFAST Global Bank (英国/香港联动)
-  - '+.ifastgb.com'
-  - '+.ifastfinancial.com.hk'
-  - '+.ifastgp.com.hk'
-  - '+.ifastfinancial.com'
-  - '+.ifastwm.com.hk'
+  # > 其他券商与交易所 (Other Brokers & Exchanges)
+  - '+.ifastgb.com'              # iFAST 英国数字银行
+  - '+.ifastfinancial.com.hk'    # iFAST 香港
+  - '+.ifastfinancial.com'       # iFAST 集团
+  - '+.itiger.com'               # 老虎证券核心
+  - '+.tigerbrokers.com'         # 老虎国际
+  - '+.tigerbrokers.com.hk'      # 老虎香港
+  - '+.longbridgeapp.com'        # 长桥证券
+  - '+.longbridge.hk'            # 长桥香港
+  - '+.vbroker.com.hk'           # 华盛证券
+  - '+.webull.hk'                # 微牛香港
+  - '+.webull-sg.com'            # 微牛新加坡
+  - '+.wstock.co'                # 通用行情接口
+  - '+.api.wcc.best'             # 金融核心 API
+  - '+.hashkey.com'              # HashKey 交易所
+  - '+.osl.com'                  # OSL 交易所
+  - '+.hkex.com.hk'              # 香港交易所
 
-  # > 券商与持牌交易所 (Brokers & Exchanges)
-  - '+.futunn.com'              # 富途证券
-  - '+.futuhk.com'              # 富途香港
-  - '+.tigerbrokers.com.hk'     # 老虎证券
-  - '+.itiger.com'              # 老虎证券
-  - '+.longbridgeapp.com'       # 长桥证券
-  - '+.hashkey.com'             # HashKey Exchange
-  - '+.osl.com'                 # OSL
-  - '+.hkex.com.hk'             # 香港交易所 (HKEX)
-  - '+.victorysec.com.hk'       # 胜利证券
-  - '+.vbroker.com.hk'          # 华盛证券
-  - '+.usmartsecurities.com'    # 盈立证券
-  - '+.webull.hk'               # 微牛香港
-
-  # > 支付工具与公共服务 (Payments & Public Services)
-  - '+.alipay.hk'               # AlipayHK
-  - '+.alipay.com.hk'           # AlipayHK备用域名
-  - '+.octopus.com.hk'          # 八达通
-  - '+.octopuscards.com'        # 八达通卡
-  - '+.tapngo.com.hk'           # Tap & Go
-  - '+.payme.hsbc'              # PayMe
-  - '+.fps.com.hk'              # 转数快 (FPS)
-  - '+.hkicl.com.hk'            # 转数快结算底层
-  - '+.pps.com.hk'              # 缴费灵
-  - '+.hketoll.gov.hk'          # (补充) 易通行，开车缴费常用
-
-  # > 身份验证 (Security - 必加，否则部分银行App无法登录)
-  - '+.lexisnexis.com'          # 许多香港银行使用的反欺诈/风险评估系统
-  - '+.jumio.com'               # 常见的开户人脸识别/证件扫描服务
-
+  # > 支付、结算与风控验证 (Payments & Security)
+  - '+.alipay.hk'                # AlipayHK
+  - '+.octopus.com.hk'           # 八达通
+  - '+.octopuscards.com'         # 八达通卡
+  - '+.tapngo.com.hk'            # Tap & Go
+  - '+.payme.hsbc'               # PayMe
+  - '+.fps.com.hk'               # 转数快
+  - '+.hkicl.com.hk'             # 转数快底层
+  - '+.pps.com.hk'               # 缴费灵
+  - '+.hketoll.gov.hk'           # 易通行
+  - '+.lexisnexis.com'           # 银行风控评估
+  - '+.jumio.com'                # KYC 人脸/证件识别
+  - '+.onfido.com'               # 备用 KYC 验证
