@@ -54,22 +54,20 @@ payload:
   - '+.bybit-exchange.com'
   - '+.bybitproxy.com'
 
-
-  # --- Bitget & Gate.io ---
+# --- Bitget & Gate.io ---
+  - '+.bgstatic.com'
+  - '+.bgwallet.com'
   - '+.bitget.com'
   - '+.bitget.tv'
-  - '+.bitgetapp.com'
   - '+.bitgetapi.com'
-  - '+.bgstatic.com'      # Bitget 静态资源
-  - '+.krbitget.com'
-  - '+.kbitget.com'
   - '+.bitgetapp.com'
   - '+.bitgetapps.com'
-  - '+.bgwallet.com'
   - '+.gate.io'
   - '+.gateio.live'
   - '+.gateio.pro'
   - '+.gateio.services'
+  - '+.kbitget.com'
+  - '+.krbitget.com'
 
   # --- 其他常用离岸与二线 ---
   - '+.mexc.com'          # 抹茶
