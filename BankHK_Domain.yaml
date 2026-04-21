@@ -59,6 +59,9 @@ payload:
   - '+.moomoo-img.com'           # Moomoo 图片/图表  
   - '+.appsflyersdk.com'
   - '+.moomoobull.com'
+  - '+.futustatic.com'
+  - '+.futu-api.com'
+
 
   # > 其他券商与交易所 (Other Brokers & Exchanges)
   - '+.ifastgb.com'              # iFAST 英国数字银行
