@@ -33,3 +33,15 @@ payload:
   - '+.ocsp.digicert.com'  # DigiCert在线证书状态协议
   - '+.cncbinternational.com'   # 信银国际 风控检测 走特殊端口8001、8002、8003、80、443
   - '+.citicbank.com.hk'        # 信银国际 风控检测 走特殊端口8001、8002、8003、80、443
+  
+  - '+.moomoo.com'              # Moomoo 核心
+  - '+.moomoo.app'              # Moomoo App
+  - '+.moomoo.io'               # Moomoo 短链
+  - '+.mm.io'                   # Moomoo 跳转
+  - '+.futu5.com'               # 富途底层行情
+  - '+.futunn.com'              # 富途牛牛组件
+  - '+.futuclub.com'            # 富途社区
+  - '+.futusg.com'              # 富途新加坡/国际
+  - '+.moomoo-static.com'       # Moomoo 资源
+  - '+.moomoo-img.com'          # Moomoo 图片
+  - '+.futu-static.com'         # 富途静态资源
