@@ -53,9 +53,4 @@ payload:
   - '+.futuau.com'              # 富途澳洲
   - '+.futuie.com'              # 富途国际版
   # --- 关联金融 API ---
-  - '+.api.wcc.best'            # 金融通用 API 接口
-  - '+.wstock.co'               # 备用行情数据接口
-  - '+.futusg.com'              # 富途新加坡/国际
-  - '+.moomoo-static.com'       # Moomoo 资源
-  - '+.moomoo-img.com'          # Moomoo 图片
-  - '+.futu-static.com'         # 富途静态资源
+  - '+.wstock.co'               # 备用行情数据接
