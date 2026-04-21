@@ -90,6 +90,7 @@ payload:
   - '+.intercom.io'             # 客服系统 (屏蔽会导致无法联系在线客服)
   - '+.intercomcdn.com'         # 客服组件加速
   - '+.launchdarkly.com'        # App 功能实时开关
+  - '+.glance.net'
 
   # > 金融数据与信用服务 (Credit & Data)
   - '+.equifax.com'              # 信用报告
