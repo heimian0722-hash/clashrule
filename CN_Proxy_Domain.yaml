@@ -13,15 +13,15 @@ payload:
   
 #代理VPN站点
   - '+.immersivetranslate.com'
-  - xn--mes358aby2apfg.com
-  - cloud.xn--4gq62f52gdss.asia
-  - xn--9kqz23b19z.com'
-  - xn--4gqx1hgtfdmt.com
+  - '+.xn--mes358aby2apfg.com'
+  - '+.cloud.xn--4gq62f52gdss.asia'
+  - '+.xn--9kqz23b19z.com'
+  - '+.xn--4gqx1hgtfdmt.com'
   - '+.liangxin.xyz'
   - '+.yfjc.xyz'
   - '+.tapcloud.me'
   - '+.smallstrawberry.com'
-  - 'mojie.app'
+  - '+.mojie.app'
   - '+.pqjc.site'
   - '+.chaoyue.quest'
   - '+.xn--m7r52rosihxm.com'
