@@ -40,6 +40,7 @@ payload:
   - '+.airstarbank.com'          # 天星银行 旧
   - '+.elebank.com'              # 天星银行 新
   - '+.app-analytics-services.com'  # 天星银行 新
+  - '+.myqcloud.com'             # 天星银行 新
   - '+.paob.com.hk'              # 平安壹账通
   - '+.antbank.hk'               # 蚂蚁银行
 
