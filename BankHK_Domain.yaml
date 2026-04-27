@@ -41,8 +41,8 @@ payload:
   - '+.antbank.hk'               # 蚂蚁银行
   - '+.airstarbank.com'          # 天星银行 旧
   - '+.elebank.com'              # 天星银行 新
-  - '+.app-analytics-services.com'  # 天星银行 新
-  - '+.myqcloud.com'             # 天星银行 新
+#  - '+.app-analytics-services.com'  # 天星银行 新
+#  - '+.myqcloud.com'             # 天星银行 新
 
   # > 富途 & Moomoo 全系 (Futu & Moomoo Global)
   - '+.futunn.com'               # 富途牛牛/核心
