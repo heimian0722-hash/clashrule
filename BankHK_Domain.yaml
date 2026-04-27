@@ -37,10 +37,6 @@ payload:
   - '+.livibank.com'             # Livi Bank
   - '+.welab.bank'               # WeLab Bank
   - '+.fusionbank.com'           # 富融银行
-  - '+.airstarbank.com'          # 天星银行 旧
-  - '+.elebank.com'              # 天星银行 新
-  - '+.app-analytics-services.com'  # 天星银行 新
-  - '+.myqcloud.com'             # 天星银行 新
   - '+.paob.com.hk'              # 平安壹账通
   - '+.antbank.hk'               # 蚂蚁银行
 
@@ -98,3 +94,9 @@ payload:
   - '+.jumio.com'                # KYC 人脸/证件识别
   - '+.onfido.com'               # 备用 KYC 验证
   - '+.ctm.net'
+
+
+#  - '+.airstarbank.com'          # 天星银行 旧
+#  - '+.elebank.com'              # 天星银行 新
+#  - '+.app-analytics-services.com'  # 天星银行 新
+#  - '+.myqcloud.com'             # 天星银行 新
