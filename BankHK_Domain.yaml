@@ -39,6 +39,10 @@ payload:
   - '+.fusionbank.com'           # 富融银行
   - '+.paob.com.hk'              # 平安壹账通
   - '+.antbank.hk'               # 蚂蚁银行
+  - '+.airstarbank.com'          # 天星银行 旧
+  - '+.elebank.com'              # 天星银行 新
+  - '+.app-analytics-services.com'  # 天星银行 新
+  - '+.myqcloud.com'             # 天星银行 新
 
   # > 富途 & Moomoo 全系 (Futu & Moomoo Global)
   - '+.futunn.com'               # 富途牛牛/核心
@@ -95,8 +99,3 @@ payload:
   - '+.onfido.com'               # 备用 KYC 验证
   - '+.ctm.net'
 
-
-#  - '+.airstarbank.com'          # 天星银行 旧
-#  - '+.elebank.com'              # 天星银行 新
-#  - '+.app-analytics-services.com'  # 天星银行 新
-#  - '+.myqcloud.com'             # 天星银行 新
