@@ -13,86 +13,84 @@ payload:
   - '+.a.market.xiaomi.com'       # 小米应用商店统计、广告位及用户行为追踪
   - '+.go.10086.cn'               # 中国移动业务跳转、免密登录校验及推广弹窗
 
-# =============================================================
-# 国内主流 App 确定可屏蔽广告/追踪域名清单
-# =============================================================
+# --- 腾讯系 (广告 & 统计) ---
+  - '+.e.qq.com'                 # 腾讯优量汇核心
+  - '+.gdt.qq.com'               # 广点通
+  - '+.win.gdt.qq.com'
+  - '+.v.gdt.qq.com'
+  - '+.mi.gdt.qq.com'
+  - '+.mta.qq.com'               # 腾讯移动分析
+  - '+.tpns.qq.com'              # 推送统计上报
+  - '+.adsmind.tc.qq.com'
 
-# --- 腾讯系 (广告引擎 & 统计) ---
-- '+.e.qq.com'                 # 腾讯优量汇广告核心
-- '+.gdt.qq.com'               # 广点通广告下发
-- '+.win.gdt.qq.com'           # 广点通成交追踪
-- '+.v.gdt.qq.com'             # 广点通视频广告
-- '+.mi.gdt.qq.com'            # 广点通设备校验
-- '+.pgdt.gtimg.cn'            # 腾讯广告素材 CDN
-- '+.mta.qq.com'               # 腾讯移动分析统计
-- '+.tpns.qq.com'              # 腾讯推送统计上报
-- '+.adsmind.tc.qq.com'        # 腾讯视频等 App 广告
+# --- 字节跳动 / 穿山甲 (核心广告 & 追踪) ---
+  - '+.pangolin-sdk-toutiao.com'
+  - '+.pangolin-sdk-toutiao1.com'
+  - '+.pangle.io'                # 穿山甲全球
+  - '+.pangleglobal.com'
+  - '+.pglstatp-toutiao.com'
+  - '+.byteorge.com'
+  - '+.bytegoofy.com'
+  - '+.ad.toutiao.com'
+  - '+.volceapplog.com'          # 火山引擎日志
+  - '+.volces.com'
+  - '+.ctobsnssdk.com'
+  - '+.zijieapi.com'
+  - '+.abtest-ch.snssdk.com'     # AB测试上报
+  - '+.ad.snssdk.com'            # 字节通用广告
+  - '+.toblog.snssdk.com'        # 日志上报
+  - '+.mcs.snssdk.com'           # 埋点采集
 
-# --- 百度系 (全网最杂广告) ---
-- '+.pos.baidu.com'            # 百度核心广告位（必封）
-- '+.cpro.baidu.com'           # 百度联盟广告
-- '+.mobads.baidu.com'         # 百度移动端广告
-- '+.mobads-logs.baidu.com'    # 百度广告日志上报
-- '+.hm.baidu.com'             # 百度统计 (HMTM)
-- '+.nsclick.baidu.com'        # 百度点击流追踪
-- '+.nadvideo2.baidu.com'      # 百度视频广告素材
+  # --- 百度系 (移动广告) ---
+  - '+.pos.baidu.com'            # 核心广告位
+  - '+.cpro.baidu.com'
+  - '+.mobads.baidu.com'
+  - '+.mobads-logs.baidu.com'
+  - '+.hm.baidu.com'             # 百度统计
+  - '+.nsclick.baidu.com'
+  - '+.nadvideo2.baidu.com'      # 视频广告素材
 
-# --- 阿里巴巴 (广告分发 & 追踪) ---
-- '+.alimama.com'              # 阿里妈妈广告联盟
-- '+.tanx.com'                 # 阿里 Tanx 广告交换平台
-- '+.adash.m.taobao.com'       # 阿里移动端统计上报
-- '+.fourier.taobao.com'       # 阿里用户行为分析
-- '+.s.click.taobao.com'       # 淘宝客返利追踪 (如不使用可封)
-- '+.alipaylog.com'            # 支付宝日志统计
+  # --- 阿里巴巴 (广告 & 统计) ---
+  - '+.alimama.com'              # 阿里妈妈
+  - '+.tanx.com'                 # 广告交换平台
+  - '+.adash.m.taobao.com'       # 移动统计
+  - '+.fourier.taobao.com'       # 行为分析
+  - '+.mmstat.com'               # 核心统计
 
-# --- 字节跳动 (穿山甲广告联盟 & 追踪) ---
-- '+.pangle.io'                # 穿山甲全球广告（第三方 App 广告多源于此）
-- '+.pangleglobal.com'         # 穿山甲海外/全局
-- '+.ad.toutiao.com'           # 今日头条广告核心
-- '+.ad.snssdk.com'            # 字节系通用广告
-- '+.toblog.snssdk.com'        # 字节系日志审计
-- '+.mcs.snssdk.com'           # 字节系埋点采集
-- '+.dig.bdurl.net'            # 字节系核心追踪
+  # --- 手机厂商系统广告 ---
+  - '+.ad.xiaomi.com'
+  - '+.ad.mi.com'
+  - '+.tracking.miui.com'
+  - '+.ads.huawei.com'
+  - '+.metrics.icloud.huawei.com'
+  - '+.ads.vivo.com'
+  - '+.ads.oppomobile.com'
 
-# --- 手机厂商系统广告 (开屏广告主要来源) ---
-- '+.ad.xiaomi.com'            # 小米广告
-- '+.ad.mi.com'                # 小米广告
-- '+.tracking.miui.com'        # MIUI 统计追踪
-- '+.ads.huawei.com'           # 华为广告
-- '+.metrics.icloud.huawei.com'# 华为度量统计
-- '+.ads.vivo.com'             # Vivo 广告
-- '+.ads.oppomobile.com'       # Oppo 广告
+  # --- 第三方审计与通用插件 ---
+  - '+.umeng.com'                # 友盟统计
+  - '+.umengcloud.com'
+  - '+.miaozhen.com'             # 秒针审计
+  - '+.admaster.com.cn'
+  - '+.talkingdata.com'
+  - '+.gridsum.com'
+  - '+.sigmob.cn'                # Sigmob广告
+  - '+.adkwai.com'               # 快手广告
+  - '+.1rtb.com'                 # RTB广告
+  - '+.vungle.com'               # Vungle广告
+  - '+.rayjump.com'              # 汇量科技
+  - '+.beizi.biz'                # 备字广告
+  - '+.doubleclick.net'          # Google广告
+  - '+.adservice.google.com'
 
-# --- 第三方数据统计与审计 (隐私重灾区) ---
-- '+.umeng.com'                # 友盟统计
-- '+.umengcloud.com'           # 友盟云统计
-- '+.miaozhen.com'             # 秒针系统 (广告点击审计)
-- '+.admaster.com.cn'          # AdMaster (广告效果审计)
-- '+.talkingdata.com'          # TalkingData 统计分析
-- '+.gridsum.com'              # 国双数据审计
-- '+.doubleclick.net'          # Google DoubleClick 广告
+  # --- 视频/社交应用特有广告 ---
+  - '+.cupid.iqiyi.com'          # 爱奇艺广告
+  - '+.ad.api.mgtv.com'          # 芒果广告
+  - '+.adstrategy.biz.weibo.com' # 微博广告
+  - '+.sdkapp.mobile.sina.cn'
 
-# --- 视频应用特有广告 ---
-- '+.cupid.iqiyi.com'          # 爱奇艺广告接口
-- '+.t7z.cupid.iqiyi.com'      # 爱奇艺广告下发
-- '+.ad.api.mgtv.com'          # 芒果 TV 广告
-- '+.adstrategy.biz.weibo.com' # 微博广告策略
-- '+.sdkapp.mobile.sina.cn'    # 新浪系 SDK 统计
-
-# 字节系广告分流与追踪 (针对番茄小说/抖音/头条优化)
-- '+.dig.bdurl.net'
-- '+.activity-ag.awemeughun.com'
-- '+.mcs.snssdk.com'
-- '+.tnc3-alisc1.snssdk.com'
-- '+.security-lq.snssdk.com'
-- '+.tnc3-aliec2.snssdk.com'
-- '+.pglstatp-toutiao.com'
-- '+.byteorge.com'
-- '+.bytegoofy.com'
-- '+.toblog.snssdk.com'
-- '+.ad.toutiao.com'
-- '+.ad.snssdk.com'
-- '+.v.beizi.biz'
+  # --- 特定 App 统计域名 ---
+  - '+.ssp-x.yoloho.com'         # 大姨妈/yoloho 广告平台
+  - '+.statistical.yoloho.com'   # 大姨妈统计
 
 # 字节系动态广告域名补全 (0-9 轮询全覆盖)
 - '+.ads0-normal-lq.snssdk.com'
@@ -126,17 +124,6 @@ payload:
 - '+.saveu8-normal-lf.zijieapi.com'
 - '+.saveu9-normal-lf.zijieapi.com'
 
-# 穿山甲广告联盟 (Pangle Global)
-- '+.pangle.io'
-- '+.pangleglobal.com'
-
-# 通用第三方广告插件与分发
-- '+.vungle.com'
-- '+.doubleclick.net'
-- '+.adservice.google.com'
-- '+.rayjump.com'
-- '+.nadvideo2.baidu.com'
-  
 # --- 广告联盟 (国内/国外) ---
   - '+.09mk.cn'
   - '+.100peng.com'
