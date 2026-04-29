@@ -12,6 +12,40 @@ payload:
   - '+.collector.githubapp.com'   # GitHub 行为追踪与遥测数据收集
   - '+.a.market.xiaomi.com'       # 小米应用商店统计、广告位及用户行为追踪
   - '+.go.10086.cn'               # 中国移动业务跳转、免密登录校验及推广弹窗
+
+# --- 番茄小说 ---
+  - '+.p6-ad-sign.byteimg.com'
+  - '+.p9-ad-sign.byteimg.com'
+  - '+.i.snssdk.com'
+  - '+.i-lq.snssdk.com'
+  - '+.dig.bdurl.net'
+  - '+.activity-ag.awemeughun.com'
+  - '+.mcs.snssdk.com'
+  - '+.tnc3-alisc1.snssdk.com'
+  - '+.security-lq.snssdk.com'
+  - '+.tnc3-aliec2.snssdk.com'
+  - '+.is.snssdk.com'
+  - '+.msync-im1-vip6-std.easemob.com'
+  - '+.apd-pcdnwxlogin.teg.tencent-cloud.net'
+  - '+.api.iegadp.qq.com'
+  - '+.sf3-ttcdn-tos.pstatp.com'
+  - '+.v6-novelapp.ixigua.com'
+  - '+.pglstatp-toutiao.com'
+  - '+.byteorge.com'
+  - '+.bytegoofy.com'
+  - '+.bytedance.com'
+
+  # --- 建议补充的穿山甲广告联盟 (Pangle) ---
+  - '+.pangle.io'
+  - '+.pangleglobal.com'
+  - '+.ads3-normal-lq.snssdk.com'
+  - '+.ads5-normal-lq.snssdk.com'
+  - '+.toblog.snssdk.com'
+  - '+.v.beizi.biz'
+  
+  # --- 补充的其他常见广告分发 ---
+  - '+.ad.toutiao.com'
+  - '+.ad.snssdk.com'
   
   # --- 广告联盟 (国内/国外) ---
   - '+.09mk.cn'
