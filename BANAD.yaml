@@ -12,50 +12,75 @@ payload:
   - '+.collector.githubapp.com'   # GitHub 行为追踪与遥测数据收集
   - '+.a.market.xiaomi.com'       # 小米应用商店统计、广告位及用户行为追踪
   - '+.go.10086.cn'               # 中国移动业务跳转、免密登录校验及推广弹窗
-
 # --- 腾讯系 (广告 & 统计) ---
   - '+.e.qq.com'                 # 腾讯优量汇核心
   - '+.gdt.qq.com'               # 广点通
   - '+.win.gdt.qq.com'
   - '+.v.gdt.qq.com'
   - '+.mi.gdt.qq.com'
+  - '+.qzs.gdtimg.com'           # 广点通素材缓存
+  - '+.pgdt.ugdtimg.com'
   - '+.mta.qq.com'               # 腾讯移动分析
   - '+.tpns.qq.com'              # 推送统计上报
+  - '+.mazu.m.qq.com'
   - '+.adsmind.tc.qq.com'
 
-# --- 字节跳动 / 穿山甲 (核心广告 & 追踪) ---
+  # --- 字节跳动 / 穿山甲 (核心广告 & 追踪) ---
   - '+.pangolin-sdk-toutiao.com'
   - '+.pangolin-sdk-toutiao1.com'
+  - '+.pangolin-sdk-toutiao-b.com'
   - '+.pangle.io'                # 穿山甲全球
   - '+.pangleglobal.com'
   - '+.pglstatp-toutiao.com'
+  - '+.sf6-fe-tos.pglstatp-toutiao.com'
   - '+.byteorge.com'
   - '+.bytegoofy.com'
+  - '+.bytescm.com'
   - '+.ad.toutiao.com'
   - '+.volceapplog.com'          # 火山引擎日志
   - '+.volces.com'
   - '+.ctobsnssdk.com'
+  - '+.toblog.ctobsnssdk.com'
   - '+.zijieapi.com'
+  - '+.tnc3-alisc1.zijieapi.com'
   - '+.abtest-ch.snssdk.com'     # AB测试上报
   - '+.ad.snssdk.com'            # 字节通用广告
   - '+.toblog.snssdk.com'        # 日志上报
   - '+.mcs.snssdk.com'           # 埋点采集
+  - '+.lf-cdn-tos.bytescm.com'
 
   # --- 百度系 (移动广告) ---
   - '+.pos.baidu.com'            # 核心广告位
   - '+.cpro.baidu.com'
   - '+.mobads.baidu.com'
   - '+.mobads-logs.baidu.com'
-  - '+.hm.baidu.com'             # 百度统计
+  - '+.hm.baidu.com'              # 百度统计
   - '+.nsclick.baidu.com'
   - '+.nadvideo2.baidu.com'      # 视频广告素材
 
-  # --- 阿里巴巴 (广告 & 统计) ---
+  # --- 阿里巴巴 / 菜鸟 (广告、统计与日志) ---
   - '+.alimama.com'              # 阿里妈妈
   - '+.tanx.com'                 # 广告交换平台
   - '+.adash.m.taobao.com'       # 移动统计
+  - '+.atoken.m.taobao.com'
+  - '+.acs.m.taobao.com'
+  - '+.err.taobao.com'
   - '+.fourier.taobao.com'       # 行为分析
   - '+.mmstat.com'               # 核心统计
+  - '+.gm.mmstat.com'
+  - '+.log.mmstat.com'
+  - '+.h-adashx.ut.cainiao.com'   # 菜鸟专用上报
+  - '+.cainiao-app-logs.cn-zhangjiakou.log.aliyuncs.com'
+  - '+.mdap.mpaas.cn-hangzhou.aliyuncs.com'
+  - '+.mpaasapi.mpaas.cn-hangzhou.aliyuncs.com'
+  - '+.admonitor-feedback.cn-hangzhou.log.aliyuncs.com'
+  - '+.report-user-online-event.cn-wulanchabu.log.aliyuncs.com'
+  - '+.nbnetflow-reply-log.cn-wulanchabu.log.aliyuncs.com'
+  - '+.dypnsapi.aliyuncs.com'
+  - '+.u-aix-files.oss-cn-zhangjiakou.aliyuncs.com'
+  - '+.ynuf.aliapp.org'
+  - '+.alicdn.com'               # 静态资源CDN上报
+  - '+.wvcfg.alicdn.com'
 
   # --- 手机厂商系统广告 ---
   - '+.ad.xiaomi.com'
@@ -66,19 +91,24 @@ payload:
   - '+.ads.vivo.com'
   - '+.ads.oppomobile.com'
 
-  # --- 第三方审计与通用插件 ---
+  # --- 第三方审计、通用插件及其他广告联盟 ---
   - '+.umeng.com'                # 友盟统计
   - '+.umengcloud.com'
-  - '+.miaozhen.com'             # 秒针审计
+  - '+.miaozhen.com'              # 秒针审计
   - '+.admaster.com.cn'
   - '+.talkingdata.com'
   - '+.gridsum.com'
   - '+.sigmob.cn'                # Sigmob广告
   - '+.adkwai.com'               # 快手广告
   - '+.1rtb.com'                 # RTB广告
+  - '+.1rtb.net'
+  - '+.sdk.1rtb.net'
   - '+.vungle.com'               # Vungle广告
   - '+.rayjump.com'              # 汇量科技
   - '+.beizi.biz'                # 备字广告
+  - '+.ubixioe.com'              # Ubix广告聚合
+  - '+.entry-su1.ubixioe.com'
+  - '+.adx-cfg-u1.ubixioe.com'
   - '+.doubleclick.net'          # Google广告
   - '+.adservice.google.com'
 
@@ -89,7 +119,7 @@ payload:
   - '+.sdkapp.mobile.sina.cn'
 
   # --- 特定 App 统计域名 ---
-  - '+.ssp-x.yoloho.com'         # 大姨妈/yoloho 广告平台
+  - '+.ssp-x.yoloho.com'          # 大姨妈/yoloho 广告平台
   - '+.statistical.yoloho.com'   # 大姨妈统计
 
 # 字节系动态广告域名补全 (0-9 轮询全覆盖)
