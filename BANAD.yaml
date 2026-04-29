@@ -47,6 +47,13 @@ payload:
   - '+.ad.toutiao.com'
   - '+.ad.snssdk.com'
   
+# --- 广告插件与第三方分发 ---
+  - '+.vungle.com'
+  - '+.doubleclick.net'
+  - '+.adservice.google.com'
+  - '+.rayjump.com'
+  - '+.nadvideo2.baidu.com'
+  
   # --- 广告联盟 (国内/国外) ---
   - '+.09mk.cn'
   - '+.100peng.com'
