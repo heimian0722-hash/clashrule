@@ -13,51 +13,67 @@ payload:
   - '+.a.market.xiaomi.com'       # 小米应用商店统计、广告位及用户行为追踪
   - '+.go.10086.cn'               # 中国移动业务跳转、免密登录校验及推广弹窗
 
-# --- 番茄小说 ---
-  - '+.p6-ad-sign.byteimg.com'
-  - '+.p9-ad-sign.byteimg.com'
-  - '+.i.snssdk.com'
-  - '+.i-lq.snssdk.com'
-  - '+.dig.bdurl.net'
-  - '+.activity-ag.awemeughun.com'
-  - '+.mcs.snssdk.com'
-  - '+.tnc3-alisc1.snssdk.com'
-  - '+.security-lq.snssdk.com'
-  - '+.tnc3-aliec2.snssdk.com'
-  - '+.is.snssdk.com'
-  - '+.msync-im1-vip6-std.easemob.com'
-  - '+.apd-pcdnwxlogin.teg.tencent-cloud.net'
-  - '+.api.iegadp.qq.com'
-  - '+.sf3-ttcdn-tos.pstatp.com'
-  - '+.v6-novelapp.ixigua.com'
-  - '+.pglstatp-toutiao.com'
-  - '+.byteorge.com'
-  - '+.bytegoofy.com'
-  - '+.ads5-normal-lf.zijieapi.com'
-  - '+.ads3-normal-lf.zijieapi.com'
-  - '+.saveu5-normal-lf.zijieapi.com'
+# --- 整合广告与追踪拦截列表 (已剔除功能性域名) ---
 
+# 字节系广告分流与追踪 (针对番茄小说/抖音/头条优化)
+- '+.dig.bdurl.net'
+- '+.activity-ag.awemeughun.com'
+- '+.mcs.snssdk.com'
+- '+.tnc3-alisc1.snssdk.com'
+- '+.security-lq.snssdk.com'
+- '+.tnc3-aliec2.snssdk.com'
+- '+.pglstatp-toutiao.com'
+- '+.byteorge.com'
+- '+.bytegoofy.com'
+- '+.toblog.snssdk.com'
+- '+.ad.toutiao.com'
+- '+.ad.snssdk.com'
+- '+.v.beizi.biz'
 
-  # --- 建议补充的穿山甲广告联盟 (Pangle) ---
-  - '+.pangle.io'
-  - '+.pangleglobal.com'
-  - '+.ads3-normal-lq.snssdk.com'
-  - '+.ads5-normal-lq.snssdk.com'
-  - '+.toblog.snssdk.com'
-  - '+.v.beizi.biz'
+# 字节系动态广告域名补全 (0-9 轮询全覆盖)
+- '+.ads0-normal-lq.snssdk.com'
+- '+.ads1-normal-lq.snssdk.com'
+- '+.ads2-normal-lq.snssdk.com'
+- '+.ads3-normal-lq.snssdk.com'
+- '+.ads4-normal-lq.snssdk.com'
+- '+.ads5-normal-lq.snssdk.com'
+- '+.ads6-normal-lq.snssdk.com'
+- '+.ads7-normal-lq.snssdk.com'
+- '+.ads8-normal-lq.snssdk.com'
+- '+.ads9-normal-lq.snssdk.com'
+- '+.ads0-normal-lf.zijieapi.com'
+- '+.ads1-normal-lf.zijieapi.com'
+- '+.ads2-normal-lf.zijieapi.com'
+- '+.ads3-normal-lf.zijieapi.com'
+- '+.ads4-normal-lf.zijieapi.com'
+- '+.ads5-normal-lf.zijieapi.com'
+- '+.ads6-normal-lf.zijieapi.com'
+- '+.ads7-normal-lf.zijieapi.com'
+- '+.ads8-normal-lf.zijieapi.com'
+- '+.ads9-normal-lf.zijieapi.com'
+- '+.saveu0-normal-lf.zijieapi.com'
+- '+.saveu1-normal-lf.zijieapi.com'
+- '+.saveu2-normal-lf.zijieapi.com'
+- '+.saveu3-normal-lf.zijieapi.com'
+- '+.saveu4-normal-lf.zijieapi.com'
+- '+.saveu5-normal-lf.zijieapi.com'
+- '+.saveu6-normal-lf.zijieapi.com'
+- '+.saveu7-normal-lf.zijieapi.com'
+- '+.saveu8-normal-lf.zijieapi.com'
+- '+.saveu9-normal-lf.zijieapi.com'
+
+# 穿山甲广告联盟 (Pangle Global)
+- '+.pangle.io'
+- '+.pangleglobal.com'
+
+# 通用第三方广告插件与分发
+- '+.vungle.com'
+- '+.doubleclick.net'
+- '+.adservice.google.com'
+- '+.rayjump.com'
+- '+.nadvideo2.baidu.com'
   
-  # --- 补充的其他常见广告分发 ---
-  - '+.ad.toutiao.com'
-  - '+.ad.snssdk.com'
-  
-# --- 广告插件与第三方分发 ---
-  - '+.vungle.com'
-  - '+.doubleclick.net'
-  - '+.adservice.google.com'
-  - '+.rayjump.com'
-  - '+.nadvideo2.baidu.com'
-  
-  # --- 广告联盟 (国内/国外) ---
+# --- 广告联盟 (国内/国外) ---
   - '+.09mk.cn'
   - '+.100peng.com'
   - '+.114la.com'
