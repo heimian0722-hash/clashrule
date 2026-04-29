@@ -34,6 +34,10 @@ payload:
   - '+.byteorge.com'
   - '+.bytegoofy.com'
   - '+.bytedance.com'
+  - '+.ads5-normal-lf.zijieapi.com'
+  - '+.ads3-normal-lf.zijieapi.com'
+  - '+.saveu5-normal-lf.zijieapi.com'
+
 
   # --- 建议补充的穿山甲广告联盟 (Pangle) ---
   - '+.pangle.io'
