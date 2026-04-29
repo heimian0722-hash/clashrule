@@ -51,6 +51,9 @@ payload:
   - '+.lf-cdn-tos.bytescm.com'
 
   # --- 阿里巴巴 / 菜鸟 (业务日志与广告) ---
+  - '+.amdc.m.taobao.com'
+  - '+.adprod.cn'
+  - '+.files.adprod.cn'
   - '+.alimama.com'
   - '+.tanx.com'
   - '+.adash.m.taobao.com'
