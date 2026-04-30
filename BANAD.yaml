@@ -13,7 +13,7 @@ payload:
   - '+.a.market.xiaomi.com'       # 小米应用商店统计、广告位及用户行为追踪
   - '+.go.10086.cn'               # 中国移动业务跳转、免密登录校验及推广弹窗
 
-  # --- 腾讯系 (广点通/优量汇/统计) ---
+# --- 腾讯系 (广点通/优量汇/统计) ---
   - '+.e.qq.com'
   - '+.gdt.qq.com'
   - '+.win.gdt.qq.com'
@@ -34,21 +34,9 @@ payload:
   - '+.pangleglobal.com'
   - '+.pglstatp-toutiao.com'
   - '+.sf6-fe-tos.pglstatp-toutiao.com'
-  - '+.byteorge.com'
-  - '+.bytegoofy.com'
-  - '+.bytescm.com'
   - '+.ad.toutiao.com'
-  - '+.volceapplog.com'
-  - '+.volces.com'
-  - '+.ctobsnssdk.com'
-  - '+.toblog.ctobsnssdk.com'
-  - '+.zijieapi.com'
-  - '+.tnc3-alisc1.zijieapi.com'
-  - '+.abtest-ch.snssdk.com'
   - '+.ad.snssdk.com'
-  - '+.toblog.snssdk.com'
-  - '+.mcs.snssdk.com'
-  - '+.lf-cdn-tos.bytescm.com'
+  - '+.zijieapi.com'
 
   # --- 阿里巴巴 / 菜鸟 (业务日志与广告) ---
   - '+.amdc.m.taobao.com'
