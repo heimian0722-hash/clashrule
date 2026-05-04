@@ -28,7 +28,7 @@ proxies:
     username:         # 用户名
     password:         # 密码
     udp: true
-    dialer-proxy: 中转前置-HK  # 指定前置代理节点组
+    dialer-proxy: 中转前置-HKSG  # 指定前置代理节点组
 
 
 # ========================
@@ -42,7 +42,7 @@ tproxy-port: 7895
 
 allow-lan: true
 mode: rule
-log-level: info
+log-level: warning
 
 external-controller: 0.0.0.0:9090
 # external-ui: ui
@@ -56,11 +56,11 @@ secret: "123456"
 dns:
   enable: true
   listen: 0.0.0.0:7874
-  ipv6: true
+  ipv6: false
   enhanced-mode: fake-ip
   fake-ip-range: 198.20.0.1/16
   nameserver:
-    - 223.5.5.5
+    - 119.29.29.29
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - +.lan
@@ -104,7 +104,7 @@ dns:
     - +.gptacg.top
     - +.wxda.net
     
-ipv6: true
+ipv6: false
 
 # ========================
 # TUN 模块
@@ -173,10 +173,10 @@ proxy-groups:
     filter: "^((?!(直连|拒绝)).)*$"
 
   # 链式代理-中转前置-香港
-  - name: 中转前置-HK
+  - name: 中转前置-HKSG
     输入: select
     include-all: true
-    filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
+    filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"
 
   # 香港组
   - name: 香港-故转
