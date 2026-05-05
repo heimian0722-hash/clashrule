@@ -96,5 +96,3 @@ payload:
   - '+.jumio.com'                # KYC 人脸/证件识别
   - '+.onfido.com'               # 备用 KYC 验证
   - '+.ctm.net'
-
-  - '+.proxy-cheap.com'
