@@ -97,3 +97,4 @@ payload:
   - '+.onfido.com'               # 备用 KYC 验证
   - '+.ctm.net'
 
+  - '+.proxy-cheap.com'
