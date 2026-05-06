@@ -58,7 +58,7 @@ dns:
 # 机场订阅
 proxy-providers:
   一分:
-    输入: http
+    type: http
     url: "https://xxxxxxxxx"
     interval: 3600
     path: ./proxies/yifen.yaml
@@ -87,113 +87,113 @@ proxies:   #添加节点信息 ip端口用户
 proxy-groups:
   # --- 基础组 ---
   - name: 🚀 手动选择
-    输入: select
+    type: select
     <<: *use-all
     <<: *pr
 
   - name: ♻️ 自动选择
-    输入: url-test
+    type: url-test
     url: https://cp.cloudflare.com/generate_204
     interval: 600
     <<: *use-all
 
   - name: 📡 倍率节省
-    输入: url-test
+    type: url-test
     filter: "(?i)(0.1x|0.01x|0.001x)"
     <<: *use-all
 
   - name: 🔗 住宅中转
-    输入: select
+    type: select
     proxies: [🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, DIRECT]
 
   - name: 🛑 净化拦截
-    输入: select
+    type: select
     proxies: [REJECT, DIRECT, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省]
 
   # --- 区域组 (正则自动筛选) ---
   - name: 🇺🇸 US
-    输入: select
+    type: select
     filter: "(?i)(🇺🇸|美国|\\bUS\\b|united states|los angeles|san jose|seattle|new york)"
     <<: *use-all
 
   - name: 🇭🇰 HK
-    输入: select
+    type: select
     filter: "(?i)(🇭🇰|香港|\\bHK\\b|hongkong)"
     <<: *use-all
 
   - name: 🇸🇬 SG
-    输入: select
+    type: select
     filter: "(?i)(🇸🇬|新加坡|\\bSG\\b|singapore)"
     <<: *use-all
 
   - name: 🇹🇼 TW
-    输入: url-test
+    type: url-test
     filter: "(?i)(🇹🇼|台湾|\\bTW\\b|taiwan|taipei|hinet)"
     <<: *use-all
 
   - name: 🇯🇵 JP
-    输入: url-test
+    type: url-test
     filter: "(?i)(🇯🇵|日本|\\bJP\\b|tokyo|osaka)"
     <<: *use-all
 
   - name: 🧊 冷门节点
-    输入: select
+    type: select
     filter: "(?i)^(?!.*(🇭🇰|香港|🇯🇵|日本|🇹🇼|台湾|🇸🇬|新加坡|🇺🇸|美国)).*"
     <<: *use-all
 
   # --- 应用分流组 (全量重现原模板，均包含静态节点注入) ---
   - name: 🧠 AI
-    输入: select
+    type: select
     proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🇯🇵 JP, 🧊 冷门节点, 🚀 手动选择]
     <<: *pr
 
   - name: 🤖 ChatGPT
-    输入: select
+    type: select
     proxies: [🇺🇸 US, 🇸🇬 SG, 🇯🇵 JP, 🚀 手动选择]
     <<: *pr
 
   - name: 📞 Wificalling
-    输入: select
+    type: select
     proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择, DIRECT]
     <<: *pr
 
   - name: 🇺🇸 BankUS
-    输入: select
+    type: select
     proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, DIRECT]
     <<: *pr
 
   - name: 🇭🇰 BankHK
-    输入: select
+    type: select
     proxies: [🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择]
     <<: *pr
 
   - name: 🇪🇺 BankEU
-    输入: select
+    type: select
     proxies: [🇭🇰 HK, 🇺🇸 US, 🧊 冷门节点, 🚀 手动选择]
     <<: *pr
 
   - name: 💰 币圈A
-    输入: select
+    type: select
     proxies: [🇺🇸 US, 🚀 手动选择]
     <<: *pr
 
   - name: 💰 币圈B
-    输入: select
+    type: select
     proxies: [🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🚀 手动选择]
     <<: *pr
 
   - name: 🧑‍💻 GitHub
-    输入: select
+    type: select
     proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
     <<: *pr
 
   - name: 🔎 Google
-    输入: select
+    type: select
     proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *pr
 
   - name: 🍎 Apple
-    输入: select
+    type: select
     proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇭🇰 HK]
     <<: *pr
 
