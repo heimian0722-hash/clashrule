@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Dialer 链式代理yaml代码生成器</title>
+
+<style>
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+  background:#f0f2f5;
+  padding:20px;
+}
+h1 { text-align:center; margin-bottom:30px; }
+.section {
+  background:#fff;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:12px;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+textarea,input,select {
+  width:100%;
+  padding:8px;
+  margin:6px 0;
+  border-radius:6px;
+  border:1px solid #d9d9d9;
+}
+textarea { font-family:monospace; min-height:80px; }
+button {
+  background:#1677ff;
+  color:#fff;
+  border:none;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+}
+button.danger { background:#ff4d4f; }
+.inline { display:flex; gap:8px; }
+.inline>* { flex:1; }
+.node-item,.rule-item {
+  background:#fafafa;
+  border-radius:8px;
+  padding:12px;
+  margin-top:10px;
+}
+.output {
+  background:#0f172a;
+  color:#22c55e;
+  border-radius:8px;
+}
+.small { font-size:12px; color:#666; }
+</style>
+</head>
+
+<body>
+
+<h1>🧩 Dialer 链式代理yaml代码生成器</h1>
+
+<div class="section">
+<h2>① 批量粘贴静态住宅节点</h2>
+<textarea id="bulkInput" placeholder="示例：
+109.197.21.16:63567:user:pass
+jp242.kookeey.info:21350:7913e609:aff1bdaa
+7913e609:aff1bdaa@jp242.kookeey.info:21350
+socks5://user:pass@jp242.kookeey.info:21350
+- {name: VLESS-TCP, server: 1.2.3.4, port: 443, type: vless, uuid: xxxx}
+注意:冒号用英文输入法的冒号
+"></textarea>
+<div class="inline">
+  <button onclick="parseBulk(true)">重新解析（清空旧节点）</button>
+  <button onclick="parseBulk(false)">追加解析</button>
+</div>
+</div>
+
+<div class="section">
+<h2>② 节点列表（“静态节点-1”可改名 + 前置代理）</h2>
+<div id="nodeList"></div>
+</div>
+
+<div class="section">
+<h2>③ SRC-IP 规则 （指定ip走 指定静态 分流组）</h2>
+<div class="inline">
+<input id="r_ip" placeholder="192.168.3.5">
+<select id="r_mask"><option>/32</option><option>/24</option></select>
+<input id="r_group" placeholder="指定静态">
+</div>
+<button onclick="addRule()">添加规则</button>
+<div id="ruleList"></div>
+</div>
+
+<div class="section">
+<h2>④ 静态住宅节点名称 （粘贴在pr: &pr  proxies:下面 ）</h2>
+<textarea id="outNames" class="output"></textarea>
+<button onclick="copyText('outNames')">复制</button>
+</div>
+
+<div class="section">
+<h2>⑤ 静态住宅节点明细（粘贴在proxies:下面）</h2>
+<textarea id="outNodes" class="output"></textarea>
+<button onclick="copyText('outNodes')">复制</button>
+</div>
+
+<div class="section">
+<h2>⑥ SRC-IP 规则输出 （粘贴在rule：下面第一行）</h2>
+<textarea id="outRules" class="output"></textarea>
+<button onclick="copyText('outRules')">复制</button>
+</div>
+
+<button onclick="generate()">🚀 生成全部</button>
+
+<script>
+let nodes = [];
+let rules = [];
+let idx = 1;
+
+const dialers = ["🇭🇰 HK","🇸🇬 SG","🇯🇵 JP","🇺🇸 US","🇹🇼 TW","🔗 住宅中转"];
+
+function uniqueName(base){
+  let name = base, i = 1;
+  while(nodes.some(n=>n.name===name)) name = base+"-"+i++;
+  return name;
+}
+
+function isSocks(line) {
+  const s = line.trim();
+
+  if (/^socks/i.test(s)) return true; // socks5://...
+
+  // user:pass@host:port
+  if (/^[^:@\s]+:[^@\s]+@[a-zA-Z0-9.-]+:\d{2,5}$/.test(s)) return true;
+
+  // host:port 或 host:port:user:pass（host 支持域名/IP）
+  if (/^[a-zA-Z0-9.-]+:\d{2,5}(:[^:\s]+(:[^:\s]+)?)?$/.test(s)) return true;
+
+  return false;
+}
+
+function parseSocksLine(line) {
+  const clean = line.trim().replace(/\{.+?\}|#.+$/, "");
+
+  // ① user:pass@host:port（优先级最高）
+  const m = clean.match(/^([^:@\s]+):([^@\s]+)@([^:\s]+):(\d{2,5})$/);
+  if (m) {
+    return { user: m[1], pass: m[2], server: m[3], port: m[4], remark: "" };
+  }
+
+  // ② socks5://user:pass@host:port
+  if (/^socks/i.test(clean)) {
+    const u = new URL(clean);
+    return {
+      user: u.username || "",
+      pass: u.password || "",
+      server: u.hostname,
+      port: u.port,
+      remark: ""
+    };
+  }
+
+  // ③ host:port[:user[:pass]]
+  const parts = clean.split(":");
+  return {
+    server: parts[0],
+    port: parts[1],
+    user: parts[2] || "",
+    pass: parts[3] || "",
+    remark: ""
+  };
+}
+
+function isClash(line){
+  return line.trim().startsWith("- {") && line.includes("type:");
+}
+
+function parseBulk(reset){
+  if (reset) {
+    nodes = [];
+    idx = 1;
+  }
+
+  bulkInput.value
+    .split("\n")
+    .map(l => l.trim())
+    .filter(Boolean)
+    .forEach(line => {
+
+      if (isSocks(line)) {
+        const s = parseSocksLine(line);
+
+        nodes.push({
+          type: "socks",
+          name: uniqueName("静态节点-" + idx++),
+          server: s.server,   // ✅ 统一用 server
+          port: s.port,
+          user: s.user,
+          pass: s.pass,
+          dialer: ""
+        });
+        return;
+      }
+
+      if (isClash(line)) {
+        const m = line.match(/name:\s*([^,}]+)/);
+        nodes.push({
+          type: "clash",
+          name: uniqueName(m ? m[1].trim() : `CLASH-${idx++}`),
+          raw: line,
+          dialer: ""
+        });
+      }
+    });
+
+  renderNodes();
+}
+
+function renderNodes(){
+  nodeList.innerHTML="";
+  nodes.forEach((n,i)=>{
+    nodeList.innerHTML+=`
+    <div class="node-item">
+      <input value="${n.name}" onchange="nodes[${i}].name=this.value">
+      <div class="inline">
+        <select onchange="nodes[${i}].dialer=this.value">
+          <option value="">选择前置</option>
+          ${dialers.map(d=>`<option>${d}</option>`).join("")}
+        </select>
+        <input placeholder="手动输入前置代理" onchange="nodes[${i}].dialer=this.value">
+      </div>
+      <button class="danger" onclick="nodes.splice(${i},1);renderNodes()">删除节点</button>
+    </div>`;
+  });
+}
+
+function addRule(){
+  rules.push({ip:r_ip.value,mask:r_mask.value,group:r_group.value});
+  renderRules();
+}
+
+function renderRules(){
+  ruleList.innerHTML="";
+  rules.forEach((r,i)=>{
+    ruleList.innerHTML+=`
+    <div class="rule-item">
+      ${r.ip}${r.mask} → ${r.group}
+      <button class="danger" onclick="rules.splice(${i},1);renderRules()">删除</button>
+    </div>`;
+  });
+}
+
+function generate(){
+  const indent = "  ";
+
+  outNodes.value = nodes.map(n => {
+    // SOCKS 节点：始终生成 udp:true
+    if (n.type === "socks") {
+      return indent + `- {name: ${n.name}, type: socks5, server: ${n.server}, port: ${n.port}, username: "${n.user}", password: "${n.pass}", udp: true, dialer-proxy: ${n.dialer}}`;
+    }
+
+    // Clash 节点：需要判断 udp 是否已存在
+    let raw = n.raw;
+
+    // ① 如果原节点里没有 udp 字段，才补 udp:true
+    if (!/udp\s*:/.test(raw)) {
+      raw = raw.replace(/\}$/, `, udp: true}`);
+    }
+
+    // ② 始终追加 dialer-proxy
+    raw = raw.replace(/\}$/, `, dialer-proxy: ${n.dialer}}`);
+
+    return indent + raw;
+  }).join("\n");
+
+  outNames.value = nodes
+    .map(n => indent + `- ${n.name}`)
+    .join("\n");
+
+  outRules.value = rules
+    .map(r => indent + `- SRC-IP-CIDR,${r.ip}${r.mask},${r.group}`)
+    .join("\n");
+}
+function copyText(id){
+  const el = document.getElementById(id);
+  if (!el) {
+    alert("复制失败：找不到内容");
+    return;
+  }
+
+  const text = el.value || el.innerText || "";
+
+  if (!text) {
+    alert("没有可复制的内容");
+    return;
+  }
+
+  // 使用现代 Clipboard API
+  navigator.clipboard.writeText(text).then(() => {
+    // 可选：给一点反馈
+    alert("已复制到剪贴板");
+  }).catch(err => {
+    console.error(err);
+    alert("复制失败，请手动复制");
+  });
+}
+</script>
+
+</body>
+</html>
+
