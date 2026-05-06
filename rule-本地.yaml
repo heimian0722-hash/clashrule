@@ -160,64 +160,64 @@ rules:
   - GEOSITE,category-public-tracker,DIRECT
   - GEOSITE,gfw,🌐 代理补充
   - MATCH,🐟 漏网之鱼
-
 proxy-groups:
   - name: 🚀 手动选择
-    输入: select
+    type: select
     <<: *use-all
     <<: *pr
 
   - name: ♻️ 自动选择
-    输入: url-test
+    type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    interval: 600
+    tolerance: 100
     <<: *use-all
 
   - name: 📡 倍率节省
-    输入: url-test
+    type: url-test
     filter: "0.1|0.01|0.001|0.05" 
     url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    interval: 600
+    tolerance: 100
     <<: *use-all
 
   - name: 🛑 净化拦截
-    输入: select
+    type: select
     proxies: [REJECT, DIRECT, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省]
 
   - name: 🔗 住宅中转
-    输入: select
-    proxies: [🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, DIRECT]
+    type: select
+    proxies: [🇸🇬 SG, 🇭🇰 HK, 🇺🇸 US, 🇹🇼 TW, 🇯🇵 JP, 🚀 手动选择, ♻️ 自动选择, DIRECT]
+    <<: *use-all
 
   - name: 指定静态
-    输入: select
+    type: select
     <<: *use-all
     <<: *pr
 
   - name: 🌐 代理补充
-    输入: select
-    proxies: [♻️ 自动选择, 🚀 手动选择, 📡 倍率节省, DIRECT]
+    type: select
+    proxies: [♻️ 自动选择, 🚀 手动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
     <<: *use-all
     
   - name: 🐟 漏网之鱼
-    输入: select
-    proxies: [♻️ 自动选择, 🚀 手动选择, 📡 倍率节省, DIRECT]
+    type: select
+    proxies: [♻️ 自动选择, 🚀 手动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
     <<: *use-all
 
   - name: 🧠 AI
-    输入: select
+    type: select
     proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🇯🇵 JP, 🧊 冷门节点, 🚀 手动选择, ♻️ 自动选择]
     <<: *use-all
 
   - name: 🤖 ChatGPT
-    输入: select
+    type: select
     proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🇯🇵 JP, 🧊 冷门节点, 🚀 手动选择, ♻️ 自动选择]
     <<: *use-all
 
   - name: 📞 Wificalling
-    输入: select
-    proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择, DIRECT]
+    type: select
+    proxies: [🇺🇸 US, 🚀 手动选择, DIRECT]
     <<: *use-all
     
   - name: 🇺🇸 BankUS
@@ -227,77 +227,77 @@ proxy-groups:
 
   - name: 🇭🇰 BankHK
     type: select
-    proxies: [🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择]
+    proxies: [🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择, ♻️ 自动选择, DIRECT]
     <<: *use-all
 
   - name: 🇪🇺 BankEU
     type: select
-    proxies: [🇭🇰 HK, 🇺🇸 US, 🧊 冷门节点, 🚀 手动选择]
+    proxies: [🇭🇰 HK, 🇺🇸 US, 🧊 冷门节点, 🚀 手动选择, DIRECT]
     <<: *use-all
 
   - name: 💰 币圈A
     type: select
-    proxies: [🇺🇸 US, 🚀 手动选择]
+    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, DIRECT]
     <<: *use-all
 
   - name: 💰 币圈B
     type: select
-    proxies: [🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🚀 手动选择]
+    proxies: [🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🚀 手动选择, ♻️ 自动选择, DIRECT]
     <<: *use-all
 
   - name: 🧑‍💻 GitHub
     type: select
-    proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
+    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
     <<: *use-all
 
   - name: 🔎 Google
     type: select
-    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择,📡 倍率节省, 🇭🇰 HK, 🇸🇬 SG]
+    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
     <<: *use-all
 
   - name: ☁️ cloudflare
     type: select
-    proxies: [🚀 手动选择, ♻️ 自动选择,📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, DIRECT]
     <<: *use-all
 
   - name: 🍎 Apple
     type: select
-    proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇭🇰 HK]
+    proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
     <<: *use-all
 
   - name: 🖥️ Microsoft
     type: select
-    proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇯🇵 JP]
+    proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
     <<: *use-all
 
   - name: 💬 社交媒体
     type: select
-    proxies: [🚀 手动选择, ♻️ 自动选择,📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *use-all
 
   - name: 📨 Telegram
     type: select
-    proxies: [🚀 手动选择, ♻️ 自动选择,📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *use-all
 
   - name: 🎬 YouTube
     type: select
-    proxies: [🚀 手动选择, ♻️ 自动选择,📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *use-all
 
   - name: 🎥 Netflix
     type: select
-    proxies: [🚀 手动选择, ♻️ 自动选择,📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *use-all
 
   - name: 🎵 TikTok
     type: select
-    proxies: [🚀 手动选择, ♻️ 自动选择,📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *use-all
 
   - name: 📦 Notion
     type: select
-    proxies: [🚀 手动选择, ♻️ 自动选择,📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *use-all
 
   - name: 🟥 Adobe
@@ -307,12 +307,12 @@ proxy-groups:
 
   - name: 🎮 Steam
     type: select
-    proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇭🇰 HK]
+    proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
     <<: *use-all
 
   - name: 🚝 测速工具
     type: select
-    proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇭🇰 HK]
+    proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
     <<: *use-all
 
   - name: 🇺🇸 US
@@ -321,28 +321,40 @@ proxy-groups:
     <<: *use-all
 
   - name: 🇭🇰 HK
-    type: select
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 100
     filter: "(?i)(🇭🇰|香港|\\bHK\\b|hongkong)"
     <<: *use-all
 
   - name: 🇸🇬 SG
-    type: select
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 100
     filter: "(?i)(🇸🇬|新加坡|\\bSG\\b|singapore)"
     <<: *use-all
 
   - name: 🇹🇼 TW
-    type: select
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 100
     filter: "(?i)(🇹🇼|台湾|\\bTW\\b|taiwan|taipei|hinet)"
     <<: *use-all
 
   - name: 🇯🇵 JP
-    type: select
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 100
     filter: "(?i)(🇯🇵|日本|\\bJP\\b|tokyo|osaka)"
     <<: *use-all
 
   - name: 🧊 冷门节点
     type: select
-    filter: "(?i)^(?!.*(🇭🇰|香港|🇯🇵|日本|🇹🇼|台湾|🇸🇬|新加坡|🇺🇸|美国)).*"
+    filter: "(?i)^(?!.*(🇭🇰|香港|\\bHK\\b|hong\\s*kong|🇯🇵|日本|\\bJP\\b|tokyo|osaka|🇹🇼|台湾|\\bTW\\b|taiwan|taipei|hinet|🇸🇬|新加坡|\\bSG\\b|singapore|🇺🇸|美国|\\bUS\\b|united\\s*states|los\\s*angeles|san\\s*jose|seattle|new\\s*york)).*"
     <<: *use-all
 
 rule-providers:
