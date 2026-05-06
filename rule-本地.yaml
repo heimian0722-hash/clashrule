@@ -9,19 +9,56 @@ external-controller: 0.0.0.0:9090
 dns:
   enable: true
   listen: 0.0.0.0:1053
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  default-nameserver: [223.5.5.5, 119.29.29.29]
+
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
   nameserver:
-    - https://dns.alicdn.com/dns-query
+    - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
+
   fallback:
     - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+
+  nameserver-policy:
+    "geosite:cn":
+      - https://dns.alidns.com/dns-query
+    "geosite:geolocation-!cn":
+      - https://dns.google/dns-query
+
   fallback-filter:
     geoip: true
     geoip-code: CN
 
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "WORKGROUP"
+    - "time.windows.com"
+    - "time.nist.gov"
+    - "time.apple.com"
+    - "time.asia.apple.com"
+    - "*.msftncsi.com"
+    - "*.msftconnecttest.com"
+    - "*.n.n.srv.nintendo.net"
+    - "+.stun.playstation.net"
+    - "*.*.xboxlive.com"
+    - "xbox.*.*.microsoft.com"
+    - "stun.*.*"
+    - "stun.*.*.*"
+    - "pool.ntp.org"
+    - "ntp.ubuntu.com"
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - "time1.cloud.tencent.com"
+    - "time.ustc.edu.cn"
+    - "speedtest.cros.wr.pvp.net"
 
 # 机场订阅
 proxy-providers:
@@ -60,108 +97,108 @@ proxy-groups:
     <<: *pr
 
   - name: ♻️ 自动选择
-    type: url-test
+    输入: url-test
     url: https://cp.cloudflare.com/generate_204
     interval: 600
     <<: *use-all
 
   - name: 📡 倍率节省
-    type: url-test
+    输入: url-test
     filter: "(?i)(0.1x|0.01x|0.001x)"
     <<: *use-all
 
   - name: 🔗 住宅中转
-    type: select
+    输入: select
     proxies: [🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, DIRECT]
 
   - name: 🛑 净化拦截
-    type: select
+    输入: select
     proxies: [REJECT, DIRECT, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省]
 
   # --- 区域组 (正则自动筛选) ---
   - name: 🇺🇸 US
-    type: select
+    输入: select
     filter: "(?i)(🇺🇸|美国|\\bUS\\b|united states|los angeles|san jose|seattle|new york)"
     <<: *use-all
 
   - name: 🇭🇰 HK
-    type: select
+    输入: select
     filter: "(?i)(🇭🇰|香港|\\bHK\\b|hongkong)"
     <<: *use-all
 
   - name: 🇸🇬 SG
-    type: select
+    输入: select
     filter: "(?i)(🇸🇬|新加坡|\\bSG\\b|singapore)"
     <<: *use-all
 
   - name: 🇹🇼 TW
-    type: url-test
+    输入: url-test
     filter: "(?i)(🇹🇼|台湾|\\bTW\\b|taiwan|taipei|hinet)"
     <<: *use-all
 
   - name: 🇯🇵 JP
-    type: url-test
+    输入: url-test
     filter: "(?i)(🇯🇵|日本|\\bJP\\b|tokyo|osaka)"
     <<: *use-all
 
   - name: 🧊 冷门节点
-    type: select
+    输入: select
     filter: "(?i)^(?!.*(🇭🇰|香港|🇯🇵|日本|🇹🇼|台湾|🇸🇬|新加坡|🇺🇸|美国)).*"
     <<: *use-all
 
   # --- 应用分流组 (全量重现原模板，均包含静态节点注入) ---
   - name: 🧠 AI
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🇯🇵 JP, 🧊 冷门节点, 🚀 手动选择]
     <<: *pr
 
   - name: 🤖 ChatGPT
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🇸🇬 SG, 🇯🇵 JP, 🚀 手动选择]
     <<: *pr
 
   - name: 📞 Wificalling
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择, DIRECT]
     <<: *pr
 
   - name: 🇺🇸 BankUS
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, DIRECT]
     <<: *pr
 
   - name: 🇭🇰 BankHK
-    type: select
+    输入: select
     proxies: [🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择]
     <<: *pr
 
   - name: 🇪🇺 BankEU
-    type: select
+    输入: select
     proxies: [🇭🇰 HK, 🇺🇸 US, 🧊 冷门节点, 🚀 手动选择]
     <<: *pr
 
   - name: 💰 币圈A
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🚀 手动选择]
     <<: *pr
 
   - name: 💰 币圈B
-    type: select
+    输入: select
     proxies: [🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🚀 手动选择]
     <<: *pr
 
   - name: 🧑‍💻 GitHub
-    type: select
+    输入: select
     proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
     <<: *pr
 
   - name: 🔎 Google
-    type: select
+    输入: select
     proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *pr
 
   - name: 🍎 Apple
-    type: select
+    输入: select
     proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇭🇰 HK]
     <<: *pr
 
