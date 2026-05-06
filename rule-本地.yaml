@@ -1,4 +1,4 @@
-# 下载编辑，自行添加机场订阅链接，支持链式代理，预留静态节点，走“指定静态”组
+# 下载编辑，自行添加机场订阅链接，支持链式代理，预留静态节点，走“指定代理”组
 # 本项目 链式工具.html 下载，直接浏览器打开，写的很清楚
 # 注意点：一定要先添加订阅，成功运行启动代理，再编辑yaml，添加静态住宅信息
 
@@ -162,19 +162,19 @@ rules:
   - MATCH,🐟 漏网之鱼
 proxy-groups:
   - name: 🚀 手动选择
-    type: select
+    输入: select
     <<: *use-all
     <<: *pr
 
   - name: ♻️ 自动选择
-    type: url-test
+    输入: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
     tolerance: 100
     <<: *use-all
 
   - name: 📡 倍率节省
-    type: url-test
+    输入: url-test
     filter: "0.1|0.01|0.001|0.05" 
     url: http://www.gstatic.com/generate_204
     interval: 600
@@ -182,41 +182,41 @@ proxy-groups:
     <<: *use-all
 
   - name: 🛑 净化拦截
-    type: select
+    输入: select
     proxies: [REJECT, DIRECT, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省]
 
   - name: 🔗 住宅中转
-    type: select
+    输入: select
     proxies: [🇸🇬 SG, 🇭🇰 HK, 🇺🇸 US, 🇹🇼 TW, 🇯🇵 JP, 🚀 手动选择, ♻️ 自动选择, DIRECT]
     <<: *use-all
 
-  - name: 指定静态
-    type: select
+  - name: 指定代理
+    输入: select
     <<: *use-all
     <<: *pr
 
   - name: 🌐 代理补充
-    type: select
+    输入: select
     proxies: [♻️ 自动选择, 🚀 手动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
     <<: *use-all
     
   - name: 🐟 漏网之鱼
-    type: select
+    输入: select
     proxies: [♻️ 自动选择, 🚀 手动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
     <<: *use-all
 
   - name: 🧠 AI
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🇯🇵 JP, 🧊 冷门节点, 🚀 手动选择, ♻️ 自动选择]
     <<: *use-all
 
   - name: 🤖 ChatGPT
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🇯🇵 JP, 🧊 冷门节点, 🚀 手动选择, ♻️ 自动选择]
     <<: *use-all
 
   - name: 📞 Wificalling
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🚀 手动选择, DIRECT]
     <<: *use-all
     
