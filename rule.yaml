@@ -1,0 +1,341 @@
+# ==========================================================
+# 1. 基础设置与 DNS 防泄露
+# ==========================================================
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: warning
+ipv6: false
+external-controller: 0.0.0.0:9090
+
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver: [223.5.5.5, 119.29.29.29]
+  nameserver:
+    - https://dns.alicdn.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+
+# ==========================================================
+# 2. 节点源与锚点 (精华所在)
+# ==========================================================
+proxy-providers:
+  Airport:
+    type: http
+    url: "你的机场订阅链接" # <--- 填入订阅链接
+    interval: 3600
+    path: ./proxies/airport.yaml
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 600
+
+# 定义引用模板
+p-use: &use-all
+  use: [Airport]
+
+p-pr: &pr
+  proxies: [DIRECT, "美国住宅1"] # <--- 这里的名称要和下方 proxies 里的 name 一致
+
+# 静态节点定义
+proxies:
+  - name: "美国住宅1"
+    type: ss
+    server: 1.2.3.4
+    port: 443
+    cipher: aes-256-gcm
+    password: password
+
+# ==========================================================
+# 3. 策略组 (全量重现原模板分组)
+# ==========================================================
+proxy-groups:
+  # --- 基础组 ---
+  - name: 🚀 手动选择
+    type: select
+    <<: *use-all
+    <<: *pr
+
+  - name: ♻️ 自动选择
+    type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    interval: 600
+    <<: *use-all
+
+  - name: 📡 倍率节省
+    type: url-test
+    filter: "(?i)(0.1x|0.01x|0.001x)"
+    <<: *use-all
+
+  - name: 🔗 住宅中转
+    type: select
+    proxies: [🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, DIRECT]
+
+  - name: 🛑 净化拦截
+    type: select
+    proxies: [REJECT, DIRECT, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省]
+
+  # --- 区域组 (正则自动筛选) ---
+  - name: 🇺🇸 US
+    type: select
+    filter: "(?i)(🇺🇸|美国|\\bUS\\b|united states|los angeles|san jose|seattle|new york)"
+    <<: *use-all
+
+  - name: 🇭🇰 HK
+    type: select
+    filter: "(?i)(🇭🇰|香港|\\bHK\\b|hongkong)"
+    <<: *use-all
+
+  - name: 🇸🇬 SG
+    type: select
+    filter: "(?i)(🇸🇬|新加坡|\\bSG\\b|singapore)"
+    <<: *use-all
+
+  - name: 🇹🇼 TW
+    type: url-test
+    filter: "(?i)(🇹🇼|台湾|\\bTW\\b|taiwan|taipei|hinet)"
+    <<: *use-all
+
+  - name: 🇯🇵 JP
+    type: url-test
+    filter: "(?i)(🇯🇵|日本|\\bJP\\b|tokyo|osaka)"
+    <<: *use-all
+
+  - name: 🧊 冷门节点
+    type: select
+    filter: "(?i)^(?!.*(🇭🇰|香港|🇯🇵|日本|🇹🇼|台湾|🇸🇬|新加坡|🇺🇸|美国)).*"
+    <<: *use-all
+
+  # --- 应用分流组 (全量重现原模板，均包含静态节点注入) ---
+  - name: 🧠 AI
+    type: select
+    proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🇯🇵 JP, 🧊 冷门节点, 🚀 手动选择]
+    <<: *pr
+
+  - name: 🤖 ChatGPT
+    type: select
+    proxies: [🇺🇸 US, 🇸🇬 SG, 🇯🇵 JP, 🚀 手动选择]
+    <<: *pr
+
+  - name: 📞 Wificalling
+    type: select
+    proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择, DIRECT]
+    <<: *pr
+
+  - name: 🇺🇸 BankUS
+    type: select
+    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, DIRECT]
+    <<: *pr
+
+  - name: 🇭🇰 BankHK
+    type: select
+    proxies: [🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择]
+    <<: *pr
+
+  - name: 🇪🇺 BankEU
+    type: select
+    proxies: [🇭🇰 HK, 🇺🇸 US, 🧊 冷门节点, 🚀 手动选择]
+    <<: *pr
+
+  - name: 💰 币圈A
+    type: select
+    proxies: [🇺🇸 US, 🚀 手动选择]
+    <<: *pr
+
+  - name: 💰 币圈B
+    type: select
+    proxies: [🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🚀 手动选择]
+    <<: *pr
+
+  - name: 🧑‍💻 GitHub
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
+    <<: *pr
+
+  - name: 🔎 Google
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    <<: *pr
+
+  - name: 🍎 Apple
+    type: select
+    proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇭🇰 HK]
+    <<: *pr
+
+  - name: 🖥️ Microsoft
+    type: select
+    proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇯🇵 JP]
+    <<: *pr
+
+  - name: 💬 社交媒体
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    <<: *pr
+
+  - name: 📨 Telegram
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    <<: *pr
+
+  - name: 🎬 YouTube
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    <<: *pr
+
+  - name: 🎥 Netflix
+    type: select
+    proxies: [🚀 手动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    <<: *pr
+
+  - name: 🎵 TikTok
+    type: select
+    proxies: [🚀 手动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    <<: *pr
+
+  - name: 🎮 Steam
+    type: select
+    proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇭🇰 HK]
+    <<: *pr
+
+  - name: 🌐 代理补充
+    type: select
+    proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇭🇰 HK, 🧊 冷门节点]
+    <<: *pr
+
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
+    <<: *pr
+
+# ==========================================================
+# 4. 全量规则 (完全遵循你的 ini 顺序)
+# ==========================================================
+rules:
+  # 住宅中转
+  - RULE-SET,residential,🔗 住宅中转
+
+  # WiFi Calling (高优先级)
+  - DST-PORT,500,📞 Wificalling
+  - DST-PORT,4500,📞 Wificalling
+  - RULE-SET,wificalling,📞 Wificalling
+
+  # 净化拦截
+  - RULE-SET,reject,🛑 净化拦截
+
+  # 基础直连
+  - GEOSITE,private,DIRECT
+  - GEOIP,private,DIRECT,no-resolve
+  - GEOSITE,apple-cn,DIRECT
+  - GEOSITE,deepseek,DIRECT
+  - GEOSITE,alipay,DIRECT
+  - GEOSITE,category-ai-cn,DIRECT
+
+  # 银行与币圈
+  - RULE-SET,bank-us,🇺🇸 BankUS
+  - RULE-SET,bank-hk,🇭🇰 BankHK
+  - RULE-SET,bank-eu,🇪🇺 BankEU
+  - RULE-SET,crypto-a,💰 币圈A
+  - RULE-SET,crypto-b,💰 币圈B
+
+  # AI
+  - GEOSITE,openai,🤖 ChatGPT
+  - RULE-SET,ai-domain,🧠 AI
+  - GEOSITE,category-ai-!cn,🧠 AI
+
+  # 社交/通讯/媒体
+  - RULE-SET,telegram,📨 Telegram
+  - GEOSITE,telegram,📨 Telegram
+  - GEOIP,telegram,📨 Telegram,no-resolve
+  - GEOSITE,youtube,🎬 YouTube
+  - GEOSITE,netflix,🎥 Netflix
+  - GEOSITE,tiktok,🎵 TikTok
+  - GEOSITE,instagram,💬 社交媒体
+  - GEOSITE,twitter,💬 社交媒体
+  
+  # 开发/工具
+  - GEOSITE,github,🧑‍💻 GitHub
+  - GEOSITE,microsoft,🖥️ Microsoft
+  - GEOSITE,google,🔎 Google
+  - GEOSITE,steam,🎮 Steam
+
+  # 国内兜底
+  - GEOSITE,cn,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
+
+  # GFW 兜底与最终
+  - GEOSITE,gfw,🌐 代理补充
+  - MATCH,🐟 漏网之鱼
+
+# ==========================================================
+# 5. 规则集定义 (Rule Providers)
+# ==========================================================
+rule-providers:
+  residential:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/StaticResidential.yaml"
+    path: ./rules/res.yaml
+    interval: 86400
+  wificalling:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Wificalling.yaml"
+    path: ./rules/wifi.yaml
+    interval: 86400
+  reject:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockmihomolite.yaml"
+    path: ./rules/reject.yaml
+    interval: 86400
+  bank-us:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BankUS_Domain.yaml"
+    path: ./rules/bus.yaml
+    interval: 86400
+  bank-hk:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BankHK_Domain.yaml"
+    path: ./rules/bhk.yaml
+    interval: 86400
+  bank-eu:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BankEU_Domain.yaml"
+    path: ./rules/beu.yaml
+    interval: 86400
+  crypto-a:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Crypto-A.yaml"
+    path: ./rules/ca.yaml
+    interval: 86400
+  crypto-b:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Crypto-B.yaml"
+    path: ./rules/cb.yaml
+    interval: 86400
+  ai-domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/AI-Domain.yaml"
+    path: ./rules/ai.yaml
+    interval: 86400
+  telegram:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Telegram.yaml"
+    path: ./rules/tg.yaml
+    interval: 86400
