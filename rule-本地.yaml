@@ -9,33 +9,26 @@ external-controller: 0.0.0.0:9090
 dns:
   enable: true
   listen: 0.0.0.0:1053
-
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
-
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-
   fallback:
     - https://1.1.1.1/dns-query
     - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
-
   nameserver-policy:
     "geosite:cn":
       - https://dns.alidns.com/dns-query
     "geosite:geolocation-!cn":
       - https://dns.google/dns-query
-
   fallback-filter:
     geoip: true
     geoip-code: CN
-
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-
   fake-ip-filter:
     - "*.lan"
     - "*.local"
@@ -59,6 +52,8 @@ dns:
     - "time1.cloud.tencent.com"
     - "time.ustc.edu.cn"
     - "speedtest.cros.wr.pvp.net"
+
+
 
 # 机场订阅
 proxy-providers:
