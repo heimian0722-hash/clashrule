@@ -26,34 +26,32 @@ dns:
     geoip-code: CN
 
 # ==========================================================
-# 2. 节点源与锚点 (精华所在)
+# 机场订阅
 # ==========================================================
 proxy-providers:
-  Airport:
+  一分:
     type: http
-    url: "你的机场订阅链接" # <--- 填入订阅链接
+    url: "https://xxxxxxxxx"
     interval: 3600
-    path: ./proxies/airport.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 600
+    path: ./proxies/yifen.yaml
+    health-check: {enable: true, url: https://www.gstatic.com/generate_204, interval: 600}
 
-# 定义引用模板
-p-use: &use-all
-  use: [Airport]
+proxy-providers-config:
+  use-all: &use-all
+    use:
+      - 一分
+      - 赔钱
+      - 良心云
+      - 魔戒
+      - Tap
+      - 一元
 
-p-pr: &pr
-  proxies: [DIRECT, "美国住宅1"] # <--- 这里的名称要和下方 proxies 里的 name 一致
+pr: &pr
+  proxies:  #添加节点名称  美国住宅1
 
-# 静态节点定义
-proxies:
-  - name: "美国住宅1"
-    type: ss
-    server: 1.2.3.4
-    port: 443
-    cipher: aes-256-gcm
-    password: password
+
+proxies:   #添加节点信息 ip端口用户
+
 
 # ==========================================================
 # 3. 策略组 (全量重现原模板分组)
@@ -61,158 +59,158 @@ proxies:
 proxy-groups:
   # --- 基础组 ---
   - name: 🚀 手动选择
-    type: select
+    输入: select
     <<: *use-all
     <<: *pr
 
   - name: ♻️ 自动选择
-    type: url-test
+    输入: url-test
     url: https://cp.cloudflare.com/generate_204
     interval: 600
     <<: *use-all
 
   - name: 📡 倍率节省
-    type: url-test
+    输入: url-test
     filter: "(?i)(0.1x|0.01x|0.001x)"
     <<: *use-all
 
   - name: 🔗 住宅中转
-    type: select
+    输入: select
     proxies: [🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, DIRECT]
 
   - name: 🛑 净化拦截
-    type: select
+    输入: select
     proxies: [REJECT, DIRECT, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省]
 
   # --- 区域组 (正则自动筛选) ---
   - name: 🇺🇸 US
-    type: select
+    输入: select
     filter: "(?i)(🇺🇸|美国|\\bUS\\b|united states|los angeles|san jose|seattle|new york)"
     <<: *use-all
 
   - name: 🇭🇰 HK
-    type: select
+    输入: select
     filter: "(?i)(🇭🇰|香港|\\bHK\\b|hongkong)"
     <<: *use-all
 
   - name: 🇸🇬 SG
-    type: select
+    输入: select
     filter: "(?i)(🇸🇬|新加坡|\\bSG\\b|singapore)"
     <<: *use-all
 
   - name: 🇹🇼 TW
-    type: url-test
+    输入: url-test
     filter: "(?i)(🇹🇼|台湾|\\bTW\\b|taiwan|taipei|hinet)"
     <<: *use-all
 
   - name: 🇯🇵 JP
-    type: url-test
+    输入: url-test
     filter: "(?i)(🇯🇵|日本|\\bJP\\b|tokyo|osaka)"
     <<: *use-all
 
   - name: 🧊 冷门节点
-    type: select
+    输入: select
     filter: "(?i)^(?!.*(🇭🇰|香港|🇯🇵|日本|🇹🇼|台湾|🇸🇬|新加坡|🇺🇸|美国)).*"
     <<: *use-all
 
   # --- 应用分流组 (全量重现原模板，均包含静态节点注入) ---
   - name: 🧠 AI
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🇯🇵 JP, 🧊 冷门节点, 🚀 手动选择]
     <<: *pr
 
   - name: 🤖 ChatGPT
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🇸🇬 SG, 🇯🇵 JP, 🚀 手动选择]
     <<: *pr
 
   - name: 📞 Wificalling
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择, DIRECT]
     <<: *pr
 
   - name: 🇺🇸 BankUS
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, DIRECT]
     <<: *pr
 
   - name: 🇭🇰 BankHK
-    type: select
+    输入: select
     proxies: [🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择]
     <<: *pr
 
   - name: 🇪🇺 BankEU
-    type: select
+    输入: select
     proxies: [🇭🇰 HK, 🇺🇸 US, 🧊 冷门节点, 🚀 手动选择]
     <<: *pr
 
   - name: 💰 币圈A
-    type: select
+    输入: select
     proxies: [🇺🇸 US, 🚀 手动选择]
     <<: *pr
 
   - name: 💰 币圈B
-    type: select
+    输入: select
     proxies: [🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🚀 手动选择]
     <<: *pr
 
   - name: 🧑‍💻 GitHub
-    type: select
+    输入: select
     proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
     <<: *pr
 
   - name: 🔎 Google
-    type: select
+    输入: select
     proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *pr
 
   - name: 🍎 Apple
-    type: select
+    输入: select
     proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇭🇰 HK]
     <<: *pr
 
   - name: 🖥️ Microsoft
-    type: select
+    输入: select
     proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇯🇵 JP]
     <<: *pr
 
   - name: 💬 社交媒体
-    type: select
+    输入: select
     proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *pr
 
   - name: 📨 Telegram
-    type: select
+    输入: select
     proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *pr
 
   - name: 🎬 YouTube
-    type: select
+    输入: select
     proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *pr
 
   - name: 🎥 Netflix
-    type: select
+    输入: select
     proxies: [🚀 手动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *pr
 
   - name: 🎵 TikTok
-    type: select
+    输入: select
     proxies: [🚀 手动选择, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *pr
 
   - name: 🎮 Steam
-    type: select
+    输入: select
     proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇭🇰 HK]
     <<: *pr
 
   - name: 🌐 代理补充
-    type: select
+    输入: select
     proxies: [DIRECT, 🚀 手动选择, 🇺🇸 US, 🇭🇰 HK, 🧊 冷门节点]
     <<: *pr
 
   - name: 🐟 漏网之鱼
-    type: select
+    输入: select
     proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
     <<: *pr
 
@@ -280,61 +278,61 @@ rules:
 # ==========================================================
 rule-providers:
   residential:
-    type: http
+    输入: http
     behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/StaticResidential.yaml"
     path: ./rules/res.yaml
     interval: 86400
   wificalling:
-    type: http
+    输入: http
     behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Wificalling.yaml"
     path: ./rules/wifi.yaml
     interval: 86400
   reject:
-    type: http
+    输入: http
     behavior: domain
     url: "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockmihomolite.yaml"
     path: ./rules/reject.yaml
     interval: 86400
   bank-us:
-    type: http
+    输入: http
     behavior: domain
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BankUS_Domain.yaml"
     path: ./rules/bus.yaml
     interval: 86400
   bank-hk:
-    type: http
+    输入: http
     behavior: domain
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BankHK_Domain.yaml"
     path: ./rules/bhk.yaml
     interval: 86400
   bank-eu:
-    type: http
+    输入: http
     behavior: domain
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BankEU_Domain.yaml"
     path: ./rules/beu.yaml
     interval: 86400
   crypto-a:
-    type: http
+    输入: http
     behavior: domain
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Crypto-A.yaml"
     path: ./rules/ca.yaml
     interval: 86400
   crypto-b:
-    type: http
+    输入: http
     behavior: domain
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Crypto-B.yaml"
     path: ./rules/cb.yaml
     interval: 86400
   ai-domain:
-    type: http
+    输入: http
     behavior: domain
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/AI-Domain.yaml"
     path: ./rules/ai.yaml
     interval: 86400
   telegram:
-    type: http
+    输入: http
     behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Telegram.yaml"
     path: ./rules/tg.yaml
