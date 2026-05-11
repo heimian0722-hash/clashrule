@@ -1,6 +1,6 @@
 # 直连库，遇到就补，个人使用
 payload:
-# --- 个人高频/特定站点 (GEOSITE 漏网之鱼) ---
+# --- 个人高频/特定站点 ---
   - '+.api.wcc.best'
   - '+.api.asailor.org'
   - '+.linux.do'           # 虽在海外，但直连体验更佳
@@ -16,7 +16,7 @@ payload:
   - '+.fanchmwrt.com'
   - '+.imtintl.com'
   - '+.immersivetranslate.com'
-
+  - '+.seagm.com'
 
 # --- Apple数据传输/云上贵州 ---
   - '+.appldnld.apple.com'
