@@ -55,8 +55,17 @@ payload:
   - '+.sofi.com'                # SoFi 数字银行
 
   # > 华资背景银行 (常用 ITIN 开户行)
-  # - '+.eastwestbank.com'        # 银行
-  # - '+.velobank.com'            # Velo (华美旗下数字银行)
+  # --- 华美银行 & Velo 核心业务 ---
+  - '+.eastwestbank.com'
+  - '+.velobank.com'
+  - '+.omtrdc.net'
+  - '+.demdex.net'
+  - '+.adobedtm.com'
+  - '+.everesttech.net'
+  - '+.helpshift.com'
+  - '+.crashlytics.com'
+  - '+.hi.frcoal'
+  - '+.baixingyllh.com'
   - '+.cathaybank.com'          # 国泰银行
   - '+.q2ebanking.com'          # 多数美资/华资行使用的网银系统平台
 
