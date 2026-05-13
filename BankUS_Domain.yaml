@@ -22,7 +22,7 @@ payload:
   - '+.xoom.com'                # Xoom 国际汇款
 
   # ==========================================
-  # > Capital One (C1) 专项 (基于 1000024143.jpg & 1000024144.jpg)
+  # > Capital One (C1) 专项 
   # ==========================================
   - '+.capitalone.com'          # 核心业务 (含 m.capitalone.com / potomac-clickstream)
   - '+.medallia.com'            # 包含 capitalone.md-apis.medallia.com
