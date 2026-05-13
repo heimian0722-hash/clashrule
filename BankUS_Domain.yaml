@@ -27,14 +27,15 @@ payload:
   - '+.capitalone.com'          # 核心业务 (含 m.capitalone.com / potomac-clickstream)
   - '+.medallia.com'            # 包含 capitalone.md-apis.medallia.com
   - '+.vaicore.store'           # 抓包发现
-  - '+.vaicore.xyz'             # 抓包发现
-  - '+.vaicore.site'            # 抓包发现
-  - '+.akisinn.site'            # 抓包发现
-  - '+.akisinn.info'            # 抓包发现
-  - '+.dewrain.site'            # 抓包发现
-  - '+.dewrain.life'            # 抓包发现
-  - '+.dewrain.world'           # 抓包发现
-  - '+.kvaedit.site'            # 抓包发现
+  - '+.vaicore.xyz' 
+  - '+.vaicore.site'
+  - '+.akisinn.site'
+  - '+.akisinn.info'
+  - '+.dewrain.site'
+  - '+.dewrain.life'
+  - '+.dewrain.world'
+  - '+.kvaedit.site'
+  - '+.newrelic.com'  
 
   # ==========================================
   # > 华美银行 (East West Bank) & Velo 核心
