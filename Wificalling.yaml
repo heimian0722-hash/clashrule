@@ -60,11 +60,6 @@ payload:
   - IP-CIDR,206.29.177.36/32,no-resolve
   - IP-CIDR,208.54.0.0/16,no-resolve
 
-  # --- 9. Red Pocket 官方管理与支付 ---
-  - DOMAIN-SUFFIX,redpocket.com
-  - DOMAIN,help.redpocket.com
-  - DOMAIN,my.redpocket.com
-  - DOMAIN,goredpocket.com
 
   # --- 10. Tello 官方管理与支付 ---
   - DOMAIN-SUFFIX,tello.com
