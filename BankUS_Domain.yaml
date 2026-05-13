@@ -2,18 +2,18 @@ payload:
   # ==========================================
   # > 核心基础设施 (转账/关联/清算/支付)
   # ==========================================
-  - '+.plaid.com'               # 银行连接中间件
+  - '+.plaid.com'               # 银行连接中间件 (解决连接券商/Wise失败)
   - '+.plaid.io'                # Plaid 辅助域名
   - '+.zelle.com'               # Zelle 转账核心
   - '+.zellepay.com'            # Zelle 转账门户
-  - '+.yodlee.com'              # 银行连接件
-  - '+.finicity.com'            # 万事达旗下底层连接
-  - '+.mx.com'                  # 银行数据聚合
-  - '+.paypal.com'              # PayPal 核心
+  - '+.yodlee.com'              # 部分美系券商备用银行连接件
+  - '+.finicity.com'            # 万事达旗下底层连接 (Chase 常用)
+  - '+.mx.com'                  # 银行数据聚合服务商
+  - '+.paypal.com'              # PayPal 核心支付体系
   - '+.paypal.us'
   - '+.paypal.me'
-  - '+.pypl.com'                # PayPal 现代 API
-  - '+.paypalobjects.com'       # 静态资源
+  - '+.pypl.com'                # PayPal 现代 API 域名
+  - '+.paypalobjects.com'       # 支付按钮/静态资源
   - '+.paypal-status.com'
   - '+.paypal-mktg.com'
   - '+.braintreegateway.com'    # 底层支付接口
@@ -22,12 +22,12 @@ payload:
   - '+.xoom.com'                # Xoom 国际汇款
 
   # ==========================================
-  # > Capital One (C1) 专项 
+  # > Capital One (C1) 专项 (含最新抓包混淆域名)
   # ==========================================
   - '+.capitalone.com'          # 核心业务 (含 m.capitalone.com / potomac-clickstream)
   - '+.medallia.com'            # 包含 capitalone.md-apis.medallia.com
-  - '+.vaicore.store'           # 抓包发现
-  - '+.vaicore.xyz' 
+  - '+.vaicore.store'           # 抓包发现 (基于 1000024141/142/143/144)
+  - '+.vaicore.xyz'
   - '+.vaicore.site'
   - '+.akisinn.site'
   - '+.akisinn.info'
@@ -35,10 +35,9 @@ payload:
   - '+.dewrain.life'
   - '+.dewrain.world'
   - '+.kvaedit.site'
-  - '+.newrelic.com'  
 
   # ==========================================
-  # > 华美银行 (East West Bank) & Velo 核心
+  # > 华美银行 (East West Bank) & Velo 核心业务
   # ==========================================
   - '+.eastwestbank.com'        # 华美核心
   - '+.velobank.com'            # Velo 核心
@@ -47,65 +46,117 @@ payload:
   - '+.adobedtm.com'            # 标签管理
   - '+.everesttech.net'         # 广告分析
   - '+.helpshift.com'           # 在线客服
-  - '+.hi.frcoal'               # 内部 API
-  - '+.baixingyllh.com'         # 特定业务
+  - '+.hi.frcoal'               # 内部 API/特定的分发域名
+  - '+.baixingyllh.com'         # 特定业务域名
 
   # ==========================================
-  # > 美国四大行 & 区域性商业银行
+  # > 美国四大行 (The Big Four) & 商业银行
   # ==========================================
-  - '+.chase.com'               # JPMorgan Chase
-  - '+.jpmorgan.com'
-  - '+.jpmorganchase.com'
-  - '+.chasecdn.com'
-  - '+.bankofamerica.com'       # BOA
-  - '+.bofa.com'
-  - '+.bac-assets.com'
-  - '+.bac.com'
-  - '+.ns-bac.com'
-  - '+.citibank.com'            # Citi
-  - '+.citi.com'
-  - '+.citigroup.com'
-  - '+.citi.io'
-  - '+.wellsfargo.com'          # Wells Fargo
-  - '+.wf.com'
-  - '+.wellsfargomedia.com'
-  - '+.wellsfargoadvisors.com'
-  - '+.usbank.com'              # U.S. Bank
-  - '+.truist.com'              # Truist
-  - '+.pnc.com'                 # PNC
-  - '+.tdbank.com'              # TD Bank
-  - '+.td.com'
+  - '+.chase.com'               # JPMorgan Chase (大通)
+  - '+.jpmorgan.com'            # 摩根大通
+  - '+.jpmorganchase.com'       # 摩根大通集团
+  - '+.chasecdn.com'            # Chase 静态资源加速
+  - '+.bankofamerica.com'       # Bank of America (美国银行)
+  - '+.bofa.com'                # BOA 缩写
+  - '+.bac-assets.com'          # BOA 静态资源
+  - '+.bac.com'                 # BOA 核心系统域名
+  - '+.ns-bac.com'              # BOA 网络服务
+  - '+.citibank.com'            # Citibank (花旗)
+  - '+.citi.com'                # Citi 缩写
+  - '+.citigroup.com'           # 花旗集团
+  - '+.citi.io'                 # Citi 现代 API
+  - '+.wellsfargo.com'          # Wells Fargo (富国)
+  - '+.wf.com'                  # 富国缩写
+  - '+.wellsfargomedia.com'     # 富国媒体资源
+  - '+.wellsfargoadvisors.com'  # 富国银行投资
   - '+.cathaybank.com'          # 国泰银行
-  - '+.q2ebanking.com'          # 网银系统
+  - '+.q2ebanking.com'          # 多数美资/华资行使用的网银系统平台
 
   # ==========================================
-  # > 零售/数字银行 & 券商 (Brokerage)
+  # > 零售与数字银行 (Consumer & Digital Banks)
   # ==========================================
-  - '+.discover.com'
-  - '+.americanexpress.com'
-  - '+.aexp.com'
-  - '+.synchrony.com'
-  - '+.sofi.com'
-  - '+.wise.com'
-  - '+.schwab.com'              # 嘉信理财
-  - '+.fidelity.com'            # 富达
-  - '+.interactivebrokers.com'  # 盈透证券
-  - '+.ibkr.com'
-  - '+.firstrade.com'           # 第一证券
-  - '+.webull.com'              # 微牛
+  - '+.us.hsbc.com'             # 汇丰美国官网
+  - '+.hsbc.com.us'             # 汇丰美国
+  - '+.vv1865.com'              # 汇丰内部 API/后台服务
+  - '+.hsbcnet.com'             # 汇丰全球商业网银
+  - '+.usbank.com'              # U.S. Bank
+  - '+.truist.com'              # Truist Bank
+  - '+.pnc.com'                 # PNC Bank
+  - '+.tdbank.com'              # TD Bank (美国绿点)
+  - '+.td.com'                  # TD 集团通用
+  - '+.discover.com'            # Discover (发现卡)
+  - '+.discovercard.com'        # 发现卡全称
+  - '+.americanexpress.com'     # American Express (运通)
+  - '+.amexnetwork.com'         # 运通网络
+  - '+.aexp.com'                # 运通缩写 (App 常用)
+  - '+.aexp-static.com'         # 运通静态资源
+  - '+.synchronybank.com'       # 同步银行 (Paypal 联名卡)
+  - '+.synchrony.com'           # 同步银行主域
+  - '+.ally.com'                # Ally Financial
+  - '+.varomoney.com'           # Varo Bank
+  - '+.vbank.com'               # Varo 缩写
+  - '+.go2bank.com'             # Go2Bank
+  - '+.sofi.com'                # SoFi 数字银行
+  - '+.monzo.com'               # Monzo
+  - '+.monzo.statuspage.io'
+  - '+.wise.com'                # Wise
+  - '+.transferwise.com'        # Wise 旧域
+
+  # ==========================================
+  # > 美股主流券商 (Stock Brokers)
+  # ==========================================
+  - '+.schwab.com'              # Charles Schwab (嘉信证券)
+  - '+.schwabclient.com'        # 嘉信客户端专用
+  - '+.fidelity.com'            # Fidelity (富达)
+  - '+.interactivebrokers.com'  # Interactive Brokers (盈透)
+  - '+.ibkr.com'                # IBKR 缩写
+  - '+.ibkr.com.hk'             # 备用，防止路由回跳
+  - '+.ibllc.com'               # 盈透底层清算系统
+  - '+.clientam.com'            # 账户管理门户
+  - '+.firstrade.com'           # Firstrade (第一证券)
+  - '+.firstrade.io'            # Firstrade API
+  - '+.firstrade.app'           # Firstrade App
+  - '+.etrade.com'              # E*TRADE (摩根士丹利旗下)
+  - '+.webull.com'              # Webull (微牛)
+  - '+.webullcorp.com'          # 微牛企业域名
+  - '+.tastytrade.com'          # Tastytrade 核心
+  - '+.tastyworks.com'          # Tasty 旧域名/后台
+  - '+.tastycrypto.com'         # Tasty 加密货币
+  - '+.tastytrade.io'           # Tasty API
+  - '+.developer.tastytrade.com'
   - '+.robinhood.com'           # 罗宾汉
 
   # ==========================================
-  # > 风控/分析/验证 (新增 firebaselogging 等)
+  # > 风控/分析/验证/辅助 (关键节点)
   # ==========================================
-  - '+.threatmetrix.com'        # 关键风控指纹
-  - '+.online-metrix.net'       # 关键风控辅助
-  - '+.akstat.io'               # Akamai 监测
-  - '+.okta.com'                # SSO 验证
-  - '+.id.me'                   # 身份验证中心
+  - '+.threatmetrix.com'        # 银行后台设备指纹检测 (极其关键)
+  - '+.online-metrix.net'       # 设备指纹辅助
+  - '+.simility.com'            # PayPal 核心风控评估
+  - '+.lexisnexis.com'          # 身份审查系统
+  - '+.threatexpert.com'        # 威胁扫描
+  - '+.akstat.io'               # Akamai 监测 (不通可能无法登录)
+  - '+.go-mpulse.net'           # 行为监测
+  - '+.okta.com'                # 二次验证系统 (SSO)
+  - '+.oktacdn.com'             # Okta 静态资源
+  - '+.duosecurity.com'         # MFA 验证
+  - '+.onelogin.com'            # 备用 SSO
+  - '+.id.me'                   # 官方身份验证中心
   - '+.newrelic.com'            # 性能采集 (mobile-collector)
   - '+.kochava.com'             # 归因分析 (kvinit-prod)
   - '+.crashlytics.com'         # 崩溃报告
   - '+.googleapis.com'          # 含 firebaseinstallations / firebaselogging-pa
-  - '+.intercom.io'             # 客服系统
-  - '+.ws-eu.pusher.com'        # 推送服务
+  - '+.intercom.io'             # 客服系统 (屏蔽会导致无法联系在线客服)
+  - '+.intercomcdn.com'         # 客服组件加速
+  - '+.launchdarkly.com'        # App 功能实时开关
+  - '+.glance.net'
+  - '+.ws-eu.pusher.com'        # 实时推送通知服务
+
+  # ==========================================
+  # > 金融数据与信用服务 (Credit & Data)
+  # ==========================================
+  - '+.equifax.com'             # 信用报告
+  - '+.experian.com'             # 信用报告
+  - '+.transunion.com'           # 信用报告
+  - '+.fico.com'                 # FICO 分数
+  - '+.creditkarma.com'          # Credit Karma
+  - '+.savvymoney.com'           # 银行集成的信用分服务
