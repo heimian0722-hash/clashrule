@@ -17,6 +17,7 @@ payload:
   - '+.imtintl.com'
   - '+.immersivetranslate.com'
   - '+.seagm.com'
+  - '+.flyert.com'
 
 # --- Apple数据传输/云上贵州 ---
   - '+.appldnld.apple.com'
