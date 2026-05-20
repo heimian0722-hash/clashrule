@@ -24,7 +24,6 @@ payload:
   - DOMAIN,odc.wireless.att.com
   - DOMAIN-SUFFIX,it.att.com
   - DOMAIN,okta.attexperience.edu
-  - DOMAIN-SUFFIX,it.att.com
   - DOMAIN-SUFFIX,redpocket.com
   - DOMAIN-SUFFIX,fpconfig.net
 
