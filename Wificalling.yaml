@@ -1,3 +1,4 @@
+payload:
 # --- 1. Apple 核心标准与推送 (全量强制美区环境) ---
   - DOMAIN-SUFFIX,3gppnetwork.org
   - DOMAIN-SUFFIX,apple.com
