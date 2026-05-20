@@ -10,6 +10,7 @@ payload:
   - DOMAIN,gs-loc.apple.com
   - DOMAIN-KEYWORD,apple-support
 
+
   # --- 2. AT&T / Red Pocket 专项强化 (含激活接口) ---
   - DOMAIN-SUFFIX,att.com
   - DOMAIN-SUFFIX,att.net
@@ -23,6 +24,9 @@ payload:
   - DOMAIN,odc.wireless.att.com
   - DOMAIN-SUFFIX,it.att.com
   - DOMAIN,okta.attexperience.edu
+  - DOMAIN-SUFFIX,it.att.com
+  - DOMAIN-SUFFIX,redpocket.com
+  - DOMAIN-SUFFIX,fpconfig.net
 
   # --- 3. T-Mobile / Tello / Google Fi 专项 ---
   - DOMAIN-SUFFIX,t-mobile.com
