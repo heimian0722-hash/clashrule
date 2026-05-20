@@ -1,72 +1,116 @@
 payload:
-# --- 1. Apple 核心标准与推送 (全量强制美区环境) ---
-  - DOMAIN-SUFFIX,3gppnetwork.org
-  - DOMAIN-SUFFIX,apple.com
-  - DOMAIN-SUFFIX,apple-cloudkit.com
-  - DOMAIN-SUFFIX,push.apple.com
-  - DOMAIN-KEYWORD,apple-support
+  # ==========================================
+  # 1. APPLE 核心服务与美区 Wi-Fi Calling 通话底层
+  # ==========================================
+  - DOMAIN-SUFFIX,apple.com
+  - DOMAIN-SUFFIX,apple-cloudkit.com
+  - DOMAIN-SUFFIX,push.apple.com
+  - DOMAIN-KEYWORD,apple-support
+  # Wi-Fi Calling 与 运营商套餐权限验证核心 (遗漏会导致通话无法激活)
+  - DOMAIN,vowifi.apple.com
+  - DOMAIN,entitlement.apple.com
+  - DOMAIN,ess.apple.com
+  - DOMAIN,gs-loc.apple.com
+  # 3GPP 蜂窝网络核心标准网关
+  - DOMAIN-SUFFIX,3gppnetwork.org
 
-  # --- 2. AT&T / Red Pocket 专项强化 (含激活接口与安卓组件) ---
-  - DOMAIN-SUFFIX,redpocket.com
-  - DOMAIN-SUFFIX,fpconfig.net
-  - DOMAIN-SUFFIX,posthog.com
-  - DOMAIN-SUFFIX,sentry.io
-  - DOMAIN-SUFFIX,app-analytics-services.com
-  - DOMAIN-SUFFIX,deploypulse.io
-  - DOMAIN,hi.frcoal
-  - DOMAIN,firebaseinstallations.googleapis.com
-  - DOMAIN-SUFFIX,att.com
-  - DOMAIN-SUFFIX,att.net
-  - DOMAIN-SUFFIX,mobile.att.net
-  - DOMAIN-SUFFIX,att-idns.net
-  - DOMAIN-SUFFIX,attccc.com
-  - DOMAIN,okta.attexperience.edu
+  # ==========================================
+  # 2. AT&T / Red Pocket 专项强化 (含激活、Web端及App组件)
+  # ==========================================
+  - DOMAIN-SUFFIX,att.com
+  - DOMAIN-SUFFIX,att.net
+  - DOMAIN-SUFFIX,mobile.att.net
+  - DOMAIN-SUFFIX,att-idns.net
+  - DOMAIN-SUFFIX,attccc.com
+  - DOMAIN,0.ecom.attccc.com
+  - DOMAIN,epdg.epc.att.net
+  - DOMAIN,attdashboard.wireless.att.com
+  - DOMAIN,idp.wireless.att.com
+  - DOMAIN,odc.wireless.att.com
+  - DOMAIN-SUFFIX,it.att.com
+  - DOMAIN,okta.attexperience.edu
+  - DOMAIN-SUFFIX,redpocket.com
+  - DOMAIN-SUFFIX,fpconfig.net
+  # 安卓端 App 激活与日志分析组件
+  - DOMAIN-SUFFIX,posthog.com
+  - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN-SUFFIX,app-analytics-services.com
+  - DOMAIN-SUFFIX,deploypulse.io
+  - DOMAIN,hi.frcoal
+  - DOMAIN,firebaseinstallations.googleapis.com
 
-  # --- 3. T-Mobile / Tello / Verizon 专项 ---
-  - DOMAIN-SUFFIX,t-mobile.com
-  - DOMAIN-SUFFIX,t-mo.co
-  - DOMAIN-SUFFIX,tmomail.net
-  - DOMAIN-SUFFIX,g-tun.com
-  - DOMAIN-SUFFIX,tello.com
-  - DOMAIN-SUFFIX,verizon.com
-  - DOMAIN-SUFFIX,verizonwireless.com
-  - DOMAIN-SUFFIX,vzw.com
+  # ==========================================
+  # 3. T-Mobile / Tello / Google Fi 专项
+  # ==========================================
+  - DOMAIN-SUFFIX,t-mobile.com
+  - DOMAIN-SUFFIX,t-mo.co
+  - DOMAIN-SUFFIX,tmomail.net
+  - DOMAIN-SUFFIX,g-tun.com
+  - DOMAIN-SUFFIX,tello.com
+  - DOMAIN,blog.tello.com
+  - DOMAIN,fraud-api.tello.com
+  # T-Mobile 专属 Wi-Fi Calling 核心网关
+  - DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+  - DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 
-  # --- 4. eSIM 激活与全球下发服务器 (Idemia / G+D / Thales) ---
-  - DOMAIN-SUFFIX,idemia.io
-  - DOMAIN-SUFFIX,gi-de.com
-  - DOMAIN-SUFFIX,thalesgroup.com
-  - DOMAIN-SUFFIX,prod.onsite.me
+  # ==========================================
+  # 4. Verizon 体系 (含 Ultra / Red Pocket CDMA 线路)
+  # ==========================================
+  - DOMAIN-SUFFIX,verizon.com
+  - DOMAIN-SUFFIX,verizonwireless.com
+  - DOMAIN-SUFFIX,vzw.com
+  # Verizon 专属 Wi-Fi Calling 核心网关
+  - DOMAIN,epdg.epc.mnc480.mcc311.pub.3gppnetwork.org
 
-  # --- 5. VoIP 与 第三方通讯工具 ---
-  - DOMAIN-SUFFIX,tktn.be
-  - DOMAIN-SUFFIX,talkatone.com
-  - DOMAIN-SUFFIX,textnow.com
+  # ==========================================
+  # 5. 全球 eSIM 远程下发与激活基础设施 (Idemia / G+D / Thales)
+  # ==========================================
+  - DOMAIN-SUFFIX,idemia.io
+  - DOMAIN,rsp-4002.idemia.io
+  - DOMAIN-SUFFIX,gi-de.com
+  - DOMAIN-SUFFIX,thalesgroup.com
+  - DOMAIN-SUFFIX,prod.onsite.me
 
-  # --- 6. CDN、安全组件与防 Access Denied (Akamai & Azure Edge) ---
-  - DOMAIN-SUFFIX,edgesuite.net
-  - DOMAIN-SUFFIX,edgekey.net
-  - DOMAIN-SUFFIX,akamaihd.net
-  - DOMAIN-SUFFIX,akamaized.net
-  - DOMAIN-KEYWORD,akamai
-  - DOMAIN-SUFFIX,kaptcha.com
-  - DOMAIN-SUFFIX,msecnd.net
-  - DOMAIN-SUFFIX,visualstudio.com
-  - DOMAIN,fp-afd.azureedge.us
+  # ==========================================
+  # 6. VoIP 美区虚拟通讯工具
+  # ==========================================
+  - DOMAIN-SUFFIX,tktn.be
+  - DOMAIN-SUFFIX,talkatone.com
+  - DOMAIN-SUFFIX,textnow.com
 
-  # --- 7. 补充美国 IP 强校验域名 (常见环境检测工具) ---
-  - DOMAIN-SUFFIX,ip-api.com
-  - DOMAIN-SUFFIX,whoer.net
-  - DOMAIN-SUFFIX,browserleaks.com
-  - DOMAIN-SUFFIX,pixelscan.net
-  - DOMAIN-SUFFIX,scamalytics.com
+  # ==========================================
+  # 7. CDN、风控安全组件 (防登录网页报错 Access Denied)
+  # ==========================================
+  - DOMAIN-SUFFIX,edgesuite.net
+  - DOMAIN-SUFFIX,edgekey.net
+  - DOMAIN-SUFFIX,akamaihd.net
+  - DOMAIN-SUFFIX,akamaized.net
+  - DOMAIN-KEYWORD,akamai
+  - DOMAIN-SUFFIX,kaptcha.com
+  - DOMAIN-SUFFIX,msecnd.net
+  - DOMAIN-SUFFIX,visualstudio.com
+  - DOMAIN,fp-afd.azureedge.us
 
-  # --- 8. 运营商硬编码 IP 网段 (无DNS解析强切) ---
-  - IP-CIDR,12.0.0.0/8,no-resolve
-  - IP-CIDR,129.192.0.0/16,no-resolve
-  - IP-CIDR,107.64.0.0/10,no-resolve
-  - IP-CIDR,166.128.0.0/9,no-resolve
-  - IP-CIDR,107.122.31.0/24,no-resolve
-  - IP-CIDR,66.94.0.0/19,no-resolve
-  - IP-CIDR,208.54.0.0/16,no-resolve
-  - IP-CIDR,206.29.177.36/32,no-resolve
+  # ==========================================
+  # 8. 美国纯净网络环境环境检测 (欺诈分/IP强校验)
+  # ==========================================
+  - DOMAIN-SUFFIX,ip-api.com
+  - DOMAIN-SUFFIX,whoer.net
+  - DOMAIN-SUFFIX,browserleaks.com
+  - DOMAIN-SUFFIX,pixelscan.net
+  - DOMAIN-SUFFIX,scamalytics.com
+
+  # ==========================================
+  # 9. 运营商硬编码本地 IP 网段 (无视 DNS 强切美区)
+  # ==========================================
+  # AT&T 专属网段
+  - IP-CIDR,12.0.0.0/8,no-resolve
+  - IP-CIDR,107.64.0.0/10,no-resolve
+  - IP-CIDR,166.128.0.0/9,no-resolve
+  - IP-CIDR,129.192.0.0/16,no-resolve
+  - IP-CIDR,107.122.31.0/24,no-resolve
+  # T-Mobile 专属网段
+  - IP-CIDR,208.54.0.0/16,no-resolve
+  # T-Mobile 移动网关
+  - IP-CIDR,66.94.0.0/19,no-resolve
+  - IP-CIDR,206.29.177.36/32,no-resolve
