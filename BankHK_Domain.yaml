@@ -62,6 +62,9 @@ payload:
   - '+.moomoobull.com'
   - '+.futustatic.com'
   - '+.futu-api.com'
+  - '+.investassistant.com'       # 尊嘉金融 交易/账户API
+  - '+.financialdatamining.com'   # 尊嘉金融 行情数据
+  - '+.zvstapp.com'               # 尊嘉金融 基础服务/下载
 
 
   # > 其他券商与交易所 (Other Brokers & Exchanges)
