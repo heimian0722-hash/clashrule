@@ -47,9 +47,9 @@
 ----设置好DNS及分流即可达成效果，开发项目地址https://github.com/KaringX
 ----karing Android/ios/Windows测试通过没问题，但mac端存在dns泄露（可能我mac系统版本太老的问题，目前设备较老，就只能到13），mac/linux自行测试使用；
 
-机场推荐，稳定没有断联过，节点都很多，都有低倍率节点
+机场推荐，稳定没有断联过，节点都很多，都有低倍率节点，2元/月100G，也有无时间限制流量包
 
-一分 2元/月100G
+一分 
 https://xn--4gqx1hgtfdmt.com/#/register?code=QcT04cnC
 
 赔钱
