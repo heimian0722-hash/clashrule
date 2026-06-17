@@ -53,4 +53,3 @@ payload:
 
 # --- 通用广告 SDK (全域拦截，建议维持全域) ---
   - '+.talkingdata.com'
-  - '+.mousegesturesapi.com'
