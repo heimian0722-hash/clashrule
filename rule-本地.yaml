@@ -10,6 +10,12 @@ log-level: warning
 ipv6: false
 external-controller: 0.0.0.0:9090
 
+ntp:
+  enable: true
+  server: ntp.aliyun.com
+  server-port: 123
+  interval: 30
+
 dns:
   enable: true
   listen: 0.0.0.0:1053
@@ -37,6 +43,7 @@ dns:
     - "*.lan"
     - "*.local"
     - "WORKGROUP"
+    - "ntp.aliyun.com"
     - "time.windows.com"
     - "time.nist.gov"
     - "time.apple.com"
@@ -62,7 +69,7 @@ clean: &clean
   filter: "(?i)^(?!.*(流量|套餐|到期|剩余|重置|官网|网站|域名|地址|机场|入口|节点|注意|维护|失联|公告|通知|电报|群|频道|说明|最新|客服|工单|订阅|更新|失败|超时|expire|traffic|reset|remaining|official|website|telegram|tg|qq)).*$"
 
 provider_base: &provider_base
-  type: http
+  输入: http
   interval: 3600
   health-check:
     enable: true
