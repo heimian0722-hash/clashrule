@@ -24,19 +24,6 @@ payload:
   - '+.identit.as'     # 补强：防降智校验
   - '+.stripe.com'     # 支付订阅所需
 
-# === Apple Intelligence (Siri/PCC) ===
-  - '+.smoot.apple.com'
-  - '+.guzzoni.apple.com'
-  - '+.apple-relay.apple.com'
-  - '+.apple-relay.mask.apple-dns.net'
-  - '+.apple-relay.cloudflare.com'
-  - '+.apple-relay.fastly-edge.com'
-  - '+.cp4.cloudflare.com'
-  - '+.cognito.apple.com'   # 补强：AI 身份令牌
-  - '+.apple-cloudkit.com'  # 补强：AI 协作数据同步
-  - '+.gateway.icloud.com' # iCloud 核心网关
-  - '+.itunes.apple.com' # 解决部分区域限制
-
 # === Anthropic (Claude) & xAI (Grok) ===
   - '+.anthropic.com'
   - '+.claude.ai'
