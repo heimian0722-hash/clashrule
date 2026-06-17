@@ -2,9 +2,6 @@ payload:
   # ==========================================
   # 1. APPLE 核心服务与美区 Wi-Fi Calling 通话底层
   # ==========================================
-  - DOMAIN-SUFFIX,apple-cloudkit.com
-  - DOMAIN-SUFFIX,push.apple.com
-  - DOMAIN-KEYWORD,apple-support
   # Wi-Fi Calling 与 运营商套餐权限验证核心 (遗漏会导致通话无法激活)
   - DOMAIN,vowifi.apple.com
   - DOMAIN,entitlement.apple.com
