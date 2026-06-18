@@ -4,10 +4,10 @@
 ----clash多端共用配置文件模板（理论上适用于所有mihomo(clash.meta) 开发的软件 ）
 
 
-**2、meta-rule.ini**
-----**openclash软件免费，首选**
-----
-----openwrt/istoreos openclash 配置在线订阅转换模板，直接食用https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/meta-rule.ini
+**2、本地-rule.yaml、meta-rule.ini**
+----**openclash，开源免费，软路由首选**
+----本地-rule.yaml 不会受订阅转化服务器干扰节点参数，不怕订阅泄漏，直接下载，自己按要求添加机场订阅链接 和 机场名称，导入openclash，启用
+----meta-rule.ini openclash在线订阅转换模板，直接食用https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/meta-rule.ini
 
 以下我openclash设置（旁路由，建议设置fakeip加强，性能上强，不影响dns泄露）
 <img width="1088" height="840" alt="捕获" src="https://github.com/user-attachments/assets/fe657b09-a9ac-4f87-94dc-8e39a00a7ba7" />
