@@ -5,10 +5,9 @@
 
 
 **2、本地-rule.yaml、meta-rule.ini**
+----openclash，开源免费，软路由首选
 
-----**openclash，开源免费，软路由首选**
-
-----本地-rule.yaml 不会受订阅转化服务器干扰节点参数，不怕订阅泄漏，直接下载，自己按要求添加机场订阅链接 和 机场名称，导入openclash，启用
+----本地-rule.yaml 不会受订阅转化服务器干扰节点参数，不怕订阅泄漏，直接下载，自己按要求添加机场订阅链接 和 机场名称，导入openclash，启用 **目前在用**
 
 ----meta-rule.ini openclash在线订阅转换模板，直接食用https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/meta-rule.ini
 
