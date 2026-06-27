@@ -19,6 +19,8 @@ payload:
   - '+.seagm.com'
   - '+.flyert.com'
   - '+.fflyert.com.cn'
+  - '+.yan.life'
+  - '+.rdapi.olii.cc'
 
 # --- Apple数据传输/云上贵州 ---
   - '+.appldnld.apple.com'
