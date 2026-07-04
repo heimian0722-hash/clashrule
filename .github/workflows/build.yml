@@ -1,0 +1,2 @@
+pip install customtkinter pyinstaller
+pyinstaller --noconsole --onefile --name="网络IP一键切换器" app_win.py
