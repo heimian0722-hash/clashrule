@@ -1,0 +1,489 @@
+# 下载编辑，自行添加机场订阅链接，支持链式代理，预留静态节点，走“指定代理”组
+# 本项目 链式工具.html 下载，直接浏览器打开，写的很清楚
+# 注意点：一定要先添加订阅，成功运行启动代理，再编辑yaml，添加静态住宅信息
+
+
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: warning
+ipv6: false
+external-controller: 0.0.0.0:9090
+
+ntp:
+  enable: true
+  server: ntp.aliyun.com
+  server-port: 123
+  interval: 30
+
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://1.1.1.1/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+  nameserver-policy:
+    "geosite:cn":
+      - https://dns.alidns.com/dns-query
+    "geosite:geolocation-!cn":
+      - https://dns.google/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "WORKGROUP"
+    - "ntp.aliyun.com"
+    - "time.windows.com"
+    - "time.nist.gov"
+    - "time.apple.com"
+    - "time.asia.apple.com"
+    - "*.msftncsi.com"
+    - "*.msftconnecttest.com"
+    - "*.n.n.srv.nintendo.net"
+    - "+.stun.playstation.net"
+    - "*.*.xboxlive.com"
+    - "xbox.*.*.microsoft.com"
+    - "stun.*.*"
+    - "stun.*.*.*"
+    - "pool.ntp.org"
+    - "ntp.ubuntu.com"
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - "time1.cloud.tencent.com"
+    - "time.ustc.edu.cn"
+    - "speedtest.cros.wr.pvp.net"
+
+
+clean: &clean
+  filter: "(?i)^(?!.*(流量|套餐|到期|剩余|重置|官网|网站|域名|地址|机场|入口|节点|注意|维护|失联|公告|通知|电报|群|频道|说明|最新|客服|工单|订阅|更新|失败|超时|expire|traffic|reset|remaining|official|website|telegram|tg|qq)).*$"
+
+provider_base: &provider_base
+  type: http
+  interval: 3600
+  health-check:
+    enable: true
+    url: https://www.gstatic.com/generate_204
+    interval: 600
+
+proxy-providers:
+  机场1:
+    <<: [*provider_base, *clean]
+    url: "https://订阅1"
+    path: ./proxies/yifen.yaml
+
+  机场2:
+    <<: [*provider_base, *clean]
+    url: "https://订阅2"
+    path: ./proxies/peiqian.yaml
+
+
+proxy-providers-config:
+  use-all: &use-all
+    use:
+      - 机场1
+      - 机场2
+
+
+
+
+#预留链式代理添加位置
+pr: &pr
+  proxies:  #添加静态节点名称 静态住宅1
+
+
+
+proxies:    #添加静态节点信息,ip端口用户用户名密码等
+
+
+
+
+rules:
+  - RULE-SET,residential,🔗 住宅中转
+  - DST-PORT,500,📞 Wificalling
+  - DST-PORT,4500,📞 Wificalling
+  - RULE-SET,wificalling,📞 Wificalling
+  - RULE-SET,reject,🛑 净化拦截
+  - RULE-SET,reject-extra,🛑 净化拦截
+  - RULE-SET,reject-cn,🛑 净化拦截
+  - GEOSITE,private,DIRECT
+  - GEOIP,private,DIRECT,no-resolve
+  - RULE-SET,direct-custom-ip,DIRECT
+  - RULE-SET,direct-custom-dom,DIRECT
+  - RULE-SET,direct-cn-dom,DIRECT
+  - GEOSITE,deepseek,DIRECT
+  - GEOSITE,feishu,DIRECT
+  - GEOSITE,category-ai-cn,DIRECT
+  - GEOSITE,apple,🍎 Apple
+  - GEOSITE,apple-cn,DIRECT
+  - GEOSITE,openai,🤖 ChatGPT
+  - RULE-SET,ai-domain,🧠 AI
+  - GEOSITE,category-ai-!cn,🧠 AI
+  - GEOSITE,google,🔎 Google
+  - DOMAIN-SUFFIX,gvt0.com,🔎 Google
+  - DOMAIN-SUFFIX,gvt1.com,🔎 Google
+  - DOMAIN-SUFFIX,gvt2.com,🔎 Google
+  - DOMAIN-SUFFIX,gvt3.com,🔎 Google
+  - GEOIP,google,🔎 Google,no-resolve
+  - GEOSITE,google-cn,DIRECT
+  - RULE-SET,bank-us,🇺🇸 BankUS
+  - RULE-SET,shop-us,🇺🇸 BankUS
+  - RULE-SET,bank-hk,🇭🇰 BankHK
+  - RULE-SET,bank-eu,🇪🇺 BankEU
+  - RULE-SET,crypto-a,💰 币圈A
+  - RULE-SET,crypto-b,💰 币圈B
+  - RULE-SET,telegram,📨 Telegram
+  - GEOSITE,telegram,📨 Telegram
+  - GEOIP,telegram,📨 Telegram,no-resolve
+  - GEOSITE,youtube,🎬 YouTube
+  - GEOSITE,netflix,🎥 Netflix
+  - GEOIP,netflix,🎥 Netflix,no-resolve
+  - RULE-SET,tiktok-ext,🎵 TikTok
+  - GEOSITE,tiktok,🎵 TikTok
+  - GEOIP,tiktok,🎵 TikTok,no-resolve
+  - GEOSITE,instagram,💬 社交媒体
+  - GEOSITE,twitter,💬 社交媒体
+  - RULE-SET,proxy-cn-img,💬 社交媒体
+  - GEOSITE,notion,📦 Notion
+  - GEOIP,notion,📦 Notion,no-resolve
+  - GEOSITE,adobe,🟥 Adobe
+  - GEOSITE,github,🧑‍💻 GitHub
+  - GEOIP,github,🧑‍💻 GitHub,no-resolve
+  - GEOSITE,microsoft,🖥️ Microsoft
+  - GEOIP,microsoft,🖥️ Microsoft,no-resolve
+  - GEOSITE,steam,🎮 Steam
+  - GEOSITE,cloudflare,☁️ cloudflare
+  - GEOIP,cloudflare,☁️ cloudflare,no-resolve
+  - GEOSITE,category-speedtest,🚝 测速工具
+  - GEOSITE,category-games@cn,DIRECT
+  - GEOSITE,category-game-platforms-download,DIRECT
+  - GEOSITE,category-public-tracker,DIRECT
+  - GEOSITE,cn,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
+  - RULE-SET,proxy-cn-dom,🌐 代理补充
+  - GEOSITE,gfw,🌐 代理补充
+  - MATCH,🐟 漏网之鱼
+
+proxy-groups:
+  - name: 🚀 手动选择
+    type: select
+    <<: *use-all
+    <<: *pr
+
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 100
+    <<: *use-all
+
+  - name: 📡 倍率节省
+    type: url-test
+    filter: "0.1|0.01|0.001|0.05" 
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 100
+    <<: *use-all
+
+  - name: 🛑 净化拦截
+    type: select
+    proxies: [REJECT, DIRECT, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省]
+
+  - name: 🔗 住宅中转
+    type: select
+    proxies: [🇸🇬 SG, 🇭🇰 HK, 🇺🇸 US, 🇹🇼 TW, 🇯🇵 JP, 🚀 手动选择, ♻️ 自动选择, DIRECT]
+    <<: *use-all
+
+  - name: 指定代理
+    type: select
+    <<: *use-all
+    <<: *pr
+
+  - name: 🌐 代理补充
+    type: select
+    proxies: [♻️ 自动选择, 🚀 手动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
+    <<: *use-all
+    
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies: [♻️ 自动选择, 🚀 手动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
+    <<: *use-all
+
+  - name: 🧠 AI
+    type: select
+    proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🇯🇵 JP, 🧊 冷门节点, 🚀 手动选择, ♻️ 自动选择]
+    <<: *use-all
+
+  - name: 🤖 ChatGPT
+    type: select
+    proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🇯🇵 JP, 🧊 冷门节点, 🚀 手动选择, ♻️ 自动选择]
+    <<: *use-all
+
+  - name: 🔎 Google
+    type: select
+    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
+    <<: *use-all
+
+  - name: 🍎 Apple
+    type: select
+    proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
+    <<: *use-all
+
+  - name: 📞 Wificalling
+    type: select
+    proxies: [🇺🇸 US, 🚀 手动选择, DIRECT]
+    <<: *use-all
+    
+  - name: 🇺🇸 BankUS
+    type: select
+    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择]
+    <<: *use-all
+
+  - name: 🇭🇰 BankHK
+    type: select
+    proxies: [🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择, ♻️ 自动选择, DIRECT]
+    <<: *use-all
+
+  - name: 🇪🇺 BankEU
+    type: select
+    proxies: [🇭🇰 HK, 🇺🇸 US, 🧊 冷门节点, 🚀 手动选择, DIRECT]
+    <<: *use-all
+
+  - name: 💰 币圈A
+    type: select
+    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, DIRECT]
+    <<: *use-all
+
+  - name: 💰 币圈B
+    type: select
+    proxies: [🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🚀 手动选择, ♻️ 自动选择, DIRECT]
+    <<: *use-all
+
+  - name: 🧑‍💻 GitHub
+    type: select
+    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
+    <<: *use-all
+
+  - name: ☁️ cloudflare
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, DIRECT]
+    <<: *use-all
+
+  - name: 🖥️ Microsoft
+    type: select
+    proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
+    <<: *use-all
+
+  - name: 💬 社交媒体
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    <<: *use-all
+
+  - name: 📨 Telegram
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    <<: *use-all
+
+  - name: 🎬 YouTube
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    <<: *use-all
+
+  - name: 🎥 Netflix
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    <<: *use-all
+
+  - name: 🎵 TikTok
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    <<: *use-all
+
+  - name: 📦 Notion
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
+    <<: *use-all
+
+  - name: 🟥 Adobe
+    type: select
+    proxies: [REJECT, DIRECT, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省]
+    <<: *use-all
+
+  - name: 🎮 Steam
+    type: select
+    proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
+    <<: *use-all
+
+  - name: 🚝 测速工具
+    type: select
+    proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
+    <<: *use-all
+
+  - name: 🇺🇸 US
+    type: select
+    filter: "(?i)(🇺🇸|美国|\\bUS\\b|united states|los angeles|san jose|seattle|new york)"
+    <<: *use-all
+
+  - name: 🇭🇰 HK
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 100
+    filter: "(?i)(🇭🇰|香港|\\bHK\\b|hongkong)"
+    <<: *use-all
+
+  - name: 🇸🇬 SG
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 100
+    filter: "(?i)(🇸🇬|新加坡|\\bSG\\b|singapore)"
+    <<: *use-all
+
+  - name: 🇹🇼 TW
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 100
+    filter: "(?i)(🇹🇼|台湾|\\bTW\\b|taiwan|taipei|hinet)"
+    <<: *use-all
+
+  - name: 🇯🇵 JP
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+    tolerance: 100
+    filter: "(?i)(🇯🇵|日本|\\bJP\\b|tokyo|osaka)"
+    <<: *use-all
+
+  - name: 🧊 冷门节点
+    type: select
+    filter: "(?i)^(?!.*(🇭🇰|香港|\\bHK\\b|hong\\s*kong|🇯🇵|日本|\\bJP\\b|tokyo|osaka|🇹🇼|台湾|\\bTW\\b|taiwan|taipei|hinet|🇸🇬|新加坡|\\bSG\\b|singapore|🇺🇸|美国|\\bUS\\b|united\\s*states|los\\s*angeles|san\\s*jose|seattle|new\\s*york)).*"
+    <<: *use-all
+
+rule-providers:
+  residential:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/StaticResidential.yaml"
+    path: ./rules/res.yaml
+    interval: 86400
+  wificalling:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Wificalling.yaml"
+    path: ./rules/wifi.yaml
+    interval: 86400
+  reject:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockmihomolite.yaml"
+    path: ./rules/reject.yaml
+    interval: 86400
+  reject-extra:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BANAD.yaml"
+    path: ./rules/reject_ext.yaml
+    interval: 86400
+  reject-cn:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/CN_Reject_Domain.yaml"
+    path: ./rules/reject_cn.yaml
+    interval: 86400
+  direct-custom-ip:
+    type: http
+    behavior: classical
+    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_IP.yaml"
+    path: ./rules/dir_ip.yaml
+    interval: 86400
+  direct-custom-dom:
+    type: http
+    behavior: domain
+    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.yaml"
+    path: ./rules/dir_dom.yaml
+    interval: 86400
+  direct-cn-dom:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/CN_Direct_Domain.yaml"
+    path: ./rules/dir_cn.yaml
+    interval: 86400
+  proxy-cn-img:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/CN_Proxy_Domain_img.yaml"
+    path: ./rules/p_cn_img.yaml
+    interval: 86400
+  proxy-cn-dom:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/CN_Proxy_Domain.yaml"
+    path: ./rules/p_cn.yaml
+    interval: 86400
+  bank-us:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BankUS_Domain.yaml"
+    path: ./rules/bus.yaml
+    interval: 86400
+  shop-us:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/ShopUS.yaml"
+    path: ./rules/shopus.yaml
+    interval: 86400
+  bank-hk:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BankHK_Domain.yaml"
+    path: ./rules/bhk.yaml
+    interval: 86400
+  bank-eu:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BankEU_Domain.yaml"
+    path: ./rules/beu.yaml
+    interval: 86400
+  crypto-a:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Crypto-A.yaml"
+    path: ./rules/ca.yaml
+    interval: 86400
+  crypto-b:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Crypto-B.yaml"
+    path: ./rules/cb.yaml
+    interval: 86400
+  ai-domain:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/AI-Domain.yaml"
+    path: ./rules/ai.yaml
+    interval: 86400
+  telegram:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Telegram.yaml"
+    path: ./rules/tg.yaml
+    interval: 86400
+  tiktok-ext:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Bytedance.yaml"
+    path: ./rules/tiktok_ext.yaml
+    interval: 86400
