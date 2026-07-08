@@ -66,8 +66,9 @@ stream-ipport:
     ip-group: 国内
     dst-addr-inv: 1
     prio: 0
-    mode: 6
+    mode: 0
     ifaceband: 0
+    protocol: any
   - opt-tagname: 负责分流到下一跳
     type: "1"
     interface: ""
@@ -80,6 +81,20 @@ stream-ipport:
     prio: 0
     mode: 0
     ifaceband: 0
+    protocol: any
+  - opt-tagname: 旁路由回流
+    type: "0"
+    interface: wan1
+    nexthop: ""
+    src-addr: 192.168.3.5
+    src-addr-opt-ipgroup: ""
+    src-addr-inv: 0
+    ip-group: ""
+    dst-addr-inv: 0
+    prio: 0
+    mode: 0
+    ifaceband: 0
+    protocol: any
 webui:
   # WebUI 管理服务设置
   port: "19000" # WebUI 服务端口，如果在docker或者ikuai应用市场中运行通常建议保持默认
