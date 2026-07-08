@@ -1,0 +1,107 @@
+#  iKuai Bypass 配置文件 大部分时候请使用默认设置即可
+#  详情参考: https://github.com/joyanhui/ikuai-bypass
+#
+#  【重要】tag 字段长度限制说明 / Important: tag field length limitation
+#  爱快固件 4.0.101 对规则名称(tagname)有 15 字符的长度限制
+#  系统会自动添加 "IKB" 前缀，因此 tag 字段建议不超过 11 个字符
+#  超过限制的 tag 会被自动截断并打印警告日志
+#  iKuai firmware 4.0.101 has a 15-character limit on tagname length
+#  System auto-adds "IKB" prefix, so tag field should not exceed 11 characters
+#  Tags exceeding the limit will be auto-truncated with a warning log
+ikuai-url: http://192.168.3.1 # 爱快控制台地址，结尾不要加 "/"
+username: admin # 爱快登陆用户名
+password: a123456.. # 爱快登陆密码
+cron: 0 7 * * * # 更新周期cron表达式，例如 0 7 * * *
+AddErrRetryWait: 10s # 自动重试时间间隔 (10s, 120s)
+AddWait: 1s # 规则添加后的反应等待时间
+run-mode: cronAft # 运行模式: cron(先执行一次再定时)/cronAft(仅定时推荐)/once(运行一次)
+mode: iip # 分流模式: ispdomain(默认推荐)/ipgroup/ipv6group/ii/ip/iip; CLI -m 可覆盖
+
+# 代理模式（proxy）与 GitHub Proxy（github-proxy/ghproxy）的区别见下方说明
+# mode 可选：custom / system / smart
+# - custom：所有外部 HTTP 请求走自定义代理（url 支持 http:// 或 https://，并可选 user/pass），并禁用 github-proxy(ghproxy)
+# - system：使用系统/环境代理（HTTP_PROXY/HTTPS_PROXY/ALL_PROXY 等），并禁用 github-proxy
+# - smart：
+#   - 规则下载/远程载入：优先使用 github-proxy(ghproxy) URL 前缀拼接并直连；未配置 github-proxy 时回退到自定义代理；若 url 为空则回退到系统/环境代理
+#   - GitHub API 查询新版：优先使用自定义代理；若 url 为空则回退到系统/环境代理
+proxy:
+  mode: smart
+  url: ""
+  user: ""
+  pass: ""
+
+# GitHub Proxy (ghproxy) 与上面的 proxy 不是一回事：
+# - github-proxy 是 URL 前缀重写，仅对 raw.githubusercontent.com / github.com 生效
+# - 仅在 proxy.mode=smart 时用于规则下载/远程载入；不会用于 GitHub API 查询新版
+# - 在 proxy.mode=custom/system 时不会使用 github-proxy
+github-proxy: "https://gh-proxy.com/" # GitHub Proxy (ghproxy) URL 前缀，例如 https://gh-proxy.com/ (留空不使用)
+custom-isp:
+  # 自定义运营商分流 (IP分流)
+  []
+stream-domain:
+  # 域名分流 (优先级高于IP分流)
+  []
+  #- interface: wan1 # 分流线路 (如 wan1)
+  #  src-addr: 192.168.1.10-192.168.1.254 # 分流源地址 (IP或范围)
+  #  src-addr-opt-ipgroup: "" # 分流源地址关联IP分组(用于匹配爱快中的IP分组 多个可以用逗号分割) 在设置了src-addr-opt-ipgroup后，src-addr参数会被忽略
+  #  tag: MyChina # 规则TagName关键词（系统自动添加前缀 IKB,不超过 11 个字符）
+  #  url: https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/refs/heads/release/china-list.txt # 不太建议用 数据太大，爱快处理可能会卡 这里只是演示
+ip-group:
+  # IP分组 (与端口分流配合使用)
+  - tag: 国内
+    url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/text/cn.txt
+ipv6-group:
+  # IPv6分组 (与端口分流配合使用)
+  - tag: 国内v6
+    url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/text/cn.txt
+stream-ipport:
+  # 端口分流 (下一跳网关/外网线路)
+  - opt-tagname: 国内流量直出
+    type: "0"
+    interface: wan1
+    nexthop: ""
+    src-addr: 192.168.3.21-192.168.3.254
+    src-addr-opt-ipgroup: ""
+    src-addr-inv: 1
+    ip-group: 国内
+    dst-addr-inv: 1
+    prio: 0
+    mode: 6
+    ifaceband: 0
+  - opt-tagname: 负责分流到下一跳
+    type: "1"
+    interface: ""
+    nexthop: 192.168.3.5
+    src-addr: 192.168.3.21-192.168.3.254
+    src-addr-opt-ipgroup: ""
+    src-addr-inv: 0
+    ip-group: ""
+    dst-addr-inv: 0
+    prio: 1
+    mode: 0
+    ifaceband: 0
+  - opt-tagname: 旁路由回流
+    type: "0"
+    interface: wan1
+    nexthop: ""
+    src-addr: 192.168.3.5
+    src-addr-opt-ipgroup: ""
+    src-addr-inv: 0
+    ip-group: ""
+    dst-addr-inv: 0
+    prio: 2
+    mode: 0
+    ifaceband: 0
+webui:
+  # WebUI 管理服务设置
+  port: "19000" # WebUI 服务端口，如果在docker或者ikuai应用市场中运行通常建议保持默认
+  user: admin # WebUI 用户名 (留空禁用认证)
+  pass: a123456.. # WebUI 密码
+  enable: true # 是否启用 WebUI 服务；启用后即可通过当前 WebUI 修改配置
+  cdn-prefix: https://cdn.jsdelivr.net/npm # CDN 前缀 (例如: https://cdn.jsdelivr.net/npm |  https://cdn.jsdmirror.com/npm（国内）)
+MaxNumberOfOneRecords:
+  # 单条记录最大写入几条数据,因为爱快v4还未稳定，建议按照爱快限制来配置，注意太长的话使用浏览器编辑查看对应规则的时候限于浏览器不适合处理大数据浏览器可能会卡，但是爱快运行时候并不会卡
+  Isp: 5000 # 自定义运营商IP，爱快限制是5000,本工具可以写入1w+，
+  Ipv4: 2450 # ipv4分组最大写入几条数据,爱快限制最大1000，本工具可以写入1.8k+
+  Ipv6: 1600 # ipv6分组最大写入几条数据,爱快限制最大1000，本工具可以写入1.5k+
+  Domain: 3000 # 域名分流规则最大写入几条数据,爱快 4.0.101 对 API 请求大小有限制(约 90KB), 有的分流规则里面有超长域名3000条就会超过90kb（提示 DOMAIN:域名分流 xxx 请求参数不合法），如果没有这种情况可以设置为6000,否则请2-3000较为合理。
