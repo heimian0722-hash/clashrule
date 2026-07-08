@@ -56,7 +56,7 @@ ipv6-group:
     url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/text/cn.txt
 stream-ipport:
   # 端口分流 (下一跳网关/外网线路)
-  - opt-tagname: 国内流量
+  - opt-tagname: 国内流量直出
     type: "0"
     interface: wan1
     nexthop: ""
@@ -69,7 +69,7 @@ stream-ipport:
     mode: 0
     ifaceband: 0
     protocol: any
-  - opt-tagname: 负责分流到下一跳
+  - opt-tagname: 分流到下一跳网关
     type: "1"
     interface: ""
     nexthop: 192.168.3.5
