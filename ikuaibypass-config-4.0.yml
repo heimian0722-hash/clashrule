@@ -14,8 +14,8 @@ password: a123456.. # 爱快登陆密码
 cron: 0 7 * * * # 更新周期cron表达式，例如 0 7 * * *
 AddErrRetryWait: 10s # 自动重试时间间隔 (10s, 120s)
 AddWait: 1s # 规则添加后的反应等待时间
-run-mode: cronAft # 运行模式: cron(先执行一次再定时)/cronAft(仅定时推荐)/once(运行一次)
-mode: iip # 分流模式: ispdomain(默认推荐)/ipgroup/ipv6group/ii/ip/iip; CLI -m 可覆盖
+run-mode: once # 运行模式: cron(先执行一次再定时)/cronAft(仅定时推荐)/once(运行一次)
+mode: ispdomain # 分流模式: ispdomain(默认推荐)/ipgroup/ipv6group/ii/ip/iip; CLI -m 可覆盖
 
 # 代理模式（proxy）与 GitHub Proxy（github-proxy/ghproxy）的区别见下方说明
 # mode 可选：custom / system / smart
@@ -56,7 +56,7 @@ ipv6-group:
     url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/text/cn.txt
 stream-ipport:
   # 端口分流 (下一跳网关/外网线路)
-  - opt-tagname: 国内流量直出
+  - opt-tagname: 国内流量
     type: "0"
     interface: wan1
     nexthop: ""
@@ -77,19 +77,7 @@ stream-ipport:
     src-addr-inv: 0
     ip-group: ""
     dst-addr-inv: 0
-    prio: 1
-    mode: 0
-    ifaceband: 0
-  - opt-tagname: 旁路由回流
-    type: "0"
-    interface: wan1
-    nexthop: ""
-    src-addr: 192.168.3.5
-    src-addr-opt-ipgroup: ""
-    src-addr-inv: 0
-    ip-group: ""
-    dst-addr-inv: 0
-    prio: 2
+    prio: 0
     mode: 0
     ifaceband: 0
 webui:
