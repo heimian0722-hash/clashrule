@@ -49,7 +49,8 @@
 ----设置好DNS及分流即可达成效果，开发项目地址https://github.com/KaringX
 ----karing Android/ios/Windows测试通过没问题，但mac端存在dns泄露（可能我mac系统版本太老的问题，目前设备较老，就只能到13），mac/linux自行测试使用；
 
-机场推荐，稳定没有断联过，节点都很多，都有低倍率节点，三家价格都一样，2元/月100G，无时间限制流量包1000g/20元
+机场推荐，稳定没有断联过，节点都很多，有低倍率0.1，三家价格都差不多，2元/月100G 试用看看，更推荐 无时间限制1000g/20元  毕竟只要不跑路可以一直用
+
 
 赔钱
 https://xn--mes358aby2apfg.com/register?code=MC4TqXoR&cover=sfw
