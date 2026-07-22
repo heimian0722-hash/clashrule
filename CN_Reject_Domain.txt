@@ -86,7 +86,6 @@ ad.gtimg.com
 adsmind.tc.qq.com
 data.gdt.qq.com
 gdt.qq.com
-gdtimg.com
 mi.gdt.qq.com
 mmad.qq.com
 pgdt.ugdtimg.com
