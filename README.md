@@ -70,7 +70,7 @@ https://app.proxy-cheap.com/r/MXJ13W
 
 **iproyal**
 https://iproyal.cn/?r=heimian
-8美元/G，此站有移动流量代理，权重比住宅ip更高，略贵（按最低1G价格），有效期就1个月，银行信用卡适合；
+8美元/G，此站有移动流量代理，权重比住宅ip更高，略贵（按最低1G价格），有效期就1个月，适合用于银行信用卡申请；
 
 
 **webshare**
