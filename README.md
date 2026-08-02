@@ -70,6 +70,7 @@ https://xn--4gqx1hgtfdmt.com/#/register?code=QcT04cnC
 **静态住宅ip推荐**
 
 **proxy-cheap**
+
 https://app.proxy-cheap.com/r/MXJ13W
 
 3.59刀一个月，不限时，不限流量，限速100M，欺诈分95-100，纯净度10以下，双住宅isp
@@ -79,12 +80,16 @@ https://app.proxy-cheap.com/r/MXJ13W
 
 
 **iproyal**
+
 https://iproyal.cn/?r=heimian
+
 8美元/G，此站有移动流量代理，权重比住宅ip更高，略贵（按最低1G价格），堪比漫游流量价格了，流量有效期就1个月，适合用于银行信用卡申请；
 
 
 **webshare**
+
 https://www.webshare.io/?referral_code=82rvy9fqt974
+
 1.54美元/月，250g流量一个月，ip可以替换20个，取消退款自己点就行
 
 替换方式只有按ip端，按国家，按运营商筛选，范围太大，不好按州级筛选；
@@ -94,6 +99,7 @@ ip欺诈分在85-95左右，必须前置代理才能连接；找ip就得找好�
 
 
 vps适合自己做代理长期使用，也有很便宜20美元一年的，但是欺诈分60+，刷视频合适，机场ip一样水平；还是优选双住宅、欺诈分低，重点看你用在哪里
+
 
 **静态住宅代理软件**
 
