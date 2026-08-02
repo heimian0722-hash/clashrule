@@ -69,7 +69,7 @@ https://xn--4gqx1hgtfdmt.com/#/register?code=QcT04cnC
 
 **静态住宅ip推荐**
 
-**proxy-cheap**
+**1、proxy-cheap**
 
 https://app.proxy-cheap.com/r/MXJ13W
 
@@ -79,14 +79,14 @@ https://app.proxy-cheap.com/r/MXJ13W
 
 
 
-**iproyal**
+**2、iproyal**
 
 https://iproyal.cn/?r=heimian
 
 8美元/G，此站有移动流量代理，权重比住宅ip更高，略贵（按最低1G价格），堪比漫游流量价格了，流量有效期就1个月，适合用于银行信用卡申请；
 
 
-**webshare**
+**3、webshare**
 
 https://www.webshare.io/?referral_code=82rvy9fqt974
 
