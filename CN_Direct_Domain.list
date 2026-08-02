@@ -1,3 +1,4 @@
+# 个人常用网站遗漏部分，添加到shadwrocket在线配置文件lazy-0.conf用
 DOMAIN-SUFFIX,api.wcc.best
 DOMAIN-SUFFIX,api.asailor.org
 DOMAIN-SUFFIX,linux.do
