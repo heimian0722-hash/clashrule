@@ -229,3 +229,48 @@ DOMAIN-SUFFIX,paysend.com
 # > Dukascopy (瑞士杜高斯贝银行)
 DOMAIN-SUFFIX,dukascopy.com
 DOMAIN-SUFFIX,dukascopy.bank
+
+# ==========================================
+# WeChat 国际版 + TenPayGo + 地图定位 联合直连规则
+# ==========================================
+
+# ----- 1. 微信定位与地图 API (解决地图空白与定位不准) -----
+DOMAIN-SUFFIX,map.qq.com,DIRECT
+DOMAIN-SUFFIX,map.gtimg.com,DIRECT
+DOMAIN-SUFFIX,servicewechat.com,DIRECT
+DOMAIN,tencentmap.wechat.com,DIRECT
+
+# ----- 2. WeChat 国际版主域名 & 核心服务 -----
+DOMAIN-SUFFIX,wechat.com,DIRECT
+
+# ----- 3. WeChat 海外长短连接与 QUIC 节点 (SG/HK) -----
+DOMAIN-KEYWORD,sglong.wechat,DIRECT
+DOMAIN-KEYWORD,sgshort.wechat,DIRECT
+DOMAIN-KEYWORD,sgminorshort.wechat,DIRECT
+DOMAIN-KEYWORD,sgquic.wechat,DIRECT
+
+# ----- 4. WeChat 跨国边界代理与视频号/媒体 CDN -----
+DOMAIN-KEYWORD,hkextshort,DIRECT
+DOMAIN-KEYWORD,szextshort,DIRECT
+DOMAIN-KEYWORD,sgfinder,DIRECT
+DOMAIN-KEYWORD,hkfinder,DIRECT
+
+# ----- 5. WeChat 下载与更新服务 -----
+DOMAIN,dl.wechat.com,DIRECT
+
+# ----- 6. TenPayGo 专属域名 -----
+DOMAIN-SUFFIX,tenpaygo.com,DIRECT
+
+# ----- 7. TenPay Global 跨境支付网关 -----
+DOMAIN-SUFFIX,tenpayglobal.com,DIRECT
+
+# ----- 8. TenPay (财付通) 核心支付底层 -----
+DOMAIN-SUFFIX,tenpay.com,DIRECT
+DOMAIN-SUFFIX,tenpay.cn,DIRECT
+DOMAIN-SUFFIX,tenpay.com.cn,DIRECT
+
+# ----- 9. 微信支付 (WeChat Pay) 相关域名 -----
+DOMAIN-SUFFIX,wechatpay.com,DIRECT
+DOMAIN-SUFFIX,wechatpay.cn,DIRECT
+
+
