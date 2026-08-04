@@ -196,3 +196,36 @@ DOMAIN-SUFFIX,3322.org
 DOMAIN-SUFFIX,backloop.dev
 DOMAIN-SUFFIX,lencr.org
 DOMAIN-SUFFIX,ocsp.digicert.com
+
+
+# > iFAST Global Bank (英国/欧洲)
+DOMAIN-SUFFIX,ifastgb.com
+DOMAIN-SUFFIX,ifastfinancial.com
+DOMAIN-SUFFIX,ifastps.com
+DOMAIN-SUFFIX,ifastnetwork.com
+
+# > N26 (德国数字银行)
+DOMAIN-SUFFIX,n26.com
+DOMAIN-SUFFIX,tech26.de
+DOMAIN-SUFFIX,number26.de
+
+# > MyFin (保加利亚数字银行)
+DOMAIN-SUFFIX,myfin.bg
+DOMAIN-SUFFIX,kyzsapp.com
+
+# > Wise (原 TransferWise)
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+
+# > ZEN.COM (立陶宛/欧洲数字钱包)
+DOMAIN-SUFFIX,zen.com
+
+# > Trading 212 (英国/欧洲券商)
+DOMAIN-SUFFIX,trading212.com
+
+# > Paysend (欧洲跨境汇款)
+DOMAIN-SUFFIX,paysend.com
+
+# > Dukascopy (瑞士杜高斯贝银行)
+DOMAIN-SUFFIX,dukascopy.com
+DOMAIN-SUFFIX,dukascopy.bank
