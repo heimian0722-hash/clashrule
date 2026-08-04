@@ -40,15 +40,21 @@ DOMAIN-SUFFIX,bea.com.hk
 DOMAIN-SUFFIX,icbcasia.com
 DOMAIN-SUFFIX,ccbasia.com
 DOMAIN-SUFFIX,ncb.com.hk
+DOMAIN-SUFFIX,ncb.com.cn
 DOMAIN-SUFFIX,chiyu.com.hk
+DOMAIN-SUFFIX,chiyu.com
 DOMAIN-SUFFIX,dahsing.com
 DOMAIN-SUFFIX,dahsingbank.com
 DOMAIN-SUFFIX,shacombank.com.hk
 DOMAIN-SUFFIX,ocbc.com.hk
+DOMAIN-SUFFIX,ocbc.com.cn
 DOMAIN-SUFFIX,fubonbank.com.hk
 DOMAIN-SUFFIX,publicbank.com.hk
 DOMAIN-SUFFIX,cncbinternational.com
 DOMAIN-SUFFIX,citicbank.com.hk
+DOMAIN-SUFFIX,mufg.jp
+DOMAIN-SUFFIX,smbc.co.jp
+DOMAIN-SUFFIX,mizuhobank.com
 
 # > 新加坡核心银行 (SG Core Banks)
 DOMAIN-SUFFIX,dbs.com
@@ -57,19 +63,24 @@ DOMAIN-SUFFIX,uob.com.sg
 DOMAIN-SUFFIX,uobgroup.com
 DOMAIN-SUFFIX,ocbc.com
 
-# > 虚拟银行 (Virtual Banks)
+# > 香港持牌虚拟银行 (HK Virtual Banks)
 DOMAIN-SUFFIX,za.group
+DOMAIN-SUFFIX,za.bank
 DOMAIN-SUFFIX,zatech.com
 DOMAIN-SUFFIX,mox.com
+DOMAIN-SUFFIX,mox.com.hk
 DOMAIN-SUFFIX,livibank.com
+DOMAIN-SUFFIX,livi.com.hk
 DOMAIN-SUFFIX,welab.bank
 DOMAIN-SUFFIX,fusionbank.com
 DOMAIN-SUFFIX,paob.com.hk
+DOMAIN-SUFFIX,pingan.com.hk
 DOMAIN-SUFFIX,antbank.hk
 DOMAIN-SUFFIX,airstarbank.com
+DOMAIN-SUFFIX,airstar.com.hk
 DOMAIN-SUFFIX,elebank.com
 
-# > 富途 & Moomoo 全系 (Futu & Moomoo Global)
+# > 香港本土与中资驻港券商/行情全系 (HK Brokers & Feeds)
 DOMAIN-SUFFIX,futunn.com
 DOMAIN-SUFFIX,futu5.com
 DOMAIN-SUFFIX,futuhk.com
@@ -92,11 +103,6 @@ DOMAIN-SUFFIX,futu-api.com
 DOMAIN-SUFFIX,investassistant.com
 DOMAIN-SUFFIX,financialdatamining.com
 DOMAIN-SUFFIX,zvstapp.com
-
-# > 其他券商与交易所 (Other Brokers & Exchanges)
-DOMAIN-SUFFIX,ifastgb.com
-DOMAIN-SUFFIX,ifastfinancial.com.hk
-DOMAIN-SUFFIX,ifastfinancial.com
 DOMAIN-SUFFIX,itiger.com
 DOMAIN-SUFFIX,tigerbrokers.com
 DOMAIN-SUFFIX,tigerbrokers.com.hk
@@ -105,28 +111,84 @@ DOMAIN-SUFFIX,longbridge.hk
 DOMAIN-SUFFIX,vbroker.com.hk
 DOMAIN-SUFFIX,webull.hk
 DOMAIN-SUFFIX,webull-sg.com
+DOMAIN-SUFFIX,webull.com
+DOMAIN-SUFFIX,usmart.hk
+DOMAIN-SUFFIX,usmartsecurities.com
+DOMAIN-SUFFIX,victorysec.com.hk
+DOMAIN-SUFFIX,brightsmart.com.hk
+DOMAIN-SUFFIX,bsgroup.com.hk
+DOMAIN-SUFFIX,chiefgroup.com.hk
+DOMAIN-SUFFIX,phillip.com.hk
+DOMAIN-SUFFIX,emperorgroup.com
+DOMAIN-SUFFIX,kgi.com.hk
+DOMAIN-SUFFIX,cmschina.com.hk
+DOMAIN-SUFFIX,clsa.com
+DOMAIN-SUFFIX,citics.com.hk
+DOMAIN-SUFFIX,cicc.com.hk
+DOMAIN-SUFFIX,cicc.com
+DOMAIN-SUFFIX,htisec.com
+DOMAIN-SUFFIX,guotaijunan.com.hk
+DOMAIN-SUFFIX,ebshk.com
+DOMAIN-SUFFIX,cmbi.com.hk
+DOMAIN-SUFFIX,bocomgroup.com
+DOMAIN-SUFFIX,swhyhk.com
+DOMAIN-SUFFIX,xyzq.com.hk
+DOMAIN-SUFFIX,ccbintl.com
+DOMAIN-SUFFIX,abci.com.hk
+DOMAIN-SUFFIX,icbci.com.hk
+DOMAIN-SUFFIX,essence.com.hk
+DOMAIN-SUFFIX,zszq.com.hk
+DOMAIN-SUFFIX,orientsec.com.hk
+DOMAIN-SUFFIX,gfqg.com.hk
+DOMAIN-SUFFIX,cscex.com.hk
 DOMAIN-SUFFIX,wstock.co
 DOMAIN-SUFFIX,api.wcc.best
-DOMAIN-SUFFIX,hashkey.com
-DOMAIN-SUFFIX,osl.com
-DOMAIN-SUFFIX,hkex.com.hk
 
-# > 支付、结算与风控验证 (Payments & Security)
+# > 海外数字银行与持牌加密/Web3 机构 (Offshore Banks & HK Crypto)
+DOMAIN-SUFFIX,ifastgb.com
+DOMAIN-SUFFIX,ifastfinancial.com.hk
+DOMAIN-SUFFIX,ifastfinancial.com
+DOMAIN-SUFFIX,hashkey.com
+DOMAIN-SUFFIX,hashkey.cloud
+DOMAIN-SUFFIX,osl.com
+DOMAIN-SUFFIX,hkvax.hk
+DOMAIN-SUFFIX,hkvaex.hk
+DOMAIN-SUFFIX,ether.fi
+DOMAIN-SUFFIX,plasma.fi
+DOMAIN-SUFFIX,dtpay.com
+DOMAIN-SUFFIX,safepal.com
+DOMAIN-SUFFIX,bitget.com
+
+# > 支付、风控与本地公共服务 (Payments, KYC & HK Local)
 DOMAIN-SUFFIX,alipay.hk
 DOMAIN-SUFFIX,octopus.com.hk
 DOMAIN-SUFFIX,octopuscards.com
 DOMAIN-SUFFIX,tapngo.com.hk
 DOMAIN-SUFFIX,payme.hsbc
+DOMAIN-SUFFIX,payme.hsbc.com.hk
 DOMAIN-SUFFIX,fps.com.hk
 DOMAIN-SUFFIX,hkicl.com.hk
 DOMAIN-SUFFIX,pps.com.hk
 DOMAIN-SUFFIX,hketoll.gov.hk
+DOMAIN-SUFFIX,hkpost.gov.hk
+DOMAIN-SUFFIX,hkex.com.hk
+DOMAIN-SUFFIX,hkexnews.hk
+DOMAIN-SUFFIX,sfc.hk
+DOMAIN-SUFFIX,hkma.gov.hk
+DOMAIN-SUFFIX,aastocks.com
+DOMAIN-SUFFIX,etnet.com.hk
+DOMAIN-SUFFIX,money18.on.cc
 DOMAIN-SUFFIX,lexisnexis.com
 DOMAIN-SUFFIX,jumio.com
 DOMAIN-SUFFIX,onfido.com
-DOMAIN-SUFFIX,ctm.net
+DOMAIN-SUFFIX,sumsub.com
+DOMAIN-SUFFIX,trulioo.com
+DOMAIN-SUFFIX,veriff.com
+DOMAIN-SUFFIX,shft.io
+DOMAIN-SUFFIX,identityx.com
 
-# > 网络与安全证书 (Network & Security Certs)
+# > 网络工具与证书服务 (Network & SSL Infrastructure)
+DOMAIN-SUFFIX,ctm.net
 DOMAIN-SUFFIX,zerotier.com
 DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,duckdns.org
