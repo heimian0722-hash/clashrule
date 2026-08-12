@@ -1,5 +1,5 @@
 # 个人常用网站遗漏部分，添加到shadwrocket在线配置文件lazy-0.conf用
-# 补充香港新加坡可直连银行
+
 DOMAIN-SUFFIX,api.wcc.best
 DOMAIN-SUFFIX,api.asailor.org
 DOMAIN-SUFFIX,linux.do
@@ -31,6 +31,21 @@ DOMAIN-SUFFIX,cherry-ai.com
 DOMAIN-SUFFIX,dynv6.net
 DOMAIN-SUFFIX,hbbx.top
 DOMAIN-SUFFIX,lcsignx.com
+
+# iCloud 与数据传输 (建议分流至: DIRECT 直连)
+# 说明: 涵盖 iCloud 同步、备份、相册、驱动下载、地图及 App Store 下载
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,apple-livephotoskit.com
+DOMAIN-SUFFIX,appldnld.apple.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,swcdn.apple.com
+DOMAIN-SUFFIX,updates.cdn-apple.com
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,aaplimg.com
 
 # > 香港传统持牌银行 (HK Traditional Banks)
 DOMAIN-SUFFIX,bochk.com
