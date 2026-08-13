@@ -32,8 +32,9 @@ DOMAIN-SUFFIX,dynv6.net
 DOMAIN-SUFFIX,hbbx.top
 DOMAIN-SUFFIX,lcsignx.com
 
-# iCloud 与数据传输 (建议分流至: DIRECT 直连)
+# Apple、iCloud
 # 说明: 涵盖 iCloud 同步、备份、相册、驱动下载、地图及 App Store 下载
+DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,icloud-content.com
 DOMAIN-SUFFIX,me.com
