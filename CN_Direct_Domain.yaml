@@ -3,7 +3,7 @@ payload:
   # --- 个人高频/特定站点 ---
   - '+.api.wcc.best'
   - '+.api.asailor.org'
-  - '+.linux.do'              # 虽在海外，但直连体验更佳
+  - '+.linux.do'
   - 'qqwry.api.skk.moe'
   - 'ohttp-relay1.fastly-edge.com'
   - '+.yifile.com'
