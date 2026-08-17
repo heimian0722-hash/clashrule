@@ -1,9 +1,9 @@
 # 直连库，遇到就补，个人使用
 payload:
-# --- 个人高频/特定站点 ---
+  # --- 个人高频/特定站点 ---
   - '+.api.wcc.best'
   - '+.api.asailor.org'
-  - '+.linux.do'           # 虽在海外，但直连体验更佳
+  - '+.linux.do'              # 虽在海外，但直连体验更佳
   - 'qqwry.api.skk.moe'
   - 'ohttp-relay1.fastly-edge.com'
   - '+.yifile.com'
@@ -31,6 +31,7 @@ payload:
   - '+.cherry-ai.com'
   - '+.dynv6.net'
   - '+.hbbx.top'
+  - '+.lcsignx.com'
 
 # --- Apple数据传输/云上贵州 ---
   - '+.appldnld.apple.com'
