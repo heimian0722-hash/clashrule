@@ -160,3 +160,6 @@ payload:
   - '+.fico.com'                 # FICO 分数
   - '+.creditkarma.com'          # Credit Karma
   - '+.savvymoney.com'           # 银行集成的信用分服务
+  
+  - '+.revolut.com'
+  - '+.aqueduct.revolutlabs.com'
