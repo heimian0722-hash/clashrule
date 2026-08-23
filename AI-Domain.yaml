@@ -1,18 +1,12 @@
 payload:
-  # ==========================================
-  # === ChatGPT & OpenAI (补充本地/认证相关) ===
-  # ==========================================
+# AI 服务专项分流（ChatGPT, Claude, Gemini, Copilot 等）
   - '+.chat.com'
   - '+.chatgpt.com'
   - '+.livekit.cloud'
   - '+.oaistatic.com'
   - '+.oaiusercontent.com'
   - '+.openai.com'
-  - '+.sora.com'
-  - 'DOMAIN,api.statsig.com'
-  - 'DOMAIN,api-iam.intercom.io'
-  - 'DOMAIN,o33249.ingest.sentry.io'
-  - 'DOMAIN,openaiapi-site.azureedge.net'
+  - '+.openaiapi-site.azureedge.net'
   - 'DOMAIN-KEYWORD,openaiapi'
   - 'DOMAIN-KEYWORD,openaicom'
   - 'DOMAIN-KEYWORD,openai'
@@ -28,9 +22,7 @@ payload:
   - '+.challenges.cloudflare.com'
   - '+.ab.chatgpt.com'
 
-  # ==========================================
-  # === Apple Intelligence ===
-  # ==========================================
+  # Apple Intelligence
   - '+.smoot.apple.com'
   - 'DOMAIN,apple-relay.apple.com'
   - 'DOMAIN,apple-relay.cloudflare.com'
@@ -39,9 +31,7 @@ payload:
   - 'DOMAIN,gspe1-ssl.ls.apple.com'
   - 'DOMAIN,guzzoni.apple.com'
 
-  # ==========================================
-  # === Claude, Anthropic & xAI / Grok ===
-  # ==========================================
+  # Claude, Anthropic & xAI / Grok
   - '+.claude.ai'
   - '+.anthropic.com'
   - '+.grok.com'
@@ -50,7 +40,6 @@ payload:
   - '+.perplexity.ai'
   - '+.pplx.ai'
   - 'DOMAIN,pplx-res.cloudinary.com'
-  # 【新补充】客户端进程与补充域名
   - 'DOMAIN-KEYWORD,anthropic'
   - 'DOMAIN-KEYWORD,claude'
   - '+.claude.com'
@@ -62,25 +51,20 @@ payload:
   - 'PROCESS-NAME,Claude Helper (Renderer)'
   - 'DOMAIN-KEYWORD,grok'
 
-  # ==========================================
-  # === 其他独立 AI (Cerebras, Recraft, Poe, LM Studio) ===
-  # ==========================================
+  # 其它 AI (Cerebras, Recraft, Poe, LM Studio 等)
   - '+.cerebras.ai'
   - '+.recraft.ai'
   - '+.poe.com'
   - '+.lmsudio.ai'
   - 'PROCESS-NAME,LM Studio'
 
-  # ==========================================
-  # === Microsoft Copilot & VS Code AI (Github Copilot) ===
-  # ==========================================
+  # Microsoft Copilot & VS Code AI (Github Copilot)
   - 'DOMAIN,copilot.microsoft.com'
   - 'DOMAIN,sydney.bing.com'
   - 'DOMAIN,www.bing.com'
   - '+.githubcopilot.com'
   - 'DOMAIN-KEYWORD,copilot'
   - 'DOMAIN-KEYWORD,bing'
-  # 【新补充】VS Code 插件及 Copilot 深度集成
   - 'DOMAIN,api.githubcopilot.com'
   - 'DOMAIN,api.github.com'
   - 'DOMAIN,github.gallery.vsassets.io'
@@ -88,14 +72,13 @@ payload:
   - 'DOMAIN,applicationinsights.azure.com'
   - 'PROCESS-NAME,Code Helper'
   - 'PROCESS-NAME,Code Helper (Plugin)'
-  # Bing 核心服务（已过滤掉原版中的多余垃圾和视频域名）
   - '+.edgeservices.bing.com'
   - '+.bingapis.com'
   - '+.edge.microsoft.com'
 
-  # ==========================================
-  # === Google Gemini & AI (移动端修复强化版) ===
-  # ==========================================
+
+# 第二部分：Google 全家桶与核心服务（搜索、Drive、FCM 推送等）
+# Google Gemini / AI Lab 专属
   - '+.generativeai.google'
   - '+.makersuite.google.com'
   - 'DOMAIN,aistudio.google.com'
@@ -105,22 +88,15 @@ payload:
   - 'DOMAIN,antigravity-unleash.goog'
   - '+.deepmind.com'
   - '+.deepmind.google'
-  # 核心网页与 API
   - 'DOMAIN,ai.google.dev'
   - 'DOMAIN,bard.google.com'
   - 'DOMAIN,gemini.google.com'
   - '+.generativelanguage.googleapis.com'
   - '+.proactivebackend-pa.googleapis.com'
   - '+.geller-pa.googleapis.com'
-  # 【关键补充】手机 Gemini App 专用与认证、推送域名
   - '+.googleapis.cn'
   - 'DOMAIN-KEYWORD,notebooklm.google'
   - 'DOMAIN-KEYWORD,labs.google'
-  # 手机端登录与移动服务 API 强依赖
-  - 'DOMAIN,firebaseinstallations.googleapis.com'
-  - 'DOMAIN,identitytoolkit.googleapis.com'
-  - 'DOMAIN,securetoken.googleapis.com'
-  - 'DOMAIN,play.googleapis.com'
   - 'DOMAIN-KEYWORD,colab'
   - 'DOMAIN-KEYWORD,developerprofiles'
   - 'DOMAIN-KEYWORD,generativelanguage'
@@ -131,3 +107,103 @@ payload:
   - 'PROCESS-NAME,Antigravity Helper (Renderer)'
   - 'PROCESS-NAME,Antigravity Helper (GPU)'
   - 'PROCESS-NAME,Antigravity Helper (Plugin)'
+
+  # 移动端登录/推送及通用 Google 服务 API 强依赖
+  - 'DOMAIN,firebaseinstallations.googleapis.com'
+  - 'DOMAIN,identitytoolkit.googleapis.com'
+  - 'DOMAIN,securetoken.googleapis.com'
+  - 'DOMAIN,play.googleapis.com'
+
+  # Google 泛域名、搜索与全家桶 (1e100, gstatic, 谷歌云等)
+  - 'DOMAIN-KEYWORD,gmail'
+  - 'DOMAIN-KEYWORD,google'
+  - 'DOMAIN-KEYWORD,goog'
+  - '+.1e100.net'
+  - '+.2mdn.net'
+  - '+.app-measurement.net'
+  - '+.app-measurement.com'
+  - '+.c.gle'
+  - '+.g.co'
+  - '+.ggpht.com'
+  - '+.goo.gl'
+  - '+.googleapis.com'
+  - '+.gstatic.cn'
+  - '+.gstatic.com'
+  - '+.gvt0.com'
+  - '+.gvt1.com'
+  - '+.gvt2.com'
+  - '+.gvt3.com'
+  - '+.xn--ngstr-lra8j.com'
+  - '+.recaptcha.net'
+  - '+.265.com'
+  - '+.alt1-mtalk.google.com'
+  - '+.alt2-mtalk.google.com'
+  - '+.alt3-mtalk.google.com'
+  - '+.alt4-mtalk.google.com'
+  - '+.alt5-mtalk.google.com'
+  - '+.alt6-mtalk.google.com'
+  - '+.alt7-mtalk.google.com'
+  - '+.alt8-mtalk.google.com'
+  - '+.cache.pack.google.com'
+  - '+.clickserve.dartsearch.net'
+  - '+.crl.pki.goog'
+  - '+.dl.google.com'
+  - '+.dl.l.google.com'
+  - '+.googletagmanager.com'
+  - '+.googletagservices.com'
+  - '+.mtalk.google.com'
+  - '+.ocsp.pki.goog'
+  - '+.safebrowsing-cache.google.com'
+  - '+.tools.google.com'
+  - '+.tools.l.google.com'
+
+  # Google Drive 进程
+  - 'PROCESS-NAME,Google Drive'
+
+  # Google Earth
+  - '+.earth-pa.clients6.google.com'
+  - '+.earth.google.com'
+  - '+.kh.google.com'
+  - '+.khm.google.com'
+  - '+.khm.googleapis.com'
+  - '+.khm0.google.com'
+  - '+.khm0.googleapis.com'
+  - '+.khm1.google.com'
+  - '+.khm1.googleapis.com'
+  - '+.khm2.google.com'
+  - '+.khm2.googleapis.com'
+  - '+.khm3.google.com'
+  - '+.khm3.googleapis.com'
+  - '+.khmdb.google.com'
+  - '+.khmdb.googleapis.com'
+  - '+.mw1.google.com'
+
+  # Google IP 与 FCM 推送网段（确保移动端 FCM 不漏连）
+  - 'IP-CIDR,74.125.0.0/16,no-resolve'
+  - 'IP-CIDR,173.194.0.0/16,no-resolve'
+  - 'IP-CIDR,64.233.177.188/32,no-resolve'
+  - 'IP-CIDR,64.233.186.188/32,no-resolve'
+  - 'IP-CIDR,64.233.187.188/32,no-resolve'
+  - 'IP-CIDR,64.233.188.188/32,no-resolve'
+  - 'IP-CIDR,64.233.189.188/32,no-resolve'
+  - 'IP-CIDR,74.125.23.188/32,no-resolve'
+  - 'IP-CIDR,74.125.24.188/32,no-resolve'
+  - 'IP-CIDR,74.125.28.188/32,no-resolve'
+  - 'IP-CIDR,74.125.127.188/32,no-resolve'
+  - 'IP-CIDR,74.125.137.188/32,no-resolve'
+  - 'IP-CIDR,74.125.203.188/32,no-resolve'
+  - 'IP-CIDR,74.125.204.188/32,no-resolve'
+  - 'IP-CIDR,74.125.206.188/32,no-resolve'
+  - 'IP-CIDR,108.177.125.188/32,no-resolve'
+  - 'IP-CIDR,142.250.4.188/32,no-resolve'
+  - 'IP-CIDR,142.250.10.188/32,no-resolve'
+  - 'IP-CIDR,142.250.31.188/32,no-resolve'
+  - 'IP-CIDR,142.250.96.188/32,no-resolve'
+  - 'IP-CIDR,172.217.194.188/32,no-resolve'
+  - 'IP-CIDR,172.217.218.188/32,no-resolve'
+  - 'IP-CIDR,172.217.219.188/32,no-resolve'
+  - 'IP-CIDR,172.253.63.188/32,no-resolve'
+  - 'IP-CIDR,172.253.122.188/32,no-resolve'
+  - 'IP-CIDR,173.194.175.188/32,no-resolve'
+  - 'IP-CIDR,173.194.218.188/32,no-resolve'
+  - 'IP-CIDR,209.85.233.188/32,no-resolve'
