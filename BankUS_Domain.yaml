@@ -22,9 +22,14 @@ payload:
   - '+.xoom.com'                # Xoom 国际汇款
 
   # ==========================================
-  # > Capital One (C1) 专项 (含最新抓包混淆域名)
+  # > Capital One (C1) 专项 (含最新抓包混淆与边缘防漏域名)
   # ==========================================
   - '+.capitalone.com'          # 核心业务 (含 m.capitalone.com / potomac-clickstream)
+  - '+.capitaloneshopping.com'   # 购物与返利联动业务
+  - '+.capitalone.co.uk'         # 英国/海外关联业务网关
+  - '+.capitaloneoffers.com'     # 优惠与活动网关
+  - '+.capitalonegslbex.com'     # 全球负载均衡/多活调度
+  - '+.ivaws.com'                # 官方底层专用托管网络
   - '+.medallia.com'            # 包含 capitalone.md-apis.medallia.com
   - '+.vaicore.store'           # 抓包发现 (基于 1000024141/142/143/144)
   - '+.vaicore.xyz'
@@ -73,7 +78,7 @@ payload:
   - '+.q2ebanking.com'          # 多数美资/华资行使用的网银系统平台
 
   # ==========================================
-  # > 零售与数字银行 (Consumer & Digital Banks)
+  # > 零售、数字银行与信用社 (Consumer & Digital Banks)
   # ==========================================
   - '+.us.hsbc.com'             # 汇丰美国官网
   - '+.hsbc.com.us'             # 汇丰美国
@@ -82,6 +87,8 @@ payload:
   - '+.usbank.com'              # U.S. Bank
   - '+.truist.com'              # Truist Bank
   - '+.pnc.com'                 # PNC Bank
+  - '+.pncbank.com'
+  - '+.pnc.net'
   - '+.tdbank.com'              # TD Bank (美国绿点)
   - '+.td.com'                  # TD 集团通用
   - '+.discover.com'            # Discover (发现卡)
@@ -93,14 +100,27 @@ payload:
   - '+.synchronybank.com'       # 同步银行 (Paypal 联名卡)
   - '+.synchrony.com'           # 同步银行主域
   - '+.ally.com'                # Ally Financial
+  - '+.allybank.com'
   - '+.varomoney.com'           # Varo Bank
-  - '+.vbank.com'               # Varo 缩写
+  - '+.varobank.com'
   - '+.go2bank.com'             # Go2Bank
   - '+.sofi.com'                # SoFi 数字银行
   - '+.monzo.com'               # Monzo
   - '+.monzo.statuspage.io'
-  - '+.wise.com'                # Wise
-  - '+.transferwise.com'        # Wise 旧域
+  - '+.openskycc.com'           # OpenSky Credit Card
+  - '+.alliantcreditunion.com'  # Alliant Credit Union
+  - '+.alliantcu.org'
+  - '+.bmo.com'                 # BMO Bank (美国业务)
+  - '+.bmo.us'
+  - '+.barclaysus.com'          # Barclays US (巴克莱美国信用卡)
+  - '+.barclays.com'
+  - '+.axosbank.com'            # Axos Bank
+  - '+.axos.com'
+  - '+.penfed.org'              # PenFed Credit Union
+  - '+.rakuten.com'             # Rakuten (含返利及相关联名卡业务)
+  - '+.rakuten.us'
+  - '+.revolut.com'             # Revolut
+  - '+.aqueduct.revolutlabs.com'
 
   # ==========================================
   # > 美股主流券商 (Stock Brokers)
@@ -108,6 +128,9 @@ payload:
   - '+.schwab.com'              # Charles Schwab (嘉信证券)
   - '+.schwabclient.com'        # 嘉信客户端专用
   - '+.fidelity.com'            # Fidelity (富达)
+  - '+.fidelityinvestments.com'
+  - '+.fmrit.com'               # 富达后端/清算
+  - '+.fidelity.co.uk'
   - '+.interactivebrokers.com'  # Interactive Brokers (盈透)
   - '+.ibkr.com'                # IBKR 缩写
   - '+.ibkr.com.hk'             # 备用，防止路由回跳
@@ -117,6 +140,10 @@ payload:
   - '+.firstrade.io'            # Firstrade API
   - '+.firstrade.app'           # Firstrade App
   - '+.etrade.com'              # E*TRADE (摩根士丹利旗下)
+  - '+.etrade.in'
+  - '+.etrade.ca'
+  - '+.etrade.com.hk'
+  - '+.morganstanley.com'       # E*TRADE 母公司核心域名
   - '+.webull.com'              # Webull (微牛)
   - '+.webullcorp.com'          # 微牛企业域名
   - '+.tastytrade.com'          # Tastytrade 核心
@@ -125,6 +152,7 @@ payload:
   - '+.tastytrade.io'           # Tasty API
   - '+.developer.tastytrade.com'
   - '+.robinhood.com'           # 罗宾汉
+  - '+.bbae.com'                # BBAE 券商
 
   # ==========================================
   # > 风控/分析/验证/辅助 (关键节点)
@@ -155,11 +183,20 @@ payload:
   # > 金融数据与信用服务 (Credit & Data)
   # ==========================================
   - '+.equifax.com'             # 信用报告
-  - '+.experian.com'             # 信用报告
-  - '+.transunion.com'           # 信用报告
-  - '+.fico.com'                 # FICO 分数
-  - '+.creditkarma.com'          # Credit Karma
-  - '+.savvymoney.com'           # 银行集成的信用分服务
-  
-  - '+.revolut.com'
-  - '+.aqueduct.revolutlabs.com'
+  - '+.equifax.ca'
+  - '+.efx.com'
+  - '+.equi.com'
+  - '+.experian.com'            # 信用报告
+  - '+.experian.co.uk'
+  - '+.experian.in'
+  - '+.experianconsumeringservices.com'
+  - '+.transunion.com'          # 信用报告
+  - '+.transunion.ca'
+  - '+.tu.com'
+  - '+.fico.com'                # FICO 分数
+  - '+.myfico.com'              # 官方 FICO 评分
+  - '+.creditkarma.com'         # Credit Karma
+  - '+.savvymoney.com'          # 银行集成的信用分服务
+  - '+.identityguard.com'       # 身份与信用监控
+  - '+.lifelock.com'            # 身份防盗与信用监控
+  - '+.annualcreditreport.com'  # 官方免费信用报告查询网
