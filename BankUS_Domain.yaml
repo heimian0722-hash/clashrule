@@ -9,6 +9,10 @@ payload:
   - '+.yodlee.com'              # 部分美系券商备用银行连接件
   - '+.finicity.com'            # 万事达旗下底层连接 (Chase 常用)
   - '+.mx.com'                  # 银行数据聚合服务商
+  - '+.wise.com'                # Wise 跨境转账与虚拟卡清算
+  - '+.wise.net'                # Wise 辅助域
+  - '+.transferwise.com'        # Wise 旧版主域兼容
+  - '+.stripe.com'              # 国际信用卡网关与底层支付
 
   # ==========================================
   # > PayPal 体系深度补全 (防风控/断连/设备指纹漏网)
@@ -38,7 +42,7 @@ payload:
   # ==========================================
   - '+.capitalone.com'          # 核心业务
   - '+.capitaloneshopping.com'   # 购物与返利联动业务
-  - '+.capitalone.co.uk'         # 英国/海外关联业务网关
+  - '+.capitalone.co.uk'        # 英国/海外关联业务网关
   - '+.capitaloneoffers.com'     # 优惠与活动网关
   - '+.capitalonegslbex.com'     # 全球负载均衡/多活调度
   - '+.ivaws.com'                # 官方底层专用托管网络
@@ -63,7 +67,7 @@ payload:
   - '+.demdex.net'              # 身份识别
   - '+.adobedtm.com'            # 标签管理
   - '+.everesttech.net'         # 广告分析
-  - '+.helpshift.com'           # 在线客服
+  - '+.helpshift.com'           # Online CS
   - '+.hi.frcoal'               # 内部 API/特定的分发域名
   - '+.baixingyllh.com'         # 特定业务域名
   - '+.epayments-epaystatic-e.money-movement.com' # 华美特殊清算流
@@ -112,18 +116,31 @@ payload:
   - '+.usbank.com'
 
   # ==========================================
-  # > 零售、数字银行与信用社 (Alliant / SoFi / Revolut / Varo 等)
+  # > 全美大型信用社 (DCU / Navy Federal / 知名 CU 专项)
+  # ==========================================
+  - '+.dcu.org'                 # Digital Federal Credit Union (DCU - 极热门砖石/IT人首选信用社)
+  - '+.navyfederal.org'         # Navy Federal Credit Union (全美最大军事信用社)
+  - '+.navyfcu.org'
+  - '+.penfed.org'               # Pentagon Federal Credit Union (PenFed 军美信用社)
+  - '+.alliantcreditunion.com'   # Alliant Credit Union (全美最大纯线上信用社之一)
+  - '+.alliantcu.org'
+  - '+.alliantcreditunion.org'
+  - '+.secu.org'                # State Employees' Credit Union (北卡及全美巨型CU)
+  - '+.becu.org'                # Boeing Employees Credit Union (BECU - 华盛顿州巨型CU)
+  - '+.firsttechfed.com'        # First Tech Federal Credit Union (科技互联网大厂员工偏爱CU)
+  - '+.randfcu.org'             # Randolph-Brooks FCU (RBFCU)
+  - '+.suncoastcreditunion.com'  # Suncoast Credit Union
+  - '+.trianglecu.org'          # Triangle Credit Union
+
+  # ==========================================
+  # > 零售、数字银行与特色卡片
   # ==========================================
   # 汇丰美国
   - '+.us.hsbc.com'
   - '+.hsbc.com.us'
+  - '+.hsbc.com.uk'
   - '+.vv1865.com'
   - '+.hsbcnet.com'
-
-  # Alliant Credit Union
-  - '+.alliantcreditunion.com'
-  - '+.alliantcu.org'
-  - '+.alliantcreditunion.org'
 
   # SoFi
   - '+.sofi.com'
@@ -143,7 +160,6 @@ payload:
   - '+.trydave.com'             # Dave 卡
   - '+.sezzle.com'              # Sezzle
   - '+.gobankrewards.com'       # Go2Bank
-  - '+.usbank.com'
   - '+.truist.com'
   - '+.pnc.com'
   - '+.pncbank.com'
@@ -168,20 +184,19 @@ payload:
   - '+.barclays.com'
   - '+.axosbank.com'
   - '+.axos.com'
-  - '+.penfed.org'
   - '+.rakuten.com'
   - '+.rakuten.us'
 
   # ==========================================
-  # > 美国本土大行、投行及传统商业银行 (全新补充)
+  # > 美国本土大行、投行及中大型商业银行 (全量收录)
   # ==========================================
-  - '+.goldmansachs.com'        # 高盛集团
+  - '+.goldmansachs.com'        # 高盛集团 (Marcus)
   - '+.morganstanley.com'       # 摩根士丹利
   - '+.bnymellon.com'           # 纽约梅隆银行
   - '+.statestreet.com'         # 道富集团
   - '+.citizensbank.com'        # Citizens 银行
   - '+.53.com'                  # Fifth Third Bancorp (第五第三银行)
-  - '+.key.com'                 # KeyCorp
+  - '+.key.com'                 # KeyCorp (KeyBank)
   - '+.northerntrust.com'       # 北方信托
   - '+.regions.com'             # Regions 银行
   - '+.mtb.com'                 # M&T 银行
@@ -192,6 +207,23 @@ payload:
   - '+.zionsbank.com'           # Zions 银行
   - '+.cathaybank.com'          # 国泰银行
   - '+.onlineaccess1.com'       # 国泰网银辅助
+  # 补充其他中大型及区域性商业银行：
+  - '+.comerica.com'
+  - '+.asb.hawaii.com'          # Bank of Hawaii / American Savings Bank
+  - '+.boh.com'                 # Bank of Hawaii
+  - '+.fultonbank.com'          # Fulton Bank
+  - '+.hokahola.com'            # 区域银行相关
+  - '+.Websterbank.com'         # Webster Bank
+  - '+.frostbank.com'           # Frost Bank (德州大行)
+  - '+.ibercabank.com'          # IberiaBank (现 First Horizon)
+  - '+.firsthorizon.com'        # First Horizon Bank
+  - '+.commercebank.com'        # Commerce Bank
+  - '+.oldnational.com'         # Old National Bank
+  - '+.umb.com'                 # UMB Bank
+  - '+.people.com'              # People's United Bank (现 M&T)
+  - '+.synovus.com'             # Synovus Bank
+  - '+.cadencebank.com'         # Cadence Bank
+  - '+.BOKF.com'                # BOK Financial
 
   # ==========================================
   # > 美股主流券商 (Stock Brokers)
@@ -251,6 +283,7 @@ payload:
   - '+.launchdarkly.com'
   - '+.glance.net'
   - '+.ws-eu.pusher.com'
+  - '+.akamaized.net'           # Akamai 安全盾/静态CDN加速 (防止银行人机验证卡死)
 
   # ==========================================
   # > 金融数据与信用服务 (Credit & Data)
