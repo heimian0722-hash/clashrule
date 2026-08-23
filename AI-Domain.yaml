@@ -1,5 +1,5 @@
 payload:
-# AI 服务专项分流（ChatGPT, Claude, Gemini, Copilot 等）
+  # AI 服务专项分流（ChatGPT, Claude, Gemini, Copilot 等）
   - '+.chat.com'
   - '+.chatgpt.com'
   - '+.livekit.cloud'
@@ -90,8 +90,8 @@ payload:
   - '+.api.githubcopilot.com'
 
 
-# 第二部分：Google 全家桶与核心服务（搜索、Drive、FCM 推送等）
-# Google Gemini / AI Lab 专属
+  # 第二部分：Google 全家桶与核心服务（搜索, Drive, FCM 推送等）
+  # Google Gemini / AI Lab 专属
   - '+.generativeai.google'
   - '+.makersuite.google.com'
   - 'DOMAIN,aistudio.google.com'
