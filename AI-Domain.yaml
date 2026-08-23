@@ -23,47 +23,50 @@ payload:
   - 'DOMAIN,gspe1-ssl.ls.apple.com'
   - 'DOMAIN,guzzoni.apple.com'
 
-  # === Claude ===
+  # === Claude & xAI & Others ===
   - '+.claude.ai'
   - '+.anthropic.com'
+  - '+.grok.com'
+  - '+.x.ai'
+  - '+.openrouter.ai'
+  - '+.perplexity.ai'
+  - '+.pplx.ai'
+  - 'DOMAIN,pplx-res.cloudinary.com'
 
   # === Microsoft Copilot ===
   - 'DOMAIN,copilot.microsoft.com'
   - 'DOMAIN,sydney.bing.com'
   - 'DOMAIN,www.bing.com'
-  # === GitHub Copilot ===
   - '+.githubcopilot.com'
 
-  # === Google ===
-  # === > AI Studio ===
+  # ==========================================
+  # === Google Gemini & AI (移动端修复强化版) ===
+  # ==========================================
   - '+.generativeai.google'
   - '+.makersuite.google.com'
   - 'DOMAIN,aistudio.google.com'
   - 'DOMAIN,alkalicore-pa.clients6.google.com'
   - 'DOMAIN,alkalimakersuite-pa.clients6.google.com'
-  # === > Antigravity ===
   - 'DOMAIN,antigravity.google'
   - 'DOMAIN,antigravity-unleash.goog'
-  # === > DeepMind ===
   - '+.deepmind.com'
   - '+.deepmind.google'
-  # === > Gemini ===
-  - '+.proactivebackend-pa.googleapis.com'
-  - '+.geller-pa.googleapis.com'
-  - '+.generativelanguage.googleapis.com'
+  
+  # 核心网页与 API
   - 'DOMAIN,ai.google.dev'
   - 'DOMAIN,bard.google.com'
   - 'DOMAIN,gemini.google.com'
-  # === > NotebookLM ===
+  - '+.generativelanguage.googleapis.com'
+  - '+.proactivebackend-pa.googleapis.com'
+  - '+.geller-pa.googleapis.com'
+  
+  # 【关键补充】手机 Gemini App 专用与认证、推送域名
+  - '+.googleapis.cn'
   - 'DOMAIN-KEYWORD,notebooklm.google'
-  # === > Search Labs ===
   - 'DOMAIN-KEYWORD,labs.google'
-
-
-  # === OpenRouter ===
-  - '+.openrouter.ai'
-
-  # === Perplexity ===
-  - '+.perplexity.ai'
-  - '+.pplx.ai'
-  - 'DOMAIN,pplx-res.cloudinary.com'
+  
+  # 手机端登录与移动服务 API 强依赖（防止 App 判定地区错误）
+  - 'DOMAIN,firebaseinstallations.googleapis.com'
+  - 'DOMAIN,identitytoolkit.googleapis.com'
+  - 'DOMAIN,securetoken.googleapis.com'
+  - 'DOMAIN,play.googleapis.com'
