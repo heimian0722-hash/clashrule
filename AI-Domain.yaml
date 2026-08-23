@@ -1,5 +1,7 @@
 payload:
-  # === ChatGPT ===
+  # ==========================================
+  # === ChatGPT & OpenAI (补充本地/认证相关) ===
+  # ==========================================
   - '+.chat.com'
   - '+.chatgpt.com'
   - '+.livekit.cloud'
@@ -13,8 +15,22 @@ payload:
   - 'DOMAIN,openaiapi-site.azureedge.net'
   - 'DOMAIN-KEYWORD,openaiapi'
   - 'DOMAIN-KEYWORD,openaicom'
+  - 'DOMAIN-KEYWORD,openai'
+  - 'DOMAIN-KEYWORD,chatgpt'
+  - '+.auth0.com'
+  - '+.client-api.arkoselabs.com'
+  - '+.events.statsigapi.net'
+  - '+.featuregates.org'
+  - '+.identrust.com'
+  - '+.intercom.io'
+  - '+.intercomcdn.com'
+  - '+.sentry.io'
+  - '+.challenges.cloudflare.com'
+  - '+.ab.chatgpt.com'
 
+  # ==========================================
   # === Apple Intelligence ===
+  # ==========================================
   - '+.smoot.apple.com'
   - 'DOMAIN,apple-relay.apple.com'
   - 'DOMAIN,apple-relay.cloudflare.com'
@@ -23,7 +39,9 @@ payload:
   - 'DOMAIN,gspe1-ssl.ls.apple.com'
   - 'DOMAIN,guzzoni.apple.com'
 
-  # === Claude & xAI & Others ===
+  # ==========================================
+  # === Claude, Anthropic & xAI / Grok ===
+  # ==========================================
   - '+.claude.ai'
   - '+.anthropic.com'
   - '+.grok.com'
@@ -32,12 +50,48 @@ payload:
   - '+.perplexity.ai'
   - '+.pplx.ai'
   - 'DOMAIN,pplx-res.cloudinary.com'
+  # 【新补充】客户端进程与补充域名
+  - 'DOMAIN-KEYWORD,anthropic'
+  - 'DOMAIN-KEYWORD,claude'
+  - '+.claude.com'
+  - '+.claudeusercontent.com'
+  - '+.console.anthropic.com'
+  - '+.usefathom.com'
+  - 'PROCESS-NAME,Claude'
+  - 'PROCESS-NAME,Claude Helper'
+  - 'PROCESS-NAME,Claude Helper (Renderer)'
+  - 'DOMAIN-KEYWORD,grok'
 
-  # === Microsoft Copilot ===
+  # ==========================================
+  # === 其他独立 AI (Cerebras, Recraft, Poe, LM Studio) ===
+  # ==========================================
+  - '+.cerebras.ai'
+  - '+.recraft.ai'
+  - '+.poe.com'
+  - '+.lmsudio.ai'
+  - 'PROCESS-NAME,LM Studio'
+
+  # ==========================================
+  # === Microsoft Copilot & VS Code AI (Github Copilot) ===
+  # ==========================================
   - 'DOMAIN,copilot.microsoft.com'
   - 'DOMAIN,sydney.bing.com'
   - 'DOMAIN,www.bing.com'
   - '+.githubcopilot.com'
+  - 'DOMAIN-KEYWORD,copilot'
+  - 'DOMAIN-KEYWORD,bing'
+  # 【新补充】VS Code 插件及 Copilot 深度集成
+  - 'DOMAIN,api.githubcopilot.com'
+  - 'DOMAIN,api.github.com'
+  - 'DOMAIN,github.gallery.vsassets.io'
+  - 'DOMAIN,github.gallerycdn.vsassets.io'
+  - 'DOMAIN,applicationinsights.azure.com'
+  - 'PROCESS-NAME,Code Helper'
+  - 'PROCESS-NAME,Code Helper (Plugin)'
+  # Bing 核心服务（已过滤掉原版中的多余垃圾和视频域名）
+  - '+.edgeservices.bing.com'
+  - '+.bingapis.com'
+  - '+.edge.microsoft.com'
 
   # ==========================================
   # === Google Gemini & AI (移动端修复强化版) ===
@@ -51,7 +105,6 @@ payload:
   - 'DOMAIN,antigravity-unleash.goog'
   - '+.deepmind.com'
   - '+.deepmind.google'
-  
   # 核心网页与 API
   - 'DOMAIN,ai.google.dev'
   - 'DOMAIN,bard.google.com'
@@ -59,14 +112,22 @@ payload:
   - '+.generativelanguage.googleapis.com'
   - '+.proactivebackend-pa.googleapis.com'
   - '+.geller-pa.googleapis.com'
-  
   # 【关键补充】手机 Gemini App 专用与认证、推送域名
   - '+.googleapis.cn'
   - 'DOMAIN-KEYWORD,notebooklm.google'
   - 'DOMAIN-KEYWORD,labs.google'
-  
-  # 手机端登录与移动服务 API 强依赖（防止 App 判定地区错误）
+  # 手机端登录与移动服务 API 强依赖
   - 'DOMAIN,firebaseinstallations.googleapis.com'
   - 'DOMAIN,identitytoolkit.googleapis.com'
   - 'DOMAIN,securetoken.googleapis.com'
   - 'DOMAIN,play.googleapis.com'
+  - 'DOMAIN-KEYWORD,colab'
+  - 'DOMAIN-KEYWORD,developerprofiles'
+  - 'DOMAIN-KEYWORD,generativelanguage'
+  - 'DOMAIN-KEYWORD,antigravity'
+  - '+.ai.google'
+  - 'DOMAIN,cloudcode-pa.googleapis.com'
+  - 'PROCESS-NAME,Antigravity Helper'
+  - 'PROCESS-NAME,Antigravity Helper (Renderer)'
+  - 'PROCESS-NAME,Antigravity Helper (GPU)'
+  - 'PROCESS-NAME,Antigravity Helper (Plugin)'
