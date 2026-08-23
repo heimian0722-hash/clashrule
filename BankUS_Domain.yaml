@@ -54,9 +54,10 @@ payload:
   - '+.kvaedit.site'
 
   # ==========================================
-  # > 华美银行 (East West Bank) & Velo 核心业务
+  # > 华美银行 (East West Bank) & Velo 核心业务 (含专项补全)
   # ==========================================
   - '+.eastwestbank.com'        # 华美核心
+  - '+.eastwest.com'            # 华美备用/主域
   - '+.velobank.com'            # Velo 核心
   - '+.omtrdc.net'              # Adobe 统计
   - '+.demdex.net'              # 身份识别
@@ -65,9 +66,10 @@ payload:
   - '+.helpshift.com'           # 在线客服
   - '+.hi.frcoal'               # 内部 API/特定的分发域名
   - '+.baixingyllh.com'         # 特定业务域名
+  - '+.epayments-epaystatic-e.money-movement.com' # 华美特殊清算流
 
   # ==========================================
-  # > 美国四大行与重点银行 (Chase / Wells Fargo / Amex 专项深度补全)
+  # > 美国四大行与重点商业银行 (深度强化)
   # ==========================================
   # Chase (大通)
   - '+.chase.com'
@@ -93,22 +95,31 @@ payload:
   - '+.americanexpress.co.uk'
   - '+.amex.com'
 
-  # 其他美国大行与主流商业银行
+  # Bank of America (美国银行 - 规范并强化通配覆盖)
   - '+.bankofamerica.com'
-  - '+.bofa.com'
+  - '+.bankofamerica1.com'
   - '+.bac-assets.com'
   - '+.bac.com'
   - '+.ns-bac.com'
+
+  # Citibank (花旗)
   - '+.citibank.com'
   - '+.citi.com'
   - '+.citigroup.com'
   - '+.citi.io'
-  - '+.cathaybank.com'
-  - '+.q2ebanking.com'
+
+  # US Bank (合众银行)
+  - '+.usbank.com'
 
   # ==========================================
-  # > 零售、数字银行与信用社 (Alliant / SoFi / Revolut 专项)
+  # > 零售、数字银行与信用社 (Alliant / SoFi / Revolut / Varo 等)
   # ==========================================
+  # 汇丰美国
+  - '+.us.hsbc.com'
+  - '+.hsbc.com.us'
+  - '+.vv1865.com'
+  - '+.hsbcnet.com'
+
   # Alliant Credit Union
   - '+.alliantcreditunion.com'
   - '+.alliantcu.org'
@@ -128,11 +139,10 @@ payload:
   - '+.assets.revolut.com'
   - '+.sso.revolut.com'
 
-  # 其他零售及数字银行
-  - '+.us.hsbc.com'
-  - '+.hsbc.com.us'
-  - '+.vv1865.com'
-  - '+.hsbcnet.com'
+  # 其他数字钱包与特色卡片
+  - '+.trydave.com'             # Dave 卡
+  - '+.sezzle.com'              # Sezzle
+  - '+.gobankrewards.com'       # Go2Bank
   - '+.usbank.com'
   - '+.truist.com'
   - '+.pnc.com'
@@ -142,7 +152,7 @@ payload:
   - '+.td.com'
   - '+.discover.com'
   - '+.discovercard.com'
-  - '+.synchronybank.com'
+  - '+.synchronybank.com'       # 同步银行 (PayPal 合作行)
   - '+.synchrony.com'
   - '+.ally.com'
   - '+.allybank.com'
@@ -161,6 +171,27 @@ payload:
   - '+.penfed.org'
   - '+.rakuten.com'
   - '+.rakuten.us'
+
+  # ==========================================
+  # > 美国本土大行、投行及传统商业银行 (全新补充)
+  # ==========================================
+  - '+.goldmansachs.com'        # 高盛集团
+  - '+.morganstanley.com'       # 摩根士丹利
+  - '+.bnymellon.com'           # 纽约梅隆银行
+  - '+.statestreet.com'         # 道富集团
+  - '+.citizensbank.com'        # Citizens 银行
+  - '+.53.com'                  # Fifth Third Bancorp (第五第三银行)
+  - '+.key.com'                 # KeyCorp
+  - '+.northerntrust.com'       # 北方信托
+  - '+.regions.com'             # Regions 银行
+  - '+.mtb.com'                 # M&T 银行
+  - '+.huntington.com'          # 亨廷顿银行
+  - '+.bbvausa.com'             # BBVA 美国
+  - '+.santanderbank.com'       # 美国桑坦德银行
+  - '+.comerica.com'            # Comerica 银行
+  - '+.zionsbank.com'           # Zions 银行
+  - '+.cathaybank.com'          # 国泰银行
+  - '+.onlineaccess1.com'       # 国泰网银辅助
 
   # ==========================================
   # > 美股主流券商 (Stock Brokers)
@@ -187,7 +218,6 @@ payload:
   - '+.etrade.in'
   - '+.etrade.ca'
   - '+.etrade.com.hk'
-  - '+.morganstanley.com'
   - '+.webull.com'
   - '+.webullcorp.com'
   - '+.tastytrade.com'
