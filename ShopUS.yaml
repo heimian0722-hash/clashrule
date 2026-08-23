@@ -1,32 +1,46 @@
 payload:
-  # --- 1. 亚马逊与 eBay 体系 (解决详情页图片裂开) ---
+  # ==========================================
+  # > 1. 亚马逊与 eBay 体系 (解决详情页图片裂开与风控)
+  # ==========================================
   - '+.amazon.com'
   - '+.amazon.ca'
-  - '+.media-amazon.com'      # 必须：详情页图片加速
-  - '+.ssl-images-amazon.com' # 必须：静态 CSS/JS 资源
+  - '+.amazon.co.uk'
+  - '+.media-amazon.com'       # 必须：详情页图片加速
+  - '+.ssl-images-amazon.com'   # 必须：静态 CSS/JS 资源
   - '+.completion.amazon.com'
   - '+.amazon-adsystem.com'
   - '+.ext-amazon.com'
   - '+.ebay.com'
   - '+.ebaystatic.com'
-  - '+.ebayimg.com'           # 必须：解决搜索页商品图红叉
+  - '+.ebayimg.com'             # 必须：解决搜索页商品图红叉
   - '+.ebayrtm.com'
 
-  # --- 2. 综合百货、超市与家居 (防 403 Forbidden) ---
+  # ==========================================
+  # > 2. 综合百货、超市与家居 (防 403 Forbidden 与砍单)
+  # ==========================================
   - '+.walmart.com'
+  - '+.walmartimages.com'
   - '+.target.com'
+  - '+.target-gsp.com'
   - '+.costco.com'
   - '+.samsclub.com'
   - '+.macys.com'
+  - '+.bloomingdales.com'        # 补充：布鲁明戴尔百货（高端百货）
+  - '+.saksfifthavenue.com'     # 补充：第五大道奢侈品百货
+  - '+.neimanmarcus.com'        # 补充：尼曼百货
   - '+.nordstrom.com'
+  - '+.nordstromimage.com'
   - '+.kohls.com'
   - '+.jcpenney.com'
   - '+.homedepot.com'
   - '+.lowes.com'
 
-  # --- 3. 电子数码与办公 (高砍单风险监控) ---
+  # ==========================================
+  # > 3. 电子数码与办公 (高砍单风险监控)
+  # ==========================================
   - '+.apple.com'
-  - '+.bestbuy.com'           # 重点：BestBuy 极看 IP 纯净度
+  - '+.mzstatic.com'            # Apple 商店静态资源与图片
+  - '+.bestbuy.com'             # 重点：BestBuy 极看 IP 纯净度
   - '+.newegg.com'
   - '+.bhphotovideo.com'
   - '+.dell.com'
@@ -34,35 +48,49 @@ payload:
   - '+.lenovo.com'
   - '+.samsung.com'
 
-  # --- 4. 潮流、运动与美妆 (IP 归属地敏感) ---
+  # ==========================================
+  # > 4. 潮流、运动、美妆、奢侈品与手作电商 (IP 归属地敏感)
+  # ==========================================
   - '+.nike.com'
   - '+.adidas.com'
+  - '+.newbalance.com'          # 补充：New Balance 美国
+  - '+.puma.com'                # 补充：Puma 美国
+  - '+.footlocker.com'          # 补充：Foot Locker 鞋履
   - '+.lululemon.com'
   - '+.coach.com'
-  - '+.coachoutlet.com'       # 重点：奥莱风控等级极高
+  - '+.coachoutlet.com'         # 重点：奥莱风控等级极高
   - '+.ralphlauren.com'
   - '+.supremenewyork.com'
   - '+.stockx.com'
   - '+.goat.com'
+  - '+.ssense.com'              # 补充：SSENSE 奢侈品电商
+  - '+.farfetch.com'            # 补充：Farfetch 发发奇
+  - '+.etsy.com'                # 补充：Etsy 手作与独立设计电商
   - '+.sephora.com'
   - '+.ulta.com'
   - '+.esteelauder.com'
   - '+.clinique.com'
 
-  # --- 5. 购物专属支付网关与位置风控 ---
-  # 说明：此处保留非银行类的第三方支付验证
+  # ==========================================
+  # > 5. 购物专属支付网关、高级反欺诈与定位工具
+  # ==========================================
   - '+.stripe.com'
   - '+.adyen.com'
   - '+.checkout.com'
-  - '+.radar.io'              # 关键：识别设备物理位置的反欺诈工具
-  - '+.card.io'               # 信用卡扫描识别
+  - '+.klarna.com'              # 先买后付（海外电商常用支付网关）
+  - '+.afterpay.com'            # Afterpay 支付体系
+  - '+.radar.io'                # 关键：识别设备物理位置的反欺诈工具
+  - '+.card.io'                 # 信用卡扫描识别
+  - '+.datadome.co'             # 补充：海外大牌电商普遍采用的反爬/防机器人/人机验证系统
+  - '+.kount.com'               # 补充：电商风控与信用卡欺诈检测底层
+  - '+.sift.com'                # 补充：Sift 欺诈检测与风控网关
 
-  # --- 6. 返利、导购与折扣工具 (防止丢单) ---
-  - '+.rakuten.com'
+  # ==========================================
+  # > 6. 返利、导购与折扣工具 (防止丢单)
+  # ==========================================
+  - '+.rakuten.com'             # 兼顾返利与联名卡网关
   - '+.topcashback.com'
   - '+.slickdeals.net'
   - '+.camelcamelcamel.com'
   - '+.honey.io'
   - '+.joinhoney.com'
-
-  
