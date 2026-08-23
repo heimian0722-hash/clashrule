@@ -21,6 +21,17 @@ payload:
   - '+.sentry.io'
   - '+.challenges.cloudflare.com'
   - '+.ab.chatgpt.com'
+  - '+.cursor.com'
+  - '+.cursor.sh'
+  - '+.mistral.ai'
+  - '+.meta.ai'
+  - '+.grazie.ai'
+  - '+.grazie.aws.intellij.net'
+  - '+.jetbrains.ai'
+  - 'DOMAIN,api.groq.com'
+  - 'DOMAIN,console.groq.com'
+  - 'DOMAIN,api.together.xyz'
+  - 'DOMAIN,copilot-proxy.githubusercontent.com'
 
   # Apple Intelligence
   - '+.smoot.apple.com'
@@ -75,6 +86,8 @@ payload:
   - '+.edgeservices.bing.com'
   - '+.bingapis.com'
   - '+.edge.microsoft.com'
+  - '+.copilot.cloud.microsoft'
+  - '+.api.githubcopilot.com'
 
 
 # 第二部分：Google 全家桶与核心服务（搜索、Drive、FCM 推送等）
@@ -103,6 +116,10 @@ payload:
   - 'DOMAIN-KEYWORD,antigravity'
   - '+.ai.google'
   - 'DOMAIN,cloudcode-pa.googleapis.com'
+  - '+.apis.google.com'
+  - '+.notebooklm.google'
+  - '+.notebooklm.google.com'
+  - 'DOMAIN,notebooklm.google.com'
   - 'PROCESS-NAME,Antigravity Helper'
   - 'PROCESS-NAME,Antigravity Helper (Renderer)'
   - 'PROCESS-NAME,Antigravity Helper (GPU)'
