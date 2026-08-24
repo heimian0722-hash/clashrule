@@ -150,6 +150,14 @@ payload:
   - '+.sofi.com'
   - '+.sofi.org'
   - '+.sofi.net'
+  - '+.soficdn.net'
+  - '+.securetheorem.com'
+  - '+.transmitsecurity.io'
+  - '+.glassboxdigital.io'
+  - '+.mparticle.com'
+  - '+.braze.com'
+  - '+.braze-images.com'
+  - '+.sprig.com'
 
   # Revolut
   - '+.revolut.com'
