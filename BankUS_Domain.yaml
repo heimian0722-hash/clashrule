@@ -13,7 +13,8 @@ payload:
   - '+.wise.net'                # Wise 辅助域
   - '+.transferwise.com'        # Wise 旧版主域兼容
   - '+.stripe.com'              # 国际信用卡网关与底层支付
-  - '+.lemfi.com'  
+  - '+.lemfi.com'
+  - '+.lemonadefi.com'
 
   # ==========================================
   # > PayPal 体系深度补全 (防风控/断连/设备指纹漏网)
