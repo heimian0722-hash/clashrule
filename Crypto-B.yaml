@@ -1,4 +1,4 @@
-# B 组：国际离岸 (建议走台湾/香港/新加坡节点)
+# B 组：国际离岸 (建议走台湾/新加坡节点)
 # 包含：币安、OKX、Bybit、Bitget、Gate及所有核心API与静态资源
 payload:
   # --- Binance (币安) 深度补全 ---
@@ -94,6 +94,20 @@ payload:
   - '+.mexcdm.com'
   - '+.mexc-support.com'
 
+  # --- Backpack (合规交易所与 Web3 钱包生态) ---
+  - '+.backpack.exchange'
+  - '+.backpack.app'
+  - '+.backpack.network'
+  - '+.coral.cc'             # Backpack 背后核心开发团队 Coral
+
+  # --- dtcpay (持牌稳定币支付与数字资产网关) ---
+  - '+.dtcpay.com'
+  - '+.dtcpay.io'
+
+  # --- nevrless (相关加密与隐私/节点/支付生态) ---
+  - '+.nevrless.com'
+  - '+.nevrless.io'
+
   # --- 其他常用离岸与二线交易所 ---
   - '+.kucoin.com'          # 库币
   - '+.kucoin.net'
@@ -102,4 +116,5 @@ payload:
   - '+.huobi.com'
   - '+.phemex.com'
   - '+.bitmex.com'
+  - '+.bitfinex.com'
   - '+.bitfinex.com'
