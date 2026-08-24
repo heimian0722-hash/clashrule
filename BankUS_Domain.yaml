@@ -320,3 +320,9 @@ payload:
   - '+.identityguard.com'
   - '+.lifelock.com'
   - '+.annualcreditreport.com'
+  
+  # 红包卡redpocket
+  - '+.posthog.com'
+  - '+.cloudfront.net'
+  - '+.redpocket.com'
+  - '+.redpocketmobile.com'
