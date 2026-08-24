@@ -158,6 +158,8 @@ payload:
   - '+.aqueduct.revolutlabs.com'
   - '+.assets.revolut.com'
   - '+.sso.revolut.com'
+  - '+.licelus.com'
+  - '+.appsflyersdk.com'
 
   # 其他数字钱包与特色卡片
   - '+.trydave.com'             # Dave 卡
