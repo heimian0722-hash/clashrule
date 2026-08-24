@@ -7,13 +7,13 @@ payload:
   - '+.binance.info'
   - '+.binance.net'
   - '+.binance.org'
-  - '+.binance.cloud'     # 关键：App 企业云服务
-  - '+.binanceapi.com'    # 关键：行情与交易接口
+  - '+.binance.cloud'       # App 企业云服务
+  - '+.binanceapi.com'      # 行情与交易接口
   - '+.binancecnt.com'
   - '+.binancefuture.com'
   - '+.binancezh.com'
   - '+.binancezh.pro'
-  - '+.bnbstatic.com'     # 关键：App 静态资源与头像
+  - '+.bnbstatic.com'       # App 静态资源与头像
   - '+.bntrace.com'
   - '+.binance.charity'
   - '+.binance.co'
@@ -33,18 +33,22 @@ payload:
   - '+.bnappzh.co'
   - '+.bnbzh.ac'
 
-  # --- OKX (欧易) 深度补全 ---
+  # --- OKX (欧易) 全球与多区域名网罗 ---
   - '+.okx.com'
-  - '+.okg.com'           # 极其重要：OKX 2025-2026 全球统一主域
+  - '+.my.okx.com'          # 新加坡/合规专线
+  - '+.okg.com'             # 全球统一主域
   - '+.okex.com'
   - '+.oklink.com'
-  - '+.okx-dns.com'       # 解析优化
+  - '+.okx-dns.com'        # 解析优化
   - '+.okx-dns1.com'
   - '+.okx-dns2.com'
+  - '+.okx.cn'
+  - '+.okex.me'
+  - '+.okex.pro'
   
-  # --- Bybit 深度补全 ---
+  # --- Bybit 全球与多区域名网罗 ---
   - '+.bybit.com'
-  - '+.bytick.com'        # 极其重要：Bybit App 核心 API 域名
+  - '+.bytick.com'          # 核心 App API
   - '+.bybit.io'
   - '+.bybit.biz'
   - '+.bybit.cc'
@@ -53,8 +57,12 @@ payload:
   - '+.bybitglobal.com'
   - '+.bybit-exchange.com'
   - '+.bybitproxy.com'
+  - '+.bybit-tw.com'         # 台湾专线/备用
+  - '+.bybitapp-tw.com'     # 台湾 App 节点
+  - '+.bybit.nl'
+  - '+.bybit.hk'
 
-# --- Bitget & Gate.io ---
+  # --- Bitget 全球与多区域名网罗 ---
   - '+.bgstatic.com'
   - '+.bgwallet.com'
   - '+.bitget.com'
@@ -62,18 +70,35 @@ payload:
   - '+.bitgetapi.com'
   - '+.bitgetapp.com'
   - '+.bitgetapps.com'
+  - '+.bitget-sg.com'        # 新加坡节点
+  - '+.bitget.global'
+  - '+.kbitget.com'
+  - '+.krbitget.com'
+
+  # --- Gate.io 全球与多区域名网罗 ---
   - '+.gate.io'
   - '+.gateio.live'
   - '+.gateio.pro'
   - '+.gateio.services'
-  - '+.kbitget.com'
-  - '+.krbitget.com'
+  - '+.gate-tw.com'         # 台湾地区访问与 App 节点
+  - '+.gate.com'
+  - '+.gateweb.org'
+  - '+.gateimg.com'         # 静态资源
+  - '+.gateshort.com'
 
-  # --- 其他常用离岸与二线 ---
-  - '+.mexc.com'          # 抹茶
-  - '+.kucoin.com'        # 库币
-  - '+.woo.org'           # WOO
-  - '+.htx.com'           # 火币
+  # --- MEXC (抹茶) 全球与多区域名网罗 ---
+  - '+.mexc.com'            # 主站
+  - '+.mexc-taiwan.com'     # 台湾专线
+  - '+.mexc.land'
+  - '+.mexc.global'
+  - '+.mexcdm.com'
+  - '+.mexc-support.com'
+
+  # --- 其他常用离岸与二线交易所 ---
+  - '+.kucoin.com'          # 库币
+  - '+.kucoin.net'
+  - '+.woo.org'             # WOO
+  - '+.htx.com'             # 火币
   - '+.huobi.com'
   - '+.phemex.com'
   - '+.bitmex.com'
