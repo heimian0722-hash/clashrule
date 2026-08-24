@@ -73,6 +73,7 @@ payload:
   - '+.hi.frcoal'               # 内部 API/特定的分发域名
   - '+.baixingyllh.com'         # 特定业务域名
   - '+.epayments-epaystatic-e.money-movement.com' # 华美特殊清算流
+  - '+.nexus.ensighten.com'
 
   # ==========================================
   # > 美国四大行与重点商业银行 (深度强化)
