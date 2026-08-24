@@ -1,4 +1,3 @@
-#  A 组：美国 Coinbase、Base、Kraken、Gemini等
 payload:
   # --- Coinbase 核心与支付网关 ---
   - '+.coinbase.com'
@@ -17,18 +16,30 @@ payload:
   - '+.mainnet.base.org'
   - '+.bridge.base.org'
 
-  # --- Kraken (海妖) & Gemini ---
+  # --- Kraken (含荷兰/欧洲节点)  ---
   - '+.kraken.com'
   - '+.api.kraken.com'
   - '+.futures.kraken.com'
   - '+.kraken-assets.com'
   - '+.cryptowat.ch'
-  - '+.gemini.com'
-  - '+.api.gemini.com'
+  - '+.nl.kraken.com'        # 荷兰 Kraken 节点
 
-  # --- 美系合规与银行绑定服务 (关键补充) ---
-  - '+.circle.com'      # USDC 相关
+  # --- 美系合规与银行绑定服务 ---
+  - '+.circle.com'        # USDC 相关
   - '+.usdc.com'
-  - '+.plaid.com'       # 银行卡 ACH 绑定必备
-  - '+.trustly.com'     # 支付网关
-  - '+.cb.id'           # Coinbase 域名服务
+  - '+.plaid.com'         # 银行卡 ACH 绑定必备
+  - '+.trustly.com'       # 支付网关
+  - '+.cb.id'             # Coinbase 域名服务
+
+  # --- ether.fi 生态 (LST / 质押与个人资产账户) ---
+  - '+.ether.fi'
+  - '+.help.ether.fi'
+  - '+.governance.ether.fi'
+
+  # --- Plasma 生态 (稳定币 L1 / XPL) ---
+  - '+.plasma.to'
+  - '+.plasmascan.org'
+
+  # --- Kast 生态 (Web3 稳定币支付卡 / 钱包应用) ---
+  - '+.kast.finance'
+  - '+.kastfinance.app'
