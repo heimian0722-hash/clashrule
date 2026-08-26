@@ -29,6 +29,8 @@ payload:
   - '+.iproyal.cn'
   - '+.isssre.cn'
   - '+.qianlink.link'
+  - '+.wcloud.me'
+
   
 #ip质量检测
   - '+.iptrait.com'
