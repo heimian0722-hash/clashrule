@@ -93,14 +93,15 @@
 
 **静态住宅ip推荐**
 
-**1、proxy-cheap**
+**1、家宽云**
 
-https://app.proxy-cheap.com/r/MXJ13W
+https://vpn.qianlink.link/?ref=NHTQBZJRZC
 
-3.59刀一个月，不限时，不限流量，限速100M，欺诈分95-100，纯净度10以下，双住宅isp  银行类的还是差点意思
+永不过期流量流量
 
-需要前置代理，不能直接访问，不行就取消退款再申请，退款需在线找客服处理，很快，立即到余额账户，支持信用卡、加密货币充值；
+<img width="887" height="773" alt="image" src="https://github.com/user-attachments/assets/ac600010-9a63-4c5e-ac27-6bd0f43793ff" />
 
+<img width="1191" height="546" alt="image" src="https://github.com/user-attachments/assets/9f8489ed-c48f-4899-ae36-2d4be2f090a9" />
 
 
 **2、iproyal**
