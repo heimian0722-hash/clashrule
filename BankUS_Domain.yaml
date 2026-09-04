@@ -2,11 +2,11 @@ payload:
   # ==========================================
   # > 核心基础设施 (转账/关联/清算/支付)
   # ==========================================
-  - '+.plaid.com'               # 银行连接中间件 (解决连接券商/Wise失败)
+  - '+.plaid.com'              # 银行连接中间件 (解决连接券商/Wise失败)
   - '+.plaid.io'                # Plaid 辅助域名
   - '+.zelle.com'               # Zelle 转账核心
   - '+.zellepay.com'            # Zelle 转账门户
-  - '+.yodlee.com'              # 部分美系券商备用银行连接件
+  - '+.yodlee.com'               # 部分美系券商备用银行连接件
   - '+.finicity.com'            # 万事达旗下底层连接 (Chase 常用)
   - '+.mx.com'                  # 银行数据聚合服务商
   - '+.wise.com'                # Wise 跨境转账与虚拟卡清算
@@ -45,10 +45,12 @@ payload:
   - '+.capitalone.com'          # 核心业务
   - '+.capitaloneshopping.com'   # 购物与返利联动业务
   - '+.capitalone.co.uk'        # 英国/海外关联业务网关
+  - '+.capitalone.ca'           # 加拿大业务网关 (新增补全)
+  - '+.capitalonecards.com'     # 信用卡业务主域 (新增补全)
   - '+.capitaloneoffers.com'     # 优惠与活动网关
   - '+.capitalonegslbex.com'     # 全球负载均衡/多活调度
-  - '+.ivaws.com'                # 官方底层专用托管网络
-  - '+.medallia.com'            # 包含 capitalone.md-apis.medallia.com
+  - '+.ivaws.com'               # 官方底层专用托管网络
+  - '+.medallia.com'             # 包含 capitalone.md-apis.medallia.com
   - '+.vaicore.store'           # 抓包发现
   - '+.vaicore.xyz'
   - '+.vaicore.site'
@@ -86,6 +88,7 @@ payload:
   - '+.chase.co.uk'
   - '+.chaseip.com'
   - '+.jpmchase.net'
+  - '+.chaseonline.chase.com'
 
   # Wells Fargo (富国银行)
   - '+.wellsfargo.com'
@@ -108,6 +111,7 @@ payload:
   - '+.bac-assets.com'
   - '+.bac.com'
   - '+.ns-bac.com'
+  - '+.bofa.com'                 # 新增自对方规则
 
   # Citibank (花旗)
   - '+.citibank.com'
@@ -121,7 +125,7 @@ payload:
   # ==========================================
   # > 全美大型信用社 (DCU / Navy Federal / 知名 CU 专项)
   # ==========================================
-  - '+.dcu.org'                 # Digital Federal Credit Union (DCU - 极热门砖石/IT人首选信用社)
+  - '+.dcu.org'                  # Digital Federal Credit Union (DCU - 极热门砖石/IT人首选信用社)
   - '+.navyfederal.org'         # Navy Federal Credit Union (全美最大军事信用社)
   - '+.navyfcu.org'
   - '+.penfed.org'               # Pentagon Federal Credit Union (PenFed 军美信用社)
@@ -132,12 +136,12 @@ payload:
   - '+.secu.org'                # State Employees' Credit Union (北卡及全美巨型CU)
   - '+.becu.org'                # Boeing Employees Credit Union (BECU - 华盛顿州巨型CU)
   - '+.firsttechfed.com'        # First Tech Federal Credit Union (科技互联网大厂员工偏爱CU)
-  - '+.randfcu.org'             # Randolph-Brooks FCU (RBFCU)
+  - '+.randfcu.org'              # Randolph-Brooks FCU (RBFCU)
   - '+.suncoastcreditunion.com'  # Suncoast Credit Union
   - '+.trianglecu.org'          # Triangle Credit Union
 
   # ==========================================
-  # > 零售、数字银行与特色卡片
+  # > 零售、数字银行与特色卡片 (含信用构建)
   # ==========================================
   # 汇丰美国
   - '+.us.hsbc.com'
@@ -158,6 +162,7 @@ payload:
   - '+.braze.com'
   - '+.braze-images.com'
   - '+.sprig.com'
+  - '+.sofi.io'                  # 新增自对方规则
 
   # Revolut
   - '+.revolut.com'
@@ -169,11 +174,17 @@ payload:
   - '+.sso.revolut.com'
   - '+.licelus.com'
   - '+.appsflyersdk.com'
+  - '+.revolut.link'            # 新增自对方规则
+
+  # 信用构建 (Credit Building - 对方规则特有补全)
+  - '+.kikoff.com'              # Kikoff 信用构建
+  - '+.biltrewards.com'         # Bilt Rewards (房租返现信用卡)
+  - '+.bilt.com'
 
   # 其他数字钱包与特色卡片
   - '+.trydave.com'             # Dave 卡
   - '+.sezzle.com'              # Sezzle
-  - '+.gobankrewards.com'       # Go2Bank
+  - '+.gobankrewards.com'        # Go2Bank
   - '+.truist.com'
   - '+.pnc.com'
   - '+.pncbank.com'
@@ -211,7 +222,7 @@ payload:
   - '+.citizensbank.com'        # Citizens 银行
   - '+.53.com'                  # Fifth Third Bancorp (第五第三银行)
   - '+.key.com'                 # KeyCorp (KeyBank)
-  - '+.northerntrust.com'       # 北方信托
+  - '+.northerntrust.com'        # 北方信托
   - '+.regions.com'             # Regions 银行
   - '+.mtb.com'                 # M&T 银行
   - '+.huntington.com'          # 亨廷顿银行
@@ -222,12 +233,11 @@ payload:
   - '+.cathaybank.com'          # 国泰银行
   - '+.onlineaccess1.com'       # 国泰网银辅助
   # 补充其他中大型及区域性商业银行：
-  - '+.comerica.com'
   - '+.asb.hawaii.com'          # Bank of Hawaii / American Savings Bank
   - '+.boh.com'                 # Bank of Hawaii
   - '+.fultonbank.com'          # Fulton Bank
   - '+.hokahola.com'            # 区域银行相关
-  - '+.Websterbank.com'         # Webster Bank
+  - '+.websterbank.com'         # Webster Bank
   - '+.frostbank.com'           # Frost Bank (德州大行)
   - '+.ibercabank.com'          # IberiaBank (现 First Horizon)
   - '+.firsthorizon.com'        # First Horizon Bank
@@ -237,7 +247,7 @@ payload:
   - '+.people.com'              # People's United Bank (现 M&T)
   - '+.synovus.com'             # Synovus Bank
   - '+.cadencebank.com'         # Cadence Bank
-  - '+.BOKF.com'                # BOK Financial
+  - '+.bokf.com'                # BOK Financial
 
   # ==========================================
   # > 美股主流券商 (Stock Brokers)
@@ -290,7 +300,7 @@ payload:
   - '+.bbae.com'
 
   # ==========================================
-  # > 风控/分析/验证/辅助 (关键节点)
+  # > 风控/分析/验证/辅助 (关键节点 & 身份验证)
   # ==========================================
   - '+.threatmetrix.com'
   - '+.online-metrix.net'
@@ -313,9 +323,11 @@ payload:
   - '+.glance.net'
   - '+.ws-eu.pusher.com'
   - '+.akamaized.net'           # Akamai 安全盾/静态CDN加速 (防止银行人机验证卡死)
+  - '+.withpersona.com'         # Persona 身份KYC验证 (对方规则新增)
+  - '+.entrust.net'             # Entrust 安全证书/身份核验 (对方规则新增)
 
   # ==========================================
-  # > 金融数据与信用服务 (Credit & Data)
+  # > 金融数据与信用服务 (Credit & Data) - 三大局补全
   # ==========================================
   - '+.equifax.com'
   - '+.equifax.ca'
@@ -325,9 +337,11 @@ payload:
   - '+.experian.co.uk'
   - '+.experian.in'
   - '+.experianconsumeringservices.com'
+  - '+.expn.com'                # Experian 辅助域 (对方规则新增)
   - '+.transunion.com'
   - '+.transunion.ca'
   - '+.tu.com'
+  - '+.truelink.com'             # TransUnion 旗下信报提取辅助 (对方规则新增)
   - '+.fico.com'
   - '+.myfico.com'
   - '+.creditkarma.com'
@@ -336,8 +350,11 @@ payload:
   - '+.lifelock.com'
   - '+.annualcreditreport.com'
   
-  # 红包卡redpocket
+  # ==========================================
+  # > 虚拟运营商 (MVNO) - Red Pocket 专项
+  # ==========================================
   - '+.posthog.com'
   - '+.cloudfront.net'
   - '+.redpocket.com'
   - '+.redpocketmobile.com'
+  - '+.goredpocket.com'          # Red Pocket 备用域 (对方规则新增)
