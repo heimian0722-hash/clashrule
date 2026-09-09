@@ -105,7 +105,11 @@ https://vpn.qianlink.link/?ref=NHTQBZJRZC
 
 
 **2、wcloud**
-纯净度比上面更高，但是只有月付，没有永久 5倍 月付19/100G（20G）
+
+https://wcloud.me/register?aff=vBK2oVdw
+
+纯净度目前机场遇到的最高，但是只有月付，没有永久 5倍 月付19/100G（20G）
+
 <img width="892" height="690" alt="image" src="https://github.com/user-attachments/assets/138a6528-f52e-4fc7-887d-f8d71ecf919f" />
 
 
@@ -124,11 +128,11 @@ https://www.webshare.io/?referral_code=82rvy9fqt974
 
 替换方式只有按ip端，按国家，按运营商筛选，范围太大，不好按州级筛选；
 
-ip欺诈分在85-95左右，必须前置代理才能连接；找ip就得找好久~也有质量高的，慢慢找；
-
+必须前置代理才能连接；找ip就得找好久~也有质量高的，慢慢找；
 
 
 vps适合自己做代理长期使用，也有很便宜20美元一年的，但是欺诈分60+，刷视频合适，机场ip一样水平；还是优选双住宅、欺诈分低，重点看你用在哪里
+
 
 **ip检测评分**
 
