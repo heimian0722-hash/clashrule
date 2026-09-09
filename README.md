@@ -97,21 +97,26 @@
 
 https://vpn.qianlink.link/?ref=NHTQBZJRZC
 
-永不过期流量流量
+月付或永不过期流量流量，专门节点拉wificalling，纯净度可过银行要求，没有保证100%通过所有
 
 <img width="887" height="773" alt="image" src="https://github.com/user-attachments/assets/ac600010-9a63-4c5e-ac27-6bd0f43793ff" />
 
 <img width="1191" height="546" alt="image" src="https://github.com/user-attachments/assets/9f8489ed-c48f-4899-ae36-2d4be2f090a9" />
 
 
-**2、iproyal**
+**2、wcloud**
+纯净度比上面更高，但是只有月付，没有永久 5倍 月付19/100G（20G）
+<img width="892" height="690" alt="image" src="https://github.com/user-attachments/assets/138a6528-f52e-4fc7-887d-f8d71ecf919f" />
+
+
+**3、iproyal**
 
 https://iproyal.cn/?r=heimian
 
 8美元/G，此站有移动流量代理，权重比住宅ip更高，略贵（按最低1G价格），堪比漫游流量价格了，流量有效期就1个月，适合用于银行信用卡申请；
 
 
-**3、webshare**
+**4、webshare**
 
 https://www.webshare.io/?referral_code=82rvy9fqt974
 
@@ -125,9 +130,20 @@ ip欺诈分在85-95左右，必须前置代理才能连接；找ip就得找好�
 
 vps适合自己做代理长期使用，也有很便宜20美元一年的，但是欺诈分60+，刷视频合适，机场ip一样水平；还是优选双住宅、欺诈分低，重点看你用在哪里
 
+**ip检测评分**
+
+检测纯净度，多数忽悠人，综合判断
+
+https://ipsuper.com/    这个站，85分往上就算不错，银行重点看欺诈
+
+https://iplark.com/
+
+指纹浏览器环境检测
+
+https://ping0.cc/en/env
+
 
 **静态住宅代理软件**
-
 socks5 前置代理支持较好的推荐软件
 
 ios端 shadowrocket
