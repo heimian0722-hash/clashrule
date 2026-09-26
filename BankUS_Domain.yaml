@@ -316,7 +316,6 @@ payload:
   - '+.newrelic.com'
   - '+.kochava.com'
   - '+.crashlytics.com'
-  - '+.googleapis.com'
   - '+.intercom.io'
   - '+.intercomcdn.com'
   - '+.launchdarkly.com'
