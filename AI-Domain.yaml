@@ -3,7 +3,7 @@ payload:
   # 1. 核心 AI 综合服务 (OpenAI, Claude, xAI, Perplexity 等)
   # ==========================================
 
-  # OpenAI / ChatGPT / Sora
+  # OpenAI / ChatGPT / Sora (支持 Web、Desktop、iOS/Android App)
   - '+.ai.com'
   - '+.chat.com'
   - '+.chatgpt.com'
@@ -29,11 +29,6 @@ payload:
   - 'DOMAIN-KEYWORD,chatgpt'
   - 'DOMAIN-KEYWORD,openai'
   - 'DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$'
-  - 'PROCESS-NAME,ChatGPT'
-  - 'PROCESS-NAME,ChatGPT.exe'
-  - 'PROCESS-NAME,chatgpt'
-  - 'PROCESS-NAME,Codex'
-  - 'PROCESS-NAME,Codex.exe'
   - 'IP-CIDR,199.47.142.0/23,no-resolve'
   - 'IP-CIDR,24.199.123.28/32,no-resolve'
   - 'IP-CIDR,64.23.132.171/32,no-resolve'
@@ -68,12 +63,6 @@ payload:
   - 'DOMAIN,servd-anthropic-website.b-cdn.net'
   - 'DOMAIN-KEYWORD,anthropic'
   - 'DOMAIN-KEYWORD,claude'
-  - 'PROCESS-NAME,Claude'
-  - 'PROCESS-NAME,Claude.exe'
-  - 'PROCESS-NAME,Claude Helper'
-  - 'PROCESS-NAME,Claude Helper (Renderer)'
-  - 'PROCESS-NAME,claude'
-  - 'PROCESS-NAME,cowork-svc.exe'
   - 'IP-CIDR,160.79.104.0/21,no-resolve'
   - 'IP-CIDR6,2607:6bc0::/32,no-resolve'
   - 'IP-ASN,399358,no-resolve'
@@ -124,18 +113,12 @@ payload:
   - '+.cursor.com'
   - '+.cursor.sh'
   - '+.cursorapi.com'
-  - 'PROCESS-NAME,Cursor'
-  - 'PROCESS-NAME,Cursor.exe'
-  - 'PROCESS-NAME,cursor'
 
   # Windsurf / Codeium
   - '+.codeium.com'
   - '+.codeiumdata.com'
   - '+.windsurf.build'
   - '+.windsurf.com'
-  - 'PROCESS-NAME,Windsurf'
-  - 'PROCESS-NAME,Windsurf.exe'
-  - 'PROCESS-NAME,windsurf'
 
   # 独立与前端 AI 编程 (v0, Bolt, Lovable, Replit, Devin 等)
   - '+.augmentcode.com'
@@ -161,8 +144,6 @@ payload:
   - '+.v0.app'
   - '+.v0.dev'
   - '+.zed.dev'
-  - 'PROCESS-NAME,Augment'
-  - 'PROCESS-NAME,Augment.exe'
 
   # ==========================================
   # 3. 图像、音视频及多模态生成 AI
@@ -222,7 +203,6 @@ payload:
   - 'DOMAIN,api.groq.com'
   - 'DOMAIN,console.groq.com'
   - 'DOMAIN,api.together.xyz'
-  - 'PROCESS-NAME,LM Studio'
 
   # 字节海外 AI
   - '+.cici.com'
@@ -231,7 +211,7 @@ payload:
   - '+.trae.ai'
 
   # ==========================================
-  # 5. AI 共用风控、鉴权与基础设施
+  # 5. AI 共用风控、鉴权与移动端登录基础底座
   # ==========================================
   - '+.algolia.net'
   - '+.auth0.com'
@@ -252,8 +232,13 @@ payload:
   - 'DOMAIN,browser-intake-datadoghq.com'
   - 'DOMAIN,static.cloudflareinsights.com'
 
+  # 专供手机端 App（ChatGPT/Claude 等）OAuth/Firebase 登录与推送校验（精准域名，不污染搜索）
+  - 'DOMAIN,firebaseinstallations.googleapis.com'
+  - 'DOMAIN,identitytoolkit.googleapis.com'
+  - 'DOMAIN,securetoken.googleapis.com'
+
   # ==========================================
-  # 6. Google AI / Gemini 纯净专属服务（已剥离通用全家桶）
+  # 6. Google AI / Gemini 纯净专属服务
   # ==========================================
   - '+.ai.google'
   - '+.ai.google.dev'
@@ -284,10 +269,3 @@ payload:
   - 'DOMAIN-KEYWORD,generativelanguage'
   - 'DOMAIN-KEYWORD,labs.google'
   - 'DOMAIN-KEYWORD,notebooklm.google'
-  - 'PROCESS-NAME,Antigravity'
-  - 'PROCESS-NAME,Antigravity.exe'
-  - 'PROCESS-NAME,antigravity'
-  - 'PROCESS-NAME,Antigravity Helper'
-  - 'PROCESS-NAME,Antigravity Helper (GPU)'
-  - 'PROCESS-NAME,Antigravity Helper (Plugin)'
-  - 'PROCESS-NAME,Antigravity Helper (Renderer)'
