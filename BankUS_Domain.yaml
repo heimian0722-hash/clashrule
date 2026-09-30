@@ -398,7 +398,7 @@ payload:
   - '+.featureassets.org'       # Lemfi 特性下发
   - '+.branch.io'               # Lemfi 归因
   - '+.customer.io'             # Lemfi 消息
-  - '+.sentry.io'               # Lemfi 崩溃上报
+  - '+.sentry.io'               # 客户端崩溃日志上报通用核心
   - '+.ipify.org'               # 出口IP检测
 
   # ==========================================
@@ -431,14 +431,16 @@ payload:
   # ==========================================
   # > 虚拟运营商与通信 (MVNO & VoIP 专项)
   # ==========================================
-  # Red Pocket
-  - '+.posthog.com'
-  - '+.cloudfront.net'
-  - '+.redpocket.com'
+  # Red Pocket (全量抓包补齐)
+  - '+.redpocket.com'                     # 核心业务
   - '+.redpocketmobile.com'
   - '+.goredpocket.com'
+  - '+.posthog.com'                       # 客户端行为事件上报 (us.i.posthog.com)
+  - '+.hot-updater.edgecraft.workers.dev' # App 客户端热更新与资源补丁[span_3](start_span)[span_3](end_span)[span_4](start_span)[span_4](end_span)[span_5](start_span)[span_5](end_span)
+  - '+.app-analytics-services.com'        # 移动端事件分析统计[span_6](start_span)[span_6](end_span)[span_7](start_span)[span_7](end_span)[span_8](start_span)[span_8](end_span)
+  - '+.fpconfig.net'                      # 首次风控设备指纹验证 (抓包出现)[span_9](start_span)[span_9](end_span)
 
-  # Talkatone (仅收录核心信令、鉴权与防风控识别域)
+  # Talkatone (仅收录核心信令与风控)
   - '+.talkatone.com'           # Talkatone 官网与账户业务
-  - '+.tktn.be'                 # Talkatone 移动端信令通信核心 (a1.tktn.be)[span_0](start_span)[span_0](end_span)
+  - '+.tktn.be'                 # Talkatone 移动端信令通信核心 (a1.tktn.be)[span_10](start_span)[span_10](end_span)
   - '+.tktn.at'                 # Talkatone 官方调度域
