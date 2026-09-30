@@ -44,18 +44,31 @@ payload:
   - '+.simility.com'            # PayPal 收购的设备风控与欺诈评估大脑
 
   # ==========================================
-  # > Capital One (C1) 专项 (含最新抓包混淆与边缘防漏域名)
+  # > Capital One (C1) 全功能深化与周边生态 (已剔除英加冗余)
   # ==========================================
-  - '+.capitalone.com'          # 核心业务
-  - '+.capitaloneshopping.com'   # 购物与返利联动业务
-  - '+.capitalone.co.uk'        # 英国/海外关联业务网关
-  - '+.capitalone.ca'           # 加拿大业务网关 (新增补全)
-  - '+.capitalonecards.com'     # 信用卡业务主域 (新增补全)
+  # C1 核心业务与网银
+  - '+.capitalone.com'          # 核心业务 (含 m/ecm/potomac-clickstream 等 App 接口)
+  - '+.capitalonecards.com'     # 信用卡业务主域
+  - '+.capitalonebank.com'      # 纯储蓄/零售网银备用域
+  - '+.capitaloneinvesting.com' # 投资及理财关联域
+  - '+.capitaloneauto.com'      # Auto Navigator 购车金融
+  - '+.capitalone360.com'       # 360 网银跳转与遗留接口
+  - '+.capital-one.com'         # 官方备用与跳转短链
   - '+.capitaloneoffers.com'     # 优惠与活动网关
-  - '+.capitalonegslbex.com'     # 全球负载均衡/多活调度
-  - '+.ivaws.com'               # 官方底层专用托管网络
-  - '+.medallia.com'             # 包含 capitalone.md-apis.medallia.com
-  - '+.vaicore.store'           # 抓包发现
+  - '+.capitalonegslbex.com'     # 全球负载均衡多活调度
+  - '+.ivaws.com'               # C1 官方专用 AWS 底层托管与多活网关
+
+  # C1 Travel (差旅预订平台及底层供应商)
+  - '+.capitalonetravel.com'    # C1 Travel 差旅预订核心主域
+  - '+.hopper.com'              # C1 Travel 底层算法与票务核心供应商
+
+  # C1 Shopping (返利与插件底层)
+  - '+.capitaloneshopping.com'   # 购物与返利联动业务
+  - '+.wikibuy.com'             # C1 Shopping 前身 (返利插件仍大量调用)
+
+  # C1 设备风控、体验监测与流量混淆节点
+  - '+.medallia.com'             # capitalone.md-apis.medallia.com 体验反馈
+  - '+.vaicore.store'           # 抓包混淆节点
   - '+.vaicore.xyz'
   - '+.vaicore.site'
   - '+.akisinn.site'
@@ -64,6 +77,18 @@ payload:
   - '+.dewrain.life'
   - '+.dewrain.world'
   - '+.kvaedit.site'
+
+  # ==========================================
+  # > Discover 核心网络与清算基础设施 (收购合并生态)
+  # ==========================================
+  - '+.discover.com'            # Discover 核心主域
+  - '+.discovercard.com'        # Discover 信用卡与网银核心门户
+  - '+.discoverbank.com'        # Discover 独立银行/高息储蓄账户主域
+  - '+.discoverfinancial.com'   # Discover 金融母公司及投资者门户
+  - '+.discovernetwork.com'     # Discover 清算网络 (卡组织核心清算骨干)
+  - '+.pulse-eft.com'           # Pulse 全美借记卡与 ATM 清算网络 (核心清算资产)
+  - '+.dinersclub.com'          # 大来卡 (Diners Club，全球国际清算网络)
+  - '+.dinersclubinternational.com' # 大来卡国际路由
 
   # ==========================================
   # > 华美银行 (East West Bank) & Velo 核心业务 (含专项补全)
@@ -194,8 +219,6 @@ payload:
   - '+.pnc.net'
   - '+.tdbank.com'
   - '+.td.com'
-  - '+.discover.com'
-  - '+.discovercard.com'
   - '+.synchronybank.com'       # 同步银行 (PayPal 合作行)
   - '+.synchrony.com'
   - '+.ally.com'
