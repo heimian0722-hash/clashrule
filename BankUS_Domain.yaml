@@ -13,6 +13,8 @@ payload:
   - '+.wise.net'                # Wise 辅助域
   - '+.transferwise.com'        # Wise 旧版主域兼容
   - '+.stripe.com'              # 国际信用卡网关与底层支付
+  - '+.remitly.com'             # Remitly 跨境汇款核心
+  - '+.pandaremit.com'          # 熊猫速汇
 
   # Lemfi 专项 (含原 Lemonade Finance 核心与专属服务)
   - '+.lemfi.com'               # Lemfi 核心官网与业务
@@ -293,6 +295,7 @@ payload:
 
   # Charles Schwab (嘉信理财全生态及 TD Ameritrade)
   - '+.schwab.com'
+  - '+.schwab.net'              # 嘉信 App 静态通信备用域
   - '+.schwabclient.com'
   - '+.schwabcdn.com'           # 嘉信 App 静态资源与认证盾
   - '+.schwabplan.com'          # 养老金与零售信托入口
@@ -353,13 +356,14 @@ payload:
   - '+.tvstatic.com'            # 图表组件与静态 CDN 资源
 
   # ==========================================
-  # > 美国公用服务与政务 (USPS 邮政 & IRS 税务)
+  # > 美国公用服务与政务 (USPS 邮政 / IRS 税务 / SSA 社安局)
   # ==========================================
   - '+.usps.com'                # USPS 官网、包裹追踪与登录
   - '+.usps.org'                # USPS 备用辅助域
   - '+.informeddelivery.com'    # USPS 每日信件扫描专属门户
   - '+.uspspostalone.com'       # 企业与大宗邮务接入网关
   - '+.irs.gov'                 # IRS2Go 美国国税局官方退税与业务查询
+  - '+.ssa.gov'                 # 美国社会安全局 (my Social Security 强美区业务)
 
   # ==========================================
   # > 风控/分析/验证/辅助 (关键节点 & 身份验证)
@@ -385,8 +389,11 @@ payload:
   - '+.glance.net'
   - '+.ws-eu.pusher.com'
   - '+.akamaized.net'
-  - '+.withpersona.com'
-  - '+.entrust.net'
+  - '+.arkoselabs.com'          # Arkose Labs 旋转/拼图人机安全验证
+  - '+.withpersona.com'         # Persona 身份 KYC 验证
+  - '+.veriff.com'              # Veriff 现代证件扫描/活体 KYC 验证
+  - '+.jumio.com'               # Jumio 传统金融主流 KYC 验证
+  - '+.entrust.net'             # Entrust 安全证书/身份核验
   - '+.prodregistryv2.org'      # Lemfi 底层风控
   - '+.featureassets.org'       # Lemfi 特性下发
   - '+.branch.io'               # Lemfi 归因
@@ -395,7 +402,7 @@ payload:
   - '+.ipify.org'               # 出口IP检测
 
   # ==========================================
-  # > 金融数据与信用服务 (三大信用局/信报)
+  # > 金融数据与信用服务 (三大信用局/银行开户征信)
   # ==========================================
   - '+.equifax.com'             # Equifax / myEquifax
   - '+.equifax.ca'
@@ -414,6 +421,8 @@ payload:
   - '+.myfico.com'
   - '+.creditkarma.com'         # Credit Karma
   - '+.nav.com'                 # Nav 个人与商业信用监控
+  - '+.earlywarning.com'        # EWS 银行反洗钱与开户征信核心
+  - '+.chexsystems.com'         # ChexSystems 银行开户风险报告系统
   - '+.savvymoney.com'
   - '+.identityguard.com'
   - '+.lifelock.com'
