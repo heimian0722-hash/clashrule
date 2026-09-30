@@ -76,7 +76,6 @@ payload:
   - '+.adobedtm.com'            # 标签管理
   - '+.everesttech.net'         # 广告分析
   - '+.helpshift.com'           # Online CS
-  - '+.hi.frcoal'               # 内部 API/特定的分发域名
   - '+.baixingyllh.com'         # 特定业务域名
   - '+.epayments-epaystatic-e.money-movement.com' # 华美特殊清算流
   - '+.nexus.ensighten.com'
@@ -109,13 +108,13 @@ payload:
   - '+.americanexpress.co.uk'
   - '+.amex.com'
 
-  # Bank of America (美国银行 - 规范并强化通配覆盖)
+  # Bank of America (美国银行)
   - '+.bankofamerica.com'
   - '+.bankofamerica1.com'
   - '+.bac-assets.com'
   - '+.bac.com'
   - '+.ns-bac.com'
-  - '+.bofa.com'                 # 新增自对方规则
+  - '+.bofa.com'
 
   # Citibank (花旗)
   - '+.citibank.com'
@@ -129,18 +128,18 @@ payload:
   # ==========================================
   # > 全美大型信用社 (DCU / Navy Federal / 知名 CU 专项)
   # ==========================================
-  - '+.dcu.org'                  # Digital Federal Credit Union (DCU - 极热门砖石/IT人首选信用社)
-  - '+.navyfederal.org'         # Navy Federal Credit Union (全美最大军事信用社)
+  - '+.dcu.org'                  # Digital Federal Credit Union
+  - '+.navyfederal.org'         # Navy Federal Credit Union
   - '+.navyfcu.org'
-  - '+.penfed.org'               # Pentagon Federal Credit Union (PenFed 军美信用社)
-  - '+.alliantcreditunion.com'   # Alliant Credit Union (全美最大纯线上信用社之一)
+  - '+.penfed.org'               # Pentagon Federal Credit Union
+  - '+.alliantcreditunion.com'   # Alliant Credit Union
   - '+.alliantcu.org'
   - '+.alliantcreditunion.org'
   - '+.glia.com'
-  - '+.secu.org'                # State Employees' Credit Union (北卡及全美巨型CU)
-  - '+.becu.org'                # Boeing Employees Credit Union (BECU - 华盛顿州巨型CU)
-  - '+.firsttechfed.com'        # First Tech Federal Credit Union (科技互联网大厂员工偏爱CU)
-  - '+.randfcu.org'              # Randolph-Brooks FCU (RBFCU)
+  - '+.secu.org'                # State Employees' Credit Union
+  - '+.becu.org'                # Boeing Employees Credit Union
+  - '+.firsttechfed.com'        # First Tech Federal Credit Union
+  - '+.randfcu.org'              # Randolph-Brooks FCU
   - '+.suncoastcreditunion.com'  # Suncoast Credit Union
   - '+.trianglecu.org'          # Triangle Credit Union
 
@@ -166,7 +165,7 @@ payload:
   - '+.braze.com'
   - '+.braze-images.com'
   - '+.sprig.com'
-  - '+.sofi.io'                  # 新增自对方规则
+  - '+.sofi.io'
 
   # Revolut
   - '+.revolut.com'
@@ -178,9 +177,9 @@ payload:
   - '+.sso.revolut.com'
   - '+.licelus.com'
   - '+.appsflyersdk.com'
-  - '+.revolut.link'            # 新增自对方规则
+  - '+.revolut.link'
 
-  # 信用构建 (Credit Building - 对方规则特有补全)
+  # 信用构建
   - '+.kikoff.com'              # Kikoff 信用构建
   - '+.biltrewards.com'         # Bilt Rewards (房租返现信用卡)
   - '+.bilt.com'
@@ -236,19 +235,17 @@ payload:
   - '+.zionsbank.com'           # Zions 银行
   - '+.cathaybank.com'          # 国泰银行
   - '+.onlineaccess1.com'       # 国泰网银辅助
-  # 补充其他中大型及区域性商业银行：
-  - '+.asb.hawaii.com'          # Bank of Hawaii / American Savings Bank
   - '+.boh.com'                 # Bank of Hawaii
   - '+.fultonbank.com'          # Fulton Bank
   - '+.hokahola.com'            # 区域银行相关
   - '+.websterbank.com'         # Webster Bank
-  - '+.frostbank.com'           # Frost Bank (德州大行)
+  - '+.frostbank.com'           # Frost Bank
   - '+.ibercabank.com'          # IberiaBank (现 First Horizon)
   - '+.firsthorizon.com'        # First Horizon Bank
   - '+.commercebank.com'        # Commerce Bank
   - '+.oldnational.com'         # Old National Bank
   - '+.umb.com'                 # UMB Bank
-  - '+.people.com'              # People's United Bank (现 M&T)
+  - '+.people.com'              # People's United Bank
   - '+.synovus.com'             # Synovus Bank
   - '+.cadencebank.com'         # Cadence Bank
   - '+.bokf.com'                # BOK Financial
@@ -325,18 +322,18 @@ payload:
   - '+.launchdarkly.com'
   - '+.glance.net'
   - '+.ws-eu.pusher.com'
-  - '+.akamaized.net'           # Akamai 安全盾/静态CDN加速 (防止银行人机验证卡死)
-  - '+.withpersona.com'         # Persona 身份KYC验证 (对方规则新增)
-  - '+.entrust.net'             # Entrust 安全证书/身份核验 (对方规则新增)
-  - '+.prodregistryv2.org'      # Lemfi 抓包发现 (底层风控与反作弊)
-  - '+.featureassets.org'       # Lemfi 抓包发现 (功能开关与特性下发)
-  - '+.branch.io'               # Lemfi 深度链接与归因路由 (包含 cdn/api3)
-  - '+.customer.io'             # Lemfi 行为追踪与推送 (包含 cdp-eu)
-  - '+.sentry.io'               # Lemfi 崩溃与错误日志上报
-  - '+.ipify.org'               # Lemfi 客户端出口 IP 检测接口
+  - '+.akamaized.net'
+  - '+.withpersona.com'
+  - '+.entrust.net'
+  - '+.prodregistryv2.org'      # Lemfi 底层风控
+  - '+.featureassets.org'       # Lemfi 特性下发
+  - '+.branch.io'               # Lemfi 归因
+  - '+.customer.io'             # Lemfi 消息
+  - '+.sentry.io'               # Lemfi 崩溃上报
+  - '+.ipify.org'               # Lemfi 出口IP检测
 
   # ==========================================
-  # > 金融数据与信用服务 (Credit & Data) - 三大局补全
+  # > 金融数据与信用服务 (Credit & Data)
   # ==========================================
   - '+.equifax.com'
   - '+.equifax.ca'
@@ -346,11 +343,11 @@ payload:
   - '+.experian.co.uk'
   - '+.experian.in'
   - '+.experianconsumeringservices.com'
-  - '+.expn.com'                # Experian 辅助域 (对方规则新增)
+  - '+.expn.com'
   - '+.transunion.com'
   - '+.transunion.ca'
   - '+.tu.com'
-  - '+.truelink.com'             # TransUnion 旗下信报提取辅助 (对方规则新增)
+  - '+.truelink.com'
   - '+.fico.com'
   - '+.myfico.com'
   - '+.creditkarma.com'
@@ -358,7 +355,7 @@ payload:
   - '+.identityguard.com'
   - '+.lifelock.com'
   - '+.annualcreditreport.com'
-  
+
   # ==========================================
   # > 虚拟运营商 (MVNO) - Red Pocket 专项
   # ==========================================
@@ -366,4 +363,4 @@ payload:
   - '+.cloudfront.net'
   - '+.redpocket.com'
   - '+.redpocketmobile.com'
-  - '+.goredpocket.com'          # Red Pocket 备用域 (对方规则新增)
+  - '+.goredpocket.com'
