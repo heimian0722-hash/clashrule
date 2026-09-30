@@ -1,4 +1,4 @@
-payload:
+Payload:
   # ==========================================
   # > 核心基础设施 (转账/关联/清算/支付)
   # ==========================================
@@ -13,8 +13,12 @@ payload:
   - '+.wise.net'                # Wise 辅助域
   - '+.transferwise.com'        # Wise 旧版主域兼容
   - '+.stripe.com'              # 国际信用卡网关与底层支付
-  - '+.lemfi.com'
-  - '+.lemonadefi.com'
+
+  # Lemfi 专项 (含原 Lemonade Finance 核心与专属服务)
+  - '+.lemfi.com'               # Lemfi 核心官网与业务
+  - '+.lemonade.finance'        # 原品牌主业务 API (app.lemonade.finance)
+  - '+.lemonadefi.com'          # 关联重定向与品牌保护域
+  - '+.crowdin.com'             # 多语言界面本地化翻译 (lemfi.api.crowdin.com)
 
   # ==========================================
   # > PayPal 体系深度补全 (防风控/断连/设备指纹漏网)
@@ -324,6 +328,12 @@ payload:
   - '+.akamaized.net'           # Akamai 安全盾/静态CDN加速 (防止银行人机验证卡死)
   - '+.withpersona.com'         # Persona 身份KYC验证 (对方规则新增)
   - '+.entrust.net'             # Entrust 安全证书/身份核验 (对方规则新增)
+  - '+.prodregistryv2.org'      # Lemfi 抓包发现 (底层风控与反作弊)
+  - '+.featureassets.org'       # Lemfi 抓包发现 (功能开关与特性下发)
+  - '+.branch.io'               # Lemfi 深度链接与归因路由 (包含 cdn/api3)
+  - '+.customer.io'             # Lemfi 行为追踪与推送 (包含 cdp-eu)
+  - '+.sentry.io'               # Lemfi 崩溃与错误日志上报
+  - '+.ipify.org'               # Lemfi 客户端出口 IP 检测接口
 
   # ==========================================
   # > 金融数据与信用服务 (Credit & Data) - 三大局补全
