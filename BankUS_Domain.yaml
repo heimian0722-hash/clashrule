@@ -21,6 +21,14 @@ payload:
   - '+.crowdin.com'             # 多语言界面本地化翻译 (lemfi.api.crowdin.com)
 
   # ==========================================
+  # > Cash App 体系 (Square / Block 核心)
+  # ==========================================
+  - '+.cash.app'                # Cash App 核心主域
+  - '+.cash.me'                 # Cash App 个人主页与付款短链
+  - '+.squareup.com'            # Square 底层清算与商户接入网关
+  - '+.square.com'              # Block/Square 母公司基础路由
+
+  # ==========================================
   # > PayPal 体系深度补全 (防风控/断连/设备指纹漏网)
   # ==========================================
   - '+.paypal.com'              # PayPal 核心主域
@@ -44,10 +52,9 @@ payload:
   - '+.simility.com'            # PayPal 收购的设备风控与欺诈评估大脑
 
   # ==========================================
-  # > Capital One (C1) 全功能深化与周边生态 (已剔除英加冗余)
+  # > Capital One (C1) 全功能深化与周边生态
   # ==========================================
-  # C1 核心业务与网银
-  - '+.capitalone.com'          # 核心业务 (含 m/ecm/potomac-clickstream 等 App 接口)
+  - '+.capitalone.com'          # 核心业务 (含 App 接口)
   - '+.capitalonecards.com'     # 信用卡业务主域
   - '+.capitalonebank.com'      # 纯储蓄/零售网银备用域
   - '+.capitaloneinvesting.com' # 投资及理财关联域
@@ -57,16 +64,10 @@ payload:
   - '+.capitaloneoffers.com'     # 优惠与活动网关
   - '+.capitalonegslbex.com'     # 全球负载均衡多活调度
   - '+.ivaws.com'               # C1 官方专用 AWS 底层托管与多活网关
-
-  # C1 Travel (差旅预订平台及底层供应商)
   - '+.capitalonetravel.com'    # C1 Travel 差旅预订核心主域
   - '+.hopper.com'              # C1 Travel 底层算法与票务核心供应商
-
-  # C1 Shopping (返利与插件底层)
   - '+.capitaloneshopping.com'   # 购物与返利联动业务
   - '+.wikibuy.com'             # C1 Shopping 前身 (返利插件仍大量调用)
-
-  # C1 设备风控、体验监测与流量混淆节点
   - '+.medallia.com'             # capitalone.md-apis.medallia.com 体验反馈
   - '+.vaicore.store'           # 抓包混淆节点
   - '+.vaicore.xyz'
@@ -79,7 +80,7 @@ payload:
   - '+.kvaedit.site'
 
   # ==========================================
-  # > Discover 核心网络与清算基础设施 (收购合并生态)
+  # > Discover 核心网络与清算基础设施
   # ==========================================
   - '+.discover.com'            # Discover 核心主域
   - '+.discovercard.com'        # Discover 信用卡与网银核心门户
@@ -91,7 +92,7 @@ payload:
   - '+.dinersclubinternational.com' # 大来卡国际路由
 
   # ==========================================
-  # > 华美银行 (East West Bank) & Velo 核心业务 (含专项补全)
+  # > 华美银行 (East West Bank) & Velo 核心业务
   # ==========================================
   - '+.eastwestbank.com'        # 华美核心
   - '+.eastwest.com'            # 华美备用/主域
@@ -106,7 +107,7 @@ payload:
   - '+.nexus.ensighten.com'
 
   # ==========================================
-  # > 美国四大行与重点商业银行 (深度强化)
+  # > 美国四大行与重点商业银行
   # ==========================================
   # Chase (大通)
   - '+.chase.com'
@@ -151,7 +152,7 @@ payload:
   - '+.usbank.com'
 
   # ==========================================
-  # > 全美大型信用社 (DCU / Navy Federal / 知名 CU 专项)
+  # > 全美大型信用社 (DCU / PenFed / Alliant 等)
   # ==========================================
   - '+.dcu.org'                  # Digital Federal Credit Union
   - '+.navyfederal.org'         # Navy Federal Credit Union
@@ -169,7 +170,7 @@ payload:
   - '+.trianglecu.org'          # Triangle Credit Union
 
   # ==========================================
-  # > 零售、数字银行与特色卡片 (含信用构建)
+  # > 零售、数字银行与特色卡片 (含新移民开户/信用构建)
   # ==========================================
   # 汇丰美国
   - '+.us.hsbc.com'
@@ -204,10 +205,14 @@ payload:
   - '+.appsflyersdk.com'
   - '+.revolut.link'
 
-  # 信用构建
+  # 信用构建与新移民开户
   - '+.kikoff.com'              # Kikoff 信用构建
   - '+.biltrewards.com'         # Bilt Rewards (房租返现信用卡)
   - '+.bilt.com'
+  - '+.firstcard.app'           # Firstcard 留学生与信用构建卡
+  - '+.zolve.com'               # Zolve 新移民/无SSN申请美卡美银
+  - '+.comun.app'               # Comun 移民数字银行
+  - '+.comun.com'               # Comun 官方主域
 
   # 其他数字钱包与特色卡片
   - '+.trydave.com'             # Dave 卡
@@ -223,31 +228,34 @@ payload:
   - '+.synchrony.com'
   - '+.ally.com'
   - '+.allybank.com'
-  - '+.varomoney.com'
-  - '+.varobank.com'
+  - '+.varomoney.com'           # Varo 银行
+  - '+.varobank.com'            # Varo 银行
   - '+.go2bank.com'
   - '+.monzo.com'
   - '+.monzo.statuspage.io'
-  - '+.openskycc.com'
+  - '+.openskycc.com'           # OpenSky 担保信用卡
   - '+.bmo.com'
   - '+.bmo.us'
   - '+.barclaysus.com'
   - '+.barclays.com'
   - '+.axosbank.com'
   - '+.axos.com'
-  - '+.rakuten.com'
+  - '+.rakuten.com'             # Rakuten 返利
   - '+.rakuten.us'
+  - '+.one.app'                 # OnePay / One (沃尔玛数字银行)
+  - '+.onefinance.com'          # One 核心财务网关
+  - '+.gosavo.com'              # SAVO 跨境钱包
 
   # ==========================================
-  # > 美国本土大行、投行及中大型商业银行 (全量收录)
+  # > 美国本土大行、投行及商业银行
   # ==========================================
   - '+.goldmansachs.com'        # 高盛集团 (Marcus)
   - '+.morganstanley.com'       # 摩根士丹利
   - '+.bnymellon.com'           # 纽约梅隆银行
   - '+.statestreet.com'         # 道富集团
   - '+.citizensbank.com'        # Citizens 银行
-  - '+.53.com'                  # Fifth Third Bancorp (第五第三银行)
-  - '+.key.com'                 # KeyCorp (KeyBank)
+  - '+.53.com'                  # Fifth Third Bancorp
+  - '+.key.com'                 # KeyBank
   - '+.northerntrust.com'        # 北方信托
   - '+.regions.com'             # Regions 银行
   - '+.mtb.com'                 # M&T 银行
@@ -263,7 +271,7 @@ payload:
   - '+.hokahola.com'            # 区域银行相关
   - '+.websterbank.com'         # Webster Bank
   - '+.frostbank.com'           # Frost Bank
-  - '+.ibercabank.com'          # IberiaBank (现 First Horizon)
+  - '+.ibercabank.com'          # IberiaBank
   - '+.firsthorizon.com'        # First Horizon Bank
   - '+.commercebank.com'        # Commerce Bank
   - '+.oldnational.com'         # Old National Bank
@@ -274,8 +282,43 @@ payload:
   - '+.bokf.com'                # BOK Financial
 
   # ==========================================
-  # > 美股主流券商 (Stock Brokers)
+  # > 美股主流券商与资管 (Stock Brokers) - 深度强化
   # ==========================================
+  # 智能投顾
+  - '+.betterment.com'          # Betterment 智能投顾
+
+  # Vanguard (先锋领航)
+  - '+.vanguard.com'
+  - '+.vanguardinvestments.com'
+
+  # Charles Schwab (嘉信理财全生态及 TD Ameritrade)
+  - '+.schwab.com'
+  - '+.schwabclient.com'
+  - '+.schwabcdn.com'           # 嘉信 App 静态资源与认证盾
+  - '+.schwabplan.com'          # 养老金与零售信托入口
+  - '+.tdameritrade.com'        # 德美利清算及后台数据迁移接口
+  - '+.thinkorswim.com'         # 嘉信旗下高级交易终端网关
+
+  # Interactive Brokers (盈透证券 IBKR 及 GlobalTrader)
+  - '+.interactivebrokers.com'
+  - '+.interactivebrokers.co.uk'
+  - '+.ibkr.com'
+  - '+.ibkr.info'               # 移动端备用调度网关
+  - '+.ibkr.com.hk'
+  - '+.ibllc.com'
+  - '+.clientam.com'
+  - '+.globaltrader.com'        # IBKR GlobalTrader 专属业务与品牌主域
+
+  # BBAE (必贝证券)
+  - '+.bbae.com'
+  - '+.bbae.io'                 # 移动端专用 API 与清算路由
+  - '+.bbaegroup.com'
+
+  # Robinhood (罗宾汉)
+  - '+.robinhood.com'
+  - '+.robinhood.net'           # 实时行情 WebSocket 与底层路由
+  - '+.rbnhd.com'               # 官方短链与验证跳转
+
   # Fidelity (富达)
   - '+.fidelity.com'
   - '+.fidelityinvestments.com'
@@ -286,42 +329,22 @@ payload:
   - '+.wealthscape.com'
   - '+.streetscape.com'
   - '+.fmr.com'
-  - '+.akamaized.net'
-  - '+.akamaiedge.net'
-  - '+.edgekey.net'
-  - '+.cloudfront.net'
-  - '+.ping.cloud'
-  - '+.pingidentity.com'
-  - '+.online-metrix.net'
-  - '+.symantec.com'
-  - '+.omtrdc.net'
-  - '+.demdex.net'
-  - '+.qualtrics.com'
 
-  # 其他券商
-  - '+.schwab.com'
-  - '+.schwabclient.com'
-  - '+.interactivebrokers.com'
-  - '+.ibkr.com'
-  - '+.ibkr.com.hk'
-  - '+.ibllc.com'
-  - '+.clientam.com'
+  # 其他知名券商 (Firstrade / Webull / Tastytrade)
   - '+.firstrade.com'
   - '+.firstrade.io'
   - '+.firstrade.app'
-  - '+.etrade.com'
+  - '+.etrade.com'              # E*TRADE
   - '+.etrade.in'
   - '+.etrade.ca'
   - '+.etrade.com.hk'
-  - '+.webull.com'
+  - '+.webull.com'              # 微牛
   - '+.webullcorp.com'
-  - '+.tastytrade.com'
+  - '+.tastytrade.com'          # Tastytrade
   - '+.tastyworks.com'
   - '+.tastycrypto.com'
   - '+.tastytrade.io'
   - '+.developer.tastytrade.com'
-  - '+.robinhood.com'
-  - '+.bbae.com'
 
   # ==========================================
   # > 风控/分析/验证/辅助 (关键节点 & 身份验证)
@@ -334,9 +357,10 @@ payload:
   - '+.go-mpulse.net'
   - '+.okta.com'
   - '+.oktacdn.com'
-  - '+.duosecurity.com'
+  - '+.duosecurity.com'         # Duo Mobile 身份认证
+  - '+.symantec.com'            # VIP Access 动态验证码核心服务
   - '+.onelogin.com'
-  - '+.id.me'
+  - '+.id.me'                   # ID.me 官方身份认证
   - '+.newrelic.com'
   - '+.kochava.com'
   - '+.crashlytics.com'
@@ -353,37 +377,45 @@ payload:
   - '+.branch.io'               # Lemfi 归因
   - '+.customer.io'             # Lemfi 消息
   - '+.sentry.io'               # Lemfi 崩溃上报
-  - '+.ipify.org'               # Lemfi 出口IP检测
+  - '+.ipify.org'               # 出口IP检测
 
   # ==========================================
-  # > 金融数据与信用服务 (Credit & Data)
+  # > 金融数据与信用服务 (三大信用局/信报/税务)
   # ==========================================
-  - '+.equifax.com'
+  - '+.equifax.com'             # Equifax / myEquifax
   - '+.equifax.ca'
   - '+.efx.com'
   - '+.equi.com'
-  - '+.experian.com'
+  - '+.experian.com'            # Experian 益博睿
   - '+.experian.co.uk'
   - '+.experian.in'
   - '+.experianconsumeringservices.com'
   - '+.expn.com'
-  - '+.transunion.com'
+  - '+.transunion.com'          # TransUnion 环联
   - '+.transunion.ca'
   - '+.tu.com'
   - '+.truelink.com'
-  - '+.fico.com'
+  - '+.fico.com'                # FICO / myFICO
   - '+.myfico.com'
-  - '+.creditkarma.com'
+  - '+.creditkarma.com'         # Credit Karma
+  - '+.nav.com'                 # Nav 个人与商业信用监控
   - '+.savvymoney.com'
   - '+.identityguard.com'
   - '+.lifelock.com'
   - '+.annualcreditreport.com'
+  - '+.irs.gov'                 # IRS2Go 美国国税局官方退税与业务查询
 
   # ==========================================
-  # > 虚拟运营商 (MVNO) - Red Pocket 专项
+  # > 虚拟运营商与通信 (MVNO & VoIP 专项)
   # ==========================================
+  # Red Pocket
   - '+.posthog.com'
   - '+.cloudfront.net'
   - '+.redpocket.com'
   - '+.redpocketmobile.com'
   - '+.goredpocket.com'
+
+  # Talkatone (仅收录核心信令、鉴权与防风控识别域)
+  - '+.talkatone.com'           # Talkatone 官网与账户业务
+  - '+.tktn.be'                 # Talkatone 移动端信令通信核心 (a1.tktn.be)[span_0](start_span)[span_0](end_span)
+  - '+.tktn.at'                 # Talkatone 官方调度域
