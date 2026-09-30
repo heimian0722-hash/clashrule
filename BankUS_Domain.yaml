@@ -394,10 +394,12 @@ payload:
   - '+.veriff.com'              # Veriff 现代证件扫描/活体 KYC 验证
   - '+.jumio.com'               # Jumio 传统金融主流 KYC 验证
   - '+.entrust.net'             # Entrust 安全证书/身份核验
-  - '+.prodregistryv2.org'      # Lemfi 底层风控
-  - '+.featureassets.org'       # Lemfi 特性下发
-  - '+.branch.io'               # Lemfi 归因
-  - '+.customer.io'             # Lemfi 消息
+  - '+.amplitude.com'           # Amplitude 现代移动端行为事件分析 (新增)
+  - '+.apptentive.com'          # Apptentive 移动端客服与用户反馈 (新增)
+  - '+.prodregistryv2.org'      # 底层反欺诈风控
+  - '+.featureassets.org'       # 特性与配置下发
+  - '+.branch.io'               # 深度链接归因
+  - '+.customer.io'             # 消息触达服务
   - '+.sentry.io'               # 客户端崩溃日志上报通用核心
   - '+.ipify.org'               # 出口IP检测
 
@@ -438,14 +440,16 @@ payload:
   - '+.posthog.com'                       # 客户端行为事件上报 (us.i.posthog.com)
   - '+.hot-updater.edgecraft.workers.dev' # App 客户端热更新与资源补丁
   - '+.app-analytics-services.com'        # 移动端事件分析统计
-  - '+.fpconfig.net'                      # 首次风控设备指纹验证 (抓包出现)
+  - '+.fpconfig.net'                      # 首次风控设备指纹验证
 
   # Ultra Mobile (含 PayGo 账户与 App)
   - '+.ultramobile.com'                   # 官网、PayGo 管理与 App 核心 API
   - '+.ultra.me'                          # 官方短链与验证跳转
 
-  # Tello Mobile (My Tello)
+  # Tello Mobile (My Tello 及母公司核心底层通信)
   - '+.tello.com'                         # Tello 官网、Web 后台与 App 数据交互
+  - '+.keepcalling.net'                   # Tello 母公司通信底层与 API 网关 (新增)
+  - '+.keepcalling.com'                   # KeepCalling 核心主域 (新增)
 
   # T-Mobile Prepaid eSIM (官方 eSIM 选号与激活下发)
   - '+.t-mobile.com'                      # T-Mobile 官网、预付费核心 API 与选号网关
