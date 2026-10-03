@@ -6,7 +6,8 @@ payload:
   - '+.plaid.io'                # Plaid 辅助域名
   - '+.zelle.com'               # Zelle 转账核心
   - '+.zellepay.com'            # Zelle 转账门户
-  - '+.yodlee.com'               # 部分美系券商备用银行连接件
+  - '+.yodlee.com'               # 部分美系券商/运通备用银行连接件
+  - '+.envestnet.com'           # Yodlee 母公司底层服务网关
   - '+.finicity.com'            # 万事达旗下底层连接 (Chase 常用)
   - '+.mx.com'                  # 银行数据聚合服务商
   - '+.wise.com'                # Wise 跨境转账与虚拟卡清算
@@ -368,18 +369,44 @@ payload:
   # ==========================================
   # > 风控/分析/验证/辅助 (关键节点 & 身份验证)
   # ==========================================
+  # 安全防护盾与 WAF (解决截图中的 Error 16 等风控拦截)[span_0](start_span)[span_0](end_span)
+  - '+.imperva.com'             # Imperva 官方主域与风控服务[span_1](start_span)[span_1](end_span)
+  - '+.incapsula.com'           # Imperva 底层防护网络/WAF节点 (阻断拦截的核心来源)
+  - '+.cloudflare.com'          # Cloudflare 挑战与验证
+  - '+.recaptcha.net'           # Google reCAPTCHA 验证组件
+  - '+.hcaptcha.com'            # hCaptcha 人机验证
+
+  # 传统反欺诈与设备指纹
   - '+.threatmetrix.com'
   - '+.online-metrix.net'
   - '+.lexisnexis.com'
   - '+.threatexpert.com'
+  - '+.iovation.com'            # TransUnion 旗下 iovation 设备指纹风控
+  - '+.iesnare.com'             # iovation 底层风控脚本加载域
+  - '+.siftscience.com'         # Sift 行为反欺诈引擎
+  - '+.sift.com'
+  - '+.forter.com'              # Forter 实时交易反欺诈风控
+  - '+.kount.com'               # Equifax 旗下 Kount 欺诈防护系统
   - '+.akstat.io'
   - '+.go-mpulse.net'
+
+  # 身份认证与单点登录 (SSO / MFA)
   - '+.okta.com'
   - '+.oktacdn.com'
   - '+.duosecurity.com'         # Duo Mobile 身份认证
   - '+.symantec.com'            # VIP Access 动态验证码核心服务
   - '+.onelogin.com'
   - '+.id.me'                   # ID.me 官方身份认证
+
+  # 证件扫描与 KYC 活体验证
+  - '+.withpersona.com'         # Persona 身份 KYC 验证
+  - '+.veriff.com'              # Veriff 现代证件扫描/活体 KYC 验证
+  - '+.jumio.com'               # Jumio 传统金融主流 KYC 验证
+  - '+.onfido.com'              # Onfido 常见护照/驾照及活体人脸识别
+  - '+.trulioo.com'             # Trulioo 全球电子身份核验平台
+  - '+.socure.com'              # Socure 美国本土头部银行最常用的数字身份验证
+
+  # 业务遥测与运维辅助
   - '+.newrelic.com'
   - '+.kochava.com'
   - '+.crashlytics.com'
@@ -390,12 +417,9 @@ payload:
   - '+.ws-eu.pusher.com'
   - '+.akamaized.net'
   - '+.arkoselabs.com'          # Arkose Labs 旋转/拼图人机安全验证
-  - '+.withpersona.com'         # Persona 身份 KYC 验证
-  - '+.veriff.com'              # Veriff 现代证件扫描/活体 KYC 验证
-  - '+.jumio.com'               # Jumio 传统金融主流 KYC 验证
   - '+.entrust.net'             # Entrust 安全证书/身份核验
-  - '+.amplitude.com'           # Amplitude 现代移动端行为事件分析 (新增)
-  - '+.apptentive.com'          # Apptentive 移动端客服与用户反馈 (新增)
+  - '+.amplitude.com'           # Amplitude 现代移动端行为事件分析
+  - '+.apptentive.com'          # Apptentive 移动端客服与用户反馈
   - '+.prodregistryv2.org'      # 底层反欺诈风控
   - '+.featureassets.org'       # 特性与配置下发
   - '+.branch.io'               # 深度链接归因
@@ -448,8 +472,8 @@ payload:
 
   # Tello Mobile (My Tello 及母公司核心底层通信)
   - '+.tello.com'                         # Tello 官网、Web 后台与 App 数据交互
-  - '+.keepcalling.net'                   # Tello 母公司通信底层与 API 网关 (新增)
-  - '+.keepcalling.com'                   # KeepCalling 核心主域 (新增)
+  - '+.keepcalling.net'                   # Tello 母公司通信底层与 API 网关
+  - '+.keepcalling.com'                   # KeepCalling 核心主域
 
   # T-Mobile Prepaid eSIM (官方 eSIM 选号与激活下发)
   - '+.t-mobile.com'                      # T-Mobile 官网、预付费核心 API 与选号网关
