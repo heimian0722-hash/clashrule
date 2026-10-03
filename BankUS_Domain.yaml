@@ -4,7 +4,7 @@ payload:
   # ==========================================
   - '+.plaid.com'              # Plaid 银行连接中间件
   - '+.plaid.io'
-  - '+.yodlee.com'             # Yodlee 银行聚合中间件[span_0](start_span)[span_0](end_span)
+  - '+.yodlee.com'             # Yodlee 银行聚合中间件
   - '+.envestnet.com'           # Yodlee 母公司网关
   - '+.finicity.com'            # Finicity 万事达旗下银行连接件
   - '+.mx.com'                  # MX 银行数据聚合服务
@@ -19,7 +19,6 @@ payload:
   - '+.lemfi.com'               # Lemfi 跨境汇款
   - '+.lemonade.finance'
   - '+.lemonadefi.com'
-  - '+.crowdin.com'             # Lemfi 多语言界面
 
   # ==========================================
   # 2. 电子钱包与支付生态 (PayPal / Cash App)
@@ -55,11 +54,10 @@ payload:
   # 3. 美国主流卡组织与核心银行
   # ==========================================
   # American Express (运通)
-  - '+.americanexpress.com'     # 运通官网与核心 API[span_1](start_span)[span_1](end_span)[span_2](start_span)[span_2](end_span)
+  - '+.americanexpress.com'     # 运通官网与核心 API[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span)
   - '+.amex.com'                # 快捷入口
   - '+.amexnetwork.com'         # 运通清算网络
   - '+.americanexpress.co.uk'   # 英国区路由
-  - '+.open.com'                # 商业卡 (OPEN) 业务
   - '+.aexp.com'                # 通用 API 网关
   - '+.aexp-static.com'         # 官方静态资源
   - '+.ameximg.com'             # 图片多媒体 CDN
@@ -67,8 +65,6 @@ payload:
   - '+.amex.co'                 # 短信/邮件短链
   - '+.inauth.com'              # 运通移动端设备风控
   - '+.inauth.net'
-  - '+.qualtrics.com'           # 交互弹窗与反馈调查[span_3](start_span)[span_3](end_span)
-  - '+.siteintercept.qualtrics.com[span_4](start_span)'[span_4](end_span)
 
   # Capital One (第一资本)
   - '+.capitalone.com'          # 核心业务
@@ -362,10 +358,8 @@ payload:
   # 8. 安全防护、身份 KYC 与风控引擎
   # ==========================================
   # WAF 盾与验证码
-  - '+.imperva.com'             # Imperva 安全盾[span_5](start_span)[span_5](end_span)
+  - '+.imperva.com'             # Imperva 安全盾[span_2](start_span)[span_2](end_span)
   - '+.incapsula.com'           # Imperva 底层清洗网
-  - '+.cloudflare.com'          # Cloudflare 防护
-  - '+.recaptcha.net'           # Google reCAPTCHA
   - '+.hcaptcha.com'            # hCaptcha
 
   # 反欺诈与设备指纹
@@ -380,8 +374,8 @@ payload:
   - '+.forter.com'              # Forter 反欺诈
   - '+.kount.com'               # Kount 欺诈防护
   - '+.arkoselabs.com'          # Arkose Labs 旋转验证
-  - '+.prodregistryv2.org'      # 底层反欺诈接口[span_6](start_span)[span_6](end_span)
-  - '+.featureassets.org'       # 配置开关下发[span_7](start_span)[span_7](end_span)
+  - '+.prodregistryv2.org'      # 底层反欺诈接口[span_3](start_span)[span_3](end_span)
+  - '+.featureassets.org'       # 配置开关下发[span_4](start_span)[span_4](end_span)
 
   # 身份核验 (KYC / SSO)
   - '+.id.me'                   # ID.me 官方身份认证
@@ -399,12 +393,12 @@ payload:
   - '+.onelogin.com'            # OneLogin
 
   # 基础遥测与前端埋点
-  - '+.adobedtm.com'            # Adobe 标签管理[span_8](start_span)[span_8](end_span)
+  - '+.adobedtm.com'            # Adobe 标签管理[span_5](start_span)[span_5](end_span)
   - '+.omtrdc.net'              # Adobe 统计
   - '+.demdex.net'              # 身份识别
   - '+.everesttech.net'
   - '+.amplitude.com'           # Amplitude 行为分析
-  - '+.sentry.io'               # Sentry 错误日志[span_9](start_span)[span_9](end_span)
+  - '+.sentry.io'               # Sentry 错误日志
   - '+.newrelic.com'            # New Relic 性能监控
   - '+.kochava.com'             # 归因追踪
   - '+.branch.io'               # 深度链接
@@ -429,7 +423,6 @@ payload:
   - '+.braze-images.com'
   - '+.sprig.com'
   - '+.ipify.org'               # 出口 IP 检测
-  - '+.googleapis.com'          # Google 地图/定位基础接口[span_10](start_span)[span_10](end_span)
 
   # ==========================================
   # 9. 美国政务与公用服务
@@ -469,7 +462,7 @@ payload:
   - '+.ultra.me'
 
   # 1pMobile (英国)
-  - '+.1pmobile.com'           # 1pMobile 核心账户
+  - '+.1pmobile.com'            # 1pMobile 核心账户
   - '+.1psim.com'
   - '+.1psim.co.uk'
 
