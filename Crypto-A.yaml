@@ -1,45 +1,59 @@
-payload:
-  # --- Coinbase 核心与支付网关 ---
+Payload:
+  # ==========================================
+  # 抓包新增：核心风控与身份验证
+  # ==========================================
+  - '+.sardine.ai'                 # 核心合规/反欺诈 SDK（Ether.fi Cash 等出金与开卡关键）
+  - '+.privy.io'                   # 嵌入式 MPC 钱包与登录授权
+  - '+.walletconnect.com'          # 钱包交互网关
+  - '+.walletconnect.org'
+  - '+.web3modal.com'              # 钱包弹窗组件
+  - '+.web3modal.org'
+
+  # ==========================================
+  # 抓包新增：卡管与 Apple/Google Pay 令牌化
+  # ==========================================
+  - '+.meawallet.app'              # 虚拟卡查看与手机钱包绑卡底层
+
+  # ==========================================
+  # Plasma 生态 (含抓包支付后端)
+  # ==========================================
+  - '+.plasma.to'
+  - '+.plasmascan.org'
+  - '+.plasma-one.tech'            # Plasma One 核心支付接口与 WebSocket
+
+  # ==========================================
+  # Ether.fi 生态 (LST 与 Cash 信用卡)
+  # ==========================================
+  - '+.ether.fi'
+
+  # ==========================================
+  # 稳定币支付卡与出金
+  # ==========================================
+  - '+.kast.finance'
+  - '+.kastfinance.app'
+
+  # ==========================================
+  # Coinbase 与 Base 原生生态
+  # ==========================================
   - '+.coinbase.com'
   - '+.coinbasecloud.net'
   - '+.coinbasecloud.dev'
   - '+.coinbasewallet.com'
-  - '+.commerce.coinbase.com'
-  - '+.help.coinbase.com'
-  - '+.static-assets.coinbase.com'
-  - '+.onramp.wallet.coinbase.com'
-  - '+.chain-proxy.wallet.coinbase.com'
-
-  # --- Base 生态 (Coinbase L2) ---
+  - '+.cb.id'
   - '+.base.org'
   - '+.basescan.org'
-  - '+.mainnet.base.org'
-  - '+.bridge.base.org'
 
-  # --- Kraken (含荷兰/欧洲节点)  ---
+  # ==========================================
+  # Kraken
+  # ==========================================
   - '+.kraken.com'
-  - '+.api.kraken.com'
-  - '+.futures.kraken.com'
   - '+.kraken-assets.com'
   - '+.cryptowat.ch'
-  - '+.nl.kraken.com'        # 荷兰 Kraken 节点
 
-  # --- 美系合规与银行绑定服务 ---
-  - '+.circle.com'        # USDC 相关
+  # ==========================================
+  # 合规法币通道与稳定币基础设施
+  # ==========================================
+  - '+.circle.com'
   - '+.usdc.com'
-  - '+.plaid.com'         # 银行卡 ACH 绑定必备
-  - '+.trustly.com'       # 支付网关
-  - '+.cb.id'             # Coinbase 域名服务
-
-  # --- ether.fi 生态 (LST / 质押与个人资产账户) ---
-  - '+.ether.fi'
-  - '+.help.ether.fi'
-  - '+.governance.ether.fi'
-
-  # --- Plasma 生态 (稳定币 L1 / XPL) ---
-  - '+.plasma.to'
-  - '+.plasmascan.org'
-
-  # --- Kast 生态 (Web3 稳定币支付卡 / 钱包应用) ---
-  - '+.kast.finance'
-  - '+.kastfinance.app'
+  - '+.plaid.com'                  # ACH 绑卡与账户验证
+  - '+.trustly.com'                # 即时转账网关
