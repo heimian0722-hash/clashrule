@@ -79,6 +79,9 @@ payload:
   - '+.shopifycdn.com'          # Shopify 静态资源与图片加载
   - '+.scene7.com'              # Adobe 动态资产 CDN (百货、服饰大牌商品图)
   - '+.fastly.net'              # 诸多海外电商的底层加速 CDN
+  - '+.adobedtm.com'            # 新增：Adobe Dynamic Tag Management (FedEx 等 App 脚本依赖)
+  - '+.omtrdc.net'              # 新增：Adobe Experience Cloud / Target (FedEx 等分析上报与分流)
+  - '+.app-analytics-services.com' # 新增：移动端分析与遥测服务 (解决 App 初始化卡死/报错)
   - '+.hcaptcha.com'            # 独立站高频人机验证
   - '+.recaptcha.net'           # 备用人机验证通道
   - '+.arkoselabs.com'          # BestBuy/Target 常用验证 (FunCaptcha)
@@ -99,7 +102,7 @@ payload:
   - '+.uspstracking.com'
 
   # --- FedEx 体系 ---
-  - '+.fedex.com'               # FedEx 官网与登录风控
+  - '+.fedex.com'               # FedEx 官网与登录风控 (涵盖 auth.fedex.com)
   - '+.fedex.net'               # FedEx 静态资源与核心 API
 
   # --- UPS 体系 (严格地域重定向与 My Choice) ---
