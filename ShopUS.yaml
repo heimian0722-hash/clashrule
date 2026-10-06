@@ -1,22 +1,22 @@
-Payload:
+payload:
   # ==========================================
-  # > 1. 亚马逊与 eBay 体系 (解决详情页图片裂开与风控)
+  # > 1. 亚马逊与 eBay 体系
   # ==========================================
   - '+.amazon.com'
   - '+.amazon.ca'
   - '+.amazon.co.uk'
-  - '+.media-amazon.com'       # 必须：详情页图片加速
-  - '+.ssl-images-amazon.com'   # 必须：静态 CSS/JS 资源
+  - '+.media-amazon.com'
+  - '+.ssl-images-amazon.com'
   - '+.completion.amazon.com'
   - '+.amazon-adsystem.com'
   - '+.ext-amazon.com'
   - '+.ebay.com'
   - '+.ebaystatic.com'
-  - '+.ebayimg.com'             # 必须：解决搜索页商品图红叉
+  - '+.ebayimg.com'
   - '+.ebayrtm.com'
 
   # ==========================================
-  # > 2. 综合百货、超市与家居 (防 403 Forbidden 与砍单)
+  # > 2. 综合百货、超市与家居
   # ==========================================
   - '+.walmart.com'
   - '+.walmartimages.com'
@@ -25,9 +25,9 @@ Payload:
   - '+.costco.com'
   - '+.samsclub.com'
   - '+.macys.com'
-  - '+.bloomingdales.com'        # 补充：布鲁明戴尔百货（高端百货）
-  - '+.saksfifthavenue.com'     # 补充：第五大道奢侈品百货
-  - '+.neimanmarcus.com'        # 补充：尼曼百货
+  - '+.bloomingdales.com'
+  - '+.saksfifthavenue.com'
+  - '+.neimanmarcus.com'
   - '+.nordstrom.com'
   - '+.nordstromimage.com'
   - '+.kohls.com'
@@ -36,11 +36,11 @@ Payload:
   - '+.lowes.com'
 
   # ==========================================
-  # > 3. 电子数码与办公 (高砍单风险监控)
+  # > 3. 电子数码与办公
   # ==========================================
   - '+.apple.com'
-  - '+.mzstatic.com'            # Apple 商店静态资源与图片
-  - '+.bestbuy.com'             # 重点：BestBuy 极看 IP 纯净度
+  - '+.mzstatic.com'
+  - '+.bestbuy.com'
   - '+.newegg.com'
   - '+.bhphotovideo.com'
   - '+.dell.com'
@@ -49,81 +49,72 @@ Payload:
   - '+.samsung.com'
 
   # ==========================================
-  # > 4. 潮流、运动、美妆、奢侈品与手作电商 (IP 归属地敏感)
+  # > 4. 潮流、运动、美妆、奢侈品与手作电商
   # ==========================================
   - '+.nike.com'
   - '+.adidas.com'
-  - '+.newbalance.com'          # 补充：New Balance 美国
-  - '+.puma.com'                # 补充：Puma 美国
-  - '+.footlocker.com'          # 补充：Foot Locker 鞋履
+  - '+.newbalance.com'
+  - '+.puma.com'
+  - '+.footlocker.com'
   - '+.lululemon.com'
   - '+.coach.com'
-  - '+.coachoutlet.com'         # 重点：奥莱风控等级极高
+  - '+.coachoutlet.com'
   - '+.ralphlauren.com'
   - '+.supremenewyork.com'
   - '+.stockx.com'
   - '+.goat.com'
-  - '+.ssense.com'              # 补充：SSENSE 奢侈品电商
-  - '+.farfetch.com'            # 补充：Farfetch 发发奇
-  - '+.etsy.com'                # 补充：Etsy 手作与独立设计电商
+  - '+.ssense.com'
+  - '+.farfetch.com'
+  - '+.etsy.com'
   - '+.sephora.com'
   - '+.ulta.com'
   - '+.esteelauder.com'
   - '+.clinique.com'
 
   # ==========================================
-  # > 5. 建站平台基建、人机验证与反爬风控 (防白屏/死循环验证/图裂)
+  # > 5. 建站平台基建、人机验证与反爬风控
   # ==========================================
-  - '+.myshopify.com'           # 大量海外独立站、潮流买手店建站底层
+  - '+.myshopify.com'
   - '+.shopify.com'
-  - '+.shopifycdn.com'          # Shopify 静态资源与图片加载
-  - '+.scene7.com'              # Adobe 动态资产 CDN (百货、服饰大牌商品图)
-  - '+.fastly.net'              # 诸多海外电商的底层加速 CDN
-  - '+.hcaptcha.com'            # 独立站高频人机验证
-  - '+.recaptcha.net'           # 备用人机验证通道
-  - '+.arkoselabs.com'          # BestBuy/Target 常用验证 (FunCaptcha)
-  - '+.datadome.co'             # 大牌电商普遍反爬/防机器人系统
-  - '+.perimeterx.net'          # 零售百货主流防护
-  - '+.px-cloud.net'            # HUMAN / PerimeterX 上报
-  - '+.kount.com'               # 信用卡防欺诈监测底层
-  - '+.sift.com'                # Sift 风控与反欺诈网关
-  - '+.radar.io'                # 识别设备物理位置的定位工具
-  - '+.card.io'                 # 信用卡扫描识别
+  - '+.shopifycdn.com'
+  - '+.scene7.com'
+  - '+.fastly.net'
+  - '+.hcaptcha.com'
+  - '+.recaptcha.net'
+  - '+.arkoselabs.com'
+  - '+.datadome.co'
+  - '+.perimeterx.net'
+  - '+.px-cloud.net'
+  - '+.kount.com'
+  - '+.sift.com'
+  - '+.radar.io'
+  - '+.card.io'
 
   # ==========================================
-  # > 6. 物流转运、快递追踪与打单服务 (US 区域与风控拦截)
+  # > 6. 物流转运、快递追踪与打单服务
   # ==========================================
-  # --- USPS 体系 (含 Informed Delivery，极看纯净美国 IP) ---
-  - '+.usps.com'                # USPS 官网与 Informed Delivery 核心
-  - '+.usps.force.com'          # USPS 客服与后端支持网关
+  - '+.usps.com'
+  - '+.usps.force.com'
   - '+.uspstracking.com'
-
-  # --- FedEx 体系 ---
-  - '+.fedex.com'               # FedEx 官网与登录风控
-  - '+.fedex.net'               # FedEx 静态资源与核心 API
-
-  # --- UPS 体系 (严格地域重定向与 My Choice) ---
-  - '+.ups.com'                 # UPS 官网与 My Choice 服务
+  - '+.fedex.com'
+  - '+.fedex.net'
+  - '+.ups.com'
   - '+.ups.com.edgesuite.net'
-
-  # --- DHL 体系 ---
-  - '+.dhl.com'                 # DHL 官网与运单查询
-  - '+.dhl-express.com'         # DHL Express 移动端及 API
+  - '+.dhl.com'
+  - '+.dhl-express.com'
   - '+.dhl.de'
-
-  # --- 运单聚合与智能打单平台 ---
-  - '+.shipsaving.com'          # ShipSaving 跨境打单折扣平台
-  - '+.17track.net'             # 全球物流轨迹查询 (防轨迹加载卡顿)
-  - '+.goshippo.com'            # Shippo 低价面单平台
-  - '+.pirateship.com'          # Pirate Ship 折扣打单平台
+  - '+.shipsaving.com'
+  - '+.17track.net'
+  - '+.goshippo.com'
+  - '+.pirateship.com'
 
   # ==========================================
-  # > 7. 返利、导购与折扣工具 (防止丢单)
+  # > 7. 返利与导购工具
   # ==========================================
   - '+.rakuten.com'
   - '+.topcashback.com'
-  - '+.shopback.com'            # ShopBack 核心主站
-  - '+.shopback.sg'             # 亚太分站网关
+  - '+.shopback.com'
+  - '+.shopback.sg'
   - '+.slickdeals.net'
   - '+.camelcamelcamel.com'
   - '+.honey.io'
