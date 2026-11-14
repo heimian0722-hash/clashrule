@@ -470,3 +470,21 @@ payload:
   - '+.talkatone.com'           # Talkatone 官网
   - '+.tktn.be'                 # 信令通信核心
   - '+.tktn.at'
+# ==========================================
+# 11. 补充：问卷调研、3DS验证、VoWiFi底层与物流
+# ==========================================
+  - '+.qualtrics.com'            # 银行/金融机构用户体验问卷 (Amex/Chase等)
+  - '+.cardinalcommerce.com'     # 信用卡 3DS 安全验证网关
+  - '+.arcot.com'                # 支付验证服务
+  - '+.biocatch.com'             # 银行行为生物识别风控
+  - '+.behaviosec.com'           # 行为特征风控
+  - '+.perimeterx.net'           # 登录防爬与环境盾
+  - '+.px-cdn.net'
+  - '+.px-cloud.net'
+  - '+.pub.3gppnetwork.org'      # 运营商 Wi-Fi Calling (ePDG/IMS) 通用网关
+  - '+.vzwwo.com'                # Verizon Wi-Fi Calling 网关
+  - '+.att.com'                  # AT&T 网关 (Red Pocket GSMA 线路)
+  - '+.att.net'
+  - '+.verizon.com'              # Verizon 网关 (Red Pocket CDMA 线路)
+  - '+.fedex.com'                # FedEx 寄卡追踪
+  - '+.ups.com'                  # UPS 寄卡追踪
