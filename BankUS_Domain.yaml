@@ -2,481 +2,472 @@ payload:
   # ==========================================
   # 1. 核心金融基础设施 (中间件/清算/跨境支付)
   # ==========================================
-  - DOMAIN-SUFFIX,plaid.com
-  - DOMAIN-SUFFIX,plaid.io
-  - DOMAIN-SUFFIX,yodlee.com
-  - DOMAIN-SUFFIX,envestnet.com
-  - DOMAIN-SUFFIX,finicity.com
-  - DOMAIN-SUFFIX,mx.com
-  - DOMAIN-SUFFIX,akoya.com
-  - DOMAIN-SUFFIX,teller.io
-  - DOMAIN-SUFFIX,methodfi.com
-  - DOMAIN-SUFFIX,argyle.com
-  - DOMAIN-SUFFIX,pinwheelapi.com
-  - DOMAIN-SUFFIX,atomicfi.com
-  - DOMAIN-SUFFIX,zelle.com
-  - DOMAIN-SUFFIX,zellepay.com
-  - DOMAIN-SUFFIX,stripe.com
-  - DOMAIN-SUFFIX,remitly.com
-  - DOMAIN-SUFFIX,pandaremit.com
-  - DOMAIN-SUFFIX,lemfi.com
-  - DOMAIN-SUFFIX,lemonade.finance
-  - DOMAIN-SUFFIX,lemonadefi.com
-  - DOMAIN-SUFFIX,cardinalcommerce.com
-  - DOMAIN-SUFFIX,arcot.com
-  - DOMAIN-SUFFIX,cybersource.com
-  - DOMAIN-SUFFIX,ethoca.com
+- DOMAIN-SUFFIX,plaid.com
+- DOMAIN-SUFFIX,plaid.io
+- DOMAIN-SUFFIX,yodlee.com
+- DOMAIN-SUFFIX,envestnet.com
+- DOMAIN-SUFFIX,finicity.com
+- DOMAIN-SUFFIX,mx.com
+- DOMAIN-SUFFIX,zelle.com
+- DOMAIN-SUFFIX,zellepay.com
+- DOMAIN-SUFFIX,stripe.com
+- DOMAIN-SUFFIX,remitly.com
+- DOMAIN-SUFFIX,pandaremit.com
+- DOMAIN-SUFFIX,lemfi.com
+- DOMAIN-SUFFIX,lemonade.finance
+- DOMAIN-SUFFIX,lemonadefi.com
+- DOMAIN-SUFFIX,cardinalcommerce.com
+- DOMAIN-SUFFIX,arcot.com
 
   # ==========================================
   # 2. 电子钱包与支付生态 (PayPal / Cash App / Venmo)
   # ==========================================
-  - DOMAIN-SUFFIX,cash.app
-  - DOMAIN-SUFFIX,cash.me
-  - DOMAIN-SUFFIX,squareup.com
-  - DOMAIN-SUFFIX,square.com
-  - DOMAIN-SUFFIX,paypal.com
-  - DOMAIN-SUFFIX,paypal.us
-  - DOMAIN-SUFFIX,paypal.me
-  - DOMAIN-SUFFIX,pypl.com
-  - DOMAIN-SUFFIX,paypalobjects.com
-  - DOMAIN-SUFFIX,paypal-status.com
-  - DOMAIN-SUFFIX,paypal-mktg.com
-  - DOMAIN-SUFFIX,paypal-communications.com
-  - DOMAIN-SUFFIX,paypal-mobile.com
-  - DOMAIN-SUFFIX,paypal-corp.com
-  - DOMAIN-SUFFIX,braintree.com
-  - DOMAIN-SUFFIX,braintreegateway.com
-  - DOMAIN-SUFFIX,braintreepayments.com
-  - DOMAIN-SUFFIX,braintree-api.com
-  - DOMAIN-SUFFIX,venmo.com
-  - DOMAIN-SUFFIX,xoom.com
-  - DOMAIN-SUFFIX,hyperwallet.com
-  - DOMAIN-SUFFIX,zettle.com
-  - DOMAIN-SUFFIX,simility.com
+- DOMAIN-SUFFIX,cash.app
+- DOMAIN-SUFFIX,cash.me
+- DOMAIN-SUFFIX,squareup.com
+- DOMAIN-SUFFIX,square.com
+- DOMAIN-SUFFIX,paypal.com
+- DOMAIN-SUFFIX,paypal.us
+- DOMAIN-SUFFIX,paypal.me
+- DOMAIN-SUFFIX,pypl.com
+- DOMAIN-SUFFIX,paypalobjects.com
+- DOMAIN-SUFFIX,paypal-status.com
+- DOMAIN-SUFFIX,paypal-mktg.com
+- DOMAIN-SUFFIX,paypal-communications.com
+- DOMAIN-SUFFIX,paypal-mobile.com
+- DOMAIN-SUFFIX,paypal-corp.com
+- DOMAIN-SUFFIX,braintree.com
+- DOMAIN-SUFFIX,braintreegateway.com
+- DOMAIN-SUFFIX,braintreepayments.com
+- DOMAIN-SUFFIX,braintree-api.com
+- DOMAIN-SUFFIX,venmo.com
+- DOMAIN-SUFFIX,xoom.com
+- DOMAIN-SUFFIX,hyperwallet.com
+- DOMAIN-SUFFIX,zettle.com
+- DOMAIN-SUFFIX,simility.com
 
   # ==========================================
   # 3. 美国主流卡组织与核心商业银行
   # ==========================================
   # American Express (运通)
-  - DOMAIN-SUFFIX,americanexpress.com
-  - DOMAIN-SUFFIX,amex.com
-  - DOMAIN-SUFFIX,amexnetwork.com
-  - DOMAIN-SUFFIX,aexp.com
-  - DOMAIN-SUFFIX,aexp-static.com
-  - DOMAIN-SUFFIX,ameximg.com
-  - DOMAIN-SUFFIX,americanexpressstatic.com
-  - DOMAIN-SUFFIX,amex.co
-  - DOMAIN-SUFFIX,inauth.com
-  - DOMAIN-SUFFIX,inauth.net
-  - DOMAIN-SUFFIX,accertify.com
+- DOMAIN-SUFFIX,americanexpress.com
+- DOMAIN-SUFFIX,amex.com
+- DOMAIN-SUFFIX,amexnetwork.com
+- DOMAIN-SUFFIX,aexp.com
+- DOMAIN-SUFFIX,aexp-static.com
+- DOMAIN-SUFFIX,ameximg.com
+- DOMAIN-SUFFIX,americanexpressstatic.com
+- DOMAIN-SUFFIX,amex.co
+- DOMAIN-SUFFIX,inauth.com
+- DOMAIN-SUFFIX,inauth.net
 
   # Capital One (第一资本)
-  - DOMAIN-SUFFIX,capitalone.com
-  - DOMAIN-SUFFIX,capitalonecards.com
-  - DOMAIN-SUFFIX,capitalonebank.com
-  - DOMAIN-SUFFIX,capitaloneinvesting.com
-  - DOMAIN-SUFFIX,capitaloneauto.com
-  - DOMAIN-SUFFIX,capitalone360.com
-  - DOMAIN-SUFFIX,capital-one.com
-  - DOMAIN-SUFFIX,capitaloneoffers.com
-  - DOMAIN-SUFFIX,capitalonegslbex.com
-  - DOMAIN-SUFFIX,ivaws.com
-  - DOMAIN-SUFFIX,capitalonetravel.com
-  - DOMAIN-SUFFIX,hopper.com
-  - DOMAIN-SUFFIX,capitaloneshopping.com
-  - DOMAIN-SUFFIX,wikibuy.com
-  - DOMAIN-SUFFIX,medallia.com
-  - DOMAIN-SUFFIX,vaicore.store
-  - DOMAIN-SUFFIX,vaicore.xyz
-  - DOMAIN-SUFFIX,vaicore.site
-  - DOMAIN-SUFFIX,akisinn.site
-  - DOMAIN-SUFFIX,akisinn.info
-  - DOMAIN-SUFFIX,dewrain.site
-  - DOMAIN-SUFFIX,dewrain.life
-  - DOMAIN-SUFFIX,dewrain.world
-  - DOMAIN-SUFFIX,kvaedit.site
+- DOMAIN-SUFFIX,capitalone.com
+- DOMAIN-SUFFIX,capitalonecards.com
+- DOMAIN-SUFFIX,capitalonebank.com
+- DOMAIN-SUFFIX,capitaloneinvesting.com
+- DOMAIN-SUFFIX,capitaloneauto.com
+- DOMAIN-SUFFIX,capitalone360.com
+- DOMAIN-SUFFIX,capital-one.com
+- DOMAIN-SUFFIX,capitaloneoffers.com
+- DOMAIN-SUFFIX,capitalonegslbex.com
+- DOMAIN-SUFFIX,ivaws.com
+- DOMAIN-SUFFIX,capitalonetravel.com
+- DOMAIN-SUFFIX,hopper.com
+- DOMAIN-SUFFIX,capitaloneshopping.com
+- DOMAIN-SUFFIX,wikibuy.com
+- DOMAIN-SUFFIX,medallia.com
+- DOMAIN-SUFFIX,vaicore.store
+- DOMAIN-SUFFIX,vaicore.xyz
+- DOMAIN-SUFFIX,vaicore.site
+- DOMAIN-SUFFIX,akisinn.site
+- DOMAIN-SUFFIX,akisinn.info
+- DOMAIN-SUFFIX,dewrain.site
+- DOMAIN-SUFFIX,dewrain.life
+- DOMAIN-SUFFIX,dewrain.world
+- DOMAIN-SUFFIX,kvaedit.site
 
   # Discover
-  - DOMAIN-SUFFIX,discover.com
-  - DOMAIN-SUFFIX,discovercard.com
-  - DOMAIN-SUFFIX,discoverbank.com
-  - DOMAIN-SUFFIX,discoverfinancial.com
-  - DOMAIN-SUFFIX,discovernetwork.com
-  - DOMAIN-SUFFIX,pulse-eft.com
-  - DOMAIN-SUFFIX,dinersclub.com
-  - DOMAIN-SUFFIX,dinersclubinternational.com
+- DOMAIN-SUFFIX,discover.com
+- DOMAIN-SUFFIX,discovercard.com
+- DOMAIN-SUFFIX,discoverbank.com
+- DOMAIN-SUFFIX,discoverfinancial.com
+- DOMAIN-SUFFIX,discovernetwork.com
+- DOMAIN-SUFFIX,pulse-eft.com
+- DOMAIN-SUFFIX,dinersclub.com
+- DOMAIN-SUFFIX,dinersclubinternational.com
 
   # Chase (大通)
-  - DOMAIN-SUFFIX,chase.com
-  - DOMAIN-SUFFIX,jpmorgan.com
-  - DOMAIN-SUFFIX,jpmorganchase.com
-  - DOMAIN-SUFFIX,chasecdn.com
-  - DOMAIN-SUFFIX,chaseip.com
-  - DOMAIN-SUFFIX,jpmchase.net
-  - DOMAIN-SUFFIX,chaseonline.chase.com
+- DOMAIN-SUFFIX,chase.com
+- DOMAIN-SUFFIX,jpmorgan.com
+- DOMAIN-SUFFIX,jpmorganchase.com
+- DOMAIN-SUFFIX,chasecdn.com
+- DOMAIN-SUFFIX,chaseip.com
+- DOMAIN-SUFFIX,jpmchase.net
+- DOMAIN-SUFFIX,chaseonline.chase.com
 
   # Bank of America (美国银行)
-  - DOMAIN-SUFFIX,bankofamerica.com
-  - DOMAIN-SUFFIX,bankofamerica1.com
-  - DOMAIN-SUFFIX,bac-assets.com
-  - DOMAIN-SUFFIX,bac.com
-  - DOMAIN-SUFFIX,ns-bac.com
-  - DOMAIN-SUFFIX,bofa.com
+- DOMAIN-SUFFIX,bankofamerica.com
+- DOMAIN-SUFFIX,bankofamerica1.com
+- DOMAIN-SUFFIX,bac-assets.com
+- DOMAIN-SUFFIX,bac.com
+- DOMAIN-SUFFIX,ns-bac.com
+- DOMAIN-SUFFIX,bofa.com
 
   # Citibank (花旗)
-  - DOMAIN-SUFFIX,citibank.com
-  - DOMAIN-SUFFIX,citi.com
-  - DOMAIN-SUFFIX,citigroup.com
-  - DOMAIN-SUFFIX,citi.io
+- DOMAIN-SUFFIX,citibank.com
+- DOMAIN-SUFFIX,citi.com
+- DOMAIN-SUFFIX,citigroup.com
+- DOMAIN-SUFFIX,citi.io
 
   # Wells Fargo (富国银行)
-  - DOMAIN-SUFFIX,wellsfargo.com
-  - DOMAIN-SUFFIX,wf.com
-  - DOMAIN-SUFFIX,wellsfargomedia.com
-  - DOMAIN-SUFFIX,wellsfargoadvisors.com
-  - DOMAIN-SUFFIX,wellsfargo.net
+- DOMAIN-SUFFIX,wellsfargo.com
+- DOMAIN-SUFFIX,wf.com
+- DOMAIN-SUFFIX,wellsfargomedia.com
+- DOMAIN-SUFFIX,wellsfargoadvisors.com
+- DOMAIN-SUFFIX,wellsfargo.net
 
   # US Bank (合众银行 - 重点保护)
-  - DOMAIN-SUFFIX,usbank.com
-  - DOMAIN-SUFFIX,usbankconnect.com
-  - DOMAIN-SUFFIX,usbankrewardscenter.com
+- DOMAIN-SUFFIX,usbank.com
+- DOMAIN-SUFFIX,usbankconnect.com
+- DOMAIN-SUFFIX,usbankrewardscenter.com
 
   # East West Bank (华美银行 & Velo)
-  - DOMAIN-SUFFIX,eastwestbank.com
-  - DOMAIN-SUFFIX,eastwest.com
-  - DOMAIN-SUFFIX,velobank.com
-  - DOMAIN-SUFFIX,baixingyllh.com
-  - DOMAIN-SUFFIX,epayments-epaystatic-e.money-movement.com
+- DOMAIN-SUFFIX,eastwestbank.com
+- DOMAIN-SUFFIX,eastwest.com
+- DOMAIN-SUFFIX,velobank.com
+- DOMAIN-SUFFIX,baixingyllh.com
+- DOMAIN-SUFFIX,epayments-epaystatic-e.money-movement.com
 
   # 其他本土商业银行与投行
-  - DOMAIN-SUFFIX,goldmansachs.com
-  - DOMAIN-SUFFIX,morganstanley.com
-  - DOMAIN-SUFFIX,bnymellon.com
-  - DOMAIN-SUFFIX,statestreet.com
-  - DOMAIN-SUFFIX,citizensbank.com
-  - DOMAIN-SUFFIX,53.com
-  - DOMAIN-SUFFIX,key.com
-  - DOMAIN-SUFFIX,northerntrust.com
-  - DOMAIN-SUFFIX,regions.com
-  - DOMAIN-SUFFIX,mtb.com
-  - DOMAIN-SUFFIX,huntington.com
-  - DOMAIN-SUFFIX,bbvausa.com
-  - DOMAIN-SUFFIX,santanderbank.com
-  - DOMAIN-SUFFIX,comerica.com
-  - DOMAIN-SUFFIX,zionsbank.com
-  - DOMAIN-SUFFIX,cathaybank.com
-  - DOMAIN-SUFFIX,onlineaccess1.com
-  - DOMAIN-SUFFIX,boh.com
-  - DOMAIN-SUFFIX,fultonbank.com
-  - DOMAIN-SUFFIX,hokahola.com
-  - DOMAIN-SUFFIX,websterbank.com
-  - DOMAIN-SUFFIX,frostbank.com
-  - DOMAIN-SUFFIX,ibercabank.com
-  - DOMAIN-SUFFIX,firsthorizon.com
-  - DOMAIN-SUFFIX,commercebank.com
-  - DOMAIN-SUFFIX,oldnational.com
-  - DOMAIN-SUFFIX,umb.com
-  - DOMAIN-SUFFIX,people.com
-  - DOMAIN-SUFFIX,synovus.com
-  - DOMAIN-SUFFIX,cadencebank.com
-  - DOMAIN-SUFFIX,bokf.com
+- DOMAIN-SUFFIX,goldmansachs.com
+- DOMAIN-SUFFIX,morganstanley.com
+- DOMAIN-SUFFIX,bnymellon.com
+- DOMAIN-SUFFIX,statestreet.com
+- DOMAIN-SUFFIX,citizensbank.com
+- DOMAIN-SUFFIX,53.com
+- DOMAIN-SUFFIX,key.com
+- DOMAIN-SUFFIX,northerntrust.com
+- DOMAIN-SUFFIX,regions.com
+- DOMAIN-SUFFIX,mtb.com
+- DOMAIN-SUFFIX,huntington.com
+- DOMAIN-SUFFIX,bbvausa.com
+- DOMAIN-SUFFIX,santanderbank.com
+- DOMAIN-SUFFIX,comerica.com
+- DOMAIN-SUFFIX,zionsbank.com
+- DOMAIN-SUFFIX,cathaybank.com
+- DOMAIN-SUFFIX,onlineaccess1.com
+- DOMAIN-SUFFIX,boh.com
+- DOMAIN-SUFFIX,fultonbank.com
+- DOMAIN-SUFFIX,hokahola.com
+- DOMAIN-SUFFIX,websterbank.com
+- DOMAIN-SUFFIX,frostbank.com
+- DOMAIN-SUFFIX,ibercabank.com
+- DOMAIN-SUFFIX,firsthorizon.com
+- DOMAIN-SUFFIX,commercebank.com
+- DOMAIN-SUFFIX,oldnational.com
+- DOMAIN-SUFFIX,umb.com
+- DOMAIN-SUFFIX,people.com
+- DOMAIN-SUFFIX,synovus.com
+- DOMAIN-SUFFIX,cadencebank.com
+- DOMAIN-SUFFIX,bokf.com
 
   # ==========================================
   # 4. 信用社体系 (Credit Unions)
   # ==========================================
-  - DOMAIN-SUFFIX,alliantcreditunion.com
-  - DOMAIN-SUFFIX,alliantcu.org
-  - DOMAIN-SUFFIX,alliantcreditunion.org
-  - DOMAIN-SUFFIX,dcu.org
-  - DOMAIN-SUFFIX,navyfederal.org
-  - DOMAIN-SUFFIX,navyfcu.org
-  - DOMAIN-SUFFIX,penfed.org
-  - DOMAIN-SUFFIX,secu.org
-  - DOMAIN-SUFFIX,becu.org
-  - DOMAIN-SUFFIX,firsttechfed.com
-  - DOMAIN-SUFFIX,randfcu.org
-  - DOMAIN-SUFFIX,suncoastcreditunion.com
-  - DOMAIN-SUFFIX,trianglecu.org
+- DOMAIN-SUFFIX,alliantcreditunion.com
+- DOMAIN-SUFFIX,alliantcu.org
+- DOMAIN-SUFFIX,alliantcreditunion.org
+- DOMAIN-SUFFIX,dcu.org
+- DOMAIN-SUFFIX,navyfederal.org
+- DOMAIN-SUFFIX,navyfcu.org
+- DOMAIN-SUFFIX,penfed.org
+- DOMAIN-SUFFIX,secu.org
+- DOMAIN-SUFFIX,becu.org
+- DOMAIN-SUFFIX,firsttechfed.com
+- DOMAIN-SUFFIX,randfcu.org
+- DOMAIN-SUFFIX,suncoastcreditunion.com
+- DOMAIN-SUFFIX,trianglecu.org
 
   # ==========================================
   # 5. 数字银行、特色卡片与信用构建
   # ==========================================
-  - DOMAIN-SUFFIX,us.hsbc.com
-  - DOMAIN-SUFFIX,hsbc.com.us
-  - DOMAIN-SUFFIX,hsbc.com.uk
-  - DOMAIN-SUFFIX,hsbcnet.com
-  - DOMAIN-SUFFIX,vv1865.com
-  - DOMAIN-SUFFIX,sofi.com
-  - DOMAIN-SUFFIX,sofi.org
-  - DOMAIN-SUFFIX,sofi.net
-  - DOMAIN-SUFFIX,sofi.io
-  - DOMAIN-SUFFIX,soficdn.net
-  - DOMAIN-SUFFIX,revolut.com
-  - DOMAIN-SUFFIX,revolut.me
-  - DOMAIN-SUFFIX,revolut.codes
-  - DOMAIN-SUFFIX,revolutlabs.com
-  - DOMAIN-SUFFIX,aqueduct.revolutlabs.com
-  - DOMAIN-SUFFIX,assets.revolut.com
-  - DOMAIN-SUFFIX,sso.revolut.com
-  - DOMAIN-SUFFIX,licelus.com
-  - DOMAIN-SUFFIX,revolut.link
-  - DOMAIN-SUFFIX,kikoff.com
-  - DOMAIN-SUFFIX,biltrewards.com
-  - DOMAIN-SUFFIX,bilt.com
-  - DOMAIN-SUFFIX,firstcard.app
-  - DOMAIN-SUFFIX,zolve.com
-  - DOMAIN-SUFFIX,comun.app
-  - DOMAIN-SUFFIX,comun.com
-  - DOMAIN-SUFFIX,openskycc.com
-  - DOMAIN-SUFFIX,truist.com
-  - DOMAIN-SUFFIX,pnc.com
-  - DOMAIN-SUFFIX,pncbank.com
-  - DOMAIN-SUFFIX,pnc.net
-  - DOMAIN-SUFFIX,tdbank.com
-  - DOMAIN-SUFFIX,td.com
-  - DOMAIN-SUFFIX,synchronybank.com
-  - DOMAIN-SUFFIX,synchrony.com
-  - DOMAIN-SUFFIX,ally.com
-  - DOMAIN-SUFFIX,allybank.com
-  - DOMAIN-SUFFIX,varomoney.com
-  - DOMAIN-SUFFIX,varobank.com
-  - DOMAIN-SUFFIX,go2bank.com
-  - DOMAIN-SUFFIX,gobankrewards.com
-  - DOMAIN-SUFFIX,trydave.com
-  - DOMAIN-SUFFIX,sezzle.com
-  - DOMAIN-SUFFIX,monzo.com
-  - DOMAIN-SUFFIX,monzo.statuspage.io
-  - DOMAIN-SUFFIX,bmo.com
-  - DOMAIN-SUFFIX,bmo.us
-  - DOMAIN-SUFFIX,barclaysus.com
-  - DOMAIN-SUFFIX,barclays.com
-  - DOMAIN-SUFFIX,axosbank.com
-  - DOMAIN-SUFFIX,axos.com
-  - DOMAIN-SUFFIX,one.app
-  - DOMAIN-SUFFIX,onefinance.com
-  - DOMAIN-SUFFIX,gosavo.com
+- DOMAIN-SUFFIX,us.hsbc.com
+- DOMAIN-SUFFIX,hsbc.com.us
+- DOMAIN-SUFFIX,hsbc.com.uk
+- DOMAIN-SUFFIX,hsbcnet.com
+- DOMAIN-SUFFIX,vv1865.com
+- DOMAIN-SUFFIX,sofi.com
+- DOMAIN-SUFFIX,sofi.org
+- DOMAIN-SUFFIX,sofi.net
+- DOMAIN-SUFFIX,sofi.io
+- DOMAIN-SUFFIX,soficdn.net
+- DOMAIN-SUFFIX,revolut.com
+- DOMAIN-SUFFIX,revolut.me
+- DOMAIN-SUFFIX,revolut.codes
+- DOMAIN-SUFFIX,revolutlabs.com
+- DOMAIN-SUFFIX,aqueduct.revolutlabs.com
+- DOMAIN-SUFFIX,assets.revolut.com
+- DOMAIN-SUFFIX,sso.revolut.com
+- DOMAIN-SUFFIX,licelus.com
+- DOMAIN-SUFFIX,revolut.link
+- DOMAIN-SUFFIX,kikoff.com
+- DOMAIN-SUFFIX,biltrewards.com
+- DOMAIN-SUFFIX,bilt.com
+- DOMAIN-SUFFIX,firstcard.app
+- DOMAIN-SUFFIX,zolve.com
+- DOMAIN-SUFFIX,comun.app
+- DOMAIN-SUFFIX,comun.com
+- DOMAIN-SUFFIX,openskycc.com
+- DOMAIN-SUFFIX,truist.com
+- DOMAIN-SUFFIX,pnc.com
+- DOMAIN-SUFFIX,pncbank.com
+- DOMAIN-SUFFIX,pnc.net
+- DOMAIN-SUFFIX,tdbank.com
+- DOMAIN-SUFFIX,td.com
+- DOMAIN-SUFFIX,synchronybank.com
+- DOMAIN-SUFFIX,synchrony.com
+- DOMAIN-SUFFIX,ally.com
+- DOMAIN-SUFFIX,allybank.com
+- DOMAIN-SUFFIX,varomoney.com
+- DOMAIN-SUFFIX,varobank.com
+- DOMAIN-SUFFIX,go2bank.com
+- DOMAIN-SUFFIX,gobankrewards.com
+- DOMAIN-SUFFIX,trydave.com
+- DOMAIN-SUFFIX,sezzle.com
+- DOMAIN-SUFFIX,monzo.com
+- DOMAIN-SUFFIX,monzo.statuspage.io
+- DOMAIN-SUFFIX,bmo.com
+- DOMAIN-SUFFIX,bmo.us
+- DOMAIN-SUFFIX,barclaysus.com
+- DOMAIN-SUFFIX,barclays.com
+- DOMAIN-SUFFIX,axosbank.com
+- DOMAIN-SUFFIX,axos.com
+- DOMAIN-SUFFIX,one.app
+- DOMAIN-SUFFIX,onefinance.com
+- DOMAIN-SUFFIX,gosavo.com
 
   # ==========================================
   # 6. 美股主流券商与交易分析
   # ==========================================
-  - DOMAIN-SUFFIX,schwab.com
-  - DOMAIN-SUFFIX,schwab.net
-  - DOMAIN-SUFFIX,schwabclient.com
-  - DOMAIN-SUFFIX,schwabcdn.com
-  - DOMAIN-SUFFIX,schwabplan.com
-  - DOMAIN-SUFFIX,tdameritrade.com
-  - DOMAIN-SUFFIX,thinkorswim.com
-  - DOMAIN-SUFFIX,fidelity.com
-  - DOMAIN-SUFFIX,fidelityinvestments.com
-  - DOMAIN-SUFFIX,fmrit.com
-  - DOMAIN-SUFFIX,fidelity-commerce.com
-  - DOMAIN-SUFFIX,netbenefits.com
-  - DOMAIN-SUFFIX,wealthscape.com
-  - DOMAIN-SUFFIX,streetscape.com
-  - DOMAIN-SUFFIX,fmr.com
-  - DOMAIN-SUFFIX,interactivebrokers.com
-  - DOMAIN-SUFFIX,ibkr.com
-  - DOMAIN-SUFFIX,ibkr.info
-  - DOMAIN-SUFFIX,ibkr.com.hk
-  - DOMAIN-SUFFIX,ibllc.com
-  - DOMAIN-SUFFIX,clientam.com
-  - DOMAIN-SUFFIX,globaltrader.com
-  - DOMAIN-SUFFIX,robinhood.com
-  - DOMAIN-SUFFIX,robinhood.net
-  - DOMAIN-SUFFIX,rbnhd.com
-  - DOMAIN-SUFFIX,firstrade.com
-  - DOMAIN-SUFFIX,firstrade.io
-  - DOMAIN-SUFFIX,firstrade.app
-  - DOMAIN-SUFFIX,bbae.com
-  - DOMAIN-SUFFIX,bbae.io
-  - DOMAIN-SUFFIX,bbaegroup.com
-  - DOMAIN-SUFFIX,webull.com
-  - DOMAIN-SUFFIX,webullcorp.com
-  - DOMAIN-SUFFIX,etrade.com
-  - DOMAIN-SUFFIX,etrade.in
-  - DOMAIN-SUFFIX,etrade.com.hk
-  - DOMAIN-SUFFIX,tastytrade.com
-  - DOMAIN-SUFFIX,tastyworks.com
-  - DOMAIN-SUFFIX,tastycrypto.com
-  - DOMAIN-SUFFIX,tastytrade.io
-  - DOMAIN-SUFFIX,developer.tastytrade.com
-  - DOMAIN-SUFFIX,betterment.com
-  - DOMAIN-SUFFIX,vanguard.com
-  - DOMAIN-SUFFIX,vanguardinvestments.com
-  - DOMAIN-SUFFIX,tradingview.com
-  - DOMAIN-SUFFIX,tvstatic.com
+- DOMAIN-SUFFIX,schwab.com
+- DOMAIN-SUFFIX,schwab.net
+- DOMAIN-SUFFIX,schwabclient.com
+- DOMAIN-SUFFIX,schwabcdn.com
+- DOMAIN-SUFFIX,schwabplan.com
+- DOMAIN-SUFFIX,tdameritrade.com
+- DOMAIN-SUFFIX,thinkorswim.com
+- DOMAIN-SUFFIX,fidelity.com
+- DOMAIN-SUFFIX,fidelityinvestments.com
+- DOMAIN-SUFFIX,fmrit.com
+- DOMAIN-SUFFIX,fidelity-commerce.com
+- DOMAIN-SUFFIX,netbenefits.com
+- DOMAIN-SUFFIX,wealthscape.com
+- DOMAIN-SUFFIX,streetscape.com
+- DOMAIN-SUFFIX,fmr.com
+- DOMAIN-SUFFIX,interactivebrokers.com
+- DOMAIN-SUFFIX,ibkr.com
+- DOMAIN-SUFFIX,ibkr.info
+- DOMAIN-SUFFIX,ibkr.com.hk
+- DOMAIN-SUFFIX,ibllc.com
+- DOMAIN-SUFFIX,clientam.com
+- DOMAIN-SUFFIX,globaltrader.com
+- DOMAIN-SUFFIX,robinhood.com
+- DOMAIN-SUFFIX,robinhood.net
+- DOMAIN-SUFFIX,rbnhd.com
+- DOMAIN-SUFFIX,firstrade.com
+- DOMAIN-SUFFIX,firstrade.io
+- DOMAIN-SUFFIX,firstrade.app
+- DOMAIN-SUFFIX,bbae.com
+- DOMAIN-SUFFIX,bbae.io
+- DOMAIN-SUFFIX,bbaegroup.com
+- DOMAIN-SUFFIX,webull.com
+- DOMAIN-SUFFIX,webullcorp.com
+- DOMAIN-SUFFIX,etrade.com
+- DOMAIN-SUFFIX,etrade.in
+- DOMAIN-SUFFIX,etrade.com.hk
+- DOMAIN-SUFFIX,tastytrade.com
+- DOMAIN-SUFFIX,tastyworks.com
+- DOMAIN-SUFFIX,tastycrypto.com
+- DOMAIN-SUFFIX,tastytrade.io
+- DOMAIN-SUFFIX,developer.tastytrade.com
+- DOMAIN-SUFFIX,betterment.com
+- DOMAIN-SUFFIX,vanguard.com
+- DOMAIN-SUFFIX,vanguardinvestments.com
+- DOMAIN-SUFFIX,tradingview.com
+- DOMAIN-SUFFIX,tvstatic.com
 
   # ==========================================
-  # 7. 信用局报告、次级征信与第三方查分监控
+  # 7. 信用局报告、次级征信与第三方查分监控 (全量版)
   # ==========================================
   # 三大核心信用局 & 旗下门户
-  - DOMAIN-SUFFIX,experian.com
-  - DOMAIN-SUFFIX,experian.co.uk
-  - DOMAIN-SUFFIX,experian.in
-  - DOMAIN-SUFFIX,experianconsumeringservices.com
-  - DOMAIN-SUFFIX,expn.com
-  - DOMAIN-SUFFIX,freecreditreport.com
-  - DOMAIN-SUFFIX,freecreditscore.com
-  - DOMAIN-SUFFIX,rentbureau.com
-  - DOMAIN-SUFFIX,clarityservices.com
-  - DOMAIN-SUFFIX,transunion.com
-  - DOMAIN-SUFFIX,tu.com
-  - DOMAIN-SUFFIX,truelink.com
-  - DOMAIN-SUFFIX,factortrust.com
-  - DOMAIN-SUFFIX,l2c.com
-  - DOMAIN-SUFFIX,equifax.com
-  - DOMAIN-SUFFIX,myequifax.com
-  - DOMAIN-SUFFIX,efx.com
-  - DOMAIN-SUFFIX,equi.com
-  - DOMAIN-SUFFIX,annualcreditreport.com
-  - DOMAIN-SUFFIX,optoutprescreen.com
+- DOMAIN-SUFFIX,experian.com
+- DOMAIN-SUFFIX,experian.co.uk
+- DOMAIN-SUFFIX,experian.in
+- DOMAIN-SUFFIX,experianconsumeringservices.com
+- DOMAIN-SUFFIX,expn.com
+- DOMAIN-SUFFIX,freecreditreport.com
+- DOMAIN-SUFFIX,freecreditscore.com
+- DOMAIN-SUFFIX,rentbureau.com
+- DOMAIN-SUFFIX,clarityservices.com
+- DOMAIN-SUFFIX,transunion.com
+- DOMAIN-SUFFIX,tu.com
+- DOMAIN-SUFFIX,truelink.com
+- DOMAIN-SUFFIX,factortrust.com
+- DOMAIN-SUFFIX,l2c.com
+- DOMAIN-SUFFIX,equifax.com
+- DOMAIN-SUFFIX,myequifax.com
+- DOMAIN-SUFFIX,efx.com
+- DOMAIN-SUFFIX,equi.com
+- DOMAIN-SUFFIX,annualcreditreport.com
+- DOMAIN-SUFFIX,optoutprescreen.com
 
   # 银行开户、第四信用局与专业/替代性征信局
-  - DOMAIN-SUFFIX,innovis.com
-  - DOMAIN-SUFFIX,chexsystems.com
-  - DOMAIN-SUFFIX,earlywarning.com
-  - DOMAIN-SUFFIX,lexisnexisrisk.com
-  - DOMAIN-SUFFIX,sagestreamllc.com
-  - DOMAIN-SUFFIX,ars-consumerreports.com
-  - DOMAIN-SUFFIX,corelogic.com
-  - DOMAIN-SUFFIX,teletrack.com
-  - DOMAIN-SUFFIX,nctue.com
-  - DOMAIN-SUFFIX,certegy.com
-  - DOMAIN-SUFFIX,telecheck.com
-  - DOMAIN-SUFFIX,microbilt.com
+- DOMAIN-SUFFIX,innovis.com
+- DOMAIN-SUFFIX,chexsystems.com
+- DOMAIN-SUFFIX,earlywarning.com
+- DOMAIN-SUFFIX,lexisnexisrisk.com
+- DOMAIN-SUFFIX,sagestreamllc.com
+- DOMAIN-SUFFIX,ars-consumerreports.com
+- DOMAIN-SUFFIX,corelogic.com
+- DOMAIN-SUFFIX,teletrack.com
+- DOMAIN-SUFFIX,nctue.com
+- DOMAIN-SUFFIX,certegy.com
+- DOMAIN-SUFFIX,telecheck.com
+- DOMAIN-SUFFIX,microbilt.com
 
   # 评分模型与第三方信用查分 / 监控平台
-  - DOMAIN-SUFFIX,fico.com
-  - DOMAIN-SUFFIX,myfico.com
-  - DOMAIN-SUFFIX,vantagescore.com
-  - DOMAIN-SUFFIX,creditkarma.com
-  - DOMAIN-SUFFIX,credit.com
-  - DOMAIN-SUFFIX,creditsesame.com
-  - DOMAIN-SUFFIX,nerdwallet.com
-  - DOMAIN-SUFFIX,wallethub.com
-  - DOMAIN-SUFFIX,nav.com
-  - DOMAIN-SUFFIX,savvymoney.com
-  - DOMAIN-SUFFIX,smartcredit.com
-  - DOMAIN-SUFFIX,scoresense.com
-  - DOMAIN-SUFFIX,identityguard.com
-  - DOMAIN-SUFFIX,lifelock.com
-  - DOMAIN-SUFFIX,aura.com
-  - DOMAIN-SUFFIX,identityforce.com
-  - DOMAIN-SUFFIX,privacyguard.com
-  - DOMAIN-SUFFIX,identitytheft.gov
+- DOMAIN-SUFFIX,fico.com
+- DOMAIN-SUFFIX,myfico.com
+- DOMAIN-SUFFIX,vantagescore.com
+- DOMAIN-SUFFIX,creditkarma.com
+- DOMAIN-SUFFIX,credit.com
+- DOMAIN-SUFFIX,creditsesame.com
+- DOMAIN-SUFFIX,nerdwallet.com
+- DOMAIN-SUFFIX,wallethub.com
+- DOMAIN-SUFFIX,nav.com
+- DOMAIN-SUFFIX,savvymoney.com
+- DOMAIN-SUFFIX,smartcredit.com
+- DOMAIN-SUFFIX,scoresense.com
+- DOMAIN-SUFFIX,identityguard.com
+- DOMAIN-SUFFIX,lifelock.com
+- DOMAIN-SUFFIX,aura.com
+- DOMAIN-SUFFIX,identityforce.com
+- DOMAIN-SUFFIX,privacyguard.com
+- DOMAIN-SUFFIX,identitytheft.gov
 
   # ==========================================
-  # 8. 安全防护、身份 KYC、反欺诈与底层环境一致性
+  # 8. 安全防护、身份 KYC、反欺诈与移动端全量埋点 (绝不错漏)
   # ==========================================
   # WAF 盾与人机验证码 (精准子域版，不抢占 AI 与系统通道)
-  - DOMAIN-SUFFIX,imperva.com
-  - DOMAIN-SUFFIX,incapsula.com
-  - DOMAIN-SUFFIX,hcaptcha.com
-  - DOMAIN-SUFFIX,recaptcha.net
-  - DOMAIN-SUFFIX,arkoselabs.com
-  - DOMAIN-SUFFIX,perimeterx.net
-  - DOMAIN-SUFFIX,px-cdn.net
-  - DOMAIN-SUFFIX,px-cloud.net
-  - DOMAIN-SUFFIX,datadome.co
-  - DOMAIN-SUFFIX,kasada.io
-  - DOMAIN-SUFFIX,challenges.cloudflare.com
-  - DOMAIN,recaptcha.google.com
-  - DOMAIN,recaptchaenterprise.googleapis.com
-  - DOMAIN,www.gstatic.com
-  - DOMAIN,ssl.gstatic.com
-  - DOMAIN,maps.gstatic.com
-  - DOMAIN,maps.google.com
-  - DOMAIN,maps.googleapis.com
-  - DOMAIN,places.googleapis.com
-  - DOMAIN,addressvalidation.googleapis.com
-  - DOMAIN,geolocation.googleapis.com
-  - DOMAIN,fonts.googleapis.com
-  - DOMAIN,ajax.googleapis.com
-  - DOMAIN,www.googletagmanager.com
-  - DOMAIN,firebaseinstallations.googleapis.com
-  - DOMAIN,firebaseremoteconfig.googleapis.com
-  - DOMAIN,play.googleapis.com
-  - DOMAIN,androidcheck.googleapis.com
-  - DOMAIN,appattest.apple.com
-  - DOMAIN,devicecheck.apple.com
+- DOMAIN-SUFFIX,imperva.com
+- DOMAIN-SUFFIX,incapsula.com
+- DOMAIN-SUFFIX,hcaptcha.com
+- DOMAIN-SUFFIX,recaptcha.net
+- DOMAIN-SUFFIX,arkoselabs.com
+- DOMAIN-SUFFIX,perimeterx.net
+- DOMAIN-SUFFIX,px-cdn.net
+- DOMAIN-SUFFIX,px-cloud.net
+- DOMAIN-SUFFIX,challenges.cloudflare.com
+- DOMAIN,www.gstatic.com
+- DOMAIN,ssl.gstatic.com
+- DOMAIN,maps.gstatic.com
+- DOMAIN,recaptchaenterprise.googleapis.com
+- DOMAIN,maps.googleapis.com
+- DOMAIN,places.googleapis.com
+- DOMAIN,fonts.googleapis.com
+- DOMAIN,ajax.googleapis.com
 
-  # 反欺诈与设备指纹 (US Bank / Chase / Amex 核心风控依赖)
-  - DOMAIN-SUFFIX,threatmetrix.com
-  - DOMAIN-SUFFIX,online-metrix.net
-  - DOMAIN-SUFFIX,lexisnexis.com
-  - DOMAIN-SUFFIX,threatexpert.com
-  - DOMAIN-SUFFIX,iovation.com
-  - DOMAIN-SUFFIX,iesnare.com
-  - DOMAIN-SUFFIX,siftscience.com
-  - DOMAIN-SUFFIX,sift.com
-  - DOMAIN-SUFFIX,forter.com
-  - DOMAIN-SUFFIX,kount.com
-  - DOMAIN-SUFFIX,biocatch.com
-  - DOMAIN-SUFFIX,behaviosec.com
-  - DOMAIN-SUFFIX,sardine.ai
-  - DOMAIN-SUFFIX,prodregistryv2.org
-  - DOMAIN-SUFFIX,featureassets.org
+  # 反欺诈与设备指纹 (US Bank 核心风控依赖)
+- DOMAIN-SUFFIX,threatmetrix.com
+- DOMAIN-SUFFIX,online-metrix.net
+- DOMAIN-SUFFIX,lexisnexis.com
+- DOMAIN-SUFFIX,threatexpert.com
+- DOMAIN-SUFFIX,iovation.com
+- DOMAIN-SUFFIX,iesnare.com
+- DOMAIN-SUFFIX,siftscience.com
+- DOMAIN-SUFFIX,sift.com
+- DOMAIN-SUFFIX,forter.com
+- DOMAIN-SUFFIX,kount.com
+- DOMAIN-SUFFIX,biocatch.com
+- DOMAIN-SUFFIX,behaviosec.com
+- DOMAIN-SUFFIX,prodregistryv2.org
+- DOMAIN-SUFFIX,featureassets.org
 
-  # 身份核验 (KYC / SSO / 电信2FA验证)
-  - DOMAIN-SUFFIX,id.me
-  - DOMAIN-SUFFIX,withpersona.com
-  - DOMAIN-SUFFIX,veriff.com
-  - DOMAIN-SUFFIX,jumio.com
-  - DOMAIN-SUFFIX,onfido.com
-  - DOMAIN-SUFFIX,trulioo.com
-  - DOMAIN-SUFFIX,socure.com
-  - DOMAIN-SUFFIX,entrust.net
-  - DOMAIN-SUFFIX,duosecurity.com
-  - DOMAIN-SUFFIX,symantec.com
-  - DOMAIN-SUFFIX,okta.com
-  - DOMAIN-SUFFIX,oktacdn.com
-  - DOMAIN-SUFFIX,onelogin.com
-  - DOMAIN-SUFFIX,twilio.com
-  - DOMAIN-SUFFIX,telesign.com
-  - DOMAIN-SUFFIX,sinch.com
+  # 身份核验 (KYC / SSO)
+- DOMAIN-SUFFIX,id.me
+- DOMAIN-SUFFIX,withpersona.com
+- DOMAIN-SUFFIX,veriff.com
+- DOMAIN-SUFFIX,jumio.com
+- DOMAIN-SUFFIX,onfido.com
+- DOMAIN-SUFFIX,trulioo.com
+- DOMAIN-SUFFIX,socure.com
+- DOMAIN-SUFFIX,entrust.net
+- DOMAIN-SUFFIX,duosecurity.com
+- DOMAIN-SUFFIX,symantec.com
+- DOMAIN-SUFFIX,okta.com
+- DOMAIN-SUFFIX,oktacdn.com
+- DOMAIN-SUFFIX,onelogin.com
 
-  # 全量前端埋点、灰度控制、推送与App内客服 (完整保留防双IP异常)
-  - DOMAIN-SUFFIX,adobedtm.com
-  - DOMAIN-SUFFIX,omtrdc.net
-  - DOMAIN-SUFFIX,demdex.net
-  - DOMAIN-SUFFIX,everesttech.net
-  - DOMAIN-SUFFIX,amplitude.com
-  - DOMAIN-SUFFIX,newrelic.com
-  - DOMAIN-SUFFIX,kochava.com
-  - DOMAIN-SUFFIX,branch.io
-  - DOMAIN-SUFFIX,customer.io
-  - DOMAIN-SUFFIX,intercom.io
-  - DOMAIN-SUFFIX,intercomcdn.com
-  - DOMAIN-SUFFIX,helpshift.com
-  - DOMAIN-SUFFIX,glia.com
-  - DOMAIN-SUFFIX,launchdarkly.com
-  - DOMAIN-SUFFIX,glance.net
-  - DOMAIN-SUFFIX,akstat.io
-  - DOMAIN-SUFFIX,go-mpulse.net
-  - DOMAIN-SUFFIX,ws-eu.pusher.com
-  - DOMAIN-SUFFIX,appsflyersdk.com
-  - DOMAIN-SUFFIX,apptentive.com
-  - DOMAIN-SUFFIX,securetheorem.com
-  - DOMAIN-SUFFIX,transmitsecurity.io
-  - DOMAIN-SUFFIX,glassboxdigital.io
-  - DOMAIN-SUFFIX,mparticle.com
-  - DOMAIN-SUFFIX,braze.com
-  - DOMAIN-SUFFIX,braze-images.com
-  - DOMAIN-SUFFIX,sprig.com
-  - DOMAIN-SUFFIX,qualtrics.com
-  - DOMAIN-SUFFIX,ipify.org
-  - DOMAIN-SUFFIX,ingest.us.sentry.io
-  - DOMAIN,us.sentry.io
-  - DOMAIN,sentry.io
-  - DOMAIN,auth.sentry.io
-  - DOMAIN-SUFFIX,sentry-cdn.com
+  # 全量前端埋点、灰度控制、推送、报错收集与会话回放
+- DOMAIN-SUFFIX,adobedtm.com
+- DOMAIN-SUFFIX,omtrdc.net
+- DOMAIN-SUFFIX,demdex.net
+- DOMAIN-SUFFIX,everesttech.net
+- DOMAIN-SUFFIX,amplitude.com
+- DOMAIN-SUFFIX,newrelic.com
+- DOMAIN-SUFFIX,kochava.com
+- DOMAIN-SUFFIX,branch.io
+- DOMAIN-SUFFIX,customer.io
+- DOMAIN-SUFFIX,intercom.io
+- DOMAIN-SUFFIX,intercomcdn.com
+- DOMAIN-SUFFIX,helpshift.com
+- DOMAIN-SUFFIX,glia.com
+- DOMAIN-SUFFIX,launchdarkly.com
+- DOMAIN-SUFFIX,glance.net
+- DOMAIN-SUFFIX,akstat.io
+- DOMAIN-SUFFIX,go-mpulse.net
+- DOMAIN-SUFFIX,ws-eu.pusher.com
+- DOMAIN-SUFFIX,appsflyersdk.com
+- DOMAIN-SUFFIX,apptentive.com
+- DOMAIN-SUFFIX,securetheorem.com
+- DOMAIN-SUFFIX,transmitsecurity.io
+- DOMAIN-SUFFIX,glassboxdigital.io
+- DOMAIN-SUFFIX,mparticle.com
+- DOMAIN-SUFFIX,braze.com
+- DOMAIN-SUFFIX,braze-images.com
+- DOMAIN-SUFFIX,sprig.com
+- DOMAIN-SUFFIX,qualtrics.com
+- DOMAIN-SUFFIX,ipify.org
+- DOMAIN-SUFFIX,ingest.us.sentry.io
+- DOMAIN-SUFFIX,ingest.sentry.io
+- DOMAIN-SUFFIX,o0.ingest.sentry.io
+- DOMAIN,us.sentry.io
+- DOMAIN,sentry.io
+- DOMAIN,auth.sentry.io
+- DOMAIN-SUFFIX,sentry-cdn.com
+- DOMAIN-SUFFIX,bugsnag.com
+- DOMAIN-SUFFIX,notify.bugsnag.com
+- DOMAIN-SUFFIX,sessions.bugsnag.com
+- DOMAIN-SUFFIX,datadoghq.com
+- DOMAIN-SUFFIX,browser-intake-datadoghq.com
+- DOMAIN-SUFFIX,rum.browser-intake-datadoghq.com
+- DOMAIN-SUFFIX,logrocket.com
+- DOMAIN-SUFFIX,logrocket.io
+- DOMAIN-SUFFIX,fullstory.com
+- DOMAIN-SUFFIX,rs.fullstory.com
+- DOMAIN-SUFFIX,rollbar.com
+- DOMAIN-SUFFIX,raygun.com
+- DOMAIN-SUFFIX,crashlytics.com
+- DOMAIN-SUFFIX,honeybadger.io
+- DOMAIN-SUFFIX,trackjs.com
 
   # ==========================================
   # 9. 美国政务与公用服务
   # ==========================================
-  - DOMAIN-SUFFIX,usps.com
-  - DOMAIN-SUFFIX,usps.org
-  - DOMAIN-SUFFIX,informeddelivery.com
-  - DOMAIN-SUFFIX,uspspostalone.com
-  - DOMAIN-SUFFIX,irs.gov
-  - DOMAIN-SUFFIX,ssa.gov
+- DOMAIN-SUFFIX,usps.com
+- DOMAIN-SUFFIX,usps.org
+- DOMAIN-SUFFIX,informeddelivery.com
+- DOMAIN-SUFFIX,uspspostalone.com
+- DOMAIN-SUFFIX,irs.gov
+- DOMAIN-SUFFIX,ssa.gov
