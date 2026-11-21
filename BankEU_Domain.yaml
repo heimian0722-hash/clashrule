@@ -1,25 +1,39 @@
 payload:
-  # > Myfin (保加利亚数字银行)
+  # ==========================================
+  # 1. Wise (国区身份注册，全套域名直连)
+  # 注：请同步从 BankUS 中删除 wise.com / wise.net / transferwise.com
+  # ==========================================
+  - DOMAIN-SUFFIX,wise.com
+  - DOMAIN-SUFFIX,wise.net
+  - DOMAIN-SUFFIX,transferwise.com
+
+  # ==========================================
+  # 2. iFAST Global Bank (英国持牌数字银行)
+  # ==========================================
+  - DOMAIN-SUFFIX,ifastgb.com
+  - DOMAIN-SUFFIX,ifastgb.co.uk
+
+  # ==========================================
+  # 3. MyFin (保加利亚数字银行)
+  # ==========================================
   - DOMAIN-SUFFIX,myfin.bg
   - DOMAIN-SUFFIX,myfin.com
 
-  # > N26 (德国数字银行)
+  # ==========================================
+  # 4. N26 (德国数字银行)
+  # ==========================================
   - DOMAIN-SUFFIX,n26.com
   - DOMAIN-SUFFIX,tech26.de
+  - DOMAIN-SUFFIX,number26.de
 
-  # > Swiss Banks (瑞士银行合集: Swissquote, Yuh, Dukascopy)
-  # Yuh (由 Swissquote 和 PostFinance 合作推出)
+  # ==========================================
+  # 5. Swiss Banks (瑞士银行合集: Swissquote, Yuh, Dukascopy, PostFinance)
+  # ==========================================
   - DOMAIN-SUFFIX,yuh.com
-  # Swissquote (瑞讯银行)
   - DOMAIN-SUFFIX,swissquote.com
   - DOMAIN-SUFFIX,swissquote.ch
   - DOMAIN-SUFFIX,swissquote.lu
-  # Dukascopy (杜高斯贝)
   - DOMAIN-SUFFIX,dukascopy.com
   - DOMAIN-SUFFIX,dukascopy.bank
   - DOMAIN-SUFFIX,dukascopy.ch
-  # PostFinance (瑞士邮政储蓄 - Yuh的母公司之一)
   - DOMAIN-SUFFIX,postfinance.ch
-
-  # > Wise (英国公司 国区身份注册，直连访问)
-  - DOMAIN-SUFFIX,wise.com
