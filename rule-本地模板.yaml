@@ -20,9 +20,11 @@ ntp:
 dns:
   enable: true
   listen: 0.0.0.0:1053
+  ipv6: false
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
+    - 8.8.8.8
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
@@ -40,34 +42,44 @@ dns:
     geoip-code: CN
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - "*.lan"
-    - "*.local"
+fake-ip-filter:
+    - "+.lan"
+    - "+.local"
     - "WORKGROUP"
     - "ntp.aliyun.com"
     - "time.windows.com"
     - "time.nist.gov"
-    - "time.apple.com"
-    - "time.asia.apple.com"
-    - "*.msftncsi.com"
-    - "*.msftconnecttest.com"
+    - "+.apple.com"
+    - "+.msftncsi.com"
+    - "+.msftconnecttest.com"
     - "*.n.n.srv.nintendo.net"
     - "+.stun.playstation.net"
     - "*.*.xboxlive.com"
     - "xbox.*.*.microsoft.com"
     - "stun.*.*"
     - "stun.*.*.*"
-    - "pool.ntp.org"
+    - "+.pool.ntp.org"
     - "ntp.ubuntu.com"
     - "*.ntp.org.cn"
     - "*.openwrt.pool.ntp.org"
     - "time1.cloud.tencent.com"
     - "time.ustc.edu.cn"
     - "speedtest.cros.wr.pvp.net"
+    - "+.stun.l.google.com"
+    - "+.telephony.goog"
+    - "+.voice.google.com"
+    - "+.3gppnetwork.org"
+    - "*.pub.3gppnetwork.org"
+    - "+.vzwwo.com"
+    - "+.att.net"
+    - "epdg.epc.att.net"
 
+proxies:    #添加静态节点信息,ip端口用户用户名密码等
+  - name: "xxx"
+    type: vless
 
 clean: &clean
-  filter: "(?i)^(?!.*(流量|套餐|到期|剩余|重置|官网|网站|域名|地址|机场|入口|节点|注意|维护|失联|公告|通知|电报|群|频道|说明|最新|客服|工单|订阅|更新|失败|超时|expire|traffic|reset|remaining|official|website|telegram|tg|qq)).*$"
+  filter: "(?i)^(?!.*(流量|套餐|到期|剩余|重置|官网|网站|域名|地址|机场|入口|注意|维护|失联|公告|通知|电报|群|频道|说明|最新|客服|工单|订阅|时间|更新|失败|超时|请使用|expire|traffic|reset|remaining|official|website|telegram|tg|qq)).*$"
 
 provider_base: &provider_base
   type: http
@@ -97,52 +109,31 @@ proxy-providers-config:
 
 
 
-
-#预留链式代理添加位置
-pr: &pr
-  proxies:  #添加静态节点名称 静态住宅1
-
-
-
-proxies:    #添加静态节点信息,ip端口用户用户名密码等
-
-
-
-
 rules:
-  - RULE-SET,residential,🔗 住宅中转
-  - DST-PORT,500,📞 Wificalling
-  - DST-PORT,4500,📞 Wificalling
-  - RULE-SET,wificalling,📞 Wificalling
+  - GEOSITE,private,DIRECT
+  - GEOIP,private,DIRECT,no-resolve
+  # 优先强制接管 Wi-Fi Calling 流量
+  - DST-PORT,500,📞 Wi-Fi Calling
+  - DST-PORT,4500,📞 Wi-Fi Calling
+  - RULE-SET,wificalling,📞 Wi-Fi Calling
   - RULE-SET,reject,🛑 净化拦截
   - RULE-SET,reject-extra,🛑 净化拦截
   - RULE-SET,reject-cn,🛑 净化拦截
-  - GEOSITE,private,DIRECT
-  - GEOIP,private,DIRECT,no-resolve
-  - RULE-SET,direct-custom-ip,DIRECT
-  - RULE-SET,direct-custom-dom,DIRECT
-  - RULE-SET,direct-cn-dom,DIRECT
-  - GEOSITE,deepseek,DIRECT
-  - GEOSITE,feishu,DIRECT
-  - GEOSITE,category-ai-cn,DIRECT
+  - GEOSITE,adobe,🟥 Adobe
   - GEOSITE,apple,🍎 Apple
-  - GEOSITE,apple-cn,DIRECT
-  - GEOSITE,openai,🤖 ChatGPT
   - RULE-SET,ai-domain,🧠 AI
   - GEOSITE,category-ai-!cn,🧠 AI
   - GEOSITE,google,🔎 Google
-  - DOMAIN-SUFFIX,gvt0.com,🔎 Google
-  - DOMAIN-SUFFIX,gvt1.com,🔎 Google
-  - DOMAIN-SUFFIX,gvt2.com,🔎 Google
-  - DOMAIN-SUFFIX,gvt3.com,🔎 Google
   - GEOIP,google,🔎 Google,no-resolve
-  - GEOSITE,google-cn,DIRECT
   - RULE-SET,bank-us,🇺🇸 BankUS
   - RULE-SET,shop-us,🇺🇸 BankUS
   - RULE-SET,bank-hk,🇭🇰 BankHK
   - RULE-SET,bank-eu,🇪🇺 BankEU
   - RULE-SET,crypto-a,💰 币圈A
   - RULE-SET,crypto-b,💰 币圈B
+  - GEOSITE,twitter,🐦 X
+  - GEOSITE,instagram,💬 社交媒体
+  - RULE-SET,proxy-cn-img,💬 社交媒体
   - RULE-SET,telegram,📨 Telegram
   - GEOSITE,telegram,📨 Telegram
   - GEOIP,telegram,📨 Telegram,no-resolve
@@ -152,34 +143,49 @@ rules:
   - RULE-SET,tiktok-ext,🎵 TikTok
   - GEOSITE,tiktok,🎵 TikTok
   - GEOIP,tiktok,🎵 TikTok,no-resolve
-  - GEOSITE,instagram,💬 社交媒体
-  - GEOSITE,twitter,💬 社交媒体
-  - RULE-SET,proxy-cn-img,💬 社交媒体
   - GEOSITE,notion,📦 Notion
   - GEOIP,notion,📦 Notion,no-resolve
-  - GEOSITE,adobe,🟥 Adobe
   - GEOSITE,github,🧑‍💻 GitHub
   - GEOIP,github,🧑‍💻 GitHub,no-resolve
   - GEOSITE,microsoft,🖥️ Microsoft
   - GEOIP,microsoft,🖥️ Microsoft,no-resolve
   - GEOSITE,steam,🎮 Steam
   - GEOSITE,cloudflare,☁️ cloudflare
-  - GEOIP,cloudflare,☁️ cloudflare,no-resolve
   - GEOSITE,category-speedtest,🚝 测速工具
-  - GEOSITE,category-games@cn,DIRECT
-  - GEOSITE,category-game-platforms-download,DIRECT
-  - GEOSITE,category-public-tracker,DIRECT
-  - GEOSITE,cn,DIRECT
-  - GEOIP,CN,DIRECT,no-resolve
   - RULE-SET,proxy-cn-dom,🌐 代理补充
   - GEOSITE,gfw,🌐 代理补充
+  - GEOSITE,deepseek,DIRECT
+  - GEOSITE,feishu,DIRECT
+  - GEOSITE,category-ai-cn,DIRECT
+  - RULE-SET,direct-custom-ip,DIRECT
+  - RULE-SET,direct-custom-dom,DIRECT
+  - RULE-SET,direct-cn-dom,DIRECT
+  - GEOSITE,cn,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
   - MATCH,🐟 漏网之鱼
 
 proxy-groups:
   - name: 🚀 手动选择
     type: select
+    proxies:
+      - 🇺🇸 诺联-COX
     <<: *use-all
-    <<: *pr
+
+  - name: 🛫 静态中转
+    type: select
+    proxies:
+      - 🇭🇰 HK
+      - 🇯🇵 JP
+      - 🇸🇬 SG
+    <<: *use-all
+
+  - name: 📞 Wi-Fi Calling
+    type: select
+    proxies:
+      - 🇺🇸 诺联-COX
+      - 🇺🇸 US
+      - 🚀 手动选择
+    <<: *use-all
 
   - name: ♻️ 自动选择
     type: url-test
@@ -190,7 +196,7 @@ proxy-groups:
 
   - name: 📡 倍率节省
     type: url-test
-    filter: "0.1|0.01|0.001|0.05" 
+    filter: "0.1|0.01|0.001|0.05"
     url: http://www.gstatic.com/generate_204
     interval: 600
     tolerance: 100
@@ -200,21 +206,11 @@ proxy-groups:
     type: select
     proxies: [REJECT, DIRECT, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省]
 
-  - name: 🔗 住宅中转
-    type: select
-    proxies: [🇸🇬 SG, 🇭🇰 HK, 🇺🇸 US, 🇹🇼 TW, 🇯🇵 JP, 🚀 手动选择, ♻️ 自动选择, DIRECT]
-    <<: *use-all
-
-  - name: 指定代理
-    type: select
-    <<: *use-all
-    <<: *pr
-
   - name: 🌐 代理补充
     type: select
     proxies: [♻️ 自动选择, 🚀 手动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
     <<: *use-all
-    
+
   - name: 🐟 漏网之鱼
     type: select
     proxies: [♻️ 自动选择, 🚀 手动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
@@ -222,17 +218,12 @@ proxy-groups:
 
   - name: 🧠 AI
     type: select
-    proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🇯🇵 JP, 🧊 冷门节点, 🚀 手动选择, ♻️ 自动选择]
-    <<: *use-all
-
-  - name: 🤖 ChatGPT
-    type: select
-    proxies: [🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🇯🇵 JP, 🧊 冷门节点, 🚀 手动选择, ♻️ 自动选择]
+    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省]
     <<: *use-all
 
   - name: 🔎 Google
     type: select
-    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
+    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省]
     <<: *use-all
 
   - name: 🍎 Apple
@@ -240,11 +231,6 @@ proxy-groups:
     proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
     <<: *use-all
 
-  - name: 📞 Wificalling
-    type: select
-    proxies: [🇺🇸 US, 🚀 手动选择, DIRECT]
-    <<: *use-all
-    
   - name: 🇺🇸 BankUS
     type: select
     proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择]
@@ -267,22 +253,26 @@ proxy-groups:
 
   - name: 💰 币圈B
     type: select
-    proxies: [🇭🇰 HK, 🇸🇬 SG, 🇹🇼 TW, 🚀 手动选择, ♻️ 自动选择, DIRECT]
+    proxies: [🇹🇼 TW, 🇭🇰 HK, 🇸🇬 SG, 🚀 手动选择, ♻️ 自动选择, DIRECT]
     <<: *use-all
 
   - name: 🧑‍💻 GitHub
     type: select
-    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇭🇰 HK, 🇸🇬 SG, DIRECT]
+    proxies: [🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇭🇰 HK, 🇸🇬 SG]
     <<: *use-all
 
   - name: ☁️ cloudflare
     type: select
-    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, DIRECT]
-    <<: *use-all
+    proxies: [DIRECT, 🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, 🇭🇰 HK]
 
   - name: 🖥️ Microsoft
     type: select
     proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
+    <<: *use-all
+
+  - name: 🐦 X
+    type: select
+    proxies: [🚀 手动选择, ♻️ 自动选择, 📡 倍率节省, 🇺🇸 US, 🇭🇰 HK, 🇸🇬 SG]
     <<: *use-all
 
   - name: 💬 社交媒体
@@ -332,6 +322,8 @@ proxy-groups:
 
   - name: 🇺🇸 US
     type: select
+    proxies:
+      - 🇺🇸 诺联-COX
     filter: "(?i)(🇺🇸|美国|\\bUS\\b|united states|los angeles|san jose|seattle|new york)"
     <<: *use-all
 
@@ -373,17 +365,11 @@ proxy-groups:
     <<: *use-all
 
 rule-providers:
-  residential:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/StaticResidential.yaml"
-    path: ./rules/res.yaml
-    interval: 86400
   wificalling:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Wificalling.yaml"
-    path: ./rules/wifi.yaml
+    path: ./rules/wificalling.yaml
     interval: 86400
   reject:
     type: http
@@ -393,13 +379,13 @@ rule-providers:
     interval: 86400
   reject-extra:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BANAD.yaml"
     path: ./rules/reject_ext.yaml
     interval: 86400
   reject-cn:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/CN_Reject_Domain.yaml"
     path: ./rules/reject_cn.yaml
     interval: 86400
@@ -417,61 +403,61 @@ rule-providers:
     interval: 86400
   direct-cn-dom:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/CN_Direct_Domain.yaml"
     path: ./rules/dir_cn.yaml
     interval: 86400
   proxy-cn-img:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/CN_Proxy_Domain_img.yaml"
     path: ./rules/p_cn_img.yaml
     interval: 86400
   proxy-cn-dom:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/CN_Proxy_Domain.yaml"
     path: ./rules/p_cn.yaml
     interval: 86400
   bank-us:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BankUS_Domain.yaml"
     path: ./rules/bus.yaml
     interval: 86400
   shop-us:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/ShopUS.yaml"
     path: ./rules/shopus.yaml
     interval: 86400
   bank-hk:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BankHK_Domain.yaml"
     path: ./rules/bhk.yaml
     interval: 86400
   bank-eu:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BankEU_Domain.yaml"
     path: ./rules/beu.yaml
     interval: 86400
   crypto-a:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Crypto-A.yaml"
     path: ./rules/ca.yaml
     interval: 86400
   crypto-b:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Crypto-B.yaml"
     path: ./rules/cb.yaml
     interval: 86400
   ai-domain:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/AI-Domain.yaml"
     path: ./rules/ai.yaml
     interval: 86400
@@ -483,7 +469,7 @@ rule-providers:
     interval: 86400
   tiktok-ext:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Bytedance.yaml"
     path: ./rules/tiktok_ext.yaml
     interval: 86400
