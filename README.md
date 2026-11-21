@@ -11,6 +11,12 @@
 
 ----meta-rule.ini openclash在线订阅转换模板，直接食用https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/meta-rule.ini
 
+
+域名分类规则集yaml，已全部改成classical格式，openclash 的yaml、shadowrocket小火箭配置conf 都可以引用；
+
+域名分流规则集json，作为给singbox用的文件，karing等可以在分流规则详情内再添加引用；
+
+
 **3、全局扩展脚本防DNS泄露-xiaolin007.js**
 
 ----**clash verge软件免费，首选**
