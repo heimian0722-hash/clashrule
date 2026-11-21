@@ -8,6 +8,12 @@ payload:
   - DOMAIN-SUFFIX,envestnet.com
   - DOMAIN-SUFFIX,finicity.com
   - DOMAIN-SUFFIX,mx.com
+  - DOMAIN-SUFFIX,akoya.com
+  - DOMAIN-SUFFIX,teller.io
+  - DOMAIN-SUFFIX,methodfi.com
+  - DOMAIN-SUFFIX,argyle.com
+  - DOMAIN-SUFFIX,pinwheelapi.com
+  - DOMAIN-SUFFIX,atomicfi.com
   - DOMAIN-SUFFIX,zelle.com
   - DOMAIN-SUFFIX,zellepay.com
   - DOMAIN-SUFFIX,stripe.com
@@ -18,6 +24,8 @@ payload:
   - DOMAIN-SUFFIX,lemonadefi.com
   - DOMAIN-SUFFIX,cardinalcommerce.com
   - DOMAIN-SUFFIX,arcot.com
+  - DOMAIN-SUFFIX,cybersource.com
+  - DOMAIN-SUFFIX,ethoca.com
 
   # ==========================================
   # 2. 电子钱包与支付生态 (PayPal / Cash App / Venmo)
@@ -60,6 +68,7 @@ payload:
   - DOMAIN-SUFFIX,amex.co
   - DOMAIN-SUFFIX,inauth.com
   - DOMAIN-SUFFIX,inauth.net
+  - DOMAIN-SUFFIX,accertify.com
 
   # Capital One (第一资本)
   - DOMAIN-SUFFIX,capitalone.com
@@ -297,67 +306,67 @@ payload:
   - DOMAIN-SUFFIX,tradingview.com
   - DOMAIN-SUFFIX,tvstatic.com
 
-# ==========================================
-  # 7. 信用局报告、次级征信与第三方查分监控 (全量版)
+  # ==========================================
+  # 7. 信用局报告、次级征信与第三方查分监控
   # ==========================================
   # 三大核心信用局 & 旗下门户
-- DOMAIN-SUFFIX,experian.com
-- DOMAIN-SUFFIX,experian.co.uk
-- DOMAIN-SUFFIX,experian.in
-- DOMAIN-SUFFIX,experianconsumeringservices.com
-- DOMAIN-SUFFIX,expn.com
-- DOMAIN-SUFFIX,freecreditreport.com
-- DOMAIN-SUFFIX,freecreditscore.com
-- DOMAIN-SUFFIX,rentbureau.com
-- DOMAIN-SUFFIX,clarityservices.com
-- DOMAIN-SUFFIX,transunion.com
-- DOMAIN-SUFFIX,tu.com
-- DOMAIN-SUFFIX,truelink.com
-- DOMAIN-SUFFIX,factortrust.com
-- DOMAIN-SUFFIX,l2c.com
-- DOMAIN-SUFFIX,equifax.com
-- DOMAIN-SUFFIX,myequifax.com
-- DOMAIN-SUFFIX,efx.com
-- DOMAIN-SUFFIX,equi.com
-- DOMAIN-SUFFIX,annualcreditreport.com
-- DOMAIN-SUFFIX,optoutprescreen.com
+  - DOMAIN-SUFFIX,experian.com
+  - DOMAIN-SUFFIX,experian.co.uk
+  - DOMAIN-SUFFIX,experian.in
+  - DOMAIN-SUFFIX,experianconsumeringservices.com
+  - DOMAIN-SUFFIX,expn.com
+  - DOMAIN-SUFFIX,freecreditreport.com
+  - DOMAIN-SUFFIX,freecreditscore.com
+  - DOMAIN-SUFFIX,rentbureau.com
+  - DOMAIN-SUFFIX,clarityservices.com
+  - DOMAIN-SUFFIX,transunion.com
+  - DOMAIN-SUFFIX,tu.com
+  - DOMAIN-SUFFIX,truelink.com
+  - DOMAIN-SUFFIX,factortrust.com
+  - DOMAIN-SUFFIX,l2c.com
+  - DOMAIN-SUFFIX,equifax.com
+  - DOMAIN-SUFFIX,myequifax.com
+  - DOMAIN-SUFFIX,efx.com
+  - DOMAIN-SUFFIX,equi.com
+  - DOMAIN-SUFFIX,annualcreditreport.com
+  - DOMAIN-SUFFIX,optoutprescreen.com
 
   # 银行开户、第四信用局与专业/替代性征信局
-- DOMAIN-SUFFIX,innovis.com
-- DOMAIN-SUFFIX,chexsystems.com
-- DOMAIN-SUFFIX,earlywarning.com
-- DOMAIN-SUFFIX,lexisnexisrisk.com
-- DOMAIN-SUFFIX,sagestreamllc.com
-- DOMAIN-SUFFIX,ars-consumerreports.com
-- DOMAIN-SUFFIX,corelogic.com
-- DOMAIN-SUFFIX,teletrack.com
-- DOMAIN-SUFFIX,nctue.com
-- DOMAIN-SUFFIX,certegy.com
-- DOMAIN-SUFFIX,telecheck.com
-- DOMAIN-SUFFIX,microbilt.com
+  - DOMAIN-SUFFIX,innovis.com
+  - DOMAIN-SUFFIX,chexsystems.com
+  - DOMAIN-SUFFIX,earlywarning.com
+  - DOMAIN-SUFFIX,lexisnexisrisk.com
+  - DOMAIN-SUFFIX,sagestreamllc.com
+  - DOMAIN-SUFFIX,ars-consumerreports.com
+  - DOMAIN-SUFFIX,corelogic.com
+  - DOMAIN-SUFFIX,teletrack.com
+  - DOMAIN-SUFFIX,nctue.com
+  - DOMAIN-SUFFIX,certegy.com
+  - DOMAIN-SUFFIX,telecheck.com
+  - DOMAIN-SUFFIX,microbilt.com
 
   # 评分模型与第三方信用查分 / 监控平台
-- DOMAIN-SUFFIX,fico.com
-- DOMAIN-SUFFIX,myfico.com
-- DOMAIN-SUFFIX,vantagescore.com
-- DOMAIN-SUFFIX,creditkarma.com
-- DOMAIN-SUFFIX,credit.com
-- DOMAIN-SUFFIX,creditsesame.com
-- DOMAIN-SUFFIX,nerdwallet.com
-- DOMAIN-SUFFIX,wallethub.com
-- DOMAIN-SUFFIX,nav.com
-- DOMAIN-SUFFIX,savvymoney.com
-- DOMAIN-SUFFIX,smartcredit.com
-- DOMAIN-SUFFIX,scoresense.com
-- DOMAIN-SUFFIX,identityguard.com
-- DOMAIN-SUFFIX,lifelock.com
-- DOMAIN-SUFFIX,aura.com
-- DOMAIN-SUFFIX,identityforce.com
-- DOMAIN-SUFFIX,privacyguard.com
-- DOMAIN-SUFFIX,identitytheft.gov
+  - DOMAIN-SUFFIX,fico.com
+  - DOMAIN-SUFFIX,myfico.com
+  - DOMAIN-SUFFIX,vantagescore.com
+  - DOMAIN-SUFFIX,creditkarma.com
+  - DOMAIN-SUFFIX,credit.com
+  - DOMAIN-SUFFIX,creditsesame.com
+  - DOMAIN-SUFFIX,nerdwallet.com
+  - DOMAIN-SUFFIX,wallethub.com
+  - DOMAIN-SUFFIX,nav.com
+  - DOMAIN-SUFFIX,savvymoney.com
+  - DOMAIN-SUFFIX,smartcredit.com
+  - DOMAIN-SUFFIX,scoresense.com
+  - DOMAIN-SUFFIX,identityguard.com
+  - DOMAIN-SUFFIX,lifelock.com
+  - DOMAIN-SUFFIX,aura.com
+  - DOMAIN-SUFFIX,identityforce.com
+  - DOMAIN-SUFFIX,privacyguard.com
+  - DOMAIN-SUFFIX,identitytheft.gov
 
   # ==========================================
-  # 8. 安全防护、身份 KYC、反欺诈与移动端全量埋点 (绝不错漏)
+  # 8. 安全防护、身份 KYC、反欺诈与底层环境一致性
   # ==========================================
   # WAF 盾与人机验证码 (精准子域版，不抢占 AI 与系统通道)
   - DOMAIN-SUFFIX,imperva.com
@@ -368,17 +377,30 @@ payload:
   - DOMAIN-SUFFIX,perimeterx.net
   - DOMAIN-SUFFIX,px-cdn.net
   - DOMAIN-SUFFIX,px-cloud.net
+  - DOMAIN-SUFFIX,datadome.co
+  - DOMAIN-SUFFIX,kasada.io
   - DOMAIN-SUFFIX,challenges.cloudflare.com
+  - DOMAIN,recaptcha.google.com
+  - DOMAIN,recaptchaenterprise.googleapis.com
   - DOMAIN,www.gstatic.com
   - DOMAIN,ssl.gstatic.com
   - DOMAIN,maps.gstatic.com
-  - DOMAIN,recaptchaenterprise.googleapis.com
+  - DOMAIN,maps.google.com
   - DOMAIN,maps.googleapis.com
   - DOMAIN,places.googleapis.com
+  - DOMAIN,addressvalidation.googleapis.com
+  - DOMAIN,geolocation.googleapis.com
   - DOMAIN,fonts.googleapis.com
   - DOMAIN,ajax.googleapis.com
+  - DOMAIN,www.googletagmanager.com
+  - DOMAIN,firebaseinstallations.googleapis.com
+  - DOMAIN,firebaseremoteconfig.googleapis.com
+  - DOMAIN,play.googleapis.com
+  - DOMAIN,androidcheck.googleapis.com
+  - DOMAIN,appattest.apple.com
+  - DOMAIN,devicecheck.apple.com
 
-  # 反欺诈与设备指纹 (US Bank 核心风控依赖)
+  # 反欺诈与设备指纹 (US Bank / Chase / Amex 核心风控依赖)
   - DOMAIN-SUFFIX,threatmetrix.com
   - DOMAIN-SUFFIX,online-metrix.net
   - DOMAIN-SUFFIX,lexisnexis.com
@@ -391,10 +413,11 @@ payload:
   - DOMAIN-SUFFIX,kount.com
   - DOMAIN-SUFFIX,biocatch.com
   - DOMAIN-SUFFIX,behaviosec.com
+  - DOMAIN-SUFFIX,sardine.ai
   - DOMAIN-SUFFIX,prodregistryv2.org
   - DOMAIN-SUFFIX,featureassets.org
 
-  # 身份核验 (KYC / SSO)
+  # 身份核验 (KYC / SSO / 电信2FA验证)
   - DOMAIN-SUFFIX,id.me
   - DOMAIN-SUFFIX,withpersona.com
   - DOMAIN-SUFFIX,veriff.com
@@ -408,6 +431,9 @@ payload:
   - DOMAIN-SUFFIX,okta.com
   - DOMAIN-SUFFIX,oktacdn.com
   - DOMAIN-SUFFIX,onelogin.com
+  - DOMAIN-SUFFIX,twilio.com
+  - DOMAIN-SUFFIX,telesign.com
+  - DOMAIN-SUFFIX,sinch.com
 
   # 全量前端埋点、灰度控制、推送与App内客服 (完整保留防双IP异常)
   - DOMAIN-SUFFIX,adobedtm.com
