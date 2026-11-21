@@ -1,43 +1,51 @@
 payload:
   # --- TikTok (核心风控组) ---
-  - '+.tiktok.com'
-  - '+.tiktokv.com'
-  - '+.tiktokcdn.com'
-  - '+.tiktokcdn-us.com'
-  - '+.tiktokcdn-eu.com'
-  - '+.tik-tokapi.com'
-  - '+.musical.ly'           # 历史收购遗留，仍在某些接口使用
-  - '+.muscdn.com'
-  - '+.ttoversea.net'
-  - '+.ibytedtos.com'        # 核心数据域名
-  - '+.ibyteimg.com'
-  - '+.byteoversea.com'      # 海外版核心 API
-  - '+.byteoversea.net'
+  - DOMAIN-SUFFIX,tiktok.com
+  - DOMAIN-SUFFIX,tiktokv.com
+  - DOMAIN-SUFFIX,tiktokcdn.com
+  - DOMAIN-SUFFIX,tiktokcdn-us.com
+  - DOMAIN-SUFFIX,tiktokcdn-eu.com
+  - DOMAIN-SUFFIX,tik-tokapi.com
+  # 历史收购遗留，仍在某些接口使用
+  - DOMAIN-SUFFIX,musical.ly
+  - DOMAIN-SUFFIX,muscdn.com
+  - DOMAIN-SUFFIX,ttoversea.net
+  # 核心数据与图片域名
+  - DOMAIN-SUFFIX,ibytedtos.com
+  - DOMAIN-SUFFIX,ibyteimg.com
+  # 海外版核心 API
+  - DOMAIN-SUFFIX,byteoversea.com
+  - DOMAIN-SUFFIX,byteoversea.net
 
   # --- CapCut (剪映海外版) ---
-  - '+.capcut.com'
-  - '+.capcut.net'
-  - '+.capcut.io'
-  - '+.capcutstatic.com'
-  - '+.lvv-be.com'
+  - DOMAIN-SUFFIX,capcut.com
+  - DOMAIN-SUFFIX,capcut.net
+  - DOMAIN-SUFFIX,capcut.io
+  - DOMAIN-SUFFIX,capcutstatic.com
+  - DOMAIN-SUFFIX,lvv-be.com
 
   # --- Lark / Feishu (飞书海外版) ---
-  - '+.larksuite.com'
-  - '+.larkoffice.com'
-  - '+.larksuitecdn.com'
-  - '+.larksuiteapi.com'
+  - DOMAIN-SUFFIX,larksuite.com
+  - DOMAIN-SUFFIX,larkoffice.com
+  - DOMAIN-SUFFIX,larksuitecdn.com
+  - DOMAIN-SUFFIX,larksuiteapi.com
 
   # --- BytePlus (云服务 & 开发者) ---
-  - '+.byteplus.com'
-  - '+.byteplusapi.com'
-  - '+.byteplusefi.com'
-  - '+.bplslb.com'
+  - DOMAIN-SUFFIX,byteplus.com
+  - DOMAIN-SUFFIX,byteplusapi.com
+  - DOMAIN-SUFFIX,byteplusefi.com
+  - DOMAIN-SUFFIX,bplslb.com
 
   # --- 基础设施与统计 (通用海外) ---
-  - '+.bytedance.com'        # 虽是总部域名，但海外业务常挂载子域名
-  - '+.byteimg.com'          # 图片 CDN
-  - '+.isnssdk.com'          # 核心 SDK 统计
-  - '+.sgsnssdk.com'         # 新加坡节点统计
-  - '+.i18n-pglstatp.com'    # 广告与统计
-  - '+.pglstatp-toutiao.com'
-  - '+.zijieapi.com'         # 字节通用 API
+  # 总部域名（海外业务常挂载子域名）
+  - DOMAIN-SUFFIX,bytedance.com
+  # 图片 CDN
+  - DOMAIN-SUFFIX,byteimg.com
+  # 核心 SDK 与新加坡节点统计
+  - DOMAIN-SUFFIX,isnssdk.com
+  - DOMAIN-SUFFIX,sgsnssdk.com
+  # 广告与统计
+  - DOMAIN-SUFFIX,i18n-pglstatp.com
+  - DOMAIN-SUFFIX,pglstatp-toutiao.com
+  # 字节通用 API
+  - DOMAIN-SUFFIX,zijieapi.com
