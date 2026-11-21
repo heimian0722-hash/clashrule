@@ -1,78 +1,56 @@
 payload:
-  # > 香港传统持牌银行 (HK Traditional Banks)
-  # 中银香港
+  # ==========================================
+  # 1. 香港传统持牌银行 (HK Traditional Banks)
+  # ==========================================
   - DOMAIN-SUFFIX,bochk.com
-  # 汇丰银行 & 汇丰集团通用
   - DOMAIN-SUFFIX,hsbc.com.hk
   - DOMAIN-SUFFIX,hsbc.com
-  # 恒生银行
   - DOMAIN-SUFFIX,hangseng.com
-  # 渣打香港 & 渣打通用
   - DOMAIN-SUFFIX,standardchartered.com.hk
   - DOMAIN-SUFFIX,sc.com
-  # 招商永隆
   - DOMAIN-SUFFIX,cmbwinglungbank.com
-  # 花旗香港
   - DOMAIN-SUFFIX,citibank.com.hk
-  # 星展香港
   - DOMAIN-SUFFIX,dbs.com.hk
-  # 东亚银行
   - DOMAIN-SUFFIX,bea.com.hk
-  # 工银亚洲
   - DOMAIN-SUFFIX,icbcasia.com
-  # 建行亚洲
   - DOMAIN-SUFFIX,ccbasia.com
-  # 南洋商业银行
   - DOMAIN-SUFFIX,ncb.com.hk
-  # 集友银行
   - DOMAIN-SUFFIX,chiyu.com.hk
-  # 大新银行
   - DOMAIN-SUFFIX,dahsing.com
   - DOMAIN-SUFFIX,dahsingbank.com
-  # 上海商业银行
   - DOMAIN-SUFFIX,shacombank.com.hk
-  # 华侨银行香港
   - DOMAIN-SUFFIX,ocbc.com.hk
-  # 富邦银行
   - DOMAIN-SUFFIX,fubonbank.com.hk
-  # 大众银行
   - DOMAIN-SUFFIX,publicbank.com.hk
-  # 信银国际
   - DOMAIN-SUFFIX,cncbinternational.com
   - DOMAIN-SUFFIX,citicbank.com.hk
 
-  # > 新加坡核心银行 (SG Core Banks)
-  # 星展集团 & 新加坡 POSB
+  # ==========================================
+  # 2. 新加坡核心银行 (SG Core Banks)
+  # ==========================================
   - DOMAIN-SUFFIX,dbs.com
   - DOMAIN-SUFFIX,posb.com.sg
-  # 大华银行 & UOB 集团
   - DOMAIN-SUFFIX,uob.com.sg
   - DOMAIN-SUFFIX,uobgroup.com
-  # 华侨银行集团核心
   - DOMAIN-SUFFIX,ocbc.com
 
-  # > 虚拟银行 (Virtual Banks)
-  # 众安银行 (ZA Bank) & 技术支持
+  # ==========================================
+  # 3. 香港数字银行 (Virtual Banks)
+  # ==========================================
   - DOMAIN-SUFFIX,za.group
   - DOMAIN-SUFFIX,zatech.com
-  # Mox Bank
   - DOMAIN-SUFFIX,mox.com
-  # Livi Bank
   - DOMAIN-SUFFIX,livibank.com
-  # WeLab Bank
   - DOMAIN-SUFFIX,welab.bank
-  # 富融银行
   - DOMAIN-SUFFIX,fusionbank.com
-  # 平安壹账通
   - DOMAIN-SUFFIX,paob.com.hk
-  # 蚂蚁银行
   - DOMAIN-SUFFIX,antbank.hk
-  # 天星银行 (旧) & 象象银行 (新)
   - DOMAIN-SUFFIX,airstarbank.com
   - DOMAIN-SUFFIX,elebank.com
 
-  # > 富途 & Moomoo & 尊嘉全系 (Futu & Moomoo Global)
-  # 富途牛牛 / 行情 / 各地站点
+  # ==========================================
+  # 4. 富途 & Moomoo & 尊嘉金融全系
+  # ==========================================
   - DOMAIN-SUFFIX,futunn.com
   - DOMAIN-SUFFIX,futu5.com
   - DOMAIN-SUFFIX,futuhk.com
@@ -80,4 +58,54 @@ payload:
   - DOMAIN-SUFFIX,futuau.com
   - DOMAIN-SUFFIX,futuie.com
   - DOMAIN-SUFFIX,futuclub.com
-  - DOMAIN-SUFFIX
+  - DOMAIN-SUFFIX,futu-static.com
+  - DOMAIN-SUFFIX,futunniot.com
+  - DOMAIN-SUFFIX,futustatic.com
+  - DOMAIN-SUFFIX,futu-api.com
+  - DOMAIN-SUFFIX,moomoo.com
+  - DOMAIN-SUFFIX,moomoo.app
+  - DOMAIN-SUFFIX,moomoo.io
+  - DOMAIN-SUFFIX,mm.io
+  - DOMAIN-SUFFIX,moomoo-static.com
+  - DOMAIN-SUFFIX,moomoo-img.com
+  - DOMAIN-SUFFIX,moomoobull.com
+  - DOMAIN-SUFFIX,investassistant.com
+  - DOMAIN-SUFFIX,financialdatamining.com
+  - DOMAIN-SUFFIX,zvstapp.com
+
+  # ==========================================
+  # 5. 其他港新券商、交易所与市场基建
+  # ==========================================
+  - DOMAIN-SUFFIX,ifastfinancial.com.hk
+  - DOMAIN-SUFFIX,ifastfinancial.com
+  - DOMAIN-SUFFIX,itiger.com
+  - DOMAIN-SUFFIX,tigerbrokers.com
+  - DOMAIN-SUFFIX,tigerbrokers.com.hk
+  - DOMAIN-SUFFIX,longbridgeapp.com
+  - DOMAIN-SUFFIX,longbridge.hk
+  - DOMAIN-SUFFIX,vbroker.com.hk
+  - DOMAIN-SUFFIX,webull.hk
+  - DOMAIN-SUFFIX,webull-sg.com
+  - DOMAIN-SUFFIX,wstock.co
+  - DOMAIN-SUFFIX,api.wcc.best
+  - DOMAIN-SUFFIX,hashkey.com
+  - DOMAIN-SUFFIX,osl.com
+  - DOMAIN-SUFFIX,hkex.com.hk
+
+  # ==========================================
+  # 6. 港新支付、政务、通信与风控验证
+  # ==========================================
+  - DOMAIN-SUFFIX,alipay.hk
+  - DOMAIN-SUFFIX,octopus.com.hk
+  - DOMAIN-SUFFIX,octopuscards.com
+  - DOMAIN-SUFFIX,tapngo.com.hk
+  - DOMAIN-SUFFIX,payme.hsbc
+  - DOMAIN-SUFFIX,fps.com.hk
+  - DOMAIN-SUFFIX,hkicl.com.hk
+  - DOMAIN-SUFFIX,pps.com.hk
+  - DOMAIN-SUFFIX,hketoll.gov.hk
+  - DOMAIN-SUFFIX,ctm.net
+  - DOMAIN-SUFFIX,appsflyersdk.com
+  - DOMAIN-SUFFIX,lexisnexis.com
+  - DOMAIN-SUFFIX,jumio.com
+  - DOMAIN-SUFFIX,onfido.com
