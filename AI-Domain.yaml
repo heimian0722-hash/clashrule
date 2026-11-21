@@ -15,7 +15,10 @@ payload:
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
   - DOMAIN-SUFFIX,openaicom.imgix.net
   - DOMAIN-SUFFIX,sora.com
+  - DOMAIN,api-iam.intercom.io
+  - DOMAIN,api.statsig.com
   - DOMAIN,chat.openai.com.cdn.cloudflare.net
+  - DOMAIN,o33249.ingest.sentry.io
   - DOMAIN,openai-api.arkoselabs.com
   - DOMAIN,openaiassets.blob.core.windows.net
   - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
@@ -23,6 +26,8 @@ payload:
   - DOMAIN,production-openaicom-storage.azureedge.net
   - DOMAIN-KEYWORD,chatgpt
   - DOMAIN-KEYWORD,openai
+  - DOMAIN-KEYWORD,openaiapi
+  - DOMAIN-KEYWORD,openaicom
   - IP-CIDR,199.47.142.0/23,no-resolve
   - IP-CIDR,24.199.123.28/32,no-resolve
   - IP-CIDR,64.23.132.171/32,no-resolve
@@ -62,7 +67,7 @@ payload:
   - IP-ASN,399358,no-resolve
 
   # ==========================================
-  # 3. Google AI / Gemini / AI Studio / NotebookLM (含 iOS App 抓包接口)
+  # 3. Google AI / Gemini / AI Studio / NotebookLM
   # ==========================================
   - DOMAIN-SUFFIX,ai.google
   - DOMAIN-SUFFIX,ai.google.dev
@@ -75,6 +80,7 @@ payload:
   - DOMAIN-SUFFIX,gemini.gstatic.com
   - DOMAIN-SUFFIX,generativeai.google
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com
+  - DOMAIN-SUFFIX,googleapis.com
   - DOMAIN-SUFFIX,growth-pa.googleapis.com
   - DOMAIN-SUFFIX,makersuite.google.com
   - DOMAIN-SUFFIX,notebooklm.google
@@ -90,6 +96,7 @@ payload:
   - DOMAIN,antigravity.google
   - DOMAIN,bard.google.com
   - DOMAIN,cloudcode-pa.googleapis.com
+  - DOMAIN,jules.google.com
   - DOMAIN,notebooklm-pa.googleapis.com
   - DOMAIN-KEYWORD,antigravity
   - DOMAIN-KEYWORD,colab
@@ -137,6 +144,7 @@ payload:
   - DOMAIN-SUFFIX,cursor.com
   - DOMAIN-SUFFIX,cursor.sh
   - DOMAIN-SUFFIX,cursorapi.com
+  - DOMAIN-SUFFIX,cursorvm.com
   - DOMAIN-SUFFIX,codeium.com
   - DOMAIN-SUFFIX,codeiumdata.com
   - DOMAIN-SUFFIX,windsurf.build
