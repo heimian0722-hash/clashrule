@@ -5,13 +5,18 @@ payload:
   - DOMAIN,vowifi.apple.com
   - DOMAIN,entitlement.apple.com
   - DOMAIN,ess.apple.com
-  - DOMAIN,gs-loc.apple.com
   - DOMAIN,gsa.apple.com
+  - DOMAIN,xp.apple.com
   - DOMAIN,idmsa.apple.com
   - DOMAIN,appleid.apple.com
   - DOMAIN,wallet.apple.com
   - DOMAIN,apple-finance.apple.com
-  
+  # 定位与位置相关
+  - DOMAIN,gs-loc.apple.com
+  - DOMAIN,gs-loc-cn.apple.com
+  - DOMAIN,lcdn-locator.apple.com
+  - DOMAIN,lcdn-registration.apple.com
+  # Appstore 直连
   # - DOMAIN,smp-device-content.apple.com
   # - DOMAIN,mzstorekit.itunes.apple.com
   # - DOMAIN,amp-api.apps.apple.com
