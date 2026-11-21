@@ -6,7 +6,6 @@ payload:
   - DOMAIN,entitlement.apple.com
   - DOMAIN,ess.apple.com
   - DOMAIN,gs-loc.apple.com
-  - DOMAIN-SUFFIX,3gppnetwork.org
   - DOMAIN,gsa.apple.com
   - DOMAIN,idmsa.apple.com
   - DOMAIN,appleid.apple.com
@@ -18,6 +17,7 @@ payload:
   # ==========================================
   # 2. AT&T / Red Pocket App 专项强化 (含激活、网关、配置与App组件)
   # ==========================================
+  - DOMAIN-SUFFIX,3gppnetwork.org
   - DOMAIN,epdg.epc.mnc280.mcc310.pub.3gppnetwork.org
   - DOMAIN,ss.epdg.epc.mnc280.mcc310.pub.3gppnetwork.org
   - DOMAIN,epdg.epc.mnc410.mcc310.pub.3gppnetwork.org
