@@ -2,119 +2,88 @@
 # 包含：币安、OKX、Bybit、Bitget、Gate及所有核心API与静态资源
 payload:
   # --- Binance (币安) 深度补全 ---
-  - '+.binance.com'
-  - '+.binance.me'
-  - '+.binance.info'
-  - '+.binance.net'
-  - '+.binance.org'
-  - '+.binance.cloud'       # App 企业云服务
-  - '+.binanceapi.com'      # 行情与交易接口
-  - '+.binancecnt.com'
-  - '+.binancefuture.com'
-  - '+.binancezh.com'
-  - '+.binancezh.pro'
-  - '+.bnbstatic.com'       # App 静态资源与头像
-  - '+.bntrace.com'
-  - '+.binance.charity'
-  - '+.binance.co'
-  - '+.binancezh.be'
-  - '+.binancezh.biz'
-  - '+.binancezh.cc'
-  - '+.binancezh.co'
-  - '+.binancezh.info'
-  - '+.binancezh.ink'
-  - '+.binancezh.kim'
-  - '+.binancezh.link'
-  - '+.binancezh.live'
-  - '+.binancezh.mobi'
-  - '+.binancezh.net'
-  - '+.binancezh.sh'
-  - '+.binancezh.top'
-  - '+.bnappzh.co'
-  - '+.bnbzh.ac'
+  - DOMAIN-SUFFIX,binance.com
+  - DOMAIN-SUFFIX,binance.me
+  - DOMAIN-SUFFIX,binance.info
+  - DOMAIN-SUFFIX,binance.net
+  - DOMAIN-SUFFIX,binance.org
+  # App 企业云服务与行情交易接口
+  - DOMAIN-SUFFIX,binance.cloud
+  - DOMAIN-SUFFIX,binanceapi.com
+  - DOMAIN-SUFFIX,binancecnt.com
+  - DOMAIN-SUFFIX,binancefuture.com
+  - DOMAIN-SUFFIX,binancezh.com
+  - DOMAIN-SUFFIX,binancezh.pro
+  # App 静态资源与头像
+  - DOMAIN-SUFFIX,bnbstatic.com
+  - DOMAIN-SUFFIX,bntrace.com
+  - DOMAIN-SUFFIX,binance.charity
+  - DOMAIN-SUFFIX,binance.co
+  - DOMAIN-SUFFIX,binancezh.be
+  - DOMAIN-SUFFIX,binancezh.biz
+  - DOMAIN-SUFFIX,binancezh.cc
+  - DOMAIN-SUFFIX,binancezh.co
+  - DOMAIN-SUFFIX,binancezh.info
+  - DOMAIN-SUFFIX,binancezh.ink
+  - DOMAIN-SUFFIX,binancezh.kim
+  - DOMAIN-SUFFIX,binancezh.link
+  - DOMAIN-SUFFIX,binancezh.live
+  - DOMAIN-SUFFIX,binancezh.mobi
+  - DOMAIN-SUFFIX,binancezh.net
+  - DOMAIN-SUFFIX,binancezh.sh
+  - DOMAIN-SUFFIX,binancezh.top
+  - DOMAIN-SUFFIX,bnappzh.co
+  - DOMAIN-SUFFIX,bnbzh.ac
 
   # --- OKX (欧易) 全球与多区域名网罗 ---
-  - '+.okx.com'
-  - '+.my.okx.com'          # 新加坡/合规专线
-  - '+.okg.com'             # 全球统一主域
-  - '+.okex.com'
-  - '+.oklink.com'
-  - '+.okx-dns.com'        # 解析优化
-  - '+.okx-dns1.com'
-  - '+.okx-dns2.com'
-  - '+.okx.cn'
-  - '+.okex.me'
-  - '+.okex.pro'
-  
+  - DOMAIN-SUFFIX,okx.com
+  # 新加坡/合规专线与全球统一主域
+  - DOMAIN-SUFFIX,my.okx.com
+  - DOMAIN-SUFFIX,okg.com
+  - DOMAIN-SUFFIX,okex.com
+  - DOMAIN-SUFFIX,oklink.com
+  # 解析优化
+  - DOMAIN-SUFFIX,okx-dns.com
+  - DOMAIN-SUFFIX,okx-dns1.com
+  - DOMAIN-SUFFIX,okx-dns2.com
+  - DOMAIN-SUFFIX,okx.cn
+  - DOMAIN-SUFFIX,okex.me
+  - DOMAIN-SUFFIX,okex.pro
+
   # --- Bybit 全球与多区域名网罗 ---
-  - '+.bybit.com'
-  - '+.bytick.com'          # 核心 App API
-  - '+.bybit.io'
-  - '+.bybit.biz'
-  - '+.bybit.cc'
-  - '+.bybit-asia.com'
-  - '+.bybitcn.com'
-  - '+.bybitglobal.com'
-  - '+.bybit-exchange.com'
-  - '+.bybitproxy.com'
-  - '+.bybit-tw.com'         # 台湾专线/备用
-  - '+.bybitapp-tw.com'     # 台湾 App 节点
-  - '+.bybit.nl'
-  - '+.bybit.hk'
+  - DOMAIN-SUFFIX,bybit.com
+  # 核心 App API
+  - DOMAIN-SUFFIX,bytick.com
+  - DOMAIN-SUFFIX,bybit.io
+  - DOMAIN-SUFFIX,bybit.biz
+  - DOMAIN-SUFFIX,bybit.cc
+  - DOMAIN-SUFFIX,bybit-asia.com
+  - DOMAIN-SUFFIX,bybitcn.com
+  - DOMAIN-SUFFIX,bybitglobal.com
+  - DOMAIN-SUFFIX,bybit-exchange.com
+  - DOMAIN-SUFFIX,bybitproxy.com
+  # 台湾专线与 App 节点
+  - DOMAIN-SUFFIX,bybit-tw.com
+  - DOMAIN-SUFFIX,bybitapp-tw.com
+  - DOMAIN-SUFFIX,bybit.nl
+  - DOMAIN-SUFFIX,bybit.hk
 
   # --- Bitget 全球与多区域名网罗 ---
-  - '+.bgstatic.com'
-  - '+.bgwallet.com'
-  - '+.bitget.com'
-  - '+.bitget.tv'
-  - '+.bitgetapi.com'
-  - '+.bitgetapp.com'
-  - '+.bitgetapps.com'
-  - '+.bitget-sg.com'        # 新加坡节点
-  - '+.bitget.global'
-  - '+.kbitget.com'
-  - '+.krbitget.com'
+  - DOMAIN-SUFFIX,bgstatic.com
+  - DOMAIN-SUFFIX,bgwallet.com
+  - DOMAIN-SUFFIX,bitget.com
+  - DOMAIN-SUFFIX,bitget.tv
+  - DOMAIN-SUFFIX,bitgetapi.com
+  - DOMAIN-SUFFIX,bitgetapp.com
+  - DOMAIN-SUFFIX,bitgetapps.com
+  # 新加坡节点
+  - DOMAIN-SUFFIX,bitget-sg.com
+  - DOMAIN-SUFFIX,bitget.global
+  - DOMAIN-SUFFIX,kbitget.com
+  - DOMAIN-SUFFIX,krbitget.com
 
   # --- Gate.io 全球与多区域名网罗 ---
-  - '+.gate.io'
-  - '+.gateio.live'
-  - '+.gateio.pro'
-  - '+.gateio.services'
-  - '+.gate-tw.com'         # 台湾地区访问与 App 节点
-  - '+.gate.com'
-  - '+.gateweb.org'
-  - '+.gateimg.com'         # 静态资源
-  - '+.gateshort.com'
-
-  # --- MEXC (抹茶) 全球与多区域名网罗 ---
-  - '+.mexc.com'            # 主站
-  - '+.mexc-taiwan.com'     # 台湾专线
-  - '+.mexc.land'
-  - '+.mexc.global'
-  - '+.mexcdm.com'
-  - '+.mexc-support.com'
-
-  # --- Backpack (合规交易所与 Web3 钱包生态) ---
-  - '+.backpack.exchange'
-  - '+.backpack.app'
-  - '+.backpack.network'
-  - '+.coral.cc'             # Backpack 背后核心开发团队 Coral
-
-  # --- dtcpay (持牌稳定币支付与数字资产网关) ---
-  - '+.dtcpay.com'
-  - '+.dtcpay.io'
-
-  # --- nevrless (相关加密与隐私/节点/支付生态) ---
-  - '+.nevrless.com'
-  - '+.nevrless.io'
-
-  # --- 其他常用离岸与二线交易所 ---
-  - '+.kucoin.com'          # 库币
-  - '+.kucoin.net'
-  - '+.woo.org'             # WOO
-  - '+.htx.com'             # 火币
-  - '+.huobi.com'
-  - '+.phemex.com'
-  - '+.bitmex.com'
-  - '+.bitfinex.com'
-  - '+.bitfinex.com'
+  - DOMAIN-SUFFIX,gate.io
+  - DOMAIN-SUFFIX,gateio.live
+  - DOMAIN-SUFFIX,gateio.pro
+  - DOMAIN-SUFFIX,gateio.
