@@ -112,21 +112,21 @@ proxy-providers-config:
 rules:
   - GEOSITE,private,DIRECT
   - GEOIP,private,DIRECT,no-resolve
-  # 优先强制接管 Wi-Fi Calling 流量
-  - DST-PORT,500,📞 Wi-Fi Calling
-  - DST-PORT,4500,📞 Wi-Fi Calling
-  - RULE-SET,wificalling,📞 Wi-Fi Calling
   - RULE-SET,reject,🛑 净化拦截
   - RULE-SET,reject-extra,🛑 净化拦截
   - RULE-SET,reject-cn,🛑 净化拦截
   - GEOSITE,adobe,🟥 Adobe
+  - DST-PORT,500,📞 Wi-Fi Calling
+  - DST-PORT,4500,📞 Wi-Fi Calling
+  - RULE-SET,wificalling,📞 Wi-Fi Calling
+  - RULE-SET,bank-us,🇺🇸 BankUS
+  - RULE-SET,shop-us,🇺🇸 BankUS
   - GEOSITE,apple,🍎 Apple
   - RULE-SET,ai-domain,🧠 AI
   - GEOSITE,category-ai-!cn,🧠 AI
+  - GEOSITE,youtube,🎬 YouTube
   - GEOSITE,google,🔎 Google
   - GEOIP,google,🔎 Google,no-resolve
-  - RULE-SET,bank-us,🇺🇸 BankUS
-  - RULE-SET,shop-us,🇺🇸 BankUS
   - RULE-SET,bank-hk,🇭🇰 BankHK
   - RULE-SET,bank-eu,🇪🇺 BankEU
   - RULE-SET,crypto-a,💰 币圈A
