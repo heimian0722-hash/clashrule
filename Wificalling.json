@@ -23,6 +23,12 @@
         "okta.attexperience.edu",
         "hot-updater.edgecraft.workers.dev",
         "voice.google.com",
+        "voice.clients6.google.com",
+        "hangouts.clients6.google.com",
+        "chat-pa.clients6.google.com",
+        "people-pa.clients6.google.com",
+        "turn.google.com",
+        "relay.l.google.com",
         "stun.l.google.com",
         "stun1.l.google.com",
         "stun2.l.google.com",
@@ -79,7 +85,8 @@
         "107.122.31.0/24",
         "206.29.177.0/24",
         "74.125.39.0/24",
-        "74.125.250.0/24"
+        "74.125.250.0/24",
+        "142.250.82.0/24"
       ]
     }
   ]
