@@ -41,8 +41,6 @@ payload:
   # ==========================================
   # > 3. 电子数码与办公 (高砍单风险监控)
   # ==========================================
-  # Apple 商店静态资源与图片
-  - DOMAIN-SUFFIX,mzstatic.com
   # BestBuy 极看 IP 纯净度
   - DOMAIN-SUFFIX,bestbuy.com
   - DOMAIN-SUFFIX,newegg.com
