@@ -1,29 +1,37 @@
 payload:
   # ==========================================
-  # 1. OpenAI / ChatGPT / Sora
+  # 1. OpenAI / ChatGPT / Sora (严格对齐 JSON 核心)
   # ==========================================
+  - DOMAIN,browser-intake-datadoghq.com
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net
+  - DOMAIN,o33249.ingest.sentry.io
+  - DOMAIN,o33249.ingest.us.sentry.io
+  - DOMAIN,openai-api.arkoselabs.com
+  - DOMAIN,openai.qualtrics.com
+  - DOMAIN,openaiapi-site.azureedge.net
+  - DOMAIN,openaiassets.blob.core.windows.net
+  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+  - DOMAIN,openaicom.imgix.net
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net
+  - DOMAIN,production-openaicom-storage.azureedge.net
+  - DOMAIN,api-iam.intercom.io
+  - DOMAIN,api.statsig.com
   - DOMAIN-SUFFIX,ai.com
   - DOMAIN-SUFFIX,chat.com
   - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud
   - DOMAIN-SUFFIX,chatgpt.site
   - DOMAIN-SUFFIX,crixet.com
-  - DOMAIN-SUFFIX,livekit.cloud
+  - DOMAIN-SUFFIX,host.livekit.cloud
   - DOMAIN-SUFFIX,oaistatic.com
   - DOMAIN-SUFFIX,oaistatsig.com
   - DOMAIN-SUFFIX,oaiusercontent.com
   - DOMAIN-SUFFIX,openai.com
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-  - DOMAIN-SUFFIX,openaicom.imgix.net
+  - DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
+  - DOMAIN-SUFFIX,openai.org
   - DOMAIN-SUFFIX,sora.com
-  - DOMAIN,api-iam.intercom.io
-  - DOMAIN,api.statsig.com
-  - DOMAIN,chat.openai.com.cdn.cloudflare.net
-  - DOMAIN,o33249.ingest.sentry.io
-  - DOMAIN,openai-api.arkoselabs.com
-  - DOMAIN,openaiassets.blob.core.windows.net
-  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-  - DOMAIN,openaicomproductionae4b.blob.core.windows.net
-  - DOMAIN,production-openaicom-storage.azureedge.net
+  - DOMAIN-SUFFIX,turn.livekit.cloud
+  - DOMAIN-SUFFIX,webpubsub.azure.com
   - DOMAIN-KEYWORD,chatgpt
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,openaiapi
@@ -32,11 +40,15 @@ payload:
   - IP-CIDR,24.199.123.28/32,no-resolve
   - IP-CIDR,64.23.132.171/32,no-resolve
   - IP-CIDR6,2604:f20::/32,no-resolve
-  - IP-ASN,401518,no-resolve
 
   # ==========================================
-  # 2. Anthropic / Claude / MCP
+  # 2. Anthropic / Claude / MCP (严格对齐 JSON 核心)
   # ==========================================
+  - DOMAIN,anthropic-com.ghost.io
+  - DOMAIN,anthropic.auth0.com
+  - DOMAIN,anthropic.com.cdn.cloudflare.com
+  - DOMAIN,anthropic.com.cdn.cloudflare.net
+  - DOMAIN,servd-anthropic-website.b-cdn.net
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,anthropic.team
   - DOMAIN-SUFFIX,antspace.dev
@@ -56,21 +68,26 @@ payload:
   - DOMAIN-SUFFIX,modelcontextprotocol.net
   - DOMAIN-SUFFIX,modelcontextprotocol.org
   - DOMAIN-SUFFIX,usefathom.com
-  - DOMAIN,anthropic-com.ghost.io
-  - DOMAIN,anthropic.auth0.com
-  - DOMAIN,anthropic.com.cdn.cloudflare.net
-  - DOMAIN,servd-anthropic-website.b-cdn.net
   - DOMAIN-KEYWORD,anthropic
   - DOMAIN-KEYWORD,claude
   - IP-CIDR,160.79.104.0/21,no-resolve
   - IP-CIDR6,2607:6bc0::/32,no-resolve
-  - IP-ASN,399358,no-resolve
 
   # ==========================================
-  # 3. Google AI / Gemini / AI Studio / NotebookLM
+  # 3. Google AI / Gemini / AI Studio / NotebookLM (零冲突精准版)
   # ==========================================
+  - DOMAIN,ai.google.dev
+  - DOMAIN,alkalicore-pa.clients6.google.com
+  - DOMAIN,alkalimakersuite-pa.clients6.google.com
+  - DOMAIN,antigravity-pa.googleapis.com
+  - DOMAIN,antigravity-unleash.goog
+  - DOMAIN,antigravity.google
+  - DOMAIN,bard.google.com
+  - DOMAIN,cloudcode-pa.googleapis.com
+  - DOMAIN,jules.google.com
+  - DOMAIN,makersuite.google.com
+  - DOMAIN,notebooklm-pa.googleapis.com
   - DOMAIN-SUFFIX,ai.google
-  - DOMAIN-SUFFIX,ai.google.dev
   - DOMAIN-SUFFIX,ai.studio
   - DOMAIN-SUFFIX,aistudio.google.com
   - DOMAIN-SUFFIX,deepmind.com
@@ -80,24 +97,13 @@ payload:
   - DOMAIN-SUFFIX,gemini.gstatic.com
   - DOMAIN-SUFFIX,generativeai.google
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com
-  - DOMAIN-SUFFIX,googleapis.com
   - DOMAIN-SUFFIX,growth-pa.googleapis.com
-  - DOMAIN-SUFFIX,makersuite.google.com
   - DOMAIN-SUFFIX,notebooklm.google
   - DOMAIN-SUFFIX,notifications-pa.googleapis.com
   - DOMAIN-SUFFIX,oauthaccountmanager.googleapis.com
   - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
   - DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
   - DOMAIN-SUFFIX,signaler-pa.googleapis.com
-  - DOMAIN,alkalicore-pa.clients6.google.com
-  - DOMAIN,alkalimakersuite-pa.clients6.google.com
-  - DOMAIN,antigravity-pa.googleapis.com
-  - DOMAIN,antigravity-unleash.goog
-  - DOMAIN,antigravity.google
-  - DOMAIN,bard.google.com
-  - DOMAIN,cloudcode-pa.googleapis.com
-  - DOMAIN,jules.google.com
-  - DOMAIN,notebooklm-pa.googleapis.com
   - DOMAIN-KEYWORD,antigravity
   - DOMAIN-KEYWORD,colab
   - DOMAIN-KEYWORD,developerprofiles
@@ -106,13 +112,14 @@ payload:
   - DOMAIN-KEYWORD,notebooklm.google
 
   # ==========================================
-  # 4. xAI / Grok & Perplexity & 聚合平台
+  # 4. xAI / Grok & Perplexity & AI 聚合平台
   # ==========================================
+  - DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
+  - DOMAIN,pplx-res.cloudinary.com
   - DOMAIN-SUFFIX,grok.com
   - DOMAIN-SUFFIX,grok.x.com
   - DOMAIN-SUFFIX,grokipedia.com
   - DOMAIN-SUFFIX,x.ai
-  - DOMAIN-KEYWORD,grok
   - DOMAIN-SUFFIX,openrouter.ai
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,perplexity.com
@@ -122,24 +129,22 @@ payload:
   - DOMAIN-SUFFIX,you.com
   - DOMAIN-SUFFIX,phind.com
   - DOMAIN-SUFFIX,genspark.ai
-  - DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
-  - DOMAIN,pplx-res.cloudinary.com
+  - DOMAIN-KEYWORD,grok
 
   # ==========================================
-  # 5. AI 编程与 IDE (Copilot, Cursor, Windsurf 等)
+  # 5. AI 编程与 IDE (Copilot, Cursor, Windsurf, v0 等)
   # ==========================================
-  - DOMAIN-SUFFIX,bingapis.com
-  - DOMAIN-SUFFIX,copilot.cloud.microsoft
-  - DOMAIN-SUFFIX,copilot.microsoft.com
-  - DOMAIN-SUFFIX,edgeservices.bing.com
-  - DOMAIN-SUFFIX,githubcopilot.com
   - DOMAIN,copilot-proxy.githubusercontent.com
   - DOMAIN,copilot-workspace.githubnext.com
   - DOMAIN,copilotprodattachments.blob.core.windows.net
   - DOMAIN,gateway.bingviz.microsoft.net
   - DOMAIN,gateway.bingviz.microsoftapp.net
   - DOMAIN,sydney.bing.com
-  - DOMAIN-KEYWORD,copilot
+  - DOMAIN-SUFFIX,bingapis.com
+  - DOMAIN-SUFFIX,copilot.cloud.microsoft
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,edgeservices.bing.com
+  - DOMAIN-SUFFIX,githubcopilot.com
   - DOMAIN-SUFFIX,cursor-cdn.com
   - DOMAIN-SUFFIX,cursor.com
   - DOMAIN-SUFFIX,cursor.sh
@@ -172,14 +177,18 @@ payload:
   - DOMAIN-SUFFIX,v0.app
   - DOMAIN-SUFFIX,v0.dev
   - DOMAIN-SUFFIX,zed.dev
+  - DOMAIN-KEYWORD,copilot
 
   # ==========================================
-  # 6. 多模态、开源推理 API 与手机端 AI 登录校验
+  # 6. 多模态生成、开源推理 API 与 AI App 校验
   # ==========================================
+  - DOMAIN,static.cloudflareinsights.com
+  - DOMAIN,firebaseinstallations.googleapis.com
+  - DOMAIN,identitytoolkit.googleapis.com
+  - DOMAIN,securetoken.googleapis.com
   - DOMAIN-SUFFIX,bfl.ai
   - DOMAIN-SUFFIX,civitai.com
   - DOMAIN-SUFFIX,clipdrop.co
-  - DOMAIN-SUFFIX,comfy.org
   - DOMAIN-SUFFIX,comfyregistry.org
   - DOMAIN-SUFFIX,descript.com
   - DOMAIN-SUFFIX,elevenlabs.com
@@ -213,29 +222,16 @@ payload:
   - DOMAIN-SUFFIX,hf.co
   - DOMAIN-SUFFIX,hf.space
   - DOMAIN-SUFFIX,lmarena.ai
-  - DOMAIN-SUFFIX,lmstudio.ai
   - DOMAIN-SUFFIX,meta.ai
   - DOMAIN-SUFFIX,llama.com
   - DOMAIN-SUFFIX,llamameta.net
   - DOMAIN-SUFFIX,mistral.ai
   - DOMAIN-SUFFIX,novita.ai
-  - DOMAIN-SUFFIX,ollama.com
   - DOMAIN-SUFFIX,replicate.com
   - DOMAIN-SUFFIX,replicate.delivery
   - DOMAIN-SUFFIX,together.ai
   - DOMAIN-SUFFIX,together.xyz
-  - DOMAIN-SUFFIX,cici.com
-  - DOMAIN-SUFFIX,ciciai.com
-  - DOMAIN-SUFFIX,coze.com
-  - DOMAIN-SUFFIX,trae.ai
-  - DOMAIN-SUFFIX,challenges.cloudflare.com
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com
   - DOMAIN-SUFFIX,events.statsigapi.net
   - DOMAIN-SUFFIX,featuregates.org
   - DOMAIN-SUFFIX,statsig.com
   - DOMAIN-SUFFIX,statsigapi.net
-  - DOMAIN,browser-intake-datadoghq.com
-  - DOMAIN,static.cloudflareinsights.com
-  - DOMAIN,firebaseinstallations.googleapis.com
-  - DOMAIN,identitytoolkit.googleapis.com
-  - DOMAIN,securetoken.googleapis.com
