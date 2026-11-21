@@ -1,6 +1,6 @@
 payload:
   # ==========================================
-  # 1. 核心金融中间件、清算与跨境支付 (含熊猫速汇/Wise/Stripe)
+  # 1. 核心金融基础设施 (中间件/清算/跨境支付)
   # ==========================================
   - DOMAIN-SUFFIX,plaid.com
   - DOMAIN-SUFFIX,plaid.io
@@ -109,6 +109,7 @@ payload:
   - DOMAIN-SUFFIX,chase.co.uk
   - DOMAIN-SUFFIX,chaseip.com
   - DOMAIN-SUFFIX,jpmchase.net
+  - DOMAIN-SUFFIX,chaseonline.chase.com
 
   # Bank of America (美国银行)
   - DOMAIN-SUFFIX,bankofamerica.com
@@ -131,15 +132,17 @@ payload:
   - DOMAIN-SUFFIX,wellsfargoadvisors.com
   - DOMAIN-SUFFIX,wellsfargo.net
 
-  # US Bank (合众银行)
+  # US Bank (合众银行 - 重点保护)
   - DOMAIN-SUFFIX,usbank.com
+  - DOMAIN-SUFFIX,usbankconnect.com
+  - DOMAIN-SUFFIX,usbankrewardscenter.com
 
   # East West Bank (华美银行 & Velo)
   - DOMAIN-SUFFIX,eastwestbank.com
   - DOMAIN-SUFFIX,eastwest.com
   - DOMAIN-SUFFIX,velobank.com
   - DOMAIN-SUFFIX,baixingyllh.com
-  - DOMAIN-SUFFIX,money-movement.com
+  - DOMAIN-SUFFIX,epayments-epaystatic-e.money-movement.com
 
   # 其他本土商业银行与投行
   - DOMAIN-SUFFIX,goldmansachs.com
@@ -208,6 +211,9 @@ payload:
   - DOMAIN-SUFFIX,revolut.me
   - DOMAIN-SUFFIX,revolut.codes
   - DOMAIN-SUFFIX,revolutlabs.com
+  - DOMAIN-SUFFIX,aqueduct.revolutlabs.com
+  - DOMAIN-SUFFIX,assets.revolut.com
+  - DOMAIN-SUFFIX,sso.revolut.com
   - DOMAIN-SUFFIX,licelus.com
   - DOMAIN-SUFFIX,revolut.link
   - DOMAIN-SUFFIX,kikoff.com
@@ -247,7 +253,7 @@ payload:
   - DOMAIN-SUFFIX,gosavo.com
 
   # ==========================================
-  # 6. 美股主流券商与行情分析
+  # 6. 美股主流券商与交易分析
   # ==========================================
   - DOMAIN-SUFFIX,schwab.com
   - DOMAIN-SUFFIX,schwab.net
@@ -292,6 +298,7 @@ payload:
   - DOMAIN-SUFFIX,tastyworks.com
   - DOMAIN-SUFFIX,tastycrypto.com
   - DOMAIN-SUFFIX,tastytrade.io
+  - DOMAIN-SUFFIX,developer.tastytrade.com
   - DOMAIN-SUFFIX,betterment.com
   - DOMAIN-SUFFIX,vanguard.com
   - DOMAIN-SUFFIX,vanguardinvestments.com
@@ -299,7 +306,7 @@ payload:
   - DOMAIN-SUFFIX,tvstatic.com
 
   # ==========================================
-  # 7. 信用局报告与开户风控 (三大局 / Chex / EWS)
+  # 7. 信用局报告与开户风控 (三大局/Chex/EWS)
   # ==========================================
   - DOMAIN-SUFFIX,experian.com
   - DOMAIN-SUFFIX,experian.co.uk
@@ -326,8 +333,9 @@ payload:
   - DOMAIN-SUFFIX,lifelock.com
 
   # ==========================================
-  # 8. 银行专用 WAF 盾、KYC 身份核验与设备指纹风控
+  # 8. 安全防护、身份 KYC、反欺诈与移动端全量埋点 (绝不错漏)
   # ==========================================
+  # WAF 盾与人机验证码 (含补漏的 Cloudflare / Google 验证组件)
   - DOMAIN-SUFFIX,imperva.com
   - DOMAIN-SUFFIX,incapsula.com
   - DOMAIN-SUFFIX,hcaptcha.com
@@ -336,6 +344,11 @@ payload:
   - DOMAIN-SUFFIX,perimeterx.net
   - DOMAIN-SUFFIX,px-cdn.net
   - DOMAIN-SUFFIX,px-cloud.net
+  - DOMAIN-SUFFIX,challenges.cloudflare.com
+  - DOMAIN-SUFFIX,gstatic.com
+  - DOMAIN-SUFFIX,googleapis.com
+
+  # 反欺诈与设备指纹 (US Bank 核心风控依赖)
   - DOMAIN-SUFFIX,threatmetrix.com
   - DOMAIN-SUFFIX,online-metrix.net
   - DOMAIN-SUFFIX,lexisnexis.com
@@ -350,6 +363,8 @@ payload:
   - DOMAIN-SUFFIX,behaviosec.com
   - DOMAIN-SUFFIX,prodregistryv2.org
   - DOMAIN-SUFFIX,featureassets.org
+
+  # 身份核验 (KYC / SSO)
   - DOMAIN-SUFFIX,id.me
   - DOMAIN-SUFFIX,withpersona.com
   - DOMAIN-SUFFIX,veriff.com
@@ -363,16 +378,40 @@ payload:
   - DOMAIN-SUFFIX,okta.com
   - DOMAIN-SUFFIX,oktacdn.com
   - DOMAIN-SUFFIX,onelogin.com
-  - DOMAIN-SUFFIX,qualtrics.com
+
+  # 全量前端埋点、灰度控制、推送与App内客服 (完整保留防双IP异常)
+  - DOMAIN-SUFFIX,adobedtm.com
+  - DOMAIN-SUFFIX,omtrdc.net
+  - DOMAIN-SUFFIX,demdex.net
+  - DOMAIN-SUFFIX,everesttech.net
+  - DOMAIN-SUFFIX,amplitude.com
+  - DOMAIN-SUFFIX,newrelic.com
+  - DOMAIN-SUFFIX,kochava.com
+  - DOMAIN-SUFFIX,branch.io
+  - DOMAIN-SUFFIX,customer.io
+  - DOMAIN-SUFFIX,intercom.io
+  - DOMAIN-SUFFIX,intercomcdn.com
+  - DOMAIN-SUFFIX,helpshift.com
   - DOMAIN-SUFFIX,glia.com
+  - DOMAIN-SUFFIX,launchdarkly.com
   - DOMAIN-SUFFIX,glance.net
+  - DOMAIN-SUFFIX,akstat.io
+  - DOMAIN-SUFFIX,go-mpulse.net
+  - DOMAIN-SUFFIX,ws-eu.pusher.com
+  - DOMAIN-SUFFIX,appsflyersdk.com
+  - DOMAIN-SUFFIX,apptentive.com
   - DOMAIN-SUFFIX,securetheorem.com
   - DOMAIN-SUFFIX,transmitsecurity.io
   - DOMAIN-SUFFIX,glassboxdigital.io
+  - DOMAIN-SUFFIX,mparticle.com
+  - DOMAIN-SUFFIX,braze.com
+  - DOMAIN-SUFFIX,braze-images.com
+  - DOMAIN-SUFFIX,sprig.com
+  - DOMAIN-SUFFIX,qualtrics.com
   - DOMAIN-SUFFIX,ipify.org
 
   # ==========================================
-  # 9. 美国政务、税务与寄卡物流跟踪
+  # 9. 美国政务与公用服务
   # ==========================================
   - DOMAIN-SUFFIX,usps.com
   - DOMAIN-SUFFIX,usps.org
@@ -380,6 +419,3 @@ payload:
   - DOMAIN-SUFFIX,uspspostalone.com
   - DOMAIN-SUFFIX,irs.gov
   - DOMAIN-SUFFIX,ssa.gov
-  - DOMAIN-SUFFIX,fedex.com
-  - DOMAIN-SUFFIX,fedex.net
-  - DOMAIN-SUFFIX,ups.com
