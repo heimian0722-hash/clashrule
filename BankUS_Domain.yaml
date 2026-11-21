@@ -343,7 +343,6 @@ payload:
   - DOMAIN-SUFFIX,px-cloud.net
   - DOMAIN-SUFFIX,challenges.cloudflare.com
   - DOMAIN-SUFFIX,gstatic.com
-  - DOMAIN-SUFFIX,googleapis.com
 
   # 反欺诈与设备指纹 (US Bank 核心风控依赖)
   - DOMAIN-SUFFIX,threatmetrix.com
