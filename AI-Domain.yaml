@@ -62,7 +62,7 @@ payload:
   - IP-ASN,399358,no-resolve
 
   # ==========================================
-  # 3. Google AI / Gemini / AI Studio / NotebookLM
+  # 3. Google AI / Gemini / AI Studio / NotebookLM (含 iOS App 抓包接口)
   # ==========================================
   - DOMAIN-SUFFIX,ai.google
   - DOMAIN-SUFFIX,ai.google.dev
@@ -71,12 +71,18 @@ payload:
   - DOMAIN-SUFFIX,deepmind.com
   - DOMAIN-SUFFIX,deepmind.google
   - DOMAIN-SUFFIX,gemini.google
+  - DOMAIN-SUFFIX,gemini.google.com
   - DOMAIN-SUFFIX,gemini.gstatic.com
   - DOMAIN-SUFFIX,generativeai.google
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com
+  - DOMAIN-SUFFIX,growth-pa.googleapis.com
   - DOMAIN-SUFFIX,makersuite.google.com
   - DOMAIN-SUFFIX,notebooklm.google
+  - DOMAIN-SUFFIX,notifications-pa.googleapis.com
+  - DOMAIN-SUFFIX,oauthaccountmanager.googleapis.com
   - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+  - DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
+  - DOMAIN-SUFFIX,signaler-pa.googleapis.com
   - DOMAIN,alkalicore-pa.clients6.google.com
   - DOMAIN,alkalimakersuite-pa.clients6.google.com
   - DOMAIN,antigravity-pa.googleapis.com
