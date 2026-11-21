@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "ohttp-relay1.fastly-edge.com",
+        "qqwry.api.skk.moe"
+      ],
+      "domain_suffix": [
+        "2api.net",
+        "91bun.com",
+        "api.asailor.org",
+        "api.wcc.best",
+        "bbrcloud.com",
+        "cherry-ai.com",
+        "cherryai.com",
+        "cherryai.com.cn",
+        "chinapostcar.com",
+        "dynv6.com",
+        "dynv6.net",
+        "expo.dev",
+        "fanchmwrt.com",
+        "fflyert.com.cn",
+        "flyert.com",
+        "hbbx.top",
+        "immersivetranslate.com",
+        "imtintl.com",
+        "kyzsapp.com",
+        "lcsignx.com",
+        "linux.do",
+        "newapi.pro",
+        "olii.cc",
+        "pushplus.plus",
+        "redircdn.com",
+        "seagm.com",
+        "xhacgn.com",
+        "xn--cp3a08l.com",
+        "xquic.com",
+        "yan.life",
+        "yifile.com",
+        "ylimg.com"
+      ]
+    }
+  ]
+}
