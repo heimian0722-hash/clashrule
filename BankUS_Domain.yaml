@@ -297,30 +297,64 @@ payload:
   - DOMAIN-SUFFIX,tradingview.com
   - DOMAIN-SUFFIX,tvstatic.com
 
+# ==========================================
+  # 7. 信用局报告、次级征信与第三方查分监控 (全量版)
   # ==========================================
-  # 7. 信用局报告与开户风控 (三大局/Chex/EWS)
-  # ==========================================
-  - DOMAIN-SUFFIX,experian.com
-  - DOMAIN-SUFFIX,experian.co.uk
-  - DOMAIN-SUFFIX,experian.in
-  - DOMAIN-SUFFIX,experianconsumeringservices.com
-  - DOMAIN-SUFFIX,expn.com
-  - DOMAIN-SUFFIX,transunion.com
-  - DOMAIN-SUFFIX,tu.com
-  - DOMAIN-SUFFIX,truelink.com
-  - DOMAIN-SUFFIX,equifax.com
-  - DOMAIN-SUFFIX,efx.com
-  - DOMAIN-SUFFIX,equi.com
-  - DOMAIN-SUFFIX,annualcreditreport.com
-  - DOMAIN-SUFFIX,fico.com
-  - DOMAIN-SUFFIX,myfico.com
-  - DOMAIN-SUFFIX,creditkarma.com
-  - DOMAIN-SUFFIX,nav.com
-  - DOMAIN-SUFFIX,chexsystems.com
-  - DOMAIN-SUFFIX,earlywarning.com
-  - DOMAIN-SUFFIX,savvymoney.com
-  - DOMAIN-SUFFIX,identityguard.com
-  - DOMAIN-SUFFIX,lifelock.com
+  # 三大核心信用局 & 旗下门户
+- DOMAIN-SUFFIX,experian.com
+- DOMAIN-SUFFIX,experian.co.uk
+- DOMAIN-SUFFIX,experian.in
+- DOMAIN-SUFFIX,experianconsumeringservices.com
+- DOMAIN-SUFFIX,expn.com
+- DOMAIN-SUFFIX,freecreditreport.com
+- DOMAIN-SUFFIX,freecreditscore.com
+- DOMAIN-SUFFIX,rentbureau.com
+- DOMAIN-SUFFIX,clarityservices.com
+- DOMAIN-SUFFIX,transunion.com
+- DOMAIN-SUFFIX,tu.com
+- DOMAIN-SUFFIX,truelink.com
+- DOMAIN-SUFFIX,factortrust.com
+- DOMAIN-SUFFIX,l2c.com
+- DOMAIN-SUFFIX,equifax.com
+- DOMAIN-SUFFIX,myequifax.com
+- DOMAIN-SUFFIX,efx.com
+- DOMAIN-SUFFIX,equi.com
+- DOMAIN-SUFFIX,annualcreditreport.com
+- DOMAIN-SUFFIX,optoutprescreen.com
+
+  # 银行开户、第四信用局与专业/替代性征信局
+- DOMAIN-SUFFIX,innovis.com
+- DOMAIN-SUFFIX,chexsystems.com
+- DOMAIN-SUFFIX,earlywarning.com
+- DOMAIN-SUFFIX,lexisnexisrisk.com
+- DOMAIN-SUFFIX,sagestreamllc.com
+- DOMAIN-SUFFIX,ars-consumerreports.com
+- DOMAIN-SUFFIX,corelogic.com
+- DOMAIN-SUFFIX,teletrack.com
+- DOMAIN-SUFFIX,nctue.com
+- DOMAIN-SUFFIX,certegy.com
+- DOMAIN-SUFFIX,telecheck.com
+- DOMAIN-SUFFIX,microbilt.com
+
+  # 评分模型与第三方信用查分 / 监控平台
+- DOMAIN-SUFFIX,fico.com
+- DOMAIN-SUFFIX,myfico.com
+- DOMAIN-SUFFIX,vantagescore.com
+- DOMAIN-SUFFIX,creditkarma.com
+- DOMAIN-SUFFIX,credit.com
+- DOMAIN-SUFFIX,creditsesame.com
+- DOMAIN-SUFFIX,nerdwallet.com
+- DOMAIN-SUFFIX,wallethub.com
+- DOMAIN-SUFFIX,nav.com
+- DOMAIN-SUFFIX,savvymoney.com
+- DOMAIN-SUFFIX,smartcredit.com
+- DOMAIN-SUFFIX,scoresense.com
+- DOMAIN-SUFFIX,identityguard.com
+- DOMAIN-SUFFIX,lifelock.com
+- DOMAIN-SUFFIX,aura.com
+- DOMAIN-SUFFIX,identityforce.com
+- DOMAIN-SUFFIX,privacyguard.com
+- DOMAIN-SUFFIX,identitytheft.gov
 
   # ==========================================
   # 8. 安全防护、身份 KYC、反欺诈与移动端全量埋点 (绝不错漏)
