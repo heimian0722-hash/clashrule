@@ -8,6 +8,12 @@ payload:
 - DOMAIN-SUFFIX,envestnet.com
 - DOMAIN-SUFFIX,finicity.com
 - DOMAIN-SUFFIX,mx.com
+- DOMAIN-SUFFIX,akoya.com
+- DOMAIN-SUFFIX,teller.io
+- DOMAIN-SUFFIX,methodfi.com
+- DOMAIN-SUFFIX,argyle.com
+- DOMAIN-SUFFIX,pinwheelapi.com
+- DOMAIN-SUFFIX,atomicfi.com
 - DOMAIN-SUFFIX,zelle.com
 - DOMAIN-SUFFIX,zellepay.com
 - DOMAIN-SUFFIX,stripe.com
@@ -18,6 +24,8 @@ payload:
 - DOMAIN-SUFFIX,lemonadefi.com
 - DOMAIN-SUFFIX,cardinalcommerce.com
 - DOMAIN-SUFFIX,arcot.com
+- DOMAIN-SUFFIX,cybersource.com
+- DOMAIN-SUFFIX,ethoca.com
 
   # ==========================================
   # 2. 电子钱包与支付生态 (PayPal / Cash App / Venmo)
@@ -60,6 +68,7 @@ payload:
 - DOMAIN-SUFFIX,amex.co
 - DOMAIN-SUFFIX,inauth.com
 - DOMAIN-SUFFIX,inauth.net
+- DOMAIN-SUFFIX,accertify.com
 
   # Capital One (第一资本)
 - DOMAIN-SUFFIX,capitalone.com
@@ -298,7 +307,7 @@ payload:
 - DOMAIN-SUFFIX,tvstatic.com
 
   # ==========================================
-  # 7. 信用局报告、次级征信与第三方查分监控 (全量版)
+  # 7. 信用局报告、次级征信与第三方查分监控
   # ==========================================
   # 三大核心信用局 & 旗下门户
 - DOMAIN-SUFFIX,experian.com
@@ -357,7 +366,7 @@ payload:
 - DOMAIN-SUFFIX,identitytheft.gov
 
   # ==========================================
-  # 8. 安全防护、身份 KYC、反欺诈与移动端全量埋点 (绝不错漏)
+  # 8. 安全防护、身份 KYC、反欺诈与底层环境一致性
   # ==========================================
   # WAF 盾与人机验证码 (精准子域版，不抢占 AI 与系统通道)
 - DOMAIN-SUFFIX,imperva.com
@@ -368,17 +377,30 @@ payload:
 - DOMAIN-SUFFIX,perimeterx.net
 - DOMAIN-SUFFIX,px-cdn.net
 - DOMAIN-SUFFIX,px-cloud.net
+- DOMAIN-SUFFIX,datadome.co
+- DOMAIN-SUFFIX,kasada.io
 - DOMAIN-SUFFIX,challenges.cloudflare.com
+- DOMAIN,recaptcha.google.com
+- DOMAIN,recaptchaenterprise.googleapis.com
 - DOMAIN,www.gstatic.com
 - DOMAIN,ssl.gstatic.com
 - DOMAIN,maps.gstatic.com
-- DOMAIN,recaptchaenterprise.googleapis.com
+- DOMAIN,maps.google.com
 - DOMAIN,maps.googleapis.com
 - DOMAIN,places.googleapis.com
+- DOMAIN,addressvalidation.googleapis.com
+- DOMAIN,geolocation.googleapis.com
 - DOMAIN,fonts.googleapis.com
 - DOMAIN,ajax.googleapis.com
+- DOMAIN,www.googletagmanager.com
+- DOMAIN,firebaseinstallations.googleapis.com
+- DOMAIN,firebaseremoteconfig.googleapis.com
+- DOMAIN,play.googleapis.com
+- DOMAIN,androidcheck.googleapis.com
+- DOMAIN,appattest.apple.com
+- DOMAIN,devicecheck.apple.com
 
-  # 反欺诈与设备指纹 (US Bank 核心风控依赖)
+  # 反欺诈与设备指纹 (US Bank / Chase / Amex 核心风控依赖)
 - DOMAIN-SUFFIX,threatmetrix.com
 - DOMAIN-SUFFIX,online-metrix.net
 - DOMAIN-SUFFIX,lexisnexis.com
@@ -391,10 +413,11 @@ payload:
 - DOMAIN-SUFFIX,kount.com
 - DOMAIN-SUFFIX,biocatch.com
 - DOMAIN-SUFFIX,behaviosec.com
+- DOMAIN-SUFFIX,sardine.ai
 - DOMAIN-SUFFIX,prodregistryv2.org
 - DOMAIN-SUFFIX,featureassets.org
 
-  # 身份核验 (KYC / SSO)
+  # 身份核验 (KYC / SSO / 电信2FA验证)
 - DOMAIN-SUFFIX,id.me
 - DOMAIN-SUFFIX,withpersona.com
 - DOMAIN-SUFFIX,veriff.com
@@ -408,6 +431,9 @@ payload:
 - DOMAIN-SUFFIX,okta.com
 - DOMAIN-SUFFIX,oktacdn.com
 - DOMAIN-SUFFIX,onelogin.com
+- DOMAIN-SUFFIX,twilio.com
+- DOMAIN-SUFFIX,telesign.com
+- DOMAIN-SUFFIX,sinch.com
 
   # 全量前端埋点、灰度控制、推送、报错收集与会话回放
 - DOMAIN-SUFFIX,adobedtm.com
