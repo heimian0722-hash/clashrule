@@ -133,30 +133,23 @@ rules:
   - RULE-SET,crypto-b,💰 币圈B
   - GEOSITE,twitter,🐦 X
   - GEOSITE,instagram,💬 社交媒体
-  - RULE-SET,proxy-cn-img,💬 社交媒体
+  - RULE-SET,proxy-cn-img,📨 Telegram
   - RULE-SET,telegram,📨 Telegram
   - GEOSITE,telegram,📨 Telegram
   - GEOIP,telegram,📨 Telegram,no-resolve
   - GEOSITE,youtube,🎬 YouTube
   - GEOSITE,netflix,🎥 Netflix
-  - GEOIP,netflix,🎥 Netflix,no-resolve
-  - RULE-SET,tiktok-ext,🎵 TikTok
   - GEOSITE,tiktok,🎵 TikTok
-  - GEOIP,tiktok,🎵 TikTok,no-resolve
+  - RULE-SET,tiktok-ext,🎵 TikTok
   - GEOSITE,notion,📦 Notion
-  - GEOIP,notion,📦 Notion,no-resolve
   - GEOSITE,github,🧑‍💻 GitHub
-  - GEOIP,github,🧑‍💻 GitHub,no-resolve
-  - GEOSITE,microsoft,🖥️ Microsoft
-  - GEOIP,microsoft,🖥️ Microsoft,no-resolve
+  - GEOSITE,bing,🖥️ Bing
+  - GEOSITE,steam@cn,DIRECT
   - GEOSITE,steam,🎮 Steam
   - GEOSITE,cloudflare,☁️ cloudflare
   - GEOSITE,category-speedtest,🚝 测速工具
   - RULE-SET,proxy-cn-dom,🌐 代理补充
   - GEOSITE,gfw,🌐 代理补充
-  - GEOSITE,deepseek,DIRECT
-  - GEOSITE,feishu,DIRECT
-  - GEOSITE,category-ai-cn,DIRECT
   - RULE-SET,direct-custom-ip,DIRECT
   - RULE-SET,direct-custom-dom,DIRECT
   - RULE-SET,direct-cn-dom,DIRECT
@@ -265,7 +258,7 @@ proxy-groups:
     type: select
     proxies: [DIRECT, 🇺🇸 US, 🚀 手动选择, ♻️ 自动选择, 🇭🇰 HK]
 
-  - name: 🖥️ Microsoft
+  - name: 🖥️ Bing
     type: select
     proxies: [DIRECT, 🚀 手动选择, ♻️ 自动选择, 🇺🇸 US, 🇭🇰 HK]
     <<: *use-all
