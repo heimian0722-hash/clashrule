@@ -1,6 +1,6 @@
 payload:
   # ==========================================
-  # 1. 亚马逊与 eBay 体系
+  # 1. 亚马逊与 eBay 核心电商体系
   # ==========================================
   - DOMAIN-SUFFIX,amazon.com
   - DOMAIN-SUFFIX,amazon.ca
@@ -36,7 +36,7 @@ payload:
   - DOMAIN-SUFFIX,lowes.com
 
   # ==========================================
-  # 3. 电子数码与办公
+  # 3. 电子数码与办公 (防砍单高风控商户)
   # ==========================================
   - DOMAIN-SUFFIX,bestbuy.com
   - DOMAIN-SUFFIX,newegg.com
@@ -70,7 +70,7 @@ payload:
   - DOMAIN-SUFFIX,clinique.com
 
   # ==========================================
-  # 5. 电商独立站基建与购物风控
+  # 5. 电商独立站基建与防砍单风控组件
   # ==========================================
   - DOMAIN-SUFFIX,myshopify.com
   - DOMAIN-SUFFIX,shopify.com
@@ -81,19 +81,7 @@ payload:
   - DOMAIN-SUFFIX,card.io
 
   # ==========================================
-  # 6. 美区物流追踪与打单服务
-  # ==========================================
-  - DOMAIN-SUFFIX,usps.force.com
-  - DOMAIN-SUFFIX,uspstracking.com
-  - DOMAIN-SUFFIX,ups.com.edgesuite.net
-  - DOMAIN-SUFFIX,dhl.com
-  - DOMAIN-SUFFIX,dhl-express.com
-  - DOMAIN-SUFFIX,shipsaving.com
-  - DOMAIN-SUFFIX,goshippo.com
-  - DOMAIN-SUFFIX,pirateship.com
-
-  # ==========================================
-  # 7. 美区返利与导购平台 (防丢单)
+  # 6. 返利与导购平台 (防止跨IP丢单)
   # ==========================================
   - DOMAIN-SUFFIX,rakuten.com
   - DOMAIN-SUFFIX,rakuten.us
@@ -102,7 +90,7 @@ payload:
   - DOMAIN-SUFFIX,slickdeals.net
 
   # ==========================================
-  # 8. 美国主流航空公司
+  # 7. 美国主流航空公司 (常旅客里程与商旅预订)
   # ==========================================
   - DOMAIN-SUFFIX,united.com
   - DOMAIN-SUFFIX,unitedairlines.com
@@ -116,7 +104,7 @@ payload:
   - DOMAIN-SUFFIX,flyfrontier.com
 
   # ==========================================
-  # 9. 国际主流酒店集团
+  # 8. 国际主流酒店集团 (联名卡绑定与商旅预订)
   # ==========================================
   - DOMAIN-SUFFIX,marriott.com
   - DOMAIN-SUFFIX,hilton.com
@@ -131,3 +119,18 @@ payload:
   - DOMAIN-SUFFIX,accor.com
   - DOMAIN-SUFFIX,all.accor.com
   - DOMAIN-SUFFIX,fourseasons.com
+
+  # ==========================================
+  # 9. 快递物流追踪与智能打单服务 (含寄卡追踪)
+  # ==========================================
+  - DOMAIN-SUFFIX,fedex.com
+  - DOMAIN-SUFFIX,fedex.net
+  - DOMAIN-SUFFIX,ups.com
+  - DOMAIN-SUFFIX,ups.com.edgesuite.net
+  - DOMAIN-SUFFIX,usps.force.com
+  - DOMAIN-SUFFIX,uspstracking.com
+  - DOMAIN-SUFFIX,dhl.com
+  - DOMAIN-SUFFIX,dhl-express.com
+  - DOMAIN-SUFFIX,shipsaving.com
+  - DOMAIN-SUFFIX,goshippo.com
+  - DOMAIN-SUFFIX,pirateship.com
