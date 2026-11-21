@@ -1,137 +1,45 @@
 payload:
   # ==========================================
-  # 0. 底层 IPSec 端口强切 (Wi-Fi Calling 命脉)
+  # 1. Apple 美区设备画像与 Apple Pay / Wallet 鉴权
   # ==========================================
-- DST-PORT,500
-- DST-PORT,4500
+  - DOMAIN,vowifi.apple.com
+  - DOMAIN,entitlement.apple.com
+  - DOMAIN,ess.apple.com
+  - DOMAIN,gs-loc.apple.com
+  - DOMAIN-SUFFIX,3gppnetwork.org
 
   # ==========================================
-  # 1. APPLE 核心服务与美区 Wi-Fi Calling 通话底层
+  # 2. Google Voice 核心信令与 WebRTC 语音媒体穿透
   # ==========================================
-- DOMAIN,vowifi.apple.com
-- DOMAIN,entitlement.apple.com
-- DOMAIN,ess.apple.com
-- DOMAIN,gs-loc.apple.com
-- DOMAIN-SUFFIX,3gppnetwork.org
+  - DOMAIN-SUFFIX,voice.google.com
+  - DOMAIN-SUFFIX,telephony.goog
+  - DOMAIN,voice.telephony.goog
+  - DOMAIN,stun.l.google.com
+  - DOMAIN,stun1.l.google.com
+  - DOMAIN,stun2.l.google.com
+  - DOMAIN,stun3.l.google.com
+  - DOMAIN,stun4.l.google.com
+  - IP-CIDR,74.125.39.0/24,no-resolve
+  - IP-CIDR,74.125.250.0/24,no-resolve
 
   # ==========================================
-  # 2. AT&T / Red Pocket 专项强化 (含核心 ePDG、激活及网关)
+  # 3. 美区虚拟号与运营商官网账单管理 (适合固定美区 IP 登录)
   # ==========================================
-- DOMAIN,epdg.epc.mnc280.mcc310.pub.3gppnetwork.org
-- DOMAIN,ss.epdg.epc.mnc280.mcc310.pub.3gppnetwork.org
-- DOMAIN,epdg.epc.mnc410.mcc310.pub.3gppnetwork.org
-- DOMAIN,ss.epdg.epc.mnc410.mcc310.pub.3gppnetwork.org
-- DOMAIN,epdg.epc.att.net
-- DOMAIN,ss.epdg.epc.att.net
-- DOMAIN-SUFFIX,att.com
-- DOMAIN-SUFFIX,att.net
-- DOMAIN-SUFFIX,mobile.att.net
-- DOMAIN-SUFFIX,att-idns.net
-- DOMAIN-SUFFIX,attccc.com
-- DOMAIN,0.ecom.attccc.com
-- DOMAIN,attdashboard.wireless.att.com
-- DOMAIN,idp.wireless.att.com
-- DOMAIN,odc.wireless.att.com
-- DOMAIN-SUFFIX,it.att.com
-- DOMAIN,okta.attexperience.edu
-- DOMAIN-SUFFIX,redpocket.com
-- DOMAIN-SUFFIX,fpconfig.net
-  # 安卓端 App 激活与组件
-- DOMAIN-SUFFIX,posthog.com
-- DOMAIN-SUFFIX,sentry.io
-- DOMAIN-SUFFIX,app-analytics-services.com
-- DOMAIN-SUFFIX,deploypulse.io
-- DOMAIN,firebaseinstallations.googleapis.com
+  - DOMAIN-SUFFIX,tktn.be
+  - DOMAIN-SUFFIX,talkatone.com
+  - DOMAIN-SUFFIX,textnow.com
+  - DOMAIN-SUFFIX,att.com
+  - DOMAIN-SUFFIX,att.net
+  - DOMAIN-SUFFIX,redpocket.com
+  - DOMAIN-SUFFIX,t-mobile.com
+  - DOMAIN-SUFFIX,tello.com
+  - DOMAIN-SUFFIX,verizon.com
 
   # ==========================================
-  # 3. T-Mobile / Tello / Google Fi 专项
+  # 4. 美国 IP 纯净度检测 (默认检测静态 IP 状态)
   # ==========================================
-- DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
-- DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
-- DOMAIN-SUFFIX,t-mobile.com
-- DOMAIN-SUFFIX,t-mo.co
-- DOMAIN-SUFFIX,tmomail.net
-- DOMAIN-SUFFIX,g-tun.com
-- DOMAIN-SUFFIX,tello.com
-- DOMAIN,blog.tello.com
-- DOMAIN,fraud-api.tello.com
-
-  # ==========================================
-  # 4. Verizon 体系 (含 Ultra / Red Pocket CDMA 线路)
-  # ==========================================
-- DOMAIN,epdg.epc.mnc480.mcc311.pub.3gppnetwork.org
-- DOMAIN-SUFFIX,vzwwo.com
-- DOMAIN-SUFFIX,verizon.com
-- DOMAIN-SUFFIX,verizonwireless.com
-- DOMAIN-SUFFIX,vzw.com
-
-  # ==========================================
-  # 5. 全球 eSIM 远程下发与激活基础设施
-  # ==========================================
-- DOMAIN-SUFFIX,idemia.io
-- DOMAIN,rsp-4002.idemia.io
-- DOMAIN-SUFFIX,gi-de.com
-- DOMAIN-SUFFIX,thalesgroup.com
-- DOMAIN-SUFFIX,prod.onsite.me
-
-  # ==========================================
-  # 6. VoIP 美区虚拟通讯工具 (含 Google Voice 核心)
-  # ==========================================
-  # Google Voice 通信、调度与 WebRTC 信令
-- DOMAIN-SUFFIX,voice.google.com
-- DOMAIN-SUFFIX,telephony.goog
-- DOMAIN,voice.telephony.goog
-- DOMAIN,notifications.google.com
-  # Google WebRTC / STUN / TURN 穿透媒体服务器
-- DOMAIN,stun.l.google.com
-- DOMAIN,stun1.l.google.com
-- DOMAIN,stun2.l.google.com
-- DOMAIN,stun3.l.google.com
-- DOMAIN,stun4.l.google.com
-  # 其他常见虚拟号
-- DOMAIN-SUFFIX,tktn.be
-- DOMAIN-SUFFIX,talkatone.com
-- DOMAIN-SUFFIX,textnow.com
-
-  # ==========================================
-  # 7. CDN、风控安全组件 (防登录网页报错 Access Denied)
-  # ==========================================
-- DOMAIN-SUFFIX,edgesuite.net
-- DOMAIN-SUFFIX,edgekey.net
-- DOMAIN-SUFFIX,akamaihd.net
-- DOMAIN-SUFFIX,akamaized.net
-- DOMAIN-KEYWORD,akamai
-- DOMAIN-SUFFIX,kaptcha.com
-- DOMAIN-SUFFIX,msecnd.net
-- DOMAIN-SUFFIX,visualstudio.com
-- DOMAIN,fp-afd.azureedge.us
-
-  # ==========================================
-  # 8. 美国网络环境检测
-  # ==========================================
-- DOMAIN-SUFFIX,ip-api.com
-- DOMAIN-SUFFIX,whoer.net
-- DOMAIN-SUFFIX,browserleaks.com
-- DOMAIN-SUFFIX,pixelscan.net
-- DOMAIN-SUFFIX,scamalytics.com
-
-  # ==========================================
-  # 9. 运营商与 Google 媒体硬编码 IP 网段
-  # ==========================================
-  # AT&T 专属网段
-- IP-CIDR,12.0.0.0/8,no-resolve
-- IP-CIDR,107.64.0.0/10,no-resolve
-- IP-CIDR,166.128.0.0/9,no-resolve
-- IP-CIDR,129.192.0.0/16,no-resolve
-- IP-CIDR,107.122.31.0/24,no-resolve
-  # T-Mobile 专属网段
-- IP-CIDR,208.54.0.0/16,no-resolve
-- IP-CIDR,66.94.0.0/19,no-resolve
-- IP-CIDR,206.29.177.0/24,no-resolve
-  # Verizon 专属网段
-- IP-CIDR,69.78.0.0/15,no-resolve
-- IP-CIDR,198.224.128.0/17,no-resolve
-  # Google Voice / WebRTC 媒体服务器网段
-- IP-CIDR,74.125.39.0/24,no-resolve
-- IP-CIDR,74.125.250.0/24,no-resolve
-- IP-CIDR,142.250.82.0/24,no-resolve
+  - DOMAIN-SUFFIX,ip-api.com
+  - DOMAIN-SUFFIX,whoer.net
+  - DOMAIN-SUFFIX,browserleaks.com
+  - DOMAIN-SUFFIX,pixelscan.net
+  - DOMAIN-SUFFIX,scamalytics.com
