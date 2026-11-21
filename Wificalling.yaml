@@ -1,17 +1,22 @@
 payload:
   # ==========================================
-  # 1. Apple 美区设备画像、账号鉴权与 App Store / Wallet
+  # 1. Apple 美区设备画像、账号鉴权与 Apple Pay / App Store
   # ==========================================
   - DOMAIN,vowifi.apple.com
   - DOMAIN,entitlement.apple.com
   - DOMAIN,ess.apple.com
   - DOMAIN,gs-loc.apple.com
+  - DOMAIN-SUFFIX,3gppnetwork.org
   - DOMAIN,gsa.apple.com
   - DOMAIN,idmsa.apple.com
   - DOMAIN,appleid.apple.com
   - DOMAIN,wallet.apple.com
+  - DOMAIN,smp-device-content.apple.com
+  - DOMAIN,apple-finance.apple.com
   - DOMAIN,buy.itunes.apple.com
   - DOMAIN,init.itunes.apple.com
+  - DOMAIN,bag.itunes.apple.com
+  - DOMAIN,mzstorekit.itunes.apple.com
   - DOMAIN,amp-api.apps.apple.com
 
   # ==========================================
