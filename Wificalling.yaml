@@ -10,8 +10,9 @@ payload:
   - DOMAIN,idmsa.apple.com
   - DOMAIN,appleid.apple.com
   - DOMAIN,wallet.apple.com
-  - DOMAIN,smp-device-content.apple.com
   - DOMAIN,apple-finance.apple.com
+  
+  # - DOMAIN,smp-device-content.apple.com
   # - DOMAIN,mzstorekit.itunes.apple.com
   # - DOMAIN,amp-api.apps.apple.com
   # - DOMAIN,buy.itunes.apple.com
