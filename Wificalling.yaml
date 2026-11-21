@@ -6,7 +6,6 @@ payload:
   - DOMAIN,entitlement.apple.com
   - DOMAIN,ess.apple.com
   - DOMAIN,gs-loc.apple.com
-  - DOMAIN-SUFFIX,3gppnetwork.org
   - DOMAIN,gsa.apple.com
   - DOMAIN,idmsa.apple.com
   - DOMAIN,appleid.apple.com
