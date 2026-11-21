@@ -6,14 +6,11 @@ payload:
   - DOMAIN-SUFFIX,tiktokcdn-us.com
   - DOMAIN-SUFFIX,tiktokcdn-eu.com
   - DOMAIN-SUFFIX,tik-tokapi.com
-  # 历史收购遗留，仍在某些接口使用
   - DOMAIN-SUFFIX,musical.ly
   - DOMAIN-SUFFIX,muscdn.com
   - DOMAIN-SUFFIX,ttoversea.net
-  # 核心数据与图片域名
   - DOMAIN-SUFFIX,ibytedtos.com
   - DOMAIN-SUFFIX,ibyteimg.com
-  # 海外版核心 API
   - DOMAIN-SUFFIX,byteoversea.com
   - DOMAIN-SUFFIX,byteoversea.net
 
@@ -36,16 +33,7 @@ payload:
   - DOMAIN-SUFFIX,byteplusefi.com
   - DOMAIN-SUFFIX,bplslb.com
 
-  # --- 基础设施与统计 (通用海外) ---
-  # 总部域名（海外业务常挂载子域名）
-  - DOMAIN-SUFFIX,bytedance.com
-  # 图片 CDN
-  - DOMAIN-SUFFIX,byteimg.com
-  # 核心 SDK 与新加坡节点统计
+  # --- 基础设施与统计 (纯海外节点) ---
   - DOMAIN-SUFFIX,isnssdk.com
   - DOMAIN-SUFFIX,sgsnssdk.com
-  # 广告与统计
   - DOMAIN-SUFFIX,i18n-pglstatp.com
-  - DOMAIN-SUFFIX,pglstatp-toutiao.com
-  # 字节通用 API
-  - DOMAIN-SUFFIX,zijieapi.com
