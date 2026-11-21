@@ -2,489 +2,185 @@ payload:
   # ==========================================
   # 1. 核心金融基础设施 (中间件/清算/跨境支付)
   # ==========================================
-  - '+.plaid.com'              # Plaid 银行连接中间件
-  - '+.plaid.io'
-  - '+.yodlee.com'             # Yodlee 银行聚合中间件
-  - '+.envestnet.com'           # Yodlee 母公司网关
-  - '+.finicity.com'            # Finicity 万事达旗下银行连接件
-  - '+.mx.com'                  # MX 银行数据聚合服务
-  - '+.zelle.com'               # Zelle 转账核心
-  - '+.zellepay.com'            # Zelle 门户
-  - '+.wise.com'                # Wise 跨境汇款
-  - '+.wise.net'
-  - '+.transferwise.com'        # Wise 旧版主域
-  - '+.stripe.com'              # Stripe 支付网关
-  - '+.remitly.com'             # Remitly 跨境汇款
-  - '+.pandaremit.com'          # 熊猫速汇
-  - '+.lemfi.com'               # Lemfi 跨境汇款
-  - '+.lemonade.finance'
-  - '+.lemonadefi.com'
+  - DOMAIN-SUFFIX,plaid.com
+  - DOMAIN-SUFFIX,plaid.io
+  - DOMAIN-SUFFIX,yodlee.com
+  - DOMAIN-SUFFIX,envestnet.com
+  - DOMAIN-SUFFIX,finicity.com
+  - DOMAIN-SUFFIX,mx.com
+  - DOMAIN-SUFFIX,zelle.com
+  - DOMAIN-SUFFIX,zellepay.com
+  - DOMAIN-SUFFIX,wise.com
+  - DOMAIN-SUFFIX,wise.net
+  - DOMAIN-SUFFIX,transferwise.com
+  - DOMAIN-SUFFIX,stripe.com
+  - DOMAIN-SUFFIX,remitly.com
+  - DOMAIN-SUFFIX,pandaremit.com
+  - DOMAIN-SUFFIX,lemfi.com
+  - DOMAIN-SUFFIX,lemonade.finance
+  - DOMAIN-SUFFIX,lemonadefi.com
 
   # ==========================================
   # 2. 电子钱包与支付生态 (PayPal / Cash App)
   # ==========================================
-  # Cash App
-  - '+.cash.app'                # Cash App 主域
-  - '+.cash.me'                 # Cash App 付款短链
-  - '+.squareup.com'            # Square 支付网关
-  - '+.square.com'              # Block 母公司路由
-
-  # PayPal
-  - '+.paypal.com'              # PayPal 主域
-  - '+.paypal.us'               # PayPal 美区路由
-  - '+.paypal.me'               # 收付款短链
-  - '+.pypl.com'                # PayPal 核心 API
-  - '+.paypalobjects.com'       # 静态资源与反欺诈脚本
-  - '+.paypal-status.com'       # 状态监控
-  - '+.paypal-mktg.com'         # 营销追踪
-  - '+.paypal-communications.com' # 官方邮件/通知
-  - '+.paypal-mobile.com'       # App 移动端遥测
-  - '+.paypal-corp.com'         # 企业风控网关
-  - '+.braintree.com'           # Braintree 支付
-  - '+.braintreegateway.com'
-  - '+.braintreepayments.com'
-  - '+.braintree-api.com'
-  - '+.venmo.com'               # Venmo 钱包
-  - '+.xoom.com'                # Xoom 国际汇款
-  - '+.hyperwallet.com'         # Hyperwallet 企业代付
-  - '+.zettle.com'              # Zettle POS 系统
-  - '+.simility.com'            # PayPal 设备风控
+  - DOMAIN-SUFFIX,cash.app
+  - DOMAIN-SUFFIX,cash.me
+  - DOMAIN-SUFFIX,squareup.com
+  - DOMAIN-SUFFIX,square.com
+  - DOMAIN-SUFFIX,paypal.com
+  - DOMAIN-SUFFIX,paypal.us
+  - DOMAIN-SUFFIX,paypal.me
+  - DOMAIN-SUFFIX,pypl.com
+  - DOMAIN-SUFFIX,paypalobjects.com
+  - DOMAIN-SUFFIX,paypal-status.com
+  - DOMAIN-SUFFIX,paypal-mktg.com
+  - DOMAIN-SUFFIX,paypal-communications.com
+  - DOMAIN-SUFFIX,paypal-mobile.com
+  - DOMAIN-SUFFIX,paypal-corp.com
+  - DOMAIN-SUFFIX,braintree.com
+  - DOMAIN-SUFFIX,braintreegateway.com
+  - DOMAIN-SUFFIX,braintreepayments.com
+  - DOMAIN-SUFFIX,braintree-api.com
+  - DOMAIN-SUFFIX,venmo.com
+  - DOMAIN-SUFFIX,xoom.com
+  - DOMAIN-SUFFIX,hyperwallet.com
+  - DOMAIN-SUFFIX,zettle.com
+  - DOMAIN-SUFFIX,simility.com
 
   # ==========================================
   # 3. 美国主流卡组织与核心银行
   # ==========================================
   # American Express (运通)
-  - '+.americanexpress.com'     # 运通官网与核心 API[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span)
-  - '+.amex.com'                # 快捷入口
-  - '+.amexnetwork.com'         # 运通清算网络
-  - '+.americanexpress.co.uk'   # 英国区路由
-  - '+.aexp.com'                # 通用 API 网关
-  - '+.aexp-static.com'         # 官方静态资源
-  - '+.ameximg.com'             # 图片多媒体 CDN
-  - '+.americanexpressstatic.com' # 静态资源镜像
-  - '+.amex.co'                 # 短信/邮件短链
-  - '+.inauth.com'              # 运通移动端设备风控
-  - '+.inauth.net'
+  - DOMAIN-SUFFIX,americanexpress.com
+  - DOMAIN-SUFFIX,amex.com
+  - DOMAIN-SUFFIX,amexnetwork.com
+  - DOMAIN-SUFFIX,americanexpress.co.uk
+  - DOMAIN-SUFFIX,aexp.com
+  - DOMAIN-SUFFIX,aexp-static.com
+  - DOMAIN-SUFFIX,ameximg.com
+  - DOMAIN-SUFFIX,americanexpressstatic.com
+  - DOMAIN-SUFFIX,amex.co
+  - DOMAIN-SUFFIX,inauth.com
+  - DOMAIN-SUFFIX,inauth.net
 
   # Capital One (第一资本)
-  - '+.capitalone.com'          # 核心业务
-  - '+.capitalonecards.com'     # 信用卡业务
-  - '+.capitalonebank.com'      # 网银账户
-  - '+.capitaloneinvesting.com' # 理财业务
-  - '+.capitaloneauto.com'      # 汽车金融
-  - '+.capitalone360.com'       # 360 网银
-  - '+.capital-one.com'         # 跳转短链
-  - '+.capitaloneoffers.com'     # 消费返利
-  - '+.capitalonegslbex.com'     # 全球负载均衡
-  - '+.ivaws.com'               # AWS 托管节点
-  - '+.capitalonetravel.com'    # 差旅预订
-  - '+.hopper.com'              # 差旅算法接口
-  - '+.capitaloneshopping.com'   # 购物返利插件
-  - '+.wikibuy.com'
-  - '+.medallia.com'             # 用户体验反馈
-  - '+.vaicore.store'           # 混淆与备用节点
-  - '+.vaicore.xyz'
-  - '+.vaicore.site'
-  - '+.akisinn.site'
-  - '+.akisinn.info'
-  - '+.dewrain.site'
-  - '+.dewrain.life'
-  - '+.dewrain.world'
-  - '+.kvaedit.site'
+  - DOMAIN-SUFFIX,capitalone.com
+  - DOMAIN-SUFFIX,capitalonecards.com
+  - DOMAIN-SUFFIX,capitalonebank.com
+  - DOMAIN-SUFFIX,capitaloneinvesting.com
+  - DOMAIN-SUFFIX,capitaloneauto.com
+  - DOMAIN-SUFFIX,capitalone360.com
+  - DOMAIN-SUFFIX,capital-one.com
+  - DOMAIN-SUFFIX,capitaloneoffers.com
+  - DOMAIN-SUFFIX,capitalonegslbex.com
+  - DOMAIN-SUFFIX,ivaws.com
+  - DOMAIN-SUFFIX,capitalonetravel.com
+  - DOMAIN-SUFFIX,hopper.com
+  - DOMAIN-SUFFIX,capitaloneshopping.com
+  - DOMAIN-SUFFIX,wikibuy.com
+  - DOMAIN-SUFFIX,medallia.com
+  - DOMAIN-SUFFIX,vaicore.store
+  - DOMAIN-SUFFIX,vaicore.xyz
+  - DOMAIN-SUFFIX,vaicore.site
+  - DOMAIN-SUFFIX,akisinn.site
+  - DOMAIN-SUFFIX,akisinn.info
+  - DOMAIN-SUFFIX,dewrain.site
+  - DOMAIN-SUFFIX,dewrain.life
+  - DOMAIN-SUFFIX,dewrain.world
+  - DOMAIN-SUFFIX,kvaedit.site
 
   # Discover
-  - '+.discover.com'            # Discover 主站
-  - '+.discovercard.com'        # 信用卡门户
-  - '+.discoverbank.com'        # 储蓄银行主域
-  - '+.discoverfinancial.com'   # 金融母公司
-  - '+.discovernetwork.com'     # Discover 清算网络
-  - '+.pulse-eft.com'           # Pulse ATM/借记清算网
-  - '+.dinersclub.com'          # 大来卡清算网
-  - '+.dinersclubinternational.com'
+  - DOMAIN-SUFFIX,discover.com
+  - DOMAIN-SUFFIX,discovercard.com
+  - DOMAIN-SUFFIX,discoverbank.com
+  - DOMAIN-SUFFIX,discoverfinancial.com
+  - DOMAIN-SUFFIX,discovernetwork.com
+  - DOMAIN-SUFFIX,pulse-eft.com
+  - DOMAIN-SUFFIX,dinersclub.com
+  - DOMAIN-SUFFIX,dinersclubinternational.com
 
   # Chase (大通)
-  - '+.chase.com'               # 大通核心
-  - '+.jpmorgan.com'            # 摩根大通
-  - '+.jpmorganchase.com'
-  - '+.chasecdn.com'            # 静态资源
-  - '+.chase.co.uk'
-  - '+.chaseip.com'
-  - '+.jpmchase.net'
-  - '+.chaseonline.chase.com'
+  - DOMAIN-SUFFIX,chase.com
+  - DOMAIN-SUFFIX,jpmorgan.com
+  - DOMAIN-SUFFIX,jpmorganchase.com
+  - DOMAIN-SUFFIX,chasecdn.com
+  - DOMAIN-SUFFIX,chase.co.uk
+  - DOMAIN-SUFFIX,chaseip.com
+  - DOMAIN-SUFFIX,jpmchase.net
+  - DOMAIN-SUFFIX,chaseonline.chase.com
 
   # Bank of America (美国银行)
-  - '+.bankofamerica.com'       # BoA 主站
-  - '+.bankofamerica1.com'
-  - '+.bac-assets.com'          # 静态资源
-  - '+.bac.com'
-  - '+.ns-bac.com'
-  - '+.bofa.com'
+  - DOMAIN-SUFFIX,bankofamerica.com
+  - DOMAIN-SUFFIX,bankofamerica1.com
+  - DOMAIN-SUFFIX,bac-assets.com
+  - DOMAIN-SUFFIX,bac.com
+  - DOMAIN-SUFFIX,ns-bac.com
+  - DOMAIN-SUFFIX,bofa.com
 
   # Citibank (花旗)
-  - '+.citibank.com'            # 花旗核心
-  - '+.citi.com'
-  - '+.citigroup.com'
-  - '+.citi.io'
+  - DOMAIN-SUFFIX,citibank.com
+  - DOMAIN-SUFFIX,citi.com
+  - DOMAIN-SUFFIX,citigroup.com
+  - DOMAIN-SUFFIX,citi.io
 
   # Wells Fargo (富国银行)
-  - '+.wellsfargo.com'          # 富国核心
-  - '+.wf.com'
-  - '+.wellsfargomedia.com'     # 静态媒体
-  - '+.wellsfargoadvisors.com'
-  - '+.wellsfargo.net'
+  - DOMAIN-SUFFIX,wellsfargo.com
+  - DOMAIN-SUFFIX,wf.com
+  - DOMAIN-SUFFIX,wellsfargomedia.com
+  - DOMAIN-SUFFIX,wellsfargoadvisors.com
+  - DOMAIN-SUFFIX,wellsfargo.net
 
   # US Bank (合众银行)
-  - '+.usbank.com'              # 合众银行
+  - DOMAIN-SUFFIX,usbank.com
 
   # East West Bank (华美银行 & Velo)
-  - '+.eastwestbank.com'        # 华美核心
-  - '+.eastwest.com'
-  - '+.velobank.com'            # Velo 核心
-  - '+.baixingyllh.com'
-  - '+.epayments-epaystatic-e.money-movement.com'
+  - DOMAIN-SUFFIX,eastwestbank.com
+  - DOMAIN-SUFFIX,eastwest.com
+  - DOMAIN-SUFFIX,velobank.com
+  - DOMAIN-SUFFIX,baixingyllh.com
+  - DOMAIN-SUFFIX,epayments-epaystatic-e.money-movement.com
 
   # 其他本土商业银行与投行
-  - '+.goldmansachs.com'        # 高盛 (Marcus)
-  - '+.morganstanley.com'       # 摩根士丹利
-  - '+.bnymellon.com'           # 纽约梅隆
-  - '+.statestreet.com'         # 道富
-  - '+.citizensbank.com'        # Citizens
-  - '+.53.com'                  # Fifth Third
-  - '+.key.com'                 # KeyBank
-  - '+.northerntrust.com'        # 北方信托
-  - '+.regions.com'             # Regions
-  - '+.mtb.com'                 # M&T
-  - '+.huntington.com'          # 亨廷顿
-  - '+.bbvausa.com'             # BBVA
-  - '+.santanderbank.com'       # 桑坦德美国
-  - '+.comerica.com'            # Comerica
-  - '+.zionsbank.com'           # Zions
-  - '+.cathaybank.com'          # 国泰银行
-  - '+.onlineaccess1.com'
-  - '+.boh.com'                 # 夏威夷银行
-  - '+.fultonbank.com'          # Fulton
-  - '+.hokahola.com'
-  - '+.websterbank.com'         # Webster
-  - '+.frostbank.com'           # Frost
-  - '+.ibercabank.com'          # IberiaBank
-  - '+.firsthorizon.com'        # First Horizon
-  - '+.commercebank.com'        # Commerce
-  - '+.oldnational.com'         # Old National
-  - '+.umb.com'                 # UMB
-  - '+.people.com'              # People's United
-  - '+.synovus.com'             # Synovus
-  - '+.cadencebank.com'         # Cadence
-  - '+.bokf.com'                # BOK Financial
+  - DOMAIN-SUFFIX,goldmansachs.com
+  - DOMAIN-SUFFIX,morganstanley.com
+  - DOMAIN-SUFFIX,bnymellon.com
+  - DOMAIN-SUFFIX,statestreet.com
+  - DOMAIN-SUFFIX,citizensbank.com
+  - DOMAIN-SUFFIX,53.com
+  - DOMAIN-SUFFIX,key.com
+  - DOMAIN-SUFFIX,northerntrust.com
+  - DOMAIN-SUFFIX,regions.com
+  - DOMAIN-SUFFIX,mtb.com
+  - DOMAIN-SUFFIX,huntington.com
+  - DOMAIN-SUFFIX,bbvausa.com
+  - DOMAIN-SUFFIX,santanderbank.com
+  - DOMAIN-SUFFIX,comerica.com
+  - DOMAIN-SUFFIX,zionsbank.com
+  - DOMAIN-SUFFIX,cathaybank.com
+  - DOMAIN-SUFFIX,onlineaccess1.com
+  - DOMAIN-SUFFIX,boh.com
+  - DOMAIN-SUFFIX,fultonbank.com
+  - DOMAIN-SUFFIX,hokahola.com
+  - DOMAIN-SUFFIX,websterbank.com
+  - DOMAIN-SUFFIX,frostbank.com
+  - DOMAIN-SUFFIX,ibercabank.com
+  - DOMAIN-SUFFIX,firsthorizon.com
+  - DOMAIN-SUFFIX,commercebank.com
+  - DOMAIN-SUFFIX,oldnational.com
+  - DOMAIN-SUFFIX,umb.com
+  - DOMAIN-SUFFIX,people.com
+  - DOMAIN-SUFFIX,synovus.com
+  - DOMAIN-SUFFIX,cadencebank.com
+  - DOMAIN-SUFFIX,bokf.com
 
   # ==========================================
   # 4. 信用社体系 (Credit Unions)
   # ==========================================
-  - '+.alliantcreditunion.com'   # Alliant 奥兰特信用社
-  - '+.alliantcu.org'
-  - '+.alliantcreditunion.org'
-  - '+.dcu.org'                  # DCU
-  - '+.navyfederal.org'         # Navy Federal 军人信用社
-  - '+.navyfcu.org'
-  - '+.penfed.org'               # PenFed 五角大楼信用社
-  - '+.secu.org'                # SECU
-  - '+.becu.org'                # BECU 波音信用社
-  - '+.firsttechfed.com'        # First Tech 科技员工信用社
-  - '+.randfcu.org'              # Randolph-Brooks
-  - '+.suncoastcreditunion.com'  # Suncoast
-  - '+.trianglecu.org'          # Triangle
-
-  # ==========================================
-  # 5. 数字银行、特色卡片与信用构建
-  # ==========================================
-  # 汇丰美国
-  - '+.us.hsbc.com'             # HSBC US 门户
-  - '+.hsbc.com.us'
-  - '+.hsbc.com.uk'
-  - '+.hsbcnet.com'
-  - '+.vv1865.com'
-
-  # SoFi
-  - '+.sofi.com'                # SoFi 核心主域
-  - '+.sofi.org'
-  - '+.sofi.net'
-  - '+.sofi.io'
-  - '+.soficdn.net'             # 静态 CDN
-
-  # Revolut
-  - '+.revolut.com'             # Revolut 核心主域
-  - '+.revolut.me'
-  - '+.revolut.codes'
-  - '+.revolutlabs.com'
-  - '+.aqueduct.revolutlabs.com'
-  - '+.assets.revolut.com'
-  - '+.sso.revolut.com'
-  - '+.licelus.com'
-  - '+.revolut.link'
-
-  # 信用构建与新移民卡
-  - '+.kikoff.com'              # Kikoff 信用构建
-  - '+.biltrewards.com'         # Bilt 房租积分卡
-  - '+.bilt.com'
-  - '+.firstcard.app'           # Firstcard 留学生卡
-  - '+.zolve.com'               # Zolve 无SSN美卡
-  - '+.comun.app'               # Comun 移民银行
-  - '+.comun.com'
-  - '+.openskycc.com'           # OpenSky 押金信用卡
-
-  # 零售及数字银行
-  - '+.truist.com'              # Truist
-  - '+.pnc.com'                 # PNC
-  - '+.pncbank.com'
-  - '+.pnc.net'
-  - '+.tdbank.com'              # TD Bank
-  - '+.td.com'
-  - '+.synchronybank.com'       # Synchrony 同步银行
-  - '+.synchrony.com'
-  - '+.ally.com'                # Ally 纯网银
-  - '+.allybank.com'
-  - '+.varomoney.com'           # Varo 数字银行
-  - '+.varobank.com'
-  - '+.go2bank.com'             # GO2bank
-  - '+.gobankrewards.com'
-  - '+.trydave.com'             # Dave 卡
-  - '+.sezzle.com'              # Sezzle 分期
-  - '+.monzo.com'               # Monzo
-  - '+.monzo.statuspage.io'
-  - '+.bmo.com'                 # BMO
-  - '+.bmo.us'
-  - '+.barclaysus.com'          # 巴克莱美国
-  - '+.barclays.com'
-  - '+.axosbank.com'            # Axos
-  - '+.axos.com'
-  - '+.one.app'                 # One 沃尔玛数字银行
-  - '+.onefinance.com'
-  - '+.gosavo.com'              # SAVO 跨境钱包
-  - '+.rakuten.com'             # Rakuten 返利
-  - '+.rakuten.us'
-
-  # ==========================================
-  # 6. 美股主流券商与交易分析
-  # ==========================================
-  # Charles Schwab (嘉信理财)
-  - '+.schwab.com'              # 嘉信核心
-  - '+.schwab.net'
-  - '+.schwabclient.com'
-  - '+.schwabcdn.com'           # 静态 CDN
-  - '+.schwabplan.com'          # 养老金/信托
-  - '+.tdameritrade.com'        # 德美利证券
-  - '+.thinkorswim.com'         # TOS 交易终端
-
-  # Fidelity (富达)
-  - '+.fidelity.com'            # 富达核心
-  - '+.fidelityinvestments.com'
-  - '+.fmrit.com'
-  - '+.fidelity.co.uk'
-  - '+.fidelity-commerce.com'
-  - '+.netbenefits.com'         # 401K/企业福利
-  - '+.wealthscape.com'
-  - '+.streetscape.com'
-  - '+.fmr.com'
-
-  # Interactive Brokers (盈透证券)
-  - '+.interactivebrokers.com'  # IBKR 官网
-  - '+.interactivebrokers.co.uk'
-  - '+.ibkr.com'                # 核心 API
-  - '+.ibkr.info'
-  - '+.ibkr.com.hk'
-  - '+.ibllc.com'
-  - '+.clientam.com'
-  - '+.globaltrader.com'        # GlobalTrader
-
-  # 常用零售券商
-  - '+.robinhood.com'           # Robinhood 核心
-  - '+.robinhood.net'           # 实时行情 WebSocket
-  - '+.rbnhd.com'               # 短链
-  - '+.firstrade.com'           # 第一证券 (Firstrade)
-  - '+.firstrade.io'
-  - '+.firstrade.app'
-  - '+.bbae.com'                # 必贝证券 (BBAE)
-  - '+.bbae.io'
-  - '+.bbaegroup.com'
-  - '+.webull.com'              # 微牛证券 (Webull)
-  - '+.webullcorp.com'
-  - '+.etrade.com'              # E*TRADE (亿创理财)
-  - '+.etrade.in'
-  - '+.etrade.ca'
-  - '+.etrade.com.hk'
-  - '+.tastytrade.com'          # Tastytrade 期权券商
-  - '+.tastyworks.com'
-  - '+.tastycrypto.com'
-  - '+.tastytrade.io'
-  - '+.developer.tastytrade.com'
-  - '+.betterment.com'          # Betterment 投顾
-  - '+.vanguard.com'            # 先锋领航 (Vanguard)
-  - '+.vanguardinvestments.com'
-
-  # 行情图表工具
-  - '+.tradingview.com'         # TradingView 行情
-  - '+.tvstatic.com'            # 静态组件
-
-  # ==========================================
-  # 7. 信用局报告与开户风控 (三大局/Chex/EWS)
-  # ==========================================
-  # 三大信用局
-  - '+.experian.com'            # Experian 益博睿
-  - '+.experian.co.uk'
-  - '+.experian.in'
-  - '+.experianconsumeringservices.com'
-  - '+.expn.com'
-  - '+.transunion.com'          # TransUnion 环联
-  - '+.transunion.ca'
-  - '+.tu.com'
-  - '+.truelink.com'
-  - '+.equifax.com'             # Equifax
-  - '+.equifax.ca'
-  - '+.efx.com'
-  - '+.equi.com'
-  - '+.annualcreditreport.com'  # 官方年度免费信用报告
-
-  # 信用分与开户征信
-  - '+.fico.com'                # FICO 官方
-  - '+.myfico.com'
-  - '+.creditkarma.com'         # Credit Karma 查分
-  - '+.nav.com'                 # 商业信用
-  - '+.chexsystems.com'         # ChexSystems 银行开户风险库
-  - '+.earlywarning.com'        # EWS 银行反洗钱与清算记录
-  - '+.savvymoney.com'          # 信用分插件
-  - '+.identityguard.com'       # 身份盗用监控
-  - '+.lifelock.com'            # LifeLock 身份防护
-
-  # ==========================================
-  # 8. 安全防护、身份 KYC 与风控引擎
-  # ==========================================
-  # WAF 盾与验证码
-  - '+.imperva.com'             # Imperva 安全盾[span_2](start_span)[span_2](end_span)
-  - '+.incapsula.com'           # Imperva 底层清洗网
-  - '+.hcaptcha.com'            # hCaptcha
-
-  # 反欺诈与设备指纹
-  - '+.threatmetrix.com'        # ThreatMetrix 设备指纹
-  - '+.online-metrix.net'
-  - '+.lexisnexis.com'          # LexisNexis 身份数据库
-  - '+.threatexpert.com'
-  - '+.iovation.com'            # iovation 设备风控
-  - '+.iesnare.com'
-  - '+.siftscience.com'         # Sift 行为风控
-  - '+.sift.com'
-  - '+.forter.com'              # Forter 反欺诈
-  - '+.kount.com'               # Kount 欺诈防护
-  - '+.arkoselabs.com'          # Arkose Labs 旋转验证
-  - '+.prodregistryv2.org'      # 底层反欺诈接口[span_3](start_span)[span_3](end_span)
-  - '+.featureassets.org'       # 配置开关下发[span_4](start_span)[span_4](end_span)
-
-  # 身份核验 (KYC / SSO)
-  - '+.id.me'                   # ID.me 官方身份认证
-  - '+.withpersona.com'         # Persona 证件核验
-  - '+.veriff.com'              # Veriff 活体扫描
-  - '+.jumio.com'               # Jumio 证件扫描
-  - '+.onfido.com'              # Onfido 活体识别
-  - '+.trulioo.com'             # Trulioo 全球核验
-  - '+.socure.com'              # Socure 银行身份核查
-  - '+.entrust.net'             # Entrust 证书核验
-  - '+.duosecurity.com'         # Duo MFA 认证
-  - '+.symantec.com'            # VIP Access 动态密保
-  - '+.okta.com'                # Okta 单点登录
-  - '+.oktacdn.com'
-  - '+.onelogin.com'            # OneLogin
-
-  # 基础遥测与前端埋点
-  - '+.adobedtm.com'            # Adobe 标签管理[span_5](start_span)[span_5](end_span)
-  - '+.omtrdc.net'              # Adobe 统计
-  - '+.demdex.net'              # 身份识别
-  - '+.everesttech.net'
-  - '+.amplitude.com'           # Amplitude 行为分析
-  - '+.sentry.io'               # Sentry 错误日志
-  - '+.newrelic.com'            # New Relic 性能监控
-  - '+.kochava.com'             # 归因追踪
-  - '+.branch.io'               # 深度链接
-  - '+.customer.io'             # 消息推送
-  - '+.intercom.io'             # 在线客服
-  - '+.intercomcdn.com'
-  - '+.helpshift.com'
-  - '+.glia.com'
-  - '+.launchdarkly.com'        # 灰度控制
-  - '+.glance.net'              # 远程屏幕共享
-  - '+.akstat.io'               # Akamai 遥测
-  - '+.go-mpulse.net'
-  - '+.akamaized.net'
-  - '+.ws-eu.pusher.com'
-  - '+.appsflyersdk.com'
-  - '+.apptentive.com'          # 移动端用户反馈
-  - '+.securetheorem.com'
-  - '+.transmitsecurity.io'
-  - '+.glassboxdigital.io'
-  - '+.mparticle.com'
-  - '+.braze.com'
-  - '+.braze-images.com'
-  - '+.sprig.com'
-  - '+.ipify.org'               # 出口 IP 检测
-
-  # ==========================================
-  # 9. 美国政务与公用服务
-  # ==========================================
-  - '+.usps.com'                # USPS 官网与包裹追踪
-  - '+.usps.org'
-  - '+.informeddelivery.com'    # 每日信件扫描服务
-  - '+.uspspostalone.com'       # 企业邮务网关
-  - '+.irs.gov'                 # IRS 美国国税局
-  - '+.ssa.gov'                 # SSA 社会安全局
-
-  # ==========================================
-  # 10. 通信运营商与虚拟号 (SIM / eSIM / VoIP)
-  # ==========================================
-  # T-Mobile
-  - '+.t-mobile.com'            # T-Mobile 官网与激活
-  - '+.t-mobile.net'            # 核心网络鉴权
-  - '+.tmus.io'                 # 官方跳转分发
-  - '+.ondemandconnectivity.com' # eSIM SM-DP+ 证书下载
-
-  # Red Pocket
-  - '+.redpocket.com'           # Red Pocket 业务主域
-  - '+.redpocketmobile.com'
-  - '+.goredpocket.com'
-  - '+.posthog.com'             # 客户端行为上报
-  - '+.hot-updater.edgecraft.workers.dev' # App 热更新
-  - '+.app-analytics-services.com'
-  - '+.fpconfig.net'            # 设备指纹核验
-
-  # Tello
-  - '+.tello.com'               # Tello 业务主域
-  - '+.keepcalling.net'         # 母公司通信网关
-  - '+.keepcalling.com'
-
-  # Ultra Mobile
-  - '+.ultramobile.com'         # Ultra Mobile / PayGo
-  - '+.ultra.me'
-
-  # 1pMobile (英国)
-  - '+.1pmobile.com'            # 1pMobile 核心账户
-  - '+.1psim.com'
-  - '+.1psim.co.uk'
-
-  # Talkatone (VoIP)
-  - '+.talkatone.com'           # Talkatone 官网
-  - '+.tktn.be'                 # 信令通信核心
-  - '+.tktn.at'
-# ==========================================
-# 11. 补充：问卷调研、3DS验证、VoWiFi底层与物流
-# ==========================================
-  - '+.qualtrics.com'            # 银行/金融机构用户体验问卷 (Amex/Chase等)
-  - '+.cardinalcommerce.com'     # 信用卡 3DS 安全验证网关
-  - '+.arcot.com'                # 支付验证服务
-  - '+.biocatch.com'             # 银行行为生物识别风控
-  - '+.behaviosec.com'           # 行为特征风控
-  - '+.perimeterx.net'           # 登录防爬与环境盾
-  - '+.px-cdn.net'
-  - '+.px-cloud.net'
-  - '+.pub.3gppnetwork.org'      # 运营商 Wi-Fi Calling (ePDG/IMS) 通用网关
-  - '+.vzwwo.com'                # Verizon Wi-Fi Calling 网关
-  - '+.att.com'                  # AT&T 网关 (Red Pocket GSMA 线路)
-  - '+.att.net'
-  - '+.verizon.com'              # Verizon 网关 (Red Pocket CDMA 线路)
-  - '+.fedex.com'                # FedEx 寄卡追踪
-  - '+.ups.com'                  # UPS 寄卡追踪
+  - DOMAIN-SUFFIX,alliantcreditunion.com
+  - DOMAIN-SUFFIX,alliantcu.org
+  - DOMAIN-SUFFIX,alliantcreditunion.org
+  - DOMAIN-SUFFIX,dcu.org
+  - DOMAIN-SUFFIX,navyfederal.org
+  - DOMAIN-SUFFIX,navyfcu.org
+  - DOMAIN-SUFFIX,penfed.org
+  - DOMAIN-SUFFIX,secu
