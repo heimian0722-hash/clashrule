@@ -9,7 +9,63 @@ payload:
   - DOMAIN-SUFFIX,3gppnetwork.org
 
   # ==========================================
-  # 2. Google Voice 核心信令与 WebRTC 语音媒体穿透
+  # 2. AT&T / Red Pocket App 专项强化 (含激活、网关与配置)
+  # ==========================================
+  - DOMAIN,epdg.epc.mnc280.mcc310.pub.3gppnetwork.org
+  - DOMAIN,ss.epdg.epc.mnc280.mcc310.pub.3gppnetwork.org
+  - DOMAIN,epdg.epc.mnc410.mcc310.pub.3gppnetwork.org
+  - DOMAIN,ss.epdg.epc.mnc410.mcc310.pub.3gppnetwork.org
+  - DOMAIN,epdg.epc.att.net
+  - DOMAIN,ss.epdg.epc.att.net
+  - DOMAIN-SUFFIX,att.com
+  - DOMAIN-SUFFIX,att.net
+  - DOMAIN-SUFFIX,mobile.att.net
+  - DOMAIN-SUFFIX,att-idns.net
+  - DOMAIN-SUFFIX,attccc.com
+  - DOMAIN,0.ecom.attccc.com
+  - DOMAIN,attdashboard.wireless.att.com
+  - DOMAIN,idp.wireless.att.com
+  - DOMAIN,odc.wireless.att.com
+  - DOMAIN-SUFFIX,it.att.com
+  - DOMAIN,okta.attexperience.edu
+  - DOMAIN-SUFFIX,redpocket.com
+  - DOMAIN-SUFFIX,fpconfig.net
+  - IP-CIDR,107.122.31.0/24,no-resolve
+
+  # ==========================================
+  # 3. T-Mobile / Tello / Google Fi 专项
+  # ==========================================
+  - DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+  - DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+  - DOMAIN-SUFFIX,t-mobile.com
+  - DOMAIN-SUFFIX,t-mo.co
+  - DOMAIN-SUFFIX,tmomail.net
+  - DOMAIN-SUFFIX,g-tun.com
+  - DOMAIN-SUFFIX,tello.com
+  - DOMAIN,blog.tello.com
+  - DOMAIN,fraud-api.tello.com
+  - IP-CIDR,206.29.177.0/24,no-resolve
+
+  # ==========================================
+  # 4. Verizon 体系 (含 Ultra / Red Pocket CDMA 线路)
+  # ==========================================
+  - DOMAIN,epdg.epc.mnc480.mcc311.pub.3gppnetwork.org
+  - DOMAIN-SUFFIX,vzwwo.com
+  - DOMAIN-SUFFIX,verizon.com
+  - DOMAIN-SUFFIX,verizonwireless.com
+  - DOMAIN-SUFFIX,vzw.com
+
+  # ==========================================
+  # 5. 全球 eSIM 远程下发与激活基础设施 (换机/补发 eSIM 必备)
+  # ==========================================
+  - DOMAIN-SUFFIX,idemia.io
+  - DOMAIN,rsp-4002.idemia.io
+  - DOMAIN-SUFFIX,gi-de.com
+  - DOMAIN-SUFFIX,thalesgroup.com
+  - DOMAIN-SUFFIX,prod.onsite.me
+
+  # ==========================================
+  # 6. VoIP 美区虚拟通讯工具 (含 Google Voice 核心与媒体穿透)
   # ==========================================
   - DOMAIN-SUFFIX,voice.google.com
   - DOMAIN-SUFFIX,telephony.goog
@@ -19,24 +75,14 @@ payload:
   - DOMAIN,stun2.l.google.com
   - DOMAIN,stun3.l.google.com
   - DOMAIN,stun4.l.google.com
+  - DOMAIN-SUFFIX,tktn.be
+  - DOMAIN-SUFFIX,talkatone.com
+  - DOMAIN-SUFFIX,textnow.com
   - IP-CIDR,74.125.39.0/24,no-resolve
   - IP-CIDR,74.125.250.0/24,no-resolve
 
   # ==========================================
-  # 3. 美区虚拟号与运营商官网账单管理 (适合固定美区 IP 登录)
-  # ==========================================
-  - DOMAIN-SUFFIX,tktn.be
-  - DOMAIN-SUFFIX,talkatone.com
-  - DOMAIN-SUFFIX,textnow.com
-  - DOMAIN-SUFFIX,att.com
-  - DOMAIN-SUFFIX,att.net
-  - DOMAIN-SUFFIX,redpocket.com
-  - DOMAIN-SUFFIX,t-mobile.com
-  - DOMAIN-SUFFIX,tello.com
-  - DOMAIN-SUFFIX,verizon.com
-
-  # ==========================================
-  # 4. 美国 IP 纯净度检测 (默认检测静态 IP 状态)
+  # 7. 美国网络环境检测 (默认检测静态 IP 纯净度)
   # ==========================================
   - DOMAIN-SUFFIX,ip-api.com
   - DOMAIN-SUFFIX,whoer.net
