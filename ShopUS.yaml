@@ -1,109 +1,101 @@
-{
-  "version": 2,
-  "rules": [
-    {
-      "domain_suffix": [
-        "aa.com",
-        "accor.com",
-        "adidas.com",
-        "alaskaair.com",
-        "all.accor.com",
-        "amazon-adsystem.com",
-        "amazon.ca",
-        "amazon.co.uk",
-        "amazon.com",
-        "bestbuy.com",
-        "bestwestern.com",
-        "bhphotovideo.com",
-        "bloomingdales.com",
-        "card.io",
-        "choicehotels.com",
-        "clinique.com",
-        "coach.com",
-        "coachoutlet.com",
-        "completion.amazon.com",
-        "costco.com",
-        "datadome.co",
-        "dell.com",
-        "delta.com",
-        "dhl-express.com",
-        "dhl.com",
-        "ebay.com",
-        "ebayimg.com",
-        "ebayrtm.com",
-        "ebaystatic.com",
-        "esteelauder.com",
-        "etsy.com",
-        "ext-amazon.com",
-        "farfetch.com",
-        "fedex.com",
-        "fedex.net",
-        "flyfrontier.com",
-        "footlocker.com",
-        "fourseasons.com",
-        "goat.com",
-        "goshippo.com",
-        "hawaiianairlines.com",
-        "hilton.com",
-        "hiltonhonors.com",
-        "homedepot.com",
-        "hp.com",
-        "hyatt.com",
-        "ihg.com",
-        "ihgagent.com",
-        "jcpenney.com",
-        "jetblue.com",
-        "kohls.com",
-        "lenovo.com",
-        "lowes.com",
-        "lululemon.com",
-        "macys.com",
-        "marriott.com",
-        "media-amazon.com",
-        "myshopify.com",
-        "neimanmarcus.com",
-        "newbalance.com",
-        "newegg.com",
-        "nike.com",
-        "nordstrom.com",
-        "nordstromimage.com",
-        "pirateship.com",
-        "puma.com",
-        "radar.io",
-        "rakuten.com",
-        "rakuten.us",
-        "ralphlauren.com",
-        "saksfifthavenue.com",
-        "samsclub.com",
-        "samsung.com",
-        "scene7.com",
-        "sephora.com",
-        "shipsaving.com",
-        "shopback.com",
-        "shopify.com",
-        "shopifycdn.com",
-        "slickdeals.net",
-        "southwest.com",
-        "spirit.com",
-        "ssense.com",
-        "ssl-images-amazon.com",
-        "stockx.com",
-        "supremenewyork.com",
-        "target-gsp.com",
-        "target.com",
-        "topcashback.com",
-        "ulta.com",
-        "united.com",
-        "unitedairlines.com",
-        "ups.com",
-        "ups.com.edgesuite.net",
-        "usps.force.com",
-        "uspstracking.com",
-        "walmart.com",
-        "walmartimages.com",
-        "wyndhamhotels.com",
-        "wyndhamrewards.com"
-      ]
-    }
-  ]
-}
+payload:
+  - DOMAIN-SUFFIX,aa.com
+  - DOMAIN-SUFFIX,accor.com
+  - DOMAIN-SUFFIX,adidas.com
+  - DOMAIN-SUFFIX,alaskaair.com
+  - DOMAIN-SUFFIX,all.accor.com
+  - DOMAIN-SUFFIX,amazon-adsystem.com
+  - DOMAIN-SUFFIX,amazon.ca
+  - DOMAIN-SUFFIX,amazon.co.uk
+  - DOMAIN-SUFFIX,amazon.com
+  - DOMAIN-SUFFIX,bestbuy.com
+  - DOMAIN-SUFFIX,bestwestern.com
+  - DOMAIN-SUFFIX,bhphotovideo.com
+  - DOMAIN-SUFFIX,bloomingdales.com
+  - DOMAIN-SUFFIX,card.io
+  - DOMAIN-SUFFIX,choicehotels.com
+  - DOMAIN-SUFFIX,clinique.com
+  - DOMAIN-SUFFIX,coach.com
+  - DOMAIN-SUFFIX,coachoutlet.com
+  - DOMAIN-SUFFIX,completion.amazon.com
+  - DOMAIN-SUFFIX,costco.com
+  - DOMAIN-SUFFIX,datadome.co
+  - DOMAIN-SUFFIX,dell.com
+  - DOMAIN-SUFFIX,delta.com
+  - DOMAIN-SUFFIX,dhl-express.com
+  - DOMAIN-SUFFIX,dhl.com
+  - DOMAIN-SUFFIX,ebay.com
+  - DOMAIN-SUFFIX,ebayimg.com
+  - DOMAIN-SUFFIX,ebayrtm.com
+  - DOMAIN-SUFFIX,ebaystatic.com
+  - DOMAIN-SUFFIX,esteelauder.com
+  - DOMAIN-SUFFIX,etsy.com
+  - DOMAIN-SUFFIX,ext-amazon.com
+  - DOMAIN-SUFFIX,farfetch.com
+  - DOMAIN-SUFFIX,fedex.com
+  - DOMAIN-SUFFIX,fedex.net
+  - DOMAIN-SUFFIX,flyfrontier.com
+  - DOMAIN-SUFFIX,footlocker.com
+  - DOMAIN-SUFFIX,fourseasons.com
+  - DOMAIN-SUFFIX,goat.com
+  - DOMAIN-SUFFIX,goshippo.com
+  - DOMAIN-SUFFIX,hawaiianairlines.com
+  - DOMAIN-SUFFIX,hilton.com
+  - DOMAIN-SUFFIX,hiltonhonors.com
+  - DOMAIN-SUFFIX,homedepot.com
+  - DOMAIN-SUFFIX,hp.com
+  - DOMAIN-SUFFIX,hyatt.com
+  - DOMAIN-SUFFIX,ihg.com
+  - DOMAIN-SUFFIX,ihgagent.com
+  - DOMAIN-SUFFIX,jcpenney.com
+  - DOMAIN-SUFFIX,jetblue.com
+  - DOMAIN-SUFFIX,kohls.com
+  - DOMAIN-SUFFIX,lenovo.com
+  - DOMAIN-SUFFIX,lowes.com
+  - DOMAIN-SUFFIX,lululemon.com
+  - DOMAIN-SUFFIX,macys.com
+  - DOMAIN-SUFFIX,marriott.com
+  - DOMAIN-SUFFIX,media-amazon.com
+  - DOMAIN-SUFFIX,myshopify.com
+  - DOMAIN-SUFFIX,neimanmarcus.com
+  - DOMAIN-SUFFIX,newbalance.com
+  - DOMAIN-SUFFIX,newegg.com
+  - DOMAIN-SUFFIX,nike.com
+  - DOMAIN-SUFFIX,nordstrom.com
+  - DOMAIN-SUFFIX,nordstromimage.com
+  - DOMAIN-SUFFIX,pirateship.com
+  - DOMAIN-SUFFIX,puma.com
+  - DOMAIN-SUFFIX,radar.io
+  - DOMAIN-SUFFIX,rakuten.com
+  - DOMAIN-SUFFIX,rakuten.us
+  - DOMAIN-SUFFIX,ralphlauren.com
+  - DOMAIN-SUFFIX,saksfifthavenue.com
+  - DOMAIN-SUFFIX,samsclub.com
+  - DOMAIN-SUFFIX,samsung.com
+  - DOMAIN-SUFFIX,scene7.com
+  - DOMAIN-SUFFIX,sephora.com
+  - DOMAIN-SUFFIX,shipsaving.com
+  - DOMAIN-SUFFIX,shopback.com
+  - DOMAIN-SUFFIX,shopify.com
+  - DOMAIN-SUFFIX,shopifycdn.com
+  - DOMAIN-SUFFIX,slickdeals.net
+  - DOMAIN-SUFFIX,southwest.com
+  - DOMAIN-SUFFIX,spirit.com
+  - DOMAIN-SUFFIX,ssense.com
+  - DOMAIN-SUFFIX,ssl-images-amazon.com
+  - DOMAIN-SUFFIX,stockx.com
+  - DOMAIN-SUFFIX,supremenewyork.com
+  - DOMAIN-SUFFIX,target-gsp.com
+  - DOMAIN-SUFFIX,target.com
+  - DOMAIN-SUFFIX,topcashback.com
+  - DOMAIN-SUFFIX,ulta.com
+  - DOMAIN-SUFFIX,united.com
+  - DOMAIN-SUFFIX,unitedairlines.com
+  - DOMAIN-SUFFIX,ups.com
+  - DOMAIN-SUFFIX,ups.com.edgesuite.net
+  - DOMAIN-SUFFIX,usps.force.com
+  - DOMAIN-SUFFIX,uspstracking.com
+  - DOMAIN-SUFFIX,walmart.com
+  - DOMAIN-SUFFIX,walmartimages.com
+  - DOMAIN-SUFFIX,wyndhamhotels.com
+  - DOMAIN-SUFFIX,wyndhamrewards.com
