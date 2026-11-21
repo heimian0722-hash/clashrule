@@ -91,12 +91,17 @@ payload:
   - DOMAIN-SUFFIX,thalesgroup.com
   - DOMAIN-SUFFIX,prod.onsite.me
 
-  # ==========================================
-  # 6. VoIP 美区虚拟通讯工具 (含 Google Voice 核心与 WebRTC 媒体穿透)
+# ==========================================
+  # 6. VoIP 美区虚拟通讯工具 (Google Voice 精细化全链路 + WebRTC 媒体)
   # ==========================================
   - DOMAIN-SUFFIX,voice.google.com
   - DOMAIN-SUFFIX,telephony.goog
-  - DOMAIN,voice.telephony.goog
+  - DOMAIN,voice.clients6.google.com
+  - DOMAIN,hangouts.clients6.google.com
+  - DOMAIN,chat-pa.clients6.google.com
+  - DOMAIN,people-pa.clients6.google.com
+  - DOMAIN,turn.google.com
+  - DOMAIN,relay.l.google.com
   - DOMAIN,stun.l.google.com
   - DOMAIN,stun1.l.google.com
   - DOMAIN,stun2.l.google.com
@@ -108,6 +113,7 @@ payload:
   - DOMAIN-SUFFIX,textnow.com
   - IP-CIDR,74.125.39.0/24,no-resolve
   - IP-CIDR,74.125.250.0/24,no-resolve
+  - IP-CIDR,142.250.82.0/24,no-resolve
 
   # ==========================================
   # 7. 美国网络环境与 IP 纯净度检测
