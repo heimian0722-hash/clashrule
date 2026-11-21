@@ -1,59 +1,66 @@
-Payload:
+payload:
   # ==========================================
   # 抓包新增：核心风控与身份验证
   # ==========================================
-  - '+.sardine.ai'                 # 核心合规/反欺诈 SDK（Ether.fi Cash 等出金与开卡关键）
-  - '+.privy.io'                   # 嵌入式 MPC 钱包与登录授权
-  - '+.walletconnect.com'          # 钱包交互网关
-  - '+.walletconnect.org'
-  - '+.web3modal.com'              # 钱包弹窗组件
-  - '+.web3modal.org'
+  # 核心合规/反欺诈 SDK（Ether.fi Cash 等出金与开卡关键）
+  - DOMAIN-SUFFIX,sardine.ai
+  # 嵌入式 MPC 钱包与登录授权
+  - DOMAIN-SUFFIX,privy.io
+  # 钱包交互网关与弹窗组件
+  - DOMAIN-SUFFIX,walletconnect.com
+  - DOMAIN-SUFFIX,walletconnect.org
+  - DOMAIN-SUFFIX,web3modal.com
+  - DOMAIN-SUFFIX,web3modal.org
 
   # ==========================================
   # 抓包新增：卡管与 Apple/Google Pay 令牌化
   # ==========================================
-  - '+.meawallet.app'              # 虚拟卡查看与手机钱包绑卡底层
+  # 虚拟卡查看与手机钱包绑卡底层
+  - DOMAIN-SUFFIX,meawallet.app
 
   # ==========================================
   # Plasma 生态 (含抓包支付后端)
   # ==========================================
-  - '+.plasma.to'
-  - '+.plasmascan.org'
-  - '+.plasma-one.tech'            # Plasma One 核心支付接口与 WebSocket
+  - DOMAIN-SUFFIX,plasma.to
+  - DOMAIN-SUFFIX,plasmascan.org
+  # Plasma One 核心支付接口与 WebSocket
+  - DOMAIN-SUFFIX,plasma-one.tech
 
   # ==========================================
   # Ether.fi 生态 (LST 与 Cash 信用卡)
   # ==========================================
-  - '+.ether.fi'
+  - DOMAIN-SUFFIX,ether.fi
 
   # ==========================================
   # 稳定币支付卡与出金
   # ==========================================
-  - '+.kast.finance'
-  - '+.kastfinance.app'
+  - DOMAIN-SUFFIX,kast.finance
+  - DOMAIN-SUFFIX,kastfinance.app
 
   # ==========================================
   # Coinbase 与 Base 原生生态
   # ==========================================
-  - '+.coinbase.com'
-  - '+.coinbasecloud.net'
-  - '+.coinbasecloud.dev'
-  - '+.coinbasewallet.com'
-  - '+.cb.id'
-  - '+.base.org'
-  - '+.basescan.org'
+  - DOMAIN-SUFFIX,coinbase.com
+  - DOMAIN-SUFFIX,coinbasecloud.net
+  - DOMAIN-SUFFIX,coinbasecloud.dev
+  - DOMAIN-SUFFIX,coinbasewallet.com
+  - DOMAIN-SUFFIX,cb.id
+  - DOMAIN-SUFFIX,base.org
+  - DOMAIN-SUFFIX,basescan.org
 
   # ==========================================
   # Kraken
   # ==========================================
-  - '+.kraken.com'
-  - '+.kraken-assets.com'
-  - '+.cryptowat.ch'
+  - DOMAIN-SUFFIX,kraken.com
+  - DOMAIN-SUFFIX,kraken-assets.com
+  - DOMAIN-SUFFIX,cryptowat.ch
 
   # ==========================================
   # 合规法币通道与稳定币基础设施
   # ==========================================
-  - '+.circle.com'
-  - '+.usdc.com'
-  - '+.plaid.com'                  # ACH 绑卡与账户验证
-  - '+.trustly.com'                # 即时转账网关
+  - DOMAIN-SUFFIX,circle.com
+  - DOMAIN-SUFFIX,usdc.com
+  # ACH 绑卡与账户验证
+  - DOMAIN-SUFFIX,plaid.com
+  # 即时转账网关
+  - DOMAIN-SUFFIX,trustly.com
