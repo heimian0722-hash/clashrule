@@ -465,6 +465,11 @@ payload:
   - DOMAIN-SUFFIX,sprig.com
   - DOMAIN-SUFFIX,qualtrics.com
   - DOMAIN-SUFFIX,ipify.org
+  - DOMAIN-SUFFIX,ingest.us.sentry.io
+  - DOMAIN,us.sentry.io
+  - DOMAIN,sentry.io
+  - DOMAIN,auth.sentry.io
+  - DOMAIN-SUFFIX,sentry-cdn.com
 
   # ==========================================
   # 9. 美国政务与公用服务
