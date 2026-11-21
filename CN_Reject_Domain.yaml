@@ -1,344 +1,195 @@
 payload:
   # --- 个人屏蔽站点 ---
-- '+.mousegesturesapi.com'
-- '+.2k5u.ru'
+  - DOMAIN-SUFFIX,mousegesturesapi.com
+  - DOMAIN-SUFFIX,2k5u.ru
 
   # --- 国家级联网监控与反诈 ---
-- '+.gjfzpt.cn'
-- '+.gjfzpt.com'
-- '+.chanct.cn'
-- '+.chanct.com'
-- '+.ifcert.cn'
-- '+.ifcert.com'
-- '+.ifcert.org.cn'
-- '+.fzlm.org.cn'
-- '+.fqzpt.org.cn'
-- '+.fanzha.org.cn'
-- '+.shfanzha.com'
-- '+.hicore-auth.com'
-- '+.hei-tong.com'
-- '+.loongteam.com'
-- '+.cert.org.cn'
-- '+.cnvd.org.cn'
-- '+.anva.org.cn'
-- '+.ics-cert.org.cn'
-- '+.certlab.org'
-- '+.china-bestmind.com'
-- '+.i-bestmind.com'
-- '+.t-bestmind.com'
-- '+.himindtech.com'
-- '+.fhss.com.cn'
-- '+.hailiangyun.cn'
-- '12381.gov.cn'
-- '+.cyberpolice.cn'
-- '+.nrtis.com.cn'
-- 'eps.caict.ac.cn'
+  - DOMAIN-SUFFIX,gjfzpt.cn
+  - DOMAIN-SUFFIX,gjfzpt.com
+  - DOMAIN-SUFFIX,chanct.cn
+  - DOMAIN-SUFFIX,chanct.com
+  - DOMAIN-SUFFIX,ifcert.cn
+  - DOMAIN-SUFFIX,ifcert.com
+  - DOMAIN-SUFFIX,ifcert.org.cn
+  - DOMAIN-SUFFIX,fzlm.org.cn
+  - DOMAIN-SUFFIX,fqzpt.org.cn
+  - DOMAIN-SUFFIX,fanzha.org.cn
+  - DOMAIN-SUFFIX,shfanzha.com
+  - DOMAIN-SUFFIX,hicore-auth.com
+  - DOMAIN-SUFFIX,hei-tong.com
+  - DOMAIN-SUFFIX,loongteam.com
+  - DOMAIN-SUFFIX,cert.org.cn
+  - DOMAIN-SUFFIX,cnvd.org.cn
+  - DOMAIN-SUFFIX,anva.org.cn
+  - DOMAIN-SUFFIX,ics-cert.org.cn
+  - DOMAIN-SUFFIX,certlab.org
+  - DOMAIN-SUFFIX,china-bestmind.com
+  - DOMAIN-SUFFIX,i-bestmind.com
+  - DOMAIN-SUFFIX,t-bestmind.com
+  - DOMAIN-SUFFIX,himindtech.com
+  - DOMAIN-SUFFIX,fhss.com.cn
+  - DOMAIN-SUFFIX,hailiangyun.cn
+  - DOMAIN,12381.gov.cn
+  - DOMAIN-SUFFIX,cyberpolice.cn
+  - DOMAIN-SUFFIX,nrtis.com.cn
+  - DOMAIN,eps.caict.ac.cn
 
   # --- 手机厂商追踪与内置广告 (精准拦截，避开云服务) ---
   # 小米 / 红米
-- '+.sec.miui.com'
-- '+.tracking.miui.com'
-- '+.onetrack.mi.com'
-- 'api.installer.xiaomi.com'
-- 'ad.xiaomi.com'
-- 'api.ad.xiaomi.com'
-- 'ad.intl.xiaomi.com'
-- 'sdkconfig.ad.xiaomi.com'
-- 'sdkconfig.ad.intl.xiaomi.com'
-- 'zeus.ad.xiaomi.com'
-- 'ad.mi.com'
-- 'adapi.xiaomi.com'
-- 'data.mistat.xiaomi.com'
-- 'stat.xiaomi.com'
-- 'track.xiaomi.com'
-- 'gateway-papa.cloud.weizhi.com'
+  - DOMAIN-SUFFIX,sec.miui.com
+  - DOMAIN-SUFFIX,tracking.miui.com
+  - DOMAIN-SUFFIX,onetrack.mi.com
+  - DOMAIN,api.installer.xiaomi.com
+  - DOMAIN,ad.xiaomi.com
+  - DOMAIN,api.ad.xiaomi.com
+  - DOMAIN,ad.intl.xiaomi.com
+  - DOMAIN,sdkconfig.ad.xiaomi.com
+  - DOMAIN,sdkconfig.ad.intl.xiaomi.com
+  - DOMAIN,zeus.ad.xiaomi.com
+  - DOMAIN,ad.mi.com
+  - DOMAIN,adapi.xiaomi.com
+  - DOMAIN,data.mistat.xiaomi.com
+  - DOMAIN,stat.xiaomi.com
+  - DOMAIN,track.xiaomi.com
+  - DOMAIN,gateway-papa.cloud.weizhi.com
 
   # 华为 / 荣耀（仅拦截日志、度量和广告，保留云空间与更新）
-- 'metrics.data.hicloud.com'
-- 'metrics1.data.hicloud.com'
-- 'logservice.hicloud.com'
-- 'log.hicloud.com'
-- 'ad.hicloud.com'
-- 'datacollector-dra.dt.hicloud.com'
-- 'events.dre.agconnect.link'
-- 'ad.huawei.com'
-- 'adapi.huawei.com'
-- 'ads.huawei.com'
-- 'union.huawei.com'
-- 'ads.hihonorcloud.com'
-- 'metrics.data.hihonorcloud.com'
-- 'logservice.hihonorcloud.com'
+  - DOMAIN,metrics.data.hicloud.com
+  - DOMAIN,metrics1.data.hicloud.com
+  - DOMAIN,logservice.hicloud.com
+  - DOMAIN,log.hicloud.com
+  - DOMAIN,ad.hicloud.com
+  - DOMAIN,datacollector-dra.dt.hicloud.com
+  - DOMAIN,events.dre.agconnect.link
+  - DOMAIN,ad.huawei.com
+  - DOMAIN,adapi.huawei.com
+  - DOMAIN,ads.huawei.com
+  - DOMAIN,union.huawei.com
+  - DOMAIN,ads.hihonorcloud.com
+  - DOMAIN,metrics.data.hihonorcloud.com
+  - DOMAIN,logservice.hihonorcloud.com
 
   # OPPO / 一加 / 真我
-- 'tracking.coloros.com'
-- 'log.stat.oppo.com'
-- 'ad.oppomobile.com'
-- 'adapi.oppomobile.com'
-- 'ads.oppomobile.com'
-- 'adsfs.oppomobile.com'
-- 'adx.ads.oppomobile.com'
-- 'bdapi.ads.oppomobile.com'
-- 'data.ads.oppomobile.com'
-- 'ck.ads.oppomobile.com'
-- 'union.oppomobile.com'
-- 'adx.ads.heytapmobi.com'
-- 'bdapi.ads.heytapmobi.com'
-- 'data.ads.heytapmobi.com'
-- 'ads.api.myoppo.com'
+  - DOMAIN,tracking.coloros.com
+  - DOMAIN,log.stat.oppo.com
+  - DOMAIN,ad.oppomobile.com
+  - DOMAIN,adapi.oppomobile.com
+  - DOMAIN,ads.oppomobile.com
+  - DOMAIN,adsfs.oppomobile.com
+  - DOMAIN,adx.ads.oppomobile.com
+  - DOMAIN,bdapi.ads.oppomobile.com
+  - DOMAIN,data.ads.oppomobile.com
+  - DOMAIN,ck.ads.oppomobile.com
+  - DOMAIN,union.oppomobile.com
+  - DOMAIN,adx.ads.heytapmobi.com
+  - DOMAIN,bdapi.ads.heytapmobi.com
+  - DOMAIN,data.ads.heytapmobi.com
+  - DOMAIN,ads.api.myoppo.com
 
   # vivo / iQOO
-- 'stsdk.vivo.com.cn'
-- 'vtrack.vivo.com.cn'
-- 'ad.vivo.com'
-- 'adapi.vivo.com'
-- 'ads.vivo.com'
-- 'union.vivo.com'
-- 'adreq.vivo.com.cn'
-- 'adlog.vivo.com.cn'
-- 'adsdk.vivo.com.cn'
-- 'vcardsdk.vivo.com.cn'
+  - DOMAIN,stsdk.vivo.com.cn
+  - DOMAIN,vtrack.vivo.com.cn
+  - DOMAIN,ad.vivo.com
+  - DOMAIN,adapi.vivo.com
+  - DOMAIN,ads.vivo.com
+  - DOMAIN,union.vivo.com
+  - DOMAIN,adreq.vivo.com.cn
+  - DOMAIN,adlog.vivo.com.cn
+  - DOMAIN,adsdk.vivo.com.cn
+  - DOMAIN,vcardsdk.vivo.com.cn
 
   # 魅族
-- 'tongji.meizu.com'
-- 'uxip.meizu.com'
+  - DOMAIN,tongji.meizu.com
+  - DOMAIN,uxip.meizu.com
 
   # 苹果（遥测与检索广告，保留 iCloud / AppStore / 推送）
-- 'metrics.icloud.com'
-- 'metrics.mzstatic.com'
-- 'stats.gc.apple.com'
-- 'iadsdk.apple.com'
-- 'ca.iadsdk.apple.com'
-- 'iad.apple.com'
-- 'iadcontent.apple.com'
-- 'iadctest.qwapi.com'
-- 'advertising.apple.com'
-- 'api-adservices.apple.com'
-- 'diagassets.apple.com'
-- 'iphonesubmissions.apple.com'
+  - DOMAIN,metrics.icloud.com
+  - DOMAIN,metrics.mzstatic.com
+  - DOMAIN,stats.gc.apple.com
+  - DOMAIN,iadsdk.apple.com
+  - DOMAIN,ca.iadsdk.apple.com
+  - DOMAIN,iad.apple.com
+  - DOMAIN,iadcontent.apple.com
+  - DOMAIN,iadctest.qwapi.com
+  - DOMAIN,advertising.apple.com
+  - DOMAIN,api-adservices.apple.com
+  - DOMAIN,diagassets.apple.com
+  - DOMAIN,iphonesubmissions.apple.com
 
   # 三星
-- '+.samsungads.com'
-- 'smetrics.samsung.com'
-- 'nmetrics.samsung.com'
-- 'analytics.samsungknox.com'
-- 'diagmon-service.samsung.com'
+  - DOMAIN-SUFFIX,samsungads.com
+  - DOMAIN,smetrics.samsung.com
+  - DOMAIN,nmetrics.samsung.com
+  - DOMAIN,analytics.samsungknox.com
+  - DOMAIN,diagmon-service.samsung.com
 
   # 运营商终端自注册
-- 'dm.wo.com.cn'
-- 'zzhc.vnet.cn'
-- 'typdm.tydevice.com'
+  - DOMAIN,dm.wo.com.cn
+  - DOMAIN,zzhc.vnet.cn
+  - DOMAIN,typdm.tydevice.com
 
   # --- 通用商业广告与第三方追踪 SDK ---
-- '+.talkingdata.com'
-- '+.talkingdata.net'
-- '+.sensorsdata.cn'
-- '+.umeng.com'
-- '+.umengcloud.com'
-- 'alog.umeng.com'
-- 'alog.umengcloud.com'
-- 'ulogs.umeng.com'
-- 'ulogs.umengcloud.com'
-- '+.gridsum.com'
-- '+.gridsumdissector.cn'
-- '+.gridsumdissector.com'
-- '+.growingio.com'
-- '+.miaozhen.com'
-- '+.shuzilm.cn'
-- '+.sigmob.cn'
-- '+.rayjump.com'
-- '+.beizi.biz'
-- '+.domob.cn'
-- '+.domob.com.cn'
-- '+.domob.org'
-- '+.adsmogo.com'
-- '+.adsmogo.org'
-- '+.admaster.com.cn'
-- '+.adprod.cn'
-- '+.anythinktech.com'
-- 'adx-cn.anythinktech.com'
-- 'api.anythinktech.com'
-- 'tk.anythinktech.com'
-- 'da.anythinktech.com'
-- '+.hubcloud.com.cn'
-- 'sdktmp.hubcloud.com.cn'
-- 'ads.hubcloud.com.cn'
-- 'ad.cyapi.cn'
-- 'ads.cyapi.cn'
-- '+.csjplatform.com'
-- '+.pangle.io'
-- '+.pangleglobal.com'
-- '+.pangolin-sdk-toutiao.com'
-- '+.pangolin-sdk-toutiao-b.com'
-- '+.pangolin-sdk-toutiao1.com'
-- '+.pglstatp-toutiao.com'
-- 'api-access.pangolin-sdk-toutiao.com'
-- 'api-access.pangolin-sdk-toutiao-b.com'
-- 'log-api.pangolin-sdk-toutiao.com'
-- 'log-api.pangolin-sdk-toutiao-b.com'
-- 'pangolin.snssdk.com'
-- 'is.snssdk.com'
-- 'mon.snssdk.com'
-- 'mon-va.byteoversea.com'
-- 'dm.bytedance.com'
-- 'ad.snssdk.com'
-- 'ads0-normal-lq.snssdk.com'
-- 'ads1-normal-lq.snssdk.com'
-- 'ads2-normal-lq.snssdk.com'
-- 'ads3-normal-lq.snssdk.com'
-- 'ads4-normal-lq.snssdk.com'
-- 'ads5-normal-lq.snssdk.com'
-- 'ads6-normal-lq.snssdk.com'
-- 'ads7-normal-lq.snssdk.com'
-- 'ads8-normal-lq.snssdk.com'
-- 'ads9-normal-lq.snssdk.com'
-- 'ads0-normal-lf.zijieapi.com'
-- 'ads1-normal-lf.zijieapi.com'
-- 'ads2-normal-lf.zijieapi.com'
-- 'ads3-normal-lf.zijieapi.com'
-- 'ads4-normal-lf.zijieapi.com'
-- 'ads5-normal-lf.zijieapi.com'
-- 'ads6-normal-lf.zijieapi.com'
-- 'ads7-normal-lf.zijieapi.com'
-- 'ads8-normal-lf.zijieapi.com'
-- 'ads9-normal-lf.zijieapi.com'
-- 'saveu0-normal-lf.zijieapi.com'
-- 'saveu1-normal-lf.zijieapi.com'
-- 'saveu2-normal-lf.zijieapi.com'
-- 'saveu3-normal-lf.zijieapi.com'
-- 'saveu4-normal-lf.zijieapi.com'
-- 'saveu5-normal-lf.zijieapi.com'
-- 'saveu6-normal-lf.zijieapi.com'
-- 'saveu7-normal-lf.zijieapi.com'
-- 'saveu8-normal-lf.zijieapi.com'
-- 'saveu9-normal-lf.zijieapi.com'
-- 'ad.toutiao.com'
-- 'dsp.toutiao.com'
-- 'ad.jinritemai.com'
-- 'ads.jinritemai.com'
-- '+.gdt.qq.com'
-- '+.gdtimg.com'
-- '+.ugdtimg.com'
-- 'e.qq.com'
-- 'ad.gtimg.com'
-- 'adsmind.tc.qq.com'
-- 'adsmind.gdtimg.com'
-- 'adsmind.apdcdn.tc.qq.com'
-- 'pgdt.gtimg.cn'
-- 'pgdt.ugdtimg.com'
-- 'splashqrb.gtimg.com'
-- 'wxsnsdy.wxs.qq.com'
-- 'mmad.qq.com'
-- 'ad.qun.qq.com'
-- 'tmead.y.qq.com'
-- 'tmeadbak.y.qq.com'
-- 'stat.y.qq.com'
-- 'monitor.uu.qq.com'
-- 'oth.eve.mdt.qq.com'
-- '+.alimama.com'
-- '+.tanx.com'
-- '+.mmstat.com'
-- 'abtest.alibaba.com'
-- 'ad.alibaba.com'
-- 'ads.alibaba.com'
-- 'admonitor-feedback.cn-hangzhou.log.aliyuncs.com'
-- 'u-aix-files.oss-cn-zhangjiakou.aliyuncs.com'
-- 'ad.taobao.com'
-- 'ads.taobao.com'
-- 'simba.taobao.com'
-- 'union.taobao.com'
-- 'huichuan.sm.cn'
-- 'applog.uc.cn'
-- 'logs.amap.com'
-- 'dualstack-arestapi.amap.com'
-- 'optimus-ads.amap.com'
-- 'optimus-ads.amap.com.w.alikunlun.com'
-- '+.baiduads.com'
-- 'adm.baidu.com'
-- 'adcdn.baidu.com'
-- 'cpro.baidu.com'
-- 'hm.baidu.com'
-- 'hmma.baidu.com'
-- 'als.baidu.com'
-- 'afd.baidu.com'
-- 'wn.pos.baidu.com'
-- 'mobads-logs.baidu.com'
-- 'mobads.baidu.com'
-- 'nadvideo2.baidu.com'
-- 'nsclick.baidu.com'
-- 'pos.baidu.com'
-- 'track.baidu.com'
-- '+.kuaishouad.com'
-- 'ad.kuaishou.com'
-- 'ads.kuaishou.com'
-- 'promotion-partner.kuaishou.com'
-- 'stat.kuaishou.com'
-- 'track.kuaishou.com'
-- 'open.e.kuaishou.com'
-- '+.adukwai.com'
-- 'ads.union.jd.com'
-- 'jzt.jd.com'
-- 'mars-xlog.jd.com'
-- 'dreport.meituan.net'
-- 'analytics.meituan.net'
-- 'wmlog.meituan.com'
-- 'ad.12306.cn'
-- 'ad.weibo.com'
-- 'adapi.weibo.com'
-- 'ads.weibo.com'
-- 'adstrategy.biz.weibo.com'
-- 'sax.mobile.sina.cn'
-- 'sdkapp.mobile.sina.cn'
-- 'track.weibo.com'
-- 'ad.iqiyi.com'
-- 'ads.iqiyi.com'
-- 'cupid.iqiyi.com'
-- 'paopaod.qiyipic.com'
-- 'ad.api.mgtv.com'
-- 'ad.mgtv.com'
-- 'ads.mgtv.com'
-- 'da.mgtv.com'
-- 'ad.api.3g.youku.com'
-- 'ad.youku.com'
-- 'ads.youku.com'
-- 'iyes.youku.com'
-- 'val.api.youku.com'
-- 'adse.ximalaya.com'
-- 'xdcs-collector.ximalaya.com'
-- 'dsp.youdao.com'
-- 'gorgon.youdao.com'
-- 'analytics.126.net'
-- 'ir.mail.126.com'
-- 'nex.corp.163.com'
-- '+.doubleclick.net'
-- '+.admob.com'
-- 'adservice.google.com'
-- 'google-analytics.com'
-- '+.googleadservices.com'
-- '+.googlesyndication.com'
-- 'app-measurement.com'
-- '+.applovin.com'
-- '+.ubixioe.com'
-- '+.youmi.net'
-- '+.yiqifa.com'
-- '+.114so.cn'
-- '+.11h5.com'
-- '+.1kxun.mobi'
-- '+.1rtb.com'
-- '+.1rtb.net'
-- '+.26zsd.cn'
-- '+.519397.com'
-- '+.626uc.com'
-- '+.915.com'
-- '+.appget.cn'
-- '+.appuu.cn'
-- '+.coinhive.com'
-- '+.dh54wf.xyz'
-- '+.g2q3e.cn'
-- '+.hivedata.cc'
-- '+.huodonghezi.cn'
-- '+.vcbn65.xyz'
-- '+.wanfeng1.com'
-- 'metrics.icloud.waves.com'
-- '+.wep016.top'
-- '+.win-stock.com.cn'
-- '+.zantainet.com'
+  - DOMAIN-SUFFIX,talkingdata.com
+  - DOMAIN-SUFFIX,talkingdata.net
+  - DOMAIN-SUFFIX,sensorsdata.cn
+  - DOMAIN-SUFFIX,umeng.com
+  - DOMAIN-SUFFIX,umengcloud.com
+  - DOMAIN,alog.umeng.com
+  - DOMAIN,alog.umengcloud.com
+  - DOMAIN,ulogs.umeng.com
+  - DOMAIN,ulogs.umengcloud.com
+  - DOMAIN-SUFFIX,gridsum.com
+  - DOMAIN-SUFFIX,gridsumdissector.cn
+  - DOMAIN-SUFFIX,gridsumdissector.com
+  - DOMAIN-SUFFIX,growingio.com
+  - DOMAIN-SUFFIX,miaozhen.com
+  - DOMAIN-SUFFIX,shuzilm.cn
+  - DOMAIN-SUFFIX,sigmob.cn
+  - DOMAIN-SUFFIX,rayjump.com
+  - DOMAIN-SUFFIX,beizi.biz
+  - DOMAIN-SUFFIX,domob.cn
+  - DOMAIN-SUFFIX,domob.com.cn
+  - DOMAIN-SUFFIX,domob.org
+  - DOMAIN-SUFFIX,adsmogo.com
+  - DOMAIN-SUFFIX,adsmogo.org
+  - DOMAIN-SUFFIX,admaster.com.cn
+  - DOMAIN-SUFFIX,adprod.cn
+  - DOMAIN-SUFFIX,anythinktech.com
+  - DOMAIN,adx-cn.anythinktech.com
+  - DOMAIN,api.anythinktech.com
+  - DOMAIN,tk.anythinktech.com
+  - DOMAIN,da.anythinktech.com
+  - DOMAIN-SUFFIX,hubcloud.com.cn
+  - DOMAIN,sdktmp.hubcloud.com.cn
+  - DOMAIN,ads.hubcloud.com.cn
+  - DOMAIN,ad.cyapi.cn
+  - DOMAIN,ads.cyapi.cn
+  - DOMAIN-SUFFIX,csjplatform.com
+  - DOMAIN-SUFFIX,pangle.io
+  - DOMAIN-SUFFIX,pangleglobal.com
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
+  - DOMAIN-SUFFIX,pglstatp-toutiao.com
+  - DOMAIN,api-access.pangolin-sdk-toutiao.com
+  - DOMAIN,api-access.pangolin-sdk-toutiao-b.com
+  - DOMAIN,log-api.pangolin-sdk-toutiao.com
+  - DOMAIN,log-api.pangolin-sdk-toutiao-b.com
+  - DOMAIN,pangolin.snssdk.com
+  - DOMAIN,is.snssdk.com
+  - DOMAIN,mon.snssdk.com
+  - DOMAIN,mon-va.byteoversea.com
+  - DOMAIN,dm.bytedance.com
+  - DOMAIN,ad.snssdk.com
+  - DOMAIN,ads0-normal-lq.snssdk.com
+  - DOMAIN,ads1-normal-lq.snssdk.com
+  - DOMAIN,ads2-normal-lq.snssdk.com
+  - DOMAIN,ads3-normal-lq.snssdk.com
+  - DOMAIN,ads4-normal-lq.snssdk.com
+  - DOMAIN,ads5-normal-lq.snssdk.com
+  - DOMAIN,ads6-normal-lq.snssdk.com
+  - DOMAIN,ads7-normal-lq.snssdk.com
+  - DOMAIN,ads8-normal-lq.snssdk.com
+  - DOMAIN,ads9-normal-lq.snssdk.com
+  - DOMAIN,ads0-normal-lf.zijieapi.com
+  - DOMAIN,ads1-normal
