@@ -12,17 +12,12 @@ payload:
   - DOMAIN,wallet.apple.com
   - DOMAIN,smp-device-content.apple.com
   - DOMAIN,apple-finance.apple.com
-  - DOMAIN,mzstorekit.itunes.apple.com
-  
+  # - DOMAIN,mzstorekit.itunes.apple.com
   # - DOMAIN,amp-api.apps.apple.com
   # - DOMAIN,buy.itunes.apple.com
   # - DOMAIN,init.itunes.apple.com
   # - DOMAIN,bag.itunes.apple.com
   
-
-  
-
-
   # ==========================================
   # 2. AT&T / Red Pocket App 专项强化 (含激活、网关、配置与App组件)
   # ==========================================
