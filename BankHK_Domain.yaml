@@ -1,101 +1,83 @@
 payload:
   # > 香港传统持牌银行 (HK Traditional Banks)
-  - '+.bochk.com'                # 中银香港
-  - '+.hsbc.com.hk'              # 汇丰银行
-  - '+.hsbc.com'                 # 汇丰集团通用
-  - '+.hangseng.com'             # 恒生银行
-  - '+.standardchartered.com.hk' # 渣打香港
-  - '+.sc.com'                   # 渣打通用
-  - '+.cmbwinglungbank.com'      # 招商永隆
-  - '+.citibank.com.hk'          # 花旗香港
-  - '+.dbs.com.hk'               # 星展香港
-  - '+.bea.com.hk'               # 东亚银行
-  - '+.icbcasia.com'             # 工银亚洲
-  - '+.ccbasia.com'              # 建行亚洲
-  - '+.ncb.com.hk'               # 南洋商业银行
-  - '+.chiyu.com.hk'             # 集友银行
-  - '+.dahsing.com'              # 大新银行
-  - '+.dahsingbank.com'          # 大新银行
-  - '+.shacombank.com.hk'        # 上海商业银行
-  - '+.ocbc.com.hk'              # 华侨银行香港
-  - '+.fubonbank.com.hk'         # 富邦银行
-  - '+.publicbank.com.hk'        # 大众银行
-  - '+.cncbinternational.com'    # 信银国际
-  - '+.citicbank.com.hk'         # 信银国际备用
+  # 中银香港
+  - DOMAIN-SUFFIX,bochk.com
+  # 汇丰银行 & 汇丰集团通用
+  - DOMAIN-SUFFIX,hsbc.com.hk
+  - DOMAIN-SUFFIX,hsbc.com
+  # 恒生银行
+  - DOMAIN-SUFFIX,hangseng.com
+  # 渣打香港 & 渣打通用
+  - DOMAIN-SUFFIX,standardchartered.com.hk
+  - DOMAIN-SUFFIX,sc.com
+  # 招商永隆
+  - DOMAIN-SUFFIX,cmbwinglungbank.com
+  # 花旗香港
+  - DOMAIN-SUFFIX,citibank.com.hk
+  # 星展香港
+  - DOMAIN-SUFFIX,dbs.com.hk
+  # 东亚银行
+  - DOMAIN-SUFFIX,bea.com.hk
+  # 工银亚洲
+  - DOMAIN-SUFFIX,icbcasia.com
+  # 建行亚洲
+  - DOMAIN-SUFFIX,ccbasia.com
+  # 南洋商业银行
+  - DOMAIN-SUFFIX,ncb.com.hk
+  # 集友银行
+  - DOMAIN-SUFFIX,chiyu.com.hk
+  # 大新银行
+  - DOMAIN-SUFFIX,dahsing.com
+  - DOMAIN-SUFFIX,dahsingbank.com
+  # 上海商业银行
+  - DOMAIN-SUFFIX,shacombank.com.hk
+  # 华侨银行香港
+  - DOMAIN-SUFFIX,ocbc.com.hk
+  # 富邦银行
+  - DOMAIN-SUFFIX,fubonbank.com.hk
+  # 大众银行
+  - DOMAIN-SUFFIX,publicbank.com.hk
+  # 信银国际
+  - DOMAIN-SUFFIX,cncbinternational.com
+  - DOMAIN-SUFFIX,citicbank.com.hk
 
   # > 新加坡核心银行 (SG Core Banks)
-  - '+.dbs.com'                  # 星展集团
-  - '+.posb.com.sg'              # 新加坡 POSB
-  - '+.uob.com.sg'               # 大华银行
-  - '+.uobgroup.com'             # UOB 集团
-  - '+.ocbc.com'                 # 华侨银行集团核心
+  # 星展集团 & 新加坡 POSB
+  - DOMAIN-SUFFIX,dbs.com
+  - DOMAIN-SUFFIX,posb.com.sg
+  # 大华银行 & UOB 集团
+  - DOMAIN-SUFFIX,uob.com.sg
+  - DOMAIN-SUFFIX,uobgroup.com
+  # 华侨银行集团核心
+  - DOMAIN-SUFFIX,ocbc.com
 
   # > 虚拟银行 (Virtual Banks)
-  - '+.za.group'                 # 众安银行 (ZA Bank)
-  - '+.zatech.com'               # 众安技术支持
-  - '+.mox.com'                  # Mox Bank
-  - '+.livibank.com'             # Livi Bank
-  - '+.welab.bank'               # WeLab Bank
-  - '+.fusionbank.com'           # 富融银行
-  - '+.paob.com.hk'              # 平安壹账通
-  - '+.antbank.hk'               # 蚂蚁银行
-  - '+.airstarbank.com'          # 天星银行 旧
-  - '+.elebank.com'              # 象象银行 新
+  # 众安银行 (ZA Bank) & 技术支持
+  - DOMAIN-SUFFIX,za.group
+  - DOMAIN-SUFFIX,zatech.com
+  # Mox Bank
+  - DOMAIN-SUFFIX,mox.com
+  # Livi Bank
+  - DOMAIN-SUFFIX,livibank.com
+  # WeLab Bank
+  - DOMAIN-SUFFIX,welab.bank
+  # 富融银行
+  - DOMAIN-SUFFIX,fusionbank.com
+  # 平安壹账通
+  - DOMAIN-SUFFIX,paob.com.hk
+  # 蚂蚁银行
+  - DOMAIN-SUFFIX,antbank.hk
+  # 天星银行 (旧) & 象象银行 (新)
+  - DOMAIN-SUFFIX,airstarbank.com
+  - DOMAIN-SUFFIX,elebank.com
 
-  # > 富途 & Moomoo 全系 (Futu & Moomoo Global)
-  - '+.futunn.com'               # 富途牛牛/核心
-  - '+.futu5.com'                # 底层行情数据 (关键)
-  - '+.futuhk.com'               # 富途香港
-  - '+.futusg.com'               # 富途新加坡
-  - '+.futuau.com'               # 富途澳洲
-  - '+.futuie.com'               # 富途国际
-  - '+.futuclub.com'             # 富途社区
-  - '+.futu-static.com'          # 富途静态资源
-  - '+.futunniot.com'            # 富途长连接
-  - '+.moomoo.com'               # Moomoo 官网及 API
-  - '+.moomoo.app'               # Moomoo 业务接口
-  - '+.moomoo.io'                # Moomoo 短链
-  - '+.mm.io'                    # Moomoo 跳转
-  - '+.moomoo-static.com'        # Moomoo 资源
-  - '+.moomoo-img.com'           # Moomoo 图片/图表  
-  - '+.appsflyersdk.com'
-  - '+.moomoobull.com'
-  - '+.futustatic.com'
-  - '+.futu-api.com'
-  - '+.investassistant.com'       # 尊嘉金融 交易/账户API
-  - '+.financialdatamining.com'   # 尊嘉金融 行情数据
-  - '+.zvstapp.com'               # 尊嘉金融 基础服务/下载
-
-
-  # > 其他券商与交易所 (Other Brokers & Exchanges)
-  - '+.ifastgb.com'              # iFAST 英国数字银行
-  - '+.ifastfinancial.com.hk'    # iFAST 香港
-  - '+.ifastfinancial.com'       # iFAST 集团
-  - '+.itiger.com'               # 老虎证券核心
-  - '+.tigerbrokers.com'         # 老虎国际
-  - '+.tigerbrokers.com.hk'      # 老虎香港
-  - '+.longbridgeapp.com'        # 长桥证券
-  - '+.longbridge.hk'            # 长桥香港
-  - '+.vbroker.com.hk'           # 华盛证券
-  - '+.webull.hk'                # 微牛香港
-  - '+.webull-sg.com'            # 微牛新加坡
-  - '+.wstock.co'                # 通用行情接口
-  - '+.api.wcc.best'             # 金融核心 API
-  - '+.hashkey.com'              # HashKey 交易所
-  - '+.osl.com'                  # OSL 交易所
-  - '+.hkex.com.hk'              # 香港交易所
-
-  # > 支付、结算与风控验证 (Payments & Security)
-  - '+.alipay.hk'                # AlipayHK
-  - '+.octopus.com.hk'           # 八达通
-  - '+.octopuscards.com'         # 八达通卡
-  - '+.tapngo.com.hk'            # Tap & Go
-  - '+.payme.hsbc'               # PayMe
-  - '+.fps.com.hk'               # 转数快
-  - '+.hkicl.com.hk'             # 转数快底层
-  - '+.pps.com.hk'               # 缴费灵
-  - '+.hketoll.gov.hk'           # 易通行
-  - '+.lexisnexis.com'           # 银行风控评估
-  - '+.jumio.com'                # KYC 人脸/证件识别
-  - '+.onfido.com'               # 备用 KYC 验证
-  - '+.ctm.net'
+  # > 富途 & Moomoo & 尊嘉全系 (Futu & Moomoo Global)
+  # 富途牛牛 / 行情 / 各地站点
+  - DOMAIN-SUFFIX,futunn.com
+  - DOMAIN-SUFFIX,futu5.com
+  - DOMAIN-SUFFIX,futuhk.com
+  - DOMAIN-SUFFIX,futusg.com
+  - DOMAIN-SUFFIX,futuau.com
+  - DOMAIN-SUFFIX,futuie.com
+  - DOMAIN-SUFFIX,futuclub.com
+  - DOMAIN-SUFFIX
