@@ -332,7 +332,7 @@ payload:
   # ==========================================
   # 8. 安全防护、身份 KYC、反欺诈与移动端全量埋点 (绝不错漏)
   # ==========================================
-  # WAF 盾与人机验证码 (含补漏的 Cloudflare / Google 验证组件)
+# WAF 盾与人机验证码 (精准子域版，不抢占 AI 与系统通道)
   - DOMAIN-SUFFIX,imperva.com
   - DOMAIN-SUFFIX,incapsula.com
   - DOMAIN-SUFFIX,hcaptcha.com
@@ -343,6 +343,11 @@ payload:
   - DOMAIN-SUFFIX,px-cloud.net
   - DOMAIN-SUFFIX,challenges.cloudflare.com
   - DOMAIN-SUFFIX,gstatic.com
+  - DOMAIN,recaptchaenterprise.googleapis.com
+  - DOMAIN,maps.googleapis.com
+  - DOMAIN,places.googleapis.com
+  - DOMAIN,fonts.googleapis.com
+  - DOMAIN,ajax.googleapis.com
 
   # 反欺诈与设备指纹 (US Bank 核心风控依赖)
   - DOMAIN-SUFFIX,threatmetrix.com
