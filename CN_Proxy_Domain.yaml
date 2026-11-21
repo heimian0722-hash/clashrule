@@ -1,66 +1,65 @@
 payload:
-  - '+.sms-activate.org'
-  - '+.internetdownloadmanager.com'
-  - '+.brffff.com'
-  
-#个人站点
-  - '+.eggtargaryen.com'
-  - '+.leiyanhui.com'
-  - '+.wuqianso.org'
-  - '+.270666.xyz'
-  - '+.25mao.com'
-  - '+.wenziwanka.com'
-  - '+.sign.lc'
-  - '+.lcsignx.com'
-  
-#代理VPN站点
-  - '+.xn--mes358aby2apfg.com'
-  - '+.cloud.xn--4gq62f52gdss.asia'
-  - '+.xn--9kqz23b19z.com'
-  - '+.xn--4gqx1hgtfdmt.com'
-  - '+.liangxin.xyz'
-  - '+.yfjc.xyz'
-  - '+.tapcloud.me'
-  - '+.smallstrawberry.com'
-  - '+.mojie.app'
-  - '+.chaoyue.quest'
-  - '+.xn--m7r52rosihxm.com'
-  - '+.iproyal.com'
-  - '+.iproyal.cn'
-  - '+.isssre.cn'
-  - '+.qianlink.link'
-  - '+.wcloud.me'
-  - '+.pqjc.site'
+  - DOMAIN-SUFFIX,sms-activate.org
+  - DOMAIN-SUFFIX,internetdownloadmanager.com
+  - DOMAIN-SUFFIX,brffff.com
 
-  
-#ip质量检测
-  - '+.iptrait.com'
-  - '+.ip2location.com'
-  - '+.ipinfo.io'
-  - '+.ping0.cc'
-  - '+.scamalytics.com'
+  # 个人站点
+  - DOMAIN-SUFFIX,eggtargaryen.com
+  - DOMAIN-SUFFIX,leiyanhui.com
+  - DOMAIN-SUFFIX,wuqianso.org
+  - DOMAIN-SUFFIX,270666.xyz
+  - DOMAIN-SUFFIX,25mao.com
+  - DOMAIN-SUFFIX,wenziwanka.com
+  - DOMAIN-SUFFIX,sign.lc
+  - DOMAIN-SUFFIX,lcsignx.com
 
-#不允许国内访问
-  - '+.iyf.tv'
-  - '+.910501.xyz'
-  - '+.acg.lol'
-  - '+.archive.org'
-  
-# Generated from rule/Custom_Proxy.list
-# SOURCE: https://github.com/Aethersailor/Custom_OpenClash_Rules/blob/main/rule/Custom_Proxy_Domain.yaml
-  - '+.7pzzv.us'
-  - '+.arduino.cc'
-  - '+.clientservices.googleapis.com'
-  - '+.cloudsync-prod.s3.us-east-1.amazonaws.com'
-  - '+.dmhy.org'
-  - '+.hoyolab.com'
-  - '+.hoyoverse.com'
-  - '+.ip.sb'
-  - '+.ipify.org'
-  - '+.onedrive.live.com'
-  - '+.platformio.org'
-  - '+.stun.playstation.net'
-  - '+.xn--ngstr-lra8j.com'
-  - 'api.ttt.sh'
-  - 'd.skk.moe'
-  - 'zza.de5.net'
+  # 代理VPN站点
+  - DOMAIN-SUFFIX,xn--mes358aby2apfg.com
+  - DOMAIN-SUFFIX,cloud.xn--4gq62f52gdss.asia
+  - DOMAIN-SUFFIX,xn--9kqz23b19z.com
+  - DOMAIN-SUFFIX,xn--4gqx1hgtfdmt.com
+  - DOMAIN-SUFFIX,liangxin.xyz
+  - DOMAIN-SUFFIX,yfjc.xyz
+  - DOMAIN-SUFFIX,tapcloud.me
+  - DOMAIN-SUFFIX,smallstrawberry.com
+  - DOMAIN-SUFFIX,mojie.app
+  - DOMAIN-SUFFIX,chaoyue.quest
+  - DOMAIN-SUFFIX,xn--m7r52rosihxm.com
+  - DOMAIN-SUFFIX,iproyal.com
+  - DOMAIN-SUFFIX,iproyal.cn
+  - DOMAIN-SUFFIX,isssre.cn
+  - DOMAIN-SUFFIX,qianlink.link
+  - DOMAIN-SUFFIX,wcloud.me
+  - DOMAIN-SUFFIX,pqjc.site
+
+  # IP质量检测
+  - DOMAIN-SUFFIX,iptrait.com
+  - DOMAIN-SUFFIX,ip2location.com
+  - DOMAIN-SUFFIX,ipinfo.io
+  - DOMAIN-SUFFIX,ping0.cc
+  - DOMAIN-SUFFIX,scamalytics.com
+
+  # 不允许国内访问
+  - DOMAIN-SUFFIX,iyf.tv
+  - DOMAIN-SUFFIX,910501.xyz
+  - DOMAIN-SUFFIX,acg.lol
+  - DOMAIN-SUFFIX,archive.org
+
+  # Generated from rule/Custom_Proxy.list
+  # SOURCE: https://github.com/Aethersailor/Custom_OpenClash_Rules/blob/main/rule/Custom_Proxy_Domain.yaml
+  - DOMAIN-SUFFIX,7pzzv.us
+  - DOMAIN-SUFFIX,arduino.cc
+  - DOMAIN-SUFFIX,clientservices.googleapis.com
+  - DOMAIN-SUFFIX,cloudsync-prod.s3.us-east-1.amazonaws.com
+  - DOMAIN-SUFFIX,dmhy.org
+  - DOMAIN-SUFFIX,hoyolab.com
+  - DOMAIN-SUFFIX,hoyoverse.com
+  - DOMAIN-SUFFIX,ip.sb
+  - DOMAIN-SUFFIX,ipify.org
+  - DOMAIN-SUFFIX,onedrive.live.com
+  - DOMAIN-SUFFIX,platformio.org
+  - DOMAIN-SUFFIX,stun.playstation.net
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+  - DOMAIN,api.ttt.sh
+  - DOMAIN,d.skk.moe
+  - DOMAIN,zza.de5.net
