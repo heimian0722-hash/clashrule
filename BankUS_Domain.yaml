@@ -393,9 +393,6 @@ payload:
 - DOMAIN,fonts.googleapis.com
 - DOMAIN,ajax.googleapis.com
 - DOMAIN,www.googletagmanager.com
-- DOMAIN,firebaseinstallations.googleapis.com
-- DOMAIN,firebaseremoteconfig.googleapis.com
-- DOMAIN,play.googleapis.com
 - DOMAIN,androidcheck.googleapis.com
 - DOMAIN,appattest.apple.com
 - DOMAIN,devicecheck.apple.com
