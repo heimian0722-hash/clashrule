@@ -10,9 +10,6 @@ payload:
   - DOMAIN-SUFFIX,mx.com
   - DOMAIN-SUFFIX,zelle.com
   - DOMAIN-SUFFIX,zellepay.com
-  - DOMAIN-SUFFIX,wise.com
-  - DOMAIN-SUFFIX,wise.net
-  - DOMAIN-SUFFIX,transferwise.com
   - DOMAIN-SUFFIX,stripe.com
   - DOMAIN-SUFFIX,remitly.com
   - DOMAIN-SUFFIX,pandaremit.com
