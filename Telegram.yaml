@@ -12,6 +12,8 @@ payload:
   - DOMAIN-SUFFIX,userapi.com
   - DOMAIN-SUFFIX,stel.com
   - DOMAIN-SUFFIX,graph.org
+  - DOMAIN-SUFFIX,tg.dev
+  - DOMAIN-SUFFIX,legra.ph
 
   # === Telegram IPv4 网段 (官方全量) ===
   - IP-CIDR,149.154.160.0/20,no-resolve
