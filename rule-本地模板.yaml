@@ -137,7 +137,6 @@ rules:
   - RULE-SET,telegram,📨 Telegram
   - GEOSITE,telegram,📨 Telegram
   - GEOIP,telegram,📨 Telegram,no-resolve
-  - GEOSITE,youtube,🎬 YouTube
   - GEOSITE,netflix,🎥 Netflix
   - GEOSITE,tiktok,🎵 TikTok
   - RULE-SET,tiktok-ext,🎵 TikTok
