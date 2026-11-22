@@ -150,11 +150,11 @@ rules:
   - GEOSITE,category-speedtest,🚝 测速工具
   - RULE-SET,proxy-cn-dom,🌐 代理补充
   - GEOSITE,gfw,🌐 代理补充
+  - RULE-SET,cn-direct-domain,DIRECT
   - RULE-SET,direct-custom-ip,DIRECT
   - RULE-SET,direct-custom-dom,DIRECT
-  - RULE-SET,direct-cn-dom,DIRECT
-  - GEOSITE,cn,DIRECT
-  - GEOIP,CN,DIRECT,no-resolve
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,cncidr,DIRECT,no-resolve
   - MATCH,🐟 漏网之鱼
 
 proxy-groups:
@@ -382,24 +382,6 @@ rule-providers:
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/CN_Reject_Domain.yaml"
     path: ./rules/reject_cn.yaml
     interval: 86400
-  direct-custom-ip:
-    type: http
-    behavior: classical
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_IP.yaml"
-    path: ./rules/dir_ip.yaml
-    interval: 86400
-  direct-custom-dom:
-    type: http
-    behavior: domain
-    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.yaml"
-    path: ./rules/dir_dom.yaml
-    interval: 86400
-  direct-cn-dom:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/CN_Direct_Domain.yaml"
-    path: ./rules/dir_cn.yaml
-    interval: 86400
   proxy-cn-img:
     type: http
     behavior: classical
@@ -465,4 +447,34 @@ rule-providers:
     behavior: classical
     url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/Bytedance.yaml"
     path: ./rules/tiktok_ext.yaml
+    interval: 86400
+  cn-direct-domain:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/CN_Direct_Domain.yaml"
+    path: ./rules/cn_direct_domain.yaml
+    interval: 86400
+  direct-custom-ip:
+    type: http
+    behavior: classical
+    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_IP.yaml"
+    path: ./rules/dir_ip.yaml
+    interval: 86400
+  direct-custom-dom:
+    type: http
+    behavior: domain
+    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.yaml"
+    path: ./rules/dir_dom.yaml
+    interval: 86400
+  direct:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
     interval: 86400
