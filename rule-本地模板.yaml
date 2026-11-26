@@ -1,6 +1,9 @@
 # 下载编辑，自行添加机场订阅链接，支持链式代理，预留静态节点，走“指定代理”组
 # 本项目 链式工具.html 下载，直接浏览器打开，写的很清楚
 # 注意点：一定要先添加订阅，成功运行启动代理，再编辑yaml，添加静态住宅信息
+# 下载编辑，自行添加机场订阅链接，支持链式代理，预留静态节点，走“指定代理”组
+# 本项目 链式工具.html 下载，直接浏览器打开，写的很清楚
+# 注意点：一定要先添加订阅，成功运行启动代理，再编辑yaml，添加静态住宅信息
 
 
 port: 7890
@@ -75,8 +78,7 @@ fake-ip-filter:
     - "epdg.epc.att.net"
 
 proxies:    #添加静态节点信息,ip端口用户用户名密码等
-  - name: "xxx"
-    type: vless
+  - name: "🇺🇸 美国家宽COX"
 
 clean: &clean
   filter: "(?i)^(?!.*(流量|套餐|到期|剩余|重置|官网|网站|域名|地址|机场|入口|注意|维护|失联|公告|通知|电报|群|频道|说明|最新|客服|工单|订阅|时间|更新|失败|超时|请使用|expire|traffic|reset|remaining|official|website|telegram|tg|qq)).*$"
@@ -106,7 +108,6 @@ proxy-providers-config:
     use:
       - 机场1
       - 机场2
-
 
 
 rules:
@@ -160,7 +161,7 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
-      - 🇺🇸 诺联-COX
+      - 🇺🇸 美国家宽COX
     <<: *use-all
 
   - name: 🛫 静态中转
@@ -174,7 +175,7 @@ proxy-groups:
   - name: 📞 Wi-Fi Calling
     type: select
     proxies:
-      - 🇺🇸 诺联-COX
+      - 🇺🇸 美国家宽COX
       - 🇺🇸 US
       - 🚀 手动选择
     <<: *use-all
@@ -315,7 +316,7 @@ proxy-groups:
   - name: 🇺🇸 US
     type: select
     proxies:
-      - 🇺🇸 诺联-COX
+      - 🇺🇸 美国家宽COX
     filter: "(?i)(🇺🇸|美国|\\bUS\\b|united states|los angeles|san jose|seattle|new york)"
     <<: *use-all
 
