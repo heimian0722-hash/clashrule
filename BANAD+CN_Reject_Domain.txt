@@ -586,7 +586,6 @@ wmlog.meituan.com
 wn.pos.baidu.com
 woodpecker.uc.cn
 www.qmlog.cn
-wxsnsdy.wxs.qq.com
 xdcs-collector.ximalaya.com
 yiqifa.com
 youmi.net
