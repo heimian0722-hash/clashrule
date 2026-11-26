@@ -11,12 +11,8 @@ payload:
   - DOMAIN,appleid.apple.com
   - DOMAIN,wallet.apple.com
   - DOMAIN,apple-finance.apple.com
-  # 定位与位置相关
   - DOMAIN,gs-loc.apple.com
-  - DOMAIN,gs-loc-cn.apple.com
-  - DOMAIN,lcdn-locator.apple.com
-  - DOMAIN,lcdn-registration.apple.com
-  # Appstore 直连
+  # Appstore内容下载，建议直连，不影响账户鉴权
   # - DOMAIN,smp-device-content.apple.com
   # - DOMAIN,mzstorekit.itunes.apple.com
   # - DOMAIN,amp-api.apps.apple.com
