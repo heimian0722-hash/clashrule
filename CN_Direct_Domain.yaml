@@ -2,6 +2,7 @@
 payload:
   # --- 个人高频/特定站点 ---
   - DOMAIN-SUFFIX,api.wcc.best
+  - DOMAIN-SUFFIX,wsysaas.com
   - DOMAIN-SUFFIX,api.asailor.org
   - DOMAIN-SUFFIX,linux.do
   - DOMAIN,qqwry.api.skk.moe
