@@ -109,8 +109,6 @@ payload:
 - DOMAIN-SUFFIX,nmetrics.samsung.com
 - DOMAIN-SUFFIX,analytics.samsungknox.com
 - DOMAIN-SUFFIX,diagmon-service.samsung.com
-- DOMAIN-SUFFIX,dm.wo.com.cn
-- DOMAIN-SUFFIX,zzhc.vnet.cn
 - DOMAIN-SUFFIX,typdm.tydevice.com
 - DOMAIN-SUFFIX,114so.cn
 - DOMAIN-SUFFIX,11h5.com
@@ -197,7 +195,6 @@ payload:
 - DOMAIN-SUFFIX,mmad.qq.com
 - DOMAIN-SUFFIX,ugdtimg.com
 - DOMAIN-SUFFIX,rayjump.com
-- DOMAIN-SUFFIX,shuzilm.cn
 - DOMAIN-SUFFIX,sigmob.cn
 - DOMAIN-SUFFIX,talkingdata.com
 - DOMAIN-SUFFIX,talkingdata.net
