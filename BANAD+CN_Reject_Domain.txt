@@ -220,7 +220,6 @@ diagmon-service.samsung.com
 dm.bytedance.com
 dm.pstatp.com
 dm.toutiao.com
-dm.wo.com.cn
 domob.cn
 domob.com.cn
 domob.org
@@ -475,7 +474,6 @@ secure-chn.imrworldwide.com
 sensorsdata.cn
 server.m.pp.cn
 shfanzha.com
-shuzilm.cn
 sigmob.cn
 simba.taobao.com
 sl.hpplay.cn
@@ -591,4 +589,3 @@ yiqifa.com
 youmi.net
 zantainet.com
 zeus.ad.xiaomi.com
-zzhc.vnet.cn
