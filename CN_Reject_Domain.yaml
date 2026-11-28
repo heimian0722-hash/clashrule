@@ -1,16 +1,52 @@
 payload:
+  # --- 核心/纯粹广告联盟 (后缀匹配) ---
+  - DOMAIN-SUFFIX,1rtb.com
+  - DOMAIN-SUFFIX,1rtb.net
+  - DOMAIN-SUFFIX,admaster.com.cn
+  - DOMAIN-SUFFIX,admob.com
+  - DOMAIN-SUFFIX,adservice.google.com
+  - DOMAIN-SUFFIX,adsmogo.com
+  - DOMAIN-SUFFIX,adsmogo.org
+  - DOMAIN-SUFFIX,alimama.com
+  - DOMAIN-SUFFIX,applovin.com
+  - DOMAIN-SUFFIX,appsflyer.com
+  - DOMAIN-SUFFIX,baiduads.com
+  - DOMAIN-SUFFIX,beizi.biz
+  - DOMAIN-SUFFIX,csjplatform.com
+  - DOMAIN-SUFFIX,domob.cn
+  - DOMAIN-SUFFIX,domob.com.cn
+  - DOMAIN-SUFFIX,domob.org
+  - DOMAIN-SUFFIX,doubleclick.net
+  - DOMAIN-SUFFIX,gdtimg.com
+  - DOMAIN-SUFFIX,googleadservices.com
+  - DOMAIN-SUFFIX,googlesyndication.com
+  - DOMAIN-SUFFIX,miaozhen.com
+  - DOMAIN-SUFFIX,pangle.io
+  - DOMAIN-SUFFIX,pangleglobal.com
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
+  - DOMAIN-SUFFIX,pglstatp-toutiao.com
+  - DOMAIN-SUFFIX,rayjump.com
+  - DOMAIN-SUFFIX,sigmob.cn
+  - DOMAIN-SUFFIX,tanx.com
+  - DOMAIN-SUFFIX,ubixioe.com
+  - DOMAIN-SUFFIX,ugdtimg.com
+  - DOMAIN-SUFFIX,vungle.cn
+  - DOMAIN-SUFFIX,vungle.com
+  - DOMAIN-SUFFIX,yiqifa.com
+  - DOMAIN-SUFFIX,youmi.net
+
+  # --- 精准广告与纯统计子域名 (精确匹配，防误杀主业务) ---
   - DOMAIN,114so.cn
   - DOMAIN,11h5.com
   - DOMAIN,1kxun.mobi
-  - DOMAIN,1rtb.com
-  - DOMAIN,1rtb.net
   - DOMAIN,26zsd.cn
   - DOMAIN,2k5u.ru
   - DOMAIN,519397.com
   - DOMAIN,626uc.com
   - DOMAIN,915.com
   - DOMAIN,a.9game.cn
-  - DOMAIN,a.applovin.com
   - DOMAIN,a.wkanx.com
   - DOMAIN,a3.bytecdn.cn
   - DOMAIN,a3.pstatp.com
@@ -49,8 +85,6 @@ payload:
   - DOMAIN,adcdn.baidu.com
   - DOMAIN,adm.baidu.com
   - DOMAIN,adm3.autoimg.cn
-  - DOMAIN,admaster.com.cn
-  - DOMAIN,admob.com
   - DOMAIN,admonitor-feedback.cn-hangzhou.log.aliyuncs.com
   - DOMAIN,adp.atm.youku.com
   - DOMAIN,adprod.cn
@@ -95,14 +129,11 @@ payload:
   - DOMAIN,ads9-normal-lq.snssdk.com
   - DOMAIN,adsdk.vivo.com.cn
   - DOMAIN,adse.ximalaya.com
-  - DOMAIN,adservice.google.com
   - DOMAIN,adsfilebssdlbig.ali.kugou.com
   - DOMAIN,adsfs.oppomobile.com
   - DOMAIN,adshare.toutiao.com
   - DOMAIN,adsmind.apdcdn.tc.qq.com
   - DOMAIN,adsmind.tc.qq.com
-  - DOMAIN,adsmogo.com
-  - DOMAIN,adsmogo.org
   - DOMAIN,adstrategy.biz.weibo.com
   - DOMAIN,adtrack.ucweb.com
   - DOMAIN,adukwai.com
@@ -111,8 +142,6 @@ payload:
   - DOMAIN,adx.ads.heytapmobi.com
   - DOMAIN,adx.ads.oppomobile.com
   - DOMAIN,afd.baidu.com
-  - DOMAIN,afpapi.alimama.com
-  - DOMAIN,alimama.com
   - DOMAIN,alog.umeng.com
   - DOMAIN,alog.umengcloud.com
   - DOMAIN,alogs.umeng.com
@@ -121,8 +150,6 @@ payload:
   - DOMAIN,analytics.meituan.net
   - DOMAIN,analytics.samsungknox.com
   - DOMAIN,ap.51y5.net
-  - DOMAIN,api-access.pangolin-sdk-toutiao-b.com
-  - DOMAIN,api-access.pangolin-sdk-toutiao.com
   - DOMAIN,api-adservices.apple.com
   - DOMAIN,api.ad.xiaomi.com
   - DOMAIN,api.anythinktech.com
@@ -135,7 +162,6 @@ payload:
   - DOMAIN,applog-perf.uc.cn
   - DOMAIN,applog.uc.cn
   - DOMAIN,applogapi.autohome.com
-  - DOMAIN,applovin.com
   - DOMAIN,appuu.cn
   - DOMAIN,aspect-upush.umeng.com
   - DOMAIN,at.umeng.com
@@ -143,14 +169,12 @@ payload:
   - DOMAIN,au.umeng.com
   - DOMAIN,auth.api.gitv.tv
   - DOMAIN,av1.xdrig.com
-  - DOMAIN,baiduads.com
   - DOMAIN,baidutv.baidu.com
   - DOMAIN,bar.baidu.com
   - DOMAIN,bdapi.ads.heytapmobi.com
   - DOMAIN,bdapi.ads.oppomobile.com
   - DOMAIN,bds.snssdk.com
   - DOMAIN,bdsp.x.jd.com
-  - DOMAIN,beizi.biz
   - DOMAIN,bj.imp.voiceads.cn
   - DOMAIN,c.51y5.net
   - DOMAIN,c.baidu.com
@@ -178,15 +202,14 @@ payload:
   - DOMAIN,count.atm.youku.com
   - DOMAIN,cpro.baidu.com
   - DOMAIN,cpu.baidu.com
-  - DOMAIN,csjplatform.com
   - DOMAIN,cupid.iqiyi.com
-  - DOMAIN,d.applovin.com
   - DOMAIN,d.cntv.cn
   - DOMAIN,d1.xiaomi.com
   - DOMAIN,da.anythinktech.com
   - DOMAIN,da.mgtv.com
   - DOMAIN,data.ads.heytapmobi.com
   - DOMAIN,data.ads.oppomobile.com
+  - DOMAIN,data.gdt.qq.com
   - DOMAIN,data.mistat.xiaomi.com
   - DOMAIN,datacollector-dra.dt.hicloud.com
   - DOMAIN,dh54wf.xyz
@@ -195,10 +218,6 @@ payload:
   - DOMAIN,dm.bytedance.com
   - DOMAIN,dm.pstatp.com
   - DOMAIN,dm.toutiao.com
-  - DOMAIN,domob.cn
-  - DOMAIN,domob.com.cn
-  - DOMAIN,domob.org
-  - DOMAIN,doubleclick.net
   - DOMAIN,dreport.meituan.net
   - DOMAIN,drmcmm.baidu.com
   - DOMAIN,dsp.toutiao.com
@@ -209,7 +228,6 @@ payload:
   - DOMAIN,editor.sm.cn
   - DOMAIN,eiv.baidu.com
   - DOMAIN,ems.youku.com
-  - DOMAIN,err.applovin.com
   - DOMAIN,errlog.umeng.com
   - DOMAIN,errnewlog.umeng.com
   - DOMAIN,errnewlogs.umeng.com
@@ -225,11 +243,8 @@ payload:
   - DOMAIN,g2q3e.cn
   - DOMAIN,gateway-papa.cloud.weizhi.com
   - DOMAIN,gdt.qq.com
-  - DOMAIN,gdtimg.com
   - DOMAIN,gj.applog.uc.cn
   - DOMAIN,google-analytics.com
-  - DOMAIN,googleadservices.com
-  - DOMAIN,googlesyndication.com
   - DOMAIN,gorgon.youdao.com
   - DOMAIN,gridsum.com
   - DOMAIN,gridsumdissector.cn
@@ -255,6 +270,7 @@ payload:
   - DOMAIN,iadsdk.apple.com
   - DOMAIN,iflyad.bj.openstorage.cn
   - DOMAIN,image.bianxianmao.com
+  - DOMAIN,img.gdt.qq.com
   - DOMAIN,img1.czb365.com
   - DOMAIN,insurance.lianwifi.com
   - DOMAIN,iphonesubmissions.apple.com
@@ -268,8 +284,7 @@ payload:
   - DOMAIN,kgipadstatbak.kugou.com
   - DOMAIN,kgstaticdlbssdlbig.tx.kugou.com
   - DOMAIN,kuaishouad.com
-  - DOMAIN,log-api.pangolin-sdk-toutiao-b.com
-  - DOMAIN,log-api.pangolin-sdk-toutiao.com
+  - DOMAIN,lkme.cc
   - DOMAIN,log-dmp.suishenyun.cn
   - DOMAIN,log.cs.pp.cn
   - DOMAIN,log.hicloud.com
@@ -295,7 +310,7 @@ payload:
   - DOMAIN,metrics.icloud.waves.com
   - DOMAIN,metrics.mzstatic.com
   - DOMAIN,metrics1.data.hicloud.com
-  - DOMAIN,miaozhen.com
+  - DOMAIN,mi.gdt.qq.com
   - DOMAIN,misc.in.duokanbox.com
   - DOMAIN,mishop.pandora.xiaomi.com
   - DOMAIN,mitv.tracking.miui.com
@@ -307,7 +322,6 @@ payload:
   - DOMAIN,mon.snssdk.com
   - DOMAIN,mousegesturesapi.com
   - DOMAIN,mpos-pic.helipay.com
-  - DOMAIN,ms.applovin.com
   - DOMAIN,msg.push.51y5.net
   - DOMAIN,nadvideo2.baidu.com
   - DOMAIN,nbcollect.kugou.com
@@ -331,33 +345,23 @@ payload:
   - DOMAIN,p3-pack.byteimg.com
   - DOMAIN,p3.pstatp.com
   - DOMAIN,p6-pack.byteimg.com
-  - DOMAIN,pangle.io
-  - DOMAIN,pangleglobal.com
-  - DOMAIN,pangolin-sdk-toutiao-b.com
-  - DOMAIN,pangolin-sdk-toutiao.com
-  - DOMAIN,pangolin-sdk-toutiao1.com
-  - DOMAIN,pangolin.snssdk.com
   - DOMAIN,paopaod.qiyipic.com
   - DOMAIN,paradisestatic.vivo.com.cn
   - DOMAIN,pc.suishenyun.net
   - DOMAIN,pdds.ucweb.com
   - DOMAIN,pgdt.gtimg.cn
-  - DOMAIN,pgdt.ugdtimg.com
-  - DOMAIN,pglstatp-toutiao.com
   - DOMAIN,plbslog.umeng.com
   - DOMAIN,policy.jd.com
   - DOMAIN,pos.baidu.com
-  - DOMAIN,prod-a.applovin.com
-  - DOMAIN,prod-ms.applovin.com
   - DOMAIN,promotion-partner.kuaishou.com
   - DOMAIN,puds.ucweb.com
   - DOMAIN,px.ucweb.com
   - DOMAIN,r.browser.miui.com
   - DOMAIN,r1.ykimg.com
-  - DOMAIN,rayjump.com
+  - DOMAIN,report.gdt.qq.com
+  - DOMAIN,rescn.u3.ucweb.com
   - DOMAIN,rich.kuwo.cn
   - DOMAIN,rt-m.kugou.com
-  - DOMAIN,rt.applovin.com
   - DOMAIN,rtmretry.kugou.com
   - DOMAIN,s1.pstatp.com
   - DOMAIN,s2.pstatp.com
@@ -375,6 +379,7 @@ payload:
   - DOMAIN,saveu8-normal-lf.zijieapi.com
   - DOMAIN,saveu9-normal-lf.zijieapi.com
   - DOMAIN,sax.mobile.sina.cn
+  - DOMAIN,sdfp.snssdk.com
   - DOMAIN,sdk.huichuan.sm.cn
   - DOMAIN,sdkapp.mobile.sina.cn
   - DOMAIN,sdkconfig.ad.intl.xiaomi.com
@@ -383,7 +388,6 @@ payload:
   - DOMAIN,searchrecommend.kugou.com
   - DOMAIN,secure-chn.imrworldwide.com
   - DOMAIN,server.m.pp.cn
-  - DOMAIN,sigmob.cn
   - DOMAIN,simba.taobao.com
   - DOMAIN,smetrics.samsung.com
   - DOMAIN,spcode.baidu.com
@@ -397,6 +401,7 @@ payload:
   - DOMAIN,stat.xiaomi.com
   - DOMAIN,stat.y.qq.com
   - DOMAIN,stat.youku.com
+  - DOMAIN,static.gdt.qq.com
   - DOMAIN,static.lstat.youku.com
   - DOMAIN,stats.gc.apple.com
   - DOMAIN,stsdk.vivo.com.cn
@@ -405,7 +410,6 @@ payload:
   - DOMAIN,t7z.cupid.ptqy.gitv.tv
   - DOMAIN,talkingdata.com
   - DOMAIN,talkingdata.net
-  - DOMAIN,tanx.com
   - DOMAIN,test.ad.xiaomi.com
   - DOMAIN,test.new.api.ad.xiaomi.com
   - DOMAIN,tk.anythinktech.com
@@ -416,6 +420,7 @@ payload:
   - DOMAIN,tosv.boe.byted.org
   - DOMAIN,tosv.byted.org
   - DOMAIN,track.baidu.com
+  - DOMAIN,track.gdt.qq.com
   - DOMAIN,track.huichuan.sm.cn
   - DOMAIN,track.kuaishou.com
   - DOMAIN,track.uc.cn
@@ -430,9 +435,7 @@ payload:
   - DOMAIN,tv.weixin.pandora.xiaomi.com
   - DOMAIN,tvapi.kuyun.com
   - DOMAIN,u-aix-files.oss-cn-zhangjiakou.aliyuncs.com
-  - DOMAIN,ubixioe.com
   - DOMAIN,ucstat.baidu.com
-  - DOMAIN,ugdtimg.com
   - DOMAIN,ulogs.umeng.com
   - DOMAIN,ulogs.umengcloud.com
   - DOMAIN,union.baidu.com
@@ -448,6 +451,7 @@ payload:
   - DOMAIN,utp.ucweb.com
   - DOMAIN,uxip.meizu.com
   - DOMAIN,v.admaster.com.cn
+  - DOMAIN,v.gdt.qq.com
   - DOMAIN,v0-client-lz.rili.cn
   - DOMAIN,v1.log.moji.com
   - DOMAIN,v2.reachmax.cn
@@ -460,7 +464,6 @@ payload:
   - DOMAIN,valp.atm.youku.com
   - DOMAIN,vcardsdk.vivo.com.cn
   - DOMAIN,vcbn65.xyz
-  - DOMAIN,vid.applovin.com
   - DOMAIN,vid.atm.youku.com
   - DOMAIN,vs10.bj2ct.u3.ucweb.com
   - DOMAIN,vtrack.vivo.com.cn
@@ -469,12 +472,63 @@ payload:
   - DOMAIN,wanfeng1.com
   - DOMAIN,wep016.top
   - DOMAIN,win-stock.com.cn
+  - DOMAIN,win.gdt.qq.com
   - DOMAIN,wmlog.meituan.com
   - DOMAIN,wn.pos.baidu.com
   - DOMAIN,woodpecker.uc.cn
   - DOMAIN,www.qmlog.cn
   - DOMAIN,xdcs-collector.ximalaya.com
-  - DOMAIN,yiqifa.com
-  - DOMAIN,youmi.net
   - DOMAIN,zantainet.com
   - DOMAIN,zeus.ad.xiaomi.com
+
+  # --- 纯广告关键字规则 ---
+  - DOMAIN-KEYWORD,112wan
+  - DOMAIN-KEYWORD,789htbet
+  - DOMAIN-KEYWORD,adform
+  - DOMAIN-KEYWORD,admarvel
+  - DOMAIN-KEYWORD,admaster
+  - DOMAIN-KEYWORD,adsage
+  - DOMAIN-KEYWORD,adsensor
+  - DOMAIN-KEYWORD,adsrvmedia
+  - DOMAIN-KEYWORD,adsserving
+  - DOMAIN-KEYWORD,adsystem
+  - DOMAIN-KEYWORD,adwords
+  - DOMAIN-KEYWORD,asewlfjqwlflkew
+  - DOMAIN-KEYWORD,asiad.byteactivity
+  - DOMAIN-KEYWORD,bngpt
+  - DOMAIN-KEYWORD,bongacash
+  - DOMAIN-KEYWORD,brushshopy
+  - DOMAIN-KEYWORD,dfkj8
+  - DOMAIN-KEYWORD,dlads
+  - DOMAIN-KEYWORD,dtscout
+  - DOMAIN-KEYWORD,duomeng
+  - DOMAIN-KEYWORD,dwtrack
+  - DOMAIN-KEYWORD,e2wysbacctt1
+  - DOMAIN-KEYWORD,exosrv
+  - DOMAIN-KEYWORD,greenplasticdua
+  - DOMAIN-KEYWORD,haowanyou
+  - DOMAIN-KEYWORD,highwebmedia
+  - DOMAIN-KEYWORD,histats
+  - DOMAIN-KEYWORD,in-page-push
+  - DOMAIN-KEYWORD,juruigj
+  - DOMAIN-KEYWORD,lieyou
+  - DOMAIN-KEYWORD,mathtag
+  - DOMAIN-KEYWORD,mdapp09
+  - DOMAIN-KEYWORD,mifengv
+  - DOMAIN-KEYWORD,mmiyue
+  - DOMAIN-KEYWORD,o333o
+  - DOMAIN-KEYWORD,omniture
+  - DOMAIN-KEYWORD,openx
+  - DOMAIN-KEYWORD,pagespeed-mod
+  - DOMAIN-KEYWORD,partnerad
+  - DOMAIN-KEYWORD,pingfore
+  - DOMAIN-KEYWORD,socdm
+  - DOMAIN-KEYWORD,stunninglover
+  - DOMAIN-KEYWORD,supersonicads
+  - DOMAIN-KEYWORD,toateeli
+  - DOMAIN-KEYWORD,trwl1
+  - DOMAIN-KEYWORD,vidoza
+  - DOMAIN-KEYWORD,wlmonitor
+  - DOMAIN-KEYWORD,xn--2qux23c9ziyrq
+  - DOMAIN-KEYWORD,xxshuyuan
+  - DOMAIN-KEYWORD,zjtoolbar
