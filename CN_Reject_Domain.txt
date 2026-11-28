@@ -9,6 +9,7 @@
 626uc.com
 915.com
 a.9game.cn
+a.applovin.com
 a.wkanx.com
 a3.bytecdn.cn
 a3.pstatp.com
@@ -59,8 +60,8 @@ ads.api.myoppo.com
 ads.cyapi.cn
 ads.hihonorcloud.com
 ads.huangye.miui.com
-ads.hubcloud.com.cn
 ads.huawei.com
+ads.hubcloud.com.cn
 ads.iqiyi.com
 ads.jinritemai.com
 ads.kuaishou.com
@@ -109,6 +110,7 @@ adx-cn.anythinktech.com
 adx.ads.heytapmobi.com
 adx.ads.oppomobile.com
 afd.baidu.com
+afpapi.alimama.com
 alimama.com
 alog.umeng.com
 alog.umengcloud.com
@@ -118,6 +120,8 @@ analytics.126.net
 analytics.meituan.net
 analytics.samsungknox.com
 ap.51y5.net
+api-access.pangolin-sdk-toutiao-b.com
+api-access.pangolin-sdk-toutiao.com
 api-adservices.apple.com
 api.ad.xiaomi.com
 api.anythinktech.com
@@ -176,6 +180,7 @@ cpro.baidu.com
 cpu.baidu.com
 csjplatform.com
 cupid.iqiyi.com
+d.applovin.com
 d.cntv.cn
 d1.xiaomi.com
 da.anythinktech.com
@@ -205,6 +210,7 @@ e.qq.com
 editor.sm.cn
 eiv.baidu.com
 ems.youku.com
+err.applovin.com
 errlog.umeng.com
 errnewlog.umeng.com
 errnewlogs.umeng.com
@@ -265,6 +271,8 @@ kgipadstatbak.kugou.com
 kgstaticdlbssdlbig.tx.kugou.com
 kuaishouad.com
 lkme.cc
+log-api.pangolin-sdk-toutiao-b.com
+log-api.pangolin-sdk-toutiao.com
 log-dmp.suishenyun.cn
 log.cs.pp.cn
 log.hicloud.com
@@ -303,6 +311,7 @@ mon-va.byteoversea.com
 mon.snssdk.com
 mousegesturesapi.com
 mpos-pic.helipay.com
+ms.applovin.com
 msg.push.51y5.net
 nadvideo2.baidu.com
 nbcollect.kugou.com
@@ -331,15 +340,19 @@ pangleglobal.com
 pangolin-sdk-toutiao-b.com
 pangolin-sdk-toutiao.com
 pangolin-sdk-toutiao1.com
+pangolin.snssdk.com
 paopaod.qiyipic.com
 paradisestatic.vivo.com.cn
 pc.suishenyun.net
 pdds.ucweb.com
 pgdt.gtimg.cn
+pgdt.ugdtimg.com
 pglstatp-toutiao.com
 plbslog.umeng.com
 policy.jd.com
 pos.baidu.com
+prod-a.applovin.com
+prod-ms.applovin.com
 promotion-partner.kuaishou.com
 puds.ucweb.com
 px.ucweb.com
@@ -350,6 +363,7 @@ report.gdt.qq.com
 rescn.u3.ucweb.com
 rich.kuwo.cn
 rt-m.kugou.com
+rt.applovin.com
 rtmretry.kugou.com
 s1.pstatp.com
 s2.pstatp.com
@@ -456,6 +470,7 @@ valo.atm.youku.com
 valp.atm.youku.com
 vcardsdk.vivo.com.cn
 vcbn65.xyz
+vid.applovin.com
 vid.atm.youku.com
 vs10.bj2ct.u3.ucweb.com
 vtrack.vivo.com.cn
