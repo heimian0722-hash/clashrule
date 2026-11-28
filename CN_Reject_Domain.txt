@@ -9,7 +9,6 @@
 626uc.com
 915.com
 a.9game.cn
-a.applovin.com
 a.wkanx.com
 a3.bytecdn.cn
 a3.pstatp.com
@@ -110,7 +109,6 @@ adx-cn.anythinktech.com
 adx.ads.heytapmobi.com
 adx.ads.oppomobile.com
 afd.baidu.com
-afpapi.alimama.com
 alimama.com
 alog.umeng.com
 alog.umengcloud.com
@@ -120,8 +118,6 @@ analytics.126.net
 analytics.meituan.net
 analytics.samsungknox.com
 ap.51y5.net
-api-access.pangolin-sdk-toutiao-b.com
-api-access.pangolin-sdk-toutiao.com
 api-adservices.apple.com
 api.ad.xiaomi.com
 api.anythinktech.com
@@ -135,6 +131,7 @@ applog-perf.uc.cn
 applog.uc.cn
 applogapi.autohome.com
 applovin.com
+appsflyer.com
 appuu.cn
 aspect-upush.umeng.com
 at.umeng.com
@@ -179,13 +176,13 @@ cpro.baidu.com
 cpu.baidu.com
 csjplatform.com
 cupid.iqiyi.com
-d.applovin.com
 d.cntv.cn
 d1.xiaomi.com
 da.anythinktech.com
 da.mgtv.com
 data.ads.heytapmobi.com
 data.ads.oppomobile.com
+data.gdt.qq.com
 data.mistat.xiaomi.com
 datacollector-dra.dt.hicloud.com
 dh54wf.xyz
@@ -208,7 +205,6 @@ e.qq.com
 editor.sm.cn
 eiv.baidu.com
 ems.youku.com
-err.applovin.com
 errlog.umeng.com
 errnewlog.umeng.com
 errnewlogs.umeng.com
@@ -254,6 +250,7 @@ iadctest.qwapi.com
 iadsdk.apple.com
 iflyad.bj.openstorage.cn
 image.bianxianmao.com
+img.gdt.qq.com
 img1.czb365.com
 insurance.lianwifi.com
 iphonesubmissions.apple.com
@@ -267,8 +264,7 @@ kgipadstat.kugou.com
 kgipadstatbak.kugou.com
 kgstaticdlbssdlbig.tx.kugou.com
 kuaishouad.com
-log-api.pangolin-sdk-toutiao-b.com
-log-api.pangolin-sdk-toutiao.com
+lkme.cc
 log-dmp.suishenyun.cn
 log.cs.pp.cn
 log.hicloud.com
@@ -294,6 +290,7 @@ metrics.icloud.com
 metrics.icloud.waves.com
 metrics.mzstatic.com
 metrics1.data.hicloud.com
+mi.gdt.qq.com
 miaozhen.com
 misc.in.duokanbox.com
 mishop.pandora.xiaomi.com
@@ -306,7 +303,6 @@ mon-va.byteoversea.com
 mon.snssdk.com
 mousegesturesapi.com
 mpos-pic.helipay.com
-ms.applovin.com
 msg.push.51y5.net
 nadvideo2.baidu.com
 nbcollect.kugou.com
@@ -335,28 +331,25 @@ pangleglobal.com
 pangolin-sdk-toutiao-b.com
 pangolin-sdk-toutiao.com
 pangolin-sdk-toutiao1.com
-pangolin.snssdk.com
 paopaod.qiyipic.com
 paradisestatic.vivo.com.cn
 pc.suishenyun.net
 pdds.ucweb.com
 pgdt.gtimg.cn
-pgdt.ugdtimg.com
 pglstatp-toutiao.com
 plbslog.umeng.com
 policy.jd.com
 pos.baidu.com
-prod-a.applovin.com
-prod-ms.applovin.com
 promotion-partner.kuaishou.com
 puds.ucweb.com
 px.ucweb.com
 r.browser.miui.com
 r1.ykimg.com
 rayjump.com
+report.gdt.qq.com
+rescn.u3.ucweb.com
 rich.kuwo.cn
 rt-m.kugou.com
-rt.applovin.com
 rtmretry.kugou.com
 s1.pstatp.com
 s2.pstatp.com
@@ -374,6 +367,7 @@ saveu7-normal-lf.zijieapi.com
 saveu8-normal-lf.zijieapi.com
 saveu9-normal-lf.zijieapi.com
 sax.mobile.sina.cn
+sdfp.snssdk.com
 sdk.huichuan.sm.cn
 sdkapp.mobile.sina.cn
 sdkconfig.ad.intl.xiaomi.com
@@ -396,6 +390,7 @@ stat.pandora.xiaomi.com
 stat.xiaomi.com
 stat.y.qq.com
 stat.youku.com
+static.gdt.qq.com
 static.lstat.youku.com
 stats.gc.apple.com
 stsdk.vivo.com.cn
@@ -415,6 +410,7 @@ tongji.meizu.com
 tosv.boe.byted.org
 tosv.byted.org
 track.baidu.com
+track.gdt.qq.com
 track.huichuan.sm.cn
 track.kuaishou.com
 track.uc.cn
@@ -447,6 +443,7 @@ utp-dmp.ucweb.com
 utp.ucweb.com
 uxip.meizu.com
 v.admaster.com.cn
+v.gdt.qq.com
 v0-client-lz.rili.cn
 v1.log.moji.com
 v2.reachmax.cn
@@ -459,7 +456,6 @@ valo.atm.youku.com
 valp.atm.youku.com
 vcardsdk.vivo.com.cn
 vcbn65.xyz
-vid.applovin.com
 vid.atm.youku.com
 vs10.bj2ct.u3.ucweb.com
 vtrack.vivo.com.cn
@@ -468,6 +464,7 @@ walp.atm.youku.com
 wanfeng1.com
 wep016.top
 win-stock.com.cn
+win.gdt.qq.com
 wmlog.meituan.com
 wn.pos.baidu.com
 woodpecker.uc.cn
