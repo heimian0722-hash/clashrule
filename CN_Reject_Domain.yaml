@@ -1,349 +1,480 @@
-# 黑名单域名（保留全量遥感监控与反诈屏蔽 + 友盟/AppLovin/汇川/UC 精准子域名拦截）
 payload:
-- DOMAIN-SUFFIX,gdt.qq.com
-- DOMAIN-SUFFIX,e.qq.com
-- DOMAIN-SUFFIX,gdtimg.com
-- DOMAIN-SUFFIX,ad.gtimg.com
-- DOMAIN-SUFFIX,pgdt.gtimg.cn
-- DOMAIN-SUFFIX,abtest.alibaba.com
-- DOMAIN-SUFFIX,is.snssdk.com
-- DOMAIN-SUFFIX,hm.baidu.com
-- DOMAIN-SUFFIX,api.installer.xiaomi.com
-- DOMAIN-SUFFIX,tracking.miui.com
-- DOMAIN-SUFFIX,onetrack.mi.com
-- DOMAIN-SUFFIX,data.mistat.xiaomi.com
-- DOMAIN-SUFFIX,sdkconfig.ad.xiaomi.com
-- DOMAIN-SUFFIX,metrics.icloud.com
-- DOMAIN-SUFFIX,mousegesturesapi.com
-- DOMAIN-SUFFIX,2k5u.ru
-- DOMAIN-SUFFIX,gjfzpt.cn
-- DOMAIN-SUFFIX,gjfzpt.com
-- DOMAIN-SUFFIX,chanct.cn
-- DOMAIN-SUFFIX,chanct.com
-- DOMAIN-SUFFIX,ifcert.cn
-- DOMAIN-SUFFIX,ifcert.com
-- DOMAIN-SUFFIX,ifcert.org.cn
-- DOMAIN-SUFFIX,fzlm.org.cn
-- DOMAIN-SUFFIX,fqzpt.org.cn
-- DOMAIN-SUFFIX,fanzha.org.cn
-- DOMAIN-SUFFIX,shfanzha.com
-- DOMAIN-SUFFIX,hicore-auth.com
-- DOMAIN-SUFFIX,hei-tong.com
-- DOMAIN-SUFFIX,loongteam.com
-- DOMAIN-SUFFIX,cert.org.cn
-- DOMAIN-SUFFIX,cnvd.org.cn
-- DOMAIN-SUFFIX,anva.org.cn
-- DOMAIN-SUFFIX,ics-cert.org.cn
-- DOMAIN-SUFFIX,certlab.org
-- DOMAIN-SUFFIX,china-bestmind.com
-- DOMAIN-SUFFIX,i-bestmind.com
-- DOMAIN-SUFFIX,t-bestmind.com
-- DOMAIN-SUFFIX,himindtech.com
-- DOMAIN-SUFFIX,fhss.com.cn
-- DOMAIN-SUFFIX,hailiangyun.cn
-- DOMAIN-SUFFIX,12381.gov.cn
-- DOMAIN-SUFFIX,cyberpolice.cn
-- DOMAIN-SUFFIX,nrtis.com.cn
-- DOMAIN-SUFFIX,eps.caict.ac.cn
-- DOMAIN-SUFFIX,sec.miui.com
-- DOMAIN-SUFFIX,ad.xiaomi.com
-- DOMAIN-SUFFIX,api.ad.xiaomi.com
-- DOMAIN-SUFFIX,ad.intl.xiaomi.com
-- DOMAIN-SUFFIX,sdkconfig.ad.intl.xiaomi.com
-- DOMAIN-SUFFIX,zeus.ad.xiaomi.com
-- DOMAIN-SUFFIX,ad.mi.com
-- DOMAIN-SUFFIX,adapi.xiaomi.com
-- DOMAIN-SUFFIX,stat.xiaomi.com
-- DOMAIN-SUFFIX,track.xiaomi.com
-- DOMAIN-SUFFIX,gateway-papa.cloud.weizhi.com
-- DOMAIN-SUFFIX,metrics.data.hicloud.com
-- DOMAIN-SUFFIX,metrics1.data.hicloud.com
-- DOMAIN-SUFFIX,logservice.hicloud.com
-- DOMAIN-SUFFIX,log.hicloud.com
-- DOMAIN-SUFFIX,ad.hicloud.com
-- DOMAIN-SUFFIX,datacollector-dra.dt.hicloud.com
-- DOMAIN-SUFFIX,events.dre.agconnect.link
-- DOMAIN-SUFFIX,ad.huawei.com
-- DOMAIN-SUFFIX,adapi.huawei.com
-- DOMAIN-SUFFIX,ads.huawei.com
-- DOMAIN-SUFFIX,union.huawei.com
-- DOMAIN-SUFFIX,ads.hihonorcloud.com
-- DOMAIN-SUFFIX,metrics.data.hihonorcloud.com
-- DOMAIN-SUFFIX,logservice.hihonorcloud.com
-- DOMAIN-SUFFIX,tracking.coloros.com
-- DOMAIN-SUFFIX,log.stat.oppo.com
-- DOMAIN-SUFFIX,ad.oppomobile.com
-- DOMAIN-SUFFIX,adapi.oppomobile.com
-- DOMAIN-SUFFIX,ads.oppomobile.com
-- DOMAIN-SUFFIX,adsfs.oppomobile.com
-- DOMAIN-SUFFIX,adx.ads.oppomobile.com
-- DOMAIN-SUFFIX,bdapi.ads.oppomobile.com
-- DOMAIN-SUFFIX,data.ads.oppomobile.com
-- DOMAIN-SUFFIX,ck.ads.oppomobile.com
-- DOMAIN-SUFFIX,union.oppomobile.com
-- DOMAIN-SUFFIX,stsdk.vivo.com.cn
-- DOMAIN-SUFFIX,vtrack.vivo.com.cn
-- DOMAIN-SUFFIX,ad.vivo.com
-- DOMAIN-SUFFIX,adapi.vivo.com
-- DOMAIN-SUFFIX,ads.vivo.com
-- DOMAIN-SUFFIX,union.vivo.com
-- DOMAIN-SUFFIX,adreq.vivo.com.cn
-- DOMAIN-SUFFIX,adlog.vivo.com.cn
-- DOMAIN-SUFFIX,adsdk.vivo.com.cn
-- DOMAIN-SUFFIX,vcardsdk.vivo.com.cn
-- DOMAIN-SUFFIX,tongji.meizu.com
-- DOMAIN-SUFFIX,uxip.meizu.com
-- DOMAIN-SUFFIX,metrics.mzstatic.com
-- DOMAIN-SUFFIX,stats.gc.apple.com
-- DOMAIN-SUFFIX,iadsdk.apple.com
-- DOMAIN-SUFFIX,ca.iadsdk.apple.com
-- DOMAIN-SUFFIX,iad.apple.com
-- DOMAIN-SUFFIX,iadcontent.apple.com
-- DOMAIN-SUFFIX,iadctest.qwapi.com
-- DOMAIN-SUFFIX,advertising.apple.com
-- DOMAIN-SUFFIX,api-adservices.apple.com
-- DOMAIN-SUFFIX,diagassets.apple.com
-- DOMAIN-SUFFIX,iphonesubmissions.apple.com
-- DOMAIN-SUFFIX,samsungads.com
-- DOMAIN-SUFFIX,smetrics.samsung.com
-- DOMAIN-SUFFIX,nmetrics.samsung.com
-- DOMAIN-SUFFIX,analytics.samsungknox.com
-- DOMAIN-SUFFIX,diagmon-service.samsung.com
-- DOMAIN-SUFFIX,typdm.tydevice.com
-- DOMAIN-SUFFIX,114so.cn
-- DOMAIN-SUFFIX,11h5.com
-- DOMAIN-SUFFIX,1kxun.mobi
-- DOMAIN-SUFFIX,1rtb.com
-- DOMAIN-SUFFIX,1rtb.net
-- DOMAIN-SUFFIX,analytics.126.net
-- DOMAIN-SUFFIX,ir.mail.126.com
-- DOMAIN-SUFFIX,nex.corp.163.com
-- DOMAIN-SUFFIX,26zsd.cn
-- DOMAIN-SUFFIX,519397.com
-- DOMAIN-SUFFIX,626uc.com
-- DOMAIN-SUFFIX,915.com
-- DOMAIN-SUFFIX,admaster.com.cn
-- DOMAIN-SUFFIX,adprod.cn
-- DOMAIN-SUFFIX,adsmogo.com
-- DOMAIN-SUFFIX,adsmogo.org
-- DOMAIN-SUFFIX,ad.alibaba.com
-- DOMAIN-SUFFIX,ads.alibaba.com
-- DOMAIN-SUFFIX,admonitor-feedback.cn-hangzhou.log.aliyuncs.com
-- DOMAIN-SUFFIX,u-aix-files.oss-cn-zhangjiakou.aliyuncs.com
-- DOMAIN-SUFFIX,alimama.com
-- DOMAIN-SUFFIX,ad.taobao.com
-- DOMAIN-SUFFIX,ads.taobao.com
-- DOMAIN-SUFFIX,simba.taobao.com
-- DOMAIN-SUFFIX,union.taobao.com
-- DOMAIN-SUFFIX,tanx.com
-- DOMAIN-SUFFIX,mmstat.com
-- DOMAIN-SUFFIX,appget.cn
-- DOMAIN-SUFFIX,appuu.cn
-- DOMAIN-SUFFIX,adm.baidu.com
-- DOMAIN-SUFFIX,adcdn.baidu.com
-- DOMAIN-SUFFIX,baiduads.com
-- DOMAIN-SUFFIX,cpro.baidu.com
-- DOMAIN-SUFFIX,mobads-logs.baidu.com
-- DOMAIN-SUFFIX,mobads.baidu.com
-- DOMAIN-SUFFIX,nadvideo2.baidu.com
-- DOMAIN-SUFFIX,nsclick.baidu.com
-- DOMAIN-SUFFIX,pos.baidu.com
-- DOMAIN-SUFFIX,track.baidu.com
-- DOMAIN-SUFFIX,beizi.biz
-- DOMAIN-SUFFIX,coinhive.com
-- DOMAIN-SUFFIX,csjplatform.com
-- DOMAIN-SUFFIX,dh54wf.xyz
-- DOMAIN-SUFFIX,domob.cn
-- DOMAIN-SUFFIX,domob.com.cn
-- DOMAIN-SUFFIX,domob.org
-- DOMAIN-SUFFIX,doubleclick.net
-- DOMAIN-SUFFIX,g2q3e.cn
-- DOMAIN-SUFFIX,admob.com
-- DOMAIN-SUFFIX,adservice.google.com
-- DOMAIN-SUFFIX,google-analytics.com
-- DOMAIN-SUFFIX,googleadservices.com
-- DOMAIN-SUFFIX,googlesyndication.com
-- DOMAIN-SUFFIX,app-measurement.com
-- DOMAIN-SUFFIX,gridsum.com
-- DOMAIN-SUFFIX,gridsumdissector.cn
-- DOMAIN-SUFFIX,gridsumdissector.com
-- DOMAIN-SUFFIX,growingio.com
-- DOMAIN-SUFFIX,hivedata.cc
-- DOMAIN-SUFFIX,huodonghezi.cn
-- DOMAIN-SUFFIX,ad.iqiyi.com
-- DOMAIN-SUFFIX,ads.iqiyi.com
-- DOMAIN-SUFFIX,cupid.iqiyi.com
-- DOMAIN-SUFFIX,paopaod.qiyipic.com
-- DOMAIN-SUFFIX,ads.union.jd.com
-- DOMAIN-SUFFIX,jzt.jd.com
-- DOMAIN-SUFFIX,ad.kuaishou.com
-- DOMAIN-SUFFIX,ads.kuaishou.com
-- DOMAIN-SUFFIX,kuaishouad.com
-- DOMAIN-SUFFIX,promotion-partner.kuaishou.com
-- DOMAIN-SUFFIX,stat.kuaishou.com
-- DOMAIN-SUFFIX,track.kuaishou.com
-- DOMAIN-SUFFIX,open.e.kuaishou.com
-- DOMAIN-SUFFIX,adukwai.com
-- DOMAIN-SUFFIX,ad.api.mgtv.com
-- DOMAIN-SUFFIX,ad.mgtv.com
-- DOMAIN-SUFFIX,ads.mgtv.com
-- DOMAIN-SUFFIX,da.mgtv.com
-- DOMAIN-SUFFIX,miaozhen.com
-- DOMAIN-SUFFIX,pangle.io
-- DOMAIN-SUFFIX,pangleglobal.com
-- DOMAIN-SUFFIX,adsmind.tc.qq.com
-- DOMAIN-SUFFIX,mmad.qq.com
-- DOMAIN-SUFFIX,ugdtimg.com
-- DOMAIN-SUFFIX,rayjump.com
-- DOMAIN-SUFFIX,sigmob.cn
-- DOMAIN-SUFFIX,talkingdata.com
-- DOMAIN-SUFFIX,talkingdata.net
-- DOMAIN-SUFFIX,sensorsdata.cn
-- DOMAIN-SUFFIX,ad.jinritemai.com
-- DOMAIN-SUFFIX,ads.jinritemai.com
-- DOMAIN-SUFFIX,ad.toutiao.com
-- DOMAIN-SUFFIX,dsp.toutiao.com
-- DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
-- DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
-- DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
-- DOMAIN-SUFFIX,pglstatp-toutiao.com
-- DOMAIN-SUFFIX,pangolin.snssdk.com
-- DOMAIN-SUFFIX,dm.bytedance.com
-- DOMAIN-SUFFIX,ad.snssdk.com
-- DOMAIN-SUFFIX,ads0-normal-lq.snssdk.com
-- DOMAIN-SUFFIX,ads1-normal-lq.snssdk.com
-- DOMAIN-SUFFIX,ads2-normal-lq.snssdk.com
-- DOMAIN-SUFFIX,ads3-normal-lq.snssdk.com
-- DOMAIN-SUFFIX,ads4-normal-lq.snssdk.com
-- DOMAIN-SUFFIX,ads5-normal-lq.snssdk.com
-- DOMAIN-SUFFIX,ads6-normal-lq.snssdk.com
-- DOMAIN-SUFFIX,ads7-normal-lq.snssdk.com
-- DOMAIN-SUFFIX,ads8-normal-lq.snssdk.com
-- DOMAIN-SUFFIX,ads9-normal-lq.snssdk.com
-- DOMAIN-SUFFIX,ads0-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,ads1-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,ads2-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,ads4-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,ads6-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,ads7-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,ads8-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,ads9-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,saveu0-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,saveu1-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,saveu2-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,saveu3-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,saveu4-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,saveu5-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,saveu6-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,saveu7-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,saveu8-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,saveu9-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,ubixioe.com
-- DOMAIN-SUFFIX,vcbn65.xyz
-- DOMAIN-SUFFIX,wanfeng1.com
-- DOMAIN-SUFFIX,metrics.icloud.waves.com
-- DOMAIN-SUFFIX,ad.weibo.com
-- DOMAIN-SUFFIX,adapi.weibo.com
-- DOMAIN-SUFFIX,ads.weibo.com
-- DOMAIN-SUFFIX,adstrategy.biz.weibo.com
-- DOMAIN-SUFFIX,sax.mobile.sina.cn
-- DOMAIN-SUFFIX,sdkapp.mobile.sina.cn
-- DOMAIN-SUFFIX,track.weibo.com
-- DOMAIN-SUFFIX,wep016.top
-- DOMAIN-SUFFIX,win-stock.com.cn
-- DOMAIN-SUFFIX,adse.ximalaya.com
-- DOMAIN-SUFFIX,xdcs-collector.ximalaya.com
-- DOMAIN-SUFFIX,yiqifa.com
-- DOMAIN-SUFFIX,dsp.youdao.com
-- DOMAIN-SUFFIX,gorgon.youdao.com
-- DOMAIN-SUFFIX,ad.api.3g.youku.com
-- DOMAIN-SUFFIX,ad.youku.com
-- DOMAIN-SUFFIX,ads.youku.com
-- DOMAIN-SUFFIX,iyes.youku.com
-- DOMAIN-SUFFIX,val.api.youku.com
-- DOMAIN-SUFFIX,youmi.net
-- DOMAIN-SUFFIX,zantainet.com
-- DOMAIN-SUFFIX,adx.ads.heytapmobi.com
-- DOMAIN-SUFFIX,bdapi.ads.heytapmobi.com
-- DOMAIN-SUFFIX,data.ads.heytapmobi.com
-- DOMAIN-SUFFIX,ads.api.myoppo.com
-- DOMAIN-SUFFIX,adx-cn.anythinktech.com
-- DOMAIN-SUFFIX,api.anythinktech.com
-- DOMAIN-SUFFIX,tk.anythinktech.com
-- DOMAIN-SUFFIX,da.anythinktech.com
-- DOMAIN-SUFFIX,ad.cyapi.cn
-- DOMAIN-SUFFIX,ads.cyapi.cn
-- DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com
-- DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao-b.com
-- DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao.com
-- DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao-b.com
-- DOMAIN-SUFFIX,mon.snssdk.com
-- DOMAIN-SUFFIX,mon-va.byteoversea.com
-- DOMAIN-SUFFIX,adsmind.apdcdn.tc.qq.com
-- DOMAIN-SUFFIX,pgdt.ugdtimg.com
-- DOMAIN-SUFFIX,splashqrb.gtimg.com
-- DOMAIN-SUFFIX,wxsnsdy.wxs.qq.com
-- DOMAIN-SUFFIX,logs.amap.com
-- DOMAIN-SUFFIX,dualstack-arestapi.amap.com
-- DOMAIN-SUFFIX,optimus-ads.amap.com
-- DOMAIN-SUFFIX,optimus-ads.amap.com.w.alikunlun.com
-- DOMAIN-SUFFIX,hmma.baidu.com
-- DOMAIN-SUFFIX,als.baidu.com
-- DOMAIN-SUFFIX,afd.baidu.com
-- DOMAIN-SUFFIX,wn.pos.baidu.com
-- DOMAIN-SUFFIX,dreport.meituan.net
-- DOMAIN-SUFFIX,analytics.meituan.net
-- DOMAIN-SUFFIX,wmlog.meituan.com
-- DOMAIN-SUFFIX,mars-xlog.jd.com
-- DOMAIN-SUFFIX,sdktmp.hubcloud.com.cn
-- DOMAIN-SUFFIX,ads.hubcloud.com.cn
-- DOMAIN-SUFFIX,ad.qun.qq.com
-- DOMAIN-SUFFIX,tmead.y.qq.com
-- DOMAIN-SUFFIX,tmeadbak.y.qq.com
-- DOMAIN-SUFFIX,ad.12306.cn
-- DOMAIN-SUFFIX,stat.y.qq.com
-- DOMAIN-SUFFIX,monitor.uu.qq.com
-- DOMAIN-SUFFIX,oth.eve.mdt.qq.com
-# === 友盟（Umeng）隐私埋点与广告归因精准拦截 ===
-- DOMAIN,alog.umeng.com
-- DOMAIN,alog.umengcloud.com
-- DOMAIN,alogs.umeng.com
-- DOMAIN,alogs.umengcloud.com
-- DOMAIN,ulogs.umeng.com
-- DOMAIN,ulogs.umengcloud.com
-- DOMAIN,plbslog.umeng.com
-- DOMAIN,errlog.umeng.com
-- DOMAIN,errnewlog.umeng.com
-- DOMAIN,errnewlogs.umeng.com
-- DOMAIN,utoken.umeng.com
-- DOMAIN,aaid.umeng.com
-- DOMAIN,aspect-upush.umeng.com
-- DOMAIN,oc.umeng.com
-- DOMAIN,at.umeng.com
-- DOMAIN,au.umeng.com
-- DOMAIN,resolve.umeng.com
-# === AppLovin 广告竞价与遥测埋点精准拦截 ===
-- DOMAIN,a.applovin.com
-- DOMAIN,d.applovin.com
-- DOMAIN,ms.applovin.com
-- DOMAIN,rt.applovin.com
-- DOMAIN,prod-a.applovin.com
-- DOMAIN,prod-ms.applovin.com
-- DOMAIN,vid.applovin.com
-- DOMAIN,err.applovin.com
-# === 阿里汇川（Huichuan）广告与轨迹追踪精准拦截 ===
-- DOMAIN,adash.huichuan.sm.cn
-- DOMAIN,hc-ad.sm.cn
-- DOMAIN,huichuan-mc.sm.cn
-- DOMAIN,track.huichuan.sm.cn
-- DOMAIN,sdk.huichuan.sm.cn
-# === UC / 阿里系埋点与设备指纹上报精准拦截 ===
-- DOMAIN,applog.uc.cn
-- DOMAIN,applog-perf.uc.cn
-- DOMAIN,px.ucweb.com
-- DOMAIN,woodpecker.uc.cn
-- DOMAIN,gj.applog.uc.cn
-- DOMAIN,track.uc.cn
-- DOMAIN,utp-dmp.ucweb.com
+  - DOMAIN,114so.cn
+  - DOMAIN,11h5.com
+  - DOMAIN,1kxun.mobi
+  - DOMAIN,1rtb.com
+  - DOMAIN,1rtb.net
+  - DOMAIN,26zsd.cn
+  - DOMAIN,2k5u.ru
+  - DOMAIN,519397.com
+  - DOMAIN,626uc.com
+  - DOMAIN,915.com
+  - DOMAIN,a.9game.cn
+  - DOMAIN,a.applovin.com
+  - DOMAIN,a.wkanx.com
+  - DOMAIN,a3.bytecdn.cn
+  - DOMAIN,a3.pstatp.com
+  - DOMAIN,aaid.umeng.com
+  - DOMAIN,abtest.alibaba.com
+  - DOMAIN,ad.12306.cn
+  - DOMAIN,ad.alibaba.com
+  - DOMAIN,ad.api.3g.youku.com
+  - DOMAIN,ad.api.mgtv.com
+  - DOMAIN,ad.api.moji.com
+  - DOMAIN,ad.cyapi.cn
+  - DOMAIN,ad.gtimg.com
+  - DOMAIN,ad.hicloud.com
+  - DOMAIN,ad.huawei.com
+  - DOMAIN,ad.ihuman.com
+  - DOMAIN,ad.iqiyi.com
+  - DOMAIN,ad.jinritemai.com
+  - DOMAIN,ad.kuaishou.com
+  - DOMAIN,ad.mgtv.com
+  - DOMAIN,ad.mi.com
+  - DOMAIN,ad.oppomobile.com
+  - DOMAIN,ad.snssdk.com
+  - DOMAIN,ad.taobao.com
+  - DOMAIN,ad.toutiao.com
+  - DOMAIN,ad.vivo.com
+  - DOMAIN,ad.weibo.com
+  - DOMAIN,ad.xiaomi.com
+  - DOMAIN,ad.youku.com
+  - DOMAIN,adapi.huawei.com
+  - DOMAIN,adapi.oppomobile.com
+  - DOMAIN,adapi.vivo.com
+  - DOMAIN,adapi.weibo.com
+  - DOMAIN,adapi.xiaomi.com
+  - DOMAIN,adash.huichuan.sm.cn
+  - DOMAIN,adash.man.aliyuncs.com
+  - DOMAIN,adcdn.baidu.com
+  - DOMAIN,adm.baidu.com
+  - DOMAIN,adm3.autoimg.cn
+  - DOMAIN,admaster.com.cn
+  - DOMAIN,admob.com
+  - DOMAIN,admonitor-feedback.cn-hangzhou.log.aliyuncs.com
+  - DOMAIN,adp.atm.youku.com
+  - DOMAIN,adprod.cn
+  - DOMAIN,adproxy.autohome.com
+  - DOMAIN,adreq.vivo.com.cn
+  - DOMAIN,ads.alibaba.com
+  - DOMAIN,ads.api.myoppo.com
+  - DOMAIN,ads.cyapi.cn
+  - DOMAIN,ads.hihonorcloud.com
+  - DOMAIN,ads.huangye.miui.com
+  - DOMAIN,ads.hubcloud.com.cn
+  - DOMAIN,ads.huawei.com
+  - DOMAIN,ads.iqiyi.com
+  - DOMAIN,ads.jinritemai.com
+  - DOMAIN,ads.kuaishou.com
+  - DOMAIN,ads.mgtv.com
+  - DOMAIN,ads.oppomobile.com
+  - DOMAIN,ads.taobao.com
+  - DOMAIN,ads.union.jd.com
+  - DOMAIN,ads.vivo.com
+  - DOMAIN,ads.weibo.com
+  - DOMAIN,ads.youku.com
+  - DOMAIN,ads0-normal-lf.zijieapi.com
+  - DOMAIN,ads0-normal-lq.snssdk.com
+  - DOMAIN,ads1-normal-lf.zijieapi.com
+  - DOMAIN,ads1-normal-lq.snssdk.com
+  - DOMAIN,ads2-normal-lf.zijieapi.com
+  - DOMAIN,ads2-normal-lq.snssdk.com
+  - DOMAIN,ads3-normal-lf.zijieapi.com
+  - DOMAIN,ads3-normal-lq.snssdk.com
+  - DOMAIN,ads4-normal-lf.zijieapi.com
+  - DOMAIN,ads4-normal-lq.snssdk.com
+  - DOMAIN,ads5-normal-lf.zijieapi.com
+  - DOMAIN,ads5-normal-lq.snssdk.com
+  - DOMAIN,ads6-normal-lf.zijieapi.com
+  - DOMAIN,ads6-normal-lq.snssdk.com
+  - DOMAIN,ads7-normal-lf.zijieapi.com
+  - DOMAIN,ads7-normal-lq.snssdk.com
+  - DOMAIN,ads8-normal-lf.zijieapi.com
+  - DOMAIN,ads8-normal-lq.snssdk.com
+  - DOMAIN,ads9-normal-lf.zijieapi.com
+  - DOMAIN,ads9-normal-lq.snssdk.com
+  - DOMAIN,adsdk.vivo.com.cn
+  - DOMAIN,adse.ximalaya.com
+  - DOMAIN,adservice.google.com
+  - DOMAIN,adsfilebssdlbig.ali.kugou.com
+  - DOMAIN,adsfs.oppomobile.com
+  - DOMAIN,adshare.toutiao.com
+  - DOMAIN,adsmind.apdcdn.tc.qq.com
+  - DOMAIN,adsmind.tc.qq.com
+  - DOMAIN,adsmogo.com
+  - DOMAIN,adsmogo.org
+  - DOMAIN,adstrategy.biz.weibo.com
+  - DOMAIN,adtrack.ucweb.com
+  - DOMAIN,adukwai.com
+  - DOMAIN,advertising.apple.com
+  - DOMAIN,adx-cn.anythinktech.com
+  - DOMAIN,adx.ads.heytapmobi.com
+  - DOMAIN,adx.ads.oppomobile.com
+  - DOMAIN,afd.baidu.com
+  - DOMAIN,afpapi.alimama.com
+  - DOMAIN,alimama.com
+  - DOMAIN,alog.umeng.com
+  - DOMAIN,alog.umengcloud.com
+  - DOMAIN,alogs.umeng.com
+  - DOMAIN,alogs.umengcloud.com
+  - DOMAIN,analytics.126.net
+  - DOMAIN,analytics.meituan.net
+  - DOMAIN,analytics.samsungknox.com
+  - DOMAIN,ap.51y5.net
+  - DOMAIN,api-access.pangolin-sdk-toutiao-b.com
+  - DOMAIN,api-access.pangolin-sdk-toutiao.com
+  - DOMAIN,api-adservices.apple.com
+  - DOMAIN,api.ad.xiaomi.com
+  - DOMAIN,api.anythinktech.com
+  - DOMAIN,api.cupid.ptqy.gitv.tv
+  - DOMAIN,api.freed.so
+  - DOMAIN,apimg.qunliao.info
+  - DOMAIN,app-measurement.com
+  - DOMAIN,app.51y5.net
+  - DOMAIN,appget.cn
+  - DOMAIN,applog-perf.uc.cn
+  - DOMAIN,applog.uc.cn
+  - DOMAIN,applogapi.autohome.com
+  - DOMAIN,applovin.com
+  - DOMAIN,appuu.cn
+  - DOMAIN,aspect-upush.umeng.com
+  - DOMAIN,at.umeng.com
+  - DOMAIN,atm.youku.com
+  - DOMAIN,au.umeng.com
+  - DOMAIN,auth.api.gitv.tv
+  - DOMAIN,av1.xdrig.com
+  - DOMAIN,baiduads.com
+  - DOMAIN,baidutv.baidu.com
+  - DOMAIN,bar.baidu.com
+  - DOMAIN,bdapi.ads.heytapmobi.com
+  - DOMAIN,bdapi.ads.oppomobile.com
+  - DOMAIN,bds.snssdk.com
+  - DOMAIN,bdsp.x.jd.com
+  - DOMAIN,beizi.biz
+  - DOMAIN,bj.imp.voiceads.cn
+  - DOMAIN,c.51y5.net
+  - DOMAIN,c.baidu.com
+  - DOMAIN,c.wkanx.com
+  - DOMAIN,c1.wkanx.com
+  - DOMAIN,c1img.ali.kugou.com
+  - DOMAIN,ca.iadsdk.apple.com
+  - DOMAIN,caclick.baidu.com
+  - DOMAIN,cctv.adsunion.com
+  - DOMAIN,cdn.ad.xiaomi.com
+  - DOMAIN,cds.51y5.net
+  - DOMAIN,certlab.org
+  - DOMAIN,chanct.cn
+  - DOMAIN,chanct.com
+  - DOMAIN,china-bestmind.com
+  - DOMAIN,cjhq.baidu.com
+  - DOMAIN,ck.ads.oppomobile.com
+  - DOMAIN,client-dmp.suishenyun.cn
+  - DOMAIN,clk.gentags.net
+  - DOMAIN,coinhive.com
+  - DOMAIN,collectionpv.che168.com
+  - DOMAIN,config.51y5.net
+  - DOMAIN,config.kuyun.com
+  - DOMAIN,config.y5en.com
+  - DOMAIN,count.atm.youku.com
+  - DOMAIN,cpro.baidu.com
+  - DOMAIN,cpu.baidu.com
+  - DOMAIN,csjplatform.com
+  - DOMAIN,cupid.iqiyi.com
+  - DOMAIN,d.applovin.com
+  - DOMAIN,d.cntv.cn
+  - DOMAIN,d1.xiaomi.com
+  - DOMAIN,da.anythinktech.com
+  - DOMAIN,da.mgtv.com
+  - DOMAIN,data.ads.heytapmobi.com
+  - DOMAIN,data.ads.oppomobile.com
+  - DOMAIN,data.mistat.xiaomi.com
+  - DOMAIN,datacollector-dra.dt.hicloud.com
+  - DOMAIN,dh54wf.xyz
+  - DOMAIN,diagassets.apple.com
+  - DOMAIN,diagmon-service.samsung.com
+  - DOMAIN,dm.bytedance.com
+  - DOMAIN,dm.pstatp.com
+  - DOMAIN,dm.toutiao.com
+  - DOMAIN,domob.cn
+  - DOMAIN,domob.com.cn
+  - DOMAIN,domob.org
+  - DOMAIN,doubleclick.net
+  - DOMAIN,dreport.meituan.net
+  - DOMAIN,drmcmm.baidu.com
+  - DOMAIN,dsp.toutiao.com
+  - DOMAIN,dsp.youdao.com
+  - DOMAIN,e.ad.xiaomi.com
+  - DOMAIN,e.baidu.com
+  - DOMAIN,e.qq.com
+  - DOMAIN,editor.sm.cn
+  - DOMAIN,eiv.baidu.com
+  - DOMAIN,ems.youku.com
+  - DOMAIN,err.applovin.com
+  - DOMAIN,errlog.umeng.com
+  - DOMAIN,errnewlog.umeng.com
+  - DOMAIN,errnewlogs.umeng.com
+  - DOMAIN,extlog.snssdk.com
+  - DOMAIN,fans.m.tmall.com
+  - DOMAIN,fc-video.cdn.bcebos.com
+  - DOMAIN,fds.api.moji.com
+  - DOMAIN,fhss.com.cn
+  - DOMAIN,focusbaiduafp.allyes.com
+  - DOMAIN,fvid.atm.youku.com
+  - DOMAIN,g.dtv.cn.miaozhan.com
+  - DOMAIN,g.dtv.cn.miaozhen.com
+  - DOMAIN,g2q3e.cn
+  - DOMAIN,gateway-papa.cloud.weizhi.com
+  - DOMAIN,gdt.qq.com
+  - DOMAIN,gdtimg.com
+  - DOMAIN,gj.applog.uc.cn
+  - DOMAIN,google-analytics.com
+  - DOMAIN,googleadservices.com
+  - DOMAIN,googlesyndication.com
+  - DOMAIN,gorgon.youdao.com
+  - DOMAIN,gridsum.com
+  - DOMAIN,gridsumdissector.cn
+  - DOMAIN,gridsumdissector.com
+  - DOMAIN,gvod.aiseejapp.atianqi.com
+  - DOMAIN,hailiangyun.cn
+  - DOMAIN,hc-ad.sm.cn
+  - DOMAIN,hc.baidu.com
+  - DOMAIN,hei-tong.com
+  - DOMAIN,hicore-auth.com
+  - DOMAIN,himindtech.com
+  - DOMAIN,hivedata.cc
+  - DOMAIN,hm.baidu.com
+  - DOMAIN,hmma.baidu.com
+  - DOMAIN,html.atm.youku.com
+  - DOMAIN,huichuan-mc.sm.cn
+  - DOMAIN,huichuan.sm.cn
+  - DOMAIN,huodonghezi.cn
+  - DOMAIN,i-bestmind.com
+  - DOMAIN,iad.apple.com
+  - DOMAIN,iadcontent.apple.com
+  - DOMAIN,iadctest.qwapi.com
+  - DOMAIN,iadsdk.apple.com
+  - DOMAIN,iflyad.bj.openstorage.cn
+  - DOMAIN,image.bianxianmao.com
+  - DOMAIN,img1.czb365.com
+  - DOMAIN,insurance.lianwifi.com
+  - DOMAIN,iphonesubmissions.apple.com
+  - DOMAIN,is.snssdk.com
+  - DOMAIN,iyes.youku.com
+  - DOMAIN,js.union-wifi.com
+  - DOMAIN,jzt.jd.com
+  - DOMAIN,kepler.jd.com
+  - DOMAIN,keplerapi.jd.com
+  - DOMAIN,kgipadstat.kugou.com
+  - DOMAIN,kgipadstatbak.kugou.com
+  - DOMAIN,kgstaticdlbssdlbig.tx.kugou.com
+  - DOMAIN,kuaishouad.com
+  - DOMAIN,log-api.pangolin-sdk-toutiao-b.com
+  - DOMAIN,log-api.pangolin-sdk-toutiao.com
+  - DOMAIN,log-dmp.suishenyun.cn
+  - DOMAIN,log.cs.pp.cn
+  - DOMAIN,log.hicloud.com
+  - DOMAIN,log.stat.oppo.com
+  - DOMAIN,login.push.51y5.net
+  - DOMAIN,logonext.tv.kuyun.com
+  - DOMAIN,logs.amap.com
+  - DOMAIN,logservice.hicloud.com
+  - DOMAIN,logservice.hihonorcloud.com
+  - DOMAIN,logwebs.kugou.com
+  - DOMAIN,loongteam.com
+  - DOMAIN,lstat.youku.com
+  - DOMAIN,m.atm.youku.com
+  - DOMAIN,m.panda.voiceads.cn
+  - DOMAIN,ma.baidu.com
+  - DOMAIN,mars-xlog.jd.com
+  - DOMAIN,me.api.moji.com
+  - DOMAIN,medicine.lanjiyin.com.cn
+  - DOMAIN,metok.sys.miui.com
+  - DOMAIN,metrics.data.hicloud.com
+  - DOMAIN,metrics.data.hihonorcloud.com
+  - DOMAIN,metrics.icloud.com
+  - DOMAIN,metrics.icloud.waves.com
+  - DOMAIN,metrics.mzstatic.com
+  - DOMAIN,metrics1.data.hicloud.com
+  - DOMAIN,miaozhen.com
+  - DOMAIN,misc.in.duokanbox.com
+  - DOMAIN,mishop.pandora.xiaomi.com
+  - DOMAIN,mitv.tracking.miui.com
+  - DOMAIN,mmad.qq.com
+  - DOMAIN,mobads-logs.baidu.com
+  - DOMAIN,mobads.baidu.com
+  - DOMAIN,mobilead.kuwo.cn
+  - DOMAIN,mon-va.byteoversea.com
+  - DOMAIN,mon.snssdk.com
+  - DOMAIN,mousegesturesapi.com
+  - DOMAIN,mpos-pic.helipay.com
+  - DOMAIN,ms.applovin.com
+  - DOMAIN,msg.push.51y5.net
+  - DOMAIN,nadvideo2.baidu.com
+  - DOMAIN,nbcollect.kugou.com
+  - DOMAIN,nbcollectretry.kugou.com
+  - DOMAIN,new.api.ad.xiaomi.com
+  - DOMAIN,news-log.51y5.net
+  - DOMAIN,news.51y5.net
+  - DOMAIN,nex.corp.163.com
+  - DOMAIN,nmetrics.samsung.com
+  - DOMAIN,nrtis.com.cn
+  - DOMAIN,nsclick.baidu.com
+  - DOMAIN,o2o.api.xiaomi.com
+  - DOMAIN,oc.umeng.com
+  - DOMAIN,omgmta.play.aiseet.atianqi.com
+  - DOMAIN,onetrack.mi.com
+  - DOMAIN,open.e.kuaishou.com
+  - DOMAIN,open.kuaishou.com
+  - DOMAIN,optimus-ads.amap.com
+  - DOMAIN,optimus-ads.amap.com.w.alikunlun.com
+  - DOMAIN,ossp.voicecloud.cn
+  - DOMAIN,p3-pack.byteimg.com
+  - DOMAIN,p3.pstatp.com
+  - DOMAIN,p6-pack.byteimg.com
+  - DOMAIN,pangle.io
+  - DOMAIN,pangleglobal.com
+  - DOMAIN,pangolin-sdk-toutiao-b.com
+  - DOMAIN,pangolin-sdk-toutiao.com
+  - DOMAIN,pangolin-sdk-toutiao1.com
+  - DOMAIN,pangolin.snssdk.com
+  - DOMAIN,paopaod.qiyipic.com
+  - DOMAIN,paradisestatic.vivo.com.cn
+  - DOMAIN,pc.suishenyun.net
+  - DOMAIN,pdds.ucweb.com
+  - DOMAIN,pgdt.gtimg.cn
+  - DOMAIN,pgdt.ugdtimg.com
+  - DOMAIN,pglstatp-toutiao.com
+  - DOMAIN,plbslog.umeng.com
+  - DOMAIN,policy.jd.com
+  - DOMAIN,pos.baidu.com
+  - DOMAIN,prod-a.applovin.com
+  - DOMAIN,prod-ms.applovin.com
+  - DOMAIN,promotion-partner.kuaishou.com
+  - DOMAIN,puds.ucweb.com
+  - DOMAIN,px.ucweb.com
+  - DOMAIN,r.browser.miui.com
+  - DOMAIN,r1.ykimg.com
+  - DOMAIN,rayjump.com
+  - DOMAIN,rich.kuwo.cn
+  - DOMAIN,rt-m.kugou.com
+  - DOMAIN,rt.applovin.com
+  - DOMAIN,rtmretry.kugou.com
+  - DOMAIN,s1.pstatp.com
+  - DOMAIN,s2.pstatp.com
+  - DOMAIN,s3.pstatp.com
+  - DOMAIN,s3a.pstatp.com
+  - DOMAIN,samsungads.com
+  - DOMAIN,saveu0-normal-lf.zijieapi.com
+  - DOMAIN,saveu1-normal-lf.zijieapi.com
+  - DOMAIN,saveu2-normal-lf.zijieapi.com
+  - DOMAIN,saveu3-normal-lf.zijieapi.com
+  - DOMAIN,saveu4-normal-lf.zijieapi.com
+  - DOMAIN,saveu5-normal-lf.zijieapi.com
+  - DOMAIN,saveu6-normal-lf.zijieapi.com
+  - DOMAIN,saveu7-normal-lf.zijieapi.com
+  - DOMAIN,saveu8-normal-lf.zijieapi.com
+  - DOMAIN,saveu9-normal-lf.zijieapi.com
+  - DOMAIN,sax.mobile.sina.cn
+  - DOMAIN,sdk.huichuan.sm.cn
+  - DOMAIN,sdkapp.mobile.sina.cn
+  - DOMAIN,sdkconfig.ad.intl.xiaomi.com
+  - DOMAIN,sdkconfig.ad.xiaomi.com
+  - DOMAIN,sdktmp.hubcloud.com.cn
+  - DOMAIN,searchrecommend.kugou.com
+  - DOMAIN,secure-chn.imrworldwide.com
+  - DOMAIN,server.m.pp.cn
+  - DOMAIN,sigmob.cn
+  - DOMAIN,simba.taobao.com
+  - DOMAIN,smetrics.samsung.com
+  - DOMAIN,spcode.baidu.com
+  - DOMAIN,speed.lstat.youku.com
+  - DOMAIN,splashimgbssdl.yun.kugou.com
+  - DOMAIN,splashqrb.gtimg.com
+  - DOMAIN,ssp.ad.xiaomi.com
+  - DOMAIN,staging.ai.api.xiaomi.com
+  - DOMAIN,stat.kuaishou.com
+  - DOMAIN,stat.pandora.xiaomi.com
+  - DOMAIN,stat.xiaomi.com
+  - DOMAIN,stat.y.qq.com
+  - DOMAIN,stat.youku.com
+  - DOMAIN,static.lstat.youku.com
+  - DOMAIN,stats.gc.apple.com
+  - DOMAIN,stsdk.vivo.com.cn
+  - DOMAIN,stsdk.vivoglobal.com
+  - DOMAIN,t-bestmind.com
+  - DOMAIN,t7z.cupid.ptqy.gitv.tv
+  - DOMAIN,talkingdata.com
+  - DOMAIN,talkingdata.net
+  - DOMAIN,tanx.com
+  - DOMAIN,test.ad.xiaomi.com
+  - DOMAIN,test.new.api.ad.xiaomi.com
+  - DOMAIN,tk.anythinktech.com
+  - DOMAIN,tk.baidu.com
+  - DOMAIN,tmead.y.qq.com
+  - DOMAIN,tmeadbak.y.qq.com
+  - DOMAIN,tongji.meizu.com
+  - DOMAIN,tosv.boe.byted.org
+  - DOMAIN,tosv.byted.org
+  - DOMAIN,track.baidu.com
+  - DOMAIN,track.huichuan.sm.cn
+  - DOMAIN,track.kuaishou.com
+  - DOMAIN,track.uc.cn
+  - DOMAIN,track.weibo.com
+  - DOMAIN,track.xiaomi.com
+  - DOMAIN,tracker.kugou.com
+  - DOMAIN,trackercdnbj.kugou.com
+  - DOMAIN,tracking.coloros.com
+  - DOMAIN,tracking.miui.com
+  - DOMAIN,tunion-api.m.taobao.com
+  - DOMAIN,tv.aiseet.atianqi.com
+  - DOMAIN,tv.weixin.pandora.xiaomi.com
+  - DOMAIN,tvapi.kuyun.com
+  - DOMAIN,u-aix-files.oss-cn-zhangjiakou.aliyuncs.com
+  - DOMAIN,ubixioe.com
+  - DOMAIN,ucstat.baidu.com
+  - DOMAIN,ugdtimg.com
+  - DOMAIN,ulogs.umeng.com
+  - DOMAIN,ulogs.umengcloud.com
+  - DOMAIN,union.baidu.com
+  - DOMAIN,union.huawei.com
+  - DOMAIN,union.oppomobile.com
+  - DOMAIN,union.taobao.com
+  - DOMAIN,union.vivo.com
+  - DOMAIN,upgrade.mishop.pandora.xiaomi.com
+  - DOMAIN,upgrade.xl9.xunlei.com
+  - DOMAIN,urchin.lstat.youku.com
+  - DOMAIN,utoken.umeng.com
+  - DOMAIN,utp-dmp.ucweb.com
+  - DOMAIN,utp.ucweb.com
+  - DOMAIN,uxip.meizu.com
+  - DOMAIN,v.admaster.com.cn
+  - DOMAIN,v0-client-lz.rili.cn
+  - DOMAIN,v1.log.moji.com
+  - DOMAIN,v2.reachmax.cn
+  - DOMAIN,val.api.youku.com
+  - DOMAIN,val.atm.youku.com
+  - DOMAIN,valb.atm.youku.com
+  - DOMAIN,valc.atm.youku.com
+  - DOMAIN,valf.atm.youku.com
+  - DOMAIN,valo.atm.youku.com
+  - DOMAIN,valp.atm.youku.com
+  - DOMAIN,vcardsdk.vivo.com.cn
+  - DOMAIN,vcbn65.xyz
+  - DOMAIN,vid.applovin.com
+  - DOMAIN,vid.atm.youku.com
+  - DOMAIN,vs10.bj2ct.u3.ucweb.com
+  - DOMAIN,vtrack.vivo.com.cn
+  - DOMAIN,vv.play.aiseet.atianqi.com
+  - DOMAIN,walp.atm.youku.com
+  - DOMAIN,wanfeng1.com
+  - DOMAIN,wep016.top
+  - DOMAIN,win-stock.com.cn
+  - DOMAIN,wmlog.meituan.com
+  - DOMAIN,wn.pos.baidu.com
+  - DOMAIN,woodpecker.uc.cn
+  - DOMAIN,www.qmlog.cn
+  - DOMAIN,xdcs-collector.ximalaya.com
+  - DOMAIN,yiqifa.com
+  - DOMAIN,youmi.net
+  - DOMAIN,zantainet.com
+  - DOMAIN,zeus.ad.xiaomi.com
