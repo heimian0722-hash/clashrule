@@ -114,7 +114,6 @@ rules:
   - GEOSITE,private,DIRECT
   - GEOIP,private,DIRECT,no-resolve
   - RULE-SET,reject,🛑 净化拦截
-  - RULE-SET,reject-extra,🛑 净化拦截
   - RULE-SET,reject-cn,🛑 净化拦截
   - GEOSITE,adobe,🟥 Adobe
   - DST-PORT,500,📞 Wi-Fi Calling
@@ -369,12 +368,6 @@ rule-providers:
     behavior: domain
     url: "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockmihomolite.yaml"
     path: ./rules/reject.yaml
-    interval: 86400
-  reject-extra:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/heimian0722-hash/clashrule/main/BANAD.yaml"
-    path: ./rules/reject_ext.yaml
     interval: 86400
   reject-cn:
     type: http
