@@ -95,8 +95,8 @@ payload:
   - DOMAIN,ads.cyapi.cn
   - DOMAIN,ads.hihonorcloud.com
   - DOMAIN,ads.huangye.miui.com
-  - DOMAIN,ads.hubcloud.com.cn
   - DOMAIN,ads.huawei.com
+  - DOMAIN,ads.hubcloud.com.cn
   - DOMAIN,ads.iqiyi.com
   - DOMAIN,ads.jinritemai.com
   - DOMAIN,ads.kuaishou.com
@@ -239,7 +239,6 @@ payload:
   - DOMAIN,focusbaiduafp.allyes.com
   - DOMAIN,fvid.atm.youku.com
   - DOMAIN,g.dtv.cn.miaozhan.com
-  - DOMAIN,g.dtv.cn.miaozhen.com
   - DOMAIN,g2q3e.cn
   - DOMAIN,gateway-papa.cloud.weizhi.com
   - DOMAIN,gdt.qq.com
@@ -345,6 +344,7 @@ payload:
   - DOMAIN,p3-pack.byteimg.com
   - DOMAIN,p3.pstatp.com
   - DOMAIN,p6-pack.byteimg.com
+  - DOMAIN,pangolin.snssdk.com
   - DOMAIN,paopaod.qiyipic.com
   - DOMAIN,paradisestatic.vivo.com.cn
   - DOMAIN,pc.suishenyun.net
@@ -450,7 +450,6 @@ payload:
   - DOMAIN,utp-dmp.ucweb.com
   - DOMAIN,utp.ucweb.com
   - DOMAIN,uxip.meizu.com
-  - DOMAIN,v.admaster.com.cn
   - DOMAIN,v.gdt.qq.com
   - DOMAIN,v0-client-lz.rili.cn
   - DOMAIN,v1.log.moji.com
