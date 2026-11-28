@@ -484,6 +484,8 @@ payload:
 - DOMAIN-SUFFIX,crashlytics.com
 - DOMAIN-SUFFIX,honeybadger.io
 - DOMAIN-SUFFIX,trackjs.com
+- DOMAIN-SUFFIX,fastpeoplesearch.com
+- DOMAIN-SUFFIX,whitepages.com
 
   # ==========================================
   # 9. 美国政务与公用服务
